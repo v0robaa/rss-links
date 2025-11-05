@@ -79,6 +79,14 @@
       "title_line": 1,
       "initial_limit": 30,
       "regular_limit": 5
+    },
+    {
+      "name": "ptescalator",
+      "title": "ESCalator",
+      "description": "Tips and tricks Positive Technologies (PT ESC)",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
     }
   ]
 }
