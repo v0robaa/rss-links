@@ -1,0 +1,62 @@
+name: Update Feeds
+
+on:
+  schedule:
+    - cron: '5 4,7,8,11,14,16 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r req.txt
+      
+      - name: Install Playwright browsers
+        run: playwright install chromium
+
+      - name: Generate feeds
+        run: python update.py
+
+      - name: Prepare GitHub Pages deployment
+        run: |
+          mkdir -p gh-pages
+          cp -r update/* gh-pages/
+          touch gh-pages/.nojekyll
+
+      - name: Generate index.html with channels
+        run: python index.py
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push feeds and flags
+        run: |
+          git add feeds/*.xml
+          git add chan_data/*.json
+          git add chan_data/.* 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Update feeds - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages
+          publish_branch: gh-pages
+          force_orphan: true
