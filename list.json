@@ -4,7 +4,7 @@
       "name": "gardendetective",
       "title": "Garden Detective",
       "description": "DFIR... but why stop there",
-      "title_line": 0,
+      "title_line": 1,
       "initial_limit": 30,
       "regular_limit": 5
     },
@@ -37,6 +37,54 @@
       "title": "s0i37_channel",
       "description": "none",
       "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "ThreatHuntingFather",
+      "title": "Threat Hunting Father 🦔",
+      "description": "All about Threat Hunting, detecting malicious activity",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "f6_cybersecurity",
+      "title": "Борьба с киберпреступностью | F6",
+      "description": "F6 channel",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "ptescalator",
+      "title": "ESCalator",
+      "description": "Tips and tricks Positive Technologies (PT ESC)",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "ZerodayAlert",
+      "title": "0day Alert",
+      "description": "Zero-day vulnerabilities",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "SecLabNews",
+      "title": "SecurityLab.ru",
+      "description": "SecurityLab.ru channel",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "detectioneasy",
+      "title": "Detection is easy",
+      "description": "Detections",
+      "title_line": 1,
       "initial_limit": 30,
       "regular_limit": 5
     }
