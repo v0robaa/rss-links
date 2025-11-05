@@ -34,7 +34,7 @@ jobs:
       - name: Prepare GitHub Pages deployment
         run: |
           mkdir -p gh-pages
-          cp -r update/* gh-pages/
+          cp -r ress_feeds/* gh-pages/
           touch gh-pages/.nojekyll
 
       - name: Generate index.html with channels
