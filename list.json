@@ -1,0 +1,44 @@
+{
+  "channels": [
+    {
+      "name": "gardendetective",
+      "title": "Garden Detective",
+      "description": "DFIR... but why stop there",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "pentestnotes",
+      "title": "Pentest Notes",
+      "description": "Pentest, CTF",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "P0x3k_1N73LL1G3NC3",
+      "title": "1N73LL1G3NC3",
+      "description": "Reborn…",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "s0ld13r_ch",
+      "title": "s0ld13r ch.",
+      "description": "Blog about Pentest, TI/TH, OPSEC & other security stuff",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    },
+    {
+      "name": "s0i37_channel",
+      "title": "s0i37_channel",
+      "description": "none",
+      "title_line": 0,
+      "initial_limit": 30,
+      "regular_limit": 5
+    }
+  ]
+}
