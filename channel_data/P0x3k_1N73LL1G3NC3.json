@@ -1,6 +1,6 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-05T08:36:16.370696+00:00",
+  "last_update": "2025-11-05T08:54:31.384049+00:00",
   "messages_count": 30,
   "messages": [
     {
@@ -34,35 +34,35 @@
     {
       "id": "192",
       "title": "SilentButDeadly",
-      "text": "SilentButDeadly\nA network communication blocker specifically designed to neutralize EDR/AV software by preventing their cloud connectivity using Windows Filtering Platform (WFP). This version focuses solely on network isolation without process termination.\nBlog: https://ryan.framinan.net/blog/silentbutdeadly\n\n[Media: Фото, Видео]",
+      "text": "SilentButDeadly\nA network communication blocker specifically designed to neutralize EDR/AV software by preventing their cloud connectivity using Windows Filtering Platform (WFP). This version focuses solely on network isolation without process termination.\nBlog: https://ryan.framinan.net/blog/silentbutdeadly\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/192",
       "pub_date": "2025-11-04T08:39:15+00:00"
     },
     {
       "id": "191",
       "title": "Conquest",
-      "text": "Conquest\nA feature-rich and malleable command & control/post-exploitation framework developed in Nim.\nBlog: https://jakobfriedl.github.io/blog/nim-c2-traffic/\n\n[Media: Фото, Видео]",
+      "text": "Conquest\nA feature-rich and malleable command & control/post-exploitation framework developed in Nim.\nBlog: https://jakobfriedl.github.io/blog/nim-c2-traffic/\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/191",
       "pub_date": "2025-11-03T17:28:27+00:00"
     },
     {
       "id": "190",
       "title": "Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать",
-      "text": "Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать\nBlog: https://specterops.io/blog/2025/10/30/sharehound-an-opengraph-collector-for-network-shares/\nSoft: https://github.com/p0dalirius/sharehound\n#pentest #ad #bloodhound\n\n[Media: Фото, Видео]",
+      "text": "Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать\nBlog: https://specterops.io/blog/2025/10/30/sharehound-an-opengraph-collector-for-network-shares/\nSoft: https://github.com/p0dalirius/sharehound\n#pentest #ad #bloodhound\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/190",
       "pub_date": "2025-10-30T18:02:34+00:00"
     },
     {
       "id": "189",
       "title": "Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation",
-      "text": "Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation\nIn an attack exploiting CVE‑2025‑58726, a bad actor would perform the following steps:\n• Identify a Ghost SPN on the target machine.\n• Register a DNS record for the Ghost SPN pointing to the attacker machine.\n• Use a Kerberos relay tool (e.g., my KrbRelayEx script, available on GitHub) to intercept the Kerberos authentication.\n• Trigger authentication for the target machine (e.g., using Printer Bug, PetitPotam, or similar).\n• Relay the Kerberos ticket back to the target machine.\n• Gain SYSTEM access via SMB and execute arbitrary commands.\nP.S.\nThis attack targets Kerberos by abusing misconfigured SPNs; it does not affect NTLM.\nThe fix for CVE-2025-33073 (Windows SMB Client Elevation of Privilege Vulnerability) addressed a specific SMB client issue. However, the Ghost SPN attack method bypasses that fix. The vulnerability lies in Kerberos itself, which fails to prevent authentication reflection. The same approach can be applied to other protocols that rely on Kerberos.\n\n[Media: Фото, Видео]",
+      "text": "Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation\nIn an attack exploiting CVE‑2025‑58726, a bad actor would perform the following steps:\n• Identify a Ghost SPN on the target machine.\n• Register a DNS record for the Ghost SPN pointing to the attacker machine.\n• Use a Kerberos relay tool (e.g., my KrbRelayEx script, available on GitHub) to intercept the Kerberos authentication.\n• Trigger authentication for the target machine (e.g., using Printer Bug, PetitPotam, or similar).\n• Relay the Kerberos ticket back to the target machine.\n• Gain SYSTEM access via SMB and execute arbitrary commands.\nP.S.\nThis attack targets Kerberos by abusing misconfigured SPNs; it does not affect NTLM.\nThe fix for CVE-2025-33073 (Windows SMB Client Elevation of Privilege Vulnerability) addressed a specific SMB client issue. However, the Ghost SPN attack method bypasses that fix. The vulnerability lies in Kerberos itself, which fails to prevent authentication reflection. The same approach can be applied to other protocols that rely on Kerberos.\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/189",
       "pub_date": "2025-10-29T20:50:42+00:00"
     },
     {
       "id": "188",
       "title": "UnderlayCopy",
-      "text": "UnderlayCopy\nPowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.\n\n[Media: Фото, Видео]",
+      "text": "UnderlayCopy\nPowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/188",
       "pub_date": "2025-10-28T16:28:02+00:00"
     },

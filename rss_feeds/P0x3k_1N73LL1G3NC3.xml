@@ -3,16 +3,16 @@
 A network communication blocker specifically designed to neutralize EDR/AV software by preventing their cloud connectivity using Windows Filtering Platform (WFP). This version focuses solely on network isolation without process termination.
 Blog: https://ryan.framinan.net/blog/silentbutdeadly
 
-[Media: Фото, Видео]</description><pubDate>Tue, 04 Nov 2025 08:39:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_192</guid></item><item><title>Conquest</title><link>https://t.me/P0x3k_1N73LL1G3NC3/191</link><description>Conquest
+[Media: Фото]</description><pubDate>Tue, 04 Nov 2025 08:39:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_192</guid></item><item><title>Conquest</title><link>https://t.me/P0x3k_1N73LL1G3NC3/191</link><description>Conquest
 A feature-rich and malleable command &amp; control/post-exploitation framework developed in Nim.
 Blog: https://jakobfriedl.github.io/blog/nim-c2-traffic/
 
-[Media: Фото, Видео]</description><pubDate>Mon, 03 Nov 2025 17:28:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_191</guid></item><item><title>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать</title><link>https://t.me/P0x3k_1N73LL1G3NC3/190</link><description>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать
+[Media: Фото]</description><pubDate>Mon, 03 Nov 2025 17:28:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_191</guid></item><item><title>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать</title><link>https://t.me/P0x3k_1N73LL1G3NC3/190</link><description>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать
 Blog: https://specterops.io/blog/2025/10/30/sharehound-an-opengraph-collector-for-network-shares/
 Soft: https://github.com/p0dalirius/sharehound
 #pentest #ad #bloodhound
 
-[Media: Фото, Видео]</description><pubDate>Thu, 30 Oct 2025 18:02:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_190</guid></item><item><title>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/189</link><description>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation
+[Media: Фото]</description><pubDate>Thu, 30 Oct 2025 18:02:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_190</guid></item><item><title>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/189</link><description>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation
 In an attack exploiting CVE‑2025‑58726, a bad actor would perform the following steps:
 • Identify a Ghost SPN on the target machine.
 • Register a DNS record for the Ghost SPN pointing to the attacker machine.
@@ -24,10 +24,10 @@ P.S.
 This attack targets Kerberos by abusing misconfigured SPNs; it does not affect NTLM.
 The fix for CVE-2025-33073 (Windows SMB Client Elevation of Privilege Vulnerability) addressed a specific SMB client issue. However, the Ghost SPN attack method bypasses that fix. The vulnerability lies in Kerberos itself, which fails to prevent authentication reflection. The same approach can be applied to other protocols that rely on Kerberos.
 
-[Media: Фото, Видео]</description><pubDate>Wed, 29 Oct 2025 20:50:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_189</guid></item><item><title>UnderlayCopy</title><link>https://t.me/P0x3k_1N73LL1G3NC3/188</link><description>UnderlayCopy
+[Media: Фото]</description><pubDate>Wed, 29 Oct 2025 20:50:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_189</guid></item><item><title>UnderlayCopy</title><link>https://t.me/P0x3k_1N73LL1G3NC3/188</link><description>UnderlayCopy
 PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.
 
-[Media: Фото, Видео]</description><pubDate>Tue, 28 Oct 2025 16:28:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_188</guid></item><item><title>👽 Boooost!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/187</link><description>👽 Boooost!
+[Media: Фото]</description><pubDate>Tue, 28 Oct 2025 16:28:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_188</guid></item><item><title>👽 Boooost!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/187</link><description>👽 Boooost!
 
 [Media: Фото]</description><pubDate>Tue, 28 Oct 2025 09:05:13 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_187</guid></item><item><title>CVE-2025-33073: Reflective Kerberos Relay (LPE)   Blog: https://blog.redteam-pentesting.de/2025/reflective-kerberos-relay-attack/  Patched: June 10, 2025  Интересная LPE с релеем на себя... Даже CVE...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/185</link><description>CVE-2025-33073: Reflective Kerberos Relay (LPE)   Blog: https://blog.redteam-pentesting.de/2025/reflective-kerberos-relay-attack/  Patched: June 10, 2025  Интересная LPE с релеем на себя... Даже CVE есть)   #lpe #ad #relay #pentest #redteam
 

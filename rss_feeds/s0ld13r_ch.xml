@@ -3,7 +3,7 @@
 #meme
 🧢 s0ld13r
 
-[Media: Фото, Видео]</description><pubDate>Fri, 31 Oct 2025 10:14:51 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_299</guid></item><item><title>Persistent Backdoors via Apache Modules 😷</title><link>https://t.me/s0ld13r_ch/298</link><description>Persistent Backdoors via Apache Modules 😷
+[Media: Фото]</description><pubDate>Fri, 31 Oct 2025 10:14:51 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_299</guid></item><item><title>Persistent Backdoors via Apache Modules 😷</title><link>https://t.me/s0ld13r_ch/298</link><description>Persistent Backdoors via Apache Modules 😷
 Разбирая различные отчеты и статьи про APT/Red Team, нашел годную публикацию от CICADA8 где вместо стандартных ASPX вебшеллов использовали IIS модуль для выполнения команд 🪟
 И подумал, почему бы не реализовать схожий бэкдор и подход, только под Apache2 и Linux среду? В прочем вышло довольно весело и задорно, и подробнее можно почитать по ссылкам ниже 😃
 🔗 Post: https://www.s0ld13r.kz/posts/apache-modules-persistence/
@@ -11,7 +11,7 @@
 P.S Использовать только в целях обучения и ресерча, advanced evasion тема для отдельной статьи
 🧢 s0ld13r
 
-[Media: Фото, Видео]</description><pubDate>Thu, 30 Oct 2025 10:48:43 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_298</guid></item><item><title>WSUS RCE Vulnerability in the Wild 🪟</title><link>https://t.me/s0ld13r_ch/297</link><description>WSUS RCE Vulnerability in the Wild 🪟
+[Media: Фото]</description><pubDate>Thu, 30 Oct 2025 10:48:43 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_298</guid></item><item><title>WSUS RCE Vulnerability in the Wild 🪟</title><link>https://t.me/s0ld13r_ch/297</link><description>WSUS RCE Vulnerability in the Wild 🪟
 CVE-2025-59287 - критическая уязвимость в WSUS позволяющая не аутентифицированному атакующему исполнить код на стороне сервера с привилегиями SYSTEM.
 Вот некоторые индикаторы которые можно использовать для хантов:
 • Создание подпроцесса cmd.exe из под сервиса WSUS - wsusservice.exe (более подробный process tree на скрине)
@@ -34,7 +34,7 @@ event.code: 11 and file.path: *Microsoft.NET\\Framework\\v4.0.30319* and file.ex
 Больше про использование данных с теневых ресурсов можно почитать тут
 🧢 s0ld13r
 
-[Media: Фото, Видео]</description><pubDate>Mon, 27 Oct 2025 13:50:13 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_296</guid></item><item><title>APT as a Service?😃</title><link>https://t.me/s0ld13r_ch/293</link><description>APT as a Service?😃
+[Media: Фото]</description><pubDate>Mon, 27 Oct 2025 13:50:13 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_296</guid></item><item><title>APT as a Service?😃</title><link>https://t.me/s0ld13r_ch/293</link><description>APT as a Service?😃
 Premier Pass-as-a-Service — новый формат кибершпионажа
 Trend Micro зафиксировала новую модель сотрудничества между multiple China-aligned APT groups — Earth Estries и Earth Naga.
 Одна группа предоставляет готовый доступ («Premier Pass»), другая — разворачивает свои инструменты. Это делает шпионские кампании сложнее для атрибуции и детектирования.
@@ -67,7 +67,7 @@ Earth Naga:
 📎 https://www.trendmicro.com/en_us/research/25/j/premier-pass-as-a-service.html
 🦔 THF
 
-[Media: Фото, Видео]</description><pubDate>Fri, 24 Oct 2025 07:25:41 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_293</guid></item><item><title>💻 File Tunnel v2.2.4</title><link>https://t.me/s0ld13r_ch/292</link><description>💻 File Tunnel v2.2.4
+[Media: Фото]</description><pubDate>Fri, 24 Oct 2025 07:25:41 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_293</guid></item><item><title>💻 File Tunnel v2.2.4</title><link>https://t.me/s0ld13r_ch/292</link><description>💻 File Tunnel v2.2.4
 TCP туннель через файл
 Bypassing a firewall:
 # Host A
