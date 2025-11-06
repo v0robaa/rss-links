@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-06T04:35:04.303743+00:00",
-  "messages_count": 31,
+  "last_update": "2025-11-06T07:26:40.348457+00:00",
+  "messages_count": 33,
   "messages": [
+    {
+      "id": "917",
+      "title": "Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)",
+      "text": "Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)\n📌Основным поинтом когда «хулиганы зрения лишают», является падение телеметрии с конечной точки.\n➖Что делает атакующий? Правильно - добавляет фильтры.\n⏳Если вы каждый день знаете, сколько генерирует юзер действий, то такое падение телеметрии, вы должны сразу увидеть(заалертить)\nLet’s Hunt 🔎\nNetwork Isolation Effects\nEDR cannot receive cloud updates\nTelemetry upload blocked\nRemote management disabled\nReal-time threat intelligence severed\nService Disruption Effects\nPrevents automatic restart\nDisables scheduled scans\nStops background monitoring\nHalts update mechanisms\nDetection Vectors\nWFP filter creation events\nService stop/disable events\nProcess handle access patterns\nNo persistent artifacts (unless -p flag used)\n🔗https://github.com/loosehose/SilentButDeadly\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/917",
+      "pub_date": "2025-11-06T06:02:23+00:00"
+    },
+    {
+      "id": "916",
+      "title": "Жиза 😂 https://t.me/s0ld13r_ch/300",
+      "text": "Жиза 😂 https://t.me/s0ld13r_ch/300",
+      "link": "https://t.me/ThreatHuntingFather/916",
+      "pub_date": "2025-11-06T05:02:10+00:00"
+    },
     {
       "id": "914",
       "title": "Protect important folders with controlled folder access 📁",
