@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-06T14:29:34.273867+00:00",
-  "messages_count": 31,
+  "last_update": "2025-11-06T16:37:47.129030+00:00",
+  "messages_count": 32,
   "messages": [
+    {
+      "id": "194",
+      "title": "🎃Booo!",
+      "text": "🎃Booo!\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/194",
+      "pub_date": "2025-11-06T14:48:52+00:00"
+    },
     {
       "id": "193",
       "title": "🪟 CVE-2025-50168: Windows 11 LPE Exploit",
