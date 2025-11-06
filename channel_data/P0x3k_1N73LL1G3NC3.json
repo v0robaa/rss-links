@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-05T16:37:13.227228+00:00",
-  "messages_count": 30,
+  "last_update": "2025-11-06T04:34:57.026597+00:00",
+  "messages_count": 31,
   "messages": [
+    {
+      "id": "193",
+      "title": "🪟 CVE-2025-50168: Windows 11 LPE Exploit",
+      "text": "🪟 CVE-2025-50168: Windows 11 LPE Exploit\nWindows win32kbase Type Confusion Local Privilege Escalation Vulnerability (CVSS 8.8). Pwn2Own Berlin 2025 winning bug.\nBlog: https://www.oobs.io/posts/four-bytes-one-lie/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/193",
+      "pub_date": "2025-11-05T20:47:05+00:00"
+    },
     {
       "id": "183",
       "title": "AsmLdr",

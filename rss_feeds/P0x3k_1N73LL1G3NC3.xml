@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 05 Nov 2025 08:36:16 +0000</lastBuildDate><item><title>SilentButDeadly</title><link>https://t.me/P0x3k_1N73LL1G3NC3/192</link><description>SilentButDeadly
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 05 Nov 2025 20:47:05 +0000</lastBuildDate><item><title>🪟 CVE-2025-50168: Windows 11 LPE Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/193</link><description>🪟 CVE-2025-50168: Windows 11 LPE Exploit
+Windows win32kbase Type Confusion Local Privilege Escalation Vulnerability (CVSS 8.8). Pwn2Own Berlin 2025 winning bug.
+Blog: https://www.oobs.io/posts/four-bytes-one-lie/
+
+[Media: Фото]</description><pubDate>Wed, 05 Nov 2025 20:47:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_193</guid></item><item><title>SilentButDeadly</title><link>https://t.me/P0x3k_1N73LL1G3NC3/192</link><description>SilentButDeadly
 A network communication blocker specifically designed to neutralize EDR/AV software by preventing their cloud connectivity using Windows Filtering Platform (WFP). This version focuses solely on network isolation without process termination.
 Blog: https://ryan.framinan.net/blog/silentbutdeadly
 
