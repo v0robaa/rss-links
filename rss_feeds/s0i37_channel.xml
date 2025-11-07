@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Sat, 01 Nov 2025 07:23:28 +0000</lastBuildDate><item><title>В этом примере, вместо отправки в радиоэфир хэшей от брутабельных паролей, мы отправили хакеру</title><link>https://t.me/s0i37_channel/259</link><description>В этом примере, вместо отправки в радиоэфир хэшей от брутабельных паролей, мы отправили хакеру
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Fri, 07 Nov 2025 08:34:25 +0000</lastBuildDate><item><title>И вот что случится у хакера (скрин).</title><link>https://t.me/s0i37_channel/261</link><description>И вот что случится у хакера (скрин).
+Несмотря на то, что атака GTC Downgrade часто приводит к отправке
+учетных данных открытым текстом, мы не отправляем их хакеру в открытом
+виде. А нарочно отправляем в виде хеша, заставляя тем самым его еще и
+брутить их. Учитывая кажущиеся хакеру высокие шансы на успех,
+он будет просто вынужден это делать.
+
+[Media: Фото]</description><pubDate>Fri, 07 Nov 2025 08:34:25 +0000</pubDate><guid isPermaLink="false">telegram_s0i37_channel_261</guid></item><item><title>Атака GTC downgrade одна из наиболее опасных для компаний Wi-Fi атак. Хакер в случае успеха имеет шансы на получение доменной учетки прямо с улицы, и не редко в виде пароля открытым текстом.</title><link>https://t.me/s0i37_channel/260</link><description>Атака GTC downgrade одна из наиболее опасных для компаний Wi-Fi атак. Хакер в случае успеха имеет шансы на получение доменной учетки прямо с улицы, и не редко в виде пароля открытым текстом.
+В своём посте (https://t.me/s0i37_channel/208) я писал, как можно замечать такие хакерские точки доступа. Но как противодействовать такой атаке?
+А противодействовать можно всё тем же способом и с помощью следующего незамысловатого кода мы можем закидать хакера фейковыми доменными учетками:
+#!/bin/bash
+iface="$1"
+bssid="$2"
+COUNT=20
+function connect(){
+MAX_TIME=5
+bssid="$1"
+user="$2"
+pass="$3"
+cat &lt;&lt;E &gt; /tmp/wpa_eap.conf
+network={
+bssid=$bssid
+key_mgmt=WPA-EAP
+eap=PEAP
+identity="$user"
+password="$pass"
+phase1="peaplabel=0"
+phase2="auth=MSCHAPV2"
+}
+E
+sudo timeout $MAX_TIME wpa_supplicant -i "$iface" -c /tmp/wpa_eap.conf | while read line; do
+if echo "$line" | grep -q 'authentication failed'; then
+break
+fi
+done
+}
+for _ in `seq $COUNT`; do
+user=$(shuf -n 1 /opt/wordlists/surnames-translit.txt)
+pass=$(pwgen 10 1)
+echo "[*] send $user:$pass"
+connect "$bssid" "$user" "$pass"
+done
+К сожалению на уровне сырых пакетов scapy я пока это не реализовал (сложно), но на bash этот defence-приём выглядит нагляднее.
+Соединяя этот prevent (https://github.com/s0i37/defence/blob/main/wifi/prevent/gtc.sh) с detect (https://github.com/s0i37/defence/blob/main/wifi/eap.py) получаем средство автоматического реагирования на атаку с помощью Eaphammer (скрин).
+
+[Media: Фото]</description><pubDate>Fri, 07 Nov 2025 08:34:16 +0000</pubDate><guid isPermaLink="false">telegram_s0i37_channel_260</guid></item><item><title>В этом примере, вместо отправки в радиоэфир хэшей от брутабельных паролей, мы отправили хакеру</title><link>https://t.me/s0i37_channel/259</link><description>В этом примере, вместо отправки в радиоэфир хэшей от брутабельных паролей, мы отправили хакеру
 несколько десятков неподбираемых PMKID.
 Что же, пожелаем хакеру удачи в этом бесперспективном деле!
 

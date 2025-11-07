@@ -1,8 +1,22 @@
 {
   "channel": "s0i37_channel",
-  "last_update": "2025-11-07T07:27:11.437637+00:00",
-  "messages_count": 30,
+  "last_update": "2025-11-07T09:29:01.773787+00:00",
+  "messages_count": 32,
   "messages": [
+    {
+      "id": "261",
+      "title": "И вот что случится у хакера (скрин).",
+      "text": "И вот что случится у хакера (скрин).\nНесмотря на то, что атака GTC Downgrade часто приводит к отправке\nучетных данных открытым текстом, мы не отправляем их хакеру в открытом\nвиде. А нарочно отправляем в виде хеша, заставляя тем самым его еще и\nбрутить их. Учитывая кажущиеся хакеру высокие шансы на успех,\nон будет просто вынужден это делать.\n\n[Media: Фото]",
+      "link": "https://t.me/s0i37_channel/261",
+      "pub_date": "2025-11-07T08:34:25+00:00"
+    },
+    {
+      "id": "260",
+      "title": "Атака GTC downgrade одна из наиболее опасных для компаний Wi-Fi атак. Хакер в случае успеха имеет шансы на получение доменной учетки прямо с улицы, и не редко в виде пароля открытым текстом.",
+      "text": "Атака GTC downgrade одна из наиболее опасных для компаний Wi-Fi атак. Хакер в случае успеха имеет шансы на получение доменной учетки прямо с улицы, и не редко в виде пароля открытым текстом.\nВ своём посте (https://t.me/s0i37_channel/208) я писал, как можно замечать такие хакерские точки доступа. Но как противодействовать такой атаке?\nА противодействовать можно всё тем же способом и с помощью следующего незамысловатого кода мы можем закидать хакера фейковыми доменными учетками:\n#!/bin/bash\niface=\"$1\"\nbssid=\"$2\"\nCOUNT=20\nfunction connect(){\nMAX_TIME=5\nbssid=\"$1\"\nuser=\"$2\"\npass=\"$3\"\ncat <<E > /tmp/wpa_eap.conf\nnetwork={\nbssid=$bssid\nkey_mgmt=WPA-EAP\neap=PEAP\nidentity=\"$user\"\npassword=\"$pass\"\nphase1=\"peaplabel=0\"\nphase2=\"auth=MSCHAPV2\"\n}\nE\nsudo timeout $MAX_TIME wpa_supplicant -i \"$iface\" -c /tmp/wpa_eap.conf | while read line; do\nif echo \"$line\" | grep -q 'authentication failed'; then\nbreak\nfi\ndone\n}\nfor _ in `seq $COUNT`; do\nuser=$(shuf -n 1 /opt/wordlists/surnames-translit.txt)\npass=$(pwgen 10 1)\necho \"[*] send $user:$pass\"\nconnect \"$bssid\" \"$user\" \"$pass\"\ndone\nК сожалению на уровне сырых пакетов scapy я пока это не реализовал (сложно), но на bash этот defence-приём выглядит нагляднее.\nСоединяя этот prevent (https://github.com/s0i37/defence/blob/main/wifi/prevent/gtc.sh) с detect (https://github.com/s0i37/defence/blob/main/wifi/eap.py) получаем средство автоматического реагирования на атаку с помощью Eaphammer (скрин).\n\n[Media: Фото]",
+      "link": "https://t.me/s0i37_channel/260",
+      "pub_date": "2025-11-07T08:34:16+00:00"
+    },
     {
       "id": "259",
       "title": "В этом примере, вместо отправки в радиоэфир хэшей от брутабельных паролей, мы отправили хакеру",
