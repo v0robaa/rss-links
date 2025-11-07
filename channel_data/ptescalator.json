@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-11-07T14:28:22.903034+00:00",
-  "messages_count": 31,
+  "last_update": "2025-11-07T16:32:00.485862+00:00",
+  "messages_count": 32,
   "messages": [
+    {
+      "id": "542",
+      "title": "Message 542",
+      "text": "",
+      "link": "https://t.me/ptescalator/542",
+      "pub_date": "2025-11-07T16:20:06+00:00"
+    },
     {
       "id": "540",
       "title": "Одинокий волк тебе не товарищ 🐺",
