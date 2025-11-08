@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-07T16:31:40.288350+00:00",
-  "messages_count": 32,
+  "last_update": "2025-11-08T04:30:44.353593+00:00",
+  "messages_count": 33,
   "messages": [
+    {
+      "id": "195",
+      "title": "😈 Venom C2",
+      "text": "😈 Venom C2\nA dependency‑free Python3 Command & Control framework for redteam persistence, built to run on systems without installing packages. It comprises a Flask team server, an Electron operator GUI, and a single‑file Python agent that communicates over HTTP/HTTPS using configurable AES‑encrypted JSON messages. Use it to execute commands, manage files, maintain access, and create SSH reverse tunnels from compromised systems.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/195",
+      "pub_date": "2025-11-07T20:02:32+00:00"
+    },
     {
       "id": "194",
       "title": "🎃Booo!",
