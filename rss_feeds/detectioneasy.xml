@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 31 Oct 2025 18:51:06 +0000</lastBuildDate><item><title>Продолжим знакомство с техниками сокрытия процессов - пример можно найти в отчете, а описание метода тут</title><link>https://t.me/detectioneasy/288</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 08 Nov 2025 15:23:03 +0000</lastBuildDate><item><title>Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD</title><link>https://t.me/detectioneasy/289</link><description>Всем привет! 💻✌️
+Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD
+В этом отчете хакеры модифицировали поведение юнита systemd - rsyslog.service
+👨‍💻 Как это работает?
+Systemd читает unit-файлы и drop-in-файлы из стандартных директорий, например:
+🔤/etc/systemd/system/*
+🔤/lib/systemd/system/*
+🔤/run/systemd/system/*
+🔤/usr/lib/systemd/system/*
+🔤~/.config/systemd/user/*
+Атакующие создали папку unintname.d - rsyslog.service.d, и файл с расширением .conf
+[Service]
+Environment='LD_PRELOAD=libnsan.so'
+🔭 Обнаружение:
+🔤 одним из способов для хантинга можно проверить содержимое /proc/*/environ
+grep -ai "LD_PRELOAD" /proc/*/environ
+🔤 можем увидеть путь к подозрительным библиотекам в /proc/PID/maps
+7f161cc04000-7f161cc05000 r--p 00000000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc05000-7f161cc06000 r-xp 00001000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc06000-7f161cc07000 r--p 00002000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc07000-7f161cc08000 r--p 00002000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc08000-7f161cc09000 rw-p 00003000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+🔤 похантить наличие переменной LD_PRELOAD в /etc/profile, /etc/profile.d/*, /etc/environment, ~/.*rc, ~/.profile
+p.s. отличная статья про поиск ld_preload
+#dfir@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 08 Nov 2025 15:23:03 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_289</guid></item><item><title>Продолжим знакомство с техниками сокрытия процессов - пример можно найти в отчете, а описание метода тут</title><link>https://t.me/detectioneasy/288</link><description>Всем привет! 💻✌️
 Продолжим знакомство с техниками сокрытия процессов - пример можно найти в отчете, а описание метода тут
 👨‍💻 Атакующие могут спрятать вредоносный процесс, выполнив bind монтирование:
 mount --bind /proc/&lt;легитимный_PID&gt; /proc/&lt;вредоносный_PID&gt;
