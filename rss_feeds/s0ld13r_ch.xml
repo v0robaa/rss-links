@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 09 Nov 2025 18:37:41 +0000</lastBuildDate><item><title>🔍 FalconFriday — обновлённая библиотека поисков от FalconForce</title><link>https://t.me/s0ld13r_ch/301</link><description>🔍 FalconFriday — обновлённая библиотека поисков от FalconForce
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 11 Nov 2025 05:50:47 +0000</lastBuildDate><item><title>gophish-auto v0.1 📥</title><link>https://t.me/s0ld13r_ch/302</link><description>gophish-auto v0.1 📥
+Порой разворачивание серваков и прочие рутинные задачи сильно тормозят работу, решил написать небольшой Ansible Playbook и One-Shot bash скрипт для автоматического деплоя GoPhish 😃
+Features 🤩
+• Удаляет/заменяет заметные хэдеры (X-GoPhish-Contact → X-Contact-Address, X-GoPhish-Signature → X-Sender-Signature)
+• Меняет дефолтный server name и rid, чтобы снизить «отпечаток» сервера
+• Клонирует репо, билдит на хосте и поднимает systemd-сервис
+• Поддерживает массовую установку через Ansible inventory - закинул креды в hosts и запустил
+Usage 👀
+ansible-playbook -i ansible/example.hosts ansible/deploy-gophish.yml
+Планы на следующие релизы 🔍
+• Автоматическая прокидка порта / secure proxy до admin UI (safe internet access)
+• Генерация config.json из шаблонов, TLS (Certbot) и небольшие улучшения в скрипте
+💻 Repo: https://github.com/s0ld13rr/gophish-auto
+P.S Use only for authorized red team &amp; security awareness assessments
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 11 Nov 2025 05:50:47 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_302</guid></item><item><title>🔍 FalconFriday — обновлённая библиотека поисков от FalconForce</title><link>https://t.me/s0ld13r_ch/301</link><description>🔍 FalconFriday — обновлённая библиотека поисков от FalconForce
 Команда FalconForce обновила проект FalconFriday — открытую коллекцию аналитических запросов и сценариев для систем безопасности Microsoft и облачных платформ.
 В новой версии упорядочены и расширены десятки сценариев для Windows, Active Directory, Azure AD и AWS.
 Можно найти немало идей для собственной охоты.

@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-11-11T04:33:27.303267+00:00",
-  "messages_count": 32,
+  "last_update": "2025-11-11T07:27:39.757565+00:00",
+  "messages_count": 33,
   "messages": [
+    {
+      "id": "302",
+      "title": "gophish-auto v0.1 📥",
+      "text": "gophish-auto v0.1 📥\nПорой разворачивание серваков и прочие рутинные задачи сильно тормозят работу, решил написать небольшой Ansible Playbook и One-Shot bash скрипт для автоматического деплоя GoPhish 😃\nFeatures 🤩\n• Удаляет/заменяет заметные хэдеры (X-GoPhish-Contact → X-Contact-Address, X-GoPhish-Signature → X-Sender-Signature)\n• Меняет дефолтный server name и rid, чтобы снизить «отпечаток» сервера\n• Клонирует репо, билдит на хосте и поднимает systemd-сервис\n• Поддерживает массовую установку через Ansible inventory - закинул креды в hosts и запустил\nUsage 👀\nansible-playbook -i ansible/example.hosts ansible/deploy-gophish.yml\nПланы на следующие релизы 🔍\n• Автоматическая прокидка порта / secure proxy до admin UI (safe internet access)\n• Генерация config.json из шаблонов, TLS (Certbot) и небольшие улучшения в скрипте\n💻 Repo: https://github.com/s0ld13rr/gophish-auto\nP.S Use only for authorized red team & security awareness assessments\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/302",
+      "pub_date": "2025-11-11T05:50:47+00:00"
+    },
     {
       "id": "301",
       "title": "🔍 FalconFriday — обновлённая библиотека поисков от FalconForce",
