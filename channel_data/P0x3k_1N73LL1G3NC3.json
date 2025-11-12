@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-12T07:27:13.479538+00:00",
-  "messages_count": 33,
+  "last_update": "2025-11-12T09:30:50.723953+00:00",
+  "messages_count": 34,
   "messages": [
+    {
+      "id": "196",
+      "title": "CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks",
+      "text": "CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks\nThis is PoC for local privilege escalation vulnerability in \\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration scheduled task.\nWhen this scheduled task is started the taskhostw.exe process whill try to open the C:\\Users\\%username%\\AppData\\Local\\CoreAIPlatform.00\\UKP directory and search for directories using the following filter: {????????-????-????-????-????????????}. If that directory is found it will be deleted without checking for symbolic links.\nAs low privilege user by default can create directories in their own %LOCALAPPDATA% folder this leads to arbitrary folder delete in context of NT AUTHORITY\\SYSTEM user.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/196",
+      "pub_date": "2025-11-12T09:09:11+00:00"
+    },
     {
       "id": "195",
       "title": "😈 Venom C2",
