@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 11 Nov 2025 05:50:47 +0000</lastBuildDate><item><title>gophish-auto v0.1 📥</title><link>https://t.me/s0ld13r_ch/302</link><description>gophish-auto v0.1 📥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 12 Nov 2025 05:43:53 +0000</lastBuildDate><item><title>Invoke-PowerChrome 🌐</title><link>https://t.me/s0ld13r_ch/303</link><description>Invoke-PowerChrome 🌐
+Invoke-PowerChrome - скрипт для сбора и декрипта паролей из браузеров (Chrome, Edge) написанный на PowerShell. Хорошо подойдет для поиска дополнительных учеток, если уже есть права локального администратора 😃
+Сам модуль будет интегрирован в PsMapExec для удаленного сбора паролей с хостов 😎
+A PowerShell script for decrypting Chromium-based browser passwords, supporting both v10 (DPAPI user) and Google Chrome v20 (App Bound Encryption) encrypted blobs.
+The script dynamically interacts with Windows cryptographic APIs to decrypt passwords without external dependencies and can be executed in memory.
+💻 Github: https://github.com/The-Viper-One/Invoke-PowerChrome
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Wed, 12 Nov 2025 05:43:53 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_303</guid></item><item><title>gophish-auto v0.1 📥</title><link>https://t.me/s0ld13r_ch/302</link><description>gophish-auto v0.1 📥
 Порой разворачивание серваков и прочие рутинные задачи сильно тормозят работу, решил написать небольшой Ansible Playbook и One-Shot bash скрипт для автоматического деплоя GoPhish 😃
 Features 🤩
 • Удаляет/заменяет заметные хэдеры (X-GoPhish-Contact → X-Contact-Address, X-GoPhish-Signature → X-Sender-Signature)

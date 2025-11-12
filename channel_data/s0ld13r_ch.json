@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-11-12T04:33:34.973587+00:00",
-  "messages_count": 33,
+  "last_update": "2025-11-12T07:27:15.968814+00:00",
+  "messages_count": 34,
   "messages": [
+    {
+      "id": "303",
+      "title": "Invoke-PowerChrome 🌐",
+      "text": "Invoke-PowerChrome 🌐\nInvoke-PowerChrome - скрипт для сбора и декрипта паролей из браузеров (Chrome, Edge) написанный на PowerShell. Хорошо подойдет для поиска дополнительных учеток, если уже есть права локального администратора 😃\nСам модуль будет интегрирован в PsMapExec для удаленного сбора паролей с хостов 😎\nA PowerShell script for decrypting Chromium-based browser passwords, supporting both v10 (DPAPI user) and Google Chrome v20 (App Bound Encryption) encrypted blobs.\nThe script dynamically interacts with Windows cryptographic APIs to decrypt passwords without external dependencies and can be executed in memory.\n💻 Github: https://github.com/The-Viper-One/Invoke-PowerChrome\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/303",
+      "pub_date": "2025-11-12T05:43:53+00:00"
+    },
     {
       "id": "302",
       "title": "gophish-auto v0.1 📥",
