@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 12 Nov 2025 09:39:04 +0000</lastBuildDate><item><title>Новая LPE через планировщик задач, интересно 🥴</title><link>https://t.me/ThreatHuntingFather/928</link><description>Новая LPE через планировщик задач, интересно 🥴
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 14 Nov 2025 04:15:51 +0000</lastBuildDate><item><title>Cobalt Strike, по прежнему используется?</title><link>https://t.me/ThreatHuntingFather/929</link><description>Cobalt Strike, по прежнему используется?
+Уже давно большинство аналитиков знает, как искать открытые веб-каталоги Cobalt-Strike: ошибки конфигурации (Options +Indexes, стандартные шаблоны Apache/Nginx, открытые статические директории) которые делают служебные C2-файлы публичными. База для изучения профилей, инфраструктуры и OPSEC-ошибок акторов.
+🧩В классике это артефакты
+1) Malleable C2 Profiles
+Файлы: .profile, malleable.profile, *.bak, *.old
+Даёт:
+URI и HTTP-маркеры
+User-Agent шаблоны
+sleep/jitter
+headers
+2) Beacon Payloads
+beacon.dll, beacon64.dll, update.bin, payload.bin
+Позволяют определить:
+stager / stageless
+PE-структуру (entropy, секции)
+наличие Reflective Loader (для stageless DLL)
+повторяющиеся сборочные паттерны
+3) Staging / Decoy файлы
+index.html, jquery.min.js, favicon.ico
+Даёт инфраструктурные отпечатки:
+аномальные размеры JS-файлов
+подменённые библиотеки (часто маскируются под jQuery)
+повторяющиеся шаблоны директорий у определённых групп
+4) Побочные инструменты акторов
+Скрипты, архивы, старые версии профилей.
+Используются для анализа OPSEC:
+переиспользование старых шаблонов
+одинаковые конфиги на разных C2
+оставленные debug-артефакты
+Однако:
+Hunt.io использовали движок AttackCapture для поиска Cobalt Strike: сначала подняли сотни связанных файлов через filename/malware-name поиск, затем через сертификатный pivot («Major Cobalt Strike») построили HuntSQL-правило и выявили 3 355 IP:port с CS-инфраструктурой. После обогащения данных оказалось, что 173 серверов(5,2%) имеют открытые директории. Один из таких C2 - 141.98.197[.]31:81 - содержал полный набор артефактов атаки: LNK, ELF-файл, PowerShell-скрипт с GZIP+XOR, загрузчик setup_office.exe и основной Master.exe beacon. Дальше разобрали оба пейлоада (EXE и PowerShell), показав, как инфраструктура, сертификаты и открытый каталог вместе раскрывают цепочку заражения от LNK до сетевого beaconing.
+Хотелось бы сравнить эти результаты с другими поисками.
+🔗 https://hunt.io/blog/guide-hunting-cobalt-strike-part-1-open-directories
+🦔 THF
+
+[Media: Фото]</description><pubDate>Fri, 14 Nov 2025 04:15:51 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_929</guid></item><item><title>Новая LPE через планировщик задач, интересно 🥴</title><link>https://t.me/ThreatHuntingFather/928</link><description>Новая LPE через планировщик задач, интересно 🥴
 https://t.me/P0x3k_1N73LL1G3NC3/196</description><pubDate>Wed, 12 Nov 2025 09:39:04 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_928</guid></item><item><title>ESET APT Activity Report Q2 2025–Q3 2025</title><link>https://t.me/ThreatHuntingFather/927</link><description>ESET APT Activity Report Q2 2025–Q3 2025
 An overview of the activities of selected APT groups investigated and analyzed by ESET Research in Q2 2025 and Q3 2025
 Что говорят в отчете:
