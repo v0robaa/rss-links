@@ -2,7 +2,7 @@ name: Update Feeds
 
 on:
   schedule:
-    - cron: '5 4,7,9,11,14,16 * * *'
+    - cron: '5 4,9,14,18 * * *' # 5 4,7,9,11,14,16 * * *
   workflow_dispatch:
 
 jobs:
