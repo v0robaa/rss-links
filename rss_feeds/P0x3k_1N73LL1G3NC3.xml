@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 12 Nov 2025 09:09:11 +0000</lastBuildDate><item><title>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks</title><link>https://t.me/P0x3k_1N73LL1G3NC3/196</link><description>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 14 Nov 2025 11:15:25 +0000</lastBuildDate><item><title>Fortinet 0day</title><link>https://t.me/P0x3k_1N73LL1G3NC3/197</link><description>Fortinet 0day
+An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.
+Blog: https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited-in-the-wild/
+Tweet: https://x.com/defusedcyber/status/1975242250373517373?s=46
+Dork:
+ZoomEye Dork: app="FortiWeb"
+HUNTER: product.name="FortiWeb"
+Shodan: http.title:FortiWeb
+Affected versions: below 8.0.2
+
+[Media: Видео]</description><pubDate>Fri, 14 Nov 2025 11:15:25 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_197</guid></item><item><title>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks</title><link>https://t.me/P0x3k_1N73LL1G3NC3/196</link><description>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks
 This is PoC for local privilege escalation vulnerability in \Microsoft\Windows\WindowsAI\Recall\PolicyConfiguration scheduled task.
 When this scheduled task is started the taskhostw.exe process whill try to open the C:\Users\%username%\AppData\Local\CoreAIPlatform.00\UKP directory and search for directories using the following filter: {????????-????-????-????-????????????}. If that directory is found it will be deleted without checking for symbolic links.
 As low privilege user by default can create directories in their own %LOCALAPPDATA% folder this leads to arbitrary folder delete in context of NT AUTHORITY\SYSTEM user.

@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-14T09:28:33.923280+00:00",
-  "messages_count": 34,
+  "last_update": "2025-11-14T14:26:30.966396+00:00",
+  "messages_count": 35,
   "messages": [
+    {
+      "id": "197",
+      "title": "Fortinet 0day",
+      "text": "Fortinet 0day\nAn auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.\nBlog: https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited-in-the-wild/\nTweet: https://x.com/defusedcyber/status/1975242250373517373?s=46\nDork:\nZoomEye Dork: app=\"FortiWeb\"\nHUNTER: product.name=\"FortiWeb\"\nShodan: http.title:FortiWeb\nAffected versions: below 8.0.2\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/197",
+      "pub_date": "2025-11-14T11:15:25+00:00"
+    },
     {
       "id": "196",
       "title": "CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks",
