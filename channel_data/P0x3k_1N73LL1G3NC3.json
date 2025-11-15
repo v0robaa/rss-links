@@ -1,12 +1,12 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-14T18:36:21.516580+00:00",
+  "last_update": "2025-11-15T04:28:55.831899+00:00",
   "messages_count": 35,
   "messages": [
     {
       "id": "197",
       "title": "Fortinet 0day",
-      "text": "Fortinet 0day\nAn auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.\nBlog: https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited-in-the-wild/\nTweet: https://x.com/defusedcyber/status/1975242250373517373?s=46\nDork:\nZoomEye Dork: app=\"FortiWeb\"\nHUNTER: product.name=\"FortiWeb\"\nShodan: http.title:FortiWeb\nAffected versions: below 8.0.2\n\n[Media: Видео]",
+      "text": "Fortinet 0day\nAn auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.\nBlog:\n• https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited-in-the-wild/\n• https://labs.watchtowr.com/when-the-impersonation-function-gets-used-to-impersonate-users-fortinet-fortiweb-auth-bypass/\nTweet: https://x.com/defusedcyber/status/1975242250373517373?s=46\nMetasploit module: https://github.com/rapid7/metasploit-framework/pull/20698\nDork:\nZoomEye Dork: app=\"FortiWeb\"\nHUNTER: product.name=\"FortiWeb\"\nShodan: http.title:FortiWeb\nAffected versions:\n• 8.0: <8.0.2\n• 7.6: <7.6.5\n• 7.4: <7.4.10\n• 7.2: <7.2.12\n• 7.0: <7.0.12\n• 6.4: <= 6.4.3\n• 6.3: <= 6.3.23\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/197",
       "pub_date": "2025-11-14T11:15:25+00:00"
     },
