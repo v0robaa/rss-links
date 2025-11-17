@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 15 Nov 2025 06:23:22 +0000</lastBuildDate><item><title>Message 936</title><link>https://t.me/ThreatHuntingFather/936</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 17 Nov 2025 11:23:56 +0000</lastBuildDate><item><title>🔍 TrustFall &amp; MystRodX:</title><link>https://t.me/ThreatHuntingFather/937</link><description>🔍 TrustFall &amp; MystRodX:
+Исследователи из АО ГТС на PROFIT.KZ представили разбор вредоносной активности, в которой фигурируют два связанных инструмента — TrustFall и MystRodX.
+Они отдельно отметили, что о схожем вредоносе ранее писали аналитики QAX (@RedDrip7), которые использовали название MystRodX для такого же типа атаки.
+По данным ГТС, это звенья одной кампании, наблюдавшейся в 2025 году.
+🧩 TrustFall (март 2025)
+Лёгкий backdoor: выполняет команды через /bin/sh, пакует данные (tar -czvf), удаляет следы (rm -rf) и отправляет информацию через POST на /news/data_form.php. Использует фиксированные C2 и позже — шифрование.
+🧩 MystRodX (август 2025)
+Более новая стадия той же линии: обновлённый модуль с другим форматом сетевого обмена, зашифрованным трафиком и расширенной C2-инфраструктурой. Распространялся через 139.84.156.79.
+🗃 IOC
+185.154.154.135
+213.159.64.6
+2.56.177.181
+37.221.125.201
+5.252.22.232
+45.14.244.110
+45.83.140.218
+154.196.162.76
+Сервер распространения
+139.84.156.79
+Конфигурационные файлы
+tcbipkrn.config  → 185.154.154.135
+baeeajzb.config  → 213.159.64.6
+URI
+/news/data_form.php
+Поведенческие признаки
+tar -czvf
+rm -rf
+/bin/sh -c "&lt;command&gt;"
+шифрование трафика (в поздней активности)
+смена канала управления
+🎯 APT группы:
+STA-2201
+Группа, впервые замеченная в 2019, работает по двум направлениям:
+• Initial Access Broker (первичный доступ)
+• Классическая APT-активность: кража и эксфильтрация данных
+Позже стала действовать более скрытно.
+Сектора: госуправление, телеком.
+STA-2404
+Продвинутая хакерская группа, образованная после структурных изменений (детали скрыты).
+Активность отслеживается с 2024 года (две волны).
+Сектора: госуправление, энергетика, здравоохранение, наука, транспорт, финансы.
+🔗 Ссылки
+• Презентация: https://profitday.kz/pdf/security2025/15.pdf
+• sts.kz
+• Запись выступления: https://www.youtube.com/live/8eueDGkMMlo?t=26395
+•https://blog.xlab.qianxin.com/mystrodx_covert_dual-mode_backdoor_en/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Mon, 17 Nov 2025 11:23:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_937</guid></item><item><title>Message 936</title><link>https://t.me/ThreatHuntingFather/936</link><description>
 
 [Media: Документ]</description><pubDate>Sat, 15 Nov 2025 06:23:22 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_936</guid></item><item><title>🐈Первая зафиксированная AI-оркестрируемая APT-кампания, направленная на кибершпионаж</title><link>https://t.me/ThreatHuntingFather/934</link><description>🐈Первая зафиксированная AI-оркестрируемая APT-кампания, направленная на кибершпионаж
 В сентябре 2025 года Anthropic обнаружила и пресекла первую документированную операцию кибершпионажа, выполненную преимущественно автономным ИИ.
