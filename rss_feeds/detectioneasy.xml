@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 08 Nov 2025 15:23:03 +0000</lastBuildDate><item><title>Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD</title><link>https://t.me/detectioneasy/289</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 18 Nov 2025 04:29:07 +0000</lastBuildDate><item><title>Давайте познакомимся с отчетом коллег из Esentire</title><link>https://t.me/detectioneasy/290</link><description>Всем привет! 💻✌️
+Давайте познакомимся с отчетом коллег из Esentire
+👨‍💻 Как это работает?
+ClickFix используется для доставки двух нагрузок: NetSupport Manager и Amatera Stealer
+🔤Для доставки используется ClickFix, цель которого установить RMM - NetSupport Manager и Amatera Stealer
+🔤В качестве нагрузки ClickFix используется mshta.exe, который запускает цепочку powershell-скриптов:
+powershell.exe -nopROfi -ExEC UnRESTrictED -WINDOWSTYI HiD -ENc &lt;BASE64&gt;
+powershell.exe -ENC &lt;BASE64&gt;
+powershell.exe -NoProfile -ExecutionPolicy Unrestricted -WindowStyle Hidden -Command &lt;COMMAND&gt;
+Исследователи отмечают использование строки AMSI_RESULT_NOT_DETECTED как ключа для bxor и последующую перезапись функции AmsiScanBuffer.
+🔤Результат цепочки скриптов - запуск .NET-based Downloader, который загружает, расшифровывает и запускает нагрузку с MediaFire
+🔤Перед установкой NetSupport проверяется, принадлежит ли компьютер к домену, и есть ли на нем интересные файлы
+🔭 Обнаружение и хантинг:
+🔤 отслеживаем резолв mediafire.com
+🔤 отслеживаем командлеты и строки в Powershell GetMappedFileName, clr.dll, ReadProcessMemory, PAGE_EXECUTE_READWRITE, WriteProcessMemory, AMSI_RESULT_NOT_DETECTED
+🔤 поиск белых адресов в командлетах powershell
+🔤 создание подозрительных ключей в HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Tue, 18 Nov 2025 04:29:07 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_290</guid></item><item><title>Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD</title><link>https://t.me/detectioneasy/289</link><description>Всем привет! 💻✌️
 Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD
 В этом отчете хакеры модифицировали поведение юнита systemd - rsyslog.service
 👨‍💻 Как это работает?

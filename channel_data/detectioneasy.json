@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-17T18:36:53.788427+00:00",
-  "messages_count": 31,
+  "last_update": "2025-11-18T04:31:02.413794+00:00",
+  "messages_count": 32,
   "messages": [
+    {
+      "id": "290",
+      "title": "Давайте познакомимся с отчетом коллег из Esentire",
+      "text": "Всем привет! 💻✌️\nДавайте познакомимся с отчетом коллег из Esentire\n👨‍💻 Как это работает?\nClickFix используется для доставки двух нагрузок: NetSupport Manager и Amatera Stealer\n🔤Для доставки используется ClickFix, цель которого установить RMM - NetSupport Manager и Amatera Stealer\n🔤В качестве нагрузки ClickFix используется mshta.exe, который запускает цепочку powershell-скриптов:\npowershell.exe -nopROfi -ExEC UnRESTrictED -WINDOWSTYI HiD -ENc <BASE64>\npowershell.exe -ENC <BASE64>\npowershell.exe -NoProfile -ExecutionPolicy Unrestricted -WindowStyle Hidden -Command <COMMAND>\nИсследователи отмечают использование строки AMSI_RESULT_NOT_DETECTED как ключа для bxor и последующую перезапись функции AmsiScanBuffer.\n🔤Результат цепочки скриптов - запуск .NET-based Downloader, который загружает, расшифровывает и запускает нагрузку с MediaFire\n🔤Перед установкой NetSupport проверяется, принадлежит ли компьютер к домену, и есть ли на нем интересные файлы\n🔭 Обнаружение и хантинг:\n🔤 отслеживаем резолв mediafire.com\n🔤 отслеживаем командлеты и строки в Powershell GetMappedFileName, clr.dll, ReadProcessMemory, PAGE_EXECUTE_READWRITE, WriteProcessMemory, AMSI_RESULT_NOT_DETECTED\n🔤 поиск белых адресов в командлетах powershell\n🔤 создание подозрительных ключей в HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU\n#detection@detectioneasy\n#ttp@detectioneasy\n\n[Media: Фото]",
+      "link": "https://t.me/detectioneasy/290",
+      "pub_date": "2025-11-18T04:29:07+00:00"
+    },
     {
       "id": "289",
       "title": "Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD",
