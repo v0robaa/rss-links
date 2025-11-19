@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-19T04:30:55.622226+00:00",
-  "messages_count": 41,
+  "last_update": "2025-11-19T09:29:38.275289+00:00",
+  "messages_count": 42,
   "messages": [
+    {
+      "id": "946",
+      "title": "Native Sysmon functionality coming to Windows",
+      "text": "Native Sysmon functionality coming to Windows\nNext year, you can enable the Sysmon functionality in Windows by using the Turn Windows feature on/off capability.\nThen install it with a single command via the Command Prompt or cmd.exe:\nsysmon -i\nThis command installs the driver and starts the Sysmon service immediately with the default configuration. Comprehensive documentation will be available at general availability.\n🔗https://techcommunity.microsoft.com/blog/windows-itpro-blog/native-sysmon-functionality-coming-to-windows/4468112\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/946",
+      "pub_date": "2025-11-19T04:45:13+00:00"
+    },
     {
       "id": "937",
       "title": "🔍 TrustFall & MystRodX:",

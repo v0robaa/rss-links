@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 18 Nov 2025 04:29:07 +0000</lastBuildDate><item><title>Давайте познакомимся с отчетом коллег из Esentire</title><link>https://t.me/detectioneasy/290</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 19 Nov 2025 05:31:46 +0000</lastBuildDate><item><title>У The DFIR Report вышел новый отчет по кампании Lynx Ransomware</title><link>https://t.me/detectioneasy/291</link><description>Всем привет! 💻✌️
+У The DFIR Report вышел новый отчет по кампании Lynx Ransomware
+👨‍💻 Как это работает?
+🔤Атака начинается со входа по RDP, при этом нет признаков брутфорса — злоумышленники используют уже валидные учётные данные
+🔤Через несколько минут после получения доступа атакующие авторизовались на контроллере домена, используя учетную запись администратора
+🔤Для закрепа создали несколько учетных записей и добавили их в админы домена
+🔤Злоумышленники провели разведку сети: обнаружили виртуализацию и сетевые шары
+🔤Чувствительные файлы были упакованы в архивы через 7-Zip и загружены на temp.sh
+🔤На серверах резервного копирования были удалены задания бекапов и запущен Lynx Ransomware
+Отдельно стоит отметить использование SoftPerfect Network Scanner
+🔭 Обнаружение и хантинг:
+🔤 добавление новых пользователей в привилегированные группы
+🔤 создание учеток с атрибутом USER_DONT_EXPIRE_PASSWORD
+🔤 создание файла netscan* - можем похантить в mft и usn
+🔤 авторизации с белых адресов, LogonType 10 и 3
+🔤 для YARA можем использовать строку из лицензионного файла SoftPerfect Network Scanner - network-scanner-license
+🔤 обнаружение файлов с именем delete.me, которые NetScan создает при проверке записи в сетевых шарах. можем похантить в mft и usn
+🔤запуск процесса с метаданными
+Product: Network Scanner
+Description: Application for scanning networks
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 19 Nov 2025 05:31:46 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_291</guid></item><item><title>Давайте познакомимся с отчетом коллег из Esentire</title><link>https://t.me/detectioneasy/290</link><description>Всем привет! 💻✌️
 Давайте познакомимся с отчетом коллег из Esentire
 👨‍💻 Как это работает?
 ClickFix используется для доставки двух нагрузок: NetSupport Manager и Amatera Stealer
