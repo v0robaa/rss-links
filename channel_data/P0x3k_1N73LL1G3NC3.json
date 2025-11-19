@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-19T09:29:30.843548+00:00",
-  "messages_count": 35,
+  "last_update": "2025-11-19T14:27:01.471099+00:00",
+  "messages_count": 36,
   "messages": [
+    {
+      "id": "198",
+      "title": "SAMDump",
+      "text": "SAMDump\nExtracts SAM and SYSTEM using Volume Shadow Copy (VSS) API with multiple exfiltration options and XOR obfuscation.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/198",
+      "pub_date": "2025-11-19T10:36:43+00:00"
+    },
     {
       "id": "197",
       "title": "Fortinet 0day",
