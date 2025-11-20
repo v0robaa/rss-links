@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 19 Nov 2025 04:45:13 +0000</lastBuildDate><item><title>Native Sysmon functionality coming to Windows</title><link>https://t.me/ThreatHuntingFather/946</link><description>Native Sysmon functionality coming to Windows
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 07:20:53 +0000</lastBuildDate><item><title>Боли выбора EDR и как их решать?</title><link>https://t.me/ThreatHuntingFather/947</link><description>Боли выбора EDR и как их решать?
+Все помнят проект https://www.edr-telemetry.com , который сравнивал, какую телеметрию реально собирают разные EDR-вендоры. Логичным шагом стало его развитие — теперь это переросло в более широкий ресурс по оценке EDR edr-comparison.com.
+На сайте появилась вводная статья для тех, кто пытается разобраться в современном рынке EDR и понять, как выбрать решение без опоры на маркетинг. Материал написан практиками и продолжает идеи Telemetry Project, где команда детально сравнивала глубину и качество собираемых событий.
+В статье предлагается простой и рабочий подход:
+Определить свои требования. Какие угрозы для вас актуальны, какие платформы нужно покрыть, какие процессы уже есть в SOC/IR.
+Сформировать критерии оценки. Смотреть на глубину телеметрии, корреляцию, удобство расследований, реактивные возможности — всё, что реально влияет на работу.
+Проводить PoC. Тестировать на реальных сценариях, а не на абстрактных демонстрациях. Оценивать не только детект, но и скорость расследования, удобство интерфейса, нагрузку агента.
+Оценивать не только продукт, но и вендора. Поддержка, частота обновлений, экосистема интеграций — важная часть эксплуатации.
+Смотреть на долгосрочную эксплуатацию. Трудозатраты команды, обучение, администрирование и полная стоимость владения часто решают больше, чем список фич.
+Базовый чеклист от меня:
+1. Real-time телеметрия
+Поддерживает ли решение постоянный стрим событий, а не периодический опрос.
+2. Доступ к “сырой” телеметрии
+Можно ли увидеть реальные события (process, file, registry), а не только “корреляционные выводы”.
+3. Глубина покрытия процессов
+Command line, PPID, родительские связи, spoof-защита, module loads.
+4. Сетевые события
+Outbound / inbound, порты, протоколы, связь с процессом, DNS, URL (если поддерживается).
+5. Файловая активность
+Создание, модификации, удаление, PE metadata, hash.
+6. Registry / persistence
+Мониторинг автозагрузки, сервисов, задач, WMI.
+7. Script visibility (AMSI/ScriptBlock)
+Есть ли видимость PowerShell, WSH, .NET reflection и др.
+8. Наличие телеметрии по инъекциям
+DLL injection, process hollowing, thread injection.
+9. Уровень контекста расследования
+Есть ли нормальное дерево процессов, pivot, timeline reconstruction.
+10. Скорость расследований
+Насколько быстро SOC может получить полную картину атаки.
+11. Инструменты реагирования
+Isolate host, kill process, remove file, block hash, remote shell.
+12. Массовые действия
+Можно ли выполнять response на десятки/сотни машин.
+13. Производительность агента
+Нагрузка на CPU/RAM/IO в реальной среде.
+14. Защита от tampering
+Anti-tamper, самозащита агента, защита ключевых процессов.
+15. Нативные интеграции
+SIEM, SOAR, ticketing, cloud-сервисы, threat-intel.
+16. API для автоматизации
+REST API / GraphQL / streaming API — для собственных пайплайнов и оркестрации.
+17. Поддержка detection-engineering
+Свои правила, поведенческие детекты, язык поиска (SQL/KQL-like).
+18. Качество PoC на реальных TTP
+Не демо, а реальные проверки: LOLBAS, persistence, lateral movement.
+19. Зрелость вендора
+Частота обновлений, скорость реакций, качество документации, SLA.
+20. Стоимость эксплуатации (TCO)
+Не только лицензия: люди, обучение, SIEM-интеграции, администрирование, накладные расходы
+Естественно платформа платная 🪙 всего за 297$ получаете доступ навсегда 😃
+🔗 https://www.edr-telemetry.com
+🔗 https://edr-comparison.com
+🦔THF</description><pubDate>Thu, 20 Nov 2025 07:20:53 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_947</guid></item><item><title>Native Sysmon functionality coming to Windows</title><link>https://t.me/ThreatHuntingFather/946</link><description>Native Sysmon functionality coming to Windows
 Next year, you can enable the Sysmon functionality in Windows by using the Turn Windows feature on/off capability.
 Then install it with a single command via the Command Prompt or cmd.exe:
 sysmon -i
