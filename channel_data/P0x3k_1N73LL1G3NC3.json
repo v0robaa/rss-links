@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-11-20T14:26:45.770521+00:00",
-  "messages_count": 36,
+  "last_update": "2025-11-20T18:37:49.935034+00:00",
+  "messages_count": 37,
   "messages": [
+    {
+      "id": "199",
+      "title": "Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    •...",
+      "text": "Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    • https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited…\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/199",
+      "pub_date": "2025-11-20T16:57:07+00:00"
+    },
     {
       "id": "198",
       "title": "SAMDump",
