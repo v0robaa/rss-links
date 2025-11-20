@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 19 Nov 2025 05:31:46 +0000</lastBuildDate><item><title>У The DFIR Report вышел новый отчет по кампании Lynx Ransomware</title><link>https://t.me/detectioneasy/291</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 12:58:49 +0000</lastBuildDate><item><title>Обнаружена уязвимость CVE-2025-11001 в 7-Zip, позволяющая записывать файлы в произвольные места системы при распаковке архивов. Активно используется в фишинговых кампаниях</title><link>https://t.me/detectioneasy/292</link><description>Всем привет! 💻✌️
+Обнаружена уязвимость CVE-2025-11001 в 7-Zip, позволяющая записывать файлы в произвольные места системы при распаковке архивов. Активно используется в фишинговых кампаниях
+👨‍💻 Давайте посмотрим как работает:
+🔤Злоумышленник создает специальный архив с символической ссылкой
+🔤При распаковке 7-Zip создает ссылку на произвольную директорию (например, C:\Windows\System32)
+🔤Файлы из архива записываются по пути ссылки, а не в папку архива (все файлы расположенные в папке с именем симлинка)
+🔤Пользователь увидит остальные файлы (не расположенные в папке с именем симлинка)
+🔭 Обнаружение:
+🔤 обнаруживаем создание файлов процессом 7z*.exe, в подозрительных путях C:\Windows\, С:\Users\*\AppData\, C:\Program Files*\ и с опасными расширениями
+🔤 анализируем несоответствие путей, отслеживаем создание файлов с разными путями одним процессом 7z*.exe
+Можем брать,например, второй элемент списка из путей и сравнивать их
+p.s. оба правила будут фолсить, дополнительно можем проверять, что у архива есть ADS с ZoneId, и если проведена инвентаризация - версию 7z
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 12:58:49 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_292</guid></item><item><title>У The DFIR Report вышел новый отчет по кампании Lynx Ransomware</title><link>https://t.me/detectioneasy/291</link><description>Всем привет! 💻✌️
 У The DFIR Report вышел новый отчет по кампании Lynx Ransomware
 👨‍💻 Как это работает?
 🔤Атака начинается со входа по RDP, при этом нет признаков брутфорса — злоумышленники используют уже валидные учётные данные

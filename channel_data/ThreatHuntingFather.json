@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-20T09:28:01.225167+00:00",
-  "messages_count": 43,
+  "last_update": "2025-11-20T14:26:53.438508+00:00",
+  "messages_count": 44,
   "messages": [
+    {
+      "id": "948",
+      "title": "🔍 APT31: новые инструменты",
+      "text": "🔍 APT31: новые инструменты\nPT ESC зафиксировала в атаках следующий набор инструментов, каждый из которых выполнял свой характерный тип работы в инфраструктуре жертвы:\n• LocalPlugx - DLL sideloading, VMProtect, работа в режиме сервера, внедрение в winlogon.exe/msiexec.exe/wksprt.exe/explorer.exe, кейлоггер (ntuser.dat.LOG1/LOG2).\n• CloudSorcerer - двухмодульный бэкдор, DLL sideloading + VMProtect, расшифровка шеллкода XOR, запуск в системных процессах, получение токенов из облачных источников, работа с облачными C2: Yandex, Microsoft Graph, Dropbox.\n• AufTime - Linux-бэкдор на WolfSSL, shared memory для контроля единственности, маскировка под системные процессы, TLS-канал, набор команд около 20 (файлы, reverse-shell, sh-exec, SOCKS5-proxy).\n• COFFProxy - бэкдор для BOF/Coffloader-нагрузок, три C2, AES сообщения, фильтр по рабочим часам, режим bind, туннелирование, повышении привилегий; Go-версия L12.1a с подкомандами bash/Mkdir/Rename/Copy.\n• VtChatter - DLL NVIDIADEBUG.dll, запуск каждые 2 часа, использование комментариев на VirusTotal как двусторонний C2 (Base64 + RC4), выполнение команд через pipes.\n• CloudyLoader - mskeyptotect.exe + BugSplatRc64.dll + try, DLL sideloading, VmProtect, direct syscalls (ZwAllocate/ZwWrite/ZwResumeThread), Reflective Loader и доставка Cobalt Strike Beacon с GitHub Range1992.\n• OneDriveDoor - sideloading через Seting.exe, RC4-зашифрованный шеллкод, внедрение в winrshost.exe, использует OneDrive как файловую командную систему, плагин-модуль для выполнения cmd-команд через API/COM.\n• YaLeak - .NET-утилита эксфильтрации в Yandex Disk, рекурсивный обход директории, загрузка через API /upload, удаление файлов на стороне жертвы.\nAPT31 сочетает свои бэкдоры с легитимными инструментами (devtunnel.exe, Tailscale, Impacket, SharpChrome, Advanced IP Scanner), скрытыми задачами планировщика и длительным присутствием в сети.\nПочитать подробнее PTsecurity:\n🔗 https://ptsecurity.com/research/pt-esc-threat-intelligence/striking-panda-attacks-apt31-today/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/948",
+      "pub_date": "2025-11-20T11:29:37+00:00"
+    },
     {
       "id": "947",
       "title": "Боли выбора EDR и как их решать?",

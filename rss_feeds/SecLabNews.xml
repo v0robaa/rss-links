@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 09:10:38 +0000</lastBuildDate><item><title>📄 В 7-Zip нашли уязвимость, которую уже используют хакеры</title><link>https://t.me/SecLabNews/17158</link><description>📄 В 7-Zip нашли уязвимость, которую уже используют хакеры
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 13:01:01 +0000</lastBuildDate><item><title>😼 Эпилог CyberCamp 2025 — 21 ноября</title><link>https://t.me/SecLabNews/17159</link><description>😼 Эпилог CyberCamp 2025 — 21 ноября
+Приглашаем на финальный эфир CyberCamp 2025. С 14:30 до 18:00 разберем 4 самых обсуждаемых задания киберучений, подведем итоги и разыграем мерч.
+В программе:
+⚡️разборы заданий от авторов;
+⚡️статистика по докладам и заданиям;
+⚡️обратная связь и планы.
+Разборы киберучений:
+➡️«Горький коммит» — расследуем подозрительную активность приложения в DevCrashGame.
+➡️NightCall* — компрометация разработчика AEGIS Wallet Tech.
+➡️«Политик аналитик» — анализ политик UserGate NGFW и WAF.
+➡️To My Curious Programmer** — что пошло не так при использовании MCP и локальных моделей.
+Эфир будет на сайте кэмпа
+Ведущие из команды CyberCamp — Полина Корнеева и Кира Шиянова.
+*Ночной звонок
+**Моему пытливому программисту
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 13:01:01 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17159</guid></item><item><title>📄 В 7-Zip нашли уязвимость, которую уже используют хакеры</title><link>https://t.me/SecLabNews/17158</link><description>📄 В 7-Zip нашли уязвимость, которую уже используют хакеры
 В архиваторе 7-Zip выявлена уязвимость CVE-2025-11001, и NHS England Digital подтверждает, что она уже используется в атаках. Проблема актуальна для Windows и связана с ошибками обработки символьных ссылок внутри ZIP. Некорректная логика позволяет перенаправлять доступ к файлам в нежелательные каталоги, создавая условия для выполнения команд в рамках сервисной учетной записи.
 Недостаток был закрыт в версии 25.00, вышедшей в июле 2025 года. Исследователи из GMO Flatt Security вместе с ИИ аудитором Такуми сообщают, что именно их анализ помог обнаружить и описать проблему. Параллельно в обновление вошел патч для CVE-2025-11002, также связанной с манипуляциями символьными ссылками.
 По словам NHS England Digital, атаки уже фиксируются, однако детали пока ограничены. Известно, что существуют рабочие PoC. Исследователь Доминек уточняет, что выполнение команд возможно при запуске кода от расширенной учетной записи или в режиме разработчика Windows. Подробности о целевых группах отсутствуют.

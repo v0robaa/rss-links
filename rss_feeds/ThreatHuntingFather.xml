@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 07:20:53 +0000</lastBuildDate><item><title>Боли выбора EDR и как их решать?</title><link>https://t.me/ThreatHuntingFather/947</link><description>Боли выбора EDR и как их решать?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 11:29:37 +0000</lastBuildDate><item><title>🔍 APT31: новые инструменты</title><link>https://t.me/ThreatHuntingFather/948</link><description>🔍 APT31: новые инструменты
+PT ESC зафиксировала в атаках следующий набор инструментов, каждый из которых выполнял свой характерный тип работы в инфраструктуре жертвы:
+• LocalPlugx - DLL sideloading, VMProtect, работа в режиме сервера, внедрение в winlogon.exe/msiexec.exe/wksprt.exe/explorer.exe, кейлоггер (ntuser.dat.LOG1/LOG2).
+• CloudSorcerer - двухмодульный бэкдор, DLL sideloading + VMProtect, расшифровка шеллкода XOR, запуск в системных процессах, получение токенов из облачных источников, работа с облачными C2: Yandex, Microsoft Graph, Dropbox.
+• AufTime - Linux-бэкдор на WolfSSL, shared memory для контроля единственности, маскировка под системные процессы, TLS-канал, набор команд около 20 (файлы, reverse-shell, sh-exec, SOCKS5-proxy).
+• COFFProxy - бэкдор для BOF/Coffloader-нагрузок, три C2, AES сообщения, фильтр по рабочим часам, режим bind, туннелирование, повышении привилегий; Go-версия L12.1a с подкомандами bash/Mkdir/Rename/Copy.
+• VtChatter - DLL NVIDIADEBUG.dll, запуск каждые 2 часа, использование комментариев на VirusTotal как двусторонний C2 (Base64 + RC4), выполнение команд через pipes.
+• CloudyLoader - mskeyptotect.exe + BugSplatRc64.dll + try, DLL sideloading, VmProtect, direct syscalls (ZwAllocate/ZwWrite/ZwResumeThread), Reflective Loader и доставка Cobalt Strike Beacon с GitHub Range1992.
+• OneDriveDoor - sideloading через Seting.exe, RC4-зашифрованный шеллкод, внедрение в winrshost.exe, использует OneDrive как файловую командную систему, плагин-модуль для выполнения cmd-команд через API/COM.
+• YaLeak - .NET-утилита эксфильтрации в Yandex Disk, рекурсивный обход директории, загрузка через API /upload, удаление файлов на стороне жертвы.
+APT31 сочетает свои бэкдоры с легитимными инструментами (devtunnel.exe, Tailscale, Impacket, SharpChrome, Advanced IP Scanner), скрытыми задачами планировщика и длительным присутствием в сети.
+Почитать подробнее PTsecurity:
+🔗 https://ptsecurity.com/research/pt-esc-threat-intelligence/striking-panda-attacks-apt31-today/
+🦔THF
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 11:29:37 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_948</guid></item><item><title>Боли выбора EDR и как их решать?</title><link>https://t.me/ThreatHuntingFather/947</link><description>Боли выбора EDR и как их решать?
 Все помнят проект https://www.edr-telemetry.com , который сравнивал, какую телеметрию реально собирают разные EDR-вендоры. Логичным шагом стало его развитие — теперь это переросло в более широкий ресурс по оценке EDR edr-comparison.com.
 На сайте появилась вводная статья для тех, кто пытается разобраться в современном рынке EDR и понять, как выбрать решение без опоры на маркетинг. Материал написан практиками и продолжает идеи Telemetry Project, где команда детально сравнивала глубину и качество собираемых событий.
 В статье предлагается простой и рабочий подход:

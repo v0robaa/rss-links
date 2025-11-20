@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 18 Nov 2025 09:17:42 +0000</lastBuildDate><item><title>Выступаем на SOC FORUM 2025 🎤</title><link>https://t.me/ptescalator/544</link><description>Выступаем на SOC FORUM 2025 🎤
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 09:34:21 +0000</lastBuildDate><item><title>APT31. Атаки разящей панды 🐼</title><link>https://t.me/ptescalator/545</link><description>APT31. Атаки разящей панды 🐼
+С 2024 по 2025 год российские IT-компании, работающие как подрядчики и интеграторы решений для государственных органов, столкнулись с серией хорошо продуманных и ловко реализованных целевых атак, что позволяло злоумышленникам долго оставаться необнаруженными.
+В процессе расследования инцидентов за этот промежуток времени нам удалось связать некоторые атаки с группой APT31, нацеленной в основном на промышленный шпионаж и кражу интеллектуальной собственности. Группа маскирует свои инструменты под легитимное программное обеспечение. Еще одной характерной особенностью ее поведения — использование легитимных сервисов для создания двустороннего канала связи с ВПО.
+🥷 О тактиках и техниках группы, а также ее уникальных инструментах можно прочитать в нашем блоге.
+#TI #APT #DFIR #malware
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 09:34:21 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_545</guid></item><item><title>Выступаем на SOC FORUM 2025 🎤</title><link>https://t.me/ptescalator/544</link><description>Выступаем на SOC FORUM 2025 🎤
 Если вы здесь — заходите, а если нет — смотрите онлайн. Вот наша программа на ближайшие дни:
 ➡️ 18 ноября
 • 13:15, зал №3. Денис Гойденко, руководитель департамента комплексного реагирования на угрозы PT ESC, представит результаты расследований инцидентов ИБ за 2025 год. Он поделится обширной статистикой по типам атак, использованным методам и целям хакеров.
