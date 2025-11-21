@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-21T14:25:43.715758+00:00",
-  "messages_count": 44,
+  "last_update": "2025-11-21T18:33:55.933076+00:00",
+  "messages_count": 45,
   "messages": [
+    {
+      "id": "957",
+      "title": "🛡 PublicGuard - защита ваших сервисов от публичных сканеров.",
+      "text": "🛡 PublicGuard - защита ваших сервисов от публичных сканеров.\nПроект блокирует IP‑адреса популярных Threat Intelligence платформ и сервисов сбора данных (Shodan, Censys, ZoomEye, FOFA, BinaryEdge и др.), чтобы ваши тестовые и dev‑окружения случайно не оказались в их базах.\n⚙️ Простая установка одной командой:\ncurl -fsSL https://raw.githubusercontent.com/cleverg0d/PublicGuard/main/block_scanners.sh | sudo bash\n🔗 Репозиторий: github.com/cleverg0d/PublicGuard\nPS. Сделал по мотивам https://t.me/s0ld13r_ch/313 только улучшил до ванлайнера и дополнил список блокировки. Бонусом проверяется банальная безопасность SSH.\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/957",
+      "pub_date": "2025-11-21T17:15:52+00:00"
+    },
     {
       "id": "948",
       "title": "🔍 APT31: новые инструменты",

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 11:29:37 +0000</lastBuildDate><item><title>🔍 APT31: новые инструменты</title><link>https://t.me/ThreatHuntingFather/948</link><description>🔍 APT31: новые инструменты
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 21 Nov 2025 17:15:52 +0000</lastBuildDate><item><title>🛡 PublicGuard - защита ваших сервисов от публичных сканеров.</title><link>https://t.me/ThreatHuntingFather/957</link><description>🛡 PublicGuard - защита ваших сервисов от публичных сканеров.
+Проект блокирует IP‑адреса популярных Threat Intelligence платформ и сервисов сбора данных (Shodan, Censys, ZoomEye, FOFA, BinaryEdge и др.), чтобы ваши тестовые и dev‑окружения случайно не оказались в их базах.
+⚙️ Простая установка одной командой:
+curl -fsSL https://raw.githubusercontent.com/cleverg0d/PublicGuard/main/block_scanners.sh | sudo bash
+🔗 Репозиторий: github.com/cleverg0d/PublicGuard
+PS. Сделал по мотивам https://t.me/s0ld13r_ch/313 только улучшил до ванлайнера и дополнил список блокировки. Бонусом проверяется банальная безопасность SSH.
+
+[Media: Фото]</description><pubDate>Fri, 21 Nov 2025 17:15:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_957</guid></item><item><title>🔍 APT31: новые инструменты</title><link>https://t.me/ThreatHuntingFather/948</link><description>🔍 APT31: новые инструменты
 PT ESC зафиксировала в атаках следующий набор инструментов, каждый из которых выполнял свой характерный тип работы в инфраструктуре жертвы:
 • LocalPlugx - DLL sideloading, VMProtect, работа в режиме сервера, внедрение в winlogon.exe/msiexec.exe/wksprt.exe/explorer.exe, кейлоггер (ntuser.dat.LOG1/LOG2).
 • CloudSorcerer - двухмодульный бэкдор, DLL sideloading + VMProtect, расшифровка шеллкода XOR, запуск в системных процессах, получение токенов из облачных источников, работа с облачными C2: Yandex, Microsoft Graph, Dropbox.

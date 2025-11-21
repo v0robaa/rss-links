@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-11-21T14:25:55.914917+00:00",
-  "messages_count": 36,
+  "last_update": "2025-11-21T18:34:08.541949+00:00",
+  "messages_count": 37,
   "messages": [
+    {
+      "id": "547",
+      "title": "Message 547",
+      "text": "",
+      "link": "https://t.me/ptescalator/547",
+      "pub_date": "2025-11-21T18:06:14+00:00"
+    },
     {
       "id": "546",
       "title": "PrevedNetMedved 🐻",
