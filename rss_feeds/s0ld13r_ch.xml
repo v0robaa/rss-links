@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 20 Nov 2025 09:06:55 +0000</lastBuildDate><item><title>IT-FEST CTF 2025 🔥</title><link>https://t.me/s0ld13r_ch/314</link><description>IT-FEST CTF 2025 🔥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sat, 22 Nov 2025 15:58:05 +0000</lastBuildDate><item><title>🚨 CVE-2025-41115 (Grafana Enterprise, CVSS 10.0). Коротко: SCIM включен → риск захвата админки. Обновиться немедленно.</title><link>https://t.me/s0ld13r_ch/315</link><description>🚨 CVE-2025-41115 (Grafana Enterprise, CVSS 10.0). Коротко: SCIM включен → риск захвата админки. Обновиться немедленно.
+Уязвимость в SCIM provisioning - можно подменить externalId и войти под любым пользователем, включая админа.
+Затронуты: Grafana Enterprise 12.0.0-12.2.1
+Фикс: обновиться до 12.0.6 / 12.1.3 / 12.2.1 (patched) / 12.3.0
+✅ Чеклист:
+1 Проверить, включен ли SCIM (enableSCIM, user_sync_enabled).
+2 Если не нужен - отключить.
+3 Срочно обновить Grafana.
+4 Мониторить журналы и входы.
+PoC: GitHub — Blackash-CVE-2025-41115
+
+[Media: Фото]</description><pubDate>Sat, 22 Nov 2025 15:58:05 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_315</guid></item><item><title>IT-FEST CTF 2025 🔥</title><link>https://t.me/s0ld13r_ch/314</link><description>IT-FEST CTF 2025 🔥
 Регистрация
 🧢 s0ld13r
 

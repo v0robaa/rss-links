@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-22T14:21:57.519698+00:00",
-  "messages_count": 46,
+  "last_update": "2025-11-22T18:34:10.048357+00:00",
+  "messages_count": 47,
   "messages": [
+    {
+      "id": "959",
+      "title": "VirusTotal CLI Tool 💻",
+      "text": "VirusTotal CLI Tool 💻\nA fast, modern and user-friendly command-line interface for interacting with the VirusTotal v3 API.\nDesigned for security researchers, malware analysts, and DFIR / SOC workflows — directly from the terminal. Scan files/URLs, fetch intelligence for domains and IPs, inspect account quotas, and self-update with a single command.\nFeatures\n✅ API Key Management\nvt setup --apikey <API_KEY>: Save your VirusTotal API key.\nvt key show: View your saved API key.\nvt key remove [--force]: Remove your API key with confirmation bypass.\n✅ File Operations\nScan files (vt file scan <path>).\nRetrieve reports (vt file report <hash>).\nRequest rescan (vt file rescan <hash>).\nSupports large files (>32MB) using VirusTotal upload URLs.\n✅ URL Analysis\nScan URLs (vt url scan <url>).\nRetrieve URL reports (vt url report <url_or_base64>).\n✅ Domain & IP Intelligence\nQuery domains (vt domain report <domain_name>).\nQuery IP addresses (vt ip report <ip_address>).\n✅ User Account Information\nvt account info: Get account details (email, API key, quotas, privileges).\n✅ Analysis Lookup\nvt analysis <id>: Retrieve analysis details by ID.\n✅ Automatic Updates\nvt update: Check for the latest version and update the CLI automatically.\nHandles Git detection and Python dependencies.\n✅ Cross-Platform Support\nWorks on Linux (Debian/Ubuntu/Kali/Arch) and Windows (PowerShell).\n🔗 https://github.com/Soumyo001/VirusTotal-CLI\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/959",
+      "pub_date": "2025-11-22T17:22:32+00:00"
+    },
     {
       "id": "958",
       "title": "🧩 ESXi IR Guide — реально годная штука",

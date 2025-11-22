@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-11-22T14:21:52.488796+00:00",
-  "messages_count": 37,
+  "last_update": "2025-11-22T18:34:05.263204+00:00",
+  "messages_count": 38,
   "messages": [
+    {
+      "id": "315",
+      "title": "🚨 CVE-2025-41115 (Grafana Enterprise, CVSS 10.0). Коротко: SCIM включен → риск захвата админки. Обновиться немедленно.",
+      "text": "🚨 CVE-2025-41115 (Grafana Enterprise, CVSS 10.0). Коротко: SCIM включен → риск захвата админки. Обновиться немедленно.\nУязвимость в SCIM provisioning - можно подменить externalId и войти под любым пользователем, включая админа.\nЗатронуты: Grafana Enterprise 12.0.0-12.2.1\nФикс: обновиться до 12.0.6 / 12.1.3 / 12.2.1 (patched) / 12.3.0\n✅ Чеклист:\n1 Проверить, включен ли SCIM (enableSCIM, user_sync_enabled).\n2 Если не нужен - отключить.\n3 Срочно обновить Grafana.\n4 Мониторить журналы и входы.\nPoC: GitHub — Blackash-CVE-2025-41115\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/315",
+      "pub_date": "2025-11-22T15:58:05+00:00"
+    },
     {
       "id": "314",
       "title": "IT-FEST CTF 2025 🔥",
