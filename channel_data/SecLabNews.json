@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2025-11-24T04:38:40.145448+00:00",
-  "messages_count": 94,
+  "last_update": "2025-11-24T09:32:45.531073+00:00",
+  "messages_count": 95,
   "messages": [
+    {
+      "id": "17172",
+      "title": "Message 17172",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/SecLabNews/17172",
+      "pub_date": "2025-11-24T07:40:44+00:00"
+    },
     {
       "id": "17171",
       "title": "🧟США строят киберконвейер: ИИ-агенты будут взламывать сотни целей одновременно",
