@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sun, 23 Nov 2025 10:09:22 +0000</lastBuildDate><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager</title><link>https://t.me/detectioneasy/293</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 24 Nov 2025 20:16:27 +0000</lastBuildDate><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager</title><link>https://t.me/detectioneasy/294</link><description>Всем привет! 💻✌️
+Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager
+🔭 Обнаружение:
+🔤 для работы создается служба Client32 с файлом *\NetSupport\NetSupport Manager\client32.exe
+🔤 отслеживаем создание процессов с метаданными
+Product: NetSupport Remote Control
+Company: NetSupport Ltd
+🔤 можем похантить файлы NSM.LIC и NSM.ini
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Mon, 24 Nov 2025 20:16:27 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_294</guid></item><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager</title><link>https://t.me/detectioneasy/293</link><description>Всем привет! 💻✌️
 Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager
 👨‍💻 Разберём интересный момент: в LNK вынесены проверки на выполнение в песочнице. Обычно такие проверки встречаются на 2–3 этапе, но здесь они — сразу в LNK.
 🔤 жертвам рассылаются письма с вложенными архивами

@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-24T18:38:35.200596+00:00",
-  "messages_count": 35,
+  "last_update": "2025-11-25T04:32:41.953002+00:00",
+  "messages_count": 36,
   "messages": [
+    {
+      "id": "294",
+      "title": "Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager",
+      "text": "Всем привет! 💻✌️\nКоллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager\n🔭 Обнаружение:\n🔤 для работы создается служба Client32 с файлом *\\NetSupport\\NetSupport Manager\\client32.exe\n🔤 отслеживаем создание процессов с метаданными\nProduct: NetSupport Remote Control\nCompany: NetSupport Ltd\n🔤 можем похантить файлы NSM.LIC и NSM.ini\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/294",
+      "pub_date": "2025-11-24T20:16:27+00:00"
+    },
     {
       "id": "293",
       "title": "Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager",
