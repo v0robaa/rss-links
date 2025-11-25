@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 22 Nov 2025 17:22:32 +0000</lastBuildDate><item><title>VirusTotal CLI Tool 💻</title><link>https://t.me/ThreatHuntingFather/959</link><description>VirusTotal CLI Tool 💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 25 Nov 2025 10:34:53 +0000</lastBuildDate><item><title>ToddyCat что нового?</title><link>https://t.me/ThreatHuntingFather/960</link><description>ToddyCat что нового?
+1️⃣ PowerShell-стилер TomBerBil (серверная версия)
+Запуск: powershell -exec bypass c:\programdata\ip445.ps1
+Работает с DC, собирает браузерные артефакты удалённо по SMB:
+Chrome/Edge → Login Data, Local State, Cookies, History
+Firefox → key3.db, key4.db, logins.json, signons.sqlite
+Дополнительно копирует DPAPI master keys:
+AppData\Roaming\Microsoft\Protect
+AppData\Local\Microsoft\Credentials
+→ Позволяет офлайн расшифровать все браузерные данные.
+2️⃣ Кража Outlook-почты через OST
+TCSectorCopy (xCopy.exe)
+C++ тул, копирует .ost поблочно, открывая диск как device → обход блокировок Outlook/OS.
+Использование:
+xCopy.exe C:\Users\&lt;user&gt;\AppData\Local\Microsoft\Outlook\&lt;mail&gt;.ost &lt;mail&gt;.ost2
+XstExport.exe
+Экспорт писем/вложений из .ost2 → HTML/RTF/TXT
+XstExport.exe -e &lt;mail&gt;.ost2
+3️⃣ Кража M365 OAuth-токенов из памяти
+SharpTokenFinder
+Ищет процессы: OUTLOOK, TEAMS, WINWORD, EXCEL, ONEDRIVE…
+Делает минидампы (MiniDumpWriteDump), ищет JWT-токен по паттерну:
+"eyJ0eX[a-zA-Z0-9\._\-]+"
+Если операции блочили, использовали: ProcDump
+procdump64.exe -accepteula -ma OUTLOOK.exe
+rar.exe a %temp%\dmp.rar &lt;dump&gt;
+→ Токен извлекается оффлайн и используется для доступа к почте из облака.
+Что детектировать
+SMB-доступ:
+User Data\Default\Login Data, Cookies, Local State, Firefox Profiles\*\key4.db.
+Доступ к Windows\System32\Microsoft\Protect (DPAPI).
+Outlook:
+Любое чтение *.ost чужими процессами (Event 4663).
+Sysmon ID 9 (RawAccessRead) → TCSectorCopy.
+ProcDump:
+procdump с параметрами -ma + строками outlook / teams / excel / onedrive.
+Почитайте полное исследование, там больше написано👇🏻
+🔗 https://securelist.com/toddycat-apt-steals-email-data-from-outlook/118044/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Tue, 25 Nov 2025 10:34:53 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_960</guid></item><item><title>VirusTotal CLI Tool 💻</title><link>https://t.me/ThreatHuntingFather/959</link><description>VirusTotal CLI Tool 💻
 A fast, modern and user-friendly command-line interface for interacting with the VirusTotal v3 API.
 Designed for security researchers, malware analysts, and DFIR / SOC workflows — directly from the terminal. Scan files/URLs, fetch intelligence for domains and IPs, inspect account quotas, and self-update with a single command.
 Features

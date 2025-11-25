@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-25T09:30:41.875662+00:00",
-  "messages_count": 47,
+  "last_update": "2025-11-25T14:27:33.553658+00:00",
+  "messages_count": 48,
   "messages": [
+    {
+      "id": "960",
+      "title": "ToddyCat что нового?",
+      "text": "ToddyCat что нового?\n1️⃣ PowerShell-стилер TomBerBil (серверная версия)\nЗапуск: powershell -exec bypass c:\\programdata\\ip445.ps1\nРаботает с DC, собирает браузерные артефакты удалённо по SMB:\nChrome/Edge → Login Data, Local State, Cookies, History\nFirefox → key3.db, key4.db, logins.json, signons.sqlite\nДополнительно копирует DPAPI master keys:\nAppData\\Roaming\\Microsoft\\Protect\nAppData\\Local\\Microsoft\\Credentials\n→ Позволяет офлайн расшифровать все браузерные данные.\n2️⃣ Кража Outlook-почты через OST\nTCSectorCopy (xCopy.exe)\nC++ тул, копирует .ost поблочно, открывая диск как device → обход блокировок Outlook/OS.\nИспользование:\nxCopy.exe C:\\Users\\<user>\\AppData\\Local\\Microsoft\\Outlook\\<mail>.ost <mail>.ost2\nXstExport.exe\nЭкспорт писем/вложений из .ost2 → HTML/RTF/TXT\nXstExport.exe -e <mail>.ost2\n3️⃣ Кража M365 OAuth-токенов из памяти\nSharpTokenFinder\nИщет процессы: OUTLOOK, TEAMS, WINWORD, EXCEL, ONEDRIVE…\nДелает минидампы (MiniDumpWriteDump), ищет JWT-токен по паттерну:\n\"eyJ0eX[a-zA-Z0-9\\._\\-]+\"\nЕсли операции блочили, использовали: ProcDump\nprocdump64.exe -accepteula -ma OUTLOOK.exe\nrar.exe a %temp%\\dmp.rar <dump>\n→ Токен извлекается оффлайн и используется для доступа к почте из облака.\nЧто детектировать\nSMB-доступ:\nUser Data\\Default\\Login Data, Cookies, Local State, Firefox Profiles\\*\\key4.db.\nДоступ к Windows\\System32\\Microsoft\\Protect (DPAPI).\nOutlook:\nЛюбое чтение *.ost чужими процессами (Event 4663).\nSysmon ID 9 (RawAccessRead) → TCSectorCopy.\nProcDump:\nprocdump с параметрами -ma + строками outlook / teams / excel / onedrive.\nПочитайте полное исследование, там больше написано👇🏻\n🔗 https://securelist.com/toddycat-apt-steals-email-data-from-outlook/118044/\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/960",
+      "pub_date": "2025-11-25T10:34:53+00:00"
+    },
     {
       "id": "959",
       "title": "VirusTotal CLI Tool 💻",
