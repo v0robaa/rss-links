@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 24 Nov 2025 20:16:27 +0000</lastBuildDate><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager</title><link>https://t.me/detectioneasy/294</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 26 Nov 2025 13:54:16 +0000</lastBuildDate><item><title>PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows</title><link>https://t.me/detectioneasy/295</link><description>Всем привет! 💻✌️
+PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows
+Для создания скрытой задачи необходимо удалить файл XML и ключ реестра SD (SecurityDescriptor) соответствующей задачи:
+reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\TEST_TASK" /v SD /f
+del %SystemRoot%\System32\Tasks\TEST_TASK /f
+🔭 Обнаружение :
+🔤 следим за удалением ключей реестра
+ProviderName="Microsoft-Windows-Sysmon" and EventId = 12 and EventType = "DeleteValue" and TargetObject = "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\*\SD"
+p.s. следует проверить конфиги средств сбора событий и DACL на куст реестра
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 26 Nov 2025 13:54:16 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_295</guid></item><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager</title><link>https://t.me/detectioneasy/294</link><description>Всем привет! 💻✌️
 Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager
 🔭 Обнаружение:
 🔤 для работы создается служба Client32 с файлом *\NetSupport\NetSupport Manager\client32.exe

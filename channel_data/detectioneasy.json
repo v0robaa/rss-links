@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-26T09:30:28.108108+00:00",
-  "messages_count": 36,
+  "last_update": "2025-11-26T14:28:17.644238+00:00",
+  "messages_count": 37,
   "messages": [
+    {
+      "id": "295",
+      "title": "PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows",
+      "text": "Всем привет! 💻✌️\nPT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows\nДля создания скрытой задачи необходимо удалить файл XML и ключ реестра SD (SecurityDescriptor) соответствующей задачи:\nreg delete \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\TEST_TASK\" /v SD /f\ndel %SystemRoot%\\System32\\Tasks\\TEST_TASK /f\n🔭 Обнаружение :\n🔤 следим за удалением ключей реестра\nProviderName=\"Microsoft-Windows-Sysmon\" and EventId = 12 and EventType = \"DeleteValue\" and TargetObject = \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\*\\SD\"\np.s. следует проверить конфиги средств сбора событий и DACL на куст реестра\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/295",
+      "pub_date": "2025-11-26T13:54:16+00:00"
+    },
     {
       "id": "294",
       "title": "Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager",
