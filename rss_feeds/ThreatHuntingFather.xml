@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 25 Nov 2025 10:34:53 +0000</lastBuildDate><item><title>ToddyCat что нового?</title><link>https://t.me/ThreatHuntingFather/960</link><description>ToddyCat что нового?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 26 Nov 2025 06:43:11 +0000</lastBuildDate><item><title>«Атаки с использованием Copilot» двусмысленно?)</title><link>https://t.me/ThreatHuntingFather/962</link><description>«Атаки с использованием Copilot» двусмысленно?)
+Интересный момент: даже «стенд-алон» версия Microsoft Copilot, установленная через Store, вносит заметный объём системных артефактов — от новых URI-протоколов до модулей для Shell, Edge и File Explorer. Фактически Copilot привносит в Windows целую подсистему с собственным набором COM-объектов, ключей в HKCU/HKLM и десятками вспомогательных DLL, включая интеграцию с WindowsAI, Paint и Taskbar-handlers.
+Показательно, насколько глубоко Copilot встраивается в ОС:
+отдельный ms-copilot:// protocol handler;
+ключи управления доступностью в HKCU...\Shell\Copilot;
+точки управления через WindowsAI (DisableCocreator, DisableImageCreator и т.д.);
+целевые модули для File Explorer, Edge и Taskbar;
+отдельный loader Copilot.exe и перегруженная функциональностью Copilot.dll.
+К чему это приведет? К развитию новых TTP)
+Ждём вкусных ресерчей☺️
+✈️ https://t.me/vxunderground
+🔗 https://x.com/vxunderground/status/1992173372474577065
+🦔THF</description><pubDate>Wed, 26 Nov 2025 06:43:11 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_962</guid></item><item><title>ToddyCat что нового?</title><link>https://t.me/ThreatHuntingFather/960</link><description>ToddyCat что нового?
 1️⃣ PowerShell-стилер TomBerBil (серверная версия)
 Запуск: powershell -exec bypass c:\programdata\ip445.ps1
 Работает с DC, собирает браузерные артефакты удалённо по SMB:

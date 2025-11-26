@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-26T04:33:01.140606+00:00",
-  "messages_count": 48,
+  "last_update": "2025-11-26T09:30:18.076847+00:00",
+  "messages_count": 49,
   "messages": [
+    {
+      "id": "962",
+      "title": "«Атаки с использованием Copilot» двусмысленно?)",
+      "text": "«Атаки с использованием Copilot» двусмысленно?)\nИнтересный момент: даже «стенд-алон» версия Microsoft Copilot, установленная через Store, вносит заметный объём системных артефактов — от новых URI-протоколов до модулей для Shell, Edge и File Explorer. Фактически Copilot привносит в Windows целую подсистему с собственным набором COM-объектов, ключей в HKCU/HKLM и десятками вспомогательных DLL, включая интеграцию с WindowsAI, Paint и Taskbar-handlers.\nПоказательно, насколько глубоко Copilot встраивается в ОС:\nотдельный ms-copilot:// protocol handler;\nключи управления доступностью в HKCU...\\Shell\\Copilot;\nточки управления через WindowsAI (DisableCocreator, DisableImageCreator и т.д.);\nцелевые модули для File Explorer, Edge и Taskbar;\nотдельный loader Copilot.exe и перегруженная функциональностью Copilot.dll.\nК чему это приведет? К развитию новых TTP)\nЖдём вкусных ресерчей☺️\n✈️ https://t.me/vxunderground\n🔗 https://x.com/vxunderground/status/1992173372474577065\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/962",
+      "pub_date": "2025-11-26T06:43:11+00:00"
+    },
     {
       "id": "960",
       "title": "ToddyCat что нового?",
