@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 26 Nov 2025 06:43:11 +0000</lastBuildDate><item><title>«Атаки с использованием Copilot» двусмысленно?)</title><link>https://t.me/ThreatHuntingFather/962</link><description>«Атаки с использованием Copilot» двусмысленно?)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 06:59:37 +0000</lastBuildDate><item><title>🔻 Bloody Wolf: целевая кампания в Центральной Азии</title><link>https://t.me/ThreatHuntingFather/963</link><description>🔻 Bloody Wolf: целевая кампания в Центральной Азии
+Bloody Wolf - группа, активная с конца 2023 года. В 2025-м она проводит фишинговые атаки на организации Центральной Азии, используя поддельные документы Минюстов и загрузку легитимного NetSupport RAT через JAR-файлы.
+Формат атаки
+1) Первичный доступ
+Цели: организации Кыргызстана, позднее - Узбекистана (ранее BI.ZONE описывала активность в Казахстане и России).
+Атака начинается с фишингового письма с вложенным PDF, стилизованным под документ Министерства юстиции.
+В PDF содержатся ссылки вида «материалы дела».
+Жертве предлагается установить Java с «официального сайта», якобы необходимую для открытия документов.
+2) Загрузка JAR-файла
+По ссылке в PDF скачивается вредоносный JAR.
+В фазе Узбекистана инфраструктура была геоограниченной:
+запросы из-за пределов страны - редирект на легитимный data[.]egov[.]uz;
+запросы изнутри страны - автоматическая загрузка JAR.
+JAR-файлы компактны, собраны под Java 8, не содержат обфускации и включают один класс.
+Основные функции JAR-лоадера:
+загрузка компонентов NetSupport Manager по HTTP с встроенного URL;
+добавление NetSupport в автозапуск;
+создание задания в планировщике;
+отображение поддельных сообщений об ошибке, связанных с названием JAR;
+ведение счётчика запусков (значение по умолчанию - 3), сохранённого в
+%USERPROFILE%\Documents\…\*.dat.
+3) Механизмы закрепления (Persistence)
+JAR создаёт три отдельных механизма автозапуска NetSupport:
+Папка автозагрузки
+BAT-файл в:
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+запускает основной исполняемый файл.
+Раздел HKCU\Run
+Пример команды:
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run ^
+/v [ключ] /t REG_SZ /d "[путь к EXE]"
+Планировщик задач
+schtasks /TN "[имя]" /TR "[путь к EXE]" /SC ONLOGON /RL LIMITED /F /RU "%USERNAME%"
+Инструменты и инфраструктура
+Ранее Bloody Wolf использовала STRRAT, затем перешла на легитимный NetSupport RAT.
+В рассматриваемой кампании применяется старая версия NetSupport Manager (2013 года) с лицензиями, найденными в сети.
+Group-IB выявила наличие кастомного генератора JAR-файлов: множество вариантов с различными путями установки, ключами реестра, задачами и текстами ошибок.
+Конфигурация JAR хранится во внутренних переменных файла.
+Артефакты на хосте
+Запуск JAR-файлов пользователями.
+Наличие файлов:
+%USERPROFILE%\Documents\…\*.dat
+Появление BAT-файлов в:
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+Новые ключи в:
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+с путями к исполняемым файлам в Documents\….
+Новые задания планировщика с параметрами ONLOGON, RL LIMITED.
+Старые бинарные файлы NetSupport (по хэшам в IoC).
+Сетевые индикаторы
+HTTP-запросы к доменам:
+minjust-kg[.]com, esf-kg[.]com, audit-kg[.]com,
+ach-uz[.]com, uzaudit[.]com, soliq-uz[.]com,
+hisobot-uz[.]com, ttbbaits[.]com, nac-ac[.]com,
+hgame33[.]com, ravinads[.]com.
+Поведение геофильтрации:
+внешние IP → легитимный data[.]egov[.]uz;
+локальные IP → загрузка JAR.
+🔗 https://www.group-ib.com/ru/blog/bloody-wolf/
+🦔THF
+
+[Media: Фото]</description><pubDate>Thu, 27 Nov 2025 06:59:37 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_963</guid></item><item><title>«Атаки с использованием Copilot» двусмысленно?)</title><link>https://t.me/ThreatHuntingFather/962</link><description>«Атаки с использованием Copilot» двусмысленно?)
 Интересный момент: даже «стенд-алон» версия Microsoft Copilot, установленная через Store, вносит заметный объём системных артефактов — от новых URI-протоколов до модулей для Shell, Edge и File Explorer. Фактически Copilot привносит в Windows целую подсистему с собственным набором COM-объектов, ключей в HKCU/HKLM и десятками вспомогательных DLL, включая интеграцию с WindowsAI, Paint и Taskbar-handlers.
 Показательно, насколько глубоко Copilot встраивается в ОС:
 отдельный ms-copilot:// protocol handler;
