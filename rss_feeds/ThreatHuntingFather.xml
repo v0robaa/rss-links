@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 06:59:37 +0000</lastBuildDate><item><title>🔻 Bloody Wolf: целевая кампания в Центральной Азии</title><link>https://t.me/ThreatHuntingFather/963</link><description>🔻 Bloody Wolf: целевая кампания в Центральной Азии
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 16:35:12 +0000</lastBuildDate><item><title>Short-лист для детекта удаления драйвера через smss.exe</title><link>https://t.me/ThreatHuntingFather/970</link><description>Short-лист для детекта удаления драйвера через smss.exe
+1) Изменения ключа ExistingPageFiles (кроме pagefile.sys)
+По документации в ExistingPageFiles должен находиться путь только к существующим файлам подкачки. Любое значение, где отсутствует pagefile.sys или указан другой .sys, особенно относящийся к AV/EDR, -  повод для охоты. Опасные признаки: путь к .sys в ProgramData, Temp, Public и других нетипичных директориях.
+2) NT-путь вида ??\C:\… в ExistingPageFiles
+В официальных примерах путь к pagefile задаётся форматом ??\C:\pagefile.sys. Появление ??\C:, указывающего на другой .sys, означает аномалию. Это отклонение от «нормальной» строки, ожидаемой системой.
+3) Кто модифицирует ExistingPageFiles
+Ключ обычно меняется через интерфейс системных настроек или штатные системные утилиты. Охотиться нужно на изменения от процессов cmd.exe, powershell.exe, reg.exe, а также любых пользовательских или непрофильных сервисов. Если сторонний процесс вносит кастомное значение — это индикатор атаки.
+4) Связка: изменение → перезагрузка → действия smss.exe
+Документация Windows фиксирует, что smss.exe читает ExistingPageFiles на старте системы. Последовательность, которая является сильным сигналом атаки:
+- изменение ключа на путь к чужому .sys;
+- быстрый перезапуск хоста;
+- исчезновение или попытка удаления указанного файла .sys после загрузки.
+Любое участие smss.exe в операциях над .sys, не относящимся к pagefile, — важный индикатор.
+5) Аномалии конфигурации pagefile
+Корректные значения ExistingPageFiles и PagingFiles строго определены. В официальных гайдах Microsoft указано, что ошибочные значения ведут к проблемам с pagefile и фиксируются в этих ключах. Ищем:
+- множество странных строк;
+- ссылки на несуществующие файлы;
+- любые .sys вне стандартного контекста pagefile;
+- остатки предыдущих попыток техники, которые остались в ключе после ребута.
+В целом если есть EDR, то до его смерти может быть найдете заветное изменение 😃
+🔗https://t.me/byteoflife/177 сам не проверял, но пишут что работает☺️
+🦔 THF</description><pubDate>Thu, 27 Nov 2025 16:35:12 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_970</guid></item><item><title>🔻 Bloody Wolf: целевая кампания в Центральной Азии</title><link>https://t.me/ThreatHuntingFather/963</link><description>🔻 Bloody Wolf: целевая кампания в Центральной Азии
 Bloody Wolf - группа, активная с конца 2023 года. В 2025-м она проводит фишинговые атаки на организации Центральной Азии, используя поддельные документы Минюстов и загрузку легитимного NetSupport RAT через JAR-файлы.
 Формат атаки
 1) Первичный доступ
