@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Fri, 21 Nov 2025 14:23:13 +0000</lastBuildDate><item><title>🔵 Настало время опубликовать пост с веб-ссылками на доклады и разбором одного задания с CyberCamp 2025. Максимальная концентрация DFIR. 🍩</title><link>https://t.me/gardendetective/43</link><description>#cybercamp2025 #DFIR #task
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 12:40:08 +0000</lastBuildDate><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
+🔵 Последние 2 доклада в этом году (🍩):
+1️⃣ Доклад «После Red Team можно не бояться атак... Не бояться атак, да?» [SOC Forum 2025].
+➖ Совместно с Олегом Скулкиным (ссылка на TG-канал).
+Описание доклада:
+В докладе рассмотрим различия в тактиках, техниках и процедурах (TTP) между реальными хакерскими группировками и командами Pentest / Red Team. Эта разница объясняется тем, что профили атак, используемые в пентестах, часто не отражают реальные угрозы.
+Доклад поможет понять, как отличать инциденты, связанные с реальными атаками, от имитаций, а также почему реагирование на «пентестовые» сценарии могут привести к ложному чувству защищенности.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления (будет позже).
+2️⃣ Доклад «Горшочек, не вари! Истории про Web3-ловушки» [ZeroNights 2025].
+➖ Совместно с Николаем Микрюковым (@Nmikryukov).
+Описание доклада:
+Смарт-контракты, которые только притворяются уязвимыми... В нашем докладе мы рассмотрим существующие и ранее применявшиеся в Web3 трюки децентрализованных ханипотов.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления (будет позже).
+
+[Media: Фото]</description><pubDate>Thu, 27 Nov 2025 12:40:08 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_44</guid></item><item><title>🔵 Настало время опубликовать пост с веб-ссылками на доклады и разбором одного задания с CyberCamp 2025. Максимальная концентрация DFIR. 🍩</title><link>https://t.me/gardendetective/43</link><description>#cybercamp2025 #DFIR #task
 🔵 Настало время опубликовать пост с веб-ссылками на доклады и разбором одного задания с CyberCamp 2025. Максимальная концентрация DFIR. 🍩
 1️⃣ Доклад «Первое правило CI/CD-клуба: компрометация начинается с доверия».
 *️⃣Ссылка на презентацию;
