@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-11-28T14:27:12.606634+00:00",
-  "messages_count": 40,
+  "last_update": "2025-11-28T18:36:02.654570+00:00",
+  "messages_count": 41,
   "messages": [
+    {
+      "id": "560",
+      "title": "Message 560",
+      "text": "",
+      "link": "https://t.me/ptescalator/560",
+      "pub_date": "2025-11-28T15:27:00+00:00"
+    },
     {
       "id": "559",
       "title": "Как молот грома помешал клешням безмолвия 🦀",
