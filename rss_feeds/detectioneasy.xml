@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 19:55:25 +0000</lastBuildDate><item><title>Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании</title><link>https://t.me/detectioneasy/296</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 28 Nov 2025 18:47:34 +0000</lastBuildDate><item><title>Разберём интересную технику загрузки кода в память explorer.exe</title><link>https://t.me/detectioneasy/297</link><description>Всем привет! 💻✌️
+Разберём интересную технику загрузки кода в память explorer.exe
+Атакующие могут злоупотреблять функционалом изменения иконок для директорий. Иконки хранятся в DLL, и если в DLL есть функция DllMain, то при выборе изображения код из этой функции будет выполнен.
+🔭 Обнаружение:
+🔤 Обнаружение может быть достаточно шумным. Рекомендуется отслеживать загрузку любых библиотек из директорий пользователя. Правило можно улучшить, добавив корреляцию со временем создания загружаемого файла
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "explorer.exe"
+and ImageLoaded startswith "C:\Users\" and Signed="false"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 28 Nov 2025 18:47:34 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_297</guid></item><item><title>Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании</title><link>https://t.me/detectioneasy/296</link><description>Всем привет! 💻✌️
 Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании
 👨‍💻 Посмотрим TTP:
 🔤Атака начинается с ClickFix (имитируется обновление системы: синий экран с процентами - всё привычно), в результате чего запускается удалённый скрипт через mshta.exe
