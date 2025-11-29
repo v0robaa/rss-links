@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-11-29T04:30:54.269263+00:00",
-  "messages_count": 52,
+  "last_update": "2025-11-29T09:26:06.569065+00:00",
+  "messages_count": 53,
   "messages": [
+    {
+      "id": "976",
+      "title": "Triage Collector 🦖",
+      "text": "Triage Collector 🦖\nA ready-to-run Velociraptor package that collects the evidence responders need without extra setup.\ntriage.zip provides an out-of-the-box Velociraptor triage collector for Windows, pre-configured for rapid and effective incident response. The project is intended for responders who need a reliable offline collector without the hassle of building from scratch.\n🔗 https://triage.zip/\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/976",
+      "pub_date": "2025-11-29T05:25:15+00:00"
+    },
     {
       "id": "971",
       "title": "Tomiris new tools",

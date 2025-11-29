@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 28 Nov 2025 12:46:29 +0000</lastBuildDate><item><title>Tomiris new tools</title><link>https://t.me/ThreatHuntingFather/971</link><description>Tomiris new tools
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 29 Nov 2025 05:25:15 +0000</lastBuildDate><item><title>Triage Collector 🦖</title><link>https://t.me/ThreatHuntingFather/976</link><description>Triage Collector 🦖
+A ready-to-run Velociraptor package that collects the evidence responders need without extra setup.
+triage.zip provides an out-of-the-box Velociraptor triage collector for Windows, pre-configured for rapid and effective incident response. The project is intended for responders who need a reliable offline collector without the hassle of building from scratch.
+🔗 https://triage.zip/
+🦔 THF</description><pubDate>Sat, 29 Nov 2025 05:25:15 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_976</guid></item><item><title>Tomiris new tools</title><link>https://t.me/ThreatHuntingFather/971</link><description>Tomiris new tools
 Tomiris перешли на мульти-язычные импланты и массовый уход в публичные C2 (Telegram/Discord). Первичный доступ - фишинг с длинными русскими именами .doc&lt;пробелы&gt;.exe. Дальше - ReverseShell → Havoc/AdaptixC2.
 Формат атаки
 Фишинг-архив → EXE с маскировкой под документ → reverse shell (C/C++/Rust/Go/Python/PowerShell) → загрузка AdaptixC2/Havoc → дальнейшая эксплуатация.
