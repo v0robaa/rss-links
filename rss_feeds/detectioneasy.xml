@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 28 Nov 2025 18:47:34 +0000</lastBuildDate><item><title>Разберём интересную технику загрузки кода в память explorer.exe</title><link>https://t.me/detectioneasy/297</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 29 Nov 2025 19:57:21 +0000</lastBuildDate><item><title>Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии</title><link>https://t.me/detectioneasy/298</link><description>Всем привет! 💻✌️
+Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии
+👨‍💻 Посмотрим TTP:
+🔤Жертва получает вредоносное письмо с PDF-приманкой, оформление которой имитирует документы Министерства юстиции
+🔤Пользователь открывает PDF и ему предлагается перейти по ссылке для загрузки материалов
+🔤Перейдя по ссылке пользователь загружает вредоносный JAR-файл, цель которого - установка NetSupport RAT
+🔤Для закрепа в JAR-файле предусмотрены 3 варианта:
+bat в %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+@echo off
+cd /d "C:\Users\Bruno\Documents\[Something]"
+start "" "[net support executable].exe"
+автозапуск в реестре
+cmd.exe /c reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v [something] /t REG_SZ /d "[path to net support executable]"
+создание задачи
+cmd.exe /c schtasks /TN "[Something]" /TR "[path to netsupport executable]" /SC ONLOGON /RL LIMITED /F /RU "%USERNAME%"
+Видим, что используется нестареющая классика)
+🔭 Обнаружение:
+🔤 следим за запуском javaw.exe c jar-файлами из пользовательских директорий
+javaw.exe -jar C:\Users\Administrator\Downloads
+Ndec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a
+\dec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a.jar
+🔤 отслеживаем запуск дочерних процессов от родителя javaw.exe
+🔤 можем похантить jar-файлы, у которых есть ADS - Zone.Identifier
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 29 Nov 2025 19:57:21 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_298</guid></item><item><title>Разберём интересную технику загрузки кода в память explorer.exe</title><link>https://t.me/detectioneasy/297</link><description>Всем привет! 💻✌️
 Разберём интересную технику загрузки кода в память explorer.exe
 Атакующие могут злоупотреблять функционалом изменения иконок для директорий. Иконки хранятся в DLL, и если в DLL есть функция DllMain, то при выборе изображения код из этой функции будет выполнен.
 🔭 Обнаружение:

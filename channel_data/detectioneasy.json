@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-11-29T18:35:08.031632+00:00",
-  "messages_count": 39,
+  "last_update": "2025-11-30T04:38:09.724485+00:00",
+  "messages_count": 40,
   "messages": [
+    {
+      "id": "298",
+      "title": "Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии",
+      "text": "Всем привет! 💻✌️\nГруппировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии\n👨‍💻 Посмотрим TTP:\n🔤Жертва получает вредоносное письмо с PDF-приманкой, оформление которой имитирует документы Министерства юстиции\n🔤Пользователь открывает PDF и ему предлагается перейти по ссылке для загрузки материалов\n🔤Перейдя по ссылке пользователь загружает вредоносный JAR-файл, цель которого - установка NetSupport RAT\n🔤Для закрепа в JAR-файле предусмотрены 3 варианта:\nbat в %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\n@echo off\ncd /d \"C:\\Users\\Bruno\\Documents\\[Something]\"\nstart \"\" \"[net support executable].exe\"\nавтозапуск в реестре\ncmd.exe /c reg add HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v [something] /t REG_SZ /d \"[path to net support executable]\"\nсоздание задачи\ncmd.exe /c schtasks /TN \"[Something]\" /TR \"[path to netsupport executable]\" /SC ONLOGON /RL LIMITED /F /RU \"%USERNAME%\"\nВидим, что используется нестареющая классика)\n🔭 Обнаружение:\n🔤 следим за запуском javaw.exe c jar-файлами из пользовательских директорий\njavaw.exe -jar C:\\Users\\Administrator\\Downloads\nNdec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a\n\\dec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a.jar\n🔤 отслеживаем запуск дочерних процессов от родителя javaw.exe\n🔤 можем похантить jar-файлы, у которых есть ADS - Zone.Identifier\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/298",
+      "pub_date": "2025-11-29T19:57:21+00:00"
+    },
     {
       "id": "297",
       "title": "Разберём интересную технику загрузки кода в память explorer.exe",
