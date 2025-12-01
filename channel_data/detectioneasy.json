@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-12-01T04:53:50.434630+00:00",
-  "messages_count": 40,
+  "last_update": "2025-12-01T09:35:57.288375+00:00",
+  "messages_count": 41,
   "messages": [
+    {
+      "id": "299",
+      "title": "Nextron Systems поделились TTP группировки Silver Fox",
+      "text": "Всем привет! 💻✌️\nNextron Systems поделились TTP группировки Silver Fox\nХакеры распространяли вредоносный инсталятор Telegram Desktop для установки ValleyRat, по средствам фишинга и рекламы\nСудя по картинке, применяется огромная цепочка процедур из 14 шагов\n👨‍💻 Посмотрим TTP:\n🔤Жертва запускает вредоносный инсталлятор Telegram\n🔤Малварь создает исключение в Windows Defender\n🔤В C:\\ProgramData\\WindowsData дропается защищенный паролем архив и переименованный двоичный файл 7-Zip\n🔤 Из архива извлекается исполняемый файл второго этапа men.exe (основной оркестратор) и настоящий инсталлятор Telegram\n🔤 В %public%\\WindowsData\\ вредоносный men.exe создает ряд бинарей: для bypass uac, уязвимый драйвер Nvidia для EDR Silencer,  vbe-файл для закрепа в задачи (WindowsPowerShell.WbemScripting.SWbemLocator) и еще один архив\n🔤Файлы последнего архива извлекаются в %public%\\WindowsData\\, и содержат уязвимый к dll sideloading исполняемый файл для запуска ValleyRat\nmen.exe изменяет список управления доступом для %PUBLIC%\\Documents\\WindowsData\\, чтобы администраторы не могли  удалять файлы и каталоги по этому пути.\n🔭 Для обнаружения nextron предложили несколько своих вариантов с sigma-правилами:\n🔤 создание файлов в C:\\ProgramData\\WindowsData\\\n🔤 добавление диска C: в исключение Windows Defender\n🔤 обнаружение запуска 7-Zip для извлечения защищенного архива\ntitle: Password Protected Compressed File Extraction Via 7-Zip\ndescription: Detects usage of 7zip utilities (7z.exe, 7za.exe and\n7zr.exe) to extract password protected zip files.\nlogsource:\ncategory: process_creation\nproduct: windows\ndetection:\nselection_img:\n- Description|contains: '7-Zip'\n- OriginalFileName:\n- '7za.exe'\nselection_password:\nCommandLine|contains|all:\n- ' -p'\n- ' x '\n- ' -o'\n- ' -y'\ncondition: all of selection_*\n🔤 создание и запуск подозрительных файлов exe,dll,sys,vbe в/из директории %PUBLIC%\n🔤 создание задачи с исполняемым файлом в директории %PUBLIC%\ntitle: Scheduled Task Creation With Command In Users Public Directory\ndescription: Detects creation of a scheduled task whose action command\npoints to \\Users\\Public\ndetection:\nselection:\nEventID: 4698\nTaskContent|contains:\n- '\\\\Users\\\\Public\\\\'\n- '\\\\\\\\Users\\\\\\\\Public\\\\\\\\'\ncondition: selection\n🔤 создание службы с исполняемым файлом в директории %PUBLIC%\ntitle: Service Creation In Users Public Directory\ndescription: Detects creation of a service running from \\Users\\Public\ndetection:\nselection:\nEventID: 4697\nServiceFileName|contains:\n- '\\\\Users\\\\Public\\\\'\n- '\\\\\\\\Users\\\\\\\\Public\\\\\\\\'\ncondition: selection\nследим за ключами реестра HKLM\\SYSTEM\\CurrentControlSet\\Services\\\n🔤 изменение прав доступа на файлы и директории в %PUBLIC%\n#detection@detectioneasy\n#ttp@detectioneasy\n\n[Media: Фото]",
+      "link": "https://t.me/detectioneasy/299",
+      "pub_date": "2025-12-01T08:45:03+00:00"
+    },
     {
       "id": "298",
       "title": "Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии",
