@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-01T14:29:31.101848+00:00",
-  "messages_count": 38,
+  "last_update": "2025-12-01T18:42:44.423427+00:00",
+  "messages_count": 39,
   "messages": [
+    {
+      "id": "201",
+      "title": "Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)",
+      "text": "Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)\nThis chain is a compelling case study of how chaining seemingly low-severity primitives can bridge the gap to full system compromise. A CRLF injection reads limited file, a conditional auth bypass, and a post-auth SQL injection—while individually limited, they become critical when chained together.\n• CVE-2024-50629: Synology BeeStation BST150-4T CRLF Injection Information Disclosure Vulnerability\n• CVE-2024-50631: This\nvulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Synology BeeStation BST150-4T devices. Authentication is required to exploit this vulnerability.\nExploit: https://github.com/kiddo-pwn/CVE-2024-50629_50631\nAFFECTED PRODUCTS:\nBeeStation BST150-4T\nTweet: https://x.com/kiddo_pwn/status/1995435316304588881?s=46\nSearch Query: service: “synology” tag: “NAS” title: DiskStation\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/201",
+      "pub_date": "2025-12-01T16:20:08+00:00"
+    },
     {
       "id": "200",
       "title": "🐾Meow",

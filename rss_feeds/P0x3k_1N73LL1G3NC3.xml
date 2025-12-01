@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 21 Nov 2025 09:15:19 +0000</lastBuildDate><item><title>🐾Meow</title><link>https://t.me/P0x3k_1N73LL1G3NC3/200</link><description>🐾Meow
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 01 Dec 2025 16:20:08 +0000</lastBuildDate><item><title>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/201</link><description>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)
+This chain is a compelling case study of how chaining seemingly low-severity primitives can bridge the gap to full system compromise. A CRLF injection reads limited file, a conditional auth bypass, and a post-auth SQL injection—while individually limited, they become critical when chained together.
+• CVE-2024-50629: Synology BeeStation BST150-4T CRLF Injection Information Disclosure Vulnerability
+• CVE-2024-50631: This
+vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Synology BeeStation BST150-4T devices. Authentication is required to exploit this vulnerability.
+Exploit: https://github.com/kiddo-pwn/CVE-2024-50629_50631
+AFFECTED PRODUCTS:
+BeeStation BST150-4T
+Tweet: https://x.com/kiddo_pwn/status/1995435316304588881?s=46
+Search Query: service: “synology” tag: “NAS” title: DiskStation
+
+[Media: Фото]</description><pubDate>Mon, 01 Dec 2025 16:20:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_201</guid></item><item><title>🐾Meow</title><link>https://t.me/P0x3k_1N73LL1G3NC3/200</link><description>🐾Meow
 
 [Media: Фото]</description><pubDate>Fri, 21 Nov 2025 09:15:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_200</guid></item><item><title>Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    •...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/199</link><description>Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    • https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited…
 
