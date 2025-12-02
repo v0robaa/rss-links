@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2025-12-01T18:42:59.065864+00:00",
-  "messages_count": 122,
+  "last_update": "2025-12-02T04:36:46.786033+00:00",
+  "messages_count": 123,
   "messages": [
+    {
+      "id": "17200",
+      "title": "Message 17200",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/SecLabNews/17200",
+      "pub_date": "2025-12-02T03:57:02+00:00"
+    },
     {
       "id": "17199",
       "title": "🇷🇺 Минцифры обяжет операторов перейти на отечественные USIM с 2026 года",
