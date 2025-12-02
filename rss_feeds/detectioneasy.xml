@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 01 Dec 2025 08:45:03 +0000</lastBuildDate><item><title>Nextron Systems поделились TTP группировки Silver Fox</title><link>https://t.me/detectioneasy/299</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 02 Dec 2025 10:49:23 +0000</lastBuildDate><item><title>Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google</title><link>https://t.me/detectioneasy/300</link><description>Всем привет! 💻✌️
+Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google
+👨‍💻 Как это работает?
+🔤На USB-накопители размещается ярлык USB Drive.lnk и скрытые папки sysvolume и USB Drive
+🔤LNK стартует VBS-скрипт из папки sysvolume (с именем вида u[6 цифр].vbs), который в свою очередь запускает BAT-файл с аналогичным именем из той же директории
+🔤BAT открывает для пользователя директорию USB Drive, в которой хранятся оригинальные файлы. Далее, проверяется наличие dat-файла в текущей директории, и файла C:\Windows&lt;SPACE&gt;\System32\printui.dll. Обращаем внимание на наличие пробела в пути Windows&lt;SPACE&gt;
+🔤Если C:\Windows&lt;SPACE&gt;\System32\printui.dll - отсутствует, то:
+🔤 в Windows Defender добавляется исключение C:\Windows&lt;SPACE&gt;\System32
+🔤 копирует легитимный C:\Windows\System32\printui.exe  в C:\Windows&lt;SPACE&gt;\System32
+🔤 копируется DAT-файл с USB-носителя  в C:\Windows&lt;SPACE&gt;\System32\printui.dll
+🔤 запускается C:\Windows&lt;SPACE&gt;\System32\printui.exe, который загрузит C:\Windows&lt;SPACE&gt;\System32\printui.dll
+🔤 вредоносная DLL регистрируется в службу DcomLaunch, запускает майнер XMRig в %SystemDirectory%\wsvcz и заражает другие съемные накопители
+🔭 Обнаружение:
+🔤 отслеживаем запуск опасных расширений со съемных накопителей
+🔤 отслеживаем запуск и создание файлов по маске \w?[0-9]{6}\.(vbs|dll|dat|bat)
+🔤 отслеживаем загрузку в память ImageLoaded = "*\printui.dll" and Signed="false"
+🔤 отслеживаем создание исключений в Windows Defender
+🔤 отслеживаем наличие пробелов в путях файлов \s\\
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 02 Dec 2025 10:49:23 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_300</guid></item><item><title>Nextron Systems поделились TTP группировки Silver Fox</title><link>https://t.me/detectioneasy/299</link><description>Всем привет! 💻✌️
 Nextron Systems поделились TTP группировки Silver Fox
 Хакеры распространяли вредоносный инсталятор Telegram Desktop для установки ValleyRat, по средствам фишинга и рекламы
 Судя по картинке, применяется огромная цепочка процедур из 14 шагов

@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-12-02T09:33:43.341965+00:00",
-  "messages_count": 41,
+  "last_update": "2025-12-02T14:30:05.720734+00:00",
+  "messages_count": 42,
   "messages": [
+    {
+      "id": "300",
+      "title": "Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google",
+      "text": "Всем привет! 💻✌️\nРаспространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google\n👨‍💻 Как это работает?\n🔤На USB-накопители размещается ярлык USB Drive.lnk и скрытые папки sysvolume и USB Drive\n🔤LNK стартует VBS-скрипт из папки sysvolume (с именем вида u[6 цифр].vbs), который в свою очередь запускает BAT-файл с аналогичным именем из той же директории\n🔤BAT открывает для пользователя директорию USB Drive, в которой хранятся оригинальные файлы. Далее, проверяется наличие dat-файла в текущей директории, и файла C:\\Windows<SPACE>\\System32\\printui.dll. Обращаем внимание на наличие пробела в пути Windows<SPACE>\n🔤Если C:\\Windows<SPACE>\\System32\\printui.dll - отсутствует, то:\n🔤 в Windows Defender добавляется исключение C:\\Windows<SPACE>\\System32\n🔤 копирует легитимный C:\\Windows\\System32\\printui.exe  в C:\\Windows<SPACE>\\System32\n🔤 копируется DAT-файл с USB-носителя  в C:\\Windows<SPACE>\\System32\\printui.dll\n🔤 запускается C:\\Windows<SPACE>\\System32\\printui.exe, который загрузит C:\\Windows<SPACE>\\System32\\printui.dll\n🔤 вредоносная DLL регистрируется в службу DcomLaunch, запускает майнер XMRig в %SystemDirectory%\\wsvcz и заражает другие съемные накопители\n🔭 Обнаружение:\n🔤 отслеживаем запуск опасных расширений со съемных накопителей\n🔤 отслеживаем запуск и создание файлов по маске \\w?[0-9]{6}\\.(vbs|dll|dat|bat)\n🔤 отслеживаем загрузку в память ImageLoaded = \"*\\printui.dll\" and Signed=\"false\"\n🔤 отслеживаем создание исключений в Windows Defender\n🔤 отслеживаем наличие пробелов в путях файлов \\s\\\\\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/300",
+      "pub_date": "2025-12-02T10:49:23+00:00"
+    },
     {
       "id": "299",
       "title": "Nextron Systems поделились TTP группировки Silver Fox",
