@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-02T04:36:39.720631+00:00",
-  "messages_count": 53,
+  "last_update": "2025-12-02T09:33:33.813101+00:00",
+  "messages_count": 55,
   "messages": [
+    {
+      "id": "977",
+      "title": "Одно из моих выступлений на SOC Forum в этом году было посвящено работе над этим блогом. В нем я рассказал о 20 самых запоминающихся техниках, которые я виде в публичных исследованиях киберугроз....",
+      "text": "Одно из моих выступлений на SOC Forum в этом году было посвящено работе над этим блогом. В нем я рассказал о 20 самых запоминающихся техниках, которые я виде в публичных исследованиях киберугроз. Делюсь с вами его записью!",
+      "link": "https://t.me/ThreatHuntingFather/977",
+      "pub_date": "2025-12-02T09:33:33.805845+00:00"
+    },
+    {
+      "id": "978",
+      "title": "Bind Link EDR Evasion: Folder Redirection on Windows 11",
+      "text": "Bind Link EDR Evasion: Folder Redirection on Windows 11\nThe Bind Link API enables Administrators to create transparent mappings from a virtual path to a backing path (local or remote). The Bind Link feature was introduced in Windows 11 and according to Microsoft it should be used to improve application compatibility by making files stored in a network share appear as local or in scenarios where an application requires files from a different location to appear in a new location without copying the files. It is possible to abuse the feature of bind links to force the redirection of the folder containing the EDR files to a folder that a threat actor has write access to perform evasion.\nФормат атаки\n• Windows 11 содержит Bind Link API - механизм прозрачного маппинга виртуального пути к физическому (локальному или сетевому).\n• PoC EDR-Redir (TwoSevenOneT) использует драйвер bindflt.sys, чтобы перенаправить каталог EDR в директорию с правом записи.\n• В результате создаётся «зеркало» EDR-папки, где можно менять файлы, удалять их, внедрять DLL или подставлять бинарь, который затем выполняется в контексте EDR.\n• Bind Link позволяет создать новую «родительскую» директорию для EDR, что визуально маскирует подмену.\n• Перенаправление каталогов создаёт копию структуры EDR в backing-папке (например, C:\\temp\\ipurple).\n• Злоумышленник может загрузить вредоносную DLL, имитирующую легитимный модуль EDR, для persistence / hijacking.\n• PoC использует стандартные API:\nCreateDirectoryW — создание прокси-папок,\nLoadLibraryW — загрузка bindfltapi.dll,\nВызовы BfSetupFilter / BfRemoveMapping — создание/удаление bind links.\nDetection\nThe technique of the folder redirection relies on the Bind Link API. Therefore, it is recommended to investigate if the implementation of the EDR supports monitoring of the bindflt driver that is used to perform the directory mapping. Alternatively, organizations should assess whether it is feasible to deploy Sysmon to enhance visibility about image load events. Correlation should be also used to validate if there are valid use cases in their environment that utilise the bindfltapi.dll to reduce the noise.\nПосмотрим будет ли использовать такую фичу APT😃\n🔗 https://ipurple.team/2025/12/01/bind-link-edr-tampering/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/978",
+      "pub_date": "2025-12-02T08:58:50+00:00"
+    },
     {
       "id": "976",
       "title": "Triage Collector 🦖",

@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 29 Nov 2025 05:25:15 +0000</lastBuildDate><item><title>Triage Collector 🦖</title><link>https://t.me/ThreatHuntingFather/976</link><description>Triage Collector 🦖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 02 Dec 2025 09:33:33 +0000</lastBuildDate><item><title>Bind Link EDR Evasion: Folder Redirection on Windows 11</title><link>https://t.me/ThreatHuntingFather/978</link><description>Bind Link EDR Evasion: Folder Redirection on Windows 11
+The Bind Link API enables Administrators to create transparent mappings from a virtual path to a backing path (local or remote). The Bind Link feature was introduced in Windows 11 and according to Microsoft it should be used to improve application compatibility by making files stored in a network share appear as local or in scenarios where an application requires files from a different location to appear in a new location without copying the files. It is possible to abuse the feature of bind links to force the redirection of the folder containing the EDR files to a folder that a threat actor has write access to perform evasion.
+Формат атаки
+• Windows 11 содержит Bind Link API - механизм прозрачного маппинга виртуального пути к физическому (локальному или сетевому).
+• PoC EDR-Redir (TwoSevenOneT) использует драйвер bindflt.sys, чтобы перенаправить каталог EDR в директорию с правом записи.
+• В результате создаётся «зеркало» EDR-папки, где можно менять файлы, удалять их, внедрять DLL или подставлять бинарь, который затем выполняется в контексте EDR.
+• Bind Link позволяет создать новую «родительскую» директорию для EDR, что визуально маскирует подмену.
+• Перенаправление каталогов создаёт копию структуры EDR в backing-папке (например, C:\temp\ipurple).
+• Злоумышленник может загрузить вредоносную DLL, имитирующую легитимный модуль EDR, для persistence / hijacking.
+• PoC использует стандартные API:
+CreateDirectoryW — создание прокси-папок,
+LoadLibraryW — загрузка bindfltapi.dll,
+Вызовы BfSetupFilter / BfRemoveMapping — создание/удаление bind links.
+Detection
+The technique of the folder redirection relies on the Bind Link API. Therefore, it is recommended to investigate if the implementation of the EDR supports monitoring of the bindflt driver that is used to perform the directory mapping. Alternatively, organizations should assess whether it is feasible to deploy Sysmon to enhance visibility about image load events. Correlation should be also used to validate if there are valid use cases in their environment that utilise the bindfltapi.dll to reduce the noise.
+Посмотрим будет ли использовать такую фичу APT😃
+🔗 https://ipurple.team/2025/12/01/bind-link-edr-tampering/
+🦔THF
+
+[Media: Фото]</description><pubDate>Tue, 02 Dec 2025 08:58:50 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_978</guid></item><item><title>Одно из моих выступлений на SOC Forum в этом году было посвящено работе над этим блогом. В нем я рассказал о 20 самых запоминающихся техниках, которые я виде в публичных исследованиях киберугроз....</title><link>https://t.me/ThreatHuntingFather/977</link><description>Одно из моих выступлений на SOC Forum в этом году было посвящено работе над этим блогом. В нем я рассказал о 20 самых запоминающихся техниках, которые я виде в публичных исследованиях киберугроз. Делюсь с вами его записью!</description><pubDate>Tue, 02 Dec 2025 09:33:33 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_977</guid></item><item><title>Triage Collector 🦖</title><link>https://t.me/ThreatHuntingFather/976</link><description>Triage Collector 🦖
 A ready-to-run Velociraptor package that collects the evidence responders need without extra setup.
 triage.zip provides an out-of-the-box Velociraptor triage collector for Windows, pre-configured for rapid and effective incident response. The project is intended for responders who need a reliable offline collector without the hassle of building from scratch.
 🔗 https://triage.zip/
