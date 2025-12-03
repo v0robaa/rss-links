@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 01 Dec 2025 16:20:08 +0000</lastBuildDate><item><title>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/201</link><description>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 02 Dec 2025 19:49:34 +0000</lastBuildDate><item><title>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/202</link><description>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation
+My initial testing was done on version 17.0.2045 (July 2025). In this post I describe my journey from installation to SYSTEM privileges.
+Exploit 1 - Allow any user to change the AV configuration
+Exploit 2 - LPE
+
+[Media: Видео]</description><pubDate>Tue, 02 Dec 2025 19:49:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_202</guid></item><item><title>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/201</link><description>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)
 This chain is a compelling case study of how chaining seemingly low-severity primitives can bridge the gap to full system compromise. A CRLF injection reads limited file, a conditional auth bypass, and a post-auth SQL injection—while individually limited, they become critical when chained together.
 • CVE-2024-50629: Synology BeeStation BST150-4T CRLF Injection Information Disclosure Vulnerability
 • CVE-2024-50631: This

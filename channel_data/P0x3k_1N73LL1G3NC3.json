@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-02T18:41:34.431679+00:00",
-  "messages_count": 39,
+  "last_update": "2025-12-03T04:34:23.101197+00:00",
+  "messages_count": 40,
   "messages": [
+    {
+      "id": "202",
+      "title": "K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation",
+      "text": "K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation\nMy initial testing was done on version 17.0.2045 (July 2025). In this post I describe my journey from installation to SYSTEM privileges.\nExploit 1 - Allow any user to change the AV configuration\nExploit 2 - LPE\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/202",
+      "pub_date": "2025-12-02T19:49:34+00:00"
+    },
     {
       "id": "201",
       "title": "Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)",
