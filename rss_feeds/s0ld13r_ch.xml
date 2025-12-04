@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 28 Nov 2025 12:50:28 +0000</lastBuildDate><item><title>Tomiris new tools</title><link>https://t.me/s0ld13r_ch/316</link><description>Tomiris new tools
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 18:27:02 +0000</lastBuildDate><item><title>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳</title><link>https://t.me/s0ld13r_ch/321</link><description>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳
+WARP PANDA (UNC5221) - china-nexus adversary специализирующийся на атаки на виртуальную инфраструктуру VMware ESXi/vSphere.
+В течение 2025 года CrowdStrike отслеживал деятельность группы и выявил новые цепочки атак с использованием кастомных имплантов Junction и GuestConduit, а также бекдора BRICKSTORM⌨️
+Что по арсеналу? ⚔️
+BRICKSTORM - Golang backdoor, маскирующийся под легитимные процессы vCenter. Общается через WebSockets/TLS, использует DoH для резолва C2 доменов, прячет C2 за Cloudflare Workers и Heroku. Умеет туннелировать трафик через vCenter/ESXi/VM, управлять файлами и сохранять персистентность даже после удаления.
+Junction - имплант для ESXi написанный на Go, работающий как поддельный сервис на порту 8090. Принимает команды через HTTP запросы, выполняет их, проксирует трафик и общается с гостевыми ВМ через VSOCK. Даёт оператору скрытый доступ и возможность проксировать трафик.
+GuestConduit - имплант внутри гостевой ВМ, слушающий VSOCK. Перенаправляет и зеркалит трафик между VM и гипервизором, работает с JSON-командами. Используется вместе с Junction для создания скрытых туннелей внутри виртуальной среды.
+Indicators of Compromise 🔍
+40db68331cb52dd3ffa0698144d1e6919779ff432e2e80c058e41f7b93cec042 (GuestConduit)
+88db1d63dbd18469136bf9980858eb5fc0d4e41902bf3e4a8e08d7b6896654ed (Junction)
+9a0e1b7a5f7793a8a5a62748b7aa4786d35fc38de607fb3bb8583ea2f7974806 (Junction)
+40992f53effc60f5e7edea632c48736ded9a2ca59fb4924eb6af0a078b74d557 (BRICKSTORM)
+🔗 Blog: https://www.crowdstrike.com/en-us/blog/warp-panda-cloud-threats/
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Thu, 04 Dec 2025 18:27:02 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_321</guid></item><item><title>Tomiris new tools</title><link>https://t.me/s0ld13r_ch/316</link><description>Tomiris new tools
 Tomiris перешли на мульти-язычные импланты и массовый уход в публичные C2 (Telegram/Discord). Первичный доступ - фишинг с длинными русскими именами .doc&lt;пробелы&gt;.exe. Дальше - ReverseShell → Havoc/AdaptixC2.
 Формат атаки
 Фишинг-архив → EXE с маскировкой под документ → reverse shell (C/C++/Rust/Go/Python/PowerShell) → загрузка AdaptixC2/Havoc → дальнейшая эксплуатация.

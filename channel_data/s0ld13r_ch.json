@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-12-04T14:28:53.942914+00:00",
-  "messages_count": 39,
+  "last_update": "2025-12-04T18:41:30.668224+00:00",
+  "messages_count": 40,
   "messages": [
+    {
+      "id": "321",
+      "title": "Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳",
+      "text": "Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳\nWARP PANDA (UNC5221) - china-nexus adversary специализирующийся на атаки на виртуальную инфраструктуру VMware ESXi/vSphere.\nВ течение 2025 года CrowdStrike отслеживал деятельность группы и выявил новые цепочки атак с использованием кастомных имплантов Junction и GuestConduit, а также бекдора BRICKSTORM⌨️\nЧто по арсеналу? ⚔️\nBRICKSTORM - Golang backdoor, маскирующийся под легитимные процессы vCenter. Общается через WebSockets/TLS, использует DoH для резолва C2 доменов, прячет C2 за Cloudflare Workers и Heroku. Умеет туннелировать трафик через vCenter/ESXi/VM, управлять файлами и сохранять персистентность даже после удаления.\nJunction - имплант для ESXi написанный на Go, работающий как поддельный сервис на порту 8090. Принимает команды через HTTP запросы, выполняет их, проксирует трафик и общается с гостевыми ВМ через VSOCK. Даёт оператору скрытый доступ и возможность проксировать трафик.\nGuestConduit - имплант внутри гостевой ВМ, слушающий VSOCK. Перенаправляет и зеркалит трафик между VM и гипервизором, работает с JSON-командами. Используется вместе с Junction для создания скрытых туннелей внутри виртуальной среды.\nIndicators of Compromise 🔍\n40db68331cb52dd3ffa0698144d1e6919779ff432e2e80c058e41f7b93cec042 (GuestConduit)\n88db1d63dbd18469136bf9980858eb5fc0d4e41902bf3e4a8e08d7b6896654ed (Junction)\n9a0e1b7a5f7793a8a5a62748b7aa4786d35fc38de607fb3bb8583ea2f7974806 (Junction)\n40992f53effc60f5e7edea632c48736ded9a2ca59fb4924eb6af0a078b74d557 (BRICKSTORM)\n🔗 Blog: https://www.crowdstrike.com/en-us/blog/warp-panda-cloud-threats/\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/321",
+      "pub_date": "2025-12-04T18:27:02+00:00"
+    },
     {
       "id": "316",
       "title": "Tomiris new tools",
