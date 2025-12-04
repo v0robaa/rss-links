@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-03T18:41:14.051173+00:00",
-  "messages_count": 40,
+  "last_update": "2025-12-04T04:36:30.759679+00:00",
+  "messages_count": 41,
   "messages": [
+    {
+      "id": "203",
+      "title": "React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)",
+      "text": "React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)\nВ официальном блоге React только что выкатили пост про CVE-2025-55182, которая позволяет в один запрос получить RCE. Уязвимы версии 19.0.0, 19.1.0, 19.1.1, 19.2.0, а еще фреймворки Next.JS, Vite, Parcel, и Waku.\nСам баг находится в RSC-рантайме, который принимает данные и небезопасно десериализует их. Уязвимость можно считать одной из самых критичных, которые находили в React за все время.\nExploit: https://github.com/ejpir/CVE-2025-55182-poc\nYAML-шаблон для nuclei: https://github.com/sickwell/CVE-2025-55182/blob/main/cve-2025-55182.yaml\n#exploit #работягам\nTelegram  ✉️ @freedomfox\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/203",
+      "pub_date": "2025-12-04T04:07:22+00:00"
+    },
     {
       "id": "202",
       "title": "K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation",

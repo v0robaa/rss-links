@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 02 Dec 2025 19:49:34 +0000</lastBuildDate><item><title>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/202</link><description>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 04:07:22 +0000</lastBuildDate><item><title>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/203</link><description>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)
+В официальном блоге React только что выкатили пост про CVE-2025-55182, которая позволяет в один запрос получить RCE. Уязвимы версии 19.0.0, 19.1.0, 19.1.1, 19.2.0, а еще фреймворки Next.JS, Vite, Parcel, и Waku.
+Сам баг находится в RSC-рантайме, который принимает данные и небезопасно десериализует их. Уязвимость можно считать одной из самых критичных, которые находили в React за все время.
+Exploit: https://github.com/ejpir/CVE-2025-55182-poc
+YAML-шаблон для nuclei: https://github.com/sickwell/CVE-2025-55182/blob/main/cve-2025-55182.yaml
+#exploit #работягам
+Telegram  ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Thu, 04 Dec 2025 04:07:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_203</guid></item><item><title>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/202</link><description>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation
 My initial testing was done on version 17.0.2045 (July 2025). In this post I describe my journey from installation to SYSTEM privileges.
 Exploit 1 - Allow any user to change the AV configuration
 Exploit 2 - LPE
