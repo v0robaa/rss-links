@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 03 Dec 2025 09:31:03 +0000</lastBuildDate><item><title>Кто-нибудь, выкупите автора канала @qcakz из гос.сектора. Поставьте ему зарплату в 3 млн, пусть тихо работает и, главное, не пишет ничего ни про кого. Всем легче будет.</title><link>https://t.me/ThreatHuntingFather/988</link><description>Кто-нибудь, выкупите автора канала @qcakz из гос.сектора. Поставьте ему зарплату в 3 млн, пусть тихо работает и, главное, не пишет ничего ни про кого. Всем легче будет.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 09:23:17 +0000</lastBuildDate><item><title>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️</title><link>https://t.me/ThreatHuntingFather/989</link><description>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️
+China-aligned APT Silver Fox катает многоступенчатую кампанию через поддельные инсталлеры Telegram/Chrome/WinSCP/Teams:
+Defender выключают через глобальный exclusion, в Public-профиль вываливают драйвера и лоадеры, затем через BYOVD и DLL sideloading поднимают ValleyRat с устойчивым C2. На всём пути куча точек для детекта.
+Атака:
+Initial access
+Фишинг / malvertising → поддельные инсталлеры Telegram / Chrome / WinSCP / Teams.
+t g.exe (~50 MB, Telegram-иконка, timestamp 2019 vs VT 2025, низкие детекты).
+2) Staging + Defender tampering
+Создание C:\ProgramData\WindowsData\.
+Дроп: funzip.exe (7-Zip CLI), main.xml (ZIP, пароль htLcENyRFYwXsHFnUnqK).
+PowerShell: Defender exclusion на весь C:\.
+Извлечение → men.exe (орchestrator) + легит setup.exe Telegram.
+3) men.exe - ядро цепочки
+Опрос защит: MsMpEng.exe, ZhuDongFangYu.exe, 360tray.exe.
+Дроп в %PUBLIC%\Documents\WindowsData\:
+tree.exe, bypass.exe, kail.exe, me.key, X.vbe, NVIDIA.exe, log.dll, main.exe, NtHandleCallback.exe, rwdriver.sys.
+Scheduled Task WindowsPowerShell.WbemScripting.SWbemLocator (логон, админ, high privilege) → запуск X.vbe.
+ACL на директорию: deny-delete даже для админов.
+4) Ключевые компоненты
+bypass.exe - UAC bypass
+Runtime unpacking; ICMLuaUtil/CMSTPLUA; CLSID вроде {3E5FC7F9-9A51-4367-9063-A120244FBEC7};
+вызывает DllHost.exe /Processid:{CLSID}.
+X.vbe - persistence
+Закодированный VBS; китайские строки; запускает NVIDIA.exe и NtHandleCallback.exe.
+main.exe + rwdriver.sys
+Регистрирует kernel-driver:
+sc create rwdriver binPath="C:\Users\Public\Documents\WindowsData\rwdriver.sys"
+Функции драйвера: обход EDR-хуков, ломание логирования, ре-энейбл сетевых интерфейсов (для C2/LM).
+NVIDIA.exe + NSecKrnl64.sys (BYOVD)
+Дроп уязвимого подписанного драйвера в %LOCALAPPDATA%\Temp\&lt;random&gt;.sys.
+Ring 0, IOCTL 0x2248E0 → массовое убийство процессов защит.
+Регистрирует сервис в HKLM\SYSTEM\CurrentControlSet\Services\&lt;RandomName&gt;.
+NtHandleCallback.exe + log.dll = ValleyRat
+NtHandleCallback.exe легитимный → грузит log.dll (DLL sideload).
+log.dll = ValleyRat beacon → устойчивый C2 и доступ.
+Минимальный чек-лист для ханта:
+Пути
+C:\ProgramData\WindowsData\ - любые файлы/запуски.
+%PUBLIC%\Documents\WindowsData\ - .exe/.dll/.sys/.vbe + запуск процессов из Public.
+Defender tampering
+Добавление exclusion на весь C:\ (event 5007).
+Add-MpPreference -ExclusionPath "C:\".
+7-Zip extraction
+Команды с x -p -o -y.
+Пароль: htLcENyRFYwXsHFnUnqK.
+Persistence
+Scheduled Task → команда указывает в \Users\Public\ (особенно X.vbe).
+Подозрительные «системные» имена задач.
+UAC bypass
+DllHost.exe /Processid:{3E5F…} (ICMLuaUtil CLSID).
+Драйверы
+Сервисы, указывающие на драйверы из Public/Temp.
+Драйвер: rwdriver.sys вне System32.
+C2
+DNS/трафик от процессов из Public → С2
+🔗https://www.nextron-systems.com/2025/11/28/thor-vs-silver-fox-uncovering-and-defeating-a-sophisticated-valleyrat-campaign/
+🦔THF
+
+[Media: Фото]</description><pubDate>Thu, 04 Dec 2025 09:23:17 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_989</guid></item><item><title>Кто-нибудь, выкупите автора канала @qcakz из гос.сектора. Поставьте ему зарплату в 3 млн, пусть тихо работает и, главное, не пишет ничего ни про кого. Всем легче будет.</title><link>https://t.me/ThreatHuntingFather/988</link><description>Кто-нибудь, выкупите автора канала @qcakz из гос.сектора. Поставьте ему зарплату в 3 млн, пусть тихо работает и, главное, не пишет ничего ни про кого. Всем легче будет.
 Шутка нет это он сам написал
 Купились? Вот держите парсер для TI
 https://www.stixify.com/</description><pubDate>Wed, 03 Dec 2025 09:31:03 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_988</guid></item><item><title>Может залетим и будем спамить https://t.me/ThreatHuntingFather ?😃</title><link>https://t.me/ThreatHuntingFather/987</link><description>Может залетим и будем спамить https://t.me/ThreatHuntingFather ?😃</description><pubDate>Tue, 02 Dec 2025 18:10:49 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_987</guid></item><item><title>Проводите время с пользой, вместо рилсов!😃  https://www.youtube.com/live/ZQAwTrdukI0</title><link>https://t.me/ThreatHuntingFather/986</link><description>Проводите время с пользой, вместо рилсов!😃  https://www.youtube.com/live/ZQAwTrdukI0</description><pubDate>Tue, 02 Dec 2025 18:09:30 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_986</guid></item><item><title>Проводите время с пользой, вместо рилсов!😃</title><link>https://t.me/ThreatHuntingFather/985</link><description>Проводите время с пользой, вместо рилсов!😃
