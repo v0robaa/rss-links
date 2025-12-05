@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 09:23:17 +0000</lastBuildDate><item><title>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️</title><link>https://t.me/ThreatHuntingFather/989</link><description>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 18:44:03 +0000</lastBuildDate><item><title>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳</title><link>https://t.me/ThreatHuntingFather/990</link><description>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳
+WARP PANDA (UNC5221) - china-nexus adversary специализирующийся на атаки на виртуальную инфраструктуру VMware ESXi/vSphere.
+В течение 2025 года CrowdStrike отслеживал деятельность группы и выявил новые цепочки атак с использованием кастомных имплантов Junction и GuestConduit, а также бекдора BRICKSTORM⌨️
+Что по арсеналу? ⚔️
+BRICKSTORM - Golang backdoor, маскирующийся под легитимные процессы vCenter. Общается через WebSockets/TLS, использует DoH для резолва C2 доменов, прячет C2 за Cloudflare Workers и Heroku. Умеет туннелировать трафик через vCenter/ESXi/VM, управлять файлами и сохранять персистентность даже после удаления.
+Junction - имплант для ESXi написанный на Go, работающий как поддельный сервис на порту 8090. Принимает команды через HTTP запросы, выполняет их, проксирует трафик и общается с гостевыми ВМ через VSOCK. Даёт оператору скрытый доступ и возможность проксировать трафик.
+GuestConduit - имплант внутри гостевой ВМ, слушающий VSOCK. Перенаправляет и зеркалит трафик между VM и гипервизором, работает с JSON-командами. Используется вместе с Junction для создания скрытых туннелей внутри виртуальной среды.
+Indicators of Compromise 🔍
+40db68331cb52dd3ffa0698144d1e6919779ff432e2e80c058e41f7b93cec042 (GuestConduit)
+88db1d63dbd18469136bf9980858eb5fc0d4e41902bf3e4a8e08d7b6896654ed (Junction)
+9a0e1b7a5f7793a8a5a62748b7aa4786d35fc38de607fb3bb8583ea2f7974806 (Junction)
+40992f53effc60f5e7edea632c48736ded9a2ca59fb4924eb6af0a078b74d557 (BRICKSTORM)
+🔗 Blog: https://www.crowdstrike.com/en-us/blog/warp-panda-cloud-threats/
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Thu, 04 Dec 2025 18:44:03 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_990</guid></item><item><title>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️</title><link>https://t.me/ThreatHuntingFather/989</link><description>Thor vs. Silver Fox – Uncovering and Defeating a Sophisticated ValleyRat Campaign ☺️
 China-aligned APT Silver Fox катает многоступенчатую кампанию через поддельные инсталлеры Telegram/Chrome/WinSCP/Teams:
 Defender выключают через глобальный exclusion, в Public-профиль вываливают драйвера и лоадеры, затем через BYOVD и DLL sideloading поднимают ValleyRat с устойчивым C2. На всём пути куча точек для детекта.
 Атака:
