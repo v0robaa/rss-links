@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-06T09:25:32.870392+00:00",
-  "messages_count": 61,
+  "last_update": "2025-12-06T14:22:52.342555+00:00",
+  "messages_count": 62,
   "messages": [
+    {
+      "id": "991",
+      "title": "The Webshell Underground: Student Hacker Selling PHP Backdoors To Asia-Based Threat Actors To Pay for School",
+      "text": "The Webshell Underground: Student Hacker Selling PHP Backdoors To Asia-Based Threat Actors To Pay for School\nKey Findings\n• The Howler Cell Reverse Engineering Team has uncovered a multi-infection backdoor chain linked to an active botnet operation. The perpetrator is using a botnet panel to distribute newly compromised websites to buyers, primarily Chinese threat actors. The sites were primarily compromised via misconfigured WordPress and cPanel instances.\n• We've identified one hacker as a student based in Bangladesh. Our team is in contact with the hacker, who claims he is selling access to the sites to pay for his education. This reflects a growing trend in cybercrime where freelancers quietly fuel a thriving underground economy reminiscent of some of the actors tied to Scattered Spider.\n• The student-hacker at the center of the operation uses a PHP-based webshell known as ‘Beima PHP’ that is currently completely undetectable by modern security tools, including VirusTotal. The tool enables attackers to achieve full remote code execution over infected servers, extract sensitive data, and incorporate infected machines into a botnet\n• The Government and education sectors are the primary targets of this campaign, accounting for 76% of the compromised websites for sale. The price for these websites is $200, while others sell for $3-$4. Considering the median salary in Bangladesh ($220 USD), makes it a very lucrative operation for freelancers. Transactions are conducted on Telegram.\n• While the presence of encrypted command execution, JSON-based payload control, and live C2 panel demonstrates a sophistication beyond typical freelance hacking activity, it is clear that the actors involved have created a decentralized, financially-driven marketplace with a quite low barrier to entry.\nГранит знаний - 2025, каждый постигает по своему 😃\n🔗https://www.cyderes.com/howler-cell/webshell-underground-student-hacker-selling-php-backdoors-to-threat-actors\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/991",
+      "pub_date": "2025-12-06T11:30:53+00:00"
+    },
     {
       "id": "990",
       "title": "Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳",
