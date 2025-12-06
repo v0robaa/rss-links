@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-06T14:22:52.342555+00:00",
-  "messages_count": 62,
+  "last_update": "2025-12-06T18:34:39.095633+00:00",
+  "messages_count": 63,
   "messages": [
+    {
+      "id": "999",
+      "title": "🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability",
+      "text": "🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability\nHow to Detect Exploitation Attempts\n[01] Unusual POST requests to /_rsc or Server Component endpoints\n[02] Malformed Content-Type headers with RSC payloads\n[03] Unexpected process spawning on web servers\n[04] Outbound connections from server to unknown IPs\n[05] Environment variable access in server logs\n🔗 https://t.me/TomagapSec",
+      "link": "https://t.me/ThreatHuntingFather/999",
+      "pub_date": "2025-12-06T16:47:53+00:00"
+    },
     {
       "id": "991",
       "title": "The Webshell Underground: Student Hacker Selling PHP Backdoors To Asia-Based Threat Actors To Pay for School",
