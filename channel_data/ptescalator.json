@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-12-06T04:29:54.259128+00:00",
-  "messages_count": 45,
+  "last_update": "2025-12-06T09:25:45.535806+00:00",
+  "messages_count": 46,
   "messages": [
+    {
+      "id": "576",
+      "title": "Message 576",
+      "text": "",
+      "link": "https://t.me/ptescalator/576",
+      "pub_date": "2025-12-06T08:06:31+00:00"
+    },
     {
       "id": "575",
       "title": "В дополнение к посту 👆",
