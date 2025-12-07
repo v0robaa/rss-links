@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-07T04:36:20.172151+00:00",
-  "messages_count": 42,
+  "last_update": "2025-12-07T09:25:00.355217+00:00",
+  "messages_count": 43,
   "messages": [
+    {
+      "id": "205",
+      "title": "CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.",
+      "text": "CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.\nThe ABRT (Automatic Bug Reporting Tool) daemon is a root process that runs an HTTP server on a world-writable UNIX socket to accept error reports from any process. It passes 12 characters of user-controlled text directly into a shell command, with minimal validation. Using a specially crafted multi-stage payload, an attacker can force the ABRT daemon to run arbitrary shell commands. This includes escaping ABRT’s systemd sandbox and gaining complete control over the system.\nWriteup: https://initblog.com/2025/abrt-root/\nPOC: https://github.com/initstring/abrt_root\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/205",
+      "pub_date": "2025-12-07T06:50:15+00:00"
+    },
     {
       "id": "204",
       "title": "Рабочий эксплоит",

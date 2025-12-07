@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 06 Dec 2025 16:47:53 +0000</lastBuildDate><item><title>🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability</title><link>https://t.me/ThreatHuntingFather/999</link><description>🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 07 Dec 2025 06:26:30 +0000</lastBuildDate><item><title>🔍 Sysmon для LOLRMM</title><link>https://t.me/ThreatHuntingFather/1000</link><description>🔍 Sysmon для LOLRMM
+Автор статьи собрал отдельный Sysmon-конфиг под злоупотребление RMM-инструментами.
+A sysmon configuration designed for monitoring RMM solutions from the LOLRMM framework on the OS Microsoft Windows. 10/11
+The LOLRMM project can be found here:https://lolrmm.io/
+Уже закрытые события (рабочая база для хантинга):
+ProcessCreate
+ProcessTerminate
+FileCreateTime
+RawAccessRead
+FileCreate
+FileCreateStreamHash
+FileDeleteDetected
+FileExecutableDetected
+События, где конфиг частично готов, но требуют допроверки по sandbox-логам:
+NetworkConnect
+DNSQuery
+Слабые зоны (пока только черновые фильтры, нужны доработки):
+DriverLoad
+ImageLoad
+RegistryEvent
+PipeEvent
+Отключено как шумное/непригодное для RMM-аналитики:
+CreateRemoteThread
+ProcessAccess
+WmiEvent
+FileDelete
+ClipboardChange
+FileBlockExecutable / Shredding
+ProcessTampering — под вопросом, включат только при доказанной пользе для RMM-кейсов.
+🔗 https://github.com/shotgunner101/Sysmon-LOLRMM
+🔗https://www.dodgethissecurity.com/2025/11/30/sysmon-config-creation-for-the-lolrmm-framework
+🦔THF</description><pubDate>Sun, 07 Dec 2025 06:26:30 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1000</guid></item><item><title>🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability</title><link>https://t.me/ThreatHuntingFather/999</link><description>🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability
 How to Detect Exploitation Attempts
 [01] Unusual POST requests to /_rsc or Server Component endpoints
 [02] Malformed Content-Type headers with RSC payloads

