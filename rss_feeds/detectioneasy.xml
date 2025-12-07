@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 03 Dec 2025 18:52:16 +0000</lastBuildDate><item><title>Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho</title><link>https://t.me/detectioneasy/302</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 06 Dec 2025 20:11:20 +0000</lastBuildDate><item><title>В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе</title><link>https://t.me/detectioneasy/303</link><description>Всем привет! 💻✌️
+В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе
+👨‍💻 Как это работает?
+Атакующие часто используют директорию автозагрузки пользователя. Путь к ней задаётся в реестре:
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Startup
+Если изменить значение этого ключа — Windows начнёт запускать программы уже из нового пути, что позволяет скрытно выполнять бинарь при старте системы
+🔭 Обнаружение:
+🔤 отслеживаем изменения ключа реестра HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Startup
+p.s. можем похантить, найдется что-то интересное...
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 06 Dec 2025 20:11:20 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_303</guid></item><item><title>Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho</title><link>https://t.me/detectioneasy/302</link><description>Всем привет! 💻✌️
 Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho
 Для подготовки инфраструктуры к уничтожению запускался ps1-скрипт, одна из возможностей которого создание локального пользователя с параметрами PasswordExpires, Disabled = FALSE и добавление его в группу локальных администраторов
 $userName = "[REDACTED]"

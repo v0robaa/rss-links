@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2025-12-06T18:34:48.949153+00:00",
-  "messages_count": 43,
+  "last_update": "2025-12-07T04:36:37.184811+00:00",
+  "messages_count": 44,
   "messages": [
+    {
+      "id": "303",
+      "title": "В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе",
+      "text": "Всем привет! 💻✌️\nВ фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе\n👨‍💻 Как это работает?\nАтакующие часто используют директорию автозагрузки пользователя. Путь к ней задаётся в реестре:\nHKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\\Startup\nЕсли изменить значение этого ключа — Windows начнёт запускать программы уже из нового пути, что позволяет скрытно выполнять бинарь при старте системы\n🔭 Обнаружение:\n🔤 отслеживаем изменения ключа реестра HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\\Startup\np.s. можем похантить, найдется что-то интересное...\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/303",
+      "pub_date": "2025-12-06T20:11:20+00:00"
+    },
     {
       "id": "302",
       "title": "Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho",
