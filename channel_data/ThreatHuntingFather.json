@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-08T09:35:25.302449+00:00",
-  "messages_count": 64,
+  "last_update": "2025-12-08T14:29:52.546618+00:00",
+  "messages_count": 65,
   "messages": [
+    {
+      "id": "1001",
+      "title": "MuddyWater: Snakes by the riverbank",
+      "text": "MuddyWater: Snakes by the riverbank\nMuddyWater targets critical infrastructure in Israel and Egypt, relying on custom malware, improved tactics, and a predictable playbook\nKey points of this blogpost:\n• MuddyWater developers adopted CNG, the next-generation Windows cryptographic API, which is unique for Iran-aligned groups and somewhat atypical across the broader threat landscape.\n• The group also used more advanced techniques to deploy MuddyViper, a new backdoor, by using a loader (Fooder) that reflectively loads it into memory and executes it.\n• Eset provide technical analyses of the tools used in this campaign, including\nMuddyViper, the Fooder loader, the CE-Notes browser-data stealer, the LP-Notes credential stealer, the Blub browser-data stealer, and go‑socks5 reverse tunnels.\n• During this campaign, the operators deliberately avoided hands-on-keyboard interactive sessions, which is a historically noisy technique often characterized by mistyped commands.\n🔗https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1001",
+      "pub_date": "2025-12-08T12:42:58+00:00"
+    },
     {
       "id": "1000",
       "title": "🔍 Sysmon для LOLRMM",

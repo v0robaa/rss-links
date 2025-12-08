@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 07 Dec 2025 06:26:30 +0000</lastBuildDate><item><title>🔍 Sysmon для LOLRMM</title><link>https://t.me/ThreatHuntingFather/1000</link><description>🔍 Sysmon для LOLRMM
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 08 Dec 2025 12:42:58 +0000</lastBuildDate><item><title>MuddyWater: Snakes by the riverbank</title><link>https://t.me/ThreatHuntingFather/1001</link><description>MuddyWater: Snakes by the riverbank
+MuddyWater targets critical infrastructure in Israel and Egypt, relying on custom malware, improved tactics, and a predictable playbook
+Key points of this blogpost:
+• MuddyWater developers adopted CNG, the next-generation Windows cryptographic API, which is unique for Iran-aligned groups and somewhat atypical across the broader threat landscape.
+• The group also used more advanced techniques to deploy MuddyViper, a new backdoor, by using a loader (Fooder) that reflectively loads it into memory and executes it.
+• Eset provide technical analyses of the tools used in this campaign, including
+MuddyViper, the Fooder loader, the CE-Notes browser-data stealer, the LP-Notes credential stealer, the Blub browser-data stealer, and go‑socks5 reverse tunnels.
+• During this campaign, the operators deliberately avoided hands-on-keyboard interactive sessions, which is a historically noisy technique often characterized by mistyped commands.
+🔗https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/
+🦔THF</description><pubDate>Mon, 08 Dec 2025 12:42:58 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1001</guid></item><item><title>🔍 Sysmon для LOLRMM</title><link>https://t.me/ThreatHuntingFather/1000</link><description>🔍 Sysmon для LOLRMM
 Автор статьи собрал отдельный Sysmon-конфиг под злоупотребление RMM-инструментами.
 A sysmon configuration designed for monitoring RMM solutions from the LOLRMM framework on the OS Microsoft Windows. 10/11
 The LOLRMM project can be found here:https://lolrmm.io/
