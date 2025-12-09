@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-09T04:35:06.298331+00:00",
-  "messages_count": 65,
+  "last_update": "2025-12-09T09:30:57.207934+00:00",
+  "messages_count": 66,
   "messages": [
+    {
+      "id": "1002",
+      "title": "Как Trend Micro использует AI-автоматизацию для threat hunting’а",
+      "text": "Как Trend Micro использует AI-автоматизацию для threat hunting’а\nОни построили многоступенчатый пайплайн, который:\n• собирает огромное количество образцов малвари (в т.ч. с VirusTotal),\n• автоматически вытаскивает артефакты (строки, API, поведение, MITRE, MBC),\n• складывает всё в структурированную БД,\nиспользует AI-агентов для:\nпервичного скоринга (Quick Inspect),\n• AI-анализ:\nELF’ы прогоняются через IDA Pro → декомпил → на вход gemini-3-pro;\nAI переименовывает функции, добавляет комменты, выделяет фичи, строит отчёт;\nQuick Inspect даёт скоринг «малварь/не малварь»,\nDeep Inspector делает полный техотчёт + MITRE-маппинг.\nКейс: обнаружение и разбор Linux-бэкдора GhostPenguin\nНа этом пайплайне они нашли раньше неизвестный бэкдор GhostPenguin:\n• multi-thread C++ backdoor под Linux;\n• использует UDP/53 (маскируясь под DNS) + RC5 сессией;\n• даёт оператору удалённый shell (/bin/sh) и полный контроль над файловой системой;\n• C2 с handshake’ом и сессионным ключом.\n🔗https://www.trendmicro.com/en_us/research/25/l/ghostpenguin.html\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1002",
+      "pub_date": "2025-12-09T09:07:45+00:00"
+    },
     {
       "id": "1001",
       "title": "MuddyWater: Snakes by the riverbank",

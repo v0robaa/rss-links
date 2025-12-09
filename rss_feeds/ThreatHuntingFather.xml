@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 08 Dec 2025 12:42:58 +0000</lastBuildDate><item><title>MuddyWater: Snakes by the riverbank</title><link>https://t.me/ThreatHuntingFather/1001</link><description>MuddyWater: Snakes by the riverbank
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 09 Dec 2025 09:07:45 +0000</lastBuildDate><item><title>Как Trend Micro использует AI-автоматизацию для threat hunting’а</title><link>https://t.me/ThreatHuntingFather/1002</link><description>Как Trend Micro использует AI-автоматизацию для threat hunting’а
+Они построили многоступенчатый пайплайн, который:
+• собирает огромное количество образцов малвари (в т.ч. с VirusTotal),
+• автоматически вытаскивает артефакты (строки, API, поведение, MITRE, MBC),
+• складывает всё в структурированную БД,
+использует AI-агентов для:
+первичного скоринга (Quick Inspect),
+• AI-анализ:
+ELF’ы прогоняются через IDA Pro → декомпил → на вход gemini-3-pro;
+AI переименовывает функции, добавляет комменты, выделяет фичи, строит отчёт;
+Quick Inspect даёт скоринг «малварь/не малварь»,
+Deep Inspector делает полный техотчёт + MITRE-маппинг.
+Кейс: обнаружение и разбор Linux-бэкдора GhostPenguin
+На этом пайплайне они нашли раньше неизвестный бэкдор GhostPenguin:
+• multi-thread C++ backdoor под Linux;
+• использует UDP/53 (маскируясь под DNS) + RC5 сессией;
+• даёт оператору удалённый shell (/bin/sh) и полный контроль над файловой системой;
+• C2 с handshake’ом и сессионным ключом.
+🔗https://www.trendmicro.com/en_us/research/25/l/ghostpenguin.html
+🦔THF
+
+[Media: Фото]</description><pubDate>Tue, 09 Dec 2025 09:07:45 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1002</guid></item><item><title>MuddyWater: Snakes by the riverbank</title><link>https://t.me/ThreatHuntingFather/1001</link><description>MuddyWater: Snakes by the riverbank
 MuddyWater targets critical infrastructure in Israel and Egypt, relying on custom malware, improved tactics, and a predictable playbook
 Key points of this blogpost:
 • MuddyWater developers adopted CNG, the next-generation Windows cryptographic API, which is unique for Iran-aligned groups and somewhat atypical across the broader threat landscape.
