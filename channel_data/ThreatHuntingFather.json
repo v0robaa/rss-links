@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-10T04:38:17.576149+00:00",
-  "messages_count": 66,
+  "last_update": "2025-12-10T09:31:57.508398+00:00",
+  "messages_count": 67,
   "messages": [
+    {
+      "id": "1004",
+      "title": "Пример еще одного кейса эксплуатации нашумевшей react2shell",
+      "text": "Пример еще одного кейса эксплуатации нашумевшей react2shell\nReact2Shell (CVE-2025-55182) даёт RCE одним HTTP-запросом. Массовая автоматизация уже льёт на сервера пачку payload’ов: PeerBlight (DHT-C2 бэкдор), CowTunnel (FRP-туннель), ZinFoq (Go пост-эксплойт), Kaiji и XMRig. Атака примитивная по входу, но тяжёлая по пост-эксплуатации.\nОсновные артефакты: spawn shell из Next.js, массовые загрузки payload’ов через curl/wget, скрытые systemd-персисты и нетипичный outbound-трафик (C2 + DHT + FRP).\nHunting Notes\nВходная точка:\nnode/next → bash/sh/cmd.exe\nс curl http://... | bash / wget ... && bash\nПробы: echo $((41*271)), ver || id, whoami\nUA сканера: Assetnote/1.0.0\nPeerBlight:\n/bin/systemd-daemon, systemd-agent.service\nПроцесс [ksoftirqd] не от kernel\nC2: 185, 247, 224, 41:8443, DHT-трафик\nCowTunnel:\nИсходящие: 23, 226, 71, 197|200|209:13306\nЛокальные: telnetd/2323, socks5/1980\nZinFoq:\nHTTPS → api.qtss.cc\nHex-JSON, маска под Safari 5.1\nМаска процессов под системные сервисы\nОбщее:\nsystemd-юниты с generic-именами\nБинарии в /tmp, $HOME, sshd-agent + chattr +i\nМайнеры через XMRig\n🔗https://www.huntress.com/blog/peerblight-linux-backdoor-exploits-react2shell\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1004",
+      "pub_date": "2025-12-10T06:18:38+00:00"
+    },
     {
       "id": "1002",
       "title": "Как Trend Micro использует AI-автоматизацию для threat hunting’а",

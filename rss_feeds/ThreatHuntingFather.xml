@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 09 Dec 2025 09:07:45 +0000</lastBuildDate><item><title>Как Trend Micro использует AI-автоматизацию для threat hunting’а</title><link>https://t.me/ThreatHuntingFather/1002</link><description>Как Trend Micro использует AI-автоматизацию для threat hunting’а
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 10 Dec 2025 06:18:38 +0000</lastBuildDate><item><title>Пример еще одного кейса эксплуатации нашумевшей react2shell</title><link>https://t.me/ThreatHuntingFather/1004</link><description>Пример еще одного кейса эксплуатации нашумевшей react2shell
+React2Shell (CVE-2025-55182) даёт RCE одним HTTP-запросом. Массовая автоматизация уже льёт на сервера пачку payload’ов: PeerBlight (DHT-C2 бэкдор), CowTunnel (FRP-туннель), ZinFoq (Go пост-эксплойт), Kaiji и XMRig. Атака примитивная по входу, но тяжёлая по пост-эксплуатации.
+Основные артефакты: spawn shell из Next.js, массовые загрузки payload’ов через curl/wget, скрытые systemd-персисты и нетипичный outbound-трафик (C2 + DHT + FRP).
+Hunting Notes
+Входная точка:
+node/next → bash/sh/cmd.exe
+с curl http://... | bash / wget ... &amp;&amp; bash
+Пробы: echo $((41*271)), ver || id, whoami
+UA сканера: Assetnote/1.0.0
+PeerBlight:
+/bin/systemd-daemon, systemd-agent.service
+Процесс [ksoftirqd] не от kernel
+C2: 185, 247, 224, 41:8443, DHT-трафик
+CowTunnel:
+Исходящие: 23, 226, 71, 197|200|209:13306
+Локальные: telnetd/2323, socks5/1980
+ZinFoq:
+HTTPS → api.qtss.cc
+Hex-JSON, маска под Safari 5.1
+Маска процессов под системные сервисы
+Общее:
+systemd-юниты с generic-именами
+Бинарии в /tmp, $HOME, sshd-agent + chattr +i
+Майнеры через XMRig
+🔗https://www.huntress.com/blog/peerblight-linux-backdoor-exploits-react2shell
+🦔THF</description><pubDate>Wed, 10 Dec 2025 06:18:38 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1004</guid></item><item><title>Как Trend Micro использует AI-автоматизацию для threat hunting’а</title><link>https://t.me/ThreatHuntingFather/1002</link><description>Как Trend Micro использует AI-автоматизацию для threat hunting’а
 Они построили многоступенчатый пайплайн, который:
 • собирает огромное количество образцов малвари (в т.ч. с VirusTotal),
 • автоматически вытаскивает артефакты (строки, API, поведение, MITRE, MBC),
