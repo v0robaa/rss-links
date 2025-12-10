@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-10T09:31:57.508398+00:00",
-  "messages_count": 67,
+  "last_update": "2025-12-10T14:30:08.934712+00:00",
+  "messages_count": 68,
   "messages": [
+    {
+      "id": "1005",
+      "title": "Hunting payloads in Linux extended file attributes",
+      "text": "Hunting payloads in Linux extended file attributes\nLinux Extended File Attributes provide functionality similar to NTFS Alternate Data Streams (ADS). While often used for legitimate purposes, they can also be abused to conceal malicious content. Attackers may hide payloads, encrypted data, or other artifacts within these attributes —making detection and forensic analysis more challenging. This session will demonstrate both sides of the equation: How adversaries can hide a simple payload in extended attributes and how defenders can detect and investigate such misuse. Gain practical insights into the offensive and defensive techniques surrounding Linux extended attributes, to help you strengthen your hunting and incident response capabilities.\n🔗https://youtu.be/etnhELMsSOI\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1005",
+      "pub_date": "2025-12-10T13:50:12+00:00"
+    },
     {
       "id": "1004",
       "title": "Пример еще одного кейса эксплуатации нашумевшей react2shell",

