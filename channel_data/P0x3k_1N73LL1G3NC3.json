@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-11T09:32:48.156671+00:00",
-  "messages_count": 45,
+  "last_update": "2025-12-11T14:28:32.251556+00:00",
+  "messages_count": 46,
   "messages": [
+    {
+      "id": "208",
+      "title": "📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)",
+      "text": "📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)\nSCOM suffers from similar insecure default configurations as its SCCM counterpart, enabling attackers to escalate privileges, harvest credentials, and ultimately compromise the entire management group and its monitored infrastructure.\n🔗 Scomhunter\nSCOMHunter is a post-ex tool for enumerating and attacking System Center Operations Manager (SCOM) infrastructure.\n🔗 SCOMHound\nA BloodHound OpenGraph proof of concept extension for enumerating System Center Operations Manager (SCOM) infrastructure from Active Directory.\n📄 SCOMmand And Conquer – Attacking System Center Operations Manager (Part 2)\nWe found that SCOM RunAs credentials could be obtained on-host and also off-host in certain configurations and wrote a tool to help automate their recovery.\n🔗 SharpSCOM\nA C# utility for interacting with SCOM\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/208",
+      "pub_date": "2025-12-11T11:01:51+00:00"
+    },
     {
       "id": "207",
       "title": "🦊 All fox are beautiful ;)",
