@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 11 Dec 2025 11:01:51 +0000</lastBuildDate><item><title>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/208</link><description>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 11 Dec 2025 18:20:27 +0000</lastBuildDate><item><title>#cve #rce</title><link>https://t.me/P0x3k_1N73LL1G3NC3/211</link><description>#cve #rce
+Microsoft Web Deploy RCE Exploit - CVE-2025-53772
+https://github.com/sailay1996/CVE-2025-53772/tree/main
+Telegram  ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Thu, 11 Dec 2025 18:20:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_211</guid></item><item><title>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/208</link><description>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)
 SCOM suffers from similar insecure default configurations as its SCCM counterpart, enabling attackers to escalate privileges, harvest credentials, and ultimately compromise the entire management group and its monitored infrastructure.
 🔗 Scomhunter
 SCOMHunter is a post-ex tool for enumerating and attacking System Center Operations Manager (SCOM) infrastructure.
