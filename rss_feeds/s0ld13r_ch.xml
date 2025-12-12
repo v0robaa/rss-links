@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 11 Dec 2025 22:41:24 +0000</lastBuildDate><item><title>#cve #rce</title><link>https://t.me/s0ld13r_ch/322</link><description>#cve #rce
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 12 Dec 2025 07:29:35 +0000</lastBuildDate><item><title>Когда нашел RCE, и теперь ближайшие 2 недели общения выглядит примерно так  🤣</title><link>https://t.me/s0ld13r_ch/324</link><description>Когда нашел RCE, и теперь ближайшие 2 недели общения выглядит примерно так  🤣
+#meme
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Fri, 12 Dec 2025 07:29:35 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_324</guid></item><item><title>Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite</title><link>https://t.me/s0ld13r_ch/323</link><description>Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite
+Unit42 зафиксировала обновлённый стек инструментов Ashen Lepus, ориентированный на дипломатические структуры Ближнего Востока, группа перешла на полностью in‑memory исполнение и доставку модулей через HTML-контейнеры, что заметно усложняет анализ и детект 🤩
+Что по арсеналу? 🤩
+AshenLoader - первичный дроппер 🤩
+Имитирует открытие легитимого PDF, параллельно загружая второй стейдж. Используется как точка входа и маскировка цепочки.
+AshenStager - HTML‑загрузчик 🤩
+Ключевой компонент кампании. Прячет payload в HTML (теги, атрибуты, комментарии).
+Тянет конфиг и модули частями, поддерживает обновление функционала без перепаковки.
+Содержит anti‑sandbox техники и минимизирует артефакты.
+AshTag - модульный .NET бекдор 🤩
+• Конфиг: Base64 → JSON → AES → XOR
+• Загрузка модулей напрямую из HTML‑страниц на C2
+• Управление файлами, выполнение кода, загрузка DLL в память
+• Кастомный UA, jitter, низкий диск‑след
+• Persistence через Scheduled Task
+🔗 Post: https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Fri, 12 Dec 2025 05:12:02 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_323</guid></item><item><title>#cve #rce</title><link>https://t.me/s0ld13r_ch/322</link><description>#cve #rce
 Microsoft Web Deploy RCE Exploit - CVE-2025-53772
 https://github.com/sailay1996/CVE-2025-53772/tree/main
 Telegram  ✉️ @freedomfox

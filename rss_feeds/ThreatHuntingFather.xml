@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 10 Dec 2025 13:50:12 +0000</lastBuildDate><item><title>Hunting payloads in Linux extended file attributes</title><link>https://t.me/ThreatHuntingFather/1005</link><description>Hunting payloads in Linux extended file attributes
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 12 Dec 2025 05:37:28 +0000</lastBuildDate><item><title>Volt Typhoon- Threat Hunting Guide</title><link>https://t.me/ThreatHuntingFather/1006</link><description>Volt Typhoon- Threat Hunting Guide
+Intruvent выпустили Threat Hunting Guide по Volt Typhoon - PRC state-sponsored APT, ориентированной на долгосрочный доступ к критической инфраструктуре.
+dwell time до 5 лет, фокус на OT/ICS.
+цели: energy, water, telecom, transport, government.
+8 hunt-модулей:
+Module 1 - Network Edge Compromise
+Edge-устройства как primary initial access: Fortinet / Ivanti / Cisco / NETGEAR / Vers
+a + таблица CVE (CVE-2022-40684, CVE-2024-21762/21887, CVE-2024-39717). Упоминаются SOHO routers и KV Botnet как proxy/C2 relay. Поиск: admin-аккаунты fortinet-tech-support / fortigate-tech-support, web-shell артефакты на edge.
+Module 2 - Living-off-the-Land
+Фокус на встроенных утилитах: wmic, netsh, certutil, cmd. Отдельно - netsh interface portproxy как туннелирование. Ищутся цепочки discovery-команд (hands-on-keyboard).
+Module 3 - Credential Harvesting
+ntdsutil + IFM для NTDS.dit, использование Volume Shadow Copy, маскировка ntds.dit → *.gif. Поиск доступа к credential stores (OpenSSH, PuTTY, RealVNC, Chrome) и keylogger-артефакта rult3uil.log на DC.
+Module 4 - Lateral Movement
+Перемещение через WMI, Impacket wmiexec, RDP. Отмечен high-fidelity паттерн \\127.0.0.1\ADMIN$\__. Дополнительно - abuse service/domain accounts и движение к Domain Controllers.
+Module 5 - Port Proxy &amp; Tunneling
+netsh portproxy + Fast Reverse Proxy (FRP). Проверка persistence через HKLM\SYSTEM\CurrentControlSet\Services\PortProxy. Хант FRP по SHA256 и по именам процессов.
+Module 6 - Defense Evasion
+Очистка логов (wevtutil, Event ID 1102), process masquerading (WmiPreSV.exe, vm3dservice.exe, cisco_up.exe), отключение firewall и security tools.
+Module 7 - Data Staging &amp; Exfiltration
+Password-protected архивы (7-Zip), staging в Windows\Temp, Users\Public, ProgramData. Поиск systeminfo.dat и копий NTDS вне стандартных backup-локаций.
+Module 8 - OT/SCADA Pre-Positioning
+Ключевой модуль: доступ к SCADA diagrams, relay documentation, P&amp;ID, CAD/Visio. Отслеживание IT→OT boundary violations, jump-host activity и harvesting PuTTY sessions (HKCU\Software\SimonTatham\PuTTY\Sessions)
+🔗 https://intruvent.com/threat-intelligence/threat-hunting-guides/volt-typhoon/
+🦔THF
+
+[Media: Документ]</description><pubDate>Fri, 12 Dec 2025 05:37:28 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1006</guid></item><item><title>Hunting payloads in Linux extended file attributes</title><link>https://t.me/ThreatHuntingFather/1005</link><description>Hunting payloads in Linux extended file attributes
 Linux Extended File Attributes provide functionality similar to NTFS Alternate Data Streams (ADS). While often used for legitimate purposes, they can also be abused to conceal malicious content. Attackers may hide payloads, encrypted data, or other artifacts within these attributes —making detection and forensic analysis more challenging. This session will demonstrate both sides of the equation: How adversaries can hide a simple payload in extended attributes and how defenders can detect and investigate such misuse. Gain practical insights into the offensive and defensive techniques surrounding Linux extended attributes, to help you strengthen your hunting and incident response capabilities.
 🔗https://youtu.be/etnhELMsSOI
 🦔THF</description><pubDate>Wed, 10 Dec 2025 13:50:12 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1005</guid></item><item><title>Пример еще одного кейса эксплуатации нашумевшей react2shell</title><link>https://t.me/ThreatHuntingFather/1004</link><description>Пример еще одного кейса эксплуатации нашумевшей react2shell

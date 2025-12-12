@@ -1,8 +1,22 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-12-12T04:38:42.937143+00:00",
-  "messages_count": 41,
+  "last_update": "2025-12-12T09:31:45.687599+00:00",
+  "messages_count": 43,
   "messages": [
+    {
+      "id": "324",
+      "title": "Когда нашел RCE, и теперь ближайшие 2 недели общения выглядит примерно так  🤣",
+      "text": "Когда нашел RCE, и теперь ближайшие 2 недели общения выглядит примерно так  🤣\n#meme\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/324",
+      "pub_date": "2025-12-12T07:29:35+00:00"
+    },
+    {
+      "id": "323",
+      "title": "Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite",
+      "text": "Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite\nUnit42 зафиксировала обновлённый стек инструментов Ashen Lepus, ориентированный на дипломатические структуры Ближнего Востока, группа перешла на полностью in‑memory исполнение и доставку модулей через HTML-контейнеры, что заметно усложняет анализ и детект 🤩\nЧто по арсеналу? 🤩\nAshenLoader - первичный дроппер 🤩\nИмитирует открытие легитимого PDF, параллельно загружая второй стейдж. Используется как точка входа и маскировка цепочки.\nAshenStager - HTML‑загрузчик 🤩\nКлючевой компонент кампании. Прячет payload в HTML (теги, атрибуты, комментарии).\nТянет конфиг и модули частями, поддерживает обновление функционала без перепаковки.\nСодержит anti‑sandbox техники и минимизирует артефакты.\nAshTag - модульный .NET бекдор 🤩\n• Конфиг: Base64 → JSON → AES → XOR\n• Загрузка модулей напрямую из HTML‑страниц на C2\n• Управление файлами, выполнение кода, загрузка DLL в память\n• Кастомный UA, jitter, низкий диск‑след\n• Persistence через Scheduled Task\n🔗 Post: https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/323",
+      "pub_date": "2025-12-12T05:12:02+00:00"
+    },
     {
       "id": "322",
       "title": "#cve #rce",
