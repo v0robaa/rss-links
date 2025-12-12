@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 04 Dec 2025 18:27:02 +0000</lastBuildDate><item><title>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳</title><link>https://t.me/s0ld13r_ch/321</link><description>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 11 Dec 2025 22:41:24 +0000</lastBuildDate><item><title>#cve #rce</title><link>https://t.me/s0ld13r_ch/322</link><description>#cve #rce
+Microsoft Web Deploy RCE Exploit - CVE-2025-53772
+https://github.com/sailay1996/CVE-2025-53772/tree/main
+Telegram  ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Thu, 11 Dec 2025 22:41:24 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_322</guid></item><item><title>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳</title><link>https://t.me/s0ld13r_ch/321</link><description>Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳
 WARP PANDA (UNC5221) - china-nexus adversary специализирующийся на атаки на виртуальную инфраструктуру VMware ESXi/vSphere.
 В течение 2025 года CrowdStrike отслеживал деятельность группы и выявил новые цепочки атак с использованием кастомных имплантов Junction и GuestConduit, а также бекдора BRICKSTORM⌨️
 Что по арсеналу? ⚔️

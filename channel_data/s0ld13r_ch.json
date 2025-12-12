@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-12-11T18:39:40.568975+00:00",
-  "messages_count": 40,
+  "last_update": "2025-12-12T04:38:42.937143+00:00",
+  "messages_count": 41,
   "messages": [
+    {
+      "id": "322",
+      "title": "#cve #rce",
+      "text": "#cve #rce\nMicrosoft Web Deploy RCE Exploit - CVE-2025-53772\nhttps://github.com/sailay1996/CVE-2025-53772/tree/main\nTelegram  ✉️ @freedomfox\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/322",
+      "pub_date": "2025-12-11T22:41:24+00:00"
+    },
     {
       "id": "321",
       "title": "Unveiling WARP PANDA (a.k.a UNC5221): A New Sophisticated China-Nexus Adversary 🇨🇳",
