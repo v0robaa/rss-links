@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 12 Dec 2025 05:37:28 +0000</lastBuildDate><item><title>Volt Typhoon- Threat Hunting Guide</title><link>https://t.me/ThreatHuntingFather/1006</link><description>Volt Typhoon- Threat Hunting Guide
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 15 Dec 2025 06:57:47 +0000</lastBuildDate><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
+Ранее я писал про React2Shell (CVE-2025-55182) на основе наблюдений Huntress.
+В декабре 2025 года несколько вендоров опубликовали собственные исследования, которые подтверждают, что уязвимость эксплуатируется in the wild и используется разными операторами.
+Google Threat Intelligence Group
+Google зафиксировали эксплуатацию CVE-2025-55182 несколькими независимыми кластерами, включая как финансово мотивированные, так и более сложные операции.
+Наблюдаемая активность включает:
+• эксплуатацию pre-auth RCE в React Server Components,
+установку Linux-бэкдоров и туннелей,
+• использование скомпрометированных серверов как промежуточных узлов (proxy / relay),
+• разнообразные payload’ы, не ограниченные одной кампанией.
+Google подчёркивают, что уязвимость используется как initial access vector, а не только для одноразовой загрузки вредоносного кода.
+Trend Micro Research
+Trend Micro задокументировали эксплуатацию CVE-2025-55182 в течение короткого времени после публичного раскрытия.
+В их анализе описано:
+• массовое автоматизированное сканирование,
+• эксплуатация через Flight-payload React Server Components,
+выполнение команд в контексте node процесса,
+загрузка и запуск различных инструментов пост-эксплуатации.
+В наблюдаемых кампаниях использовались:
+• ботнет-загрузчики,
+туннелирующие инструменты,
+фреймворки управления (включая C2-инфраструктуру),
+• утилиты для разведки и закрепления.
+Unit 42 (Palo Alto Networks)
+Unit 42 подтвердили post-exploitation активность после успешной эксплуатации CVE-2025-55182.
+По их данным:
+• атаки начинаются с автоматизированного RCE-сканирования,
+• далее выполняется базовая разведка системы (OS, привилегии, сеть),
+• используются curl / wget для загрузки скриптов и бинарей,
+зафиксированы интерактивные сессии и ручные действия.
+• Отдельно отмечена активность кластера CL-STA-1015, который Unit 42 относят к категории Initial Access Broker, с установкой SNOWLIGHT и VShell.
+Также задокументированы:
+попытки развёртывания Cobalt Strike (CrossC2 для Linux),
+web-shell’ы, маскирующиеся под легитимные Node.js-компоненты,
+эксплуатация в cloud- и container-средах.
+AWS Threat Intelligence
+По данным AWS:
+• эксплуатация осуществляется как автоматизированными сканерами, так и интерактивно;
+• зафиксированы попытки выполнения базовых команд ОС (whoami, id, uname, чтение /etc/passwd);
+• наблюдались попытки записи файлов в /tmp для проверки возможности записи;
+• атаки использовали HTTP POST-запросы с RSC-специфичными заголовками (next-action, rsc-action-id) и характерными элементами Flight-payload’ов.
+AWS связывает часть инфраструктуры с China-nexus threat activity, включая Earth Lamia и Jackpot Panda, а также отмечает наличие неатрибутированных кластеров, использующих общие anonymization-сети.
+🔗 https://www.trendmicro.com/en_us/research/25/l/CVE-2025-55182-analysis-poc-itw.html
+🔗 https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/
+🔗https://cloud.google.com/blog/topics/threat-intelligence/threat-actors-exploit-react2shell-cve-2025-55182
+🔗 https://aws.amazon.com/ru/blogs/security/china-nexus-cyber-threat-groups-rapidly-exploit-react2shell-vulnerability-cve-2025-55182/
+🦔THF</description><pubDate>Mon, 15 Dec 2025 06:57:47 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1007</guid></item><item><title>Volt Typhoon- Threat Hunting Guide</title><link>https://t.me/ThreatHuntingFather/1006</link><description>Volt Typhoon- Threat Hunting Guide
 Intruvent выпустили Threat Hunting Guide по Volt Typhoon - PRC state-sponsored APT, ориентированной на долгосрочный доступ к критической инфраструктуре.
 dwell time до 5 лет, фокус на OT/ICS.
 цели: energy, water, telecom, transport, government.
