@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-15T14:33:21.461803+00:00",
-  "messages_count": 70,
+  "last_update": "2025-12-15T18:41:01.694157+00:00",
+  "messages_count": 71,
   "messages": [
+    {
+      "id": "1008",
+      "title": "#meme",
+      "text": "#meme\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1008",
+      "pub_date": "2025-12-15T18:41:01.687529+00:00"
+    },
     {
       "id": "1007",
       "title": "React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS",
