@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 12 Dec 2025 16:20:19 +0000</lastBuildDate><item><title>Message 579</title><link>https://t.me/ptescalator/579</link><description/><pubDate>Fri, 12 Dec 2025 16:20:19 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_579</guid></item><item><title>В дополнение к посту выше 👆</title><link>https://t.me/ptescalator/578</link><description>В дополнение к посту выше 👆
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 16 Dec 2025 08:25:13 +0000</lastBuildDate><item><title>IoCs в дополнение к посту выше 🔼</title><link>https://t.me/ptescalator/585</link><description>IoCs в дополнение к посту выше 🔼
+DOCS
+391f30807d3cf333cdc286d1ff5b0f58
+0287ba0ecc176ae63ea1d1e053654f32
+3eb0b0811c0ab9e87e2ee7f7bac7c46a
+22573d874ac9ffa785e57d94e243b48d
+f6b126c83ea4a63f277199d7c06617d6
+b44a3229ab54f7367ee2acd678bec2d5
+CAlibre-LAuncher.dll
+4395e8e7351de03faac54492ee2bc874
+1100e1d599b5e4f87082670673c8abfb
+84533ef6651f38fe162ad2753f1ad788
+15c839292684ac6374633d231dbd76a7
+e0b008ea6eef411ed6f9faab8f1d3bee
+7b00beb5a7ef4a142ebcdcc052b312a3
+edit2.hlp
+022287b05e4c5ba5503f2b798219f5e9
+17134fe1344744cf99a93483f6859212
+77dc27fb2ed18f3977241e9475097746
+86a164a403a94c8ccd4f0ba383fa943c
+906e49f334041ebccc071985ecdcf2ba
+5e7b3664311b2daa9ee040b3cff4d82f
+C2
+www.mubrn.com
+188.214.39.243
+www.tmtransport.org
+194.14.217.146
+91.132.94.58
+45.153.127.226
+Filepath
+C:\Users\admin\AppData\Local\Temp\c.bat
+C:\ProgramData\USOShared\Logs\edit2.hlp
+C:\ProgramData\USOShared\Logs\CAlibre-LAuncher.dll
+C:\ProgramData\USOShared\Logs\ebook-edit.exe
+#ti #phishing #malware
+@ptescalator</description><pubDate>Tue, 16 Dec 2025 08:25:13 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_585</guid></item><item><title>Тише, тише: новая кампания против стран СНГ 🤫</title><link>https://t.me/ptescalator/580</link><description>Тише, тише: новая кампания против стран СНГ 🤫
+Во второй половине 2025 года мы обнаружили новую серию атак группы SweetSpecter, нацеленных на страны СНГ (Узбекистан, Туркменистан), в рамках которой злоумышленники распространяли вредоносные документы Microsoft Office (скриншоты 1–3).
+Документы были оформлены по единому шаблону и содержали обращение к пользователю с предложением «включить» якобы защищенное содержимое. После открытия файла и активации макросов автоматически выполнялся встроенный скрипт, который декодировал и извлекал закодированное в Base64 содержимое в каталог %APPDATA% под следующими именами:
+• ebook-edit.exe — легитимный исполняемый файл, связанный с редактором электронных книг Calibre;
+• Calibre-Launcher.dll — вредоносная библиотека, расшифровывающая и запускающая полезную нагрузку;
+• edit2.hlp — зашифрованная полезная нагрузка.
+📨 Варианты данной рассылки включали ресурсы, дополнительно зашифрованные однобайтовым XOR. Во вредоносных макросах также присутствовала проверка на наличие запущенного антивирусного процесса avp.exe. При наличии антивируса процесс запускался с отображением окна, в противном случае — в скрытом режиме (скриншот 4).
+Основная роль Calibre-Launcher.dll сводится к расшифровке и запуску следующего этапа вредоносной цепочки, содержимое которого хранится в файле edit2.hlp и зашифровано с применением алгоритма RC4. Расшифрованная полезная нагрузка начинается с выполнения шелл-кода, который восстанавливает затертые MZ- и PE-сигнатуры, а также корректирует смещения DOS-заголовка. После этого управление передаётся на точку входа восстановленного PE-файла, где начинается основная логика агента.
+💡 Стоит отметить, что загрузчик проверяет, не искажены ли системные задержки. Для этого создается вспомогательный поток с отложенной сигнализацией события. Основной поток ожидает его с небольшим тайм-аутом. В случае если ожидаемое событие сигнализировано, это означает, что что-то не так, и выполнение прекращается.
+Итоговый модуль, который мы назвали SilentNode, при запуске закрепляется в системе, перемещая себя и связанные компоненты (ebook-edit.exe, Calibre-Launcher.dll и edit2.hlp) в каталог C:\ProgramData\USOShared\Logs, а затем через временный скрипт %TEMP%\c.bat создает задачу планировщика (скриншот 5), обеспечивающую запуск полезной нагрузки каждые две минуты. Завершив процесс закрепления, текущий экземпляр завершает работу и далее перезапускается уже в контексте созданной задачи.
+🔄 После перезагрузки выполнение переходит к сетевому взаимодействию с управляющим сервером — выполняется формирование базовой информации о системе: версии операционной системы, имени компьютера и пользователя, а также сведений о сетевых интерфейсах. Сформированный ответ в результате упаковывается в бинарный контейнер с добавлением идентификатора системы. Данные кодируются с использованием нестандартного варианта Base64 и шифруются алгоритмом ChaCha20. В дальнейшем агент в циклическом режиме, делая случайные паузы до одной минуты, отправляет подготовленные сообщения на C2-сервер, используя HTTP POST-запросы, и ожидает ответ. Примечательно, что во всех исследуемых образцах использовался одинаковый endpoint /Search/v&lt;№&gt;.
+SilentNode по сути является загрузчиком, и основная его функциональность сводится к периодическому опросу C2-сервера, рефлективной загрузке и последующему выполнению полученных от C2 PE-модулей в памяти.
+IoCs — в посте ниже 👇
+#ti #phishing #malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Tue, 16 Dec 2025 08:24:18 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_580</guid></item><item><title>Message 579</title><link>https://t.me/ptescalator/579</link><description/><pubDate>Fri, 12 Dec 2025 16:20:19 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_579</guid></item><item><title>В дополнение к посту выше 👆</title><link>https://t.me/ptescalator/578</link><description>В дополнение к посту выше 👆
 🐾 Paths
 c:\Windows\ime\ssh.msi
 c:\Windows\ime\k.msi
