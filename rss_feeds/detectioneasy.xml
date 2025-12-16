@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 06 Dec 2025 20:11:20 +0000</lastBuildDate><item><title>В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе</title><link>https://t.me/detectioneasy/303</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 15 Dec 2025 19:45:42 +0000</lastBuildDate><item><title>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии</title><link>https://t.me/detectioneasy/304</link><description>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
+
+[Media: Фото]</description><pubDate>Mon, 15 Dec 2025 19:45:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_304</guid></item><item><title>В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе</title><link>https://t.me/detectioneasy/303</link><description>Всем привет! 💻✌️
 В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе
 👨‍💻 Как это работает?
 Атакующие часто используют директорию автозагрузки пользователя. Путь к ней задаётся в реестре:
