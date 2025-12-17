@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 15 Dec 2025 19:45:42 +0000</lastBuildDate><item><title>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии</title><link>https://t.me/detectioneasy/304</link><description>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 16 Dec 2025 21:46:38 +0000</lastBuildDate><item><title>Атакующие загружали вредоносные расширения в браузер для кражи данных</title><link>https://t.me/detectioneasy/305</link><description>Всем привет! 💻✌️
+Атакующие загружали вредоносные расширения в браузер для кражи данных
+👨‍💻 Как это работает?
+В Chromium-based браузерах ранее поддерживался аргумент командной строки --load-extension, который позволял запускать браузер с указанием пути к расширению
+Позднее данный аргумент был скрыт, однако его всё ещё можно было использовать, если отключить соответствующее ограничение с помощью флага:
+--disable-features=DisableLoadExtensionCommandLineSwitch
+Таким образом, атакующие могли перезапускать Chrome или Edge с уже загруженным вредоносным расширением без необходимости установки через официальный магазин
+В актуальных версиях Chromium данный способ уже не работает
+🔭 Обнаружение:
+🔤 Хантим аргументы командной строки
+ProviderName="Microsoft-Windows-Sysmon" and EventId=1 and Image endswith "chrome.exe" and CommandLine contains "--load-extension"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 16 Dec 2025 21:46:38 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_305</guid></item><item><title>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии</title><link>https://t.me/detectioneasy/304</link><description>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
 
 [Media: Фото]</description><pubDate>Mon, 15 Dec 2025 19:45:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_304</guid></item><item><title>В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе</title><link>https://t.me/detectioneasy/303</link><description>Всем привет! 💻✌️
 В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе
