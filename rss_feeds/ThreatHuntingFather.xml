@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 18 Dec 2025 09:33:58 +0000</lastBuildDate><item><title>Inside DPRK Operations</title><link>https://t.me/ThreatHuntingFather/1009</link><description>Inside DPRK Operations
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 18 Dec 2025 14:29:46 +0000</lastBuildDate><item><title>Inside DPRK Operations</title><link>https://t.me/ThreatHuntingFather/1009</link><description>Inside DPRK Operations
 Hunt.io и Acronis Threat Research Unit провели совместное исследование активности DPRK, связанной с кампаниями Lazarus и Kimsuky
 Анализ начался с повторно используемой инфраструктуры, обнаруженной в четырёх разных кампаниях.
 Связывание активности выполнялось через инфраструктурные паттерны.
@@ -13,7 +13,7 @@ FRP tunneling nodes, идентичные по развёртыванию и и�
 
 [Media: Фото]</description><pubDate>Thu, 18 Dec 2025 06:24:34 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1009</guid></item><item><title>#meme</title><link>https://t.me/ThreatHuntingFather/1008</link><description>#meme
 
-[Media: Видео]</description><pubDate>Thu, 18 Dec 2025 09:33:58 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
+[Media: Видео]</description><pubDate>Thu, 18 Dec 2025 14:29:46 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
 Ранее я писал про React2Shell (CVE-2025-55182) на основе наблюдений Huntress.
 В декабре 2025 года несколько вендоров опубликовали собственные исследования, которые подтверждают, что уязвимость эксплуатируется in the wild и используется разными операторами.
 Google Threat Intelligence Group
