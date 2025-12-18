@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2025-12-17T18:41:45.189507+00:00",
-  "messages_count": 43,
+  "last_update": "2025-12-18T04:38:49.997062+00:00",
+  "messages_count": 44,
   "messages": [
+    {
+      "id": "325",
+      "title": "Разборы PWN задач с IT-FEST CTF 2025 и niteCTF 2025 от Aker",
+      "text": "Разборы PWN задач с IT-FEST CTF 2025 и niteCTF 2025 от Aker\nhttps://akerdidik.github.io/blog/\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/325",
+      "pub_date": "2025-12-17T18:47:43+00:00"
+    },
     {
       "id": "324",
       "title": "Когда нашел RCE, и теперь ближайшие 2 недели общения выглядит примерно так  🤣",
