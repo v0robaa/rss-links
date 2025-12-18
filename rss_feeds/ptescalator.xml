@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 17 Dec 2025 13:29:08 +0000</lastBuildDate><item><title>(C)all (F)or (P)apers!</title><link>https://t.me/ptescalator/586</link><description>(C)all (F)or (P)apers!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 18 Dec 2025 09:25:59 +0000</lastBuildDate><item><title>Фантом во плоти 👻</title><link>https://t.me/ptescalator/587</link><description>Фантом во плоти 👻
+Летом 2025 года команда Threat Intelligence экспертного центра кибербезопасности Positive Technologies проанализировала операцию Phantom Enigma, преимущественно направленную на жителей Бразилии с целью кражи банковских аккаунтов. Помимо атак на обычных пользователей, были зафиксированы атаки на организации по всему миру с целью расширения инфраструктуры для дальнейших атак.
+Пользователи заражались вредоносным расширением для браузеров Firefox, Google Chrome и Microsoft Edge, в то время как инфраструктура организаций оказывалась под контролем инструментов для удаленного управления, например PDQ Connect или Mesh Agent.
+🍂 Осенью 2025 года специалисты группы киберразведки также фиксировали подобные атаки, наблюдая изменения в инструментарии и техниках закрепления. Например, появились новые инструменты класса RMM, изменилась логика работы сервера злоумышленников, а окна браузеров Microsoft Edge и Google Chrome у жертв начали пересекать новые пространства.
+👀 В нашей статье мы рассказали, какие атаки были обнаружены, что изменилось и насколько действия группировки Phantom Enigma массовые (спойлер: достаточно).
+#TI #APT
+@ptescalator
+
+[Media: Фото]</description><pubDate>Thu, 18 Dec 2025 09:25:59 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_587</guid></item><item><title>(C)all (F)or (P)apers!</title><link>https://t.me/ptescalator/586</link><description>(C)all (F)or (P)apers!
 Ты не понаслышке знаешь, как бороться с реальными киберугрозами: киберразведка, threat hunting, мониторинг в SOC, реагирование и расследование инцидентов? Тогда ждем твое выступление на треке Defense.
 Здесь говорят те, кто умеет определять угрозу по одному взгляду на индикаторы атаки, придумывают новые гипотезы и инструменты для отслеживания и поиска угроз, приезжают когда угодно и куда угодно, чтобы помочь справиться с инцидентом.
 Мы ждем практиков, которые знают, как выглядит атака в ее реальном исполнении, и готовы поделиться уникальными находками, рабочими инструментами и увлекательными историями.

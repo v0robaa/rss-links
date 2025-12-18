@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-18T04:38:54.749502+00:00",
-  "messages_count": 71,
+  "last_update": "2025-12-18T09:33:58.969993+00:00",
+  "messages_count": 72,
   "messages": [
     {
       "id": "1008",
       "title": "#meme",
       "text": "#meme\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1008",
-      "pub_date": "2025-12-18T04:38:54.743030+00:00"
+      "pub_date": "2025-12-18T09:33:58.962521+00:00"
+    },
+    {
+      "id": "1009",
+      "title": "Inside DPRK Operations",
+      "text": "Inside DPRK Operations\nHunt.io и Acronis Threat Research Unit провели совместное исследование активности DPRK, связанной с кампаниями Lazarus и Kimsuky\nАнализ начался с повторно используемой инфраструктуры, обнаруженной в четырёх разных кампаниях.\nСвязывание активности выполнялось через инфраструктурные паттерны.\nВ ходе исследования были выявлены:\nOpen directories, содержащие staging-контент, в том числе наборы инструментов для кражи учётных данных (credential-theft toolkits). Эти директории использовались как точки хранения и подготовки инструментов.\nFRP tunneling nodes, идентичные по развёртыванию и использовавшиеся на нескольких VPS-хостах. Повторяемость FRP-узлов позволила связать разные серверы между собой.\nПовторное использование TLS-сертификатов, которое дало возможность объединить несколько узлов в инфраструктурные кластеры. Эти кластеры включали системы с доступным RDP.\nДополнительно был разобран новый Linux-вариант бэкдора BADCALL, связанный с Lazarus.\n🔗 https://hunt.io/blog/dprk-lazarus-kimsuky-infrastructure-uncovered\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1009",
+      "pub_date": "2025-12-18T06:24:34+00:00"
     },
     {
       "id": "1007",
