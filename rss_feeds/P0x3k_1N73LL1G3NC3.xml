@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 11 Dec 2025 18:20:27 +0000</lastBuildDate><item><title>#cve #rce</title><link>https://t.me/P0x3k_1N73LL1G3NC3/211</link><description>#cve #rce
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 06:16:39 +0000</lastBuildDate><item><title>ESC1-unPAC (BOF)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/212</link><description>ESC1-unPAC (BOF)
+A Beacon Object File (BOF) that performs the complete ESC1 attack chain in a single execution: certificate request with arbitrary SAN (+SID), PKINIT authentication, and NT hash extraction via UnPAC-the-hash.
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 06:16:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_212</guid></item><item><title>#cve #rce</title><link>https://t.me/P0x3k_1N73LL1G3NC3/211</link><description>#cve #rce
 Microsoft Web Deploy RCE Exploit - CVE-2025-53772
 https://github.com/sailay1996/CVE-2025-53772/tree/main
 Telegram  ✉️ @freedomfox
