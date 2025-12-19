@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-19T14:28:21.665557+00:00",
-  "messages_count": 49,
+  "last_update": "2025-12-19T18:38:35.677636+00:00",
+  "messages_count": 50,
   "messages": [
+    {
+      "id": "214",
+      "title": "CVE-2025-37164: Unauthenticated RCE in HPE OneView.",
+      "text": "CVE-2025-37164: Unauthenticated RCE in HPE OneView.\nUnauthenticated RCE (10.0 CVSS) vulnerability, in Hewlett Packard Enterprise (HPE) OneView via an unauthenticated REST endpoint called executeCommand. All versions below 11.00 are vulnerable (so long as the vendor supplied hotfix has not been applied), however some VM product versions do not enable the vulnerable \"ID Pools\" endpoint, and are not exploitable.\nBlog: https://attackerkb.com/topics/ixWdbDvjwX/cve-2025-37164/rapid7-analysis\nZoomEye Dork: app=\"HPE OneView\"\nP.S. When testing HPE OneView version 6.60, you can elevate to root by exploiting CVE-2021-4034. It's unknown if that will work against more recent OneView appliance versions.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/214",
+      "pub_date": "2025-12-19T18:03:12+00:00"
+    },
     {
       "id": "213",
       "title": "Message 213",

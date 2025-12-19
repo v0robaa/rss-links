@@ -1,5 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 14:28:28 +0000</lastBuildDate><item><title>Inside DPRK Operations</title><link>https://t.me/ThreatHuntingFather/1009</link><description>Inside DPRK Operations
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 18:38:42 +0000</lastBuildDate><item><title>INK DRAGON</title><link>https://t.me/ThreatHuntingFather/1012</link><description>INK DRAGON
+Ink Dragon - PRC-aligned кластер, отслеживаемый как CL-STA-0049, Earth Alux, Jewelbug и REF7707. В кампании, описанной Check Point Research, актор использует скомпрометированные IIS-серверы как элементы распределённой инфраструктуры управления, формируя сеть ретрансляции трафика между жертвами.
+Ключевым компонентом операции является ShadowPad IIS Listener Module, встроенный в IIS и регистрирующий собственные HTTP-префиксы через стандартные API. Модуль принимает и обрабатывает только запросы, соответствующие протоколу управления, в то время как остальной трафик обслуживается штатной логикой IIS.
+Начальный доступ достигается за счёт эксплуатации давно известных конфигурационных ошибок в ASP.NET и SharePoint, включая ViewState десериализацию при повторном использовании machineKey. После компрометации серверы используются для приёма, пересылки и проксирования управляющего трафика в рамках одной операции.
+Процессы
+w3wp.exe - IIS worker, initial execution + ShadowPad IIS Listener
+cmd.exe
+powershell.exe
+conhost.exe (переименованный loader)
+cdb.exe - используется CDBLoader
+lsass.exe - credential dumping
+svchost.exe (контекст сервисов)
+mstsc.exe (RDP activity)
+IIS / Web
+ASP.NET __VIEWSTATE
+machineKey (ValidationKey / DecryptionKey)
+IIS Native Module (ShadowPad IIS Listener)
+URL prefixes с wildcard’ами (через HttpAddUrl)
+HTTP headers:
+Microsoft-IIS/10.0
+Fallback paths:
+C:\inetpub\wwwroot
+C:\inetpub\custerr\en-US\404.htm
+API / Functions
+HttpAddUrl
+AddSecurityPackageA
+MiniDumpWriteDump (реализация своя, не API)
+CreateFileMappingW
+MapViewOfFile
+VirtualProtect
+SystemFunction032
+Direct syscalls (runtime-resolved)
+Scheduled Tasks
+SYSCHECK
+Путь
+C:\Windows\System32\Tasks\SYSCHECK
+Windows Services
+WindowsTempUpdate
+Registry
+HKLM\SYSTEM\CurrentControlSet\Services\WindowsTempUpdate
+Credential Access / LSASS
+LalsDumper
+lals.exe
+fdp.dll
+nfdp.dll
+rtu.txt
+Output dump: &lt;PID&gt;.ddt
+Registry
+HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages
+Loaders / Execution Chains
+ShadowPad Loader (triad)
+EXE (signed, renamed)
+DLL (часто DLL.dll)
+Encrypted TMP payload
+Observed paths
+C:\Users\Public\vncutil64.exe
+C:\Users\Public\vncutil64loc.dll
+C:\Program Files\Microsoft\Edge\ApplicationLogs.exe
+C:\Program Files\Microsoft\Edge\atiadlxy.dll
+C:\Program Files\Microsoft\Edge\Application\msedge_proxyLog.exe
+C:\Program Files\Microsoft\Edge\Application\msedge_proxyLogLOC.dll
+CDBLoader
+cdb.exe
+config.ini
+wmsetup.log
+Execution example
+c:\users\public\cdb.exe -cf C:\Users\Public\config.ini -o C:\Users\Public\cdb.exe
+032Loader
+RC4-like decryption
+Entropy: system InstallDate
+Uses SystemFunction032
+Files / Directories
+C:\Users\Public\
+C:\ProgramData\
+C:\Windows\Temp\
+C:\Windows\System32\Tasks\
+C:\Windows\NTDS\NTDS.dit
+Registry (General)
+HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UUID\
+InstallDate (used for crypto key derivation)
+Network / C2
+ShadowPad IIS Listener
+Internal server/client peer lists
+Relay debug strings:
+Source IP
+Destination IP
+Bytes forwarded
+FinalDraft
+Microsoft Graph API
+OAuth token endpoint:
+https://login.microsoftonline.com/common/oauth2/token
+C2 via Outlook Drafts:
+Subject format: r_&lt;session_id&gt;, p_&lt;session_id&gt;
+AES-encrypted + Base64 payloads
+Security Downgrade Artifacts
+DisableRestrictedAdmin
+DisableTokenFiltering
+EnableDSRMAdmin
+DisableRunAsPPL
+Registry
+DSRMAdminLogonBehavior = 2
+RDP Artifacts
+Registry:
+HKCU\SOFTWARE\Microsoft\Terminal Server Client\Servers\
+Event IDs:
+21 (RDP logon)
+25 (RDP disconnect)
+Reused idle DA sessions
+Data Exfiltration
+NTDS.dit
+SYSTEM, SAM, SECURITY hives
+BackgroundFileTransfer worker (FinalDraft)
+Malware Families (by name)
+ShadowPad
+FinalDraft
+LalsDumper
+CDBLoader
+032Loader
+🔗 https://research.checkpoint.com/2025/ink-dragons-relay-network-and-offensive-operation/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 17:29:45 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1012</guid></item><item><title>Inside DPRK Operations</title><link>https://t.me/ThreatHuntingFather/1009</link><description>Inside DPRK Operations
 Hunt.io и Acronis Threat Research Unit провели совместное исследование активности DPRK, связанной с кампаниями Lazarus и Kimsuky
 Анализ начался с повторно используемой инфраструктуры, обнаруженной в четырёх разных кампаниях.
 Связывание активности выполнялось через инфраструктурные паттерны.
@@ -13,7 +135,7 @@ FRP tunneling nodes, идентичные по развёртыванию и и�
 
 [Media: Фото]</description><pubDate>Thu, 18 Dec 2025 06:24:34 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1009</guid></item><item><title>#meme</title><link>https://t.me/ThreatHuntingFather/1008</link><description>#meme
 
-[Media: Видео]</description><pubDate>Fri, 19 Dec 2025 14:28:28 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
+[Media: Видео]</description><pubDate>Fri, 19 Dec 2025 18:38:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
 Ранее я писал про React2Shell (CVE-2025-55182) на основе наблюдений Huntress.
 В декабре 2025 года несколько вендоров опубликовали собственные исследования, которые подтверждают, что уязвимость эксплуатируется in the wild и используется разными операторами.
 Google Threat Intelligence Group

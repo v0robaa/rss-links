@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 14:05:17 +0000</lastBuildDate><item><title>Message 213</title><link>https://t.me/P0x3k_1N73LL1G3NC3/213</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 18:03:12 +0000</lastBuildDate><item><title>CVE-2025-37164: Unauthenticated RCE in HPE OneView.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/214</link><description>CVE-2025-37164: Unauthenticated RCE in HPE OneView.
+Unauthenticated RCE (10.0 CVSS) vulnerability, in Hewlett Packard Enterprise (HPE) OneView via an unauthenticated REST endpoint called executeCommand. All versions below 11.00 are vulnerable (so long as the vendor supplied hotfix has not been applied), however some VM product versions do not enable the vulnerable "ID Pools" endpoint, and are not exploitable.
+Blog: https://attackerkb.com/topics/ixWdbDvjwX/cve-2025-37164/rapid7-analysis
+ZoomEye Dork: app="HPE OneView"
+P.S. When testing HPE OneView version 6.60, you can elevate to root by exploiting CVE-2021-4034. It's unknown if that will work against more recent OneView appliance versions.
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 18:03:12 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_214</guid></item><item><title>Message 213</title><link>https://t.me/P0x3k_1N73LL1G3NC3/213</link><description>
 
 [Media: Фото]</description><pubDate>Fri, 19 Dec 2025 14:05:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_213</guid></item><item><title>ESC1-unPAC (BOF)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/212</link><description>ESC1-unPAC (BOF)
 A Beacon Object File (BOF) that performs the complete ESC1 attack chain in a single execution: certificate request with arbitrary SAN (+SID), PKINIT authentication, and NT hash extraction via UnPAC-the-hash.

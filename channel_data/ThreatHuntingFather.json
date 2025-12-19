@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-19T14:28:28.985376+00:00",
-  "messages_count": 72,
+  "last_update": "2025-12-19T18:38:42.965129+00:00",
+  "messages_count": 73,
   "messages": [
     {
       "id": "1008",
       "title": "#meme",
       "text": "#meme\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1008",
-      "pub_date": "2025-12-19T14:28:28.977956+00:00"
+      "pub_date": "2025-12-19T18:38:42.954176+00:00"
+    },
+    {
+      "id": "1012",
+      "title": "INK DRAGON",
+      "text": "INK DRAGON\nInk Dragon - PRC-aligned кластер, отслеживаемый как CL-STA-0049, Earth Alux, Jewelbug и REF7707. В кампании, описанной Check Point Research, актор использует скомпрометированные IIS-серверы как элементы распределённой инфраструктуры управления, формируя сеть ретрансляции трафика между жертвами.\nКлючевым компонентом операции является ShadowPad IIS Listener Module, встроенный в IIS и регистрирующий собственные HTTP-префиксы через стандартные API. Модуль принимает и обрабатывает только запросы, соответствующие протоколу управления, в то время как остальной трафик обслуживается штатной логикой IIS.\nНачальный доступ достигается за счёт эксплуатации давно известных конфигурационных ошибок в ASP.NET и SharePoint, включая ViewState десериализацию при повторном использовании machineKey. После компрометации серверы используются для приёма, пересылки и проксирования управляющего трафика в рамках одной операции.\nПроцессы\nw3wp.exe - IIS worker, initial execution + ShadowPad IIS Listener\ncmd.exe\npowershell.exe\nconhost.exe (переименованный loader)\ncdb.exe - используется CDBLoader\nlsass.exe - credential dumping\nsvchost.exe (контекст сервисов)\nmstsc.exe (RDP activity)\nIIS / Web\nASP.NET __VIEWSTATE\nmachineKey (ValidationKey / DecryptionKey)\nIIS Native Module (ShadowPad IIS Listener)\nURL prefixes с wildcard’ами (через HttpAddUrl)\nHTTP headers:\nMicrosoft-IIS/10.0\nFallback paths:\nC:\\inetpub\\wwwroot\nC:\\inetpub\\custerr\\en-US\\404.htm\nAPI / Functions\nHttpAddUrl\nAddSecurityPackageA\nMiniDumpWriteDump (реализация своя, не API)\nCreateFileMappingW\nMapViewOfFile\nVirtualProtect\nSystemFunction032\nDirect syscalls (runtime-resolved)\nScheduled Tasks\nSYSCHECK\nПуть\nC:\\Windows\\System32\\Tasks\\SYSCHECK\nWindows Services\nWindowsTempUpdate\nRegistry\nHKLM\\SYSTEM\\CurrentControlSet\\Services\\WindowsTempUpdate\nCredential Access / LSASS\nLalsDumper\nlals.exe\nfdp.dll\nnfdp.dll\nrtu.txt\nOutput dump: <PID>.ddt\nRegistry\nHKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages\nLoaders / Execution Chains\nShadowPad Loader (triad)\nEXE (signed, renamed)\nDLL (часто DLL.dll)\nEncrypted TMP payload\nObserved paths\nC:\\Users\\Public\\vncutil64.exe\nC:\\Users\\Public\\vncutil64loc.dll\nC:\\Program Files\\Microsoft\\Edge\\ApplicationLogs.exe\nC:\\Program Files\\Microsoft\\Edge\\atiadlxy.dll\nC:\\Program Files\\Microsoft\\Edge\\Application\\msedge_proxyLog.exe\nC:\\Program Files\\Microsoft\\Edge\\Application\\msedge_proxyLogLOC.dll\nCDBLoader\ncdb.exe\nconfig.ini\nwmsetup.log\nExecution example\nc:\\users\\public\\cdb.exe -cf C:\\Users\\Public\\config.ini -o C:\\Users\\Public\\cdb.exe\n032Loader\nRC4-like decryption\nEntropy: system InstallDate\nUses SystemFunction032\nFiles / Directories\nC:\\Users\\Public\\\nC:\\ProgramData\\\nC:\\Windows\\Temp\\\nC:\\Windows\\System32\\Tasks\\\nC:\\Windows\\NTDS\\NTDS.dit\nRegistry (General)\nHKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Security Packages\nHKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UUID\\\nInstallDate (used for crypto key derivation)\nNetwork / C2\nShadowPad IIS Listener\nInternal server/client peer lists\nRelay debug strings:\nSource IP\nDestination IP\nBytes forwarded\nFinalDraft\nMicrosoft Graph API\nOAuth token endpoint:\nhttps://login.microsoftonline.com/common/oauth2/token\nC2 via Outlook Drafts:\nSubject format: r_<session_id>, p_<session_id>\nAES-encrypted + Base64 payloads\nSecurity Downgrade Artifacts\nDisableRestrictedAdmin\nDisableTokenFiltering\nEnableDSRMAdmin\nDisableRunAsPPL\nRegistry\nDSRMAdminLogonBehavior = 2\nRDP Artifacts\nRegistry:\nHKCU\\SOFTWARE\\Microsoft\\Terminal Server Client\\Servers\\\nEvent IDs:\n21 (RDP logon)\n25 (RDP disconnect)\nReused idle DA sessions\nData Exfiltration\nNTDS.dit\nSYSTEM, SAM, SECURITY hives\nBackgroundFileTransfer worker (FinalDraft)\nMalware Families (by name)\nShadowPad\nFinalDraft\nLalsDumper\nCDBLoader\n032Loader\n🔗 https://research.checkpoint.com/2025/ink-dragons-relay-network-and-offensive-operation/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1012",
+      "pub_date": "2025-12-19T17:29:45+00:00"
     },
     {
       "id": "1009",
