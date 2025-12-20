@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 20 Dec 2025 07:22:41 +0000</lastBuildDate><item><title>Moonwalk++</title><link>https://t.me/P0x3k_1N73LL1G3NC3/216</link><description>Moonwalk++
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 20 Dec 2025 15:01:37 +0000</lastBuildDate><item><title>GitHubDeviceCodePhishing</title><link>https://t.me/P0x3k_1N73LL1G3NC3/217</link><description>GitHubDeviceCodePhishing
+A tool that provides a web interface to easily perform GitHub Device Code phishing on red team engagements.
+Blog: Introducing: GitHub Device Code Phishing
+
+[Media: Фото]</description><pubDate>Sat, 20 Dec 2025 15:01:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_217</guid></item><item><title>Moonwalk++</title><link>https://t.me/P0x3k_1N73LL1G3NC3/216</link><description>Moonwalk++
 A PoC implementation of an enahnced version of StackMoonwalk, which combines its original technique to remove the caller from the call stack, with a memory self-encryption routine, using ROP to both desynchronize unwinding from control flow and simultaneously encrypt the executing shellcode to hide it from inpection.
 Blog Post: Malware Just Got Its Free Passes Back!.
 

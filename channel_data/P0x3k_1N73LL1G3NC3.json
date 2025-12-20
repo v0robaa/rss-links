@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-20T14:24:01.853646+00:00",
-  "messages_count": 51,
+  "last_update": "2025-12-20T18:34:14.710003+00:00",
+  "messages_count": 52,
   "messages": [
+    {
+      "id": "217",
+      "title": "GitHubDeviceCodePhishing",
+      "text": "GitHubDeviceCodePhishing\nA tool that provides a web interface to easily perform GitHub Device Code phishing on red team engagements.\nBlog: Introducing: GitHub Device Code Phishing\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/217",
+      "pub_date": "2025-12-20T15:01:37+00:00"
+    },
     {
       "id": "216",
       "title": "Moonwalk++",
