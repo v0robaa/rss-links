@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-20T04:32:32.819300+00:00",
-  "messages_count": 50,
+  "last_update": "2025-12-20T09:26:31.459230+00:00",
+  "messages_count": 51,
   "messages": [
+    {
+      "id": "216",
+      "title": "Moonwalk++",
+      "text": "Moonwalk++\nA PoC implementation of an enahnced version of StackMoonwalk, which combines its original technique to remove the caller from the call stack, with a memory self-encryption routine, using ROP to both desynchronize unwinding from control flow and simultaneously encrypt the executing shellcode to hide it from inpection.\nBlog Post: Malware Just Got Its Free Passes Back!.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/216",
+      "pub_date": "2025-12-20T07:22:41+00:00"
+    },
     {
       "id": "214",
       "title": "CVE-2025-37164: Unauthenticated RCE in HPE OneView.",

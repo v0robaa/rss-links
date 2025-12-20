@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Dec 2025 18:03:12 +0000</lastBuildDate><item><title>CVE-2025-37164: Unauthenticated RCE in HPE OneView.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/214</link><description>CVE-2025-37164: Unauthenticated RCE in HPE OneView.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 20 Dec 2025 07:22:41 +0000</lastBuildDate><item><title>Moonwalk++</title><link>https://t.me/P0x3k_1N73LL1G3NC3/216</link><description>Moonwalk++
+A PoC implementation of an enahnced version of StackMoonwalk, which combines its original technique to remove the caller from the call stack, with a memory self-encryption routine, using ROP to both desynchronize unwinding from control flow and simultaneously encrypt the executing shellcode to hide it from inpection.
+Blog Post: Malware Just Got Its Free Passes Back!.
+
+[Media: Видео]</description><pubDate>Sat, 20 Dec 2025 07:22:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_216</guid></item><item><title>CVE-2025-37164: Unauthenticated RCE in HPE OneView.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/214</link><description>CVE-2025-37164: Unauthenticated RCE in HPE OneView.
 Unauthenticated RCE (10.0 CVSS) vulnerability, in Hewlett Packard Enterprise (HPE) OneView via an unauthenticated REST endpoint called executeCommand. All versions below 11.00 are vulnerable (so long as the vendor supplied hotfix has not been applied), however some VM product versions do not enable the vulnerable "ID Pools" endpoint, and are not exploitable.
 Blog: https://attackerkb.com/topics/ixWdbDvjwX/cve-2025-37164/rapid7-analysis
 ZoomEye Dork: app="HPE OneView"
