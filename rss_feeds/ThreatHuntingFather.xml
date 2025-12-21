@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 21 Dec 2025 04:41:19 +0000</lastBuildDate><item><title>INK DRAGON</title><link>https://t.me/ThreatHuntingFather/1012</link><description>INK DRAGON
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 21 Dec 2025 09:27:20 +0000</lastBuildDate><item><title>INK DRAGON</title><link>https://t.me/ThreatHuntingFather/1012</link><description>INK DRAGON
 Ink Dragon - PRC-aligned кластер, отслеживаемый как CL-STA-0049, Earth Alux, Jewelbug и REF7707. В кампании, описанной Check Point Research, актор использует скомпрометированные IIS-серверы как элементы распределённой инфраструктуры управления, формируя сеть ретрансляции трафика между жертвами.
 Ключевым компонентом операции является ShadowPad IIS Listener Module, встроенный в IIS и регистрирующий собственные HTTP-префиксы через стандартные API. Модуль принимает и обрабатывает только запросы, соответствующие протоколу управления, в то время как остальной трафик обслуживается штатной логикой IIS.
 Начальный доступ достигается за счёт эксплуатации давно известных конфигурационных ошибок в ASP.NET и SharePoint, включая ViewState десериализацию при повторном использовании machineKey. После компрометации серверы используются для приёма, пересылки и проксирования управляющего трафика в рамках одной операции.
@@ -135,7 +135,7 @@ FRP tunneling nodes, идентичные по развёртыванию и и�
 
 [Media: Фото]</description><pubDate>Thu, 18 Dec 2025 06:24:34 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1009</guid></item><item><title>#meme</title><link>https://t.me/ThreatHuntingFather/1008</link><description>#meme
 
-[Media: Видео]</description><pubDate>Sun, 21 Dec 2025 04:41:19 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
+[Media: Видео]</description><pubDate>Sun, 21 Dec 2025 09:27:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
 Ранее я писал про React2Shell (CVE-2025-55182) на основе наблюдений Huntress.
 В декабре 2025 года несколько вендоров опубликовали собственные исследования, которые подтверждают, что уязвимость эксплуатируется in the wild и используется разными операторами.
 Google Threat Intelligence Group
