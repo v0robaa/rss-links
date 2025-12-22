@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-22T04:46:09.872790+00:00",
-  "messages_count": 54,
+  "last_update": "2025-12-22T09:35:40.064843+00:00",
+  "messages_count": 55,
   "messages": [
+    {
+      "id": "220",
+      "title": "TokenFlare",
+      "text": "TokenFlare\nServerless AITM Simulation Framework for Entra ID and M365\nBlog: https://labs.jumpsec.com/tokenflare-serverless-AiTM-phishing-in-under-60-seconds/\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/220",
+      "pub_date": "2025-12-22T09:35:40.061192+00:00"
+    },
     {
       "id": "219",
       "title": "Boost если не охранник",
