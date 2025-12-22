@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-22T09:35:47.542085+00:00",
-  "messages_count": 73,
+  "last_update": "2025-12-22T14:28:11.057225+00:00",
+  "messages_count": 74,
   "messages": [
     {
       "id": "1008",
       "title": "#meme",
       "text": "#meme\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1008",
-      "pub_date": "2025-12-22T09:35:47.530732+00:00"
+      "pub_date": "2025-12-22T14:28:11.044326+00:00"
+    },
+    {
+      "id": "1014",
+      "title": "SideWinder APT Campaign",
+      "text": "SideWinder APT Campaign\n(using a DLL side-loading technique with legitimate Microsoft Defender binaries (SenseCE[.]exe) to bypass EDR.)\nZscaler реконструировали таргетированную кампанию SideWinder против индийских организаций: фишинг под налоговую инспекцию → ZIP с «документами» → DLL side-loading через легитимный Microsoft Defender бинарь → C2\nAttack Chain\nInitial Access\n→ фишинговое письмо с Call To Action\n→ редирект через surl[.]li\n→ фейковый сайт Income Tax Department (gfmqvip[.]vip)\nDelivery\n→ загрузка Inspection.zip\n→ публичный file-sharing сервис gofile[.]io\nStaging\n→ Inspection Document Review.exe (переименованный SenseCE.exe, Microsoft Defender)\n→ MpGear.dll (вредоносная DLL)\n→ decoy\nExecution\n→ запуск Inspection Document Review.exe\n→ загрузка MpGear.dll из текущей директории (DLL side-loading)\nDefense Evasion\n→ проверка таймзоны через timeapi[.]io / worldtimeapi[.]org\n→ выполнение только при UTC+5:30\n→ задержка ~3.5 минуты\nCommand Execution\n→ соединение с 8[.]217[.]152[.]225\n→ загрузка shellcode loader /1bin\nImplant Deployment\n→ дроп C:\\install\\mysetup.exe\n→ создание YTSysConfig.ini / YTSTATUS.ini\nCommand & Control\n→ beaconing на 180[.]178[.]56[.]230\n→ имитация протокола китайского enterprise endpoint tool “Anqi Shen”\n🔗 https://www.zscaler.com/blogs/security-research/zscaler-threat-hunting-catches-evasive-sidewinder-apt-campaign\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1014",
+      "pub_date": "2025-12-22T12:21:56+00:00"
     },
     {
       "id": "1012",
