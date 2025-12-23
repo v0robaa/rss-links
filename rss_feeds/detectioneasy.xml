@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 16 Dec 2025 21:46:38 +0000</lastBuildDate><item><title>Атакующие загружали вредоносные расширения в браузер для кражи данных</title><link>https://t.me/detectioneasy/305</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 23 Dec 2025 12:33:09 +0000</lastBuildDate><item><title>Интересный LPE, но что нам с этим делать?</title><link>https://t.me/detectioneasy/306</link><description>Всем привет! 💻✌️
+Интересный LPE, но что нам с этим делать?
+🔭 Обнаружение:
+🔤 утилита zabbix_get, как правило используется с сервера zabbix, который в большинстве своем развернут на Linux. Построим на этом детект
+ProviderName="Microsoft-Windows-Sysmon" and EventId=1 and (Image endswith: '\zabbix_get.exe' or Description = "zabbix_sender.exe")
+p.s. хосты админов могут фолсить
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 23 Dec 2025 12:33:09 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_306</guid></item><item><title>Атакующие загружали вредоносные расширения в браузер для кражи данных</title><link>https://t.me/detectioneasy/305</link><description>Всем привет! 💻✌️
 Атакующие загружали вредоносные расширения в браузер для кражи данных
 👨‍💻 Как это работает?
 В Chromium-based браузерах ранее поддерживался аргумент командной строки --load-extension, который позволял запускать браузер с указанием пути к расширению
