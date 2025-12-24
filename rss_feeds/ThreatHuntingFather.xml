@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 24 Dec 2025 04:40:41 +0000</lastBuildDate><item><title>EmEditor Incident!🚨</title><link>https://t.me/ThreatHuntingFather/1016</link><description>EmEditor Incident!🚨
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 24 Dec 2025 09:30:48 +0000</lastBuildDate><item><title>EmEditor Incident!🚨</title><link>https://t.me/ThreatHuntingFather/1016</link><description>EmEditor Incident!🚨
 We regret that we have confirmed that the download guide ([Download Now] button on the homepage) on the EmEditor official website is suspected to have been modified by a third party.
 🔗 https://www.emeditor.com/general/important-security-incident-notice-regarding-the-emeditor-installer-download-link/
 🦔THF
@@ -174,7 +174,7 @@ FRP tunneling nodes, идентичные по развёртыванию и и�
 
 [Media: Фото]</description><pubDate>Thu, 18 Dec 2025 06:24:34 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1009</guid></item><item><title>#meme</title><link>https://t.me/ThreatHuntingFather/1008</link><description>#meme
 
-[Media: Видео]</description><pubDate>Wed, 24 Dec 2025 04:40:41 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
+[Media: Видео]</description><pubDate>Wed, 24 Dec 2025 09:30:48 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1008</guid></item><item><title>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS</title><link>https://t.me/ThreatHuntingFather/1007</link><description>React2Shell (CVE-2025-55182): in-the-wild GTIG, TrendMicro, Unit42, AWS
 Ранее я писал про React2Shell (CVE-2025-55182) на основе наблюдений Huntress.
 В декабре 2025 года несколько вендоров опубликовали собственные исследования, которые подтверждают, что уязвимость эксплуатируется in the wild и используется разными операторами.
 Google Threat Intelligence Group
