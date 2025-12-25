@@ -1,14 +1,21 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-25T04:42:10.845251+00:00",
-  "messages_count": 56,
+  "last_update": "2025-12-25T09:29:51.888418+00:00",
+  "messages_count": 57,
   "messages": [
     {
       "id": "220",
       "title": "TokenFlare",
       "text": "TokenFlare\nServerless AITM Simulation Framework for Entra ID and M365\nBlog: https://labs.jumpsec.com/tokenflare-serverless-AiTM-phishing-in-under-60-seconds/\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/220",
-      "pub_date": "2025-12-25T04:42:10.840951+00:00"
+      "pub_date": "2025-12-25T09:29:51.883860+00:00"
+    },
+    {
+      "id": "222",
+      "title": "DumpChromeSecrets",
+      "text": "DumpChromeSecrets\nExtract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/222",
+      "pub_date": "2025-12-25T05:56:39+00:00"
     },
     {
       "id": "221",

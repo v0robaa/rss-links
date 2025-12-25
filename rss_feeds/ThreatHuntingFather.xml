@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 25 Dec 2025 04:42:18 +0000</lastBuildDate><item><title>EmEditor Incident!🚨</title><link>https://t.me/ThreatHuntingFather/1016</link><description>EmEditor Incident!🚨
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 25 Dec 2025 05:58:46 +0000</lastBuildDate><item><title>Let’s Hunt: Suspicious Attachment Initiated LOLBin Execution - Post-Delivery Phishing</title><link>https://t.me/ThreatHuntingFather/1017</link><description>Let’s Hunt: Suspicious Attachment Initiated LOLBin Execution - Post-Delivery Phishing
+Detects execution of Windows LOLBins spawned shortly after a suspicious attachment is written to user accessible paths, a behavior commonly observed in spearphishing campaigns delivering malware loaders and ransomware.
+let Lookback = 1d;
+// Suspicious LOLBin children (core phishing downloaders)
+let SuspiciousChildren = dynamic([
+"powershell.exe","pwsh.exe","cmd.exe","mshta.exe","rundll32.exe",
+"regsvr32.exe","certutil.exe","bitsadmin.exe","wmic.exe","expand.exe"
+]);
+// Malicious command-line IOAs (from real spearphishing)
+let SuspiciousCmdPatterns = dynamic([
+"-EncodedCommand","FromBase64String","ExecutionPolicy Bypass",
+"Invoke-WebRequest","IWR","Invoke-RestMethod","IRM","DownloadFile","DownloadString",
+"net.webclient","iex","certutil -decode","bitsadmin /transfer",
+"http://","https://"
+]);
+// Attachment opener parents
+let AttachmentParents = dynamic([
+"winword.exe","excel.exe","powerpnt.exe","outlook.exe",
+"acrord32.exe","acrord64.exe","explorer.exe","msedge.exe","chrome.exe","firefox.exe"
+]);
+// Suspicious extensions
+let SuspiciousExtensions = dynamic([".docm",".xlsm",".pptm",".rtf",".pdf",".lnk",".htm",".html",".one",".iso",".js",".vbs",".zip",".scr"]);
+// User paths
+let UserPaths = dynamic([@"\Downloads\", @"\Temp\", @"\AppData\Local\Temp\", @"\Desktop\", @"\INetCache\"]);
+// Main query: Suspicious process spawns from attachment-like parents
+DeviceProcessEvents
+| where Timestamp &gt;= ago(Lookback)
+| where FileName in~ (SuspiciousChildren)
+| where ProcessCommandLine has_any (SuspiciousCmdPatterns)
+and ProcessCommandLine has_any (UserPaths)  // Staging in downloads/temp
+| where InitiatingProcessFileName in~ (AttachmentParents)
+or InitiatingProcessParentFileName in~ (AttachmentParents)  // Chaining support
+| where AccountName !endswith "$"  // Interactive users only
+| where InitiatingProcessFileName !in~ ("teams.exe","onedrive.exe","slack.exe")
+// Optional enrich: Was a suspicious file created shortly before?
+| join kind=leftouter (
+DeviceFileEvents
+| where Timestamp &gt;= ago(Lookback)
+| where ActionType == "FileCreated"
+| where FolderPath has_any (UserPaths)
+| extend LowerFileName = tolower(FileName)
+| mv-apply Extension = SuspiciousExtensions to typeof(string) on (
+where LowerFileName endswith tolower(Extension)
+)
+| where isnotempty(Extension)
+| where InitiatingProcessFileName in~ ("outlook.exe","msedge.exe","chrome.exe","firefox.exe","explorer.exe")
+| project FileTimestamp = Timestamp, DeviceId,
+AttachmentFile = FileName, AttachmentPath = FolderPath, FileCreator = InitiatingProcessFileName
+) on DeviceId
+| where isnull(FileTimestamp)  // Show all suspicious processes
+or (Timestamp &gt; FileTimestamp and (Timestamp - FileTimestamp) &lt; 4h)  // Broader window
+| project
+Timestamp, DeviceName, AccountName,
+ParentProcess = InitiatingProcessFileName,
+ChildProcess = FileName,
+ProcessCommandLine,
+GrandParentProcess = InitiatingProcessParentFileName,
+AttachmentFile, AttachmentPath, FileCreator
+| order by Timestamp desc
+🦔THF</description><pubDate>Thu, 25 Dec 2025 05:58:46 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1017</guid></item><item><title>EmEditor Incident!🚨</title><link>https://t.me/ThreatHuntingFather/1016</link><description>EmEditor Incident!🚨
 We regret that we have confirmed that the download guide ([Download Now] button on the homepage) on the EmEditor official website is suspected to have been modified by a third party.
 🔗 https://www.emeditor.com/general/important-security-incident-notice-regarding-the-emeditor-installer-download-link/
 🦔THF
