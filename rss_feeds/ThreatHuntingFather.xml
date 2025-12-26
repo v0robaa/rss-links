@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 25 Dec 2025 10:38:14 +0000</lastBuildDate><item><title>Обновление инструментов Evasive Panda</title><link>https://t.me/ThreatHuntingFather/1018</link><description>Обновление инструментов Evasive Panda
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Dec 2025 07:15:05 +0000</lastBuildDate><item><title>Supply Chain!⛓️‍💥</title><link>https://t.me/ThreatHuntingFather/1025</link><description>Supply Chain!⛓️‍💥
+Компрометация цепочки поставок EmEditor (декабрь 2025)
+Что произошло
+19-22 декабря 2025 года официальный сайт EmEditor раздавал троянизированный MSI. Легитимный инсталлятор был заменён на вредоносный MSI с неофициальной цифровой подписью «WALSHAM INVESTMENTS LIMITED».
+Начальная нагрузка (MSI)
+Во вредоносный MSI был встроен скрипт запуска PowerShell. В отчёте указано отключение логирования и создание вспомогательных C#-компонентов. Далее выполнялся сбор системной и пользовательской информации с последующей передачей в зашифрованном виде. Наблюдавшийся путь выгрузки:
+https://emeditorgb[.]com/take/mg8heP0r/&lt;uuid&gt;.
+Кража данных
+Собирался перечень файлов из каталогов Desktop, Documents и Downloads. Результаты сохранялись в файлы system.txt и sandbox.txt. Указан сбор учётных данных Windows, VPN-конфигураций и данных браузера, включая cookies, Login Data, список расширений и историю. Также перечислен сбор учётных данных следующих приложений: Zoho, Evernote, Notion, Discord, Slack, Mattermost, Skype, LiveChat, Microsoft Teams, Zoom, WinSCP, PuTTY, Steam, Telegram. В отчёте отмечено снятие скриншотов и упаковка собранных данных в архив array.bin.
+Закрепление и второй этап
+Сообщается об установке вредоносного браузерного расширения под названием Google Drive Caching. В качестве основного файла указан background.js. Начальный C2-домен обозначен как cachingdrive[.]com.
+Устойчивость C2
+В отчёте описан резервный механизм DGA с еженедельной ротацией. Приведена логика формирования параметров генерации, основанная на значениях года и номера недели, а также примеры доменов, рассчитанных для недели 25 декабря 2025 года.
+Возможности расширения
+Сбор широкого набора браузерных данных и системных параметров. Описана функция подмены адресов криптовалютных кошельков в буфере обмена (более 30 валют), кейлоггинг с классификацией по сайтам и функциональность, связанная с кражей данных Facebook Ads. В отчёте приведён набор команд, включающий получение cookies и истории, снятие скриншотов, запуск прокси, выполнение JavaScript на странице и самоустановку.
+Логика ограничения по языку
+В отчёте указано завершение выполнения, если системный язык совпадал с перечнем, включающим страны бывшего СССР и Иран.
+IOC (частично)
+MD5: a27731876e769ff19e225700085967bf, 6a4554509ce27efe5c6b8e58431f60d8
+C2 / инфраструктура: emedjp[.]com, emeditorde[.]com, emedorg[.]com, emeditorjapan[.]com, emeditorjp[.]com, cachingdrive[.]com, 147.45.50.54:443, 5.101.82.118:443, 46.28.70.245:443
+DGA (примеры): brt461jnbjvm52mw[.]biz, 1a298k7iqspq52l4r9e[.]space, z2ctmmm61dm0c3wfic[.]store, afdwtyy38efzk[.]app, 08qodmaloshm5zrwhww[.]xyz и др.
+🔗 https://mp.weixin.qq.com/s/M1-UdMaGflhkuqet0K1gqg
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 26 Dec 2025 07:15:05 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1025</guid></item><item><title>А в том ли мы направлении движемся? Oh shit here we go again! 😃</title><link>https://t.me/ThreatHuntingFather/1020</link><description>А в том ли мы направлении движемся? Oh shit here we go again! 😃
+В очередной раз вижу вакансии связанные с исследованиями и защитой инфраструктуры GameDev. Вот пример одной из них, самой RockStar Games⭐️
+Интересно знать какие угрозы для инфраструктуры таких компаний и скоуп атак присутствует? Скорее всего кража кода, конфиденциальных данных сотрудников/игроков и тому подобное. Соответственно закрепы на всех типах ОС, сетевая активность, импланты и тому подобное, что так мы сильно любим изучать🐕
+Но если появилась такого рода вакансия, это может означать, что они работают либо на опережение, либо их взламывали/взламывают и это требует экспертизы.
+Так что учимся господа всему новому, смотрим за тенденциями работы APT групп и возможно в ближайшем будущем вы сможете получать за свою работу от 108 тыс $ до 161 тыс $ в год.
+Играли вы в GTA и задумывались ли о защите серверов? Кто-то возможно вспомнит bypass SAMP серверов😁
+
+[Media: Фото]</description><pubDate>Fri, 26 Dec 2025 04:40:07 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1020</guid></item><item><title>Обновление инструментов Evasive Panda</title><link>https://t.me/ThreatHuntingFather/1018</link><description>Обновление инструментов Evasive Panda
 Evasive Panda (также известная как Bronze Highland, DaggerFly и StormBamboo) в период с ноября 2022 по ноябрь 2024 проводила таргетированные кампании против организаций в Турции, Китае и Индии. В ходе кампаний использовался имплант MgBot, ранее ассоциированный с данной группой. Основные изменения по сравнению с предыдущими операциями касаются цепочки загрузки и способов доставки полезной нагрузки.
 В качестве начального компонента использовались исполняемые файлы, маскирующиеся под обновления легитимных приложений, включая SohuVA, iQIYI Video, Tencent QQ и IObit Smart Defrag. В одном из задокументированных случаев применялся файл sohuva_update_10.2.29.1-lup-s-tp.exe, имитирующий обновление SohuVA.
 Первый лоадер реализован на C++ с использованием Windows Template Library. Его код основан на публично доступном примере Wizard97Test, размещённом на GitHub. Конфигурационные данные хранятся в зашифрованном виде, после XOR-дешифрования распаковываются с использованием LZMA. Все строковые значения внутри бинарного файла зашифрованы.
