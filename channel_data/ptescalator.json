@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-12-26T14:27:35.034434+00:00",
-  "messages_count": 57,
+  "last_update": "2025-12-26T18:38:12.985808+00:00",
+  "messages_count": 58,
   "messages": [
+    {
+      "id": "602",
+      "title": "Message 602",
+      "text": "",
+      "link": "https://t.me/ptescalator/602",
+      "pub_date": "2025-12-26T17:22:06+00:00"
+    },
     {
       "id": "597",
       "title": "Новое окно в темном режиме 🫣",
