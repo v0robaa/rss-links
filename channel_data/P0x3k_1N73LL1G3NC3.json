@@ -1,14 +1,21 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-27T14:24:51.390029+00:00",
-  "messages_count": 57,
+  "last_update": "2025-12-27T18:36:37.078588+00:00",
+  "messages_count": 58,
   "messages": [
     {
       "id": "220",
       "title": "TokenFlare",
       "text": "TokenFlare\nServerless AITM Simulation Framework for Entra ID and M365\nBlog: https://labs.jumpsec.com/tokenflare-serverless-AiTM-phishing-in-under-60-seconds/\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/220",
-      "pub_date": "2025-12-27T14:24:51.385385+00:00"
+      "pub_date": "2025-12-27T18:36:37.073135+00:00"
+    },
+    {
+      "id": "223",
+      "title": "MongoBleed (CVE-2025-14847) - Unauthenticated Memory Leak PoC",
+      "text": "MongoBleed (CVE-2025-14847) - Unauthenticated Memory Leak PoC\nA flaw in the zlib library enables attackers to leak sensitive data from MongoDB servers, the attacker can send the payload, without authentication, as the bug is exploited on the network level.\nAttackers can exploit this to extract sensitive information from MongoDB servers, including user information, passwords, API keys and more. Although the attacker might need to send a large amount of requests to gather the full database, and some data might be meaningless, the more time an attacker has the more information could be gathered.\nBlog: https://www.ox.security/blog/attackers-could-exploit-zlib-to-exfiltrate-data-cve-2025-14847/\nDork:\nShodan: product:\"MongoDB\"\nHUNTER: product.name=\"MongoDB\"\nZoomEye Dork: app=\"MongoDB\"\nAffected versions:\n8.2.0 to 8.2.2\n8.0.0 to 8.0.16\n7.0.0 to 7.0.27\n6.0.0 to 6.0.26\n5.0.0 to 5.0.31\n4.4.0 to 4.4.29\n4.2.0 and later\n4.0.0 and later\n3.6.0 and later\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/223",
+      "pub_date": "2025-12-27T14:25:21+00:00"
     },
     {
       "id": "222",
