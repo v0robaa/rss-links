@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Dec 2025 07:15:05 +0000</lastBuildDate><item><title>Supply Chain!⛓️‍💥</title><link>https://t.me/ThreatHuntingFather/1025</link><description>Supply Chain!⛓️‍💥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Dec 2025 18:59:11 +0000</lastBuildDate><item><title>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏</title><link>https://t.me/ThreatHuntingFather/1032</link><description>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏
+⚡ Уязвимости
+CVE‑2025‑12972 (Path Traversal → File Write → RCE) - некорректная обработка tag‑значений позволяет записывать файлы вне ожидаемых директорий и приводит к выполнению команд,
+CVE‑2025‑12970 (Stack Buffer Overflow) - переполнение стека при обработке данных от контейнерных источников,
+CVE‑2025‑12978 (Tag Spoofing) - подмена тегов нарушает маршрутизацию журналов и позволяет подделывать данные,
+CVE‑2025‑12977 (Tag Injection) - внедрение управляющих символов повреждает передаваемые журналы,
+CVE‑2025‑12969 (Missing Auth в forward‑input) - отсутствие проверки источника позволяет внешнему узлу отправлять произвольные записи.
+🎯 Последствия
+подделка или удаление журналов, скрытие активности, формирование ложных событий в SIEM, нарушение детектирования, возможность удалённого выполнения команд на узле.
+🛡️ Исправления
+Уязвимости закрыты в версиях 4.1.1 и 4.0.12. Рекомендуется обновление и проверка конфигураций входящих источников.
+🔗 Подробности
+https://www.oligo.security/blog/critical-vulnerabilities-in-fluent-bit-expose-cloud-environments-to-remote-takeover
+
+[Media: Фото]</description><pubDate>Fri, 26 Dec 2025 18:59:11 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1032</guid></item><item><title>Supply Chain!⛓️‍💥</title><link>https://t.me/ThreatHuntingFather/1025</link><description>Supply Chain!⛓️‍💥
 Компрометация цепочки поставок EmEditor (декабрь 2025)
 Что произошло
 19-22 декабря 2025 года официальный сайт EmEditor раздавал троянизированный MSI. Легитимный инсталлятор был заменён на вредоносный MSI с неофициальной цифровой подписью «WALSHAM INVESTMENTS LIMITED».
