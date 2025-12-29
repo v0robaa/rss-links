@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Dec 2025 18:59:11 +0000</lastBuildDate><item><title>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏</title><link>https://t.me/ThreatHuntingFather/1032</link><description>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 29 Dec 2025 06:24:10 +0000</lastBuildDate><item><title>KuGou signed binary used for malware execution 😎</title><link>https://t.me/ThreatHuntingFather/1033</link><description>KuGou signed binary used for malware execution 😎
+Давненько не было постов в стиле «давайте поищем», на повестке дня - сервер с open directory, который привлёк моё внимание наличием .bat-скриптов и подозрительных DLL-файлов. Изначальным объектом исследования стал файл 1.bat (Рисунок 1–2), внутри которого были прописаны команды для скачивания остальных бинарных файлов с веб-сервера. Все файлы сохраняются в директорию C:\Users\Public\music, после чего происходит запуск  некоего bridge_plugin_host_x64.exe 😤
+Данный исполняемый файл подписан валидной цифровой подписью KuGou (популярный китайский музыкальный сервис), что позволяет ему выглядеть как легитимный компонент популярного музыкального ПО и снижает вероятность детекта со стороны СЗИ, ориентированных на доверие к подписи 🤩
+При запуске bridge_plugin_host_x64.exe происходит подгрузка библиотеки dsp_bridge_x64.dll, расположенной в той же директории, тем самым доказывая наличие Side Load уязвимости. Данный DLL-файл выступает в роли инжектора (Рисунок 4–5), однако фактически является промежуточным загрузчиком. Его основная задача - извлечение и дальнейшая загрузка финального payload’а abc.bin, который и реализует основную вредоносную функциональность 🤩
+Таким образом, злоумышленники используют легитимно подписанный бинарь KuGou в качестве trusted loader’а, выстраивая цепочку исполнения от .bat-скрипта до финальной нагрузки, маскируя весь процесс под запуск обычного пользовательского ПО 🦍
+IOC's for hunts
+Stage server - 149.104.29[.]101
+Payloads &amp; malware samples
+3c9b98e77067bc272b3c17fdbac17487e0e6821e3ca41a5cb882ee0f56e017a5  - dsp_bridge_x64.dll
+7a54eb34d2b408e1b1491f13ed608eba573cd7ea07045da28223b624fcfed964 -  bridge_plugin_host_x64.exe
+7b26a2d2ecceea1f06696ecf709983c647058462f5a048711ba2ce9449afb4ae - abc.bin
+Behavioral Indicators
+Создание файлов в C:\Users\Public
+Запуск .bat скриптов
+P.S Сам abc.bin не разбирал 👩‍🦰
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Mon, 29 Dec 2025 06:24:10 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1033</guid></item><item><title>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏</title><link>https://t.me/ThreatHuntingFather/1032</link><description>🚨 Критические уязвимости в Fluent Bit (агенты сбора журналов для SIEM систем - Elastic, Splunk, Security Onion, Wazuh и тп) или SOC не отдыхает на НГ 😏
 ⚡ Уязвимости
 CVE‑2025‑12972 (Path Traversal → File Write → RCE) - некорректная обработка tag‑значений позволяет записывать файлы вне ожидаемых директорий и приводит к выполнению команд,
 CVE‑2025‑12970 (Stack Buffer Overflow) - переполнение стека при обработке данных от контейнерных источников,
