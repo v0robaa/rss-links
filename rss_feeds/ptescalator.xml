@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 26 Dec 2025 17:22:06 +0000</lastBuildDate><item><title>Message 602</title><link>https://t.me/ptescalator/602</link><description/><pubDate>Fri, 26 Dec 2025 17:22:06 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_602</guid></item><item><title>Новое окно в темном режиме 🫣</title><link>https://t.me/ptescalator/597</link><description>Новое окно в темном режиме 🫣
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 29 Dec 2025 13:09:46 +0000</lastBuildDate><item><title>IoCs в дополнение к посту выше 🔼</title><link>https://t.me/ptescalator/606</link><description>IoCs в дополнение к посту выше 🔼
+IP
+207.56.138.28
+108.187.37.85
+Архивы
+0f4da8c2fdd9aaefba2c1d0f6337721ac403bfc7e2177bc38b605e035bfadf60
+0f84ecd6bd04a4b5913d305f767f56e53087156ab4f1f4beb128ae17a16dc1d1
+1086d5aaced335416cedc3d9ec1ca9aad77afbccc49aa4a4460faf74ee15f0d1
+236fa94fa00681030feab630da5e31b5cbefcdbe59d05f010daaa0ec708fcf77
+3a7d55c863db954943a43a1a1dd04b8c48f56e6d24f3f012e1c89c235ae44b7f
+3d48fdc9f7c1f4b29436ff47c3d5ef493970ca77e4e79f93df85fc402ea82aef
+3d20ccf0e05679d1bf088ca78b3ffe9227addad049c46b33bbfa1a2437b8ac62
+51379a11387e751a378d405025a66d3514bcf3be85c1bce39666ce685e9ea58f
+56a88209101dbf0ec53cc9a1c7a7cae706bbd752d18b6697798a7adf232e7fc7
+701f0faf0ec6ff9897ca57ca432ed706e7dcd66031a9562ad4dba7ac1c18d654
+81e64f5c5b06dd415e4fd60defac5f1573d5c9d83094181bf359f9e5af8765da
+86ea0c005ad74b10fc97af3f7888475c8edab7bdef23b00e5f96bd5d85126c4f
+a59d51bf883fb55b2b6b71599aa9da06cac939144f60ab5b19adf0c6f20daa88
+a1ed64257af8e9611e06ac3cfd9124eae643f200dd9a04d09a89846618d365dc
+a7989bcd4d80bc63d0dbf0477ea518adc38a979c81fb54b104899ec40e93cc51
+b76d9da3f165e39706ac18bf0b5c63391a10895a98aa1d94ae018a459bace1fa
+bb14e58401fd1d9f49f53e3824873efd4d5e4abb854d0916881fe010eca71c01
+bc06467cd87e0b3f3d8fa61a1923a1ed792be53e861f669a55e8d6611ccef139
+bff760e249b5dc853d0bbdbb880da92af5b6c662641c678ef7766eb329d25500
+095c63062309fc53186bffbbb7b2b0c7665f27b73b809e9cb1818a4157baa8a8
+1c5dffd48c2a7408a87cc7b8767395ff234a96f6a9e95a7fb807624f4c89ef2e
+25111d40ae6dd2388f044068f2d13464d3c0c84d1d371f7e237e9a3c773fcaaf
+2a035ef28877e8eb10bb1fe59aad0080b902cb5fa9ca307c4208afed45cbcd50
+3296bd88e0a85ebad4f429878bf8bca16ac43e609133b4781f88a339c37bfe9f
+50dd0af7bae4f476b757097f0730ed5d297799b34e53aafeaa14e5be73921234
+628180916e70a07df3de917fcd2038bcf645923523307f4c5ca50595f4917eb8
+83f56c57101a3a524cd3da2aba762acb4a72e651290b0b5caaf022a477a30e84
+9e75b289d692968de0f951323f5e45d38b758ecf247adb39370f699cb9ee857a
+a8f0d406c3f0d5e0bbac8e014e6dc79ba9f195a4490653835906383af3747856
+b5210853def4430a10b88dc669b123dbbd91e290e88f8942ac1bbe54f1508a1f
+e0c36e483a1a80dfe7e3b2ffa5e00cd4e01208ed7311f7e2a403878bbe1c270c
+e416e872086c2578d88e0a096fef613b88a68a57b220cc33d5ae9bd452355937
+ea11cfbf1ac6e77506ff7b904056e9034599fe2e78bd3fa56b082dec7abaf49f
+ec11e3db546c0738337123ef39048b207534be052fad9085f39fc6556431a45d
+f74fae0fad77f7b4f4be37cd305c8f07d33098e82a0405ee37131ef0a975ef37
+#TI #ioc #Phishing #APT
+@ptescalator</description><pubDate>Mon, 29 Dec 2025 13:09:46 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_606</guid></item><item><title>«Налоговая проверка» из Восточной Азии 🚪</title><link>https://t.me/ptescalator/603</link><description>«Налоговая проверка» из Восточной Азии 🚪
+В начале исследования команда Threat Intelligence PT ESC обнаружила атаки на несколько российских банков. Все замеченные сообщения отправлялись с домена onmbv.com, например: TAX@notifications.onmbv.com, TAX@news.onmbv.com
+Сам домен onmbv.com был зарегистрирован 2025-09-14. Если перейти на сайт, то ONMBV позиционирует себя как масштабируемая инфраструктура с современными технологиями. При этом сам сайт выглядит как заглушка для фишинга с неработающим функционалом, кроме самого базового отображения с типичным интерфейсом (скриншот 1).
+Вредоносные письма содержали уведомления о налоговой проверке якобы от Федеральной налоговой службы (ФНС) и побуждали пользователей скачать «пакет документов», приложенный к сообщению (скриншот 2).
+Архивы содержали несколько DLL-файлов, .exe и .png. Например, файл -ФНС России.zip (SHA-256: 81e64f5c5b06dd415e4fd60defac5f1573d5c9d83094181bf359f9e5af8765da) содержал файлы со скриншота 3.
+👀 Особый интерес представляют три файла:
+• Проверьте этот файл.exe — 2b6679179a67b3c4b24e4708802a15b3bd3655a60aa0de4ce5b39b6814ec31d1
+• QQMusicCommon.dll — 9a037129dd9fd9f2f776c7d996b82dac76042ae0f69c765522ff2f0904d726da
+• 9LmcIWuG.png — dc7b25b00804ca264648ea5e280bfec4d818495ad24daa11daa6069a0621d317
+Файл .exe сам по себе является чистым .exe с иконкой PDF в качестве декоя.
+На VirusTotal он загружался под разными именами, в основном из России:
+• Документ.exe
+• Откройте и ознакомьтесь с файлом.ex_
+• 坏抉抗批技快扶找.exe (упрощенный китайский)
+Также он был загружен из Тайваня с именами Namelist.exe и Откройте.exe.
+При запуске .exe с помощью техники DLL-sideloading подгружается QQMusicCommon.dll, которая притворяется компонентом популярного в Китае музыкального приложения-сервиса QQ Music. Сама библиотека обфусцирована с использованием Control-Flow Flattening.
+Вредоносная DLL является дроппером, который считывает и расшифровывает полезную нагрузку из файла 9LmcIWuG.png и запускает ее.
+Во всех случаях, которые мы обнаружили, полезной нагрузкой являлась ValleyRAT, ассоциированная с китайской киберпреступной активностью. В нашем случае в качестве C2 выступал IP-адрес 207.56.138.28 из Гонконга.
+🐀 ValleyRAT — это вредоносная программа типа RAT (троян удаленного доступа), написанная на C++. Она позволяет хакерам незаметно управлять зараженным компьютером, следить за экраном, красть данные и загружать дополнительные модули. Некоторые источники называют ValleyRAT вариантом старого Gh0st RAT, однако это отдельное ПО с похожим функционалом. Впервые была замечена в начале 2023 года, распространяется через фишинг и поддельные установщики популярных программ.
+В процессе дальнейшего изучения мы увидели, что помимо сэмплов «ФНС» у нас есть множество архивов «CBDT», например «CBDT.zip». В нашем случае CBDT — Central Board of Direct Taxes, индийский аналог ФНС.
+Хотя часть файлов, нацеленных на Индию, использовали тот же C2, во время исследования архивов, связанных с атаками на Индию, мы обнаружили дополнительный C2, который применялся преимущественно в этих атаках — 108.187.37.85. Файлы, связанные с этим C2, использовали тот же kill chain: .exe, DLL-sideloading и «картинки» с ValleyRAT.
+Помимо Индии, некоторые файлы были загружены из Непала и Индонезии, но большая часть все же была из Индии. Атаки на индийские компании начались раньше, чем на российские — в начале декабря. На момент атак C2 108.187.37.85 также находился в Гонконге, однако на данный момент ASN изменился (сервер больше не расположен в Гонконге).
+Учитывая TTP, используемое ПО, а также вероятный фишинговый ресурс, мы предполагаем, что за атакой может стоять восточноазиатская финансово мотивированная группировка Silver Fox 🦊
+#TI #Phishing #APT
+@ptescalator
+
+[Media: Фото]</description><pubDate>Mon, 29 Dec 2025 13:07:36 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_603</guid></item><item><title>Message 602</title><link>https://t.me/ptescalator/602</link><description/><pubDate>Fri, 26 Dec 2025 17:22:06 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_602</guid></item><item><title>Новое окно в темном режиме 🫣</title><link>https://t.me/ptescalator/597</link><description>Новое окно в темном режиме 🫣
 В процессе мониторинга новых сетевых угроз в отделе сетевой экспертизы был замечен подозрительный трафик, который порождался файлом INTIMACAO_2025_006647.exe. Он маскировался под PDF и в переводе с португальского означал «Вызов в суд» (скриншот 1).
 После запуска на хосте открывался документ-приманка и инициировалось сетевое взаимодействие с API Google, причем внешне оно было похоже на легитимные запросы, а не на типичный обмен с C2. Эта история нас заинтриговала, поэтому мы решили углубиться в анализ образца и понять, что именно он делает и какую роль в этой схеме играют неожиданные сетевые запросы к Google 🔍
 Сразу перейдем к поведенческому анализу. После запуска в директорию /Temp дропались несколько PowerShell-скриптов: Clean_policies, Get_token и Apply_cbcm. Суть работы первого заключалась в подготовке зараженной машины — зачистке реестра от уже существующих локальных политик и настроек различных Chromium-браузеров, а также перезапуске браузерных процессов для оперативного применения внесенных изменений (скриншот 2). После этого Get_token.ps1 обращался к удаленному серверу и вытягивал оттуда некий токен (скриншот 3). В завершение третий скрипт, Apply_cbcm (скриншот 4), записывал полученный токен в политики Chrome на уровне системного реестра.
