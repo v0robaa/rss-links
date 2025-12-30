@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 29 Dec 2025 06:17:01 +0000</lastBuildDate><item><title>KuGou signed binary used for malware execution 😎</title><link>https://t.me/s0ld13r_ch/326</link><description>KuGou signed binary used for malware execution 😎
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 30 Dec 2025 15:44:06 +0000</lastBuildDate><item><title>😏 FR13NDS TEAM 2️⃣0️⃣2️⃣5️⃣</title><link>https://t.me/s0ld13r_ch/331</link><description>😏 FR13NDS TEAM 2️⃣0️⃣2️⃣5️⃣
+👨‍💻За этот год наша команда приняла участие в более чем 40 соревнованиях в форматах Jeopardy CTF и в Киберполигонах.
+🇰🇿  В рейтинге CTFtime 1 место по Казахстану 🇰🇿 и топ 141 по всему миру 🌍.
+🎖 Значимые достижения команды за 2025 год:
+🥇🥈KazHackStan Cyberkumbez 2025 🇰🇿
+🥇STS CyberChallenge 2025 🇰🇿
+🥇AITU Military CTF: Neural Frontline 🇰🇿
+🥇AppSecFest 2025 OpenCTF 🇰🇿
+🥇BCC CTF 2025 🇰🇿
+🥈Standoff 15 🇷🇺
+🥈International Cybersecurity Games 🇷🇺
+🎖️POC CTF 2025 🇰🇷 - Finalists and 4th place
+🎖️snakeCTF 2025 Finals 🇮🇹 - 4th place (Real World CTF)
+🎖️HackDay 2025 🇫🇷 - Finalists and 6th place
+🎖️DEF CON CTF 2025 🇺🇸 - 5th (w/ RePokemonedCollections)
+🩸 The First "First Blood" for Kazakhstan on Hack The Box 😫
+🎄Хотим поздравить вас с наступающим Новым Годом! Пусть 2026 станет для вас годом ярких достижений, невероятных открытий и успешных моментов.
+Not Riding Next Year 🐴
+
+[Media: Фото]</description><pubDate>Tue, 30 Dec 2025 15:44:06 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_331</guid></item><item><title>KuGou signed binary used for malware execution 😎</title><link>https://t.me/s0ld13r_ch/326</link><description>KuGou signed binary used for malware execution 😎
 Давненько не было постов в стиле «давайте поищем», на повестке дня - сервер с open directory, который привлёк моё внимание наличием .bat-скриптов и подозрительных DLL-файлов. Изначальным объектом исследования стал файл 1.bat (Рисунок 1–2), внутри которого были прописаны команды для скачивания остальных бинарных файлов с веб-сервера. Все файлы сохраняются в директорию C:\Users\Public\music, после чего происходит запуск  некоего bridge_plugin_host_x64.exe 😤
 Данный исполняемый файл подписан валидной цифровой подписью KuGou (популярный китайский музыкальный сервис), что позволяет ему выглядеть как легитимный компонент популярного музыкального ПО и снижает вероятность детекта со стороны СЗИ, ориентированных на доверие к подписи 🤩
 При запуске bridge_plugin_host_x64.exe происходит подгрузка библиотеки dsp_bridge_x64.dll, расположенной в той же директории, тем самым доказывая наличие Side Load уязвимости. Данный DLL-файл выступает в роли инжектора (Рисунок 4–5), однако фактически является промежуточным загрузчиком. Его основная задача - извлечение и дальнейшая загрузка финального payload’а abc.bin, который и реализует основную вредоносную функциональность 🤩
