@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2025-12-29T18:39:18.106180+00:00",
-  "messages_count": 211,
+  "last_update": "2025-12-30T04:44:14.721913+00:00",
+  "messages_count": 212,
   "messages": [
+    {
+      "id": "17291",
+      "title": "Message 17291",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/SecLabNews/17291",
+      "pub_date": "2025-12-30T03:58:54+00:00"
+    },
     {
       "id": "17290",
       "title": "⚒️Без полномочий: суд отклонил иск 106 россиян против блокировки звонков в мессенджерах",
