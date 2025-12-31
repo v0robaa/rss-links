@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 23 Dec 2025 12:33:09 +0000</lastBuildDate><item><title>Интересный LPE, но что нам с этим делать?</title><link>https://t.me/detectioneasy/306</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 31 Dec 2025 18:18:17 +0000</lastBuildDate><item><title>С наступающим Новым годом!</title><link>https://t.me/detectioneasy/308</link><description>Всем привет! 💻✌️
+С наступающим Новым годом!
+Канал создавался как место для обмена информацией об обнаружении: практическими наблюдениями, идеями, рабочими и нерабочими подходами. Не было цели собирать аудиторию и без ожиданий по росту. Тем не менее, за этот год количество подписчиков оказалось неожиданным — и это хороший сигнал, что тема detection по-прежнему востребована
+В 2026-м желаем всем:
+✔️ Всегда True Positive
+🙅‍♂️ А False Negative у нас не бывает 💩
+Пусть детекты будут простыми, воспроизводимыми и объяснимыми
+Логи — полными, а use case — проверяемыми
+Спасибо всем, кто читает и использует материалы в работе!)
+#detection@detectioneasy
+
+[Media: Фото]</description><pubDate>Wed, 31 Dec 2025 18:18:17 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_308</guid></item><item><title>Интересный LPE, но что нам с этим делать?</title><link>https://t.me/detectioneasy/306</link><description>Всем привет! 💻✌️
 Интересный LPE, но что нам с этим делать?
 🔭 Обнаружение:
 🔤 утилита zabbix_get, как правило используется с сервера zabbix, который в большинстве своем развернут на Linux. Построим на этом детект
