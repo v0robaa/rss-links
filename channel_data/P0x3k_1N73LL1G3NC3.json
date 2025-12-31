@@ -1,14 +1,21 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2025-12-31T09:31:21.348763+00:00",
-  "messages_count": 58,
+  "last_update": "2025-12-31T14:27:04.654285+00:00",
+  "messages_count": 59,
   "messages": [
     {
       "id": "220",
       "title": "TokenFlare",
       "text": "TokenFlare\nServerless AITM Simulation Framework for Entra ID and M365\nBlog: https://labs.jumpsec.com/tokenflare-serverless-AiTM-phishing-in-under-60-seconds/\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/220",
-      "pub_date": "2025-12-31T09:31:21.343085+00:00"
+      "pub_date": "2025-12-31T14:27:04.647979+00:00"
+    },
+    {
+      "id": "224",
+      "title": "Profilehound",
+      "text": "Profilehound\nBloodHound OpenGraph collector for user profiles stored on domain machines. Make informed decisions about looting secrets by identifying active user profiles on domain machines.\nP.S.\nBloodHound's HasSession edge is great, but it's only useful when a user is logged into a machine. If a user is not logged into a machine when the data is collected, it's much more difficult to find which computer may contain secrets to facilitate further exploitation. User profiles may contain a significant amount of valuable intel within DPAPI, cached credentials, SSH keys, cloud keys, and more - these don't require an active user session to access.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/224",
+      "pub_date": "2025-12-31T12:33:40+00:00"
     },
     {
       "id": "223",
