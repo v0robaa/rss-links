@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2025-12-31T04:42:13.761638+00:00",
-  "messages_count": 85,
+  "last_update": "2025-12-31T09:31:28.711238+00:00",
+  "messages_count": 86,
   "messages": [
+    {
+      "id": "1043",
+      "title": "С наступающим tryharder’ы🎉 🎧",
+      "text": "С наступающим tryharder’ы🎉 🎧\nШпаргалки для 2026 уже тут😄\n🔗https://github.com/tsale/awesome-dfir-skills",
+      "link": "https://t.me/ThreatHuntingFather/1043",
+      "pub_date": "2025-12-31T08:32:30+00:00"
+    },
     {
       "id": "1041",
       "title": "The HoneyMyte APT evolves with a kernel-mode rootkit and a ToneShell backdoor",
