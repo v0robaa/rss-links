@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2025-12-31T18:38:37.074645+00:00",
-  "messages_count": 60,
+  "last_update": "2026-01-01T04:52:49.915156+00:00",
+  "messages_count": 61,
   "messages": [
+    {
+      "id": "607",
+      "title": "🤩",
+      "text": "🤩",
+      "link": "https://t.me/ptescalator/607",
+      "pub_date": "2025-12-31T21:40:00+00:00"
+    },
     {
       "id": "606",
       "title": "IoCs в дополнение к посту выше 🔼",
