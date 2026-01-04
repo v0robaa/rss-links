@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-04T09:26:31.789690+00:00",
-  "messages_count": 87,
+  "last_update": "2026-01-04T14:24:39.766725+00:00",
+  "messages_count": 88,
   "messages": [
+    {
+      "id": "1045",
+      "title": "Connected Agents: The hidden agentic puppeteer",
+      "text": "Connected Agents: The hidden agentic puppeteer\nExploiting Copilot Studio's newest feature and exploring protection options\nИИ туда, ИИ сюда - Microsoft добавила Connected Agents. Один агент может вызывать другой и выполнять его действия, при этом связи между агентами не видны, а вызовы не логируются у вызываемого агента. Вектор сводится к повторному использованию привилегированных действий через цепочки агентов внутри одного environment.\n🔗 https://labs.zenity.io/p/connected-agents-the-hidden-agentic-puppeteer\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/1045",
+      "pub_date": "2026-01-04T11:28:13+00:00"
+    },
     {
       "id": "1044",
       "title": "Киберкод 2025 АО «ГТС»",
