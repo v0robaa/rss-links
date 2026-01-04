@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 31 Dec 2025 18:18:17 +0000</lastBuildDate><item><title>С наступающим Новым годом!</title><link>https://t.me/detectioneasy/308</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sun, 04 Jan 2026 06:02:01 +0000</lastBuildDate><item><title>Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx</title><link>https://t.me/detectioneasy/309</link><description>Всем привет! 💻✌️
+Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx
+При этом в Windows существует механизм обязательных (mandatory) пользовательских профилей, который может быть использован атакующим в качестве закрепа
+👨‍💻 Как это работает?
+Профили пользователей становятся обязательными, когда администратор переименовывает файл NTUSER.dat в NTUSER.man. Расширение .man делает профиль пользователя доступным только для чтения и имеет высший приоритет
+При входе пользователя в систему загрузится профиль из файла NTUSER.MAN - никаких операций записи в реестр не происходит
+Атакующим нужно подготовить профиль пользователя с изменными ключами реестра
+🔭 Обнаружение:
+🔤 отслеживанием создание файлов NTUSER.MAN в %USERPROFILE%
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 04 Jan 2026 06:02:01 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_309</guid></item><item><title>С наступающим Новым годом!</title><link>https://t.me/detectioneasy/308</link><description>Всем привет! 💻✌️
 С наступающим Новым годом!
 Канал создавался как место для обмена информацией об обнаружении: практическими наблюдениями, идеями, рабочими и нерабочими подходами. Не было цели собирать аудиторию и без ожиданий по росту. Тем не менее, за этот год количество подписчиков оказалось неожиданным — и это хороший сигнал, что тема detection по-прежнему востребована
 В 2026-м желаем всем:
