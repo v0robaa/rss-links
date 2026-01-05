@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 04 Jan 2026 11:28:13 +0000</lastBuildDate><item><title>Connected Agents: The hidden agentic puppeteer</title><link>https://t.me/ThreatHuntingFather/1045</link><description>Connected Agents: The hidden agentic puppeteer
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 06:43:20 +0000</lastBuildDate><item><title>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)</title><link>https://t.me/ThreatHuntingFather/1046</link><description>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)
+fsquirt.exe — утилита для отправки/приёма файлов по Bluetooth. Запускает мастер передачи файлов.
+Fsquirt.exe Windows binary attempts to load a Control Panel applet (CPL) called bthprops.cpl from its current working directory. When bthprops.cpl is present alongside fsquirt.exe, the binary loads it and executes a MessageBox from DLLMain.
+This PoC code generates a malicious bthprops.cpl file that can be loaded by fsquirt.exe. The included build.sh script compiles the CPL module for you.
+Этот бинарь таскали для DLL sideloading группа SideWinder https://securelist.com/sidewinder-apt/114089/
+🔗 https://github.com/mhaskar/FsquirtCPLPoC/tree/main 15 часов назад опубликовали.
+🦔THF
+
+[Media: Фото]</description><pubDate>Mon, 05 Jan 2026 06:43:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1046</guid></item><item><title>Connected Agents: The hidden agentic puppeteer</title><link>https://t.me/ThreatHuntingFather/1045</link><description>Connected Agents: The hidden agentic puppeteer
 Exploiting Copilot Studio's newest feature and exploring protection options
 ИИ туда, ИИ сюда - Microsoft добавила Connected Agents. Один агент может вызывать другой и выполнять его действия, при этом связи между агентами не видны, а вызовы не логируются у вызываемого агента. Вектор сводится к повторному использованию привилегированных действий через цепочки агентов внутри одного environment.
 🔗 https://labs.zenity.io/p/connected-agents-the-hidden-agentic-puppeteer

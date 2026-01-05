@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 05:00:14 +0000</lastBuildDate><item><title>Profilehound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/224</link><description>Profilehound
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 06:01:29 +0000</lastBuildDate><item><title>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients</title><link>https://t.me/P0x3k_1N73LL1G3NC3/225</link><description>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients
+How to leverage misconfigured ADCS templates to gain code execution on HTTPS-enabled WSUS clients.
+
+[Media: Фото]</description><pubDate>Mon, 05 Jan 2026 06:01:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_225</guid></item><item><title>Profilehound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/224</link><description>Profilehound
 BloodHound OpenGraph collector for user profiles stored on domain machines. Make informed decisions about looting secrets by identifying active user profiles on domain machines.
 P.S.
 BloodHound's HasSession edge is great, but it's only useful when a user is logged into a machine. If a user is not logged into a machine when the data is collected, it's much more difficult to find which computer may contain secrets to facilitate further exploitation. User profiles may contain a significant amount of valuable intel within DPAPI, cached credentials, SSH keys, cloud keys, and more - these don't require an active user session to access.

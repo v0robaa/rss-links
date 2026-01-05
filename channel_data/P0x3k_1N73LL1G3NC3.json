@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-05T05:00:14.470764+00:00",
-  "messages_count": 59,
+  "last_update": "2026-01-05T09:40:04.842030+00:00",
+  "messages_count": 60,
   "messages": [
+    {
+      "id": "225",
+      "title": "ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients",
+      "text": "ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients\nHow to leverage misconfigured ADCS templates to gain code execution on HTTPS-enabled WSUS clients.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/225",
+      "pub_date": "2026-01-05T06:01:29+00:00"
+    },
     {
       "id": "220",
       "title": "TokenFlare",

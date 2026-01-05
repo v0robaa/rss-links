@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-05T05:00:21.614124+00:00",
-  "messages_count": 88,
+  "last_update": "2026-01-05T09:40:12.560880+00:00",
+  "messages_count": 89,
   "messages": [
+    {
+      "id": "1046",
+      "title": "Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)",
+      "text": "Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)\nfsquirt.exe — утилита для отправки/приёма файлов по Bluetooth. Запускает мастер передачи файлов.\nFsquirt.exe Windows binary attempts to load a Control Panel applet (CPL) called bthprops.cpl from its current working directory. When bthprops.cpl is present alongside fsquirt.exe, the binary loads it and executes a MessageBox from DLLMain.\nThis PoC code generates a malicious bthprops.cpl file that can be loaded by fsquirt.exe. The included build.sh script compiles the CPL module for you.\nЭтот бинарь таскали для DLL sideloading группа SideWinder https://securelist.com/sidewinder-apt/114089/\n🔗 https://github.com/mhaskar/FsquirtCPLPoC/tree/main 15 часов назад опубликовали.\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1046",
+      "pub_date": "2026-01-05T06:43:20+00:00"
+    },
     {
       "id": "1045",
       "title": "Connected Agents: The hidden agentic puppeteer",

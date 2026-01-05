@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-01-05T05:00:16.866217+00:00",
-  "messages_count": 48,
+  "last_update": "2026-01-05T09:40:07.467347+00:00",
+  "messages_count": 49,
   "messages": [
+    {
+      "id": "334",
+      "title": "Living Off the Pipeline 👩‍💻",
+      "text": "Living Off the Pipeline 👩‍💻\nLiving off the Land постепенно добрался и до CI/CD пайплайнов. RCE-by-design через CI/CD вполне рабочий вектор атак: supply chain, мисконфиги в сборках и банальное отсутствие ограничений по правам часто позволяют атакующему получить доступ к значительной части инфраструктуры 🕺\nThe idea of the LOTP project is to inventory how development tools (typically CLIs), commonly used in CI/CD pipelines, have lesser-known RCE-By-Design features (\"foot guns\"), or more generally, can be used to achieve arbitrary code execution by running on untrusted code changes or following a workflow injection.\n🔗 LotP Project: https://boostsecurityio.github.io/lotp\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/334",
+      "pub_date": "2026-01-05T06:22:26+00:00"
+    },
     {
       "id": "333",
       "title": "Hey, community! 👋",
