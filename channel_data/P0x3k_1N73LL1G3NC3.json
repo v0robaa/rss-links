@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-05T09:40:04.842030+00:00",
-  "messages_count": 60,
+  "last_update": "2026-01-05T14:32:48.646878+00:00",
+  "messages_count": 61,
   "messages": [
+    {
+      "id": "226",
+      "title": "Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)",
+      "text": "Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)\nThe exploit was written specifically for Linux kernel v5.10.157, but should work against all vulnerable v5.10.x kernels, as it does not require any specific kernel text offsets to work.\nBlog:\n• Part 1 - In-the-wild Android Kernel Vulnerability Analysis + PoC\n• Part 2 - Extending The Race Window Without a Kernel Patch\n• Part 3 - Uncovering Chronomaly\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/226",
+      "pub_date": "2026-01-05T11:44:53+00:00"
+    },
     {
       "id": "225",
       "title": "ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients",

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 06:01:29 +0000</lastBuildDate><item><title>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients</title><link>https://t.me/P0x3k_1N73LL1G3NC3/225</link><description>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 11:44:53 +0000</lastBuildDate><item><title>Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/226</link><description>Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)
+The exploit was written specifically for Linux kernel v5.10.157, but should work against all vulnerable v5.10.x kernels, as it does not require any specific kernel text offsets to work.
+Blog:
+• Part 1 - In-the-wild Android Kernel Vulnerability Analysis + PoC
+• Part 2 - Extending The Race Window Without a Kernel Patch
+• Part 3 - Uncovering Chronomaly
+
+[Media: Видео]</description><pubDate>Mon, 05 Jan 2026 11:44:53 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_226</guid></item><item><title>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients</title><link>https://t.me/P0x3k_1N73LL1G3NC3/225</link><description>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients
 How to leverage misconfigured ADCS templates to gain code execution on HTTPS-enabled WSUS clients.
 
 [Media: Фото]</description><pubDate>Mon, 05 Jan 2026 06:01:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_225</guid></item><item><title>Profilehound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/224</link><description>Profilehound
