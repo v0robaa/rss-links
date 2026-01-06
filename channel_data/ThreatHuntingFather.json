@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-06T14:30:14.130941+00:00",
-  "messages_count": 89,
+  "last_update": "2026-01-06T18:41:03.190932+00:00",
+  "messages_count": 90,
   "messages": [
+    {
+      "id": "1048",
+      "title": "Al-Powered Ransomware: How Threat Actors",
+      "text": "Al-Powered Ransomware: How Threat Actors\nWeaponize Al Across the Attack Lifecycle\n🔗 https://www.youtube.com/live/g2fxSyoohZo\nСсылки с трансляции:\nhttps://www.ransomware.live/\nhttps://ecrime.ch/",
+      "link": "https://t.me/ThreatHuntingFather/1048",
+      "pub_date": "2026-01-06T18:07:43+00:00"
+    },
     {
       "id": "1046",
       "title": "Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)",

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 06:43:20 +0000</lastBuildDate><item><title>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)</title><link>https://t.me/ThreatHuntingFather/1046</link><description>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 06 Jan 2026 18:07:43 +0000</lastBuildDate><item><title>Al-Powered Ransomware: How Threat Actors</title><link>https://t.me/ThreatHuntingFather/1048</link><description>Al-Powered Ransomware: How Threat Actors
+Weaponize Al Across the Attack Lifecycle
+🔗 https://www.youtube.com/live/g2fxSyoohZo
+Ссылки с трансляции:
+https://www.ransomware.live/
+https://ecrime.ch/</description><pubDate>Tue, 06 Jan 2026 18:07:43 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1048</guid></item><item><title>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)</title><link>https://t.me/ThreatHuntingFather/1046</link><description>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)
 fsquirt.exe — утилита для отправки/приёма файлов по Bluetooth. Запускает мастер передачи файлов.
 Fsquirt.exe Windows binary attempts to load a Control Panel applet (CPL) called bthprops.cpl from its current working directory. When bthprops.cpl is present alongside fsquirt.exe, the binary loads it and executes a MessageBox from DLLMain.
 This PoC code generates a malicious bthprops.cpl file that can be loaded by fsquirt.exe. The included build.sh script compiles the CPL module for you.
