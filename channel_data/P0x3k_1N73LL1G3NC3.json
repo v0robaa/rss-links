@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-06T09:33:35.922040+00:00",
-  "messages_count": 61,
+  "last_update": "2026-01-06T14:30:06.425645+00:00",
+  "messages_count": 62,
   "messages": [
+    {
+      "id": "227",
+      "title": "TaskHound",
+      "text": "TaskHound\nTaskHound hunts for Windows scheduled tasks that run with privileged accounts and stored credentials. It enumerates tasks over SMB, parses XMLs, and identifies high-value attack opportunities through BloodHound integration.\nBlog: https://r0bit.io/posts/taskhound.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/227",
+      "pub_date": "2026-01-06T12:16:11+00:00"
+    },
     {
       "id": "226",
       "title": "Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)",
