@@ -3,8 +3,39 @@
 Weaponize Al Across the Attack Lifecycle
 🔗 https://www.youtube.com/live/g2fxSyoohZo
 Ссылки с трансляции:
+Coveware - инсайдерский риск и падение выкупов
+https://www.coveware.com/blog/2025/10/24/insider-threats-loom-while-ransom-payment-rates-plummet
+Отчёт показывает резкое снижение доли выплат выкупа и описывает, как операторы вымогателей всё чаще пробуют заходить через инсайдеров и более целевые компрометации.
+eCrime.ch - справочник по вымогателям
+http://ecrime.ch/
+Портал с материалами и коллекцией скриншотов leak-сайтов разных групп, полезный для атрибуции и анализа тенденций в вымогательских операциях.
+Ransomware.live - мониторинг жертв
 https://www.ransomware.live/
-https://ecrime.ch/</description><pubDate>Tue, 06 Jan 2026 18:07:43 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1048</guid></item><item><title>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)</title><link>https://t.me/ThreatHuntingFather/1046</link><description>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)
+Онлайн-дашборд, который отслеживает публикации вымогателей, статистику жертв, срезы по странам, индустриям и активным группам.
+Anthropic Threat Intelligence (PDF)
+https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf
+Отчёт о том, как атакующие пытаются злоупотреблять LLM: реальные кейсы, примеры сценариев и описанные механизмы снижения риска со стороны вендора.
+PromptLock - анонс обнаружения (ESET)
+https://x.com/ESETresearch/status/1960365364300087724
+Сообщение исследователей о PoC-рансомвари PromptLock, где элементы атаки генерируются при помощи AI.
+PromptLock - расследование происхождения (CyberScoop)
+https://cyberscoop.com/ai-ransomware-promptlock-nyu-behind-code-discovered-by-security-researchers/
+Материал раскрывает, что PromptLock - академический эксперимент, демонстрирующий автоматизацию этапов вымогательской атаки через LLM.
+FunkSec (Check Point Research)
+https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/
+Анализ новой группы: заявленные десятки жертв, Rust-инструменты, признаки использования AI и примеры того, как часть “доказательств” опирается на чужие сливы.
+WormGPT: что дальше (Abnormal Security)
+https://abnormal.ai/blog/what-happened-to-wormgpt-cybercriminal-tools
+История появления и закрытия WormGPT и обзор того, какими инструментами и обходами защит теперь пользуются киберпреступники.
+AI генерирует эксплойты под CVE
+https://gbhackers.com/ai-generating-cves-in-just-10-15-minutes/
+Исследование описывает пайплайн, где AI по описанию уязвимости быстро создает рабочий эксплойт и автоматически проверяет его на стенде.
+Hexstrike-AI и эксплуатация уязвимостей (Check Point)
+https://blog.checkpoint.com/executive-insights/hexstrike-ai-when-llms-meet-zero-day-exploitation/
+Показан фреймворк, где LLM управляет набором offensive-тулов, что снижает время от обнаружения до эксплуатации уязвимостей.
+LunaLock и “AI-шантаж”
+https://2wtech.com/lunalock-ransomware-meets-ai-extortion/
+Описана тактика вымогателей: помимо шифрования и утечек, давление на жертву обещанием залить украденные материалы в AI-датасеты</description><pubDate>Tue, 06 Jan 2026 18:07:43 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1048</guid></item><item><title>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)</title><link>https://t.me/ThreatHuntingFather/1046</link><description>Новые LOLbin’ы или исследователи учатся использовать TTP APT групп?)
 fsquirt.exe — утилита для отправки/приёма файлов по Bluetooth. Запускает мастер передачи файлов.
 Fsquirt.exe Windows binary attempts to load a Control Panel applet (CPL) called bthprops.cpl from its current working directory. When bthprops.cpl is present alongside fsquirt.exe, the binary loads it and executes a MessageBox from DLLMain.
 This PoC code generates a malicious bthprops.cpl file that can be loaded by fsquirt.exe. The included build.sh script compiles the CPL module for you.
