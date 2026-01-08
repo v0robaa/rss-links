@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-07T18:42:15.480138+00:00",
-  "messages_count": 62,
+  "last_update": "2026-01-08T04:44:58.407451+00:00",
+  "messages_count": 63,
   "messages": [
+    {
+      "id": "228",
+      "title": "CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)",
+      "text": "CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)\nUnauthenticated to Root RCE:\n- LFI via Content-Type confusion\n- Read /proc/self/environ to find HOME\n- Steal encryption key + database\n- Forge admin JWT token\n- Expression injection sandbox bypass\n- RCE as root\nQuery:\nFOFA: app=\"n8n\"\nHUNTER : product.name=\"N8n\"\nZoomEye: app=\"n8n\"\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/228",
+      "pub_date": "2026-01-07T20:53:28+00:00"
+    },
     {
       "id": "227",
       "title": "TaskHound",

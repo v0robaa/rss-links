@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 06 Jan 2026 12:16:11 +0000</lastBuildDate><item><title>TaskHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/227</link><description>TaskHound
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 07 Jan 2026 20:53:28 +0000</lastBuildDate><item><title>CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/228</link><description>CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)
+Unauthenticated to Root RCE:
+- LFI via Content-Type confusion
+- Read /proc/self/environ to find HOME
+- Steal encryption key + database
+- Forge admin JWT token
+- Expression injection sandbox bypass
+- RCE as root
+Query:
+FOFA: app="n8n"
+HUNTER : product.name="N8n"
+ZoomEye: app="n8n"
+
+[Media: Фото]</description><pubDate>Wed, 07 Jan 2026 20:53:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_228</guid></item><item><title>TaskHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/227</link><description>TaskHound
 TaskHound hunts for Windows scheduled tasks that run with privileged accounts and stored credentials. It enumerates tasks over SMB, parses XMLs, and identifies high-value attack opportunities through BloodHound integration.
 Blog: https://r0bit.io/posts/taskhound.html
 
