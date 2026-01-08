@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-08T04:45:05.680018+00:00",
-  "messages_count": 90,
+  "last_update": "2026-01-08T09:35:34.543212+00:00",
+  "messages_count": 91,
   "messages": [
+    {
+      "id": "1049",
+      "title": "🧪 Небольшой но приятный файндинг из тестовой среды",
+      "text": "🧪 Небольшой но приятный файндинг из тестовой среды\nТестировал браузерную Windows-среду в Browserling и, из чистого любопытства, решил заглянуть чуть дальше обычного открытия сайтов.\nОткрыл внутри сессии → локальный диск.\nВ виртуалке уже лежит готовый набор инструментов:\nSysinternals, HxD, Detect It Easy, PuTTY, WinSCP и другие.\nА ещё там есть небольшой сюрприз - файл secret.txt с промокодом от платформы 😊\nВроде бы ищешь bounty, но получаешь скидочку за любопытство 😃\n🔗browserling.com\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1049",
+      "pub_date": "2026-01-08T06:59:32+00:00"
+    },
     {
       "id": "1048",
       "title": "Al-Powered Ransomware: How Threat Actors",

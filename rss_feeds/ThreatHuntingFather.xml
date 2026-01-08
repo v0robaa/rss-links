@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 06 Jan 2026 18:07:43 +0000</lastBuildDate><item><title>Al-Powered Ransomware: How Threat Actors</title><link>https://t.me/ThreatHuntingFather/1048</link><description>Al-Powered Ransomware: How Threat Actors
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 08 Jan 2026 06:59:32 +0000</lastBuildDate><item><title>🧪 Небольшой но приятный файндинг из тестовой среды</title><link>https://t.me/ThreatHuntingFather/1049</link><description>🧪 Небольшой но приятный файндинг из тестовой среды
+Тестировал браузерную Windows-среду в Browserling и, из чистого любопытства, решил заглянуть чуть дальше обычного открытия сайтов.
+Открыл внутри сессии → локальный диск.
+В виртуалке уже лежит готовый набор инструментов:
+Sysinternals, HxD, Detect It Easy, PuTTY, WinSCP и другие.
+А ещё там есть небольшой сюрприз - файл secret.txt с промокодом от платформы 😊
+Вроде бы ищешь bounty, но получаешь скидочку за любопытство 😃
+🔗browserling.com
+🦔THF
+
+[Media: Фото]</description><pubDate>Thu, 08 Jan 2026 06:59:32 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1049</guid></item><item><title>Al-Powered Ransomware: How Threat Actors</title><link>https://t.me/ThreatHuntingFather/1048</link><description>Al-Powered Ransomware: How Threat Actors
 Weaponize Al Across the Attack Lifecycle
 🔗 https://www.youtube.com/live/g2fxSyoohZo
 Ссылки с трансляции:
