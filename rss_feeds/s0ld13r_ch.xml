@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 05 Jan 2026 06:22:26 +0000</lastBuildDate><item><title>Living Off the Pipeline 👩‍💻</title><link>https://t.me/s0ld13r_ch/334</link><description>Living Off the Pipeline 👩‍💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 09 Jan 2026 13:23:59 +0000</lastBuildDate><item><title>Abusing Firebase Realtime DB for C2 communication</title><link>https://t.me/s0ld13r_ch/335</link><description>Abusing Firebase Realtime DB for C2 communication
+Firebase Realtime Database - легитимный и широко используемый Cloud API, который обычно не вызывает подозрений в корпоративных сетях из‑за своего распространения среди разработчиков. Однако при отсутствии мониторинга такие сервисы могут использоваться как канал управления и эксфильтрации данных 😃
+Абуз Firebase Realtime DB был описан в отчёте CYFIRMA при расследовании цепочки FireScam, где Realtime Database использовался для эксфильтрации данных с зараженных устройств 🤩
+🛡  Detection idea (если использовали только Firebase без редиректеров)
+dns.question.name: *.firebaseio.com and source.ip: *
+Я собрал небольшой Proof of Concept, который показывает, как подобный API может быть использован в Command &amp; Control сценарии
+💻 Github: https://github.com/s0ld13rr/firec2
+P.S. Это PoC, без OPSEC, персиста и редиректоров. Только для lab / adversary emulation.
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Fri, 09 Jan 2026 13:23:59 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_335</guid></item><item><title>Living Off the Pipeline 👩‍💻</title><link>https://t.me/s0ld13r_ch/334</link><description>Living Off the Pipeline 👩‍💻
 Living off the Land постепенно добрался и до CI/CD пайплайнов. RCE-by-design через CI/CD вполне рабочий вектор атак: supply chain, мисконфиги в сборках и банальное отсутствие ограничений по правам часто позволяют атакующему получить доступ к значительной части инфраструктуры 🕺
 The idea of the LOTP project is to inventory how development tools (typically CLIs), commonly used in CI/CD pipelines, have lesser-known RCE-By-Design features ("foot guns"), or more generally, can be used to achieve arbitrary code execution by running on untrusted code changes or following a workflow injection.
 🔗 LotP Project: https://boostsecurityio.github.io/lotp

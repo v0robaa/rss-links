@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-01-09T09:35:02.774051+00:00",
-  "messages_count": 49,
+  "last_update": "2026-01-09T14:31:16.956676+00:00",
+  "messages_count": 50,
   "messages": [
+    {
+      "id": "335",
+      "title": "Abusing Firebase Realtime DB for C2 communication",
+      "text": "Abusing Firebase Realtime DB for C2 communication\nFirebase Realtime Database - легитимный и широко используемый Cloud API, который обычно не вызывает подозрений в корпоративных сетях из‑за своего распространения среди разработчиков. Однако при отсутствии мониторинга такие сервисы могут использоваться как канал управления и эксфильтрации данных 😃\nАбуз Firebase Realtime DB был описан в отчёте CYFIRMA при расследовании цепочки FireScam, где Realtime Database использовался для эксфильтрации данных с зараженных устройств 🤩\n🛡  Detection idea (если использовали только Firebase без редиректеров)\ndns.question.name: *.firebaseio.com and source.ip: *\nЯ собрал небольшой Proof of Concept, который показывает, как подобный API может быть использован в Command & Control сценарии\n💻 Github: https://github.com/s0ld13rr/firec2\nP.S. Это PoC, без OPSEC, персиста и редиректоров. Только для lab / adversary emulation.\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/335",
+      "pub_date": "2026-01-09T13:23:59+00:00"
+    },
     {
       "id": "334",
       "title": "Living Off the Pipeline 👩‍💻",
