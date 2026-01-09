@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-08T18:38:12.611763+00:00",
-  "messages_count": 64,
+  "last_update": "2026-01-09T04:46:06.370134+00:00",
+  "messages_count": 65,
   "messages": [
+    {
+      "id": "230",
+      "title": "DumpChromeSecrets  Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.",
+      "text": "DumpChromeSecrets  Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/230",
+      "pub_date": "2026-01-08T21:44:33+00:00"
+    },
     {
       "id": "229",
       "title": "Let’s make it possible!",
