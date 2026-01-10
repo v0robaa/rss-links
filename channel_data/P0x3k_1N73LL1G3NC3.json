@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-10T09:27:26.858878+00:00",
-  "messages_count": 65,
+  "last_update": "2026-01-10T14:25:44.705739+00:00",
+  "messages_count": 66,
   "messages": [
+    {
+      "id": "231",
+      "title": "📄 Catching Credential Guard Off Guard  Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on...",
+      "text": "📄 Catching Credential Guard Off Guard  Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on fully patched Windows 11 & Server 2025 with modern protections…\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/231",
+      "pub_date": "2026-01-10T10:33:33+00:00"
+    },
     {
       "id": "230",
       "title": "DumpChromeSecrets  Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.",
