@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-11T04:52:00.283653+00:00",
-  "messages_count": 66,
+  "last_update": "2026-01-11T09:27:53.008519+00:00",
+  "messages_count": 67,
   "messages": [
+    {
+      "id": "232",
+      "title": "EDRStartupHinder",
+      "text": "EDRStartupHinder\nPrevents AV / EDR from running by redirecting a core DLL in the System32 folder to another location during Windows startup.\nBlog: https://www.zerosalarium.com/2026/01/edrstartuphinder-edr-startup-process-blocker.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/232",
+      "pub_date": "2026-01-11T08:42:05+00:00"
+    },
     {
       "id": "231",
       "title": "📄 Catching Credential Guard Off Guard  Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on...",
