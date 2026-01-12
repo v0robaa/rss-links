@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 08 Jan 2026 06:59:32 +0000</lastBuildDate><item><title>🧪 Небольшой но приятный файндинг из тестовой среды</title><link>https://t.me/ThreatHuntingFather/1049</link><description>🧪 Небольшой но приятный файндинг из тестовой среды
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Jan 2026 06:00:56 +0000</lastBuildDate><item><title>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс</title><link>https://t.me/ThreatHuntingFather/1051</link><description>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс
+🔗https://clickfix.carsonww.com/
+🦔THF</description><pubDate>Mon, 12 Jan 2026 06:00:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1051</guid></item><item><title>🧪 Небольшой но приятный файндинг из тестовой среды</title><link>https://t.me/ThreatHuntingFather/1049</link><description>🧪 Небольшой но приятный файндинг из тестовой среды
 Тестировал браузерную Windows-среду в Browserling и, из чистого любопытства, решил заглянуть чуть дальше обычного открытия сайтов.
 Открыл внутри сессии → локальный диск.
 В виртуалке уже лежит готовый набор инструментов:
