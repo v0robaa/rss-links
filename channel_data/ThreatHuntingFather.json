@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-12T09:39:55.652315+00:00",
-  "messages_count": 92,
+  "last_update": "2026-01-12T14:33:05.440848+00:00",
+  "messages_count": 93,
   "messages": [
+    {
+      "id": "1052",
+      "title": "🛠️ Linux Artifact Parser (LAP)",
+      "text": "🛠️ Linux Artifact Parser (LAP)\nLinux Artifact Parser - open-source DFIR-инструмент для анализа артефактов Linux.\nКлючевые возможности\nThe software consists in several tabs, each of them dedicated to a given artifact category. The tabs of the GUI are as follows:\nLog Parsers - parses the most common Linux logs and returns them in a CSV file easy to filter out with Excel\nELF File Analysis - Extracts strings, metadata and imported functions from an ELF executable. This also does some basic anomaly checks in the ELF sections\n/Etc/Shadow - a simple /etc/shadow parser\n/Etc/Passwd - a simple /etc/passwd parser\n/Proc/Modules - reads the /proc/modules artifact and interprets its flags (if a module tainted the Kernel, if it is not part of the official Kernel etc.)\nProc Reconstruct - examines the /proc virtual filesystem and returns important info on memory in an easy to review GUI\nCrawlers - traverses the entire artifact collection, parses several artifact types and returns the parse output in consolidated views\nRPM Package Analysis - examines an RPM package and extracts scripts, metadata, hashes etc.\nDEB Package Analysis - examines a DEB package and extracts scripts, metadata, hashes etc.\nSQLite Extractors - extracts tables from some Linux artifacts in SQLite format\nTree View - The entire collection can be viewed in tree mode with a built-in \"Notepad++ like\" editor and possibility to dump data in binary format\n🔗 https://github.com/linuxartifactparser/LAP\nТуториал тут:\n🔗 https://m.youtube.com/@LinuxArtifactParserLAP\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1052",
+      "pub_date": "2026-01-12T12:01:15+00:00"
+    },
     {
       "id": "1051",
       "title": "Ввиду усиления абуза техник ClickFix, довольно хороший ресурс",

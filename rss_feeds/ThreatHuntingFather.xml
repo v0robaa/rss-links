@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Jan 2026 06:00:56 +0000</lastBuildDate><item><title>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс</title><link>https://t.me/ThreatHuntingFather/1051</link><description>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Jan 2026 12:01:15 +0000</lastBuildDate><item><title>🛠️ Linux Artifact Parser (LAP)</title><link>https://t.me/ThreatHuntingFather/1052</link><description>🛠️ Linux Artifact Parser (LAP)
+Linux Artifact Parser - open-source DFIR-инструмент для анализа артефактов Linux.
+Ключевые возможности
+The software consists in several tabs, each of them dedicated to a given artifact category. The tabs of the GUI are as follows:
+Log Parsers - parses the most common Linux logs and returns them in a CSV file easy to filter out with Excel
+ELF File Analysis - Extracts strings, metadata and imported functions from an ELF executable. This also does some basic anomaly checks in the ELF sections
+/Etc/Shadow - a simple /etc/shadow parser
+/Etc/Passwd - a simple /etc/passwd parser
+/Proc/Modules - reads the /proc/modules artifact and interprets its flags (if a module tainted the Kernel, if it is not part of the official Kernel etc.)
+Proc Reconstruct - examines the /proc virtual filesystem and returns important info on memory in an easy to review GUI
+Crawlers - traverses the entire artifact collection, parses several artifact types and returns the parse output in consolidated views
+RPM Package Analysis - examines an RPM package and extracts scripts, metadata, hashes etc.
+DEB Package Analysis - examines a DEB package and extracts scripts, metadata, hashes etc.
+SQLite Extractors - extracts tables from some Linux artifacts in SQLite format
+Tree View - The entire collection can be viewed in tree mode with a built-in "Notepad++ like" editor and possibility to dump data in binary format
+🔗 https://github.com/linuxartifactparser/LAP
+Туториал тут:
+🔗 https://m.youtube.com/@LinuxArtifactParserLAP
+🦔 THF
+
+[Media: Фото]</description><pubDate>Mon, 12 Jan 2026 12:01:15 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1052</guid></item><item><title>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс</title><link>https://t.me/ThreatHuntingFather/1051</link><description>Ввиду усиления абуза техник ClickFix, довольно хороший ресурс
 🔗https://clickfix.carsonww.com/
 🦔THF</description><pubDate>Mon, 12 Jan 2026 06:00:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1051</guid></item><item><title>🧪 Небольшой но приятный файндинг из тестовой среды</title><link>https://t.me/ThreatHuntingFather/1049</link><description>🧪 Небольшой но приятный файндинг из тестовой среды
 Тестировал браузерную Windows-среду в Browserling и, из чистого любопытства, решил заглянуть чуть дальше обычного открытия сайтов.
