@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-13T14:32:51.642651+00:00",
-  "messages_count": 67,
+  "last_update": "2026-01-13T18:39:29.477280+00:00",
+  "messages_count": 68,
   "messages": [
+    {
+      "id": "233",
+      "title": "Всем привет!",
+      "text": "Всем привет!\nДелюсь с вами долгожданной третьей частью Impacket Programming Guide! В этой части мы разобрали основные концепции библиотеки, рассмотрели несколько MSRPC протоколов, а в конце я создал инструмент, который использует кастомный RPC сервер для исполнения команд, что может стать полезно для бокового перемещения : )\nПомимо того, реализовал функционал скачивания/загрузки файлов, ползанья по файловой системе и все это — в интерактивном шелле!\nСтатья: https://medium.com/@cicada-8/impacket-developer-guide-part-3-make-your-own-lateral-movement-a2f8181f657b\nPOC: https://github.com/CICADA8-Research/RpcMotion\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/233",
+      "pub_date": "2026-01-13T18:26:19+00:00"
+    },
     {
       "id": "232",
       "title": "EDRStartupHinder",

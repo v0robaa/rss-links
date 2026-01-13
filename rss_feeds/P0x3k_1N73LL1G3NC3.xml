@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 11 Jan 2026 08:42:05 +0000</lastBuildDate><item><title>EDRStartupHinder</title><link>https://t.me/P0x3k_1N73LL1G3NC3/232</link><description>EDRStartupHinder
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 13 Jan 2026 18:26:19 +0000</lastBuildDate><item><title>Всем привет!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/233</link><description>Всем привет!
+Делюсь с вами долгожданной третьей частью Impacket Programming Guide! В этой части мы разобрали основные концепции библиотеки, рассмотрели несколько MSRPC протоколов, а в конце я создал инструмент, который использует кастомный RPC сервер для исполнения команд, что может стать полезно для бокового перемещения : )
+Помимо того, реализовал функционал скачивания/загрузки файлов, ползанья по файловой системе и все это — в интерактивном шелле!
+Статья: https://medium.com/@cicada-8/impacket-developer-guide-part-3-make-your-own-lateral-movement-a2f8181f657b
+POC: https://github.com/CICADA8-Research/RpcMotion
+
+[Media: Фото]</description><pubDate>Tue, 13 Jan 2026 18:26:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_233</guid></item><item><title>EDRStartupHinder</title><link>https://t.me/P0x3k_1N73LL1G3NC3/232</link><description>EDRStartupHinder
 Prevents AV / EDR from running by redirecting a core DLL in the System32 folder to another location during Windows startup.
 Blog: https://www.zerosalarium.com/2026/01/edrstartuphinder-edr-startup-process-blocker.html
 
