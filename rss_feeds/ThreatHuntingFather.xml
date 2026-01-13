@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Jan 2026 12:01:15 +0000</lastBuildDate><item><title>🛠️ Linux Artifact Parser (LAP)</title><link>https://t.me/ThreatHuntingFather/1052</link><description>🛠️ Linux Artifact Parser (LAP)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 13 Jan 2026 13:28:15 +0000</lastBuildDate><item><title>Unveiling VoidLink – A Stealthy, Cloud-Native Linux Malware Framework 👀</title><link>https://t.me/ThreatHuntingFather/1062</link><description>Unveiling VoidLink – A Stealthy, Cloud-Native Linux Malware Framework 👀
+Check Point Research откопали VoidLink - cloud-native фреймворк вредоносного ПО для Linux, ориентированный на длительное скрытое присутствие в облачных и контейнерных средах .
+VoidLink модульная платформа, состоящая из загрузчиков, основного импланта, rootkit-компонентов и плагинов, загружаемых в память во время выполнения. Основной имплант написан на Zig и отвечает за стабильность, выполнение задач и связь с C2, а дополнительная функциональность реализована через более чем 30 плагинов.
+Фреймворк адаптирован под облака. После запуска он определяет провайдера (AWS, GCP, Azure, Alibaba, Tencent), собирает данные из metadata-API, а также выявляет Docker и Kubernetes-окружения. В отчёте указано, что VoidLink собирает системную информацию и учётные данные, связанные с облачной инфраструктурой и инструментами разработки, включая Git.
+Для маскировки активности VoidLink определяет наличие Linux EDR и механизмов харденинга и использует эти данные для изменения поведения во время работы. Реализованы rootkit-механизмы на базе LD_PRELOAD, LKM и eBPF, позволяющие скрывать процессы, файлы и сетевые соединения.
+Управление через web-панель, включающую генератор имплантов и управление плагинами. Поддерживаются каналы связи HTTP/1.1, HTTP/2, WebSocket, DNS и ICMP с маскировкой сетевого трафика под легитимный веб- или API-трафик. В образцах также отмечены зачатки mesh-C2.
+Согласно отчёту, на момент исследования подтверждённых случаев эксплуатации в реальных атаках зафиксировано не было. Framework находился в активной стадии разработки и предназначен для работы в современных Linux-, cloud- и container-средах.
+😃 https://research.checkpoint.com/2026/voidlink-the-cloud-native-malware-framework/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Tue, 13 Jan 2026 13:28:15 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1062</guid></item><item><title>🛠️ Linux Artifact Parser (LAP)</title><link>https://t.me/ThreatHuntingFather/1052</link><description>🛠️ Linux Artifact Parser (LAP)
 Linux Artifact Parser - open-source DFIR-инструмент для анализа артефактов Linux.
 Ключевые возможности
 The software consists in several tabs, each of them dedicated to a given artifact category. The tabs of the GUI are as follows:
