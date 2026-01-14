@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 13 Jan 2026 18:26:19 +0000</lastBuildDate><item><title>Всем привет!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/233</link><description>Всем привет!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 14 Jan 2026 11:22:08 +0000</lastBuildDate><item><title>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/236</link><description>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.
+An improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSIEM 7.4.0, FortiSIEM 7.3.0 through 7.3.4, FortiSIEM 7.1.0 through 7.1.8, FortiSIEM 7.0.0 through 7.0.4, FortiSIEM 6.7.0 through 6.7.10 may allow an unauthenticated attacker to remotely inject arguments, leading to root remote code execution.
+Blog: https://horizon3.ai/attack-research/disclosures/cve-2025-64155-three-years-of-remotely-rooting-the-fortinet-fortisiem/
+Dork:
+ZoomEye: app="Fortinet FortiSIEM"
+HUNTER : product.name="Fortinet FortiSIEM"
+
+[Media: Фото]</description><pubDate>Wed, 14 Jan 2026 11:22:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_236</guid></item><item><title>CVE-2025-68921 Windows LPE in Nahimic audio enhancement software</title><link>https://t.me/P0x3k_1N73LL1G3NC3/235</link><description>CVE-2025-68921 Windows LPE in Nahimic audio enhancement software
+A local privilege escalation vulnerability in audio enhancement software pre-installed on many gaming laptops, including Lenovo Legion, IdeaPad Gaming, MSI, Thunderobot, and others. The vulnerability was tracked by Lenovo PSIRT as LEN-18785 and assigned CVE-2025-68921, allowing a low-privileged user to escalate privileges directly to NT AUTHORITY\SYSTEM.
+Blog: https://www.hackandhide.com/cve-2025-68921/
+
+[Media: Фото]</description><pubDate>Wed, 14 Jan 2026 09:59:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_235</guid></item><item><title>Всем привет!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/233</link><description>Всем привет!
 Делюсь с вами долгожданной третьей частью Impacket Programming Guide! В этой части мы разобрали основные концепции библиотеки, рассмотрели несколько MSRPC протоколов, а в конце я создал инструмент, который использует кастомный RPC сервер для исполнения команд, что может стать полезно для бокового перемещения : )
 Помимо того, реализовал функционал скачивания/загрузки файлов, ползанья по файловой системе и все это — в интерактивном шелле!
 Статья: https://medium.com/@cicada-8/impacket-developer-guide-part-3-make-your-own-lateral-movement-a2f8181f657b
