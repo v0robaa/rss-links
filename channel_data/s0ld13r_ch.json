@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-01-15T04:47:47.071767+00:00",
-  "messages_count": 52,
+  "last_update": "2026-01-15T09:35:10.124045+00:00",
+  "messages_count": 53,
   "messages": [
+    {
+      "id": "338",
+      "title": "Living of the Land AI 🔥",
+      "text": "Living of the Land AI 🔥\nНесколько недель назад мы с @ThreatHuntingFather дискутировали на тему AI‑агентов и APT‑техник. Меня давно интересовал вопрос, как можно «вооружать» легитимные AI‑агенты для задач Red Team и adversary emulation, оставаясь в рамках минимального шума 😃\nВ итоге эта идея выросла в нечто большее - Living of the Land AI или LOLAI 😇\nLOLAI это база знаний которая описывает:\n• векторы атак с использованием AI агентов\n• способы злоупотребления легитимными агентами и API\n• detection opportunities и hunting use cases\nЕсли вы знаете интересный AI‑агент, который можно использовать для Red Team / Adversary Emulation - feel free to contribute, будем только рады ☺️\n🔗 LOLAI Project: https://lolai-project.github.io/\nМаксимальный репост друзья, дадим жизнь проекту‼\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/338",
+      "pub_date": "2026-01-15T06:02:39+00:00"
+    },
     {
       "id": "336",
       "title": "Всем кто не смог посетить доклад lllbeback на 2600 в Алмате отправляем презентацию с его докладом ⬇️",

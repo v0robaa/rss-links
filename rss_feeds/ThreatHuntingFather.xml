@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 14 Jan 2026 18:42:02 +0000</lastBuildDate><item><title>A phishing campaign in India targeting vehicle owners through SMS messages that threaten legal action for unpaid e-challans was hosted at 101.33.78[.]145 and 43.130.12[.]41.</title><link>https://t.me/ThreatHuntingFather/1072</link><description>A phishing campaign in India targeting vehicle owners through SMS messages that threaten legal action for unpaid e-challans was hosted at 101.33.78[.]145 and 43.130.12[.]41.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 15 Jan 2026 06:07:43 +0000</lastBuildDate><item><title>AI как Living-off-the-Land</title><link>https://t.me/ThreatHuntingFather/1073</link><description>AI как Living-off-the-Land
+Звучит классно?)
+Вот и разговор  с https://t.me/s0ld13r_ch  был довольно интересным на эту тему, в результате дискуссии родился проект, LOLAI нечто похожее на LOLBins / LOLBAS / LOLDrivers.
+LOLAI проект для тех кто хочет чтобы за него все сделал AI
+LOLAI это база знаний которая описывает:
+• векторы атак с использованием ИИ агентов
+• способы злоупотребления легитимными агентами и API
+• detection opportunity / hunting use cases
+Если есть интересный агент который можно использовать для Red Team/Adversary Emulation, feel free to contribute будем только рады ☺️
+Ну а пока читай что мы собрали и пробуй хантить в своей инфраструктуре 😈
+🖱🔜 lolai-project.github.io
+🦔 THF
+Максимальный репост друзья, дадим жизнь проекту‼️
+
+[Media: Фото]</description><pubDate>Thu, 15 Jan 2026 06:07:43 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1073</guid></item><item><title>A phishing campaign in India targeting vehicle owners through SMS messages that threaten legal action for unpaid e-challans was hosted at 101.33.78[.]145 and 43.130.12[.]41.</title><link>https://t.me/ThreatHuntingFather/1072</link><description>A phishing campaign in India targeting vehicle owners through SMS messages that threaten legal action for unpaid e-challans was hosted at 101.33.78[.]145 and 43.130.12[.]41.
 The Gold Eye Dog (APT-Q-27) group is leveraging AWS S3 buckets to deliver sophisticated, certificate-signed backdoors that employ extensive anti-evasion checks and persistent remote-control capabilities. This campaign (43.154.170[.]196) marks an evolution of their toolset, using legitimate cloud infrastructure to deploy payloads capable of keylogging, screen capture, and full system command execution.
 Researchers have identified active exploitation of a zero-day vulnerability in Gogs (CVE-2025-8110) that allows authenticated users to achieve Remote Code Execution (RCE) by bypassing symlink protections. An automated campaign has already compromised approximately 50% of exposed instances, deploying the Supershell C2 (106.53.108[.]81) payload for persistent reverse SSH access.
 Another targeted phishing infrastructure associated with the Silver Fox campaign was hosted on Alibaba (US) Technology Co., Ltd. The group has shifted its focus toward Indian organizations, utilizing highly convincing Income Tax-themed lures to deploy the modular Valley RAT. This campaign is notable for its sophisticated multi-stage execution and successful evasion of traditional security perimeters.

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-15T04:47:51.824382+00:00",
-  "messages_count": 96,
+  "last_update": "2026-01-15T09:35:14.983334+00:00",
+  "messages_count": 97,
   "messages": [
+    {
+      "id": "1073",
+      "title": "AI как Living-off-the-Land",
+      "text": "AI как Living-off-the-Land\nЗвучит классно?)\nВот и разговор  с https://t.me/s0ld13r_ch  был довольно интересным на эту тему, в результате дискуссии родился проект, LOLAI нечто похожее на LOLBins / LOLBAS / LOLDrivers.\nLOLAI проект для тех кто хочет чтобы за него все сделал AI\nLOLAI это база знаний которая описывает:\n• векторы атак с использованием ИИ агентов\n• способы злоупотребления легитимными агентами и API\n• detection opportunity / hunting use cases\nЕсли есть интересный агент который можно использовать для Red Team/Adversary Emulation, feel free to contribute будем только рады ☺️\nНу а пока читай что мы собрали и пробуй хантить в своей инфраструктуре 😈\n🖱🔜 lolai-project.github.io\n🦔 THF\nМаксимальный репост друзья, дадим жизнь проекту‼️\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1073",
+      "pub_date": "2026-01-15T06:07:43+00:00"
+    },
     {
       "id": "1071",
       "title": "Inside China’s Hosting Ecosystem: 18,000+ Malware C2 Servers Mapped Across Major ISPs",
