@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-14T18:42:29.324241+00:00",
-  "messages_count": 70,
+  "last_update": "2026-01-15T04:47:44.670405+00:00",
+  "messages_count": 71,
   "messages": [
+    {
+      "id": "237",
+      "title": "ConfigManBearPig",
+      "text": "ConfigManBearPig\nPowerShell collector for adding SCCM attack paths to BloodHound with OpenGraph.\nBlog: https://specterops.io/blog/2026/01/13/introducing-configmanbearpig-a-bloodhound-opengraph-collector-for-sccm\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/237",
+      "pub_date": "2026-01-15T04:20:01+00:00"
+    },
     {
       "id": "236",
       "title": "CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.",

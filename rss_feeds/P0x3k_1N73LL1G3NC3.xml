@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 14 Jan 2026 11:22:08 +0000</lastBuildDate><item><title>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/236</link><description>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 15 Jan 2026 04:20:01 +0000</lastBuildDate><item><title>ConfigManBearPig</title><link>https://t.me/P0x3k_1N73LL1G3NC3/237</link><description>ConfigManBearPig
+PowerShell collector for adding SCCM attack paths to BloodHound with OpenGraph.
+Blog: https://specterops.io/blog/2026/01/13/introducing-configmanbearpig-a-bloodhound-opengraph-collector-for-sccm
+
+[Media: Фото]</description><pubDate>Thu, 15 Jan 2026 04:20:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_237</guid></item><item><title>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/236</link><description>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.
 An improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSIEM 7.4.0, FortiSIEM 7.3.0 through 7.3.4, FortiSIEM 7.1.0 through 7.1.8, FortiSIEM 7.0.0 through 7.0.4, FortiSIEM 6.7.0 through 6.7.10 may allow an unauthenticated attacker to remotely inject arguments, leading to root remote code execution.
 Blog: https://horizon3.ai/attack-research/disclosures/cve-2025-64155-three-years-of-remotely-rooting-the-fortinet-fortisiem/
 Dork:
