@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-01-16T04:45:49.208224+00:00",
-  "messages_count": 50,
+  "last_update": "2026-01-16T09:34:04.599401+00:00",
+  "messages_count": 51,
   "messages": [
+    {
+      "id": "311",
+      "title": "ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows",
+      "text": "Всем привет! 💻✌️\nipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows\n🔤 Использование windows filtering platform\n🔤 Файл hosts\nAdd-Content -Path \"C:\\Windows\\System32\\drivers\\etc\\hosts\" -Value \"127.0.0.1 edr.domain.com\"\nAdd-Content -Path \"C:\\Windows\\System32\\drivers\\etc\\hosts.ics\" -Value \"127.0.0.1 edr.domain.com\"\n🔤 Изменение таблицы маршрутизации\nGet-NetIPInterface\nNew-NetRoute -DestinationPrefix \"192.168.100.0/32\" -InterfaceIndex 1 -PolicyStore ActiveStore\n🔤 Изменение Name Resolution Policy Table\nAdd-DnsClientNrptRule -Namespace \".endpoint.security.microsoft.com\" -NameServers 127.0.0.1 -Comment \"Silenced by Name Resolution Policy Table\"\nAdd-DnsClientNrptRule -Namespace \"endpoint.security.microsoft.com\" -NameServers 127.0.0.1 -Comment \"Silenced by Name Resolution Policy Table\"\nClear-DnsClientCache\n🔤 Правила фильтрации IPSec\nnetsh ipsec static add policy name=ipurplePolicy description=ipurplePolicy\nnetsh ipsec static set policy name=ipurplePolicy assign=y\nnetsh ipsec static add filteraction name=BlockFilterAction action=block\nnetsh ipsec static add rule name=BlockRule policy=ipurplePolicy filterlist=BlockFilterList\n🔤 Secondary IP Addresses. Интересный способ - назначать IP-адреса серверов управления EDR на локальный интерфейс хоста\n🔭 Обнаружение пошагово рассмотрено в статье со скринами\np.s. хантим адреса и доменные имена наших серверов управления в артефактах сетевой подсистемы Windows и в откинутых сетевых соединениях)\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/311",
+      "pub_date": "2026-01-16T09:24:58+00:00"
+    },
     {
       "id": "310",
       "title": "Всем привет! 💻✌️  Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx  При этом в Windows существует...",
