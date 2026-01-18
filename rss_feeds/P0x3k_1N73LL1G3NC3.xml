@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 16 Jan 2026 08:40:14 +0000</lastBuildDate><item><title>Respect</title><link>https://t.me/P0x3k_1N73LL1G3NC3/238</link><description>Respect
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 18 Jan 2026 07:57:06 +0000</lastBuildDate><item><title>Closing the Door on Net-NTLMv1: Releasing Rainbow Tables to Accelerate Protocol Deprecation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/239</link><description>Closing the Door on Net-NTLMv1: Releasing Rainbow Tables to Accelerate Protocol Deprecation
+Essentially, if an attacker can obtain a Net-NTLMv1 hash without Extended Session Security (ESS) for the known plaintext of 1122334455667788, a cryptographic attack, referred to as a known plaintext attack (KPA), can be applied. This guarantees recovery of the key material used. Since the key material is the password hash of the authenticating Active Directory (AD) object—user or computer—the attack results can quickly be used to compromise the object, often leading to privilege escalation.
+A common chain attackers use is authentication coercion from a highly privileged object, such as a domain controller (DC). Recovering the password hash of the DC machine account allows for DCSync privileges to compromise any other account in AD.
+Net-NTLMv1 Rainbow Tables
+Rainbow tables generated for the Net-NTLMv1 authentication protocol with the challenge of 1122334455667788 to aid in key recovery
+
+[Media: Фото]</description><pubDate>Sun, 18 Jan 2026 07:57:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_239</guid></item><item><title>Respect</title><link>https://t.me/P0x3k_1N73LL1G3NC3/238</link><description>Respect
 
 [Media: Фото]</description><pubDate>Fri, 16 Jan 2026 08:40:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_238</guid></item><item><title>ConfigManBearPig</title><link>https://t.me/P0x3k_1N73LL1G3NC3/237</link><description>ConfigManBearPig
 PowerShell collector for adding SCCM attack paths to BloodHound with OpenGraph.
