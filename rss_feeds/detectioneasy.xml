@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 16 Jan 2026 09:24:58 +0000</lastBuildDate><item><title>ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows</title><link>https://t.me/detectioneasy/311</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 17 Jan 2026 18:39:10 +0000</lastBuildDate><item><title>Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main</title><link>https://t.me/detectioneasy/312</link><description>Всем привет! 💻✌️
+Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main
+🔤 Единый поиск по правилам
+🔤 Быстрый ответ на вопрос «**что у меня уже есть для детекта этой атаки?**»
+🔤 Анализ покрытия. Показывает, какие техники ATT&amp;CK закрыты
+🔤 Генерация идей для новых детектов по недостающим техникам
+Пока не тестил, но в беклоге лежал такой проект и под него копились разные правила и репозитории...)
+Мой MCP был такой grep -Eri &lt;regexp&gt; &lt;repos_path&gt;
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 17 Jan 2026 18:39:10 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_312</guid></item><item><title>ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows</title><link>https://t.me/detectioneasy/311</link><description>Всем привет! 💻✌️
 ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows
 🔤 Использование windows filtering platform
 🔤 Файл hosts

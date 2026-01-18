@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-01-17T18:37:14.068014+00:00",
-  "messages_count": 51,
+  "last_update": "2026-01-18T04:47:19.919243+00:00",
+  "messages_count": 52,
   "messages": [
+    {
+      "id": "312",
+      "title": "Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main",
+      "text": "Всем привет! 💻✌️\nВыглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main\n🔤 Единый поиск по правилам\n🔤 Быстрый ответ на вопрос «**что у меня уже есть для детекта этой атаки?**»\n🔤 Анализ покрытия. Показывает, какие техники ATT&CK закрыты\n🔤 Генерация идей для новых детектов по недостающим техникам\nПока не тестил, но в беклоге лежал такой проект и под него копились разные правила и репозитории...)\nМой MCP был такой grep -Eri <regexp> <repos_path>\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/312",
+      "pub_date": "2026-01-17T18:39:10+00:00"
+    },
     {
       "id": "311",
       "title": "ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows",
