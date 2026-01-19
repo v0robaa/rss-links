@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-18T18:36:15.375796+00:00",
-  "messages_count": 98,
+  "last_update": "2026-01-19T04:57:03.424347+00:00",
+  "messages_count": 100,
   "messages": [
+    {
+      "id": "1076",
+      "title": "Maduro DLL side loading 😀",
+      "text": "Maduro DLL side loading 😀\nLOTUSLITE: Targeted espionage leveraging geopolitical themes\nИ снова игра на чувствах пользователей, прилетает архивчик с актуальным политическим названием, открываем, получаем закреп, здравствуйте APT\n• Доставка: US now deciding what’s next for Venezuela.zip →\nMaduro to be taken to New York.exe (легитимный KuGou launcher) + скрытая DLL kugou.dll\n• Исполнение: DLL sideloading через LoadLibraryW() / GetProcAddress()\n• Основная нагрузка: kugou.dll (LOTUSLITE backdoor, C++)\n• Персистентность:\nC:\\ProgramData\\Technology360NB\\\nC:\\ProgramData\\Technology360NB\\DataTechnology.exe --DATA\nHKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Lite360\n• Mutex: Global\\Technology360-A@P@T-Team\n• C2: 172[.]81[.]60[.]97:443 (WinHTTP, Googlebot UA, fake Microsoft Host)\n🔗https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1076",
+      "pub_date": "2026-01-19T04:48:08+00:00"
+    },
+    {
+      "id": "1075",
+      "title": "⬇️ Обнова у LOLAI",
+      "text": "⬇️ Обнова у LOLAI\nLOLAI Project 🤗 получил апдейт\nНаши дорогие друзья @szybnev (aka Poxek) и @wearetyomsmnv (aka PwnAI) освежили дизайн и добавили новых агентов.\nЧто теперь есть в базе:\n• Cursor AI\n• GitHub Copilot Chat\n• Google Antigravity\n• JetBrains Junie\n• Microsoft Copilot Chat\n• n8n\n• Open Interpreter\n• OpenAI Codex CLI\n• OpenAI Operator\n• WARP\nПроект живет, ещё один шаг к каталогу AI как Living-off-the-Land, ждём ваших комитов 🥺\n🔗 https://lolai-project.github.io/\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/1075",
+      "pub_date": "2026-01-18T19:44:07+00:00"
+    },
     {
       "id": "1074",
       "title": "Threat Hunting Father 🦔 pinned a photo",

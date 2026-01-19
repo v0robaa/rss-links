@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 16 Jan 2026 05:47:56 +0000</lastBuildDate><item><title>Threat Hunting Father 🦔 pinned a photo</title><link>https://t.me/ThreatHuntingFather/1074</link><description>Threat Hunting Father 🦔 pinned a photo</description><pubDate>Fri, 16 Jan 2026 05:47:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1074</guid></item><item><title>AI как Living-off-the-Land</title><link>https://t.me/ThreatHuntingFather/1073</link><description>AI как Living-off-the-Land
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 19 Jan 2026 04:48:08 +0000</lastBuildDate><item><title>Maduro DLL side loading 😀</title><link>https://t.me/ThreatHuntingFather/1076</link><description>Maduro DLL side loading 😀
+LOTUSLITE: Targeted espionage leveraging geopolitical themes
+И снова игра на чувствах пользователей, прилетает архивчик с актуальным политическим названием, открываем, получаем закреп, здравствуйте APT
+• Доставка: US now deciding what’s next for Venezuela.zip →
+Maduro to be taken to New York.exe (легитимный KuGou launcher) + скрытая DLL kugou.dll
+• Исполнение: DLL sideloading через LoadLibraryW() / GetProcAddress()
+• Основная нагрузка: kugou.dll (LOTUSLITE backdoor, C++)
+• Персистентность:
+C:\ProgramData\Technology360NB\
+C:\ProgramData\Technology360NB\DataTechnology.exe --DATA
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Lite360
+• Mutex: Global\Technology360-A@P@T-Team
+• C2: 172[.]81[.]60[.]97:443 (WinHTTP, Googlebot UA, fake Microsoft Host)
+🔗https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Mon, 19 Jan 2026 04:48:08 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1076</guid></item><item><title>⬇️ Обнова у LOLAI</title><link>https://t.me/ThreatHuntingFather/1075</link><description>⬇️ Обнова у LOLAI
+LOLAI Project 🤗 получил апдейт
+Наши дорогие друзья @szybnev (aka Poxek) и @wearetyomsmnv (aka PwnAI) освежили дизайн и добавили новых агентов.
+Что теперь есть в базе:
+• Cursor AI
+• GitHub Copilot Chat
+• Google Antigravity
+• JetBrains Junie
+• Microsoft Copilot Chat
+• n8n
+• Open Interpreter
+• OpenAI Codex CLI
+• OpenAI Operator
+• WARP
+Проект живет, ещё один шаг к каталогу AI как Living-off-the-Land, ждём ваших комитов 🥺
+🔗 https://lolai-project.github.io/
+🦔 THF</description><pubDate>Sun, 18 Jan 2026 19:44:07 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1075</guid></item><item><title>Threat Hunting Father 🦔 pinned a photo</title><link>https://t.me/ThreatHuntingFather/1074</link><description>Threat Hunting Father 🦔 pinned a photo</description><pubDate>Fri, 16 Jan 2026 05:47:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1074</guid></item><item><title>AI как Living-off-the-Land</title><link>https://t.me/ThreatHuntingFather/1073</link><description>AI как Living-off-the-Land
 Звучит классно?)
 Вот и разговор  с https://t.me/s0ld13r_ch  был довольно интересным на эту тему, в результате дискуссии родился проект, LOLAI нечто похожее на LOLBins / LOLBAS / LOLDrivers.
 LOLAI проект для тех кто хочет чтобы за него все сделал AI

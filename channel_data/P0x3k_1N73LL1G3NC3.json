@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-18T18:36:08.036130+00:00",
-  "messages_count": 73,
+  "last_update": "2026-01-19T04:56:56.027331+00:00",
+  "messages_count": 74,
   "messages": [
+    {
+      "id": "242",
+      "title": "Using NTLM Reflection to Own Active Directory (CVE-2025-33073)",
+      "text": "Using NTLM Reflection to Own Active Directory (CVE-2025-33073)\nExtending NTLM Reflection Attacks to LDAP/LDAPS & (Possibly) RPC Services\nTool: https://github.com/decoder-it/impacket-partial-mic\nBlog: Reflecting Your Authentication: When Windows Ends Up Talking to Itself\nP.S.: SMB signing / channel binding enforcement does NOT protect against the NTLM reflection attack. We could also perform cross-protocol relays to ADCS enrollment services, MSSQL databases, LDAPS, RPC and WinRMS. (X/Twitter post)\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/242",
+      "pub_date": "2026-01-18T20:06:50+00:00"
+    },
     {
       "id": "239",
       "title": "Closing the Door on Net-NTLMv1: Releasing Rainbow Tables to Accelerate Protocol Deprecation",
