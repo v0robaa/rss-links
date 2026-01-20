@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 18 Jan 2026 20:06:50 +0000</lastBuildDate><item><title>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/242</link><description>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 20 Jan 2026 11:01:49 +0000</lastBuildDate><item><title>TopazTerminator</title><link>https://t.me/P0x3k_1N73LL1G3NC3/244</link><description>TopazTerminator
+This project exploits the vulnerable wsftprm.sys (Topaz Antifraud kernel driver) to terminate protected processes (e.g., antivirus/EDR services) on Windows.
+AV-EDR-Killer
+AV/EDR processes termination by exploiting a vulnerable driver (BYOVD).
+
+[Media: Фото]</description><pubDate>Tue, 20 Jan 2026 11:01:49 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_244</guid></item><item><title>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/242</link><description>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)
 Extending NTLM Reflection Attacks to LDAP/LDAPS &amp; (Possibly) RPC Services
 Tool: https://github.com/decoder-it/impacket-partial-mic
 Blog: Reflecting Your Authentication: When Windows Ends Up Talking to Itself

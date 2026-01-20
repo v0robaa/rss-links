@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-20T09:39:59.727343+00:00",
-  "messages_count": 100,
+  "last_update": "2026-01-20T14:38:31.657447+00:00",
+  "messages_count": 101,
   "messages": [
+    {
+      "id": "1078",
+      "title": "Analyzing a Multi-Stage AsyncRAT Campaign",
+      "text": "Analyzing a Multi-Stage AsyncRAT Campaign\nВ MDR-кейсе Trend Micro разобрана цепочка доставки AsyncRAT: phishing → Dropbox → ZIP → *.pdf.url (Internet Shortcut).\nShortcut указывает на  *.trycloudflare[.]com 🔍 что очень интересно, откуда через WSH/WSF/BAT подтягиваются другие стадии. Пользователю параллельно открывается легитимный PDF.\nДалее разворачивается Python (embedded с python.org ) и выполняется APC-инжект shellcode (new.bin) в explorer.exe. Payload идентифицирован как AsyncRAT (Donut). Persistence - BAT в Startup.\n🔗 https://www.trendmicro.com/en_us/research/26/a/analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html\nВообщем Try Cloudflare🐈\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1078",
+      "pub_date": "2026-01-20T13:23:34+00:00"
+    },
     {
       "id": "1076",
       "title": "Maduro DLL side loading 😀",

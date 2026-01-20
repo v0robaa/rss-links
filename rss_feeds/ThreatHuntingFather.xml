@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 19 Jan 2026 04:48:08 +0000</lastBuildDate><item><title>Maduro DLL side loading 😀</title><link>https://t.me/ThreatHuntingFather/1076</link><description>Maduro DLL side loading 😀
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 20 Jan 2026 13:23:34 +0000</lastBuildDate><item><title>Analyzing a Multi-Stage AsyncRAT Campaign</title><link>https://t.me/ThreatHuntingFather/1078</link><description>Analyzing a Multi-Stage AsyncRAT Campaign
+В MDR-кейсе Trend Micro разобрана цепочка доставки AsyncRAT: phishing → Dropbox → ZIP → *.pdf.url (Internet Shortcut).
+Shortcut указывает на  *.trycloudflare[.]com 🔍 что очень интересно, откуда через WSH/WSF/BAT подтягиваются другие стадии. Пользователю параллельно открывается легитимный PDF.
+Далее разворачивается Python (embedded с python.org ) и выполняется APC-инжект shellcode (new.bin) в explorer.exe. Payload идентифицирован как AsyncRAT (Donut). Persistence - BAT в Startup.
+🔗 https://www.trendmicro.com/en_us/research/26/a/analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html
+Вообщем Try Cloudflare🐈
+🦔 THF
+
+[Media: Фото]</description><pubDate>Tue, 20 Jan 2026 13:23:34 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1078</guid></item><item><title>Maduro DLL side loading 😀</title><link>https://t.me/ThreatHuntingFather/1076</link><description>Maduro DLL side loading 😀
 LOTUSLITE: Targeted espionage leveraging geopolitical themes
 И снова игра на чувствах пользователей, прилетает архивчик с актуальным политическим названием, открываем, получаем закреп, здравствуйте APT
 • Доставка: US now deciding what’s next for Venezuela.zip →

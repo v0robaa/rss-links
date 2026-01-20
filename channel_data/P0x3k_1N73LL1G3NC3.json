@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-20T09:39:52.175152+00:00",
-  "messages_count": 74,
+  "last_update": "2026-01-20T14:38:24.244470+00:00",
+  "messages_count": 75,
   "messages": [
+    {
+      "id": "244",
+      "title": "TopazTerminator",
+      "text": "TopazTerminator\nThis project exploits the vulnerable wsftprm.sys (Topaz Antifraud kernel driver) to terminate protected processes (e.g., antivirus/EDR services) on Windows.\nAV-EDR-Killer\nAV/EDR processes termination by exploiting a vulnerable driver (BYOVD).\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/244",
+      "pub_date": "2026-01-20T11:01:49+00:00"
+    },
     {
       "id": "242",
       "title": "Using NTLM Reflection to Own Active Directory (CVE-2025-33073)",
