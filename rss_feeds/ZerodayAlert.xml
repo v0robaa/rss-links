@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 20 Jan 2026 15:35:46 +0000</lastBuildDate><item><title>Ваши Redmi Buds — подарок для хакера. И это не преувеличение</title><link>https://t.me/ZerodayAlert/605</link><description>Ваши Redmi Buds — подарок для хакера. И это не преувеличение
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 21 Jan 2026 14:12:46 +0000</lastBuildDate><item><title>🩶 Вебинар «Правда и мифы о Threat Intelligence Feeds: как работать с фидами»</title><link>https://t.me/ZerodayAlert/606</link><description>🩶 Вебинар «Правда и мифы о Threat Intelligence Feeds: как работать с фидами»
+29 января 11:00 (МСК)
+Центр экспертизы сетевой безопасности Гарды опросил инженеров ИБ и аналитиков SOC из российских компаний и выяснил, пользуются ли они фидами, какие источники у них в приоритете и с какими «подводными камнями» сталкиваются.
+🟣Действительно ли Threat Intelligence Feeds приводят к большому количеству фолзов?
+🟣Фиды подходят только гигантам с армией экспертов и огромными бюджетами?
+🟣Как выстроить защиту, которая предугадывает угрозы?
+На вебинаре эксперты поделятся результатами исследования и практическими рекомендациями.
+👆Для участия нужно зарегистрироваться
+
+[Media: Фото]</description><pubDate>Wed, 21 Jan 2026 14:12:46 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_606</guid></item><item><title>Ваши Redmi Buds — подарок для хакера. И это не преувеличение</title><link>https://t.me/ZerodayAlert/605</link><description>Ваши Redmi Buds — подарок для хакера. И это не преувеличение
 🎧 В серии наушников Redmi Buds нашли уязвимости, которые могут затронуть приватность звонков и устойчивость работы устройства. Речь не просто про «глюк приложения», а про то, как сами наушники обрабатывают соединение по Bluetooth.
 🧩 Дальше начинается самое показательное: уязвимое место сидит в служебной части протокола, там, где обычно не ждёшь проблем от «простого аксессуара». И именно такие зоны часто остаются без жёстких проверок и ограничений.
 📡 При этом сценарий атаки выглядит довольно приземлённо. Нужен лишь человек неподалёку, который знает, что делать. И устройство само начинает делиться со всеми вашими данными. Пока производитель не выпустил исправление, разумная мера защиты простая: отключать Bluetooth, когда не используете наушники. А в идеале — сменить модель гарнитуры на другую.
