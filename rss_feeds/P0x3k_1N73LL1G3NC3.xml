@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 20 Jan 2026 11:01:49 +0000</lastBuildDate><item><title>TopazTerminator</title><link>https://t.me/P0x3k_1N73LL1G3NC3/244</link><description>TopazTerminator
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 22 Jan 2026 05:48:06 +0000</lastBuildDate><item><title>Chisel-ng</title><link>https://t.me/P0x3k_1N73LL1G3NC3/245</link><description>Chisel-ng
+A Rust implementation of chisel for penetration testing and red team operations. Establishes reverse tunnels over SSH-over-WebSocket-over-TLS, allowing operators to pivot through compromised hosts while blending with normal HTTPS traffic.
+
+[Media: Фото]</description><pubDate>Thu, 22 Jan 2026 05:48:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_245</guid></item><item><title>TopazTerminator</title><link>https://t.me/P0x3k_1N73LL1G3NC3/244</link><description>TopazTerminator
 This project exploits the vulnerable wsftprm.sys (Topaz Antifraud kernel driver) to terminate protected processes (e.g., antivirus/EDR services) on Windows.
 AV-EDR-Killer
 AV/EDR processes termination by exploiting a vulnerable driver (BYOVD).

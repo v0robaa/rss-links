@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-22T04:53:31.042130+00:00",
-  "messages_count": 75,
+  "last_update": "2026-01-22T09:39:29.968621+00:00",
+  "messages_count": 76,
   "messages": [
+    {
+      "id": "245",
+      "title": "Chisel-ng",
+      "text": "Chisel-ng\nA Rust implementation of chisel for penetration testing and red team operations. Establishes reverse tunnels over SSH-over-WebSocket-over-TLS, allowing operators to pivot through compromised hosts while blending with normal HTTPS traffic.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/245",
+      "pub_date": "2026-01-22T05:48:06+00:00"
+    },
     {
       "id": "244",
       "title": "TopazTerminator",
