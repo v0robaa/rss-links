@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 15 Jan 2026 06:02:39 +0000</lastBuildDate><item><title>Living of the Land AI 🔥</title><link>https://t.me/s0ld13r_ch/338</link><description>Living of the Land AI 🔥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 10:31:31 +0000</lastBuildDate><item><title>Attack Surface Management for QazNet 🇰🇿</title><link>https://t.me/s0ld13r_ch/339</link><description>Attack Surface Management for QazNet 🇰🇿
+Запустил публичный dashboard, отображающий агрегированную статистику по критичным уязвимостям и открытым сервисам в казахстанском сегменте интернета (QazNet) на основе данных Shodan 🔍
+Зачем это нужно? 😐
+- Тренды: отслеживание угроз в масштабе региона
+- Threat Intel: визуализация поверхности атаки на основе открытых сервисов
+- Раннее предупреждение: индикация рисков массовой эксплуатации (mass-exploitation)
+Статистика 📊
+- 65 промышленных систем (ICS/SCADA), торчащих в сеть
+- 1.2k+ серверов с критическими уязвимостями
+- 38.k+ хостов с открытыми портами управления (RDP, SSH и др.)
+🔗  Смотреть дашборд: https://stats.threatintel.kz
+P.S Никакие компрометирующие сведения (IP-адрес, организации) публиковаться не будут, только для статистики и Threat Intelligence в разрезе QazNet. Эта версия дашборда не финальная, для предложений можете написать в л/с канала.
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 10:31:31 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_339</guid></item><item><title>Living of the Land AI 🔥</title><link>https://t.me/s0ld13r_ch/338</link><description>Living of the Land AI 🔥
 Несколько недель назад мы с @ThreatHuntingFather дискутировали на тему AI‑агентов и APT‑техник. Меня давно интересовал вопрос, как можно «вооружать» легитимные AI‑агенты для задач Red Team и adversary emulation, оставаясь в рамках минимального шума 😃
 В итоге эта идея выросла в нечто большее - Living of the Land AI или LOLAI 😇
 LOLAI это база знаний которая описывает:

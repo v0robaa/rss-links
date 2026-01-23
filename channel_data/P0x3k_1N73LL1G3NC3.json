@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-23T09:37:22.687893+00:00",
-  "messages_count": 77,
+  "last_update": "2026-01-23T14:32:31.049527+00:00",
+  "messages_count": 78,
   "messages": [
+    {
+      "id": "247",
+      "title": "Message 247",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/247",
+      "pub_date": "2026-01-23T14:14:34+00:00"
+    },
     {
       "id": "246",
       "title": "SmarterTools SmarterMail WT-2026-0001 Auth Bypass + RCE",

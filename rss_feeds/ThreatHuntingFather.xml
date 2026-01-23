@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 07:24:06 +0000</lastBuildDate><item><title>Message 1089</title><link>https://t.me/ThreatHuntingFather/1089</link><description/><pubDate>Fri, 23 Jan 2026 07:24:06 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1089</guid></item><item><title>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬</title><link>https://t.me/ThreatHuntingFather/1082</link><description>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 10:34:02 +0000</lastBuildDate><item><title>Attack Surface Management for QazNet 🇰🇿</title><link>https://t.me/ThreatHuntingFather/1090</link><description>Attack Surface Management for QazNet 🇰🇿
+Запустил публичный dashboard, отображающий агрегированную статистику по критичным уязвимостям и открытым сервисам в казахстанском сегменте интернета (QazNet) на основе данных Shodan 🔍
+Зачем это нужно? 😐
+- Тренды: отслеживание угроз в масштабе региона
+- Threat Intel: визуализация поверхности атаки на основе открытых сервисов
+- Раннее предупреждение: индикация рисков массовой эксплуатации (mass-exploitation)
+Статистика 📊
+- 65 промышленных систем (ICS/SCADA), торчащих в сеть
+- 1.2k+ серверов с критическими уязвимостями
+- 38.k+ хостов с открытыми портами управления (RDP, SSH и др.)
+🔗  Смотреть дашборд: https://stats.threatintel.kz
+P.S Никакие компрометирующие сведения (IP-адрес, организации) публиковаться не будут, только для статистики и Threat Intelligence в разрезе QazNet. Эта версия дашборда не финальная, для предложений можете написать в л/с канала.
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 10:34:02 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1090</guid></item><item><title>Message 1089</title><link>https://t.me/ThreatHuntingFather/1089</link><description/><pubDate>Fri, 23 Jan 2026 07:24:06 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1089</guid></item><item><title>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬</title><link>https://t.me/ThreatHuntingFather/1082</link><description>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬
 Группа KONNI присоединяется к тренду с использованием AI в своих инструментах и атаках, на этот раз таргетят разработчиков 🔛
 Как утверждает Check Point, AI - generated  powershell backdoor внутри себя содержит много метрик и отсылок указывающих что он сгенерирован AI 🤖
 Цепочка начинается с ссылки (Discord), ведущей к ZIP-архиву с PDF-приманкой и LNK-файлом. LNK запускает встроенный PowerShell-лоадер, извлекающий DOCX-приманку и CAB с полезной нагрузкой (PowerShell-бэкдор, BAT-скрипты, утилита для UAC bypass). Декой-документы открываются для отвлечения пользователя.
