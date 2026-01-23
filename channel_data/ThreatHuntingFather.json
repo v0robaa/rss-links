@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-23T04:49:56.932230+00:00",
-  "messages_count": 101,
+  "last_update": "2026-01-23T09:37:30.070320+00:00",
+  "messages_count": 103,
   "messages": [
+    {
+      "id": "1089",
+      "title": "Message 1089",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1089",
+      "pub_date": "2026-01-23T07:24:06+00:00"
+    },
+    {
+      "id": "1082",
+      "title": "KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬",
+      "text": "KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬\nГруппа KONNI присоединяется к тренду с использованием AI в своих инструментах и атаках, на этот раз таргетят разработчиков 🔛\nКак утверждает Check Point, AI - generated  powershell backdoor внутри себя содержит много метрик и отсылок указывающих что он сгенерирован AI 🤖\nЦепочка начинается с ссылки (Discord), ведущей к ZIP-архиву с PDF-приманкой и LNK-файлом. LNK запускает встроенный PowerShell-лоадер, извлекающий DOCX-приманку и CAB с полезной нагрузкой (PowerShell-бэкдор, BAT-скрипты, утилита для UAC bypass). Декой-документы открываются для отвлечения пользователя.\nPersistence:\nПервичный BAT создаёт staging в C:\\ProgramData, настраивает Scheduled Task, замаскированный под OneDrive, и исполняет XOR-зашифрованный PowerShell в памяти. Далее - самоудаление артефактов. Бэкдор использует арифметическую строковую обфускацию и IEX.\nBackdoor Capabilities\nАнти-анализ (проверки RAM/диска, blacklist инструментов, user-interaction), single-instance через mutex, устойчивый host-ID (WMI → SHA-256).\nЭскалация привилегий: fodhelper UAC bypass, затем - отключение UAC для админов, Defender exclusion.\nНа SYSTEM-уровне разворачивается SimpleHelp (RMM) для долгосрочного интерактивного доступа.\nC2\nHTTP(S) с обходом client-side gate: эмуляция JS-челленджа для получения cookie, периодический отправка метаданных generated host ID, privilege level, local IPv4 address, and username, на PHP-based C2 endpoint\n🔗 https://research.checkpoint.com/2026/konni-targets-developers-with-ai-malware/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1082",
+      "pub_date": "2026-01-23T07:19:03+00:00"
+    },
     {
       "id": "1078",
       "title": "Analyzing a Multi-Stage AsyncRAT Campaign",

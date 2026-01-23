@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 20 Jan 2026 13:23:34 +0000</lastBuildDate><item><title>Analyzing a Multi-Stage AsyncRAT Campaign</title><link>https://t.me/ThreatHuntingFather/1078</link><description>Analyzing a Multi-Stage AsyncRAT Campaign
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 07:24:06 +0000</lastBuildDate><item><title>Message 1089</title><link>https://t.me/ThreatHuntingFather/1089</link><description/><pubDate>Fri, 23 Jan 2026 07:24:06 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1089</guid></item><item><title>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬</title><link>https://t.me/ThreatHuntingFather/1082</link><description>KONNI ADOPTS AI TO GENERATE POWERSHELL BACKDOORS 💬
+Группа KONNI присоединяется к тренду с использованием AI в своих инструментах и атаках, на этот раз таргетят разработчиков 🔛
+Как утверждает Check Point, AI - generated  powershell backdoor внутри себя содержит много метрик и отсылок указывающих что он сгенерирован AI 🤖
+Цепочка начинается с ссылки (Discord), ведущей к ZIP-архиву с PDF-приманкой и LNK-файлом. LNK запускает встроенный PowerShell-лоадер, извлекающий DOCX-приманку и CAB с полезной нагрузкой (PowerShell-бэкдор, BAT-скрипты, утилита для UAC bypass). Декой-документы открываются для отвлечения пользователя.
+Persistence:
+Первичный BAT создаёт staging в C:\ProgramData, настраивает Scheduled Task, замаскированный под OneDrive, и исполняет XOR-зашифрованный PowerShell в памяти. Далее - самоудаление артефактов. Бэкдор использует арифметическую строковую обфускацию и IEX.
+Backdoor Capabilities
+Анти-анализ (проверки RAM/диска, blacklist инструментов, user-interaction), single-instance через mutex, устойчивый host-ID (WMI → SHA-256).
+Эскалация привилегий: fodhelper UAC bypass, затем - отключение UAC для админов, Defender exclusion.
+На SYSTEM-уровне разворачивается SimpleHelp (RMM) для долгосрочного интерактивного доступа.
+C2
+HTTP(S) с обходом client-side gate: эмуляция JS-челленджа для получения cookie, периодический отправка метаданных generated host ID, privilege level, local IPv4 address, and username, на PHP-based C2 endpoint
+🔗 https://research.checkpoint.com/2026/konni-targets-developers-with-ai-malware/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 07:19:03 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1082</guid></item><item><title>Analyzing a Multi-Stage AsyncRAT Campaign</title><link>https://t.me/ThreatHuntingFather/1078</link><description>Analyzing a Multi-Stage AsyncRAT Campaign
 В MDR-кейсе Trend Micro разобрана цепочка доставки AsyncRAT: phishing → Dropbox → ZIP → *.pdf.url (Internet Shortcut).
 Shortcut указывает на  *.trycloudflare[.]com 🔍 что очень интересно, откуда через WSH/WSF/BAT подтягиваются другие стадии. Пользователю параллельно открывается легитимный PDF.
 Далее разворачивается Python (embedded с python.org ) и выполняется APC-инжект shellcode (new.bin) в explorer.exe. Payload идентифицирован как AsyncRAT (Donut). Persistence - BAT в Startup.
