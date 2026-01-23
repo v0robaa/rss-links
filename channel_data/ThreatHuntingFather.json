@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-23T14:32:38.604629+00:00",
-  "messages_count": 104,
+  "last_update": "2026-01-23T18:43:59.194183+00:00",
+  "messages_count": 106,
   "messages": [
+    {
+      "id": "1096",
+      "title": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However,...",
+      "text": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This…",
+      "link": "https://t.me/ThreatHuntingFather/1096",
+      "pub_date": "2026-01-23T18:43:59.184825+00:00"
+    },
+    {
+      "id": "1091",
+      "title": "Attack on *stan: Your malware, my C2",
+      "text": "Attack on *stan: Your malware, my C2\nWe coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This RAT is not specific to Kazakhstan, but it sounds cool.\nАтакуют? Атакуют🫡 🇰🇿\nPersistence\nRun key\nЗапуск DLL через rundll32.exe\nТиповые пути:\n%APPDATA%\\*\\*.dll\nC:\\ProgramData\\NT\\NT.dll\nC2 патерны /as/include.php\n🔗https://ctrlaltintel.com/threat%20research/KazakRAT/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1091",
+      "pub_date": "2026-01-23T17:12:27+00:00"
+    },
     {
       "id": "1090",
       "title": "Attack Surface Management for QazNet 🇰🇿",

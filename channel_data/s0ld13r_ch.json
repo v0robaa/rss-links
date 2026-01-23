@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-01-23T14:32:33.602889+00:00",
-  "messages_count": 54,
+  "last_update": "2026-01-23T18:43:53.959277+00:00",
+  "messages_count": 55,
   "messages": [
+    {
+      "id": "340",
+      "title": "Attack on *stan: Your malware, my C2",
+      "text": "Attack on *stan: Your malware, my C2\nWe coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This RAT is not specific to Kazakhstan, but it sounds cool.\nАтакуют? Атакуют🫡 🇰🇿\nPersistence\nRun key\nЗапуск DLL через rundll32.exe\nТиповые пути:\n%APPDATA%\\*\\*.dll\nC:\\ProgramData\\NT\\NT.dll\nC2 патерны /as/include.php\n🔗https://ctrlaltintel.com/threat%20research/KazakRAT/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/340",
+      "pub_date": "2026-01-23T17:24:42+00:00"
+    },
     {
       "id": "339",
       "title": "Attack Surface Management for QazNet 🇰🇿",

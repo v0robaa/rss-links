@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 10:34:02 +0000</lastBuildDate><item><title>Attack Surface Management for QazNet 🇰🇿</title><link>https://t.me/ThreatHuntingFather/1090</link><description>Attack Surface Management for QazNet 🇰🇿
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 18:43:59 +0000</lastBuildDate><item><title>Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However,...</title><link>https://t.me/ThreatHuntingFather/1096</link><description>Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This…</description><pubDate>Fri, 23 Jan 2026 18:43:59 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1096</guid></item><item><title>Attack on *stan: Your malware, my C2</title><link>https://t.me/ThreatHuntingFather/1091</link><description>Attack on *stan: Your malware, my C2
+We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This RAT is not specific to Kazakhstan, but it sounds cool.
+Атакуют? Атакуют🫡 🇰🇿
+Persistence
+Run key
+Запуск DLL через rundll32.exe
+Типовые пути:
+%APPDATA%\*\*.dll
+C:\ProgramData\NT\NT.dll
+C2 патерны /as/include.php
+🔗https://ctrlaltintel.com/threat%20research/KazakRAT/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 17:12:27 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1091</guid></item><item><title>Attack Surface Management for QazNet 🇰🇿</title><link>https://t.me/ThreatHuntingFather/1090</link><description>Attack Surface Management for QazNet 🇰🇿
 Запустил публичный dashboard, отображающий агрегированную статистику по критичным уязвимостям и открытым сервисам в казахстанском сегменте интернета (QazNet) на основе данных Shodan 🔍
 Зачем это нужно? 😐
 - Тренды: отслеживание угроз в масштабе региона
