@@ -1,6 +1,6 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-24T04:40:14.356034+00:00",
+  "last_update": "2026-01-24T09:27:55.422319+00:00",
   "messages_count": 106,
   "messages": [
     {
@@ -8,7 +8,7 @@
       "title": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However,...",
       "text": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This…",
       "link": "https://t.me/ThreatHuntingFather/1096",
-      "pub_date": "2026-01-24T04:40:14.346095+00:00"
+      "pub_date": "2026-01-24T09:27:55.412461+00:00"
     },
     {
       "id": "1091",

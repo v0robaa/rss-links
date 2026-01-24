@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-01-24T04:40:21.916550+00:00",
-  "messages_count": 265,
+  "last_update": "2026-01-24T09:28:02.708020+00:00",
+  "messages_count": 266,
   "messages": [
+    {
+      "id": "17345",
+      "title": "Message 17345",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/SecLabNews/17345",
+      "pub_date": "2026-01-24T07:58:18+00:00"
+    },
     {
       "id": "17344",
       "title": "💻 Джуны используют, профи выигрывают: Кто на самом деле выжимает максимум из ИИ?",
