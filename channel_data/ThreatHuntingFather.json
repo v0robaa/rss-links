@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-25T04:55:26.154247+00:00",
-  "messages_count": 106,
+  "last_update": "2026-01-25T09:29:15.610837+00:00",
+  "messages_count": 107,
   "messages": [
     {
       "id": "1096",
       "title": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However,...",
       "text": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This…",
       "link": "https://t.me/ThreatHuntingFather/1096",
-      "pub_date": "2026-01-25T04:55:26.145674+00:00"
+      "pub_date": "2026-01-25T09:29:15.600794+00:00"
+    },
+    {
+      "id": "1097",
+      "title": "MCP to help Defenders Detection Engineer Harder and Smarter",
+      "text": "MCP to help Defenders Detection Engineer Harder and Smarter\nhttps://github.com/MHaggis/Security-Detections-MCP",
+      "link": "https://t.me/ThreatHuntingFather/1097",
+      "pub_date": "2026-01-25T09:11:37+00:00"
     },
     {
       "id": "1091",
