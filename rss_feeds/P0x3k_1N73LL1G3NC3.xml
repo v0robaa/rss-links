@@ -5,6 +5,7 @@ Exploit: https://github.com/SafeBreach-Labs/CVE-2026-24061
 Query:
 ZoomEye: app="GNU Inetutils telnetd"
 Shodan: product:"telnetd"
+HUNTER: protocol=="telnet"
 
 [Media: Фото]</description><pubDate>Fri, 23 Jan 2026 18:00:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_248</guid></item><item><title>Message 247</title><link>https://t.me/P0x3k_1N73LL1G3NC3/247</link><description>
 

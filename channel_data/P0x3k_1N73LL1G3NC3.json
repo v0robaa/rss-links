@@ -1,12 +1,12 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-26T04:58:56.691997+00:00",
+  "last_update": "2026-01-26T09:41:22.642496+00:00",
   "messages_count": 79,
   "messages": [
     {
       "id": "248",
       "title": "2026-24061: Telnetd RCE as Root",
-      "text": "2026-24061: Telnetd RCE as Root\nThis flaw allows an attacker to establish a Telnet session without providing valid credentials, granting unauthorized access to the target system. The vulnerability exists all the way up to version 2.7-2 of the GNU telnetd service.\nExploit: https://github.com/SafeBreach-Labs/CVE-2026-24061\nQuery:\nZoomEye: app=\"GNU Inetutils telnetd\"\nShodan: product:\"telnetd\"\n\n[Media: Фото]",
+      "text": "2026-24061: Telnetd RCE as Root\nThis flaw allows an attacker to establish a Telnet session without providing valid credentials, granting unauthorized access to the target system. The vulnerability exists all the way up to version 2.7-2 of the GNU telnetd service.\nExploit: https://github.com/SafeBreach-Labs/CVE-2026-24061\nQuery:\nZoomEye: app=\"GNU Inetutils telnetd\"\nShodan: product:\"telnetd\"\nHUNTER: protocol==\"telnet\"\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/248",
       "pub_date": "2026-01-23T18:00:55+00:00"
     },
