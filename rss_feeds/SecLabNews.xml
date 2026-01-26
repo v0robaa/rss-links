@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 26 Jan 2026 08:59:00 +0000</lastBuildDate><item><title>👊 Singularity: open-source руткит для ядра Linux 6.x с обходом LKRG и eBPF</title><link>https://t.me/SecLabNews/17350</link><description>👊 Singularity: open-source руткит для ядра Linux 6.x с обходом LKRG и eBPF
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 26 Jan 2026 13:00:30 +0000</lastBuildDate><item><title>SecurityLab.ru pinned a photo</title><link>https://t.me/SecLabNews/17352</link><description>SecurityLab.ru pinned a photo</description><pubDate>Mon, 26 Jan 2026 13:00:30 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17352</guid></item><item><title>Обучение, согласованное со ФСТЭК РФ, ФСБ и УМО по ИБ России</title><link>https://t.me/SecLabNews/17351</link><description>Обучение, согласованное со ФСТЭК РФ, ФСБ и УМО по ИБ России
+Хотите быть уверены, что диплом переподготовки по информационной безопасности действительно легитимен при проверках?
+Программа по обеспечению защиты информации криптографическими и некриптографическими методами  — это официальный статус, который гарантирует признание документов всеми регуляторами.
+По итогам вы получите:
+- Диплом о переподготовке
+- Сертификат от «Код Безопасности» по продукту «Континент 4»
+- Сертификат от «Крипто-ПРО» по курсу «CSP».
+Фокус:
+- Усиленный практический модуль по криптографической защите информации от «Код Безопасности» и «Крипто-ПРО»
+- Практика на лабораторных стендах
+- Понимание современных методов защиты
+- Онлайн-формат с преподавателями
+💼 Обучение без отрыва от работы — дистанционно, 642 часа, с реальной практикой и доступом 24/7.
+Запишитесь сейчас и учитесь по цене 2025 года!
+👉 Оставить заявку на обучение
+
+[Media: Фото]</description><pubDate>Mon, 26 Jan 2026 13:00:00 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17351</guid></item><item><title>👊 Singularity: open-source руткит для ядра Linux 6.x с обходом LKRG и eBPF</title><link>https://t.me/SecLabNews/17350</link><description>👊 Singularity: open-source руткит для ядра Linux 6.x с обходом LKRG и eBPF
 Исследователь Матеус Алвес выложил в открытый доступ Singularity — руткит для ядра Linux 6.x, распространяемый под свободной лицензией MIT. Проект демонстрирует, как можно обойти практически все современные защиты на уровне ядра: LKRG, eBPF-инструменты безопасности (Falco, Tracee), Elastic Security и даже SELinux enforcing.
 Руткит использует перехват системных вызовов через ftrace и включает полный набор техник скрытия: процессы, файлы, сетевые соединения, фильтрацию audit-сообщений через netlink, маскировку следов в /proc/kcore и /proc/kallsyms. Особенность — триггер через ICMP для запуска обратного подключения в обход поведенческих правил EDR. Проект активно обновляется: последние коммиты датированы 20 января 2026 года.
 Подобные проекты полезны защитникам для моделирования угроз и проверки телеметрии. Но публикация и развитие Singularity — это «контрольный выстрел» в иллюзию, что мониторинг на уровне user space всегда увидит атаку, если злоумышленник уже добрался до ядра.
