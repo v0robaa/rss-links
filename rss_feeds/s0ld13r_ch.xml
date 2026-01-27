@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 17:24:42 +0000</lastBuildDate><item><title>Attack on *stan: Your malware, my C2</title><link>https://t.me/s0ld13r_ch/340</link><description>Attack on *stan: Your malware, my C2
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 27 Jan 2026 07:41:36 +0000</lastBuildDate><item><title>Weebly weaponized for phishing &amp; credential harvesting</title><link>https://t.me/s0ld13r_ch/345</link><description>Weebly weaponized for phishing &amp; credential harvesting
+Атакующие не стесняются использовать бесплатные хостинги для приложений (Weebly, Wix, FormSpark и т.п) в качестве вектора для фишинга с кражей кредов и доставки вредоносного ПО, как это было в кейсе с FormSpark 🤩
+Массовый сбор кредов, бесплатно, нет надобности содержать сложную инфраструктуру поэтому и популярно 🦍
+🛡 Detection idea
+dns.question.name: *.weebly.com and source.ip: *
+🔗 Reference: https://x.com/urldna_bot/status/2015560355385131037
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 27 Jan 2026 07:41:36 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_345</guid></item><item><title>Attack on *stan: Your malware, my C2</title><link>https://t.me/s0ld13r_ch/340</link><description>Attack on *stan: Your malware, my C2
 We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However, KazakRAT has also likely been used elsewhere within the globe. This RAT is not specific to Kazakhstan, but it sounds cool.
 Атакуют? Атакуют🫡 🇰🇿
 Persistence

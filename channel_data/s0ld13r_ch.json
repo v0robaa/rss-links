@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-01-27T04:52:17.828673+00:00",
-  "messages_count": 55,
+  "last_update": "2026-01-27T09:40:41.814099+00:00",
+  "messages_count": 56,
   "messages": [
+    {
+      "id": "345",
+      "title": "Weebly weaponized for phishing & credential harvesting",
+      "text": "Weebly weaponized for phishing & credential harvesting\nАтакующие не стесняются использовать бесплатные хостинги для приложений (Weebly, Wix, FormSpark и т.п) в качестве вектора для фишинга с кражей кредов и доставки вредоносного ПО, как это было в кейсе с FormSpark 🤩\nМассовый сбор кредов, бесплатно, нет надобности содержать сложную инфраструктуру поэтому и популярно 🦍\n🛡 Detection idea\ndns.question.name: *.weebly.com and source.ip: *\n🔗 Reference: https://x.com/urldna_bot/status/2015560355385131037\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/345",
+      "pub_date": "2026-01-27T07:41:36+00:00"
+    },
     {
       "id": "340",
       "title": "Attack on *stan: Your malware, my C2",
