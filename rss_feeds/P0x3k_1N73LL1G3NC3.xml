@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 23 Jan 2026 18:00:55 +0000</lastBuildDate><item><title>2026-24061: Telnetd RCE as Root</title><link>https://t.me/P0x3k_1N73LL1G3NC3/248</link><description>2026-24061: Telnetd RCE as Root
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 27 Jan 2026 04:31:56 +0000</lastBuildDate><item><title>Паровоз который смог</title><link>https://t.me/P0x3k_1N73LL1G3NC3/250</link><description>Паровоз который смог
+
+[Media: Видео]</description><pubDate>Tue, 27 Jan 2026 04:31:56 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_250</guid></item><item><title>https://github.com/zh54321/SharePointDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/249</link><description>https://github.com/zh54321/SharePointDumper
+Enumerates all SharePoint sites/drives a user can access via Microsoft Graph, recursively downloads files, and logs every Graph + SharePoint HTTP request for SIEM correlation, detection engineering, and IR testing.
+#soft #ad #git
+
+[Media: Фото]</description><pubDate>Mon, 26 Jan 2026 20:21:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_249</guid></item><item><title>2026-24061: Telnetd RCE as Root</title><link>https://t.me/P0x3k_1N73LL1G3NC3/248</link><description>2026-24061: Telnetd RCE as Root
 This flaw allows an attacker to establish a Telnet session without providing valid credentials, granting unauthorized access to the target system. The vulnerability exists all the way up to version 2.7-2 of the GNU telnetd service.
 Exploit: https://github.com/SafeBreach-Labs/CVE-2026-24061
 Query:

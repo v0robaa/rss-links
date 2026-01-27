@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-26T18:47:13.300115+00:00",
-  "messages_count": 79,
+  "last_update": "2026-01-27T04:52:15.368147+00:00",
+  "messages_count": 81,
   "messages": [
+    {
+      "id": "250",
+      "title": "Паровоз который смог",
+      "text": "Паровоз который смог\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/250",
+      "pub_date": "2026-01-27T04:31:56+00:00"
+    },
+    {
+      "id": "249",
+      "title": "https://github.com/zh54321/SharePointDumper",
+      "text": "https://github.com/zh54321/SharePointDumper\nEnumerates all SharePoint sites/drives a user can access via Microsoft Graph, recursively downloads files, and logs every Graph + SharePoint HTTP request for SIEM correlation, detection engineering, and IR testing.\n#soft #ad #git\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/249",
+      "pub_date": "2026-01-26T20:21:21+00:00"
+    },
     {
       "id": "248",
       "title": "2026-24061: Telnetd RCE as Root",
