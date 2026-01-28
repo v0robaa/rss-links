@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 27 Jan 2026 04:31:56 +0000</lastBuildDate><item><title>Паровоз который смог</title><link>https://t.me/P0x3k_1N73LL1G3NC3/250</link><description>Паровоз который смог
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 28 Jan 2026 04:02:22 +0000</lastBuildDate><item><title>Swarmer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/251</link><description>Swarmer
+A tool for stealthy modification of Windows 10/11 Registry as a low privilege user via offline hive manipulation, avoiding detection by EDRs.
+The workflow is straightforward:
+• Export the target user’s HKCU registry (via reg export or our BOF-based approach)
+• Make whatever modifications you want to the exported data
+• Use Swarmer to convert the modified export into a binary hive
+• Drop the resulting NTUSER.MAN file into the user’s profile directory
+swarmer.exe exported.reg NTUSER.MAN
+Or, if you want to add a startup entry in one shot:
+swarmer.exe --startup-key "Updater" --startup-value "C:\Path\To\payload.exe" exported.reg NTUSER.MAN
+Blog: Corrupting the Hive Mind: Persistence Through Forgotten Windows Internals
+
+[Media: Фото]</description><pubDate>Wed, 28 Jan 2026 04:02:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_251</guid></item><item><title>Паровоз который смог</title><link>https://t.me/P0x3k_1N73LL1G3NC3/250</link><description>Паровоз который смог
 
 [Media: Видео]</description><pubDate>Tue, 27 Jan 2026 04:31:56 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_250</guid></item><item><title>https://github.com/zh54321/SharePointDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/249</link><description>https://github.com/zh54321/SharePointDumper
 Enumerates all SharePoint sites/drives a user can access via Microsoft Graph, recursively downloads files, and logs every Graph + SharePoint HTTP request for SIEM correlation, detection engineering, and IR testing.
