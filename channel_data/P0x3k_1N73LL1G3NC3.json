@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-28T09:40:52.905328+00:00",
-  "messages_count": 82,
+  "last_update": "2026-01-28T14:38:06.180694+00:00",
+  "messages_count": 83,
   "messages": [
+    {
+      "id": "252",
+      "title": "AudioDG Windows LPE",
+      "text": "AudioDG Windows LPE\nAudiodg.exe DLL hijacking for LPE with reboot-free restart primitive. Executes code as LOCAL SERVICE, escalates to SYSTEM via Scheduled Tasks.\nBlog: Abusing Windows Audio for Local Privilege Escalation\nDLL hijacking in the context of the audiodg.exe process which may load vendor-supplied APO-related DLL dependencies from system paths. Through this it is possible to execute code as “NT AUTHORITY\\LOCAL SERVICE” and subsequently escalate to SYSTEM using Scheduled Tasks and Potato techniques.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/252",
+      "pub_date": "2026-01-28T13:26:11+00:00"
+    },
     {
       "id": "251",
       "title": "Swarmer",

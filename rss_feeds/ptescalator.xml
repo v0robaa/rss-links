@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 26 Jan 2026 14:04:41 +0000</lastBuildDate><item><title>Наряд-заказ на работу вредоноса ✍️</title><link>https://t.me/ptescalator/619</link><description>Наряд-заказ на работу вредоноса ✍️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 28 Jan 2026 12:37:40 +0000</lastBuildDate><item><title>Пора обновиться ⚠️</title><link>https://t.me/ptescalator/622</link><description>Пора обновиться ⚠️
+В начале декабря мы уже рассказывали, как хакеры проникают в инфраструктуру через незакрытые уязвимости в сервере TrueConf, о которых стало известно в конце августа.
+Сейчас на дворе конец января, но ситуация не изменилась — злоумышленники все еще активно используют эту лазейку. С начала года команда PT ESC IR расследовала несколько инцидентов, где сервер TrueConf, размещенный на периметре, становился исходным вектором атаки.
+😐 Не надо так. Самое время вспомнить новогодние обещания, собраться и установить обновления. Вендор уже опубликовал подробную памятку по безопасности.
+На всякий случай рекомендуем также проверить сервер — вдруг компрометация уже произошла и атакующие успели закрепиться в инфраструктуре (IoCs публиковали тут, плюс пара новых от группировки PhantomCore: 31.59.105.51, 31.56.227.100). С детектом помогут MaxPatrol SIEM и PT NAD.
+И да, если будете созваниваться с кем-нибудь через TrueConf — предупредите об этом всех участников конференции 📱
+#ir
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 28 Jan 2026 12:37:40 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_622</guid></item><item><title>Наряд-заказ на работу вредоноса ✍️</title><link>https://t.me/ptescalator/619</link><description>Наряд-заказ на работу вредоноса ✍️
 В середине января группа киберразведки зафиксировала кампанию хакерской группировки XDSpy, нацеленную на организации России и Белоруссии. Вредоносная DLL-библиотека и легитимный исполняемый файл распространяются в архивах (скриншот 1). В качестве приманок используются PDF-документы с тематикой договоров.
 1️⃣ После запуска исполняемого файла пользователю демонстрируется документ-приманка (скриншот 2), тогда как основные действия выполняются в фоне. Содержимое архива переносится в каталог C:\Users\Public, после чего осуществляется внедрение вредоносной DLL-библиотеки через технику DLL Side-Loading.
 Закрепление в системе выполняется через запись в автозагрузке HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run с именем, совпадающим с названием легитимного EXE, и значением C:\Users\Public{legit_exe_filename}, что обеспечивает автоматический запуск компонента при входе пользователя в систему.
