@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-28T18:46:51.510839+00:00",
-  "messages_count": 108,
+  "last_update": "2026-01-29T05:09:15.854225+00:00",
+  "messages_count": 109,
   "messages": [
+    {
+      "id": "1108",
+      "title": "Открытый С2 с инструментами, спалился бедолага 😁",
+      "text": "Открытый С2 с инструментами, спалился бедолага 😁\nЧто нашли Hunt.io\nKey Findings\n• Exposed open directory on an active BYOB command-and-control server uncovered during proactive threat hunting\n• Complete BYOB deployment recovered, including droppers, stagers, payloads, and post-exploitation modules\n• Multi-stage infection chain spanning Windows, Linux, and macOS environments\n• Seven persistence mechanisms are implemented across all three platforms\n• Post-exploitation capabilities include keylogging, screenshots, packet capture, and Outlook email harvesting\n• Encrypted HTTP-based C2 communications supporting modular payload delivery\n• Infrastructure reused across multiple regions, with two nodes also hosting XMRig cryptocurrency miners\n🔗 https://hunt.io/blog/exposed-byob-c2-infrastructure-multi-stage-malware-deployment\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1108",
+      "pub_date": "2026-01-28T18:51:40+00:00"
+    },
     {
       "id": "1096",
       "title": "Attack on *stan: Your malware, my C2  We coined this sample “KazakRAT” as this was used in a campaign against Kazakh entities and we observed Kazakh victim IP addresses beaconing in. However,...",
