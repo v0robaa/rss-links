@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 29 Jan 2026 14:45:11 +0000</lastBuildDate><item><title>Punishing Owl атакует Россию 🦉</title><link>https://t.me/ptescalator/623</link><description>Punishing Owl атакует Россию 🦉
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 29 Jan 2026 18:57:52 +0000</lastBuildDate><item><title>Punishing Owl атакует Россию 🦉</title><link>https://t.me/ptescalator/623</link><description>Punishing Owl атакует Россию 🦉
 Новая сова в лесу хактивистов
 🎄 Накануне Нового года ряд российских учреждений получили неприятный подарок — киберинцидент в корпоративных сетях с публичной утечкой служебной информации.
 🕵🏽‍♂️ Группе киберразведки TI-департамента PT ESC удалось обнаружить, что за атаками стоит ранее неизвестная политически мотивированная группировка Punishing Owl.
@@ -12,7 +12,7 @@
 #TI #APT
 @ptescalator
 
-[Media: Видео]</description><pubDate>Thu, 29 Jan 2026 14:45:11 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_623</guid></item><item><title>Пора обновиться ⚠️</title><link>https://t.me/ptescalator/622</link><description>Пора обновиться ⚠️
+[Media: Видео]</description><pubDate>Thu, 29 Jan 2026 18:57:52 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_623</guid></item><item><title>Пора обновиться ⚠️</title><link>https://t.me/ptescalator/622</link><description>Пора обновиться ⚠️
 В начале декабря мы уже рассказывали, как хакеры проникают в инфраструктуру через не пропатченные администраторами уязвимости в сервере TrueConf, о которых стало известно в конце августа.
 Сейчас на дворе конец января, но ситуация не изменилась — злоумышленники все еще активно используют эту лазейку. С начала года команда PT ESC IR расследовала несколько инцидентов, где сервер TrueConf, размещенный на периметре, становился исходным вектором атаки.
 😐 Не надо так. Самое время вспомнить новогодние обещания, собраться и установить обновления. Вендор еще в августе опубликовал подробную памятку по безопасности.
