@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 17 Jan 2026 18:39:10 +0000</lastBuildDate><item><title>Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main</title><link>https://t.me/detectioneasy/312</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 06:40:48 +0000</lastBuildDate><item><title>Давайте рассмотрим интересные техники из отчёта о ClickFix</title><link>https://t.me/detectioneasy/314</link><description>Всем привет! 💻✌️
+Давайте рассмотрим интересные техники из отчёта о ClickFix
+🔤 Для хранения полезной нагрузки используется смарт-контракт BNB Smart Chain. JavaScript загружает данные из смарт-контракта и передаёт их в eval(atob(*)). Способ хранения малвари в  смарт-контрактах известен как EtherHiding
+🔤Злоумышленники не используют чистый  запуск cmd, mshta, или powershell. Вместо этого они перешли на LoTL-технику с использованием  SyncAppvPublishingServer.vbs
+🔭 Обнаружение:
+🔤 можем отслеживать наличие в аргументах командной строки \SyncAppvPublishingServer.vbs и ;
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 30 Jan 2026 06:40:48 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_314</guid></item><item><title>Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main</title><link>https://t.me/detectioneasy/312</link><description>Всем привет! 💻✌️
 Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main
 🔤 Единый поиск по правилам
 🔤 Быстрый ответ на вопрос «**что у меня уже есть для детекта этой атаки?**»

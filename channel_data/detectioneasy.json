@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-01-30T05:12:30.796032+00:00",
-  "messages_count": 52,
+  "last_update": "2026-01-30T09:48:51.776826+00:00",
+  "messages_count": 53,
   "messages": [
+    {
+      "id": "314",
+      "title": "Давайте рассмотрим интересные техники из отчёта о ClickFix",
+      "text": "Всем привет! 💻✌️\nДавайте рассмотрим интересные техники из отчёта о ClickFix\n🔤 Для хранения полезной нагрузки используется смарт-контракт BNB Smart Chain. JavaScript загружает данные из смарт-контракта и передаёт их в eval(atob(*)). Способ хранения малвари в  смарт-контрактах известен как EtherHiding\n🔤Злоумышленники не используют чистый  запуск cmd, mshta, или powershell. Вместо этого они перешли на LoTL-технику с использованием  SyncAppvPublishingServer.vbs\n🔭 Обнаружение:\n🔤 можем отслеживать наличие в аргументах командной строки \\SyncAppvPublishingServer.vbs и ;\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/314",
+      "pub_date": "2026-01-30T06:40:48+00:00"
+    },
     {
       "id": "312",
       "title": "Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main",
