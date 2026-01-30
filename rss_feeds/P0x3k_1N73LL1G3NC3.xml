@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 28 Jan 2026 13:26:11 +0000</lastBuildDate><item><title>AudioDG Windows LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/252</link><description>AudioDG Windows LPE
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 14:34:28 +0000</lastBuildDate><item><title>Новый сканер для обнаружения уязвимостей к NTLM релеям</title><link>https://t.me/P0x3k_1N73LL1G3NC3/253</link><description>Новый сканер для обнаружения уязвимостей к NTLM релеям
+https://github.com/depthsecurity/RelayKing-Depth/
+* Сканирует по SMB, LDAP/S, MSSQL, HTTP/S, RPC, WinRM
+* Находит WebDAV WebClient, CVE-2025-33073 (NTLM reflection), NTLMv1 + всякие PrinterBug, PetitPotam и т.п.
+* Поддерживает аудит всего домена
+* Составляет список таргетов для ntlmrelayx и других софтин.
+* Сохраняет отчет в plaintext/JSON/CSV/Markdown
+Есть статья в блоге: https://www.depthsecurity.com/blog/introducing-relayking-relay-to-royalty/
+#soft #git #ad #pentest #relay
+
+[Media: Фото]</description><pubDate>Fri, 30 Jan 2026 14:34:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_253</guid></item><item><title>AudioDG Windows LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/252</link><description>AudioDG Windows LPE
 Audiodg.exe DLL hijacking for LPE with reboot-free restart primitive. Executes code as LOCAL SERVICE, escalates to SYSTEM via Scheduled Tasks.
 Blog: Abusing Windows Audio for Local Privilege Escalation
 DLL hijacking in the context of the audiodg.exe process which may load vendor-supplied APO-related DLL dependencies from system paths. Through this it is possible to execute code as “NT AUTHORITY\LOCAL SERVICE” and subsequently escalate to SYSTEM using Scheduled Tasks and Potato techniques.

@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-30T09:48:34.472388+00:00",
-  "messages_count": 83,
+  "last_update": "2026-01-30T14:41:12.924418+00:00",
+  "messages_count": 84,
   "messages": [
+    {
+      "id": "253",
+      "title": "Новый сканер для обнаружения уязвимостей к NTLM релеям",
+      "text": "Новый сканер для обнаружения уязвимостей к NTLM релеям\nhttps://github.com/depthsecurity/RelayKing-Depth/\n* Сканирует по SMB, LDAP/S, MSSQL, HTTP/S, RPC, WinRM\n* Находит WebDAV WebClient, CVE-2025-33073 (NTLM reflection), NTLMv1 + всякие PrinterBug, PetitPotam и т.п.\n* Поддерживает аудит всего домена\n* Составляет список таргетов для ntlmrelayx и других софтин.\n* Сохраняет отчет в plaintext/JSON/CSV/Markdown\nЕсть статья в блоге: https://www.depthsecurity.com/blog/introducing-relayking-relay-to-royalty/\n#soft #git #ad #pentest #relay\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/253",
+      "pub_date": "2026-01-30T14:34:28+00:00"
+    },
     {
       "id": "252",
       "title": "AudioDG Windows LPE",

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 28 Jan 2026 18:51:40 +0000</lastBuildDate><item><title>Открытый С2 с инструментами, спалился бедолага 😁</title><link>https://t.me/ThreatHuntingFather/1108</link><description>Открытый С2 с инструментами, спалился бедолага 😁
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 10:37:14 +0000</lastBuildDate><item><title>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns</title><link>https://t.me/ThreatHuntingFather/1118</link><description>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns
+Espionage activities of HoneyMyte (aka Mustang Panda or Bronze President) within Asia and Europe, with the Southeast Asia region being the most affected.
+Between 2021 and 2025, the threat actor abused signed binaries from various software products, including BitDefender, VLC Media Player, Ulead PhotoImpact, and several Sangfor solutions.
+🔗 https://securelist.com/honeymyte-updates-coolclient-uses-browser-stealers-and-scripts/118664/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 30 Jan 2026 10:37:14 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1118</guid></item><item><title>Открытый С2 с инструментами, спалился бедолага 😁</title><link>https://t.me/ThreatHuntingFather/1108</link><description>Открытый С2 с инструментами, спалился бедолага 😁
 Что нашли Hunt.io
 Key Findings
 • Exposed open directory on an active BYOB command-and-control server uncovered during proactive threat hunting

