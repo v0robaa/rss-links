@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 10:37:14 +0000</lastBuildDate><item><title>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns</title><link>https://t.me/ThreatHuntingFather/1118</link><description>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 31 Jan 2026 17:25:51 +0000</lastBuildDate><item><title>LABYRINTH CHOLLIMA Evolves into Three Adversaries</title><link>https://t.me/ThreatHuntingFather/1126</link><description>LABYRINTH CHOLLIMA Evolves into Three Adversaries
+CrowdStrike опубликовали отчёт по LABYRINTH CHOLLIMA, но в этот раз без публикации кода инструментов - анализ малвари на уровне исходников недоступен.
+Тем не менее, исследователи пересобрали атрибуцию и разделили активность на три отдельных противника.
+LABYRINTH CHOLLIMA был переразбит на три группы: core LABYRINTH CHOLLIMA, GOLDEN CHOLLIMA и PRESSURE CHOLLIMA.
+GOLDEN и PRESSURE CHOLLIMA сосредоточены на криптовалютных и финтех-целях, различаясь масштабом и моделью операций.
+Core LABYRINTH CHOLLIMA сохраняет фокус на кибершпионаже против промышленных, логистических и оборонных организаций.
+Тут есть имена инструментов и TTP:
+GOLDEN CHOLLIMA
+Objective
+Cryptocurrency theft
+Targets
+Small fintech firms
+U.S., Canada, South Korea, India, Western Europe
+Key TTPs
+Malicious applications disguised as cryptocurrency traders
+Cloud-conscious intrusions
+Chromium zero-day vulnerabilities
+HR-themed social engineering
+Supply chain compromise
+Trojanized Python projects
+Key Malware
+Jeus
+HTTPHelper
+SnakeBaker
+NodalBaker
+Community Identifiers
+Jeus
+AppleJeus
+Citrine Sleet
+Gleaming Pisces
+UNC1720
+UNC4736
+LABYRINTH CHOLLIMA
+Objective
+Intelligence collection
+Targets
+Defense
+Maritime
+Military
+Government
+Logistics
+Nuclear
+U.S., Europe, South Korea
+Key TTPs
+Fake PDF readers and TightVNC to deploy malware
+HR-themed social engineering
+Trojanized Node.js and Python projects
+Rootkit deployment
+Zero-day vulnerabilities
+Key Malware
+Hoplight
+HTTPHoplight
+OpenSSLDownloader
+UnderGroundRAT
+NedDnLoader
+HiberRAT
+FudModule
+Community Identifiers
+Diamond Sleet
+Moonstone Sleet
+Operation Dream Job
+Operation Interception
+Selective Pisces
+TA404
+PRESSURE CHOLLIMA
+Objective
+Cryptocurrency theft
+Targets
+Centralized exchanges
+Technology
+U.S., Europe, India, East Asia
+Key TTPs
+Malicious applications disguised as cryptocurrency traders
+Supply chain compromise
+Trojanized Node.js and Python projects
+Key Malware
+MataNet
+SparkDownloader
+TwoPence Electric
+MagikCookie
+StatusSymbol
+Scuzzyfuss
+IndexSymbol
+GhostShip
+AlertConf
+Community Identifiers
+TraderTraitor
+Mata
+Jade Sleet
+Slow Pisces
+UNC4899
+🔗 https://www.crowdstrike.com/en-us/blog/labyrinth-chollima-evolves-into-three-adversaries/
+🤩THF
+
+[Media: Фото]</description><pubDate>Sat, 31 Jan 2026 17:25:51 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1126</guid></item><item><title>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns</title><link>https://t.me/ThreatHuntingFather/1118</link><description>HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns
 Espionage activities of HoneyMyte (aka Mustang Panda or Bronze President) within Asia and Europe, with the Southeast Asia region being the most affected.
 Between 2021 and 2025, the threat actor abused signed binaries from various software products, including BitDefender, VLC Media Player, Ulead PhotoImpact, and several Sangfor solutions.
 🔗 https://securelist.com/honeymyte-updates-coolclient-uses-browser-stealers-and-scripts/118664/

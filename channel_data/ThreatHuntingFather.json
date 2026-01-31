@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-01-31T14:31:03.573400+00:00",
-  "messages_count": 110,
+  "last_update": "2026-01-31T18:42:20.159665+00:00",
+  "messages_count": 111,
   "messages": [
+    {
+      "id": "1126",
+      "title": "LABYRINTH CHOLLIMA Evolves into Three Adversaries",
+      "text": "LABYRINTH CHOLLIMA Evolves into Three Adversaries\nCrowdStrike опубликовали отчёт по LABYRINTH CHOLLIMA, но в этот раз без публикации кода инструментов - анализ малвари на уровне исходников недоступен.\nТем не менее, исследователи пересобрали атрибуцию и разделили активность на три отдельных противника.\nLABYRINTH CHOLLIMA был переразбит на три группы: core LABYRINTH CHOLLIMA, GOLDEN CHOLLIMA и PRESSURE CHOLLIMA.\nGOLDEN и PRESSURE CHOLLIMA сосредоточены на криптовалютных и финтех-целях, различаясь масштабом и моделью операций.\nCore LABYRINTH CHOLLIMA сохраняет фокус на кибершпионаже против промышленных, логистических и оборонных организаций.\nТут есть имена инструментов и TTP:\nGOLDEN CHOLLIMA\nObjective\nCryptocurrency theft\nTargets\nSmall fintech firms\nU.S., Canada, South Korea, India, Western Europe\nKey TTPs\nMalicious applications disguised as cryptocurrency traders\nCloud-conscious intrusions\nChromium zero-day vulnerabilities\nHR-themed social engineering\nSupply chain compromise\nTrojanized Python projects\nKey Malware\nJeus\nHTTPHelper\nSnakeBaker\nNodalBaker\nCommunity Identifiers\nJeus\nAppleJeus\nCitrine Sleet\nGleaming Pisces\nUNC1720\nUNC4736\nLABYRINTH CHOLLIMA\nObjective\nIntelligence collection\nTargets\nDefense\nMaritime\nMilitary\nGovernment\nLogistics\nNuclear\nU.S., Europe, South Korea\nKey TTPs\nFake PDF readers and TightVNC to deploy malware\nHR-themed social engineering\nTrojanized Node.js and Python projects\nRootkit deployment\nZero-day vulnerabilities\nKey Malware\nHoplight\nHTTPHoplight\nOpenSSLDownloader\nUnderGroundRAT\nNedDnLoader\nHiberRAT\nFudModule\nCommunity Identifiers\nDiamond Sleet\nMoonstone Sleet\nOperation Dream Job\nOperation Interception\nSelective Pisces\nTA404\nPRESSURE CHOLLIMA\nObjective\nCryptocurrency theft\nTargets\nCentralized exchanges\nTechnology\nU.S., Europe, India, East Asia\nKey TTPs\nMalicious applications disguised as cryptocurrency traders\nSupply chain compromise\nTrojanized Node.js and Python projects\nKey Malware\nMataNet\nSparkDownloader\nTwoPence Electric\nMagikCookie\nStatusSymbol\nScuzzyfuss\nIndexSymbol\nGhostShip\nAlertConf\nCommunity Identifiers\nTraderTraitor\nMata\nJade Sleet\nSlow Pisces\nUNC4899\n🔗 https://www.crowdstrike.com/en-us/blog/labyrinth-chollima-evolves-into-three-adversaries/\n🤩THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1126",
+      "pub_date": "2026-01-31T17:25:51+00:00"
+    },
     {
       "id": "1118",
       "title": "HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns",
