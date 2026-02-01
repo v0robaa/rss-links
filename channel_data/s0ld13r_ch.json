@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-02-01T09:38:19.237459+00:00",
-  "messages_count": 56,
+  "last_update": "2026-02-01T14:33:27.123118+00:00",
+  "messages_count": 57,
   "messages": [
+    {
+      "id": "348",
+      "title": "The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...",
+      "text": "The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the poisoning of trusted Git repositories, backed by a large and well-structured infrastructure, multiple malware families, and advanced infostealer techniques.\nThe campaign represents a new level of operational maturity, combining:\n- Compromised legitimate websites & GitHub repositories\n- Cross-platform malware delivery at scale\n- Credential, document, browser data, and access-token theft\n- Evasion techniques designed to bypass traditional security controls\n#apt #iran #hacking #malware #github #threathunting #threatintel\n\n[Media: Документ]",
+      "link": "https://t.me/s0ld13r_ch/348",
+      "pub_date": "2026-02-01T10:48:06+00:00"
+    },
     {
       "id": "345",
       "title": "Weebly weaponized for phishing & credential harvesting",

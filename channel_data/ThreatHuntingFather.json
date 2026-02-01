@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-01T09:38:23.999356+00:00",
-  "messages_count": 111,
+  "last_update": "2026-02-01T14:33:31.917494+00:00",
+  "messages_count": 112,
   "messages": [
+    {
+      "id": "1128",
+      "title": "The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...",
+      "text": "The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the poisoning of trusted Git repositories, backed by a large and well-structured infrastructure, multiple malware families, and advanced infostealer techniques.\nThe campaign represents a new level of operational maturity, combining:\n- Compromised legitimate websites & GitHub repositories\n- Cross-platform malware delivery at scale\n- Credential, document, browser data, and access-token theft\n- Evasion techniques designed to bypass traditional security controls\n#apt #iran #hacking #malware #github #threathunting #threatintel\n\n[Media: Документ]",
+      "link": "https://t.me/ThreatHuntingFather/1128",
+      "pub_date": "2026-02-01T13:39:28+00:00"
+    },
     {
       "id": "1126",
       "title": "LABYRINTH CHOLLIMA Evolves into Three Adversaries",

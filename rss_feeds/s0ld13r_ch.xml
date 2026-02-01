@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 27 Jan 2026 07:41:36 +0000</lastBuildDate><item><title>Weebly weaponized for phishing &amp; credential harvesting</title><link>https://t.me/s0ld13r_ch/345</link><description>Weebly weaponized for phishing &amp; credential harvesting
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 01 Feb 2026 10:48:06 +0000</lastBuildDate><item><title>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...</title><link>https://t.me/s0ld13r_ch/348</link><description>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the poisoning of trusted Git repositories, backed by a large and well-structured infrastructure, multiple malware families, and advanced infostealer techniques.
+The campaign represents a new level of operational maturity, combining:
+- Compromised legitimate websites &amp; GitHub repositories
+- Cross-platform malware delivery at scale
+- Credential, document, browser data, and access-token theft
+- Evasion techniques designed to bypass traditional security controls
+#apt #iran #hacking #malware #github #threathunting #threatintel
+
+[Media: Документ]</description><pubDate>Sun, 01 Feb 2026 10:48:06 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_348</guid></item><item><title>Weebly weaponized for phishing &amp; credential harvesting</title><link>https://t.me/s0ld13r_ch/345</link><description>Weebly weaponized for phishing &amp; credential harvesting
 Атакующие не стесняются использовать бесплатные хостинги для приложений (Weebly, Wix, FormSpark и т.п) в качестве вектора для фишинга с кражей кредов и доставки вредоносного ПО, как это было в кейсе с FormSpark 🤩
 Массовый сбор кредов, бесплатно, нет надобности содержать сложную инфраструктуру поэтому и популярно 🦍
 🛡 Detection idea
