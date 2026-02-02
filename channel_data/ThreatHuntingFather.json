@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-02T05:27:05.460707+00:00",
-  "messages_count": 112,
+  "last_update": "2026-02-02T09:59:22.067644+00:00",
+  "messages_count": 113,
   "messages": [
+    {
+      "id": "1130",
+      "title": "Notepad++ Hijacked by State-Sponsored Hackers 👀",
+      "text": "Notepad++ Hijacked by State-Sponsored Hackers 👀\nThe incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored group, which would explain the highly selective targeting obseved during the campaign.\nTL;DR\nAccording to the former hosting provider, the shared hosting server was compromised until September 2, 2025. Even after losing server access, attackers maintained credentials to internal services until December 2, 2025, which allowed them to continue redirecting Notepad++ update traffic to malicious servers. The attackers specifically targeted Notepad++ domain with the goal of exploiting insufficient update verification controls that existed in older versions of Notepad++. All remediation and security hardening were completed by the provider by December 2, 2025, successfully blocking further attacker activity.\ngup.exe 🐱\n🔗 https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
+      "link": "https://t.me/ThreatHuntingFather/1130",
+      "pub_date": "2026-02-02T06:53:52+00:00"
+    },
     {
       "id": "1128",
       "title": "The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...",
