@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 02 Feb 2026 06:53:52 +0000</lastBuildDate><item><title>Notepad++ Hijacked by State-Sponsored Hackers 👀</title><link>https://t.me/ThreatHuntingFather/1130</link><description>Notepad++ Hijacked by State-Sponsored Hackers 👀
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 03 Feb 2026 05:27:31 +0000</lastBuildDate><item><title>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS</title><link>https://t.me/ThreatHuntingFather/1131</link><description>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS
+Обожаю такие исследования, очередной пример насколько творческие APT, чтобы достичь закрепа😃
+Используется AutoIt который по сути:
+не требует .NET
+не требует Java
+не тянет DLL-зависимости
+Необычно и хорошо комбинируется с LotL, что и сделали KONNi.
+LNK
+└─ PowerShell
+└─ curl.exe
+└─ expand.exe
+└─ wscript.exe
+└─ cmd.exe
+└─ AutoIt3.exe + *.a3x
+Researchers analyzed a campaign attributed to Konni, a long-running North Korea–linked APT group that has been active since at least 2014. Konni is known for targeting government entities, financial institutions, cryptocurrency organizations, and individuals with strategic or political relevance to the Korean Peninsula.
+Observed primarily throughout 2025, the operation leveraged multiple initial access vectors, including spear-phishing emails and social networking platforms, to deploy GSRAT, a custom AutoIt-based remote access trojan, against financial-sector–linked organizations in Japan and South Korea.
+🔗https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_9_takuma_matsumoto-yoshihiro_ishikawa_en.pdf
+🤩THF
+
+[Media: Фото]</description><pubDate>Tue, 03 Feb 2026 05:27:31 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1131</guid></item><item><title>Notepad++ Hijacked by State-Sponsored Hackers 👀</title><link>https://t.me/ThreatHuntingFather/1130</link><description>Notepad++ Hijacked by State-Sponsored Hackers 👀
 The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored group, which would explain the highly selective targeting obseved during the campaign.
 TL;DR
 According to the former hosting provider, the shared hosting server was compromised until September 2, 2025. Even after losing server access, attackers maintained credentials to internal services until December 2, 2025, which allowed them to continue redirecting Notepad++ update traffic to malicious servers. The attackers specifically targeted Notepad++ domain with the goal of exploiting insufficient update verification controls that existed in older versions of Notepad++. All remediation and security hardening were completed by the provider by December 2, 2025, successfully blocking further attacker activity.

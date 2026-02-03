@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-03T05:17:45.193234+00:00",
-  "messages_count": 113,
+  "last_update": "2026-02-03T09:53:07.392584+00:00",
+  "messages_count": 114,
   "messages": [
+    {
+      "id": "1131",
+      "title": "THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS",
+      "text": "THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS\nОбожаю такие исследования, очередной пример насколько творческие APT, чтобы достичь закрепа😃\nИспользуется AutoIt который по сути:\nне требует .NET\nне требует Java\nне тянет DLL-зависимости\nНеобычно и хорошо комбинируется с LotL, что и сделали KONNi.\nLNK\n└─ PowerShell\n└─ curl.exe\n└─ expand.exe\n└─ wscript.exe\n└─ cmd.exe\n└─ AutoIt3.exe + *.a3x\nResearchers analyzed a campaign attributed to Konni, a long-running North Korea–linked APT group that has been active since at least 2014. Konni is known for targeting government entities, financial institutions, cryptocurrency organizations, and individuals with strategic or political relevance to the Korean Peninsula.\nObserved primarily throughout 2025, the operation leveraged multiple initial access vectors, including spear-phishing emails and social networking platforms, to deploy GSRAT, a custom AutoIt-based remote access trojan, against financial-sector–linked organizations in Japan and South Korea.\n🔗https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_9_takuma_matsumoto-yoshihiro_ishikawa_en.pdf\n🤩THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1131",
+      "pub_date": "2026-02-03T05:27:31+00:00"
+    },
     {
       "id": "1130",
       "title": "Notepad++ Hijacked by State-Sponsored Hackers 👀",
