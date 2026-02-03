@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 01 Feb 2026 10:48:06 +0000</lastBuildDate><item><title>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...</title><link>https://t.me/s0ld13r_ch/348</link><description>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the poisoning of trusted Git repositories, backed by a large and well-structured infrastructure, multiple malware families, and advanced infostealer techniques.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 03 Feb 2026 16:02:06 +0000</lastBuildDate><item><title>Анализ утечки данных МФО Qanat[.]kz</title><link>https://t.me/s0ld13r_ch/349</link><description>Анализ утечки данных МФО Qanat[.]kz
+На днях в открытый доступ попал дамп микрокредитной организации Qanat[.]kz, содержащий информацию о заемщиках, SMS-логи и другую служебную информацию.
+📊 Результаты анализа
+📦 Общее количество записей (все файлы): 111976
+🔐 Уникальных ИИН: 42326
+📱 Уникальных номеров телефонов: 37420
+📁 Актуальность: ~2021 год
+📂 Описание архива
+Размер архива: 14 МБ
+SHA-1 сумма: [REDACTED_AWS_SECRET]
+Файлов внутри архива: 12
+Дата упаковки: 31.01.2026
+Структура файлов в архиве:
+├── sms_logs.csv
+├── Займы закрытые.csv
+├── Займы.csv
+├── Заявки на кредит без ИНН.csv
+├── Заявки на кредит одобренные.csv
+├── Заявки на кредит отклоненные.csv
+├── Пользователи клиентов.csv
+├── бан лист.csv
+├── заявки на кредит.csv
+├── клиенты.csv
+├── счета клиентов.csv
+└── черный список.csv
+⚠️ Вывод
+Утечка включает чувствительные персональные данные, такие как ИИН и контактные телефоны. Это повышает риски фишинга, социальной инженерии, подделки документов и телефонного мошенничества.
+Будьте осторожны: при подозрении на компрометацию своих данных проверяйте активности в eGov, мобильных банках, налоговой и других сервисах, где используются ваши личные данные.
+P.S Файл был проанализирован, после чего удалён. Распространение подобной информации является незаконным и уголовно наказуемым. А хранение чужих персональных данных, как минимум не этично.
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 03 Feb 2026 16:02:06 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_349</guid></item><item><title>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the...</title><link>https://t.me/s0ld13r_ch/348</link><description>The CTI team at Graph Inc. has successfully identified and tracked a large-scale campaign leveraging a supply chain attack, which spreads globally through the compromise of mirror websites and the poisoning of trusted Git repositories, backed by a large and well-structured infrastructure, multiple malware families, and advanced infostealer techniques.
 The campaign represents a new level of operational maturity, combining:
 - Compromised legitimate websites &amp; GitHub repositories
 - Cross-platform malware delivery at scale
