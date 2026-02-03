@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-03T09:53:07.392584+00:00",
-  "messages_count": 114,
+  "last_update": "2026-02-03T14:52:33.673833+00:00",
+  "messages_count": 115,
   "messages": [
+    {
+      "id": "1140",
+      "title": "Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored...",
+      "text": "Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored group, which would explain the highly selective targeting…",
+      "link": "https://t.me/ThreatHuntingFather/1140",
+      "pub_date": "2026-02-03T10:10:13+00:00"
+    },
     {
       "id": "1131",
       "title": "THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS",

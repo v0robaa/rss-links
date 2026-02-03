@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 03 Feb 2026 09:53:19 +0000</lastBuildDate><item><title>Группа киберразведки PT ESC представила обзор кибератак за IV квартал 2025 года ✍️</title><link>https://t.me/ptescalator/631</link><description>Группа киберразведки PT ESC представила обзор кибератак за IV квартал 2025 года ✍️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 03 Feb 2026 14:52:46 +0000</lastBuildDate><item><title>Группа киберразведки PT ESC представила обзор кибератак за IV квартал 2025 года ✍️</title><link>https://t.me/ptescalator/631</link><description>Группа киберразведки PT ESC представила обзор кибератак за IV квартал 2025 года ✍️
 В отчете проанализирована активность хакерских группировок, нацеленных на российские организации — от госсектора и ВПК до промышленности, финансов и телекоммуникаций.
 Описана активность APT31, ExCobalt, QuietCrabs, Rare Werewolf, PseudoGamaredon, а также финансово мотивированных Werewolves, NetMedved, Silver Fox и Hive0117.
 ✉️ Основные векторы первоначального доступа:
@@ -56,7 +56,7 @@ and 3 of ($s*)
 #TI #APT
 @ptescalator
 
-[Media: Видео]</description><pubDate>Tue, 03 Feb 2026 09:53:19 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_623</guid></item><item><title>Пора обновиться ⚠️</title><link>https://t.me/ptescalator/622</link><description>Пора обновиться ⚠️
+[Media: Видео]</description><pubDate>Tue, 03 Feb 2026 14:52:46 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_623</guid></item><item><title>Пора обновиться ⚠️</title><link>https://t.me/ptescalator/622</link><description>Пора обновиться ⚠️
 В начале декабря мы уже рассказывали, как хакеры проникают в инфраструктуру через не пропатченные администраторами уязвимости в сервере TrueConf, о которых стало известно в конце августа.
 Сейчас на дворе конец января, но ситуация не изменилась — злоумышленники все еще активно используют эту лазейку. С начала года команда PT ESC IR расследовала несколько инцидентов, где сервер TrueConf, размещенный на периметре, становился исходным вектором атаки.
 😐 Не надо так. Самое время вспомнить новогодние обещания, собраться и установить обновления. Вендор еще в августе опубликовал подробную памятку по безопасности.
