@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-04T05:12:52.838331+00:00",
-  "messages_count": 87,
+  "last_update": "2026-02-04T09:54:46.937854+00:00",
+  "messages_count": 88,
   "messages": [
+    {
+      "id": "257",
+      "title": "GhostKatz",
+      "text": "GhostKatz\nDump LSASS via physical memory read primitives in vulnerable kernel drivers, bypassing traditional user-mode detection capabilities.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/257",
+      "pub_date": "2026-02-04T09:27:52+00:00"
+    },
     {
       "id": "256",
       "title": "Backup your boosts!",
