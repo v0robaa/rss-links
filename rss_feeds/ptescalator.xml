@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 04 Feb 2026 14:49:30 +0000</lastBuildDate><item><title>Пришел, увидел, подал заявку 👍</title><link>https://t.me/ptescalator/632</link><description>Пришел, увидел, подал заявку 👍
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 04 Feb 2026 18:52:45 +0000</lastBuildDate><item><title>Новая порция супа 🍜</title><link>https://t.me/ptescalator/633</link><description>Новая порция супа 🍜
+Летом 2025 зарубежные коллеги уже писали про троян SoupDealer — атака специализированная под пользователей из Турции. У семпла было много особенностей, ключевая из которых — он представлял из себя JAR-файл с множественными техниками обфускации AllatoriObfuscator и защитами от динамического анализа. Например, он запускается исключительно на устройствах с турецкой локалью (скриншот 1). Не будем вдаваться во все подробности — семейство уже было подробно происследовано.
+Сегодня мы заметили, что началась новая волна атак с использованием того же семейства (скриншот 2), заблокированная в нашей песочнице PT Sandbox. Все они соответствуют примерно одному паттерну: письмо со ссылкой на Google Drive с просьбой проверить документы; по ссылке находится вредоносный JAR-файл. И мы бы не стали обращать на это внимание (каждый день мы блокируем огромное множество семплов), но на текущий момент все еще не все семплы детектируются популярными защитными средствами (скриншот 3).
+Поэтому — выкладываем индикаторы компрометации, чтобы средства защиты смогли оперативно доработать свою экспертизу.
+Адреса отправителей:
+arslan@arsavukatlik.com
+bilgi@dermamed.com.tr
+Ссылки на семпл:
+https://drive.google.com/uc?export=download&amp;id=1E7c4yQL6ck4EtBfcaeg5qx7a3ZvwVwSs
+https://drive.google.com/uc?export=download&amp;id=12M7lHcgU7MV4zx_rpI5RZe6sPlA4VhhH
+Имена файлов:
+YENI URUNLER ICIN FIYAT TALEBI3.jar
+FIYAT TEKLIFI BEKLENEN URUN LISTESI.jar
+Хеши файлов SHA-256:
+90ead7a262450a9bace5686f11fc39cbd607a0d681ef9ff39d8766d9b4c0de2e
+8dc7f7d298291c042e9f51feff3c8d690f4889a9a141e9657d33da7bb8456c7f
+#phishing #ti #ioc #avlab #emailsecurity #sandbox
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 04 Feb 2026 18:52:45 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_633</guid></item><item><title>Пришел, увидел, подал заявку 👍</title><link>https://t.me/ptescalator/632</link><description>Пришел, увидел, подал заявку 👍
 Всем привет! Мы продолжаем сбор заявок на доклады в треке DEFENSE на нашем ежегодном киберфестивале Positive Hack Days, который пройдет с 28 по 30 мая в Москве.
 Пример тем, которые можно подать на трек:
 Актуальные киберугрозы: расследование инцидентов, киберразведка (от тактического до стратегического уровня), OSINT, проактивное детектирование и отслеживание киберугроз, Threat Hunting, исследование Dark Web, исследование киберугроз для мобильных и промышленных систем.
