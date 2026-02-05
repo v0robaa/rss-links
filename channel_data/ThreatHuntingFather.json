@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-05T14:51:46.161200+00:00",
-  "messages_count": 115,
+  "last_update": "2026-02-05T18:59:00.404086+00:00",
+  "messages_count": 116,
   "messages": [
+    {
+      "id": "1141",
+      "title": "APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.",
+      "text": "APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.\nНачинается всё с фишинга и RTF-документов. Открытие файла → эксплуатация → загрузка DLL-дроппера. Дальше кампания расходится на две ветки.\nПервая - В Outlook внедряется VBA-проект, который автоматически загружается при старте приложения,  почтовый stealer с email-эксфильтрацией.\nВторая -многостадийная загрузка импланта.\nДроппер разворачивает лоадер, использует COM hijacking через EhStorShell, временную scheduled task для запуска, извлекает native shellcode из PNG (стега), инициализирует CLR и загружает .NET-имплант Covenant Grunt\nУправление и эксфильтрация реализованы через cloud-based C2 с использованием filen[.]io API, что маскирует трафик под легитимное облачное хранилище.\nПоследний говорят похож на open source .NET Covenant C2 framewor https://github.com/cobbr/C2Bridge\nHost-based IOC (файлы / пути)\nOutlook / VBA (MiniDoor / NotDoor)\n%APPDATA%\\Microsoft\\Outlook\\VbaProject.OTM\n%TEMP%\\temp_email.msg\nBeardShell / Covenant chain\nC:\\ProgramData\\USOPublic\\Data\\User\\EhStoreShell.dll\nC:\\ProgramData\\Microsoft OneDrive\\setup\\Cache\\SplashScreen.png\n%LOCALAPPDATA%\\Temp\\Diagnostics\\office.xml\nRegistry IOC\nCOM hijacking (EhStorShell CLSID)\nHKCU\\Software\\Classes\\CLSID\\{D9144DCD-E998-4ECA-AB6A-DCD83CCBA16D}\\InProcServer32\nOutlook macro persistence\nHKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level = 1\nHKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\LoadMacroProviderOnBoot = 1\nScheduled Task\nName: OneDriveHealth\nPurpose: temporary task to restart explorer.exe and trigger COM hijack\nNote: task self-deletes after execution\nProcess / Execution IOC\nWINWORD.EXE → exploitation of CVE-2026-21509\nrundll32.exe loading malicious DLL\nexplorer.exe loading hijacked EhStoreShell.dll\ncmd.exe /c taskkill /f /IM explorer.exe && start explorer\nNetwork / Infrastructure IOC\nDelivery / WebDAV stage\nfreefoodaid[.]com\nwellnesscaremed[.]com\nwellnessmedcare[.]org\nlongsauce[.]com\nCloud C2 (Covenant Grunt)\nfilen[.]io (API / storage endpoints)\nHTTPS traffic to filen.io with encrypted task/result files\nEmail-based Exfiltration (Outlook variant)\nchmilewskii@outlook[.]com\nchmilewskii@proton[.]me\nMutexes\nadjgfenkbe (SimpleLoader)\ndvyubgbqfusdv32 (BeardShell)\nССЫлки\n📎https://www.zscaler.com/blogs/security-research/apt28-leverages-cve-2026-21509-operation-neusploit\n📎https://www.trellix.com/blogs/research/apt28-stealthy-campaign-leveraging-cve-2026-21509-cloud-c2/\nВнесите отечественную песочницу📹\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1141",
+      "pub_date": "2026-02-05T16:56:02+00:00"
+    },
     {
       "id": "1140",
       "title": "Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored...",

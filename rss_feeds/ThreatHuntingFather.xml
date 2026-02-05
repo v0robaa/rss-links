@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 03 Feb 2026 10:10:13 +0000</lastBuildDate><item><title>Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored...</title><link>https://t.me/ThreatHuntingFather/1140</link><description>Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored group, which would explain the highly selective targeting…</description><pubDate>Tue, 03 Feb 2026 10:10:13 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1140</guid></item><item><title>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS</title><link>https://t.me/ThreatHuntingFather/1131</link><description>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 05 Feb 2026 16:56:02 +0000</lastBuildDate><item><title>APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.</title><link>https://t.me/ThreatHuntingFather/1141</link><description>APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.
+Начинается всё с фишинга и RTF-документов. Открытие файла → эксплуатация → загрузка DLL-дроппера. Дальше кампания расходится на две ветки.
+Первая - В Outlook внедряется VBA-проект, который автоматически загружается при старте приложения,  почтовый stealer с email-эксфильтрацией.
+Вторая -многостадийная загрузка импланта.
+Дроппер разворачивает лоадер, использует COM hijacking через EhStorShell, временную scheduled task для запуска, извлекает native shellcode из PNG (стега), инициализирует CLR и загружает .NET-имплант Covenant Grunt
+Управление и эксфильтрация реализованы через cloud-based C2 с использованием filen[.]io API, что маскирует трафик под легитимное облачное хранилище.
+Последний говорят похож на open source .NET Covenant C2 framewor https://github.com/cobbr/C2Bridge
+Host-based IOC (файлы / пути)
+Outlook / VBA (MiniDoor / NotDoor)
+%APPDATA%\Microsoft\Outlook\VbaProject.OTM
+%TEMP%\temp_email.msg
+BeardShell / Covenant chain
+C:\ProgramData\USOPublic\Data\User\EhStoreShell.dll
+C:\ProgramData\Microsoft OneDrive\setup\Cache\SplashScreen.png
+%LOCALAPPDATA%\Temp\Diagnostics\office.xml
+Registry IOC
+COM hijacking (EhStorShell CLSID)
+HKCU\Software\Classes\CLSID\{D9144DCD-E998-4ECA-AB6A-DCD83CCBA16D}\InProcServer32
+Outlook macro persistence
+HKCU\Software\Microsoft\Office\16.0\Outlook\Security\Level = 1
+HKCU\Software\Microsoft\Office\16.0\Outlook\LoadMacroProviderOnBoot = 1
+Scheduled Task
+Name: OneDriveHealth
+Purpose: temporary task to restart explorer.exe and trigger COM hijack
+Note: task self-deletes after execution
+Process / Execution IOC
+WINWORD.EXE → exploitation of CVE-2026-21509
+rundll32.exe loading malicious DLL
+explorer.exe loading hijacked EhStoreShell.dll
+cmd.exe /c taskkill /f /IM explorer.exe &amp;&amp; start explorer
+Network / Infrastructure IOC
+Delivery / WebDAV stage
+freefoodaid[.]com
+wellnesscaremed[.]com
+wellnessmedcare[.]org
+longsauce[.]com
+Cloud C2 (Covenant Grunt)
+filen[.]io (API / storage endpoints)
+HTTPS traffic to filen.io with encrypted task/result files
+Email-based Exfiltration (Outlook variant)
+chmilewskii@outlook[.]com
+chmilewskii@proton[.]me
+Mutexes
+adjgfenkbe (SimpleLoader)
+dvyubgbqfusdv32 (BeardShell)
+ССЫлки
+📎https://www.zscaler.com/blogs/security-research/apt28-leverages-cve-2026-21509-operation-neusploit
+📎https://www.trellix.com/blogs/research/apt28-stealthy-campaign-leveraging-cve-2026-21509-cloud-c2/
+Внесите отечественную песочницу📹
+
+[Media: Фото]</description><pubDate>Thu, 05 Feb 2026 16:56:02 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1141</guid></item><item><title>Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored...</title><link>https://t.me/ThreatHuntingFather/1140</link><description>Notepad++ Hijacked by State-Sponsored Hackers 👀  The incident began from June 2025. Multiple independaent security researchers have assessed that the threat acotor is likely a Chinese state-sponsored group, which would explain the highly selective targeting…</description><pubDate>Tue, 03 Feb 2026 10:10:13 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1140</guid></item><item><title>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS</title><link>https://t.me/ThreatHuntingFather/1131</link><description>THREAT CAMPAIGN: KONNI APT DEPLOYING GSRAT VIA MULTI-VECTOR INITIAL ACCESS
 Обожаю такие исследования, очередной пример насколько творческие APT, чтобы достичь закрепа😃
 Используется AutoIt который по сути:
 не требует .NET
