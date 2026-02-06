@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-02-06T09:53:24.722251+00:00",
-  "messages_count": 76,
+  "last_update": "2026-02-06T14:47:28.557152+00:00",
+  "messages_count": 77,
   "messages": [
+    {
+      "id": "637",
+      "title": "Засунь свои претензии в... PT Sandbox! 🫵",
+      "text": "Засунь свои претензии в... PT Sandbox! 🫵\nВ конце января мы обнаружили вредоносную кампанию с рассылкой вредоносного PureRat (PureHVNC) по российским организациям финансового сектора.\nКак и многие подобные рассылки, атака начиналась с письма под названием «Акт сверки и претензия» (скриншот 1).\nВ письме была ссылка на архив:\nhttps://github.com/sergo20261/proxi/raw/refs/heads/main/претензия.rar\nс причудливо обфусцированным bat-файлом (скриншот 2).\n🕵️‍♂️ Его функционал прост — всего лишь декодирование из base64 огромного куска данных (перед этим каждое вхождение подстроки `h@` заменяется на `d`) и его последующий запуск, после чего он копирует себя в C:\\ProgramData\\avtoproxi.bat (скриншот 3).\nДекодированные данные представляют собой PowerShell-скрипт (скриншот 4), который скачивает картинку с URL:\nfirebasestorage.googleapis.com/v0/b/remasd-6c702.firebasestorage.app/o/image.jpg?alt=media&token=c16438a4-4eeb-4116-adc7-373fbf7359b0\nmodaaura.store/image.jpg?12711343\n🖼 В картинке ищутся теги BASE64_START и BASE64_END, между которыми находится закодированный в base64 .NET-загрузчик AndeLoader, который скачивает exe с переданного ему URL:\nhttps://raw.githubusercontent.com/sergo20261/proxi/refs/heads/main/vc27012026upload.txt\nAndeLoader запускает легитимный процесс MsBuild.exe и внедряет в него полученный вредоносный код. Подобная схема характерна для инструмента Crypters and Tools, описанного нами ранее.\nВ этот раз C2 оказался по адресу 62.84.98.217:56001 (скриншот 5). Естественно, подобные трюки не могли остаться незамеченными в PT Sandbox, и ВПО было заблокировано песочницей.\n🚧 Покопавшись в репозитории sergo20261, мы нашли три проекта:\n• proxihost\n• proxi\n• text\nФайлов в них великое множество, самые интересные из них:\n• написанные на Rust загрузчики вредоноса PureRat;\n• исполняемые файлы PureRat;\n• различные .txt-файлы, в которых содержатся закодированные данные в Base64 (файл vc27012026upload.txt, упоминаемый по ссылке выше, относится к ним же).\nНапоследок хотелось бы отметить, что описанный здесь набор инструментов, запускавшихся с помощью Crypters and Tools, — PureRat и его rust-загрузчики — мелькал в сентябрьских атаках 2025 года и подробно описывался в статье.\nIoCs\nАкт сверки и претензия.eml -> 71a8920aa71afde02a466e08508642561b98a99632351cdd1c1ce3ab805a10ba\npretenziya_27012026_akt_sverka_1C_PDF.bat -> 1d3e6b81479717282fb0f661fba3603b3f9f9c9d857a0f2fa8035b7015ab1f0a\nvc27012026upload.txt -> 9abcfce5cb991f60652c4b410e45ad40f4b0eafe30c2209f0c6e6636b424d5db\nRust загрузчик -> 93e0fb947cff4ab361c307590a078549ab9e885d04e23b12a800296dd4d6c4a4\nPureHVNC -> 49fde62919aec811780e67073a7e70566594477ef7b19905e1b8aa42438f6d98\n62.84.98.217\nfirebasestorage.googleapis.com/v0/b/remasd-6c702.firebasestorage.app/o/image.jpg?alt=media&token=c16438a4-4eeb-4116-adc7-373fbf7359b0\nmodaaura.store/image.jpg?12711343\n#avlab #sandbox #TI #ioc #malware\n@ptescalator\n\n[Media: Фото]",
+      "link": "https://t.me/ptescalator/637",
+      "pub_date": "2026-02-06T12:56:46+00:00"
+    },
     {
       "id": "636",
       "title": "Препарируем сетевой трафик с помощью ML в поисках новых вредоносов 📖",
