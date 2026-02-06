@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-06T05:17:55.327112+00:00",
-  "messages_count": 88,
+  "last_update": "2026-02-06T09:53:05.129831+00:00",
+  "messages_count": 89,
   "messages": [
+    {
+      "id": "258",
+      "title": "EDR-GhostLocker",
+      "text": "EDR-GhostLocker\nAppLocker-Based EDR Neutralization\nBlog: AppLocker Rules Abuse\nThreat actors could abuse AppLocker to deploy rules that will prevent EDR processes from execution in order to execute arbitrary commands and software on the asset without EDR disruption.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/258",
+      "pub_date": "2026-02-06T07:01:58+00:00"
+    },
     {
       "id": "257",
       "title": "GhostKatz",
