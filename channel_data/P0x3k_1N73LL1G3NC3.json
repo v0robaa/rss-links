@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-07T05:08:32.366465+00:00",
-  "messages_count": 89,
+  "last_update": "2026-02-07T09:38:03.833918+00:00",
+  "messages_count": 90,
   "messages": [
+    {
+      "id": "260",
+      "title": "LOLRMM",
+      "text": "LOLRMM\nA curated list of Remote Monitoring and Management (RMM) tools.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/260",
+      "pub_date": "2026-02-07T08:13:01+00:00"
+    },
     {
       "id": "258",
       "title": "EDR-GhostLocker",

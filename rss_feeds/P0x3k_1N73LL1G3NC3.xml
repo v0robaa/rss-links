@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 06 Feb 2026 07:01:58 +0000</lastBuildDate><item><title>EDR-GhostLocker</title><link>https://t.me/P0x3k_1N73LL1G3NC3/258</link><description>EDR-GhostLocker
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 07 Feb 2026 08:13:01 +0000</lastBuildDate><item><title>LOLRMM</title><link>https://t.me/P0x3k_1N73LL1G3NC3/260</link><description>LOLRMM
+A curated list of Remote Monitoring and Management (RMM) tools.
+
+[Media: Фото]</description><pubDate>Sat, 07 Feb 2026 08:13:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_260</guid></item><item><title>EDR-GhostLocker</title><link>https://t.me/P0x3k_1N73LL1G3NC3/258</link><description>EDR-GhostLocker
 AppLocker-Based EDR Neutralization
 Blog: AppLocker Rules Abuse
 Threat actors could abuse AppLocker to deploy rules that will prevent EDR processes from execution in order to execute arbitrary commands and software on the asset without EDR disruption.
