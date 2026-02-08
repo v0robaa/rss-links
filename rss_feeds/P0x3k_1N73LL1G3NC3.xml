@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 07 Feb 2026 08:13:01 +0000</lastBuildDate><item><title>LOLRMM</title><link>https://t.me/P0x3k_1N73LL1G3NC3/260</link><description>LOLRMM
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 08 Feb 2026 08:25:35 +0000</lastBuildDate><item><title>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/261</link><description>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)
+By configuring a DDNS Profile with a crafted URL, it is possible to obtain a root shell.
+Exploit: https://github.com/rainpwn/exploits/blob/main/zyxel/rainpwn_cve-2025-11730_ddns_rce.py
+
+[Media: Фото]</description><pubDate>Sun, 08 Feb 2026 08:25:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_261</guid></item><item><title>LOLRMM</title><link>https://t.me/P0x3k_1N73LL1G3NC3/260</link><description>LOLRMM
 A curated list of Remote Monitoring and Management (RMM) tools.
 
 [Media: Фото]</description><pubDate>Sat, 07 Feb 2026 08:13:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_260</guid></item><item><title>EDR-GhostLocker</title><link>https://t.me/P0x3k_1N73LL1G3NC3/258</link><description>EDR-GhostLocker

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-08T05:26:18.641719+00:00",
-  "messages_count": 116,
+  "last_update": "2026-02-08T09:38:03.194524+00:00",
+  "messages_count": 117,
   "messages": [
+    {
+      "id": "1143",
+      "title": "Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми",
+      "text": "Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми\n🔗https://github.com/mguideit/CrowdStrike-CQL-Hunting-Leads",
+      "link": "https://t.me/ThreatHuntingFather/1143",
+      "pub_date": "2026-02-08T06:16:01+00:00"
+    },
     {
       "id": "1141",
       "title": "APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.",

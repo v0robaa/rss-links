@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-08T05:26:11.323419+00:00",
-  "messages_count": 90,
+  "last_update": "2026-02-08T09:37:55.883091+00:00",
+  "messages_count": 91,
   "messages": [
+    {
+      "id": "261",
+      "title": "CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)",
+      "text": "CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)\nBy configuring a DDNS Profile with a crafted URL, it is possible to obtain a root shell.\nExploit: https://github.com/rainpwn/exploits/blob/main/zyxel/rainpwn_cve-2025-11730_ddns_rce.py\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/261",
+      "pub_date": "2026-02-08T08:25:35+00:00"
+    },
     {
       "id": "260",
       "title": "LOLRMM",
