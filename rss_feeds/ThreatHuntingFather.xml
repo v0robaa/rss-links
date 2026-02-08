@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 08 Feb 2026 06:16:01 +0000</lastBuildDate><item><title>Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми</title><link>https://t.me/ThreatHuntingFather/1143</link><description>Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 08 Feb 2026 13:30:00 +0000</lastBuildDate><item><title>AppLocker Rules Abuse: как заблокировать EDR через встроенный Windows механизм</title><link>https://t.me/ThreatHuntingFather/1144</link><description>AppLocker Rules Abuse: как заблокировать EDR через встроенный Windows механизм
+#AppLocker #EDR #Bypass #RCE
+Исследователи Purple Team описали технику блокировки процессов антивирусов и EDR-агентов (Defender, CrowdStrike Falcon, SentinelOne, Cortex XDR и др.) через легитимный AppLocker. Позволяет выполнить RCE код без помех от защиты.
+♾️Описание техники♾️
+В Windows по умолчанию служба Application Identity (AppIDSvc), отвечающая за применение политик AppLocker, находится в состоянии Manual и не запущена.
+Для успешной атаки нужно
+▪️включить службу;
+▪️динамически определить пути к исполняемым файлам EDR-агентов через NtQuerySystemInformation или Toolhelp32 API;
+▪️сгенерировать XML-политику AppLocker с deny-правилами (FilePathRule Action="Deny") для этих путей;
+▪️применить политику командой Set-AppLockerPolicy -XmlPolicy;
+▪️форсировать обновление групповых политик (gpupdate /force);
+▪️перезагрузить систему или процессы.
+В результате EDR-агенты блокируются на старте и не могут загрузиться, создавая окно для выполнения вредоносного кода в памяти без вмешательства защиты. После атаки можно отключить политику и вернуть все как было.
+♾️Детекция♾️
+▪️Event ID: 8001 (AppIDSvc start), 8004 (blocked executable), 7040 (service start type change), 4657/4663 (registry mods на AppIDSvc и SRP).
+▪️Мониторинг реестра: HKLM\SYSTEM\CurrentControlSet\Services\AppIDSvc\Start, HKLM\SOFTWARE\Policies\Microsoft\Windows\SrpV2.
+▪️Файлы: C:\Windows\System32\AppLocker\*.xml.
+▪️Sigma-правило в посте: на Event ID 8004 с процессами EDR.
+Также рекомендуется включить AppLocker logging, аудит реестра через GPO, SIEM-корреляцию и мониторинг AppIDSvc.
+🔗GhostLocker — готовый PoC для этой техники на GitHub. Содержит: PowerShell-сниппеты для динамической генерации XML (foreach по списку ExeToBlock, пример XML с deny для MsMpEng.exe, команду in-memory выполнения.
+🔗Источник
+🌚 @poxek | 📲 MAX |🌚 Блог | 📺 YT | 📺 RT | 📺 VK
+
+[Media: Фото]</description><pubDate>Sun, 08 Feb 2026 13:30:00 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1144</guid></item><item><title>Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми</title><link>https://t.me/ThreatHuntingFather/1143</link><description>Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми
 🔗https://github.com/mguideit/CrowdStrike-CQL-Hunting-Leads</description><pubDate>Sun, 08 Feb 2026 06:16:01 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1143</guid></item><item><title>APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.</title><link>https://t.me/ThreatHuntingFather/1141</link><description>APT28 снова в деле. Сразу несколько ресёрч-команд описали активную кампанию с эксплуатацией свежей Office-уязвимости CVE-2026-21509.
 Начинается всё с фишинга и RTF-документов. Открытие файла → эксплуатация → загрузка DLL-дроппера. Дальше кампания расходится на две ветки.
 Первая - В Outlook внедряется VBA-проект, который автоматически загружается при старте приложения,  почтовый stealer с email-эксфильтрацией.

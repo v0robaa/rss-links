@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-08T09:38:03.194524+00:00",
-  "messages_count": 117,
+  "last_update": "2026-02-08T14:35:37.083096+00:00",
+  "messages_count": 118,
   "messages": [
+    {
+      "id": "1144",
+      "title": "AppLocker Rules Abuse: как заблокировать EDR через встроенный Windows механизм",
+      "text": "AppLocker Rules Abuse: как заблокировать EDR через встроенный Windows механизм\n#AppLocker #EDR #Bypass #RCE\nИсследователи Purple Team описали технику блокировки процессов антивирусов и EDR-агентов (Defender, CrowdStrike Falcon, SentinelOne, Cortex XDR и др.) через легитимный AppLocker. Позволяет выполнить RCE код без помех от защиты.\n♾️Описание техники♾️\nВ Windows по умолчанию служба Application Identity (AppIDSvc), отвечающая за применение политик AppLocker, находится в состоянии Manual и не запущена.\nДля успешной атаки нужно\n▪️включить службу;\n▪️динамически определить пути к исполняемым файлам EDR-агентов через NtQuerySystemInformation или Toolhelp32 API;\n▪️сгенерировать XML-политику AppLocker с deny-правилами (FilePathRule Action=\"Deny\") для этих путей;\n▪️применить политику командой Set-AppLockerPolicy -XmlPolicy;\n▪️форсировать обновление групповых политик (gpupdate /force);\n▪️перезагрузить систему или процессы.\nВ результате EDR-агенты блокируются на старте и не могут загрузиться, создавая окно для выполнения вредоносного кода в памяти без вмешательства защиты. После атаки можно отключить политику и вернуть все как было.\n♾️Детекция♾️\n▪️Event ID: 8001 (AppIDSvc start), 8004 (blocked executable), 7040 (service start type change), 4657/4663 (registry mods на AppIDSvc и SRP).\n▪️Мониторинг реестра: HKLM\\SYSTEM\\CurrentControlSet\\Services\\AppIDSvc\\Start, HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\SrpV2.\n▪️Файлы: C:\\Windows\\System32\\AppLocker\\*.xml.\n▪️Sigma-правило в посте: на Event ID 8004 с процессами EDR.\nТакже рекомендуется включить AppLocker logging, аудит реестра через GPO, SIEM-корреляцию и мониторинг AppIDSvc.\n🔗GhostLocker — готовый PoC для этой техники на GitHub. Содержит: PowerShell-сниппеты для динамической генерации XML (foreach по списку ExeToBlock, пример XML с deny для MsMpEng.exe, команду in-memory выполнения.\n🔗Источник\n🌚 @poxek | 📲 MAX |🌚 Блог | 📺 YT | 📺 RT | 📺 VK\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1144",
+      "pub_date": "2026-02-08T13:30:00+00:00"
+    },
     {
       "id": "1143",
       "title": "Если нет гипотез, бери готовые query, переписывай под себя ну или GPT скорми",
