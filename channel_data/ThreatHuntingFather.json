@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-09T05:40:01.421108+00:00",
-  "messages_count": 118,
+  "last_update": "2026-02-09T10:08:58.433798+00:00",
+  "messages_count": 119,
   "messages": [
+    {
+      "id": "1145",
+      "title": "PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups",
+      "text": "PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups\nTrend Micro выявила JScript-фреймворк командного управления (C&C) под названием PeckBirdy, который активно используется прокитайскими APT-акторами с 2023 года. Фреймворк разработан для гибкого развёртывания в различных средах, включая браузеры, MSHTA, WScript и NodeJS, за счёт злоупотребления living-off-the-land бинарями (LOLBins). PeckBirdy выполняет несколько ролей на протяжении всей цепочки атаки - от начального доступа через watering-hole-атаки до бокового перемещения и управления бэкдорами по C&C-каналу.\nЗадокументированы две основные кампании, использующие PeckBirdy: SHADOW-VOID-044 и SHADOW-EARTH-045. Кампания SHADOW-VOID-044 нацелена на китайскую индустрию онлайн-гемблинга и разворачивает модульные бэкдоры HOLODONUT и MKDOOR. Кампания SHADOW-EARTH-045 ориентирована на государственные и частные организации в Азии, где PeckBirdy применяется для сбора учётных данных и в качестве канала удалённого доступа. В отчёте эти кампании связываются с известными группировками, такими как UNC3569, Earth Baxia и другими, при этом подчёркивается сложная сеть совместно используемых инструментов и инфраструктуры, включая применение похищенных сертификатов для подписи кода.\n🔗 https://www.trendmicro.com/en_us/research/26/a/peckbirdy-script-framework.html\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1145",
+      "pub_date": "2026-02-09T10:05:53+00:00"
+    },
     {
       "id": "1144",
       "title": "AppLocker Rules Abuse: как заблокировать EDR через встроенный Windows механизм",
