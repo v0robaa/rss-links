@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 08 Feb 2026 08:25:35 +0000</lastBuildDate><item><title>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/261</link><description>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 15:20:53 +0000</lastBuildDate><item><title>Message 263</title><link>https://t.me/P0x3k_1N73LL1G3NC3/263</link><description>
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 15:20:53 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_263</guid></item><item><title>AutoPtT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/262</link><description>AutoPtT
+Enumerates Kerberos tickets and performs Pass-the-Ticket (PtT) attacks interactively or step by step. It is a standalone alternative to Rubeus or Mimikatz.
+• auto - Automated Pass-the-Ticket attack
+• sessions - List logon sessions. Similar to running klist sessions
+• klist - List tickets in the current session. Similar to running klist
+• tickets - List tickets in all sessions (not only TGTs). Similar to running Rubeus.exe dump
+• export - Export a TGT given the LogonId. Similar to running Rubeus.exe dump
+• ptt - Import a ticket file given the file name. Similar to running Rubeus.exe ptt
+Blog: Automating the Pass-The-Ticket attack
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 11:59:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_262</guid></item><item><title>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/261</link><description>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)
 By configuring a DDNS Profile with a crafted URL, it is possible to obtain a root shell.
 Exploit: https://github.com/rainpwn/exploits/blob/main/zyxel/rainpwn_cve-2025-11730_ddns_rce.py
 
