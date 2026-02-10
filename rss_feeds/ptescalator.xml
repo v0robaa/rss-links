@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 09 Feb 2026 13:10:30 +0000</lastBuildDate><item><title>QR не открылся? Напишите в поддержку 🆘</title><link>https://t.me/ptescalator/644</link><description>QR не открылся? Напишите в поддержку 🆘
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 11:36:18 +0000</lastBuildDate><item><title>pip install teligram 🧐 (лучше не запускайте)</title><link>https://t.me/ptescalator/645</link><description>pip install teligram 🧐 (лучше не запускайте)
+Восьмого февраля была опубликована библиотека teligram.
+Ее описание гласит: Telegram-based friendly library.
+Увы, как обычно у нас в постах, чудес не бывает — библиотека представлена самописным Remote Access Tool (RAT).
+Его особенности:
+• Есть следы использования LLM.
+• Содержит в себе одну большую функцию khelo, в которой реализованы 16 подфункций.
+• Присутствуют следы индийского языка (khelo переводится как «играть»; выбранное имя разработчика Om Devendra — индийское).
+• Код не обфусцирован, и приветствие бота, отправляемое при использовании команд /help и /start администратором, отражает возможности:
+Available commands:
+pwd - Show current directory
+ls or ls -la - List files
+cd &lt;directory&gt; - Change directory
+whoami - Show current user
+date - Show date and time
+TAKE COMMANDS:
+1. take &lt;number&gt; - Get the nth file
+Example: take 1
+2. take &lt;file_name&gt; - Get file by name
+Example: take myfile.txt
+3. take .&lt;extension&gt; - Get all files with extension
+Example: take .jpg or take .py
+4. take all - Get ALL non-empty files
+5. /send - Upload files to current directory
+Special features:
+- Working directory saved between commands
+- Empty files automatically skipped
+Версия 1.0.0 не обладает функционалом запуска после установки. Остальные версии не успели выйти — пакет был отправлен в карантин, хотя и просуществовал 19 часов.
+💬 К слову, читать ESCalator можно теперь и в MAX. И это не скам.
+#pypi #ti #scs #pyanalysis
+@ptescalator
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 11:36:18 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_645</guid></item><item><title>QR не открылся? Напишите в поддержку 🆘</title><link>https://t.me/ptescalator/644</link><description>QR не открылся? Напишите в поддержку 🆘
 В середине января группа киберразведки PT ESC зафиксировала фишинговую кампанию под видом уведомлений от государственных ведомств.
 1️⃣ Жертве приходит письмо с PDF-документом: внутри — QR-код для получения документов и контакт технической поддержки в Telegram на случай проблем.
 2️⃣ При сканировании QR-кода страница оказывается недоступной — и это часть сценария: пользователя подталкивают перейти в диалог с мошенниками.

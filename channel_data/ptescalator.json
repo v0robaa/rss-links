@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-02-10T10:05:24.095503+00:00",
-  "messages_count": 80,
+  "last_update": "2026-02-10T15:07:22.163131+00:00",
+  "messages_count": 81,
   "messages": [
+    {
+      "id": "645",
+      "title": "pip install teligram 🧐 (лучше не запускайте)",
+      "text": "pip install teligram 🧐 (лучше не запускайте)\nВосьмого февраля была опубликована библиотека teligram.\nЕе описание гласит: Telegram-based friendly library.\nУвы, как обычно у нас в постах, чудес не бывает — библиотека представлена самописным Remote Access Tool (RAT).\nЕго особенности:\n• Есть следы использования LLM.\n• Содержит в себе одну большую функцию khelo, в которой реализованы 16 подфункций.\n• Присутствуют следы индийского языка (khelo переводится как «играть»; выбранное имя разработчика Om Devendra — индийское).\n• Код не обфусцирован, и приветствие бота, отправляемое при использовании команд /help и /start администратором, отражает возможности:\nAvailable commands:\npwd - Show current directory\nls or ls -la - List files\ncd <directory> - Change directory\nwhoami - Show current user\ndate - Show date and time\nTAKE COMMANDS:\n1. take <number> - Get the nth file\nExample: take 1\n2. take <file_name> - Get file by name\nExample: take myfile.txt\n3. take .<extension> - Get all files with extension\nExample: take .jpg or take .py\n4. take all - Get ALL non-empty files\n5. /send - Upload files to current directory\nSpecial features:\n- Working directory saved between commands\n- Empty files automatically skipped\nВерсия 1.0.0 не обладает функционалом запуска после установки. Остальные версии не успели выйти — пакет был отправлен в карантин, хотя и просуществовал 19 часов.\n💬 К слову, читать ESCalator можно теперь и в MAX. И это не скам.\n#pypi #ti #scs #pyanalysis\n@ptescalator\n\n[Media: Фото]",
+      "link": "https://t.me/ptescalator/645",
+      "pub_date": "2026-02-10T11:36:18+00:00"
+    },
     {
       "id": "644",
       "title": "QR не открылся? Напишите в поддержку 🆘",
