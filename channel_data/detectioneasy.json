@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-02-12T05:27:24.752636+00:00",
-  "messages_count": 53,
+  "last_update": "2026-02-12T09:58:33.857863+00:00",
+  "messages_count": 54,
   "messages": [
+    {
+      "id": "315",
+      "title": "#Blue_Team_Techniques",
+      "text": "#Infographics\n#Blue_Team_Techniques\n\"Detection Engineering Cheatsheet\", SANS 2026.\n// This poster provides a practical, end-to-end view of Detection Engineering, guiding defenders from raw log data to meaningful alerts\n\n[Media: Документ]",
+      "link": "https://t.me/detectioneasy/315",
+      "pub_date": "2026-02-12T09:12:22+00:00"
+    },
     {
       "id": "314",
       "title": "Давайте рассмотрим интересные техники из отчёта о ClickFix",

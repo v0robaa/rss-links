@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 30 Jan 2026 06:40:48 +0000</lastBuildDate><item><title>Давайте рассмотрим интересные техники из отчёта о ClickFix</title><link>https://t.me/detectioneasy/314</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 09:12:22 +0000</lastBuildDate><item><title>#Blue_Team_Techniques</title><link>https://t.me/detectioneasy/315</link><description>#Infographics
+#Blue_Team_Techniques
+"Detection Engineering Cheatsheet", SANS 2026.
+// This poster provides a practical, end-to-end view of Detection Engineering, guiding defenders from raw log data to meaningful alerts
+
+[Media: Документ]</description><pubDate>Thu, 12 Feb 2026 09:12:22 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_315</guid></item><item><title>Давайте рассмотрим интересные техники из отчёта о ClickFix</title><link>https://t.me/detectioneasy/314</link><description>Всем привет! 💻✌️
 Давайте рассмотрим интересные техники из отчёта о ClickFix
 🔤 Для хранения полезной нагрузки используется смарт-контракт BNB Smart Chain. JavaScript загружает данные из смарт-контракта и передаёт их в eval(atob(*)). Способ хранения малвари в  смарт-контрактах известен как EtherHiding
 🔤Злоумышленники не используют чистый  запуск cmd, mshta, или powershell. Вместо этого они перешли на LoTL-технику с использованием  SyncAppvPublishingServer.vbs

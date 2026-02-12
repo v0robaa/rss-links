@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 15:20:53 +0000</lastBuildDate><item><title>Message 263</title><link>https://t.me/P0x3k_1N73LL1G3NC3/263</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 09:47:07 +0000</lastBuildDate><item><title>Eden</title><link>https://t.me/P0x3k_1N73LL1G3NC3/264</link><description>Eden
+UDRL loader for Cobalt Strike built with Crystal Palace that combines Raphael Mudge's page streaming technique with a modular call gate (currently a PIC version of the Sleepmask-VS Draugr callgate BOF).
+Blog: https://www.cobaltstrike.com/blog/playing-in-the-tradecraft-garden-of-beacon
+
+[Media: Видео]</description><pubDate>Thu, 12 Feb 2026 09:47:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_264</guid></item><item><title>Message 263</title><link>https://t.me/P0x3k_1N73LL1G3NC3/263</link><description>
 
 [Media: Фото]</description><pubDate>Tue, 10 Feb 2026 15:20:53 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_263</guid></item><item><title>AutoPtT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/262</link><description>AutoPtT
 Enumerates Kerberos tickets and performs Pass-the-Ticket (PtT) attacks interactively or step by step. It is a standalone alternative to Rubeus or Mimikatz.

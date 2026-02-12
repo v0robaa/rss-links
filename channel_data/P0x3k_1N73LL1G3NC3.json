@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-12T05:27:07.770266+00:00",
-  "messages_count": 93,
+  "last_update": "2026-02-12T09:58:16.320269+00:00",
+  "messages_count": 94,
   "messages": [
+    {
+      "id": "264",
+      "title": "Eden",
+      "text": "Eden\nUDRL loader for Cobalt Strike built with Crystal Palace that combines Raphael Mudge's page streaming technique with a modular call gate (currently a PIC version of the Sleepmask-VS Draugr callgate BOF).\nBlog: https://www.cobaltstrike.com/blog/playing-in-the-tradecraft-garden-of-beacon\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/264",
+      "pub_date": "2026-02-12T09:47:07+00:00"
+    },
     {
       "id": "263",
       "title": "Message 263",
