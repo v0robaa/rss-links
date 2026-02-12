@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 06:45:55 +0000</lastBuildDate><item><title>Lets Hunt Some Threat Actors!</title><link>https://t.me/s0ld13r_ch/352</link><description>Lets Hunt Some Threat Actors!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 11:48:09 +0000</lastBuildDate><item><title>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.</title><link>https://t.me/s0ld13r_ch/353</link><description>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.
+В открытый доступ выложены полные системные инструкции крупнейших AI-моделей. Не веса, не пользовательские данные - а именно те правила, по которым модель думает, фильтрует и отвечает. Десятки тысяч токенов внутренней кухни каждого вендора.
+Это не утечка в классическом смысле - промпты извлечены через prompt injection, модели сами их отдают при правильном запросе. Но собранная коллекция в одном месте с актуальными версиями (31k+ stars, регулярные обновления) - это готовый справочник для атак.
+⚠️ Что это дает red team:
+1. Точная структура safety-фильтров и их формулировки - видно что и как обходить
+2. На основе промптов другая LLM генерирует целевые prompt injection и jailbreak сценарии
+3. Незаменимо при пентесте AI-powered приложений, где LLM встроена в бизнес-логику
+Модели при тесте сами подтверждают что это их инструкции.
+Коллега @VladPetrushin уже проверил на практике - скармливаем system prompt одной модели в другую, вводим в режим доверия, и она пишет рабочие prompt injection под конкретный таргет.
+🔗 Репо: Github
+🔗 Примеры: LinkedIn
+#llm #promptinjection #aisecurity #redteam
+
+[Media: Фото]</description><pubDate>Thu, 12 Feb 2026 11:48:09 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_353</guid></item><item><title>Lets Hunt Some Threat Actors!</title><link>https://t.me/s0ld13r_ch/352</link><description>Lets Hunt Some Threat Actors!
 Ты работаешь аналитиком по ИБ, и в твоем распоряжении огромная разношерстная инфраструктура - разные версии Windows, где-то легаси, где-то свежие системы. EDR-агенты стоят далеко не везде (а если и стоят - то не всегда корректно работают).
 Знакомо правда?) Тем не менее, в ходе небольшого ресерча “на коленке” тебе удалось обнаружить подозрительный артефакт, например:
 C:\Users\Public\DropboxAgent.exe
