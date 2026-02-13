@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-13T09:54:56.768274+00:00",
-  "messages_count": 94,
+  "last_update": "2026-02-13T14:49:51.994305+00:00",
+  "messages_count": 95,
   "messages": [
+    {
+      "id": "265",
+      "title": "Rustbof",
+      "text": "Rustbof\nThis project enables the development of BOFs using Rust with full no_stdsupport. It leverages Rust's safety features and modern tooling while producing small, efficient COFF objects.\nThe framework provides everything needed for BOF development. The build process compiles your code to a static library, which boflink then links into a COFF object with proper relocations and imports for Beacon's dynamic function resolution.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/265",
+      "pub_date": "2026-02-13T13:23:24+00:00"
+    },
     {
       "id": "264",
       "title": "Eden",

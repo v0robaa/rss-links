@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 09:47:07 +0000</lastBuildDate><item><title>Eden</title><link>https://t.me/P0x3k_1N73LL1G3NC3/264</link><description>Eden
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 13 Feb 2026 13:23:24 +0000</lastBuildDate><item><title>Rustbof</title><link>https://t.me/P0x3k_1N73LL1G3NC3/265</link><description>Rustbof
+This project enables the development of BOFs using Rust with full no_stdsupport. It leverages Rust's safety features and modern tooling while producing small, efficient COFF objects.
+The framework provides everything needed for BOF development. The build process compiles your code to a static library, which boflink then links into a COFF object with proper relocations and imports for Beacon's dynamic function resolution.
+
+[Media: Фото]</description><pubDate>Fri, 13 Feb 2026 13:23:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_265</guid></item><item><title>Eden</title><link>https://t.me/P0x3k_1N73LL1G3NC3/264</link><description>Eden
 UDRL loader for Cobalt Strike built with Crystal Palace that combines Raphael Mudge's page streaming technique with a modular call gate (currently a PIC version of the Sleepmask-VS Draugr callgate BOF).
 Blog: https://www.cobaltstrike.com/blog/playing-in-the-tradecraft-garden-of-beacon
 
