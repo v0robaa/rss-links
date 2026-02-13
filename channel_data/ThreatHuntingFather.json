@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-13T05:24:09.632941+00:00",
-  "messages_count": 121,
+  "last_update": "2026-02-13T09:55:03.918991+00:00",
+  "messages_count": 122,
   "messages": [
+    {
+      "id": "1155",
+      "title": "Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure",
+      "text": "Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure\nFoxveil - initial-stage loader, активен с августа 2025. Использует Cloudflare Pages, Netlify и Discord attachments как staging вместо собственного C2.\nЦепочка\n• Запуск вредоносного EXE/DLL.\n• Загрузка shellcode (часто Donut) с:\n*.pages.dev\n*.netlify.app\nDiscord attachment\n• Инжект и выполнение в памяти.\nРазница версий\nv1\n• Спавнит fake svchost.exe\n• Early Bird APC injection\n• Persistence через регистрацию сервиса (AarSvc)\n• Дроп в C:\\Windows\\SysWOW64\\\nRuntime string mutation\nv2\n• Чаще получает shellcode через Discord\n• Self-injection\n• WMI-вызов к Defender:\nMSFT_MpPreference RemoveExclusionPath\n• Дроп в SysWOW64\nМаскировка payload’ов\nФайлы пишутся как:\nsms.exe\nsihost.exe\ntaskhostw.exe\ntaskhostw1.exe\naudiodg.exe\nreal1.exe\nreal2.exe\nИмена имитируют системные процессы, happy hunting 🤩\n🔗 https://www.catonetworks.com/blog/cato-ctrl-foxveil-new-malware/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1155",
+      "pub_date": "2026-02-13T08:04:40+00:00"
+    },
     {
       "id": "1153",
       "title": "UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering",

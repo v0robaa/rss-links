@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 10 Feb 2026 08:03:05 +0000</lastBuildDate><item><title>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering</title><link>https://t.me/ThreatHuntingFather/1153</link><description>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 13 Feb 2026 08:04:40 +0000</lastBuildDate><item><title>Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure</title><link>https://t.me/ThreatHuntingFather/1155</link><description>Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure
+Foxveil - initial-stage loader, активен с августа 2025. Использует Cloudflare Pages, Netlify и Discord attachments как staging вместо собственного C2.
+Цепочка
+• Запуск вредоносного EXE/DLL.
+• Загрузка shellcode (часто Donut) с:
+*.pages.dev
+*.netlify.app
+Discord attachment
+• Инжект и выполнение в памяти.
+Разница версий
+v1
+• Спавнит fake svchost.exe
+• Early Bird APC injection
+• Persistence через регистрацию сервиса (AarSvc)
+• Дроп в C:\Windows\SysWOW64\
+Runtime string mutation
+v2
+• Чаще получает shellcode через Discord
+• Self-injection
+• WMI-вызов к Defender:
+MSFT_MpPreference RemoveExclusionPath
+• Дроп в SysWOW64
+Маскировка payload’ов
+Файлы пишутся как:
+sms.exe
+sihost.exe
+taskhostw.exe
+taskhostw1.exe
+audiodg.exe
+real1.exe
+real2.exe
+Имена имитируют системные процессы, happy hunting 🤩
+🔗 https://www.catonetworks.com/blog/cato-ctrl-foxveil-new-malware/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 13 Feb 2026 08:04:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1155</guid></item><item><title>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering</title><link>https://t.me/ThreatHuntingFather/1153</link><description>UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering
 Хороший заголовок? 😃
 UNC1069 провёл целевую атаку на представителя криптосектора через социальную инженерию. Жертву завели в фейковую Zoom-встречу через скомпрометированный Telegram-аккаунт, имитировали проблемы со звуком и применили ClickFix - запуск «диагностических» команд привёл к заражению macOS
 system_profiler SPAudioData
