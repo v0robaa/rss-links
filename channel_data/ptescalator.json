@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-02-13T14:50:11.775476+00:00",
-  "messages_count": 82,
+  "last_update": "2026-02-13T19:00:40.313992+00:00",
+  "messages_count": 83,
   "messages": [
+    {
+      "id": "647",
+      "title": "Message 647",
+      "text": "",
+      "link": "https://t.me/ptescalator/647",
+      "pub_date": "2026-02-13T15:49:35+00:00"
+    },
     {
       "id": "646",
       "title": "Клик-ловушка: не только для пользователей, но и для анализаторов ссылок 🐭",
