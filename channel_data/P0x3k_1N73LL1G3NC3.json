@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-14T14:34:16.897056+00:00",
-  "messages_count": 95,
+  "last_update": "2026-02-14T18:45:34.302725+00:00",
+  "messages_count": 96,
   "messages": [
+    {
+      "id": "266",
+      "title": "STProcessMonitorBYOVD",
+      "text": "STProcessMonitorBYOVD\nOne more BYOVD. STProcessMonitor driver is not in Windows vulnerable driver blocklist and allows to terminate AV / EDR processes.\nBlog: https://bbs.kafan.cn/thread-2288675-1-1.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/266",
+      "pub_date": "2026-02-14T16:25:17+00:00"
+    },
     {
       "id": "265",
       "title": "Rustbof",

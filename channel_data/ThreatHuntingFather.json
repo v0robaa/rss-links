@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-14T14:34:24.051561+00:00",
-  "messages_count": 122,
+  "last_update": "2026-02-14T18:45:41.530334+00:00",
+  "messages_count": 124,
   "messages": [
+    {
+      "id": "1163",
+      "title": "GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS",
+      "text": "GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS\nGlobal Assembly Cache is a system-wide repository in the .NET framework that stores strong named (name + version + culture + public key token identity) assemblies so multiple applications can use themSwithout version conflicts. On Windows systems, GAC is typically under %windir%\\Microsoft.NET\\assembly, and assemblies stored there are intended to be globally available to CLR-hosting processes (services, IIS, desktop applications etc.). Threat actors with elevated privileges on the asset could tamper, an assembly inside the GAC folder to execute arbitrary code. The technique could establish persistence by blending into a trusted process.\n🔗https://ipurple.team/2026/02/10/gac-hijacking/\n🦔",
+      "link": "https://t.me/ThreatHuntingFather/1163",
+      "pub_date": "2026-02-14T16:18:39+00:00"
+    },
+    {
+      "id": "1162",
+      "title": "Message 1162",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1162",
+      "pub_date": "2026-02-14T15:56:42+00:00"
+    },
     {
       "id": "1155",
       "title": "Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure",

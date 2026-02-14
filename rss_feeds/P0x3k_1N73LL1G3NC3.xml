@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 13 Feb 2026 13:23:24 +0000</lastBuildDate><item><title>Rustbof</title><link>https://t.me/P0x3k_1N73LL1G3NC3/265</link><description>Rustbof
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 14 Feb 2026 16:25:17 +0000</lastBuildDate><item><title>STProcessMonitorBYOVD</title><link>https://t.me/P0x3k_1N73LL1G3NC3/266</link><description>STProcessMonitorBYOVD
+One more BYOVD. STProcessMonitor driver is not in Windows vulnerable driver blocklist and allows to terminate AV / EDR processes.
+Blog: https://bbs.kafan.cn/thread-2288675-1-1.html
+
+[Media: Фото]</description><pubDate>Sat, 14 Feb 2026 16:25:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_266</guid></item><item><title>Rustbof</title><link>https://t.me/P0x3k_1N73LL1G3NC3/265</link><description>Rustbof
 This project enables the development of BOFs using Rust with full no_stdsupport. It leverages Rust's safety features and modern tooling while producing small, efficient COFF objects.
 The framework provides everything needed for BOF development. The build process compiles your code to a static library, which boflink then links into a COFF object with proper relocations and imports for Beacon's dynamic function resolution.
 
