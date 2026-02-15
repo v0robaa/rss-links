@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-15T14:34:49.114884+00:00",
-  "messages_count": 98,
+  "last_update": "2026-02-15T18:47:24.200748+00:00",
+  "messages_count": 99,
   "messages": [
+    {
+      "id": "269",
+      "title": "CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)",
+      "text": "CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)\nThe GameDriverX64.sys kernel-mode anti-cheat driver (v7.23.4.7 and earlier) contains an access control vulnerability in one of its IOCTL handlers. A user-mode process can open a handle to the driver device and send specially crafted IOCTL requests. These requests are executed in kernel-mode context, allowing the attacker to terminate arbitrary processes, including critical system and security services (AV / EDR), without requiring administrative privileges.\nBlog: https://vespalec.com/blog/tower-of-flaws/\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/269",
+      "pub_date": "2026-02-15T16:04:41+00:00"
+    },
     {
       "id": "268",
       "title": "360WFP_Exploit",

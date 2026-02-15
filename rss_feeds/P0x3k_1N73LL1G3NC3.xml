@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 14:05:06 +0000</lastBuildDate><item><title>360WFP_Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/268</link><description>360WFP_Exploit
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 16:04:41 +0000</lastBuildDate><item><title>CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/269</link><description>CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)
+The GameDriverX64.sys kernel-mode anti-cheat driver (v7.23.4.7 and earlier) contains an access control vulnerability in one of its IOCTL handlers. A user-mode process can open a handle to the driver device and send specially crafted IOCTL requests. These requests are executed in kernel-mode context, allowing the attacker to terminate arbitrary processes, including critical system and security services (AV / EDR), without requiring administrative privileges.
+Blog: https://vespalec.com/blog/tower-of-flaws/
+
+[Media: Видео]</description><pubDate>Sun, 15 Feb 2026 16:04:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_269</guid></item><item><title>360WFP_Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/268</link><description>360WFP_Exploit
 BYOVD: Use 360 Security WFP driver (360netmon_x64_wfp.sys) to block EDR/XDR network connection.
 
 [Media: Фото]</description><pubDate>Sun, 15 Feb 2026 14:05:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_268</guid></item><item><title>Lnk-it-up</title><link>https://t.me/P0x3k_1N73LL1G3NC3/267</link><description>Lnk-it-up
