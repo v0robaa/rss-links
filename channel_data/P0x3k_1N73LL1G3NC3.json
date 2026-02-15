@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-15T09:39:34.455106+00:00",
-  "messages_count": 97,
+  "last_update": "2026-02-15T14:34:49.114884+00:00",
+  "messages_count": 98,
   "messages": [
+    {
+      "id": "268",
+      "title": "360WFP_Exploit",
+      "text": "360WFP_Exploit\nBYOVD: Use 360 Security WFP driver (360netmon_x64_wfp.sys) to block EDR/XDR network connection.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/268",
+      "pub_date": "2026-02-15T14:05:06+00:00"
+    },
     {
       "id": "267",
       "title": "Lnk-it-up",

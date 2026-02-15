@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 06:49:58 +0000</lastBuildDate><item><title>Lnk-it-up</title><link>https://t.me/P0x3k_1N73LL1G3NC3/267</link><description>Lnk-it-up
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 14:05:06 +0000</lastBuildDate><item><title>360WFP_Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/268</link><description>360WFP_Exploit
+BYOVD: Use 360 Security WFP driver (360netmon_x64_wfp.sys) to block EDR/XDR network connection.
+
+[Media: Фото]</description><pubDate>Sun, 15 Feb 2026 14:05:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_268</guid></item><item><title>Lnk-it-up</title><link>https://t.me/P0x3k_1N73LL1G3NC3/267</link><description>Lnk-it-up
 Project for generating and identifying deceptive LNK files.
 Blog post: Trust Me, I'm A Shortcut.
 Windows’ primary mechanism for shortcuts, LNK files, is frequently abused by threat actors for payload delivery and persistence. This blog post introduces several new LNK file flaws that, amongst other things, allow attackers to fully spoof an LNK’s target and hide any command-line arguments provided.
