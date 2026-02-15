@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-15T05:21:56.991311+00:00",
-  "messages_count": 96,
+  "last_update": "2026-02-15T09:39:34.455106+00:00",
+  "messages_count": 97,
   "messages": [
+    {
+      "id": "267",
+      "title": "Lnk-it-up",
+      "text": "Lnk-it-up\nProject for generating and identifying deceptive LNK files.\nBlog post: Trust Me, I'm A Shortcut.\nWindows’ primary mechanism for shortcuts, LNK files, is frequently abused by threat actors for payload delivery and persistence. This blog post introduces several new LNK file flaws that, amongst other things, allow attackers to fully spoof an LNK’s target and hide any command-line arguments provided.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/267",
+      "pub_date": "2026-02-15T06:49:58+00:00"
+    },
     {
       "id": "266",
       "title": "STProcessMonitorBYOVD",

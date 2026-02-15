@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-15T05:22:03.938718+00:00",
-  "messages_count": 124,
+  "last_update": "2026-02-15T09:39:41.705509+00:00",
+  "messages_count": 125,
   "messages": [
+    {
+      "id": "1164",
+      "title": "Red Team вооружается все больше, а это значит что тест инфраструктуры будет становиться еще ниже радаров и просто так этих ребят без ТН мало XDR решений подсветит 😃",
+      "text": "Red Team вооружается все больше, а это значит что тест инфраструктуры будет становиться еще ниже радаров и просто так этих ребят без ТН мало XDR решений подсветит 😃\nRust based\nGenerate DLL proxy/sideload projects. Automatically parses PE export tables and generates ready-to-compile project for red team engagements.\nLazyDLLSideload automates the process of creating DLL proxying and sideloading implants. It:\n• windows_sys Ecosystem.\n• Parses any Windows DLL to extract exported functions\n• Generates complete Rust projects\nSupports two operation modes: • Sideload and Proxy\n• Uses dyncvoke for dynamic invocation and syscall execution..\nМинимальный набор hunting-пивотов:\nProcess → ImageLoad: процесс X грузит DLL Y из user-writable/неожидаемого каталога.\nFileCreate → ProcessStart: DLL появилась в каталоге приложения → затем старт/рестарт приложения\nМожет быть и так что будут подкладывать DLL с одинаковым именем, но это уже другая механика.\n🔗 https://github.[REDACTED_AWS_SECRET]\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1164",
+      "pub_date": "2026-02-15T08:26:52+00:00"
+    },
     {
       "id": "1163",
       "title": "GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS",

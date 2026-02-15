@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 14 Feb 2026 16:25:17 +0000</lastBuildDate><item><title>STProcessMonitorBYOVD</title><link>https://t.me/P0x3k_1N73LL1G3NC3/266</link><description>STProcessMonitorBYOVD
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 06:49:58 +0000</lastBuildDate><item><title>Lnk-it-up</title><link>https://t.me/P0x3k_1N73LL1G3NC3/267</link><description>Lnk-it-up
+Project for generating and identifying deceptive LNK files.
+Blog post: Trust Me, I'm A Shortcut.
+Windows’ primary mechanism for shortcuts, LNK files, is frequently abused by threat actors for payload delivery and persistence. This blog post introduces several new LNK file flaws that, amongst other things, allow attackers to fully spoof an LNK’s target and hide any command-line arguments provided.
+
+[Media: Видео]</description><pubDate>Sun, 15 Feb 2026 06:49:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_267</guid></item><item><title>STProcessMonitorBYOVD</title><link>https://t.me/P0x3k_1N73LL1G3NC3/266</link><description>STProcessMonitorBYOVD
 One more BYOVD. STProcessMonitor driver is not in Windows vulnerable driver blocklist and allows to terminate AV / EDR processes.
 Blog: https://bbs.kafan.cn/thread-2288675-1-1.html
 

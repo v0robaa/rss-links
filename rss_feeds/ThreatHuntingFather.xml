@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 14 Feb 2026 16:18:39 +0000</lastBuildDate><item><title>GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS</title><link>https://t.me/ThreatHuntingFather/1163</link><description>GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 15 Feb 2026 08:26:52 +0000</lastBuildDate><item><title>Red Team вооружается все больше, а это значит что тест инфраструктуры будет становиться еще ниже радаров и просто так этих ребят без ТН мало XDR решений подсветит 😃</title><link>https://t.me/ThreatHuntingFather/1164</link><description>Red Team вооружается все больше, а это значит что тест инфраструктуры будет становиться еще ниже радаров и просто так этих ребят без ТН мало XDR решений подсветит 😃
+Rust based
+Generate DLL proxy/sideload projects. Automatically parses PE export tables and generates ready-to-compile project for red team engagements.
+LazyDLLSideload automates the process of creating DLL proxying and sideloading implants. It:
+• windows_sys Ecosystem.
+• Parses any Windows DLL to extract exported functions
+• Generates complete Rust projects
+Supports two operation modes: • Sideload and Proxy
+• Uses dyncvoke for dynamic invocation and syscall execution..
+Минимальный набор hunting-пивотов:
+Process → ImageLoad: процесс X грузит DLL Y из user-writable/неожидаемого каталога.
+FileCreate → ProcessStart: DLL появилась в каталоге приложения → затем старт/рестарт приложения
+Может быть и так что будут подкладывать DLL с одинаковым именем, но это уже другая механика.
+🔗 https://github.[REDACTED_AWS_SECRET]
+
+[Media: Фото]</description><pubDate>Sun, 15 Feb 2026 08:26:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1164</guid></item><item><title>GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS</title><link>https://t.me/ThreatHuntingFather/1163</link><description>GAC вещичка которую можно было видеть в разных APT компаниях в частности абуз IIS
 Global Assembly Cache is a system-wide repository in the .NET framework that stores strong named (name + version + culture + public key token identity) assemblies so multiple applications can use themSwithout version conflicts. On Windows systems, GAC is typically under %windir%\Microsoft.NET\assembly, and assemblies stored there are intended to be globally available to CLR-hosting processes (services, IIS, desktop applications etc.). Threat actors with elevated privileges on the asset could tamper, an assembly inside the GAC folder to execute arbitrary code. The technique could establish persistence by blending into a trusted process.
 🔗https://ipurple.team/2026/02/10/gac-hijacking/
 🦔</description><pubDate>Sat, 14 Feb 2026 16:18:39 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1163</guid></item><item><title>Message 1162</title><link>https://t.me/ThreatHuntingFather/1162</link><description/><pubDate>Sat, 14 Feb 2026 15:56:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1162</guid></item><item><title>Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure</title><link>https://t.me/ThreatHuntingFather/1155</link><description>Foxveil – New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure
