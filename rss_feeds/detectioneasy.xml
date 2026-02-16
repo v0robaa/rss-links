@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 09:12:22 +0000</lastBuildDate><item><title>#Blue_Team_Techniques</title><link>https://t.me/detectioneasy/315</link><description>#Infographics
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 16 Feb 2026 18:27:18 +0000</lastBuildDate><item><title>После месячной раскачки — возвращаемся к практике</title><link>https://t.me/detectioneasy/316</link><description>Всем привет! 💻✌️
+После месячной раскачки — возвращаемся к практике
+Начнем с отчета о действиях группировки APT-Q-27
+❗️Атакующие используют непривычные расширения exe или scr, а расширение pif
+У большинства жертв в Windows скрыто отображение расширений файлов. В результате Проводник показывает только имя файла, и pif выглядит менее подозрительно
+👨‍💻 Как это работает?
+🔤 Пользователь получает ссылку на файл вида hxxps://storage[.]googleapis[.]com/iwantuu/photo202512.pif#image2025-12-29-14-53.jpg
+Для отвода внимания жертвы в конце URL установлен идентификатор фрагмента #image2025-12-29-14-53.jpg
+🔤 По ссылке загружается дропер с расширением .pif
+🔤 После запуска он получает список адресов для загрузки остальных шагов из файла
+hxxps://yyupdats[.]s3.ap-southeast-1.amazonaws.com/updat.txt
+🔤 Далее TTP мимикрируют под процесс обновления Windows
+Файлы сохраняются в каталог C:\Users\Admin\AppData\Local\\Microsoft\WindowsUpdate\\Cache\WU_20251230_67e65f7b@27 и ему устанавливаются атрибуты Hidden и NotContentIndexed
+Используется файл updat.exe - (64B07B1C385CF94A3559E323009F7641) легитимный файл, который нужен для детонации полезной нагрузки из crashreport.dll
+🔤Вредонос закрепляется в ключе HKCU\Software\Microsoft\Windows\CurrentVersion\Run текущего пользователя
+🔤Далее происходит распаковка backdoor из файла, который создает службу с именем Windows EventN. Путь к запускаемому файлу C:\\Users\\&lt;User&gt;\\Videos\\&lt;random_string&gt;@27
+🔤Отключается UAC, путем изменения ключей реестра HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\{EnableLUA, ConsentPromptBehaviorAdmin, PromptOnSecureDesktop}
+🔭 Обнаружение:
+🔤 отслеживаем создание файлов и создание процессов с расширением pif
+🔤 хантим наличие директорий с @ в имени
+🔤 хантим наличие директорий с атрибутом Hidden и/или NotContentIndexed
+🔤 отслеживаем и хантим наличие служб с исполняемым файлом в пользовательских директориях
+🔤 отслеживаем и хантим изменение ключей реестра UAC
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Mon, 16 Feb 2026 18:27:18 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_316</guid></item><item><title>#Blue_Team_Techniques</title><link>https://t.me/detectioneasy/315</link><description>#Infographics
 #Blue_Team_Techniques
 "Detection Engineering Cheatsheet", SANS 2026.
 // This poster provides a practical, end-to-end view of Detection Engineering, guiding defenders from raw log data to meaningful alerts

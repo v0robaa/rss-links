@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-02-16T14:50:50.809011+00:00",
-  "messages_count": 54,
+  "last_update": "2026-02-16T18:55:15.647827+00:00",
+  "messages_count": 55,
   "messages": [
+    {
+      "id": "316",
+      "title": "После месячной раскачки — возвращаемся к практике",
+      "text": "Всем привет! 💻✌️\nПосле месячной раскачки — возвращаемся к практике\nНачнем с отчета о действиях группировки APT-Q-27\n❗️Атакующие используют непривычные расширения exe или scr, а расширение pif\nУ большинства жертв в Windows скрыто отображение расширений файлов. В результате Проводник показывает только имя файла, и pif выглядит менее подозрительно\n👨‍💻 Как это работает?\n🔤 Пользователь получает ссылку на файл вида hxxps://storage[.]googleapis[.]com/iwantuu/photo202512.pif#image2025-12-29-14-53.jpg\nДля отвода внимания жертвы в конце URL установлен идентификатор фрагмента #image2025-12-29-14-53.jpg\n🔤 По ссылке загружается дропер с расширением .pif\n🔤 После запуска он получает список адресов для загрузки остальных шагов из файла\nhxxps://yyupdats[.]s3.ap-southeast-1.amazonaws.com/updat.txt\n🔤 Далее TTP мимикрируют под процесс обновления Windows\nФайлы сохраняются в каталог C:\\Users\\Admin\\AppData\\Local\\\\Microsoft\\WindowsUpdate\\\\Cache\\WU_20251230_67e65f7b@27 и ему устанавливаются атрибуты Hidden и NotContentIndexed\nИспользуется файл updat.exe - (64B07B1C385CF94A3559E323009F7641) легитимный файл, который нужен для детонации полезной нагрузки из crashreport.dll\n🔤Вредонос закрепляется в ключе HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run текущего пользователя\n🔤Далее происходит распаковка backdoor из файла, который создает службу с именем Windows EventN. Путь к запускаемому файлу C:\\\\Users\\\\<User>\\\\Videos\\\\<random_string>@27\n🔤Отключается UAC, путем изменения ключей реестра HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\{EnableLUA, ConsentPromptBehaviorAdmin, PromptOnSecureDesktop}\n🔭 Обнаружение:\n🔤 отслеживаем создание файлов и создание процессов с расширением pif\n🔤 хантим наличие директорий с @ в имени\n🔤 хантим наличие директорий с атрибутом Hidden и/или NotContentIndexed\n🔤 отслеживаем и хантим наличие служб с исполняемым файлом в пользовательских директориях\n🔤 отслеживаем и хантим изменение ключей реестра UAC\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/316",
+      "pub_date": "2026-02-16T18:27:18+00:00"
+    },
     {
       "id": "315",
       "title": "#Blue_Team_Techniques",
