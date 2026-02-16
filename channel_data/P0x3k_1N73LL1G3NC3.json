@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-16T05:39:36.954526+00:00",
-  "messages_count": 99,
+  "last_update": "2026-02-16T10:01:49.134021+00:00",
+  "messages_count": 100,
   "messages": [
+    {
+      "id": "270",
+      "title": "Уроним пару бустов на канал?😏",
+      "text": "Уроним пару бустов на канал?😏\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/270",
+      "pub_date": "2026-02-16T07:02:04+00:00"
+    },
     {
       "id": "269",
       "title": "CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)",
