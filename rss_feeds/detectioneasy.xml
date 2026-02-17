@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Mon, 16 Feb 2026 18:27:18 +0000</lastBuildDate><item><title>После месячной раскачки — возвращаемся к практике</title><link>https://t.me/detectioneasy/316</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 17 Feb 2026 18:31:04 +0000</lastBuildDate><item><title>Cisco Talos опубликовали отчет о TTP группировки UAT-8099</title><link>https://t.me/detectioneasy/317</link><description>Всем привет! 💻✌️
+Cisco Talos опубликовали отчет о TTP группировки UAT-8099
+👨‍💻 Как это работает?
+🔤 После получения доступа выполняют команды для анализа хоста - whoami, tasklist
+🔤 Для закрепления устанавливают SoftEther VPN и создают учетную запись, маскирующуюся под сервисную, mssql$ (в дальнейшем логин менялся, однако IOA оставался тем же)
+cmd /c net user mssql$ AppleHuitar7$ /add
+cmd /c net localgroup administrators mssql$ /add
+cmd /c net user mssql$ /expires:never
+🔤 Один из инструментов атакующих - GotoHTTP
+Загружают через PowerShell Invoke-WebRequest https://.*/*.vbs
+и запускают cmd /c C:\Users\Public\zcgo1.vbs
+🔤 Конечная цель атакующих — внедрение кода в IIS
+🔭 Обнаружение:
+🔤 отслеживаем запуск whoami и net user|localgroup
+🔤 хантим и отслеживаем создание пользовательских учетных записей с последним символом $
+🔤 отслеживаем EventId=4624 and LogonType in [3, 10] and TargetUserName endswith $
+🔤 мониторим использование RMM Tool
+🔤 отслеживаем запуск дочерних процессов (cmd.exe, powershell.exe, etc) от родителя w3wp.exe
+🔤 отслеживаем создание новых *.aspx
+🔤 создание странных файлов в C:\Users\Public
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 17 Feb 2026 18:31:04 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_317</guid></item><item><title>После месячной раскачки — возвращаемся к практике</title><link>https://t.me/detectioneasy/316</link><description>Всем привет! 💻✌️
 После месячной раскачки — возвращаемся к практике
 Начнем с отчета о действиях группировки APT-Q-27
 ❗️Атакующие используют непривычные расширения exe или scr, а расширение pif
