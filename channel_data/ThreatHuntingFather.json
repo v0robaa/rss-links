@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-16T18:55:06.157598+00:00",
-  "messages_count": 126,
+  "last_update": "2026-02-17T05:24:36.020213+00:00",
+  "messages_count": 127,
   "messages": [
+    {
+      "id": "1168",
+      "title": "Aeternum Loader: When your C2 lives forever",
+      "text": "Aeternum Loader: When your C2 lives forever\nЭто что? 😂 C3? Command, Control & Crypto (C3)\nAeternum - это MaaS-лоадер, где C2 реализован через Polygon smart contract. RPC к публичным Polygon RPC и вызывает getDomain() у контракта. В контракте хранится зашифрованная строка с командой.\nИтого исследователи хорошо углубились:\n• Спивотились по одинаковому bytecode\n• Нашли ~400 контрактов\n• 81 с логами\n• 37 удалось полностью расшифровать\n• 209 plaintext-команд за период ~3.5 месяца\n🔗 https://ctrlaltintel.com/threat%20research/Aeternum-Part-1/#command-control--crypto-c3\nAeternum Loader: Inside the binary про сам лоадер: UPX, XOR-строки, API hashing, anti-VM, persistence через Startup, ADS self-delete, PPID spoofing и polling смарт-контракта\n🔗 https://ctrlaltintel.com/threat%20research/Aeternum-Part-2/\nНу вот тебе и децентрализованная технология 😃\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1168",
+      "pub_date": "2026-02-17T03:01:57+00:00"
+    },
     {
       "id": "1167",
       "title": "BYOVD hunter - да да, с помощью этого инструмента можно найти уязвимые драйвера, но мы то будем использовать чтобы провести аудит своего хоста? 😃",
