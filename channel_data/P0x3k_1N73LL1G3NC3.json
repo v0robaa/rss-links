@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-17T19:06:33.113646+00:00",
-  "messages_count": 100,
+  "last_update": "2026-02-18T05:25:49.441401+00:00",
+  "messages_count": 101,
   "messages": [
+    {
+      "id": "271",
+      "title": "Форк популярного скрипта ldapdomaindump, но только работает с ADWS",
+      "text": "Форк популярного скрипта ldapdomaindump, но только работает с ADWS\nhttps://github.com/mverschu/adwsdomaindump\n#ad #pentest #redteam #recon",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/271",
+      "pub_date": "2026-02-18T05:01:17+00:00"
+    },
     {
       "id": "270",
       "title": "Уроним пару бустов на канал?😏",
