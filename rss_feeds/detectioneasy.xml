@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 17 Feb 2026 18:31:04 +0000</lastBuildDate><item><title>Cisco Talos опубликовали отчет о TTP группировки UAT-8099</title><link>https://t.me/detectioneasy/317</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 18 Feb 2026 09:00:01 +0000</lastBuildDate><item><title>ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод</title><link>https://t.me/detectioneasy/318</link><description>Всем привет! 💻✌️
+ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод
+Кто-то ещё не заблокировал запуск окна Выполнить ⌨️
+👨‍💻 Как это работает?
+Атакующие резолвят определенный домен через подконтрольные DNS сервера. Ответ сервера парсится и передается на выполнение LOLBins
+🔭 Обнаружение:
+🔤 отключаем Выполнить
+🔤 хантим RunMRU и мониторим создание новых ключей
+🔤 разрешаем подключение только к доверенным DNS-серверам
+🔤 хантим DNS-ответы
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 09:00:01 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_318</guid></item><item><title>Cisco Talos опубликовали отчет о TTP группировки UAT-8099</title><link>https://t.me/detectioneasy/317</link><description>Всем привет! 💻✌️
 Cisco Talos опубликовали отчет о TTP группировки UAT-8099
 👨‍💻 Как это работает?
 🔤 После получения доступа выполняют команды для анализа хоста - whoami, tasklist

