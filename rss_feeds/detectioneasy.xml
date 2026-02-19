@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 18 Feb 2026 09:00:01 +0000</lastBuildDate><item><title>ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод</title><link>https://t.me/detectioneasy/318</link><description>Всем привет! 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 19 Feb 2026 17:37:08 +0000</lastBuildDate><item><title>Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.</title><link>https://t.me/detectioneasy/320</link><description>Всем привет 💻✌️
+Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.
+👨‍💻 Как это работает?
+🔤 как правило, атака начинается с фишинга, в рамках которого доставляется файл .doc с макросом. Содержимое документа побуждает пользователя нажать Включить содержимое
+🔤 закреп через задачу. Путь к сохраняемому бинарному файлу зависит от прав пользователя
+обычный пользователь — %AppData%
+администратор — %ProgramData%\Microsoft OneDrive\setup\
+🔤 используемые злоумышленниками библиотеки маскируются под легитимные файлы Windows (заполняются поля описания и метаданные)
+🔤 использование утилиты ftp для запуска команд - FTPlnk_phishing
+🔭 Обнаружение:
+🔤 мониторинг запуска ftp.exe -::s: и анализ дочерних процессов ftp.exe
+🔤 поиск файлов с описанием, содержащим Windows или Microsoft, и отсутствующей/невалидной  подписью
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 19 Feb 2026 17:37:08 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_320</guid></item><item><title>ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод</title><link>https://t.me/detectioneasy/318</link><description>Всем привет! 💻✌️
 ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод
 Кто-то ещё не заблокировал запуск окна Выполнить ⌨️
 👨‍💻 Как это работает?
