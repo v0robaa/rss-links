@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 17 Feb 2026 03:01:57 +0000</lastBuildDate><item><title>Aeternum Loader: When your C2 lives forever</title><link>https://t.me/ThreatHuntingFather/1168</link><description>Aeternum Loader: When your C2 lives forever
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 19 Feb 2026 13:52:17 +0000</lastBuildDate><item><title>DFIR Cheat Sheets: The Master List ⤵</title><link>https://t.me/ThreatHuntingFather/1173</link><description>DFIR Cheat Sheets: The Master List ⤵
+A consolidated reference set for DFIR, IR and Threat Hunting workflows.
+🖥 Windows &amp; Endpoint
+OSNIT
+https://lnkd.in/gij67sW9
+Sysmon Cheat Sheet (Olaf Hartong)
+https://github.com/olafhartong/sysmon-cheatsheet/blob/master/Sysmon-Cheatsheet.pdf
+UAC Basics (UAC Docs)
+https://tclahr.github.io/uac-docs/
+NTUSER.DAT Forensics
+https://lnkd.in/gZTNHyBW
+Windows Logging Cheat Sheet
+https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5c586681f4e1fced3ce1308b/1549297281905/Windows+Logging+Cheat+Sheet_ver_Feb_2019.pdf
+Windows Event Log Cheat Sheet (13Cubed)
+https://cdn.13cubed.com/downloads/windows_event_log_cheat_sheet.pdf
+Windows Registry Hive
+https://lnkd.in/grYaxrJq
+Windows Registry Artifacts
+https://lnkd.in/gAAvcTqs
+Practical Windows Forensics
+https://github.com/bluecapesecurity/PWF/blob/main/Resources/PracticalWindowsForensics-cheat-sheet.pdf
+🐧 Linux &amp; Cross-Platform
+Advanced Linux Detection &amp; Forensics
+https://www.defensive-security.com/storage/uploads/Advanced%20Linux%20Detection%20and%20Forensics%20Cheatsheet%20by%20Defensive%20Security.pdf
+Essential Linux Commands
+https://lnkd.in/g5a8ZnRQ
+Container Investigations
+https://lnkd.in/ghpg6qaH
+🧠 Memory &amp; Network
+Memory Forensics (SANS Poster)
+https://www.sans.org/posters/memory-forensics
+Network Evidence
+https://lnkd.in/g6Yk92-5
+🛠 Threat Hunting / IR Process
+RMM Investigation
+https://lnkd.in/gqaCUEBy
+WMI Malware Detection
+https://lnkd.in/gSGWYHKG
+Divide and Conquer IR Process
+https://lnkd.in/g-CwbhPv
+SANS Cheat Sheet Collection
+https://lnkd.in/g37ECxyU
+AnyDesk Indicators of Existence
+https://lnkd.in/
+😷THF</description><pubDate>Thu, 19 Feb 2026 13:52:17 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1173</guid></item><item><title>Aeternum Loader: When your C2 lives forever</title><link>https://t.me/ThreatHuntingFather/1168</link><description>Aeternum Loader: When your C2 lives forever
 Это что? 😂 C3? Command, Control &amp; Crypto (C3)
 Aeternum - это MaaS-лоадер, где C2 реализован через Polygon smart contract. RPC к публичным Polygon RPC и вызывает getDomain() у контракта. В контракте хранится зашифрованная строка с командой.
 Итого исследователи хорошо углубились:

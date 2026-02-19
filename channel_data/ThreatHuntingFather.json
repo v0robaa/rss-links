@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-19T09:57:21.339209+00:00",
-  "messages_count": 127,
+  "last_update": "2026-02-19T14:55:24.228518+00:00",
+  "messages_count": 128,
   "messages": [
+    {
+      "id": "1173",
+      "title": "DFIR Cheat Sheets: The Master List ⤵",
+      "text": "DFIR Cheat Sheets: The Master List ⤵\nA consolidated reference set for DFIR, IR and Threat Hunting workflows.\n🖥 Windows & Endpoint\nOSNIT\nhttps://lnkd.in/gij67sW9\nSysmon Cheat Sheet (Olaf Hartong)\nhttps://github.com/olafhartong/sysmon-cheatsheet/blob/master/Sysmon-Cheatsheet.pdf\nUAC Basics (UAC Docs)\nhttps://tclahr.github.io/uac-docs/\nNTUSER.DAT Forensics\nhttps://lnkd.in/gZTNHyBW\nWindows Logging Cheat Sheet\nhttps://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5c586681f4e1fced3ce1308b/1549297281905/Windows+Logging+Cheat+Sheet_ver_Feb_2019.pdf\nWindows Event Log Cheat Sheet (13Cubed)\nhttps://cdn.13cubed.com/downloads/windows_event_log_cheat_sheet.pdf\nWindows Registry Hive\nhttps://lnkd.in/grYaxrJq\nWindows Registry Artifacts\nhttps://lnkd.in/gAAvcTqs\nPractical Windows Forensics\nhttps://github.com/bluecapesecurity/PWF/blob/main/Resources/PracticalWindowsForensics-cheat-sheet.pdf\n🐧 Linux & Cross-Platform\nAdvanced Linux Detection & Forensics\nhttps://www.defensive-security.com/storage/uploads/Advanced%20Linux%20Detection%20and%20Forensics%20Cheatsheet%20by%20Defensive%20Security.pdf\nEssential Linux Commands\nhttps://lnkd.in/g5a8ZnRQ\nContainer Investigations\nhttps://lnkd.in/ghpg6qaH\n🧠 Memory & Network\nMemory Forensics (SANS Poster)\nhttps://www.sans.org/posters/memory-forensics\nNetwork Evidence\nhttps://lnkd.in/g6Yk92-5\n🛠 Threat Hunting / IR Process\nRMM Investigation\nhttps://lnkd.in/gqaCUEBy\nWMI Malware Detection\nhttps://lnkd.in/gSGWYHKG\nDivide and Conquer IR Process\nhttps://lnkd.in/g-CwbhPv\nSANS Cheat Sheet Collection\nhttps://lnkd.in/g37ECxyU\nAnyDesk Indicators of Existence\nhttps://lnkd.in/\n😷THF",
+      "link": "https://t.me/ThreatHuntingFather/1173",
+      "pub_date": "2026-02-19T13:52:17+00:00"
+    },
     {
       "id": "1168",
       "title": "Aeternum Loader: When your C2 lives forever",
