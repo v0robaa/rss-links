@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 19 Feb 2026 13:52:17 +0000</lastBuildDate><item><title>DFIR Cheat Sheets: The Master List ⤵</title><link>https://t.me/ThreatHuntingFather/1173</link><description>DFIR Cheat Sheets: The Master List ⤵
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 20 Feb 2026 13:09:14 +0000</lastBuildDate><item><title>Допинал код до адекватного состояния, когда он более-менее работоспособен и пригоден для использования.</title><link>https://t.me/ThreatHuntingFather/1180</link><description>Допинал код до адекватного состояния, когда он более-менее работоспособен и пригоден для использования.
+Знакомьтесь: ClamYara, локальный плагин для MWDB, который сканирует загружаемые в репозиторий сэмплы вредоносов при помощи ClamAV и YARA.
+Поставьте звёздочку ⭐ на GitHub, если не сложно:
+https://github.com/dyussekeyev/mwdb-plugin-clamyara</description><pubDate>Fri, 20 Feb 2026 13:09:14 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1180</guid></item><item><title>AI IN THE MIDDLE: TURNING WEB-BASED AI SERVICES INTO C2 PROXIES &amp; THE FUTURE OF AI DRIVEN ATTACKS</title><link>https://t.me/ThreatHuntingFather/1174</link><description>AI IN THE MIDDLE: TURNING WEB-BASED AI SERVICES INTO C2 PROXIES &amp; THE FUTURE OF AI DRIVEN ATTACKS
+Чекпоинты получается выкатили рабочий POC, AI as C2 получается 😁 -&gt;&gt;soon AI-Driven malware (AID)
+Attack scenario is quite simple: an attacker infects a machine and installs a piece of malware. Then the malware communicates directly with either Grok or Copilot through the web interface, sending a prompt that causes the AI agent to issue an HTTP(S) request to an attacker-controlled URL, retrieve content from that site, and return the attacker’s response via the AI output back to the malware.
+🔗https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/
+Ну а я напоминаю что проект живет и там уже довольно много расписано о способах абуза😃
+🔗LOL AI проект тут lolai-project.github.io
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 20 Feb 2026 13:03:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1174</guid></item><item><title>DFIR Cheat Sheets: The Master List ⤵</title><link>https://t.me/ThreatHuntingFather/1173</link><description>DFIR Cheat Sheets: The Master List ⤵
 A consolidated reference set for DFIR, IR and Threat Hunting workflows.
 🖥 Windows &amp; Endpoint
 OSNIT

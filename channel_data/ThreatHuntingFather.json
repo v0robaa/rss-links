@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-20T09:51:23.738786+00:00",
-  "messages_count": 128,
+  "last_update": "2026-02-20T14:47:58.255287+00:00",
+  "messages_count": 130,
   "messages": [
+    {
+      "id": "1180",
+      "title": "Допинал код до адекватного состояния, когда он более-менее работоспособен и пригоден для использования.",
+      "text": "Допинал код до адекватного состояния, когда он более-менее работоспособен и пригоден для использования.\nЗнакомьтесь: ClamYara, локальный плагин для MWDB, который сканирует загружаемые в репозиторий сэмплы вредоносов при помощи ClamAV и YARA.\nПоставьте звёздочку ⭐ на GitHub, если не сложно:\nhttps://github.com/dyussekeyev/mwdb-plugin-clamyara",
+      "link": "https://t.me/ThreatHuntingFather/1180",
+      "pub_date": "2026-02-20T13:09:14+00:00"
+    },
+    {
+      "id": "1174",
+      "title": "AI IN THE MIDDLE: TURNING WEB-BASED AI SERVICES INTO C2 PROXIES & THE FUTURE OF AI DRIVEN ATTACKS",
+      "text": "AI IN THE MIDDLE: TURNING WEB-BASED AI SERVICES INTO C2 PROXIES & THE FUTURE OF AI DRIVEN ATTACKS\nЧекпоинты получается выкатили рабочий POC, AI as C2 получается 😁 ->>soon AI-Driven malware (AID)\nAttack scenario is quite simple: an attacker infects a machine and installs a piece of malware. Then the malware communicates directly with either Grok or Copilot through the web interface, sending a prompt that causes the AI agent to issue an HTTP(S) request to an attacker-controlled URL, retrieve content from that site, and return the attacker’s response via the AI output back to the malware.\n🔗https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/\nНу а я напоминаю что проект живет и там уже довольно много расписано о способах абуза😃\n🔗LOL AI проект тут lolai-project.github.io\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1174",
+      "pub_date": "2026-02-20T13:03:42+00:00"
+    },
     {
       "id": "1173",
       "title": "DFIR Cheat Sheets: The Master List ⤵",
