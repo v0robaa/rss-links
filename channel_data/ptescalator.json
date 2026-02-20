@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-02-20T14:48:10.225349+00:00",
-  "messages_count": 85,
+  "last_update": "2026-02-20T18:58:38.721743+00:00",
+  "messages_count": 86,
   "messages": [
+    {
+      "id": "650",
+      "title": "Message 650",
+      "text": "",
+      "link": "https://t.me/ptescalator/650",
+      "pub_date": "2026-02-20T15:30:30+00:00"
+    },
     {
       "id": "649",
       "title": "Блокчейн Solana на службе хакеров 🪙",
