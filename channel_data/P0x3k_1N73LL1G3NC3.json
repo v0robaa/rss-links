@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-20T05:18:41.741750+00:00",
-  "messages_count": 103,
+  "last_update": "2026-02-20T09:51:16.582937+00:00",
+  "messages_count": 104,
   "messages": [
+    {
+      "id": "274",
+      "title": "🏃 AD CS LOLBAS Toolkit",
+      "text": "🏃 AD CS LOLBAS Toolkit\nNative Windows toolkit for AD CS enumeration and exploitation. Everything runs through built-in OS components (certreq.exe, certutil.exe, PowerShell AD module, .NET Framework) - no third-party tools needed. Build with a sprinkle of FAFO and some finding out in lab env\nСкрипты:\n🐥adcs-common.ps1\n🐥Invoke-Enumerate.ps1\n🐥Invoke-SnapshotAudit.ps1\n🐥Invoke-RemoteAudit.ps1\n🐥Invoke-ESC1.ps1 .. Invoke-ESC13.ps1\n🐥Invoke-FindTemplates.ps1\n🐥Invoke-PassTheCert.ps1\n🐥Invoke-ShadowCredentials.ps1\n🐥Invoke-Kerberoast.ps1\n🐥Invoke-DomainRecon.ps1\n😹 Repo\n#adcs #windows #powershell\n✈️ Whitehat Lab 💬Chat\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/274",
+      "pub_date": "2026-02-20T08:53:01+00:00"
+    },
     {
       "id": "273",
       "title": "CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR",

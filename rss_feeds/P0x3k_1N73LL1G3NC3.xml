@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 18 Feb 2026 09:02:01 +0000</lastBuildDate><item><title>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR</title><link>https://t.me/P0x3k_1N73LL1G3NC3/273</link><description>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 20 Feb 2026 08:53:01 +0000</lastBuildDate><item><title>🏃 AD CS LOLBAS Toolkit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/274</link><description>🏃 AD CS LOLBAS Toolkit
+Native Windows toolkit for AD CS enumeration and exploitation. Everything runs through built-in OS components (certreq.exe, certutil.exe, PowerShell AD module, .NET Framework) - no third-party tools needed. Build with a sprinkle of FAFO and some finding out in lab env
+Скрипты:
+🐥adcs-common.ps1
+🐥Invoke-Enumerate.ps1
+🐥Invoke-SnapshotAudit.ps1
+🐥Invoke-RemoteAudit.ps1
+🐥Invoke-ESC1.ps1 .. Invoke-ESC13.ps1
+🐥Invoke-FindTemplates.ps1
+🐥Invoke-PassTheCert.ps1
+🐥Invoke-ShadowCredentials.ps1
+🐥Invoke-Kerberoast.ps1
+🐥Invoke-DomainRecon.ps1
+😹 Repo
+#adcs #windows #powershell
+✈️ Whitehat Lab 💬Chat
+
+[Media: Фото]</description><pubDate>Fri, 20 Feb 2026 08:53:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_274</guid></item><item><title>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR</title><link>https://t.me/P0x3k_1N73LL1G3NC3/273</link><description>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR
 LPE vulnerability in the ESET Inspect Connector for Windows (versions prior to 3.0.5765) due to the ElConnector.exe process (running as SYSTEM) attempting to load an OpenSSL configuration file from a non-existent path that can be created by a low-privileged user
 PoC:
 1) Create the directory: C:\src\vcpkg\packages\openssl_x64-windows-static\
