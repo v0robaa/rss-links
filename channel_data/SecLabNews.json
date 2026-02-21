@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-02-21T14:33:26.996541+00:00",
-  "messages_count": 357,
+  "last_update": "2026-02-21T18:46:11.447037+00:00",
+  "messages_count": 358,
   "messages": [
+    {
+      "id": "17438",
+      "title": "Message 17438",
+      "text": "",
+      "link": "https://t.me/SecLabNews/17438",
+      "pub_date": "2026-02-21T14:57:52+00:00"
+    },
     {
       "id": "17437",
       "title": "Рынок штормит. А кто у руля?",

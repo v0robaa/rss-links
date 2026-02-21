@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-21T14:33:19.645107+00:00",
-  "messages_count": 130,
+  "last_update": "2026-02-21T18:46:04.285265+00:00",
+  "messages_count": 131,
   "messages": [
+    {
+      "id": "1181",
+      "title": "Safety for Agents - a lightweight Agent Detection & Response (ADR) layer for AI agents that guards commands, files, and web requests.",
+      "text": "Safety for Agents - a lightweight Agent Detection & Response (ADR) layer for AI agents that guards commands, files, and web requests.\nSage intercepts tool calls (Bash commands, URL fetches, file writes) via hook systems in Claude Code, Cursor / VS Code, and OpenClaw, and checks them against:\nURL reputation - cloud-based malware, phishing, and scam detection\nLocal heuristics - YAML-based threat definitions for dangerous patterns\nPackage supply-chain checks - registry existence, file reputation, and age analysis for npm/PyPI packages\nPlugin scanning - scans other installed plugins for threats at session start\n🔗https://github.com/avast/sage\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1181",
+      "pub_date": "2026-02-21T18:24:26+00:00"
+    },
     {
       "id": "1180",
       "title": "Допинал код до адекватного состояния, когда он более-менее работоспособен и пригоден для использования.",
