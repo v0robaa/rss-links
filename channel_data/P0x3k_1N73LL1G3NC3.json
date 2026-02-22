@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-22T14:33:35.690655+00:00",
-  "messages_count": 106,
+  "last_update": "2026-02-22T18:46:26.767344+00:00",
+  "messages_count": 107,
   "messages": [
+    {
+      "id": "277",
+      "title": "Gaining Initial Access and Outsmarting SmartScreen",
+      "text": "Gaining Initial Access and Outsmarting SmartScreen\n.zip email attachment that includes a VHDX (Hard Disk Image File) + Mark of the Web and SmartScreen bypass using Trusted Executable Reputation and DLL Sideloading.\nTools: https://github.com/g3tsyst3m/CodefromBlog/tree/main/2026-2-21-Initial%20Access%20and%20Outsmarting%20SmartScreen\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/277",
+      "pub_date": "2026-02-22T15:51:15+00:00"
+    },
     {
       "id": "276",
       "title": "LSA Whisper BOF",
