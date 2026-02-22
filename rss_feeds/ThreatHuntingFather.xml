@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 21 Feb 2026 18:24:26 +0000</lastBuildDate><item><title>Safety for Agents - a lightweight Agent Detection &amp; Response (ADR) layer for AI agents that guards commands, files, and web requests.</title><link>https://t.me/ThreatHuntingFather/1181</link><description>Safety for Agents - a lightweight Agent Detection &amp; Response (ADR) layer for AI agents that guards commands, files, and web requests.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 22 Feb 2026 10:06:25 +0000</lastBuildDate><item><title>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME</title><link>https://t.me/ThreatHuntingFather/1182</link><description>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME
+Кампания PCPcat демонстрирует полный жизненный цикл сканирования, эксплуатации, сохранения, туннелирования, кражи данных и монетизации, созданной специально для современной облачной инфраструктуры.
+Формат атаки
+Initial Access → интернет-сканирование открытых Docker API, Kubernetes API, Ray Dashboard, Redis и уязвимых React/Next.js (включая React2Shell).
+Execution → удалённый деплой контейнера / job через API; при наличии service account token — запуск kube.py для работы внутри кластера.
+Persistence → развертывание DaemonSet с securityContext.privileged: true и монтированием host FS; регистрация systemd-сервисов для автостарта компонентов.
+C2 → Sliver + туннелирование через FRPS/gost.
+Objective → XMRig (майнинг), прокси/relay-инфраструктура, сбор секретов и данных.
+Все интересности в прикрепленных скриншотах из статьи ✍️
+🔗 https://flare.io/learn/resources/blog/teampcp-cloud-native-ransomware/
+🦔THF
+
+[Media: Фото]</description><pubDate>Sun, 22 Feb 2026 10:06:25 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1182</guid></item><item><title>Safety for Agents - a lightweight Agent Detection &amp; Response (ADR) layer for AI agents that guards commands, files, and web requests.</title><link>https://t.me/ThreatHuntingFather/1181</link><description>Safety for Agents - a lightweight Agent Detection &amp; Response (ADR) layer for AI agents that guards commands, files, and web requests.
 Sage intercepts tool calls (Bash commands, URL fetches, file writes) via hook systems in Claude Code, Cursor / VS Code, and OpenClaw, and checks them against:
 URL reputation - cloud-based malware, phishing, and scam detection
 Local heuristics - YAML-based threat definitions for dangerous patterns

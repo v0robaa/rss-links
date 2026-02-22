@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-02-22T09:38:53.345472+00:00",
-  "messages_count": 58,
+  "last_update": "2026-02-22T14:33:52.035116+00:00",
+  "messages_count": 59,
   "messages": [
+    {
+      "id": "321",
+      "title": "Разбирем PhantomProxyLite группы Head Mare, по исследованию ЛК",
+      "text": "Всем привет 💻✌️\nРазбирем PhantomProxyLite группы Head Mare, по исследованию ЛК\n👨‍💻 Как это работает?\n🔤 в ранних кампаниях PhantomProxyLite был бинарником, который работал как фоновый сервис с именем SSHService и поднимал обратный SSH-туннель к C2\n🔤 в новой кампании инструмент переписали на PowerShell: закрепление теперь делается через задачу Планировщика с тем же именем SSHService, запуск при старте системы от имени SYSTEM\n🔤 функционал закрепления - создание SSH-туннеля. Параметры для запуска хранятся в ключе HKLM\\SOFTWARE\\SSHService\n❗️В исследовании не уточняется, какой сервис прокидывали через SSH-туннель, поэтому в качестве наиболее вероятного сценария будем рассматривать RDP\n🔭 Обнаружение:\n🔤 создание задачи и службы с именем SSHService. Можем похантить задачи с powershell\n🔤 исходящие сессии (sysmon 3, security 5156) на порт 22. При наличии IDS,NTA исходящие ssh соединения\n🔤 отслеживаем запуск нативного ssh клиента C:\\Windows\\System32\\OpenSSH\\ssh.exe\n🔤 RDP-сесиию из туннеля мы можем увидеть в логах Microsoft-Windows-TerminalServices-LocalSessionManager/Operational AND EventId=24 AND Address contains ::%16777216\nа также\nMicrosoft-Windows-TerminalServices-RemoteConnectionManager/Admin AND EventId=1158 AND Param1=::%16777216\n🔤 аномалией может стать Security AND EventID=5156 AND SourceAddress contains ::1 and DestAddress contains ::1 and DestPort=3389\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/321",
+      "pub_date": "2026-02-22T13:08:35+00:00"
+    },
     {
       "id": "320",
       "title": "Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.",

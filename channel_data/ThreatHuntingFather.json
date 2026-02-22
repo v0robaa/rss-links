@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-22T09:38:43.640427+00:00",
-  "messages_count": 131,
+  "last_update": "2026-02-22T14:33:42.544026+00:00",
+  "messages_count": 132,
   "messages": [
+    {
+      "id": "1182",
+      "title": "THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME",
+      "text": "THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME\nКампания PCPcat демонстрирует полный жизненный цикл сканирования, эксплуатации, сохранения, туннелирования, кражи данных и монетизации, созданной специально для современной облачной инфраструктуры.\nФормат атаки\nInitial Access → интернет-сканирование открытых Docker API, Kubernetes API, Ray Dashboard, Redis и уязвимых React/Next.js (включая React2Shell).\nExecution → удалённый деплой контейнера / job через API; при наличии service account token — запуск kube.py для работы внутри кластера.\nPersistence → развертывание DaemonSet с securityContext.privileged: true и монтированием host FS; регистрация systemd-сервисов для автостарта компонентов.\nC2 → Sliver + туннелирование через FRPS/gost.\nObjective → XMRig (майнинг), прокси/relay-инфраструктура, сбор секретов и данных.\nВсе интересности в прикрепленных скриншотах из статьи ✍️\n🔗 https://flare.io/learn/resources/blog/teampcp-cloud-native-ransomware/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1182",
+      "pub_date": "2026-02-22T10:06:25+00:00"
+    },
     {
       "id": "1181",
       "title": "Safety for Agents - a lightweight Agent Detection & Response (ADR) layer for AI agents that guards commands, files, and web requests.",

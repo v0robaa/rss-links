@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 19 Feb 2026 17:37:08 +0000</lastBuildDate><item><title>Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.</title><link>https://t.me/detectioneasy/320</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sun, 22 Feb 2026 13:08:35 +0000</lastBuildDate><item><title>Разбирем PhantomProxyLite группы Head Mare, по исследованию ЛК</title><link>https://t.me/detectioneasy/321</link><description>Всем привет 💻✌️
+Разбирем PhantomProxyLite группы Head Mare, по исследованию ЛК
+👨‍💻 Как это работает?
+🔤 в ранних кампаниях PhantomProxyLite был бинарником, который работал как фоновый сервис с именем SSHService и поднимал обратный SSH-туннель к C2
+🔤 в новой кампании инструмент переписали на PowerShell: закрепление теперь делается через задачу Планировщика с тем же именем SSHService, запуск при старте системы от имени SYSTEM
+🔤 функционал закрепления - создание SSH-туннеля. Параметры для запуска хранятся в ключе HKLM\SOFTWARE\SSHService
+❗️В исследовании не уточняется, какой сервис прокидывали через SSH-туннель, поэтому в качестве наиболее вероятного сценария будем рассматривать RDP
+🔭 Обнаружение:
+🔤 создание задачи и службы с именем SSHService. Можем похантить задачи с powershell
+🔤 исходящие сессии (sysmon 3, security 5156) на порт 22. При наличии IDS,NTA исходящие ssh соединения
+🔤 отслеживаем запуск нативного ssh клиента C:\Windows\System32\OpenSSH\ssh.exe
+🔤 RDP-сесиию из туннеля мы можем увидеть в логах Microsoft-Windows-TerminalServices-LocalSessionManager/Operational AND EventId=24 AND Address contains ::%16777216
+а также
+Microsoft-Windows-TerminalServices-RemoteConnectionManager/Admin AND EventId=1158 AND Param1=::%16777216
+🔤 аномалией может стать Security AND EventID=5156 AND SourceAddress contains ::1 and DestAddress contains ::1 and DestPort=3389
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 22 Feb 2026 13:08:35 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_321</guid></item><item><title>Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.</title><link>https://t.me/detectioneasy/320</link><description>Всем привет 💻✌️
 Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.
 👨‍💻 Как это работает?
 🔤 как правило, атака начинается с фишинга, в рамках которого доставляется файл .doc с макросом. Содержимое документа побуждает пользователя нажать Включить содержимое

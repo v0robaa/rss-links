@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-22T09:38:36.462204+00:00",
-  "messages_count": 105,
+  "last_update": "2026-02-22T14:33:35.690655+00:00",
+  "messages_count": 106,
   "messages": [
+    {
+      "id": "276",
+      "title": "LSA Whisper BOF",
+      "text": "LSA Whisper BOF\nA Cobalt Strike Beacon Object File (BOF) port of LSA Whisperer — the tool that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory even when PPL and Credential Guard is enabled.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/276",
+      "pub_date": "2026-02-22T10:54:55+00:00"
+    },
     {
       "id": "275",
       "title": "…ленов.",
