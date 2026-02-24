@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-24T09:59:03.903945+00:00",
-  "messages_count": 132,
+  "last_update": "2026-02-24T14:57:57.655126+00:00",
+  "messages_count": 133,
   "messages": [
+    {
+      "id": "1190",
+      "title": "Вышел свежий CrowdStrike 2026 Global Threat Report - \"Year of the Evasive Adversary\".",
+      "text": "Вышел свежий CrowdStrike 2026 Global Threat Report - \"Year of the Evasive Adversary\".\nКому сложно многабукафф -  вот ключевое:\nСкорость атак зашкаливает - среднее время breakout упало до 29 минут (было 48 в 2024), рекорд - 27 секунд. CHATTY SPIDER начинал эксфильтрацию через 4 минуты после первичного доступа.\n82% детектов - без малвари. Атакующие работают через валидные учетки, легитимные инструменты и доверенные процессы.\nAI в арсенале атакующих - рост атак с использованием ИИ на 89% год к году. FANCY BEAR встроил LLM (Qwen через Hugging Face API) прямо в малварь LAMEHUG для разведки и сбора данных. PUNK SPIDER генерит скрипты через Gemini и DeepSeek. Через npm-пакеты атакующие заставляли локальные CLI-тулы Claude и Gemini на машинах жертв генерировать команды для кражи кред.\nКитай наращивает темп - +38% активности, эксплуатация свежих CVE за 2-3 дня после публикации. 40% эксплуатируемых уязвимостей - edge-устройства (VPN, файрволы, шлюзы). WARP PANDA сидел в инфре 22 месяца.\nSupply chain - PRESSURE CHOLLIMA (КНДР) украли $1.46 млрд крипты через компрометацию Safe{Wallet}. Через npm распространяли самораспространяющийся стилер ShaiHulud (690 скомпрометированных пакетов).\nRansomware - PUNK SPIDER самый активный (198 инцидентов, +134%). SCATTERED SPIDER обходит EDR через неуправляемые VM, монтируя VMDK контроллера домена. Fake CAPTCHA-приманки выросли на 563%.\nОблака под прицелом - +37% cloud-атак, +266% от state-nexus групп. Valid account abuse - 35% облачных инцидентов. COZY BEAR абьюзит легитимные OAuth-потоки Entra ID.\nВсего CrowdStrike трекает 281 группировку, 24 новых в 2025 году.\n\n[Media: Документ]",
+      "link": "https://t.me/ThreatHuntingFather/1190",
+      "pub_date": "2026-02-24T13:27:07+00:00"
+    },
     {
       "id": "1182",
       "title": "THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME",

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 22 Feb 2026 10:06:25 +0000</lastBuildDate><item><title>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME</title><link>https://t.me/ThreatHuntingFather/1182</link><description>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 24 Feb 2026 13:27:07 +0000</lastBuildDate><item><title>Вышел свежий CrowdStrike 2026 Global Threat Report - "Year of the Evasive Adversary".</title><link>https://t.me/ThreatHuntingFather/1190</link><description>Вышел свежий CrowdStrike 2026 Global Threat Report - "Year of the Evasive Adversary".
+Кому сложно многабукафф -  вот ключевое:
+Скорость атак зашкаливает - среднее время breakout упало до 29 минут (было 48 в 2024), рекорд - 27 секунд. CHATTY SPIDER начинал эксфильтрацию через 4 минуты после первичного доступа.
+82% детектов - без малвари. Атакующие работают через валидные учетки, легитимные инструменты и доверенные процессы.
+AI в арсенале атакующих - рост атак с использованием ИИ на 89% год к году. FANCY BEAR встроил LLM (Qwen через Hugging Face API) прямо в малварь LAMEHUG для разведки и сбора данных. PUNK SPIDER генерит скрипты через Gemini и DeepSeek. Через npm-пакеты атакующие заставляли локальные CLI-тулы Claude и Gemini на машинах жертв генерировать команды для кражи кред.
+Китай наращивает темп - +38% активности, эксплуатация свежих CVE за 2-3 дня после публикации. 40% эксплуатируемых уязвимостей - edge-устройства (VPN, файрволы, шлюзы). WARP PANDA сидел в инфре 22 месяца.
+Supply chain - PRESSURE CHOLLIMA (КНДР) украли $1.46 млрд крипты через компрометацию Safe{Wallet}. Через npm распространяли самораспространяющийся стилер ShaiHulud (690 скомпрометированных пакетов).
+Ransomware - PUNK SPIDER самый активный (198 инцидентов, +134%). SCATTERED SPIDER обходит EDR через неуправляемые VM, монтируя VMDK контроллера домена. Fake CAPTCHA-приманки выросли на 563%.
+Облака под прицелом - +37% cloud-атак, +266% от state-nexus групп. Valid account abuse - 35% облачных инцидентов. COZY BEAR абьюзит легитимные OAuth-потоки Entra ID.
+Всего CrowdStrike трекает 281 группировку, 24 новых в 2025 году.
+
+[Media: Документ]</description><pubDate>Tue, 24 Feb 2026 13:27:07 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1190</guid></item><item><title>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME</title><link>https://t.me/ThreatHuntingFather/1182</link><description>THREAT PROFILE: TEAMPCP - THE EVOLUTION OF RANSOMWARE INTO CLOUD-NATIVE CYBERCRIME
 Кампания PCPcat демонстрирует полный жизненный цикл сканирования, эксплуатации, сохранения, туннелирования, кражи данных и монетизации, созданной специально для современной облачной инфраструктуры.
 Формат атаки
 Initial Access → интернет-сканирование открытых Docker API, Kubernetes API, Ray Dashboard, Redis и уязвимых React/Next.js (включая React2Shell).
