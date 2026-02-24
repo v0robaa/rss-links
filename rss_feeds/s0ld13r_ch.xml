@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 12 Feb 2026 11:48:09 +0000</lastBuildDate><item><title>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.</title><link>https://t.me/s0ld13r_ch/353</link><description>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 24 Feb 2026 07:50:58 +0000</lastBuildDate><item><title>В сеть утекли данные сотни тысяч спорстменов Казахстана 🇰🇿</title><link>https://t.me/s0ld13r_ch/354</link><description>В сеть утекли данные сотни тысяч спорстменов Казахстана 🇰🇿
+В декабре прошлого года @qcakz писал о первых признаках продажи базы портала esport.gov.kz. На днях данные уже стали достоянием широкой общественности. Провел анализ дампа, не раскрывая персональные данные, и вот что удалось выяснить:
+📊 ОБЩАЯ СТАТИСТИКА
+• Всего записей: 286976
+• Уникальных ИИН: 286483
+• Уникальных телефонов: 37101
+• Уникальных email: 53345
+• Уникальных ФИО: 280954
+🔐 SHA1 файла: [REDACTED_AWS_SECRET]
+📌 Вывод
+База содержит связку ИИН + телефон + email, что делает её ценной для злоумышленников. Высокая повторяемость телефонов и дубли указывают на технические ошибки или массовые повторные заявки.
+🚨 Риски
+• фишинг и социнженерия
+• телефонное мошенничество
+• попытки подделки документов
+• корреляция с другими утечками
+P.S Файл был проанализирован, после чего удалён. Распространение подобной информации является незаконным и уголовно наказуемым, хранение чужих персональных данных неэтично.
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 24 Feb 2026 07:50:58 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_354</guid></item><item><title>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.</title><link>https://t.me/s0ld13r_ch/353</link><description>🤖 System Prompts топ-LLM - как устроены изнутри  "мозги" ChatGPT, Claude, Gemini, Grok и др.
 В открытый доступ выложены полные системные инструкции крупнейших AI-моделей. Не веса, не пользовательские данные - а именно те правила, по которым модель думает, фильтрует и отвечает. Десятки тысяч токенов внутренней кухни каждого вендора.
 Это не утечка в классическом смысле - промпты извлечены через prompt injection, модели сами их отдают при правильном запросе. Но собранная коллекция в одном месте с актуальными версиями (31k+ stars, регулярные обновления) - это готовый справочник для атак.
 ⚠️ Что это дает red team:
