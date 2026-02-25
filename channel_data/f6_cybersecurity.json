@@ -1,8 +1,15 @@
 {
   "channel": "f6_cybersecurity",
-  "last_update": "2026-02-25T05:26:00.424810+00:00",
-  "messages_count": 155,
+  "last_update": "2026-02-25T10:01:05.318656+00:00",
+  "messages_count": 156,
   "messages": [
+    {
+      "id": "4089",
+      "title": "Message 4089",
+      "text": "",
+      "link": "https://t.me/f6_cybersecurity/4089",
+      "pub_date": "2026-02-25T07:30:26+00:00"
+    },
     {
       "id": "4088",
       "title": "Персидская партнерская программа C77L: анализ атак от специалистов F6.",

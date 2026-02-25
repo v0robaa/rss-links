@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 20 Feb 2026 15:30:30 +0000</lastBuildDate><item><title>Message 650</title><link>https://t.me/ptescalator/650</link><description/><pubDate>Fri, 20 Feb 2026 15:30:30 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_650</guid></item><item><title>Блокчейн Solana на службе хакеров 🪙</title><link>https://t.me/ptescalator/649</link><description>Блокчейн Solana на службе хакеров 🪙
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 25 Feb 2026 08:11:03 +0000</lastBuildDate><item><title>Проникнуть в офис через Office 👨‍💻</title><link>https://t.me/ptescalator/651</link><description>Проникнуть в офис через Office 👨‍💻
+Группа киберразведки PT ESC зафиксировала первую фишинговую кампанию с использованием CVE-2026-21509, направленную на российские организации. Злоумышленники распространяют RTF-документы, оформленные под служебную переписку (скриншоты 1–2).
+Внутри RTF-документа встроен OLE-объект с CLSID EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B (Shell.Explorer.1). Данные объекта упакованы в OLE-хранилище; в стриме CONTENTS находится специально сформированный .lnk-ярлык, указывающий на удаленный ресурс (скриншот 3):
+\\rostransnadzor.digital@SSL\svn\58\АКТ проверки транспортного средства.lnk
+Суффикс @SSL активирует WebDAV-редиректор Windows (службу WebClient), превращая обычное UNC-обращение в HTTPS-запрос к внешнему серверу.
+CVE-2026-21509 здесь выступает механизмом обхода встроенных защит Microsoft Office при обработке OLE-компонентов. Уязвимость позволяет создать COM-объект и получить доступ к удаленному .lnk сразу после открытия документа, тем самым запуская следующую стадию атаки.
+🚮 На момент исследования удаленный ярлык уже был недоступен, поэтому полностью воспроизвести вторую стадию не удалось.
+При анализе домена rostransnadzor.digital выявлено, что в его SOA-записи (поле RNAME) указан контактный e-mail gjegoshcappaniesh@gmail.com
+— этот же e-mail ранее фигурировал у доменов, использовавшихся в атаках группировки BoTeam (скриншот 4). Дополнительно на возможную связь с группировкой указывает повторение характерных артефактов: одинаковое название вредоносных файлов «АКТ проверки транспортного средства» (скриншоты 5–6), а также использование схожего доменного имени rostransnnadzor.ru.
+Это позволяет нам предположить, что за кампанией с использованием CVE-2026-21509 может стоять хакерская группировка BoTeam 🥷
+Для минимизации рисков рекомендуем как можно скорее обновить Microsoft Office до исправленной версии. Если оперативное обновление невозможно, в качестве временной меры следует заблокировать активацию уязвимого OLE-компонента Shell.Explorer.1 (CLSID EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B).
+1️⃣ Необходимо найти либо создать ветку COM Compatibility (путь зависит от типа установки — MSI / Click-to-Run — и разрядности системы 32/64-bit):
+MSI 64-bit или MSI 32-bit на 32-bit Windows:
+HKLM\SOFTWARE\Microsoft\Office\16.0\Common\COM Compatibility\
+MSI 32-bit на 64-bit Windows:
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\
+C2R 64-bit или C2R 32-bit на 32-bit Windows:
+HKLM\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Common\COM Compatibility\
+C2R 32-bit на 64-bit Windows:
+HKLM\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\WOW6432Node\Microsoft\Office\16.0\Common\COM Compatibility\
+2️⃣ Внутри COM Compatibility необходимо создать подраздел {EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B} и добавить параметр DWORD Compatibility Flags = 0x00000400.
+IoCs
+rostransnadzor.digital
+62.3.58.8
+ea078216452f5f6d4eea27bbc062286396a5252e2c267ecc3933d05a4e38da15
+2bbcbc88d04615079fa17708c62f07ccb138c19bb9ed78ae43f9172cd91931ba
+#TI #APT #Malware #Phishing #ioc
+@ptescalator (X, Max)
+
+[Media: Фото]</description><pubDate>Wed, 25 Feb 2026 08:11:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_651</guid></item><item><title>Message 650</title><link>https://t.me/ptescalator/650</link><description/><pubDate>Fri, 20 Feb 2026 15:30:30 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_650</guid></item><item><title>Блокчейн Solana на службе хакеров 🪙</title><link>https://t.me/ptescalator/649</link><description>Блокчейн Solana на службе хакеров 🪙
 В январе специалисты группы киберразведки департамента Threat Intelligence экспертного центра безопасности (PT ESC) обнаружили атаку с использованием вредоносного XLL-файла.
 📂 Внутри него находилась цепочка обфусцированных JavaScript-файлов, работающих на платформе NodeJS. Система жертвы заражалась вредоносным ПО класса RAT (Remote Access Trojan) с широким набором доступных команд.
 Среди особенностей вредоносного кода было выявлено использование SNS-записей (Solana Name Service) для получения альтернативного адреса сервера злоумышленников. Детальное исследование позволило расширить временные рамки атаки: вредоносная активность зафиксирована с середины октября 2025 года и продолжается до сих пор.
