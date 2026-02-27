@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-02-27T14:47:29.927895+00:00",
-  "messages_count": 87,
+  "last_update": "2026-02-27T18:55:38.066374+00:00",
+  "messages_count": 88,
   "messages": [
+    {
+      "id": "657",
+      "title": "Message 657",
+      "text": "",
+      "link": "https://t.me/ptescalator/657",
+      "pub_date": "2026-02-27T17:23:56+00:00"
+    },
     {
       "id": "651",
       "title": "Проникнуть в офис через Office 👨‍💻",
