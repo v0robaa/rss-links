@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Fri, 27 Feb 2026 09:52:27 +0000</lastBuildDate><item><title>«Это привелегия?» Фильм «Горничная» стал лидером февральского рейтинга.</title><link>https://t.me/f6_cybersecurity/4094</link><description>«Это привелегия?» Фильм «Горничная» стал лидером февральского рейтинга.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Fri, 27 Feb 2026 14:47:20 +0000</lastBuildDate><item><title>⚡️ 5 марта в 11:00 — вебинар F6 по TI Feeds. Регистрация уже идет!</title><link>https://t.me/f6_cybersecurity/4095</link><description>⚡️ 5 марта в 11:00 — вебинар F6 по TI Feeds. Регистрация уже идет!
+SIEM фиксирует события.
+Но как понять, какие из них — реальная угроза, а какие — шум?
+На вебинаре «От индикатора к действию. Как SOC использует F6 Threat Intelligence Feeds» покажем, как TI превращается из набора IOC в инструмент принятия решений для SOC.
+Разберем:
+▪️ что такое F6 Threat Intelligence Feeds;
+▪️ как понимать контекст: кто стоит за активностью и что может произойти дальше;
+▪️ как расставлять приоритеты на основе реального риска для компании;
+▪️ как сокращать количество ложных срабатываний и снижать нагрузку на аналитиков.
+Покажем реальные сценарии применения F6 Threat Intelligence Feeds в работе SOC.
+Длительность — 1 час.
+➡️ РЕГИСТРАЦИЯ
+
+[Media: Фото]</description><pubDate>Fri, 27 Feb 2026 12:35:24 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4095</guid></item><item><title>«Это привилегия?» Фильм «Горничная» стал лидером февральского рейтинга.</title><link>https://t.me/f6_cybersecurity/4094</link><description>«Это привилегия?» Фильм «Горничная» стал лидером февральского рейтинга.
 Психологический триллер с Сидни Суини и Амандой Сайфред сначала оказался в топе кинопроката, затем — соцсетей, а теперь и предсказуемо возглавил пиратский кинорейтинг. А не менее шумные «Бриджертоны» пока только ворвались в пятерку самых популярных сериалов по числу нелегальных копий.
 Топ-5 копируемых фильмов ⬇️
 1️⃣ «Горничная»
@@ -32,7 +45,7 @@
 Перед вами — главное о практической интеграции Threat Intelligence с SIEM, SOAR и IRP. Без общих рассуждений, а с конкретными сценариями. Читать обязательно ⬇️
 Threat Intelligence в системе киберзащиты: как раскрыть потенциал SIEM, SOAR и IRP
 
-[Media: Видео]</description><pubDate>Fri, 27 Feb 2026 09:52:27 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4093</guid></item><item><title>«Мамонт-миллиардер»: за полтора года мошенники похитили у россиян по схеме «Мамонт» более 1 млрд рублей.</title><link>https://t.me/f6_cybersecurity/4092</link><description>«Мамонт-миллиардер»: за полтора года мошенники похитили у россиян по схеме «Мамонт» более 1 млрд рублей.
+[Media: Видео]</description><pubDate>Fri, 27 Feb 2026 14:47:20 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4093</guid></item><item><title>«Мамонт-миллиардер»: за полтора года мошенники похитили у россиян по схеме «Мамонт» более 1 млрд рублей.</title><link>https://t.me/f6_cybersecurity/4092</link><description>«Мамонт-миллиардер»: за полтора года мошенники похитили у россиян по схеме «Мамонт» более 1 млрд рублей.
 Аналитики Digital Risk Protection F6 проанализировали тренды развития схемы «Мамонт» с лета 2024 года.
 Базовый сценарий почти не меняется: мошенники размещают в сервисах бесплатных объявлений предложения о продаже товаров по низким ценам и через фишинговые сайты похищают данные карт и деньги. При этом новые сценарии появляются каждый месяц.
 Главные тенденции:

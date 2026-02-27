@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 27 Feb 2026 08:21:05 +0000</lastBuildDate><item><title>Message 17466</title><link>https://t.me/SecLabNews/17466</link><description/><pubDate>Fri, 27 Feb 2026 08:21:05 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17466</guid></item><item><title>Telegram — экстремистская организация? Разбор самого мрачного сценария для России.</title><link>https://t.me/SecLabNews/17465</link><description>Telegram — экстремистская организация? Разбор самого мрачного сценария для России.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 27 Feb 2026 13:10:04 +0000</lastBuildDate><item><title>Новые вершины ирбиса PT NGFW</title><link>https://t.me/SecLabNews/17467</link><description>Новые вершины ирбиса PT NGFW
+🐆❄️Наш ирбис — прирожденный чемпион в мире высоких скоростей. Но чтобы удерживать лидерство, приходится постоянно обновлять личные рекорды.
+Новая задача поступила от ЦОД: покорить пиковые нагрузки и обработать миллиарды мельчайших транзакций 📈
+На старт вышел новый претендент — модель 3050. В дисциплине «пропускная способность с активным IPS» она завоевала золото, показав абсолютно лучший результат 🥇🚀
+Приглашаем вас заглянуть за кулисы этого достижения — на вебинар 5 марта в 11:00. Никакой скучной теории, только живой технический разбор победы 🔧🎥
+В программе:
+🏁 Архитектура победителя: как устроена платформа, позволяющая сохранять стабильность на «длинных дистанциях» (elephant flows) и молниеносно ускоряться на коротких рывках (UDP 64b).
+🏁 Битва за скорость: 100 Гбит/с — предел прочности. Продемонстрируем «гоночный болид» 3050 и объясним, для чего нам потребовался 3D-принтер.
+🏁 Новый вызов: remote access VPN.
+🏁 Свежая экипировка: обзор возможностей релизов 1.10 и 1.11 — новые инструменты для будущих рекордов.
+
+[Media: Фото]</description><pubDate>Fri, 27 Feb 2026 13:10:04 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17467</guid></item><item><title>Message 17466</title><link>https://t.me/SecLabNews/17466</link><description/><pubDate>Fri, 27 Feb 2026 08:21:05 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17466</guid></item><item><title>Telegram — экстремистская организация? Разбор самого мрачного сценария для России.</title><link>https://t.me/SecLabNews/17465</link><description>Telegram — экстремистская организация? Разбор самого мрачного сценария для России.
 В Госдуме снова заговорили о признании Telegram экстремистской организацией. Грань между «просто мессенджером» и «запрещенной платформой» в России стирается быстро.
 Но что это значит на практике? Это не просто блокировка. Это токсичный актив.
 Разбираем по полочкам механику процесса, как это работает в РФ:
