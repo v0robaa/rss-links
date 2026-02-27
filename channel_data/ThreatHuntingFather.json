@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-26T19:01:19.966103+00:00",
-  "messages_count": 134,
+  "last_update": "2026-02-27T05:17:18.405892+00:00",
+  "messages_count": 135,
   "messages": [
+    {
+      "id": "1192",
+      "title": "Playbook Hunting Chinese APT",
+      "text": "Playbook Hunting Chinese APT\nChinese APT TTPs and LOLBAS Operations\nHappy Hunting 😃😃😃\n🔗https://detect.fyi/playbook-hunting-chinese-apt-379a6b950492?gi=bd647600cfe9",
+      "link": "https://t.me/ThreatHuntingFather/1192",
+      "pub_date": "2026-02-26T19:19:12+00:00"
+    },
     {
       "id": "1191",
       "title": "Репортики будут обещаю, ну а пока вот еще штучка 🫡",
