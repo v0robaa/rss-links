@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-28T09:33:12.873434+00:00",
-  "messages_count": 135,
+  "last_update": "2026-02-28T14:29:30.831018+00:00",
+  "messages_count": 136,
   "messages": [
+    {
+      "id": "1193",
+      "title": "Жили жили и вот дожились, все новое для симуляции атакующих 😃",
+      "text": "Жили жили и вот дожились, все новое для симуляции атакующих 😃\nХорошо ли это?) ну может будет больше шума для дефенса 😁\nSynthAPT is a playbook-based adversary simulation framework for replicating complex attack paths. It is designed for validating advanced detections and AI-based investigation agents. The core idea is that malware behavior can be expressed in JSON and compiled into functional malware, enabling rapid development of realistic scenarios using LLMs.\nThe core implant is a shellcode payload driven by a playbook interpreter. A playbook predefines the full attack path and the implant follows it, moving throughout the environment via process injection, lateral movement, etc. Each implant spawns as an independent thread with its own instruction set, so multi-stage attacks (e.g. initial access → privesc → lateral movement → exfiltration) are expressed as a graph of cooperating implants, all defined upfront in the playbook. This has three major advantages:\nPayloads can mimic real malware without C2 infrastructure - the full attack path is embedded in the payload and C2 interactions can be mocked\nPayloads are repeatable - they execute the entire attack path identically every time, making them suitable for regression testing detections\nLLMs can translate threat intelligence reports and blogs directly into working payloads, without requiring offensive expertise or building malware from scratch\nhttps://github.com/acedef/SynthAPT",
+      "link": "https://t.me/ThreatHuntingFather/1193",
+      "pub_date": "2026-02-28T11:49:03+00:00"
+    },
     {
       "id": "1192",
       "title": "Playbook Hunting Chinese APT",

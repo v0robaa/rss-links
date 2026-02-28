@@ -1,8 +1,29 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-02-28T09:33:05.628396+00:00",
-  "messages_count": 109,
+  "last_update": "2026-02-28T14:29:23.883659+00:00",
+  "messages_count": 112,
   "messages": [
+    {
+      "id": "282",
+      "title": "PatchReview",
+      "text": "PatchReview\nMS patch checking tool\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/282",
+      "pub_date": "2026-02-28T12:31:35+00:00"
+    },
+    {
+      "id": "281",
+      "title": "ADPulse",
+      "text": "ADPulse\nAn open-source Active Directory security auditing tool that connects to a domain controller via LDAP(S), runs 35 automated security checks, and produces detailed reports in console, JSON, and HTML formats.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/281",
+      "pub_date": "2026-02-28T09:55:28+00:00"
+    },
+    {
+      "id": "280",
+      "title": "GoLinHound",
+      "text": "GoLinHound\nA BloodHound collector written in Go that discovers Linux and SSH attack paths. Outputs OpenGraph JSON and integrates with existing SharpHound and AzureHound data.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/280",
+      "pub_date": "2026-02-28T09:47:38+00:00"
+    },
     {
       "id": "279",
       "title": "#apt #byovd",

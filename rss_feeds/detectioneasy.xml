@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 26 Feb 2026 06:34:44 +0000</lastBuildDate><item><title>Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT</title><link>https://t.me/detectioneasy/323</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 28 Feb 2026 11:09:33 +0000</lastBuildDate><item><title>Коллеги из ЛК подсветили изменения в TTP Librarian Likho</title><link>https://t.me/detectioneasy/324</link><description>Всем привет 💻✌️
+Коллеги из ЛК подсветили изменения в TTP Librarian Likho
+👨‍💻 Как это работает?
+🔤 Атакующие не утруждаются и фишат исполняемыми файлами *.com, что может говорить об отсутствии защиты почты у их жертв...
+🔤 Исполняемый файл - это инсталлятор собранный через Smart Install Maker
+🔤 После запуска создаются два cab-архива, мимикрирующие под временные файлы -  2.tmp и temp_0.tmp, по пути Users\[REDACTED]\AppData\Local\Temp\$inst
+🔤 Из их архивов извлекаются файлы - приманка, текстовый файл со списком адресов, curl и два bat-скрипта
+🔤 Далее, запускается decoy-файл и скрипт find.cmd
+🔤 Скрипт получает список C2-серверов и загружает архивы и кастомную версию WinRAR с захардкоженным паролем. После чего, распаковывает архивы в Users\[REDACTED]\AppData\Roaming\Windows. Файлы из архивов:
+blat.exe - Утилита для эксфильтрации данных через SMTP
+AnyDesk.exe - Утилита для удаленного управления хостом
+Trays.exe - Утилита для сокрытия окон запущенных процессов
+wbpv.exe  - Утилита WebBrowserPassView для восстановления паролей, сохраненных в веб-браузерах
+dc.exe - Утилита для отключения Windows Defender
+mlpv.exe - Утилита для восстановления паролей с почтовых клиентов
+bat.bat - Скрипт для эксфильтрации паролей и обхода средств защиты информации
+🔤 Механизмы защиты отключаются остановкой или удалением служб WinDefend и MpsSvc, и профилей брандмауэра
+netsh advfirewall set allprofiles state off
+🔤 Для закрепления используется служба AnyDesk
+echo qqqq | AnyDesk.exe —set-password _unattended_access
+🔤Завершающий этап - это сбор паролей из браузеров, почтовых клиентов и их эксфильтрация
+🔭 Обнаружение:
+🔤 отслеживаем создание исполняемых файлов браузерами и почтовыми клиентами
+🔤 отслеживаем родительскую цепочку для офисных процессов, обычно это explorer.exe, outlook.exe, chrome, firefox.exe, browser.exe и другие, нужно профилировать
+или родительский исполняемый файл из Temp, Downloads
+🔤 отслеживаем smtp трафик с пользовательских хостов, на сторонние сервера
+🔤 отслеживаем остановку служб средств защиты
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 28 Feb 2026 11:09:33 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_324</guid></item><item><title>Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT</title><link>https://t.me/detectioneasy/323</link><description>Всем привет 💻✌️
 Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT
 По цепочке видно высокий уровень OPSEC: компрометация легитимных сайтов как инфраструктуры доставки, многоступенчатый PowerShell, затем bypass ETW + AMSI, после чего дропается Lua-лоадер, исполняющий шеллкод в памяти
 👨‍💻 Как это работает?
