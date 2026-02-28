@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-02-28T14:29:30.831018+00:00",
-  "messages_count": 136,
+  "last_update": "2026-02-28T18:42:09.028314+00:00",
+  "messages_count": 137,
   "messages": [
+    {
+      "id": "1195",
+      "title": "Threat Attribution  Framework by Trend Micro.",
+      "text": "Threat Attribution  Framework by Trend Micro.\nРассказывают как работает hardest part of Threat Intelligence\n🔗https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1195",
+      "pub_date": "2026-02-28T15:24:00+00:00"
+    },
     {
       "id": "1193",
       "title": "Жили жили и вот дожились, все новое для симуляции атакующих 😃",
