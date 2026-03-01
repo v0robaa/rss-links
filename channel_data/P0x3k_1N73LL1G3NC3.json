@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-01T05:19:46.002395+00:00",
-  "messages_count": 112,
+  "last_update": "2026-03-01T09:37:17.024933+00:00",
+  "messages_count": 113,
   "messages": [
+    {
+      "id": "283",
+      "title": "WatchDogKiller",
+      "text": "WatchDogKiller\nPoC exploit for the vulnerable WatchDog Anti-Malware driver (amsdk.sys) – weaponized to kill protected EDR/AV processes via BYOVD\nBlog: Researching an APT Attack and Weaponizing It: The WatchDog BYOVD Story\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/283",
+      "pub_date": "2026-03-01T07:08:08+00:00"
+    },
     {
       "id": "282",
       "title": "PatchReview",
