@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-01T09:37:17.024933+00:00",
-  "messages_count": 113,
+  "last_update": "2026-03-01T14:30:43.020930+00:00",
+  "messages_count": 114,
   "messages": [
+    {
+      "id": "286",
+      "title": "openDCIM - SQLi to RCE via Config Poisoning",
+      "text": "openDCIM - SQLi to RCE via Config Poisoning\nRemote code execution chain targeting openDCIM's install.php LDAP configuration form.\n• POST to install.php - SQL injection via LDAP form backs up config, overwrites dot with a command payload\n• GET report_network_map.php - triggers exec(), confirms RCE via id output\n• POST to install.php - overwrites dot with reverse shell payload\n• GET report_network_map.php - triggers reverse shell\n• POST to install.php - restores all original config values from backup table\nBlog: https://chocapikk.com/posts/2026/opendcim-sqli-to-rce/\nopenDCIM’s install.php is never locked after installation, accepts unsanitized input into SQL queries, and the application passes a database-stored config value directly to exec(). Chain all three and you get RCE as www-data. On Docker deployments the entire chain is unauthenticated.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/286",
+      "pub_date": "2026-03-01T14:06:01+00:00"
+    },
     {
       "id": "283",
       "title": "WatchDogKiller",
