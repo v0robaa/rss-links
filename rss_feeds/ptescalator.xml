@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 27 Feb 2026 17:23:56 +0000</lastBuildDate><item><title>Message 657</title><link>https://t.me/ptescalator/657</link><description/><pubDate>Fri, 27 Feb 2026 17:23:56 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_657</guid></item><item><title>Проникнуть в офис через Office 👨‍💻</title><link>https://t.me/ptescalator/651</link><description>Проникнуть в офис через Office 👨‍💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 03 Mar 2026 09:40:20 +0000</lastBuildDate><item><title>Держим руку на Pulse: кибератаки группировки Mythic Likho на КИИ России 🔮</title><link>https://t.me/ptescalator/658</link><description>Держим руку на Pulse: кибератаки группировки Mythic Likho на КИИ России 🔮
+Департамент Threat Intelligence экспертного центра безопасности Positive Technologies (PT ESC) провел комплексное исследование кибератак Mythic Likho на критическую инфраструктуру России, объединив данные киберразведки, результаты расследований инцидентов и публично вскрытые следы активности группировки.
+Цель исследования — сформировать в индустрии исчерпывающее понимание тактик, техник и средств нападения группировки.
+Ключевые характеристики кибератак Mythic Likho:
+📨 Использование взломанных сайтов и электронной почты российских учреждений и организаций для хранения и доставки вредоносных инструментов.
+🧛🏾‍♂️ Сопровождение кибератак продуманной социальной инженерией: мимикрия под скомпрометированные организации и их сотрудников, переписка с жертвами по заранее проработанной легенде.
+🧬 Внушительный арсенал постоянно эволюционирующих инструментов собственной разработки: загрузчики HuLoader и ReflectPulse, бэкдор Loki.
+🤛🏼 Коллаборация с группировкой (Ex)Cobalt.
+Подробнее — в нашем блоге 📖
+#TI #APT #Malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Tue, 03 Mar 2026 09:40:20 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_658</guid></item><item><title>Message 657</title><link>https://t.me/ptescalator/657</link><description/><pubDate>Fri, 27 Feb 2026 17:23:56 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_657</guid></item><item><title>Проникнуть в офис через Office 👨‍💻</title><link>https://t.me/ptescalator/651</link><description>Проникнуть в офис через Office 👨‍💻
 Группа киберразведки PT ESC зафиксировала первую фишинговую кампанию с использованием CVE-2026-21509, направленную на российские организации. Злоумышленники распространяют RTF-документы, оформленные под служебную переписку (скриншоты 1–2).
 Внутри RTF-документа встроен OLE-объект с CLSID EAB22AC3-30C1-11CF-A7EB-0000C05BAE0B (Shell.Explorer.1). Данные объекта упакованы в OLE-хранилище; в стриме CONTENTS находится специально сформированный .lnk-ярлык, указывающий на удаленный ресурс (скриншот 3):
 \\rostransnadzor.digital@SSL\svn\58\АКТ проверки транспортного средства.lnk
