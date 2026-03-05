@@ -1,12 +1,12 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-05T05:14:44.929181+00:00",
+  "last_update": "2026-03-05T09:54:07.154423+00:00",
   "messages_count": 139,
   "messages": [
     {
       "id": "1205",
       "title": "Сразу несколько вендоров пишут о потенциальной активности Иранских APT.",
-      "text": "Сразу несколько вендоров пишут о потенциальной активности Иранских APT.\nИнтересно какие новые TTP будут опубликованы в репортах, а также более прозрачную информацию, о других группах и инфраструктуре бы подвезли…. А то только одну сторону освещают🤔\n• https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/\n• https://\nblog.talosintelligence.com/talos-developing-situation-in-the-middle-east/\n• https://socradar.io/blog/cyber-reflections-us-israel-iran-war/\n• https://www.sentinelone.com/blog/sentinelone-intelligence-brief-iranian-cyber-activity-outlook/\n• https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters\n• http://ctrlaltintel.com/threat%20research/MuddyWater/",
+      "text": "Сразу несколько вендоров пишут о потенциальной активности Иранских APT.\nИнтересно какие новые TTP будут опубликованы в репортах, а также более прозрачную информацию, о других группах и инфраструктуре бы подвезли…. А то только одну сторону освещают🤔\n• https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/\n• https://\nblog.talosintelligence.com/talos-developing-situation-in-the-middle-east/\n• https://socradar.io/blog/cyber-reflections-us-israel-iran-war/\n• https://www.sentinelone.com/blog/sentinelone-intelligence-brief-iranian-cyber-activity-outlook/\n• https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters\n• http://ctrlaltintel.com/threat%20research/MuddyWater/\n• https://research.checkpoint.com/2026/interplay-between-iranian-targeting-of-ip-cameras-and-physical-warfare-in-the-middle-east/",
       "link": "https://t.me/ThreatHuntingFather/1205",
       "pub_date": "2026-03-04T21:02:31+00:00"
     },
