@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-03-07T09:36:17.180445+00:00",
-  "messages_count": 401,
+  "last_update": "2026-03-07T14:31:10.482302+00:00",
+  "messages_count": 402,
   "messages": [
+    {
+      "id": "17494",
+      "title": "Message 17494",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/SecLabNews/17494",
+      "pub_date": "2026-03-07T11:45:56+00:00"
+    },
     {
       "id": "17493",
       "title": "🌐Сбой или закон в действии: москвичи остались без мобильного интернета",
