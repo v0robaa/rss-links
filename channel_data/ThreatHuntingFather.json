@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-06T18:56:43.051899+00:00",
-  "messages_count": 139,
+  "last_update": "2026-03-07T05:03:12.578818+00:00",
+  "messages_count": 140,
   "messages": [
+    {
+      "id": "1206",
+      "title": "Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite",
+      "text": "Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite\nhttps://youtu.be/nmMUMzLxBkU",
+      "link": "https://t.me/ThreatHuntingFather/1206",
+      "pub_date": "2026-03-07T04:40:21+00:00"
+    },
     {
       "id": "1205",
       "title": "Сразу несколько вендоров пишут о потенциальной активности Иранских APT.",
