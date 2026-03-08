@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-08T05:12:22.589595+00:00",
-  "messages_count": 140,
+  "last_update": "2026-03-08T09:36:56.840342+00:00",
+  "messages_count": 141,
   "messages": [
+    {
+      "id": "1207",
+      "title": "Вот это пушка🔥",
+      "text": "Вот это пушка🔥\nЧуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows\n😃\nDFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.\nInspired by Eric Zimmerman's Timeline Explorer for Windows.\n🔗https://github.com/r3nzsec/irflow-timeline\n#DFIR\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1207",
+      "pub_date": "2026-03-08T09:36:56.827909+00:00"
+    },
     {
       "id": "1206",
       "title": "Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite",

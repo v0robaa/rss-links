@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 01 Mar 2026 14:06:01 +0000</lastBuildDate><item><title>openDCIM - SQLi to RCE via Config Poisoning</title><link>https://t.me/P0x3k_1N73LL1G3NC3/286</link><description>openDCIM - SQLi to RCE via Config Poisoning
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 08 Mar 2026 06:30:26 +0000</lastBuildDate><item><title>PrivHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/287</link><description>PrivHound
+A BloodHound OpenGraph collector that models Windows local privilege escalation as interconnected attack paths.
+
+[Media: Фото]</description><pubDate>Sun, 08 Mar 2026 06:30:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_287</guid></item><item><title>openDCIM - SQLi to RCE via Config Poisoning</title><link>https://t.me/P0x3k_1N73LL1G3NC3/286</link><description>openDCIM - SQLi to RCE via Config Poisoning
 Remote code execution chain targeting openDCIM's install.php LDAP configuration form.
 • POST to install.php - SQL injection via LDAP form backs up config, overwrites dot with a command payload
 • GET report_network_map.php - triggers exec(), confirms RCE via id output
