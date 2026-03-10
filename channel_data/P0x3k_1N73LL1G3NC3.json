@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-10T14:57:31.318681+00:00",
-  "messages_count": 116,
+  "last_update": "2026-03-10T18:59:56.881433+00:00",
+  "messages_count": 117,
   "messages": [
+    {
+      "id": "290",
+      "title": "Trust no one: are one-way trusts really one way?",
+      "text": "Trust no one: are one-way trusts really one way?\nThe main consequence is that the compromise of the trusting forest gives an authenticated access on the trusted forest. This breaks the typical expectation that a one-way trust only allows traversing the forest security boundary in one direction. This is especially true in the typical \"administration forest\" use case of one-way trusts.\nMost of the usual AD attacks - that require a domain account - can be performed on the trusted domain/forest using the TDO account.\nTDO_dump\nNew tool to extract the account used for maintaining the trust between domains (can be extracted from the trusting domain and used to authenticate on the trusted domain). Can be helpful in performing lateral movement across security boundaries within Windows environments.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/290",
+      "pub_date": "2026-03-10T15:38:25+00:00"
+    },
     {
       "id": "289",
       "title": "Breaking Out of Citrix and other Restricted Desktop Environments",
