@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-10T05:12:39.697727+00:00",
-  "messages_count": 115,
+  "last_update": "2026-03-10T09:54:11.106678+00:00",
+  "messages_count": 116,
   "messages": [
+    {
+      "id": "289",
+      "title": "Breaking Out of Citrix and other Restricted Desktop Environments",
+      "text": "Breaking Out of Citrix and other Restricted Desktop Environments\nA guide on breaking out of Citrix, VDI and other restricted desktop environments. Well known and modern breakout paths for Windows 10 and Windows 11 builds.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/289",
+      "pub_date": "2026-03-10T06:01:24+00:00"
+    },
     {
       "id": "287",
       "title": "PrivHound",
