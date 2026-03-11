@@ -1,6 +1,6 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-11T14:54:47.299681+00:00",
+  "last_update": "2026-03-11T19:01:58.385045+00:00",
   "messages_count": 143,
   "messages": [
     {
@@ -8,7 +8,7 @@
       "title": "Вот это пушка🔥",
       "text": "Вот это пушка🔥\nЧуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows\n😃\nDFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.\nInspired by Eric Zimmerman's Timeline Explorer for Windows.\n🔗https://github.com/r3nzsec/irflow-timeline\n#DFIR\n🦔THF",
       "link": "https://t.me/ThreatHuntingFather/1207",
-      "pub_date": "2026-03-11T14:54:47.285884+00:00"
+      "pub_date": "2026-03-11T19:01:58.371013+00:00"
     },
     {
       "id": "1208",
