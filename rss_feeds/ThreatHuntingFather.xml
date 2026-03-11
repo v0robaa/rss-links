@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 10 Mar 2026 19:00:04 +0000</lastBuildDate><item><title>Вот это пушка🔥</title><link>https://t.me/ThreatHuntingFather/1207</link><description>Вот это пушка🔥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 11 Mar 2026 05:14:25 +0000</lastBuildDate><item><title>Вот это пушка🔥</title><link>https://t.me/ThreatHuntingFather/1207</link><description>Вот это пушка🔥
 Чуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows
 😃
 DFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.
 Inspired by Eric Zimmerman's Timeline Explorer for Windows.
 🔗https://github.com/r3nzsec/irflow-timeline
 #DFIR
-🦔THF</description><pubDate>Tue, 10 Mar 2026 19:00:04 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
+🦔THF</description><pubDate>Wed, 11 Mar 2026 05:14:25 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
 https://youtu.be/nmMUMzLxBkU</description><pubDate>Sat, 07 Mar 2026 04:40:21 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1206</guid></item><item><title>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.</title><link>https://t.me/ThreatHuntingFather/1205</link><description>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.
 Интересно какие новые TTP будут опубликованы в репортах, а также более прозрачную информацию, о других группах и инфраструктуре бы подвезли…. А то только одну сторону освещают🤔
 • https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/
