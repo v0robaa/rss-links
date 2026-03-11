@@ -1,14 +1,28 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-11T09:52:47.615123+00:00",
-  "messages_count": 141,
+  "last_update": "2026-03-11T14:54:47.299681+00:00",
+  "messages_count": 143,
   "messages": [
     {
       "id": "1207",
       "title": "Вот это пушка🔥",
       "text": "Вот это пушка🔥\nЧуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows\n😃\nDFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.\nInspired by Eric Zimmerman's Timeline Explorer for Windows.\n🔗https://github.com/r3nzsec/irflow-timeline\n#DFIR\n🦔THF",
       "link": "https://t.me/ThreatHuntingFather/1207",
-      "pub_date": "2026-03-11T09:52:47.602546+00:00"
+      "pub_date": "2026-03-11T14:54:47.285884+00:00"
+    },
+    {
+      "id": "1208",
+      "title": "https://t.me/orderofsixangles",
+      "text": "https://t.me/orderofsixangles",
+      "link": "https://t.me/ThreatHuntingFather/1208",
+      "pub_date": "2026-03-11T14:05:20+00:00"
+    },
+    {
+      "id": "1209",
+      "title": "🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.",
+      "text": "🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.\nЕсли вы хотите автоматизировать анализ малвари и реверс-инжиниринг через агентов с MCP - рано или поздно встанет вопрос выбора модели. Наш друг @thatskriptkid уже прогнал несколько популярных LLM через фреймворк AgentRe и поделился результатами.\nИтоговый результат (Final Score):\n1. Gemini 3.1 Pro - 59.48 🥇\n2. Qwen3-Max - 58.07 🥈\n3. Kimi-K2.5 - 51.19 🥉\n4. Claude Opus 4.6 - 47.3\n5, GPT-5.3 Codex - 39.57\nTask Success Rate:\nGemini 3.1 Pro, Qwen3-Max, Qwen3 Coder Plus, MiniMax-M2.5 - 100%\nClaude Opus 4.6 - 84.6% (худший показатель, что удивило)\nСкорость (Time Efficiency):\nClaude Opus 4.6 - быстрее всех (100.0, ~292s)\nQwen3 Coder Plus - второй (89.3, ~404s)\nЭкономность токенов:\nMiniMax-M2.5 - 100 (~475K токенов)\nQwen3 Coder Plus - 95.7 (~497K)\nGemini 3.1 Pro - 25.5 (~1862K, самый прожорливый)\nВывод: если нужен баланс качества, скорости и экономии - Qwen3 Coder Plus. Если только качество - Gemini 3.1 Pro. Claude берет скоростью, но проигрывает по успешности задач. Gemini 3.1 Pro и Claude Opus 4.6 жрут очень много токенов.\n🔗 github.com/thatskriptkid/LLM_reverse_comparison\n#malware #reverseengineering #LLM #AI #tools\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1209",
+      "pub_date": "2026-03-11T14:05:20+00:00"
     },
     {
       "id": "1206",

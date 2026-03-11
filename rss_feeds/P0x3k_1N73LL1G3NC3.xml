@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 10 Mar 2026 15:38:25 +0000</lastBuildDate><item><title>Trust no one: are one-way trusts really one way?</title><link>https://t.me/P0x3k_1N73LL1G3NC3/290</link><description>Trust no one: are one-way trusts really one way?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 11 Mar 2026 10:37:01 +0000</lastBuildDate><item><title>}{ак тайм ёпта 😂</title><link>https://t.me/P0x3k_1N73LL1G3NC3/291</link><description>}{ак тайм ёпта 😂
+
+[Media: Фото]</description><pubDate>Wed, 11 Mar 2026 10:37:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_291</guid></item><item><title>Trust no one: are one-way trusts really one way?</title><link>https://t.me/P0x3k_1N73LL1G3NC3/290</link><description>Trust no one: are one-way trusts really one way?
 The main consequence is that the compromise of the trusting forest gives an authenticated access on the trusted forest. This breaks the typical expectation that a one-way trust only allows traversing the forest security boundary in one direction. This is especially true in the typical "administration forest" use case of one-way trusts.
 Most of the usual AD attacks - that require a domain account - can be performed on the trusted domain/forest using the TDO account.
 TDO_dump

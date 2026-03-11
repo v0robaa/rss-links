@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 11 Mar 2026 09:52:47 +0000</lastBuildDate><item><title>Вот это пушка🔥</title><link>https://t.me/ThreatHuntingFather/1207</link><description>Вот это пушка🔥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 11 Mar 2026 14:54:47 +0000</lastBuildDate><item><title>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.</title><link>https://t.me/ThreatHuntingFather/1209</link><description>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.
+Если вы хотите автоматизировать анализ малвари и реверс-инжиниринг через агентов с MCP - рано или поздно встанет вопрос выбора модели. Наш друг @thatskriptkid уже прогнал несколько популярных LLM через фреймворк AgentRe и поделился результатами.
+Итоговый результат (Final Score):
+1. Gemini 3.1 Pro - 59.48 🥇
+2. Qwen3-Max - 58.07 🥈
+3. Kimi-K2.5 - 51.19 🥉
+4. Claude Opus 4.6 - 47.3
+5, GPT-5.3 Codex - 39.57
+Task Success Rate:
+Gemini 3.1 Pro, Qwen3-Max, Qwen3 Coder Plus, MiniMax-M2.5 - 100%
+Claude Opus 4.6 - 84.6% (худший показатель, что удивило)
+Скорость (Time Efficiency):
+Claude Opus 4.6 - быстрее всех (100.0, ~292s)
+Qwen3 Coder Plus - второй (89.3, ~404s)
+Экономность токенов:
+MiniMax-M2.5 - 100 (~475K токенов)
+Qwen3 Coder Plus - 95.7 (~497K)
+Gemini 3.1 Pro - 25.5 (~1862K, самый прожорливый)
+Вывод: если нужен баланс качества, скорости и экономии - Qwen3 Coder Plus. Если только качество - Gemini 3.1 Pro. Claude берет скоростью, но проигрывает по успешности задач. Gemini 3.1 Pro и Claude Opus 4.6 жрут очень много токенов.
+🔗 github.com/thatskriptkid/LLM_reverse_comparison
+#malware #reverseengineering #LLM #AI #tools
+
+[Media: Фото]</description><pubDate>Wed, 11 Mar 2026 14:05:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1209</guid></item><item><title>https://t.me/orderofsixangles</title><link>https://t.me/ThreatHuntingFather/1208</link><description>https://t.me/orderofsixangles</description><pubDate>Wed, 11 Mar 2026 14:05:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1208</guid></item><item><title>Вот это пушка🔥</title><link>https://t.me/ThreatHuntingFather/1207</link><description>Вот это пушка🔥
 Чуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows
 😃
 DFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.
 Inspired by Eric Zimmerman's Timeline Explorer for Windows.
 🔗https://github.com/r3nzsec/irflow-timeline
 #DFIR
-🦔THF</description><pubDate>Wed, 11 Mar 2026 09:52:47 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
+🦔THF</description><pubDate>Wed, 11 Mar 2026 14:54:47 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
 https://youtu.be/nmMUMzLxBkU</description><pubDate>Sat, 07 Mar 2026 04:40:21 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1206</guid></item><item><title>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.</title><link>https://t.me/ThreatHuntingFather/1205</link><description>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.
 Интересно какие новые TTP будут опубликованы в репортах, а также более прозрачную информацию, о других группах и инфраструктуре бы подвезли…. А то только одну сторону освещают🤔
 • https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/
