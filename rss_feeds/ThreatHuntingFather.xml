@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 12 Mar 2026 05:18:16 +0000</lastBuildDate><item><title>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.</title><link>https://t.me/ThreatHuntingFather/1209</link><description>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 12 Mar 2026 09:53:18 +0000</lastBuildDate><item><title>Message 1218</title><link>https://t.me/ThreatHuntingFather/1218</link><description>
+
+[Media: Видео]</description><pubDate>Thu, 12 Mar 2026 09:53:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1218</guid></item><item><title>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets</title><link>https://t.me/ThreatHuntingFather/1210</link><description>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets
+Key Takeaways
+• The open directory on 203.161.50[.]145 exposed a full operational toolkit, including C2 components, payloads, and operator artifacts.
+• The toolkit targets Roundcube webmail and supports credential harvesting, persistent mail forwarding, bulk email exfiltration, address book theft, and 2FA secret extraction.
+• We identified 14 TTP overlaps with Operation RoundPress, including several uncommon techniques that strongly suggest shared development lineage.
+• Roundish introduces additional components not previously documented in APT28 webmail activity, including a CSS-based side-channel module and browser credential theft capabilities.
+• Infrastructure and operator history confirm active targeting of mail.dmsu.gov.ua, the Ukrainian State Migration Service.
+• A Go-based Linux implant (httd) found in a compromised environment provides persistence via cron, systemd, and SELinux.
+Operation Roundish - по данным Hunt.io, это toolkit для эксплуатации Roundcube, который с medium-high confidence связывается с APT28 на основании пересечений с Operation RoundPress. В январе 2026 года исследователи обнаружили открытый каталог на 203.161.50[.]145 с полным operational-набором: XSS-пейлоады, Flask-based C2, CSS-injection tooling, bash history оператора и Go-имплант httd.
+В отчёте указано, что toolkit поддерживает кражу credentials, установку Sieve mail forwarding, массовую эксфильтрацию писем, кражу адресной книги и извлечение TOTP/2FA-секретов. Hunt.io отмечают 14 пересечений по TTP с RoundPress, включая скрытые autofill-поля, Sieve-forwarding, извлечение TOTP, выгрузку почты через Roundcube viewsource API, кражу адресной книги и модульную загрузку через eval(). Дополнительно задокументированы CSS side-channel для извлечения CSRF-token, browser credential theft для Chrome/Firefox и Linux persistence через httd.
+В качестве primary target в отчёте указана mail.dmsu.gov.ua - Roundcube-инстанс Государственной миграционной службы Украины. На сервере также были доступны Roundcube, Flask/Werkzeug, Ligolo-ng и открытый Python SimpleHTTP-каталог с 61 файлом в 36 директориях. Основной домен инфраструктуры - zhblz[.]com, отдельный a.zhblz[.]com использовался для CSS side-channel-атаки. Технические детали и разбор - в оригинальном отчёте.
+Открытый каталог и bash history дали Hunt.io прямую видимость toolkit и действия оператора, а пересечения с Operation RoundPress уже позволили с medium-high confidence связывать активность с APT28, ранее описанной Eset.
+Почитать тык🔗https://hunt.io/blog/operation-roundish-apt28-roundcube-exploitation
+Вот такие вот ошибки OPSEC получается 😃
+
+[Media: Фото]</description><pubDate>Thu, 12 Mar 2026 05:22:54 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1210</guid></item><item><title>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.</title><link>https://t.me/ThreatHuntingFather/1209</link><description>🔬 LLM для анализа малвари: сравнительный бенчмарк AgentRe.
 Если вы хотите автоматизировать анализ малвари и реверс-инжиниринг через агентов с MCP - рано или поздно встанет вопрос выбора модели. Наш друг @thatskriptkid уже прогнал несколько популярных LLM через фреймворк AgentRe и поделился результатами.
 Итоговый результат (Final Score):
 1. Gemini 3.1 Pro - 59.48 🥇
@@ -28,7 +45,7 @@ DFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX
 Inspired by Eric Zimmerman's Timeline Explorer for Windows.
 🔗https://github.com/r3nzsec/irflow-timeline
 #DFIR
-🦔THF</description><pubDate>Thu, 12 Mar 2026 05:18:16 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
+🦔THF</description><pubDate>Thu, 12 Mar 2026 09:53:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1207</guid></item><item><title>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite</title><link>https://t.me/ThreatHuntingFather/1206</link><description>Invitation Is All You Need! Invoking Gemini for Workspace Agents with a Simple Google Calendar Invite
 https://youtu.be/nmMUMzLxBkU</description><pubDate>Sat, 07 Mar 2026 04:40:21 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1206</guid></item><item><title>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.</title><link>https://t.me/ThreatHuntingFather/1205</link><description>Сразу несколько вендоров пишут о потенциальной активности Иранских APT.
 Интересно какие новые TTP будут опубликованы в репортах, а также более прозрачную информацию, о других группах и инфраструктуре бы подвезли…. А то только одну сторону освещают🤔
 • https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/

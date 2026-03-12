@@ -1,14 +1,28 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-12T05:18:16.645772+00:00",
-  "messages_count": 143,
+  "last_update": "2026-03-12T09:53:18.191664+00:00",
+  "messages_count": 145,
   "messages": [
+    {
+      "id": "1218",
+      "title": "Message 1218",
+      "text": "\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1218",
+      "pub_date": "2026-03-12T09:53:18.178869+00:00"
+    },
     {
       "id": "1207",
       "title": "Вот это пушка🔥",
       "text": "Вот это пушка🔥\nЧуваки под macOS допилили аналог TimeLine Explorer, но у них получилось сделать это максимально круто, хочу такой для Windows\n😃\nDFIR Timeline Analysis for macOS - SQLite-backed viewer for CSV, TSV, XLSX, EVTX, and Plaso files with built-in process inspection, lateral movement tracking, and persistence detection.\nInspired by Eric Zimmerman's Timeline Explorer for Windows.\n🔗https://github.com/r3nzsec/irflow-timeline\n#DFIR\n🦔THF",
       "link": "https://t.me/ThreatHuntingFather/1207",
-      "pub_date": "2026-03-12T05:18:16.633311+00:00"
+      "pub_date": "2026-03-12T09:53:18.174943+00:00"
+    },
+    {
+      "id": "1210",
+      "title": "Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets",
+      "text": "Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets\nKey Takeaways\n• The open directory on 203.161.50[.]145 exposed a full operational toolkit, including C2 components, payloads, and operator artifacts.\n• The toolkit targets Roundcube webmail and supports credential harvesting, persistent mail forwarding, bulk email exfiltration, address book theft, and 2FA secret extraction.\n• We identified 14 TTP overlaps with Operation RoundPress, including several uncommon techniques that strongly suggest shared development lineage.\n• Roundish introduces additional components not previously documented in APT28 webmail activity, including a CSS-based side-channel module and browser credential theft capabilities.\n• Infrastructure and operator history confirm active targeting of mail.dmsu.gov.ua, the Ukrainian State Migration Service.\n• A Go-based Linux implant (httd) found in a compromised environment provides persistence via cron, systemd, and SELinux.\nOperation Roundish - по данным Hunt.io, это toolkit для эксплуатации Roundcube, который с medium-high confidence связывается с APT28 на основании пересечений с Operation RoundPress. В январе 2026 года исследователи обнаружили открытый каталог на 203.161.50[.]145 с полным operational-набором: XSS-пейлоады, Flask-based C2, CSS-injection tooling, bash history оператора и Go-имплант httd.\nВ отчёте указано, что toolkit поддерживает кражу credentials, установку Sieve mail forwarding, массовую эксфильтрацию писем, кражу адресной книги и извлечение TOTP/2FA-секретов. Hunt.io отмечают 14 пересечений по TTP с RoundPress, включая скрытые autofill-поля, Sieve-forwarding, извлечение TOTP, выгрузку почты через Roundcube viewsource API, кражу адресной книги и модульную загрузку через eval(). Дополнительно задокументированы CSS side-channel для извлечения CSRF-token, browser credential theft для Chrome/Firefox и Linux persistence через httd.\nВ качестве primary target в отчёте указана mail.dmsu.gov.ua - Roundcube-инстанс Государственной миграционной службы Украины. На сервере также были доступны Roundcube, Flask/Werkzeug, Ligolo-ng и открытый Python SimpleHTTP-каталог с 61 файлом в 36 директориях. Основной домен инфраструктуры - zhblz[.]com, отдельный a.zhblz[.]com использовался для CSS side-channel-атаки. Технические детали и разбор - в оригинальном отчёте.\nОткрытый каталог и bash history дали Hunt.io прямую видимость toolkit и действия оператора, а пересечения с Operation RoundPress уже позволили с medium-high confidence связывать активность с APT28, ранее описанной Eset.\nПочитать тык🔗https://hunt.io/blog/operation-roundish-apt28-roundcube-exploitation\nВот такие вот ошибки OPSEC получается 😃\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1210",
+      "pub_date": "2026-03-12T05:22:54+00:00"
     },
     {
       "id": "1208",
