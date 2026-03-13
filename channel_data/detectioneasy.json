@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-03-12T19:03:28.121699+00:00",
-  "messages_count": 62,
+  "last_update": "2026-03-13T05:16:02.982414+00:00",
+  "messages_count": 63,
   "messages": [
+    {
+      "id": "325",
+      "title": "Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры",
+      "text": "Всем привет 💻✌️\nГруппа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры\nАнализ показал, что злоумышленники встраивают объекты stream, endobj, изображения и другие структуры PDF. Это делает файл похожим на настоящий документ и увеличивает его размер\n🔭 Обнаружение:\n🔤 хантим LNK файлы с большим объемом (обычный вес 10–12 KB)\nrule Suspicious_LNK_Large_File\n{\nmeta:\ndescription = \"Detect unusually large Windows shortcut files >200KB\"\nauthor = \"@detectioneasy\"\ndate = \"2026-03-12\"\nreference = \"Malware often abuses oversized LNK files to embed payloads https://www.cyfirma.com/research/apt36-multi-stage-lnk-malware-campaign-targeting-indian-government-entities/\"\nstrings:\n$lnk_magic = {4C 00 00 00 01 14 02 00}\ncondition:\n$lnk_magic at 0 and\nfilesize > 200KB\n}\n🔤 отслеживаем создание LNK файлов, процессами архиваторов\n🔤 отслеживаем LNK-файлы с альтернативным потоком\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/325",
+      "pub_date": "2026-03-12T20:11:19+00:00"
+    },
     {
       "id": "324",
       "title": "Коллеги из ЛК подсветили изменения в TTP Librarian Likho",

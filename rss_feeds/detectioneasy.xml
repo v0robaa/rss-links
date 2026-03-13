@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sat, 28 Feb 2026 11:09:33 +0000</lastBuildDate><item><title>Коллеги из ЛК подсветили изменения в TTP Librarian Likho</title><link>https://t.me/detectioneasy/324</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 12 Mar 2026 20:11:19 +0000</lastBuildDate><item><title>Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры</title><link>https://t.me/detectioneasy/325</link><description>Всем привет 💻✌️
+Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры
+Анализ показал, что злоумышленники встраивают объекты stream, endobj, изображения и другие структуры PDF. Это делает файл похожим на настоящий документ и увеличивает его размер
+🔭 Обнаружение:
+🔤 хантим LNK файлы с большим объемом (обычный вес 10–12 KB)
+rule Suspicious_LNK_Large_File
+{
+meta:
+description = "Detect unusually large Windows shortcut files &gt;200KB"
+author = "@detectioneasy"
+date = "2026-03-12"
+reference = "Malware often abuses oversized LNK files to embed payloads https://www.cyfirma.com/research/apt36-multi-stage-lnk-malware-campaign-targeting-indian-government-entities/"
+strings:
+$lnk_magic = {4C 00 00 00 01 14 02 00}
+condition:
+$lnk_magic at 0 and
+filesize &gt; 200KB
+}
+🔤 отслеживаем создание LNK файлов, процессами архиваторов
+🔤 отслеживаем LNK-файлы с альтернативным потоком
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 12 Mar 2026 20:11:19 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_325</guid></item><item><title>Коллеги из ЛК подсветили изменения в TTP Librarian Likho</title><link>https://t.me/detectioneasy/324</link><description>Всем привет 💻✌️
 Коллеги из ЛК подсветили изменения в TTP Librarian Likho
 👨‍💻 Как это работает?
 🔤 Атакующие не утруждаются и фишат исполняемыми файлами *.com, что может говорить об отсутствии защиты почты у их жертв...
