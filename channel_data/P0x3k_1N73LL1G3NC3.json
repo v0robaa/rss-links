@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-14T05:13:42.230544+00:00",
-  "messages_count": 118,
+  "last_update": "2026-03-14T09:40:44.062934+00:00",
+  "messages_count": 119,
   "messages": [
+    {
+      "id": "292",
+      "title": "#pentest #kerberos",
+      "text": "#pentest #kerberos\nklist2kirbi - извлечение kerberos билетов из вывода команды klist.exe с преобразованием в валидный тикет путем получения сессионного ключа из ETW провайдера\nhttps://github.com/airbus-cert/kerlab\nЧат в МАХ\nКанал в МАХ\nTelegram ✉️ @freedomfox\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/292",
+      "pub_date": "2026-03-14T08:31:41+00:00"
+    },
     {
       "id": "291",
       "title": "}{ак тайм ёпта 😂",
