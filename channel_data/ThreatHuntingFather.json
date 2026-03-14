@@ -1,14 +1,28 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-14T09:40:51.083046+00:00",
-  "messages_count": 146,
+  "last_update": "2026-03-14T14:36:00.279948+00:00",
+  "messages_count": 148,
   "messages": [
+    {
+      "id": "1229",
+      "title": "Message 1229",
+      "text": "\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1229",
+      "pub_date": "2026-03-14T14:36:00.267615+00:00"
+    },
     {
       "id": "1218",
       "title": "Message 1218",
       "text": "\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1218",
-      "pub_date": "2026-03-14T09:40:51.070086+00:00"
+      "pub_date": "2026-03-14T14:36:00.265354+00:00"
+    },
+    {
+      "id": "1220",
+      "title": "ChatGPT as a Covert C2 Channel",
+      "text": "ChatGPT as a Covert C2 Channel\nThe Core Concept\nThe idea was simple but elegant:\nPlant an agent on the target machine\nUse ChatGPT conversations as the C2 channel\nSend commands as messages in a conversation\nThe agent reads these messages, executes commands, and posts results back\nNo direct C2 infrastructure needed\nHow it works:\n1) Send Configuration Commands: The operator sends specially formatted messages in the conversation containing new tokens or configuration parameters.\n2) Agent Parses Special Commands: While polling for execution commands, the agent also checks for configuration update messages (using a specific prefix or pattern).\n3) Dynamic Token Refresh: If the Sentinel tokens are about to expire or stop working, we can send new proofofwork/turnstile values captured from a fresh browser session.\n4) Configuration Updates: We can remotely update:\n- Polling intervals\n- New conversation IDs (if the current one is detected)\n- Command parsing patterns\n- Agent behavior parameters\n🔗https://escode.medium.com/chatgpt-as-a-covert-c2-channel-da9221178ff5\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1220",
+      "pub_date": "2026-03-14T13:41:12+00:00"
     },
     {
       "id": "1219",
