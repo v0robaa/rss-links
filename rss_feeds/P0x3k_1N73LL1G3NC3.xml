@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 16 Mar 2026 04:10:06 +0000</lastBuildDate><item><title>KaplaStrike</title><link>https://t.me/P0x3k_1N73LL1G3NC3/294</link><description>KaplaStrike
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 16 Mar 2026 14:03:32 +0000</lastBuildDate><item><title>LOLEXFIL</title><link>https://t.me/P0x3k_1N73LL1G3NC3/295</link><description>LOLEXFIL
+Living off the land Data Exfiltration methods (189 trusted tools).
+
+[Media: Фото]</description><pubDate>Mon, 16 Mar 2026 14:03:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_295</guid></item><item><title>KaplaStrike</title><link>https://t.me/P0x3k_1N73LL1G3NC3/294</link><description>KaplaStrike
 A Cobalt Strike Reflective Loader built with Crystal Palace — module overloading, NtContinue entry transfer, call stack spoofing, sleep masking, and static signature removal.
 Bypassing EDR in a Crystal Clear Way
 This blog takes you from how C2 payloads actually work under the hood all the way to building a fully evasive reflective loader that bypasses one of the best EDR's, covering module overloading with .pdata registration, NtContinue entry transfer, API call stack spoofing with Draugr, sleep masking, and Crystal Palace YARA signature removal. Every technique explained from why it exists, not just how it works.

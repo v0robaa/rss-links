@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-16T10:10:37.466951+00:00",
-  "messages_count": 149,
+  "last_update": "2026-03-16T15:08:24.024976+00:00",
+  "messages_count": 150,
   "messages": [
     {
       "id": "1229",
       "title": "Message 1229",
       "text": "\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1229",
-      "pub_date": "2026-03-16T10:10:37.454127+00:00"
+      "pub_date": "2026-03-16T15:08:24.011859+00:00"
+    },
+    {
+      "id": "1231",
+      "title": "LOLEXFIL",
+      "text": "LOLEXFIL\nLiving off the land Data Exfiltration methods (189 trusted tools).\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1231",
+      "pub_date": "2026-03-16T14:03:57+00:00"
     },
     {
       "id": "1218",
