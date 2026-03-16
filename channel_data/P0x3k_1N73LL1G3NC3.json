@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-15T18:50:42.464926+00:00",
-  "messages_count": 119,
+  "last_update": "2026-03-16T05:52:09.660487+00:00",
+  "messages_count": 120,
   "messages": [
+    {
+      "id": "294",
+      "title": "KaplaStrike",
+      "text": "KaplaStrike\nA Cobalt Strike Reflective Loader built with Crystal Palace — module overloading, NtContinue entry transfer, call stack spoofing, sleep masking, and static signature removal.\nBypassing EDR in a Crystal Clear Way\nThis blog takes you from how C2 payloads actually work under the hood all the way to building a fully evasive reflective loader that bypasses one of the best EDR's, covering module overloading with .pdata registration, NtContinue entry transfer, API call stack spoofing with Draugr, sleep masking, and Crystal Palace YARA signature removal. Every technique explained from why it exists, not just how it works.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/294",
+      "pub_date": "2026-03-16T04:10:06+00:00"
+    },
     {
       "id": "292",
       "title": "#pentest #kerberos",
