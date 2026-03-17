@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-17T10:00:40.710562+00:00",
-  "messages_count": 123,
+  "last_update": "2026-03-17T15:04:32.801329+00:00",
+  "messages_count": 124,
   "messages": [
+    {
+      "id": "298",
+      "title": "EVENmonitor",
+      "text": "EVENmonitor\nA monitoring tool for the Windows Event log in pure python. You can just attach it via the network and then filter for specific event IDs or keywords.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/298",
+      "pub_date": "2026-03-17T14:45:10+00:00"
+    },
     {
       "id": "297",
       "title": "VMkatz",

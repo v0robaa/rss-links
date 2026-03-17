@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 07:55:52 +0000</lastBuildDate><item><title>VMkatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/297</link><description>VMkatz
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 14:45:10 +0000</lastBuildDate><item><title>EVENmonitor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/298</link><description>EVENmonitor
+A monitoring tool for the Windows Event log in pure python. You can just attach it via the network and then filter for specific event IDs or keywords.
+
+[Media: Видео]</description><pubDate>Tue, 17 Mar 2026 14:45:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_298</guid></item><item><title>VMkatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/297</link><description>VMkatz
 Without VMkatz, the traditional workflow looks like this: exfiltrate the entire VM disk or memory snapshot, mount it locally, install a full Windows analysis stack, load the snapshot into a debugger or use mimikatz on a booted copy, and manually piece together credentials from each VM - one at a time. Multiply that by a dozen VMs on the cluster and you are looking at days of bandwidth, tooling, and post-processing.
 VMkatz exists because you shouldn't have to exfiltrate what you can read in place. It extracts Windows secrets - NTLM hashes, DPAPI master keys, Kerberos tickets, cached domain credentials, LSA secrets, NTDS.dit - directly from VM memory snapshots and virtual disks, on the NAS, the hypervisor, wherever the VM files are.
 
