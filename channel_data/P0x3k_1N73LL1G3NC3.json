@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-17T05:23:51.235384+00:00",
-  "messages_count": 121,
+  "last_update": "2026-03-17T10:00:40.710562+00:00",
+  "messages_count": 123,
   "messages": [
+    {
+      "id": "297",
+      "title": "VMkatz",
+      "text": "VMkatz\nWithout VMkatz, the traditional workflow looks like this: exfiltrate the entire VM disk or memory snapshot, mount it locally, install a full Windows analysis stack, load the snapshot into a debugger or use mimikatz on a booted copy, and manually piece together credentials from each VM - one at a time. Multiply that by a dozen VMs on the cluster and you are looking at days of bandwidth, tooling, and post-processing.\nVMkatz exists because you shouldn't have to exfiltrate what you can read in place. It extracts Windows secrets - NTLM hashes, DPAPI master keys, Kerberos tickets, cached domain credentials, LSA secrets, NTDS.dit - directly from VM memory snapshots and virtual disks, on the NAS, the hypervisor, wherever the VM files are.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/297",
+      "pub_date": "2026-03-17T07:55:52+00:00"
+    },
+    {
+      "id": "296",
+      "title": "CVE-2026-24291: Windows LPE (RegPwn)",
+      "text": "CVE-2026-24291: Windows LPE (RegPwn)\nExploit: https://github.com/mdsecactivebreach/RegPwn\nBlog: https://www.mdsec.co.uk/2026/03/rip-regpwn/\nBOF: https://github.com/Flangvik/RegPwnBOF\nTested versions:\nWindows 11 25h2\nWindows 11 24h2\nWindows 10 21h2\nWindows Servers 2016/2019/2022\nPatched: Mar 10, 2026\n#lpe #pentest #redteam #ad #cve",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/296",
+      "pub_date": "2026-03-17T07:23:10+00:00"
+    },
     {
       "id": "295",
       "title": "LOLEXFIL",

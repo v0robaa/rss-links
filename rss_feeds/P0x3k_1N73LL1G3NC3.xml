@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 16 Mar 2026 14:03:32 +0000</lastBuildDate><item><title>LOLEXFIL</title><link>https://t.me/P0x3k_1N73LL1G3NC3/295</link><description>LOLEXFIL
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 07:55:52 +0000</lastBuildDate><item><title>VMkatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/297</link><description>VMkatz
+Without VMkatz, the traditional workflow looks like this: exfiltrate the entire VM disk or memory snapshot, mount it locally, install a full Windows analysis stack, load the snapshot into a debugger or use mimikatz on a booted copy, and manually piece together credentials from each VM - one at a time. Multiply that by a dozen VMs on the cluster and you are looking at days of bandwidth, tooling, and post-processing.
+VMkatz exists because you shouldn't have to exfiltrate what you can read in place. It extracts Windows secrets - NTLM hashes, DPAPI master keys, Kerberos tickets, cached domain credentials, LSA secrets, NTDS.dit - directly from VM memory snapshots and virtual disks, on the NAS, the hypervisor, wherever the VM files are.
+
+[Media: Фото]</description><pubDate>Tue, 17 Mar 2026 07:55:52 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_297</guid></item><item><title>CVE-2026-24291: Windows LPE (RegPwn)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/296</link><description>CVE-2026-24291: Windows LPE (RegPwn)
+Exploit: https://github.com/mdsecactivebreach/RegPwn
+Blog: https://www.mdsec.co.uk/2026/03/rip-regpwn/
+BOF: https://github.com/Flangvik/RegPwnBOF
+Tested versions:
+Windows 11 25h2
+Windows 11 24h2
+Windows 10 21h2
+Windows Servers 2016/2019/2022
+Patched: Mar 10, 2026
+#lpe #pentest #redteam #ad #cve</description><pubDate>Tue, 17 Mar 2026 07:23:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_296</guid></item><item><title>LOLEXFIL</title><link>https://t.me/P0x3k_1N73LL1G3NC3/295</link><description>LOLEXFIL
 Living off the land Data Exfiltration methods (189 trusted tools).
 
 [Media: Фото]</description><pubDate>Mon, 16 Mar 2026 14:03:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_295</guid></item><item><title>KaplaStrike</title><link>https://t.me/P0x3k_1N73LL1G3NC3/294</link><description>KaplaStrike
