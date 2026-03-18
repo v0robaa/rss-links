@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-18T10:02:13.490165+00:00",
-  "messages_count": 125,
+  "last_update": "2026-03-18T15:12:14.424042+00:00",
+  "messages_count": 126,
   "messages": [
+    {
+      "id": "300",
+      "title": "Message 300",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/300",
+      "pub_date": "2026-03-18T14:38:26+00:00"
+    },
     {
       "id": "299",
       "title": "KslDump",
