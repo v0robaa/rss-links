@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 17 Mar 2026 14:45:10 +0000</lastBuildDate><item><title>EVENmonitor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/298</link><description>EVENmonitor
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 08:40:32 +0000</lastBuildDate><item><title>KslDump</title><link>https://t.me/P0x3k_1N73LL1G3NC3/299</link><description>KslDump
+KslDump extracts credentials from PPL-protected LSASS using only Microsoft-signed components. No exploit is deployed. No driver is loaded. The entire attack chain ships pre-installed with Windows Defender. Microsoft patched the running version (wd\KslD.sys) by nulling out MmCopyMemory, but left the old vulnerable version (drivers\KslD.sys) sitting on disk. The attacker doesn't bring anything — they just point the service back to what Microsoft forgot to clean up.
+
+[Media: Фото]</description><pubDate>Wed, 18 Mar 2026 08:40:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_299</guid></item><item><title>EVENmonitor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/298</link><description>EVENmonitor
 A monitoring tool for the Windows Event log in pure python. You can just attach it via the network and then filter for specific event IDs or keywords.
 
 [Media: Видео]</description><pubDate>Tue, 17 Mar 2026 14:45:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_298</guid></item><item><title>VMkatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/297</link><description>VMkatz

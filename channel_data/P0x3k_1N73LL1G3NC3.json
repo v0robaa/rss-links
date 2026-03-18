@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-18T05:37:43.291052+00:00",
-  "messages_count": 124,
+  "last_update": "2026-03-18T10:02:13.490165+00:00",
+  "messages_count": 125,
   "messages": [
+    {
+      "id": "299",
+      "title": "KslDump",
+      "text": "KslDump\nKslDump extracts credentials from PPL-protected LSASS using only Microsoft-signed components. No exploit is deployed. No driver is loaded. The entire attack chain ships pre-installed with Windows Defender. Microsoft patched the running version (wd\\KslD.sys) by nulling out MmCopyMemory, but left the old vulnerable version (drivers\\KslD.sys) sitting on disk. The attacker doesn't bring anything — they just point the service back to what Microsoft forgot to clean up.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/299",
+      "pub_date": "2026-03-18T08:40:32+00:00"
+    },
     {
       "id": "298",
       "title": "EVENmonitor",

