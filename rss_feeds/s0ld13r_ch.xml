@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 12 Mar 2026 06:04:37 +0000</lastBuildDate><item><title>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets</title><link>https://t.me/s0ld13r_ch/356</link><description>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 05:11:01 +0000</lastBuildDate><item><title>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸</title><link>https://t.me/s0ld13r_ch/364</link><description>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸
+Наша команда FR13NDS TEAM совместно с Astana IT University анонсирует масштабное соревнование по кибербезопасности - AITU CTF 2026! 💻
+Соревнование пройдет в два этапа:
+🔹 ЭТАП 1: КВАЛИФИКАЦИЯ (Online Jeopardy)
+В финал пройдут 10 команд из Казахстана и 5 зарубежных команд.
+* Состав команды: от 1 до 5 человек.
+* Старт соревнований: 23 марта, 12:00 (GMT+5)
+* Завершение: 24 марта, 00:00 (GMT+5) *(продолжительность 12 часов)*
+🔹 ЭТАП 2: ФИНАЛ (Offline)
+Прошедших отбор ждет финал в столице!
+* Даты: 22–23 апреля 2026 г.
+* Место: Астана, Astana IT University.
+* Формат: Киберполигон 🛡⚔️
+* Доп. активности: Geoguessr Tournament и другие классные интерактивы! 🗺✨
+💰 Предварительный общий призовой фонд: 1 000 000 ₸
+*(Точное распределение по призовым местам и специальным номинациям объявим чуть позже — следите за новостями!)*
+🔗 Наши ресурсы:
+❤️ CTFtime: https://ctftime.org/event/3204
+🌐 Платформа / Регистрация: ctf.fr13nds.team
+📢 Telegram: @fr13nds_ctf | @ctf_aituniversity
+💬 Discord: https://discord.gg/9qB9sv8Y
+
+[Media: Фото]</description><pubDate>Wed, 18 Mar 2026 05:11:01 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_364</guid></item><item><title>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets</title><link>https://t.me/s0ld13r_ch/356</link><description>Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets
 Key Takeaways
 • The open directory on 203.161.50[.]145 exposed a full operational toolkit, including C2 components, payloads, and operator artifacts.
 • The toolkit targets Roundcube webmail and supports credential harvesting, persistent mail forwarding, bulk email exfiltration, address book theft, and 2FA secret extraction.
