@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-19T05:25:03.535648+00:00",
-  "messages_count": 126,
+  "last_update": "2026-03-19T09:54:31.266432+00:00",
+  "messages_count": 128,
   "messages": [
+    {
+      "id": "302",
+      "title": "Fritter",
+      "text": "Fritter\nA heavily modified fork of TheWover and Odzhan's Donut shellcode generator. It generates position-independent shellcode for in-memory execution of VBScript, JScript, EXE, DLL, and .NET assemblies, but with a heavy focus on evasion and signature resistance.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/302",
+      "pub_date": "2026-03-19T06:20:04+00:00"
+    },
+    {
+      "id": "301",
+      "title": "CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain",
+      "text": "CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain\n• Bypass authentication with CVE-2025-71257.\n• If it is successful, it tries to verify the CVE-2025-71260 RCE by writing a ranomized .jsp file to the tomcat servers webroot. This .jsp file just enumerates system information.\nBlog: https://labs.watchtowr.com/thanks-itsms-threat-actors-have-never-been-so-organized-bmc-footprints-pre-auth-remote-code-execution-chains/\nBMC FootPrints is an IT Service Management (ITSM) solution designed to help IT teams manage service requests, incidents, assets, and changes through configurable workflows and an intuitive web interface.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/301",
+      "pub_date": "2026-03-19T05:47:50+00:00"
+    },
     {
       "id": "300",
       "title": "Message 300",

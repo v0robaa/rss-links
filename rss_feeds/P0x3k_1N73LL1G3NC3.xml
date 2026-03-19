@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 14:38:26 +0000</lastBuildDate><item><title>Message 300</title><link>https://t.me/P0x3k_1N73LL1G3NC3/300</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 19 Mar 2026 06:20:04 +0000</lastBuildDate><item><title>Fritter</title><link>https://t.me/P0x3k_1N73LL1G3NC3/302</link><description>Fritter
+A heavily modified fork of TheWover and Odzhan's Donut shellcode generator. It generates position-independent shellcode for in-memory execution of VBScript, JScript, EXE, DLL, and .NET assemblies, but with a heavy focus on evasion and signature resistance.
+
+[Media: Фото]</description><pubDate>Thu, 19 Mar 2026 06:20:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_302</guid></item><item><title>CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain</title><link>https://t.me/P0x3k_1N73LL1G3NC3/301</link><description>CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain
+• Bypass authentication with CVE-2025-71257.
+• If it is successful, it tries to verify the CVE-2025-71260 RCE by writing a ranomized .jsp file to the tomcat servers webroot. This .jsp file just enumerates system information.
+Blog: https://labs.watchtowr.com/thanks-itsms-threat-actors-have-never-been-so-organized-bmc-footprints-pre-auth-remote-code-execution-chains/
+BMC FootPrints is an IT Service Management (ITSM) solution designed to help IT teams manage service requests, incidents, assets, and changes through configurable workflows and an intuitive web interface.
+
+[Media: Фото]</description><pubDate>Thu, 19 Mar 2026 05:47:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_301</guid></item><item><title>Message 300</title><link>https://t.me/P0x3k_1N73LL1G3NC3/300</link><description>
 
 [Media: Фото]</description><pubDate>Wed, 18 Mar 2026 14:38:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_300</guid></item><item><title>KslDump</title><link>https://t.me/P0x3k_1N73LL1G3NC3/299</link><description>KslDump
 KslDump extracts credentials from PPL-protected LSASS using only Microsoft-signed components. No exploit is deployed. No driver is loaded. The entire attack chain ships pre-installed with Windows Defender. Microsoft patched the running version (wd\KslD.sys) by nulling out MmCopyMemory, but left the old vulnerable version (drivers\KslD.sys) sitting on disk. The attacker doesn't bring anything — they just point the service back to what Microsoft forgot to clean up.
