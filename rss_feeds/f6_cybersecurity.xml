@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 19 Mar 2026 08:30:01 +0000</lastBuildDate><item><title>Когда в ИБ можно обойтись без аудита? Короткий ответ: никогда. Более подробно — в нашей статье на SecurityLab.</title><link>https://t.me/f6_cybersecurity/4121</link><description>Когда в ИБ можно обойтись без аудита? Короткий ответ: никогда. Более подробно — в нашей статье на SecurityLab.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 19 Mar 2026 12:01:27 +0000</lastBuildDate><item><title>Как оценивать риски ИБ без субъективности и «экспертных ощущений»?</title><link>https://t.me/f6_cybersecurity/4122</link><description>Как оценивать риски ИБ без субъективности и «экспертных ощущений»?
+‼️Проблема классической оценки — этап расчета вероятности. Именно здесь допущения и ограниченная статистика искажают приоритеты и приводят к неэффективным инвестициям.
+В новом White Paper показываем, как методология F6 переводит оценку рисков в data-driven формат:
+▪️ сценарии атак через Kill Chain;
+▪️ детализация техник по MITRE ATT&amp;CK;
+▪️ оценка вероятности на основе реальной статистики Threat Intelligence по РФ и отрасли.
+Результат — фокус на действительно высоковероятных и критичных рисках, а не на гипотезах.
+⤵️ Скачать White Paper
+
+[Media: Фото]</description><pubDate>Thu, 19 Mar 2026 12:01:27 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4122</guid></item><item><title>Когда в ИБ можно обойтись без аудита? Короткий ответ: никогда. Более подробно — в нашей статье на SecurityLab.</title><link>https://t.me/f6_cybersecurity/4121</link><description>Когда в ИБ можно обойтись без аудита? Короткий ответ: никогда. Более подробно — в нашей статье на SecurityLab.
 Представим идеальную картину: в компании современная инфраструктура, регулярное ревью конфигураций, патч-менеджмент, передовые средства защиты и опытная команда.
 Логичный вывод — аудит не нужен. Но в реальности это почти никогда не так. Почему ⬇️
 ▪️ Даже сильные команды со временем «привыкают» к своей инфраструктуре — глаз замыливается.
