@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 18 Mar 2026 09:25:37 +0000</lastBuildDate><item><title>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸</title><link>https://t.me/ThreatHuntingFather/1238</link><description>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 20 Mar 2026 06:03:54 +0000</lastBuildDate><item><title>Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.</title><link>https://t.me/ThreatHuntingFather/1239</link><description>Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.
+APT не вкладывается в разработку инструментария, а просто использовала то что есть в открытых источниках?Ну а что, работает же 😃
+Инструменты (указанные в отчете)
+GodZilla / AntSword  веб-шеллы, initial access https://github.com/BeichenDream/Godzilla https://github.com/AntSwordProject
+python20.dll - shellcode loader, DLL sideloading, кастомный
+ScanPortPlus - network scanning, кастомный (Go), Windows + Linux
+Fast Reverse Proxy - C2 tunneling, кастомная сборка https://github.com/fatedier/frp
+Xnote - Linux backdoor, малварь с 2015 года
+SuperDump - host recon (.NET), кастомный
+hp.bat / hpp.bat - host recon, кастомный
+LsaRecorder - credential theft https://bbs.kanxue.com/thread-251888.htm
+DumpIt + Volatility - credential theft, memory dump https://github.com/MagnetForensics/dumpit-linux
+SSMS Password Tool - credential theft https://www.zcgonvh.com/post/SQL_Server_Management_Studio_saved_password_dumper.html
+PrintSpoofer / PrintProgram - privilege escalation https://github.com/itm4n/PrintSpoofer
+Sliver - privilege escalation, parent PID spoofing https://github.com/BishopFox/sliver
+PwnKit CVE-2021-4034 - privilege escalation Linux https://github.com/ly4k/PwnKit
+usql - SQL exfiltration https://github.com/xo/usql
+Два интересных момента из отчета:
+Первый. FRP с одним и тем же токеном, паролем и схемой именования прокси через несколько лет и кампаний. Конфиг лежит на диске рядом с бинарём в открытом виде.
+Второй. Эксфильтрация через rar.exe → certutil -encode → type в терминал веб-шелла. Никакой передачи файлов, только текстовый вывод в существующей HTTP-сессии.
+📸Нужна телеметрия командной строки на хосте.
+Полный разбор: unit42.paloaltonetworks.com
+🦔 THF
+
+[Media: Фото]</description><pubDate>Fri, 20 Mar 2026 06:03:54 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1239</guid></item><item><title>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸</title><link>https://t.me/ThreatHuntingFather/1238</link><description>🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸
 Наша команда FR13NDS TEAM совместно с Astana IT University анонсирует масштабное соревнование по кибербезопасности - AITU CTF 2026! 💻
 Соревнование пройдет в два этапа:
 🔹 ЭТАП 1: КВАЛИФИКАЦИЯ (Online Jeopardy)

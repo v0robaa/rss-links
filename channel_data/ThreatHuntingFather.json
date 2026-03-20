@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-20T05:18:00.839342+00:00",
-  "messages_count": 153,
+  "last_update": "2026-03-20T09:52:29.516907+00:00",
+  "messages_count": 154,
   "messages": [
+    {
+      "id": "1239",
+      "title": "Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.",
+      "text": "Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.\nAPT не вкладывается в разработку инструментария, а просто использовала то что есть в открытых источниках?Ну а что, работает же 😃\nИнструменты (указанные в отчете)\nGodZilla / AntSword  веб-шеллы, initial access https://github.com/BeichenDream/Godzilla https://github.com/AntSwordProject\npython20.dll - shellcode loader, DLL sideloading, кастомный\nScanPortPlus - network scanning, кастомный (Go), Windows + Linux\nFast Reverse Proxy - C2 tunneling, кастомная сборка https://github.com/fatedier/frp\nXnote - Linux backdoor, малварь с 2015 года\nSuperDump - host recon (.NET), кастомный\nhp.bat / hpp.bat - host recon, кастомный\nLsaRecorder - credential theft https://bbs.kanxue.com/thread-251888.htm\nDumpIt + Volatility - credential theft, memory dump https://github.com/MagnetForensics/dumpit-linux\nSSMS Password Tool - credential theft https://www.zcgonvh.com/post/SQL_Server_Management_Studio_saved_password_dumper.html\nPrintSpoofer / PrintProgram - privilege escalation https://github.com/itm4n/PrintSpoofer\nSliver - privilege escalation, parent PID spoofing https://github.com/BishopFox/sliver\nPwnKit CVE-2021-4034 - privilege escalation Linux https://github.com/ly4k/PwnKit\nusql - SQL exfiltration https://github.com/xo/usql\nДва интересных момента из отчета:\nПервый. FRP с одним и тем же токеном, паролем и схемой именования прокси через несколько лет и кампаний. Конфиг лежит на диске рядом с бинарём в открытом виде.\nВторой. Эксфильтрация через rar.exe → certutil -encode → type в терминал веб-шелла. Никакой передачи файлов, только текстовый вывод в существующей HTTP-сессии.\n📸Нужна телеметрия командной строки на хосте.\nПолный разбор: unit42.paloaltonetworks.com\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1239",
+      "pub_date": "2026-03-20T06:03:54+00:00"
+    },
     {
       "id": "1238",
       "title": "🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸",
