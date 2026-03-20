@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 20 Mar 2026 09:15:28 +0000</lastBuildDate><item><title>📡 Raspberry Pi + Meshtastic = Telegram без сотовой сети</title><link>https://t.me/SecLabNews/17534</link><description>📡 Raspberry Pi + Meshtastic = Telegram без сотовой сети
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 20 Mar 2026 13:02:11 +0000</lastBuildDate><item><title>📙 Освойте UserGate и повысьте уровень защиты своей ИТ-инфраструктуры!</title><link>https://t.me/SecLabNews/17535</link><description>📙 Освойте UserGate и повысьте уровень защиты своей ИТ-инфраструктуры!
+Мы запускаем серию практических курсов по UserGate, и это первый курс программы.
+Бесплатный онлайн-курс поможет вам освоить внедрение и настройку UserGate — без
+лишней теории, с упором на практику.
+В программе курса:
+🔹Настройка сетевых зон, NAT, VPN, кластеров, L7-фильтрации и правил межсетевого экрана
+🔹Интеграция с LDAP и Active Directory, СОВ, фильтрация контента и reverse proxy
+🔹Пошаговые видеоуроки и итоговое тестирование
+По завершении курса Вы получите:
+👍именной сертификат
+👍Бонус: второй курс по настройке удалённого доступа
+Пройдите курс в удобное время — запись уже доступна.
+
+[Media: Фото]</description><pubDate>Fri, 20 Mar 2026 13:02:11 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17535</guid></item><item><title>📡 Raspberry Pi + Meshtastic = Telegram без сотовой сети</title><link>https://t.me/SecLabNews/17534</link><description>📡 Raspberry Pi + Meshtastic = Telegram без сотовой сети
 Энтузиаст показал, как читать Telegram-каналы через mesh-сеть Meshtastic – без мобильной связи. В основе схемы – Raspberry Pi, библиотека Telethon для доступа к Telegram API и два радиоузла: домашний и переносной.
 Скрипт-мост соединяет Telegram и Meshtastic: команда отправляется с портативного устройства, домашний узел её принимает, Raspberry Pi забирает данные из Telegram и возвращает текст по радиоканалу. Видео и картинки система не передаёт – только текст, причём в транслите, чтобы уместить больше символов в один пакет.
 По мнению автора, Meshtastic можно использовать не только как Telegram-пейджер, но и для запроса данных с серверов, опроса датчиков на автомобиле и управления ими издалека. Главный минус – высокое энергопотребление ESP-устройств.
