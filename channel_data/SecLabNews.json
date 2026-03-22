@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-03-22T09:40:17.831756+00:00",
-  "messages_count": 449,
+  "last_update": "2026-03-22T14:35:17.930373+00:00",
+  "messages_count": 450,
   "messages": [
+    {
+      "id": "17542",
+      "title": "SecurityLab.ru pinned a photo",
+      "text": "SecurityLab.ru pinned a photo",
+      "link": "https://t.me/SecLabNews/17542",
+      "pub_date": "2026-03-22T09:57:13+00:00"
+    },
     {
       "id": "17541",
       "title": "На этой неделе московские провайдеры начали срочно внедрять «белые списки» для домашнего интернета, хакеры из КНДР оказались крупнейшими поставщиками фейковых айтишников, а Швеция потеряла целое...",
