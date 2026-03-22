@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-22T14:35:03.099109+00:00",
-  "messages_count": 129,
+  "last_update": "2026-03-22T18:48:38.287107+00:00",
+  "messages_count": 130,
   "messages": [
+    {
+      "id": "304",
+      "title": "LDAPNomNom",
+      "text": "LDAPNomNom\nQuietly and anonymously bruteforce Active Directory usernames at insane speeds from Domain Controllers by (ab)using LDAP Ping requests (cLDAP). No Windows audit logs generated. High speed ~ up to 50K/sec per server - go way beyond that with multiple servers in parallel!\nP.S. На старом канале уже было, пусть и тут не теряется.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/304",
+      "pub_date": "2026-03-22T17:52:43+00:00"
+    },
     {
       "id": "303",
       "title": "Lvl канала подсполз, нужно исправлять😉",
