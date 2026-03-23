@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-23T15:03:02.566978+00:00",
-  "messages_count": 154,
+  "last_update": "2026-03-23T19:04:21.988507+00:00",
+  "messages_count": 155,
   "messages": [
+    {
+      "id": "1247",
+      "title": "https://drivershield.io/",
+      "text": "https://drivershield.io/\nDeveloped by Tolga SEZER",
+      "link": "https://t.me/ThreatHuntingFather/1247",
+      "pub_date": "2026-03-23T16:56:43+00:00"
+    },
     {
       "id": "1239",
       "title": "Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.",

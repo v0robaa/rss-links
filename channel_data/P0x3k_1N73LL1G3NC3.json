@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-23T15:02:55.404377+00:00",
-  "messages_count": 130,
+  "last_update": "2026-03-23T19:04:14.766031+00:00",
+  "messages_count": 131,
   "messages": [
+    {
+      "id": "305",
+      "title": "OktaHound",
+      "text": "OktaHound\nA new data collector for the Okta Platform that ingests information about entities and their relationships within an Okta organization and represents them as nodes and edges in BloodHound’s graph database.\nBlog: Discovering Unexpected Okta Attack Paths with BloodHound\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/305",
+      "pub_date": "2026-03-23T16:52:33+00:00"
+    },
     {
       "id": "304",
       "title": "LDAPNomNom",

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 22 Mar 2026 17:52:43 +0000</lastBuildDate><item><title>LDAPNomNom</title><link>https://t.me/P0x3k_1N73LL1G3NC3/304</link><description>LDAPNomNom
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 23 Mar 2026 16:52:33 +0000</lastBuildDate><item><title>OktaHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/305</link><description>OktaHound
+A new data collector for the Okta Platform that ingests information about entities and their relationships within an Okta organization and represents them as nodes and edges in BloodHound’s graph database.
+Blog: Discovering Unexpected Okta Attack Paths with BloodHound
+
+[Media: Фото]</description><pubDate>Mon, 23 Mar 2026 16:52:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_305</guid></item><item><title>LDAPNomNom</title><link>https://t.me/P0x3k_1N73LL1G3NC3/304</link><description>LDAPNomNom
 Quietly and anonymously bruteforce Active Directory usernames at insane speeds from Domain Controllers by (ab)using LDAP Ping requests (cLDAP). No Windows audit logs generated. High speed ~ up to 50K/sec per server - go way beyond that with multiple servers in parallel!
 P.S. На старом канале уже было, пусть и тут не теряется.
 
