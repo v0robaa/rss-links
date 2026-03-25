@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-25T09:59:46.741443+00:00",
-  "messages_count": 131,
+  "last_update": "2026-03-25T15:07:34.455618+00:00",
+  "messages_count": 132,
   "messages": [
+    {
+      "id": "306",
+      "title": "KslKatz",
+      "text": "KslKatz\nCombining KslDump and GhostKatz to dump LSASS using no-vulnerability KslD.sys memory read to bypass PPL. Extracts MSV1_0 NT hashes and WDigest cleartext passwords (if enabled) from LSASS using a Microsoft-signed driver.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/306",
+      "pub_date": "2026-03-25T11:41:23+00:00"
+    },
     {
       "id": "305",
       "title": "OktaHound",

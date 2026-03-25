@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 23 Mar 2026 16:52:33 +0000</lastBuildDate><item><title>OktaHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/305</link><description>OktaHound
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 25 Mar 2026 11:41:23 +0000</lastBuildDate><item><title>KslKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/306</link><description>KslKatz
+Combining KslDump and GhostKatz to dump LSASS using no-vulnerability KslD.sys memory read to bypass PPL. Extracts MSV1_0 NT hashes and WDigest cleartext passwords (if enabled) from LSASS using a Microsoft-signed driver.
+
+[Media: Фото]</description><pubDate>Wed, 25 Mar 2026 11:41:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_306</guid></item><item><title>OktaHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/305</link><description>OktaHound
 A new data collector for the Okta Platform that ingests information about entities and their relationships within an Okta organization and represents them as nodes and edges in BloodHound’s graph database.
 Blog: Discovering Unexpected Okta Attack Paths with BloodHound
 
