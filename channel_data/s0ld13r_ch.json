@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-03-26T05:44:10.095181+00:00",
-  "messages_count": 64,
+  "last_update": "2026-03-26T10:05:50.368583+00:00",
+  "messages_count": 65,
   "messages": [
+    {
+      "id": "365",
+      "title": "\"Это не баг, а фича\" или же backdoor by design pt. 1 😃",
+      "text": "\"Это не баг, а фича\" или же backdoor by design pt. 1 😃\nКогда мы ищем векторы RCE в инфре, мы привыкли охотиться за сложными CVE. Но иногда дверь оставлена открытой специально - по архитектурным соображениям. Сегодня поговорим про Java Debug Wire Protocol (JDWP) 👩‍💻\n🔍 Что это такое?\nЭто протокол для отладки Java-приложений в реальном времени. Он позволяет смотреть состояние потоков, память и execution flow, не перезагружая приложение. Чтобы его включить, разработчику достаточно добавить одну строку:\n-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005\n🤭 В чем подвох?\nПротокол не предусматривает никакой авторизации. Если порт 5005 торчит наружу или доступен во внутренней сети - это легитимный RCE «из коробки».\n🤬 Проблема старых инструментов:\nПопулярный jdwp-shellifier написан на Python 2 и использует только Runtime.exec(). Главный минус - вы не видите вывод команды в консоли (blind execution). Если сеть ограничена и вы не можете кинуть reverse shell или сделать curl на свой сервер, эксфильтрация данных превращается в квест.\nЯ переписал и проапгрейдил этот инструмент, сделав его современным и более «зубастым» назвав его JDWP Knife.\nКлючевые фичи:\n• Python 3.6+ 👩‍💻\n• Интерактивность: Вывод env, ls и cat прямо в консоль 👩‍💻\n• Удобство: Минимум лишних движений при разведке 🕵️‍♂️\n✍️ Примеры использования:\n# 1. Discover JDWP\necho \"JDWP-Handshake\" | nc -w3 TARGET 5005\n# 2. Identify service\npython3 jdwp-knife.py -t TARGET -p 5005 --props\n# 3. Extract credentials\npython3 jdwp-knife.py -t TARGET -p 5005 --env | grep -iE 'pass|secret|key|token|jdbc|aws'\n# 4. Read interesting files\npython3 jdwp-knife.py -t TARGET -p 5005 --cat /etc/passwd\nБудьте аккуратны с debug портами в проде, иногда удобство в разработке может привести к компрометации всей инфраструктуры 😉\n💻 jdwp-knife: https://github.com/s0ld13rr/jdwp-knife\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/365",
+      "pub_date": "2026-03-26T06:54:51+00:00"
+    },
     {
       "id": "364",
       "title": "🌸 Келе жатқан Наурыз мейрамы құтты болсын! 🌸",
