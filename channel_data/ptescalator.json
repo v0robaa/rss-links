@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-03-27T14:58:16.110058+00:00",
-  "messages_count": 97,
+  "last_update": "2026-03-27T19:04:35.448413+00:00",
+  "messages_count": 98,
   "messages": [
+    {
+      "id": "672",
+      "title": "Message 672",
+      "text": "",
+      "link": "https://t.me/ptescalator/672",
+      "pub_date": "2026-03-27T17:42:13+00:00"
+    },
     {
       "id": "665",
       "title": "Базовый минимум киберразведки 👍",

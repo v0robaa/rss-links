@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-27T14:58:03.984070+00:00",
-  "messages_count": 157,
+  "last_update": "2026-03-27T19:04:23.529503+00:00",
+  "messages_count": 158,
   "messages": [
+    {
+      "id": "1259",
+      "title": "TeamPCP trojanized LiteLLM on PyPI",
+      "text": "TeamPCP trojanized LiteLLM on PyPI\nHunt.io just published new research worth a look if you're tracking supply chain threats or AI infrastructure exposure. 3 days ago, TeamPCP trojanized LiteLLM on PyPI, a centralized proxy handling 97M monthly downloads and sitting in front of cloud credentials, API keys, and secrets for a large portion of the AI development ecosystem. Mapped the blast radius and analyzed the C2 infrastructure behind the attack. Here's what found:\n- 33,688 exposed LiteLLM instances found at scan time\n- Dual C2 running AdaptixC2 and Havoc simultaneously\n- Credential harvesting across 15+ categories: AWS keys, crypto wallets, CI/CD secrets, and more\n- Certificate pivoting via certificate reuse uncovered a third server tied to the exfil domain\nFull breakdown with IOCs and HuntSQL queries: https://hunt.io/blog/33k-exposed-litellm-teampcp-c2-supply-chain-attack",
+      "link": "https://t.me/ThreatHuntingFather/1259",
+      "pub_date": "2026-03-27T18:34:25+00:00"
+    },
     {
       "id": "1251",
       "title": "Сейчас “из каждого утюга” звучит AI, но на UnpromptedCon 2026 уже показывали вполне прикольные кейсы. Для себя отобрал несколько докладов, которые, на мой взгляд, реально интересно посмотреть:",
