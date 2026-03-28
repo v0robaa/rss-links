@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sat, 28 Mar 2026 05:23:27 +0000</lastBuildDate><item><title>Какие темы затронем на курсе:</title><link>https://t.me/gardendetective/46</link><description>Я в своем познании Purple Teaming настолько преисполнился, что решил: настало время делиться опытом. Поэтому мы вместе с Олегом и нашими друзьями из Inseca разработали 6-недельный курс по данному направлению.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sat, 28 Mar 2026 09:45:49 +0000</lastBuildDate><item><title>Какие темы затронем на курсе:</title><link>https://t.me/gardendetective/46</link><description>Я в своем познании Purple Teaming настолько преисполнился, что решил: настало время делиться опытом. Поэтому мы вместе с Олегом и нашими друзьями из Inseca разработали 6-недельный курс по данному направлению.
 Какие темы затронем на курсе:
 1️⃣Что такое Purple Teaming и почему вам стоит им заниматься?
 2️⃣Как подготовиться к киберучениям в подобном формате и как сделать их процессом?
@@ -28,7 +28,7 @@ wsl -u root -d &lt;distro_name&gt; --exec bash -c "echo -e '[boot]\ncommand=echo
 nohup python3 -m http.server 8000 &amp;
 *️⃣для того, чтобы принудительно завершить работу определённого дистрибутива или всех сразу, можно использовать эти команды:
 wsl -t &lt;distro_name&gt;
-wsl --shutdown</description><pubDate>Sat, 28 Mar 2026 05:23:27 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
+wsl --shutdown</description><pubDate>Sat, 28 Mar 2026 09:45:49 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
 🔵 Последние 2 доклада в этом году (🍩):
 1️⃣ Доклад «После Red Team можно не бояться атак... Не бояться атак, да?» [SOC Forum 2025].
 ➖ Совместно с Олегом Скулкиным (ссылка на TG-канал).
