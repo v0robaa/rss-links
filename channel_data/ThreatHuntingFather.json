@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-03-28T09:46:00.917779+00:00",
-  "messages_count": 158,
+  "last_update": "2026-03-28T14:38:48.590240+00:00",
+  "messages_count": 159,
   "messages": [
+    {
+      "id": "1260",
+      "title": "TeamPCP trojanized LiteLLM on PyPI  Hunt.io just published new research worth a look if you're tracking supply chain threats or AI infrastructure exposure. 3 days ago, TeamPCP trojanized LiteLLM on...",
+      "text": "TeamPCP trojanized LiteLLM on PyPI  Hunt.io just published new research worth a look if you're tracking supply chain threats or AI infrastructure exposure. 3 days ago, TeamPCP trojanized LiteLLM on PyPI, a centralized proxy handling 97M monthly downloads and…",
+      "link": "https://t.me/ThreatHuntingFather/1260",
+      "pub_date": "2026-03-28T10:16:18+00:00"
+    },
     {
       "id": "1259",
       "title": "TeamPCP trojanized LiteLLM on PyPI",
