@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-29T18:54:11.801334+00:00",
-  "messages_count": 133,
+  "last_update": "2026-03-30T06:02:25.591250+00:00",
+  "messages_count": 134,
   "messages": [
+    {
+      "id": "308",
+      "title": "WebRelayX",
+      "text": "WebRelayX\nAn NTLM relay tool focused on Web (http/s) targets. It builds on impacket's ntlmrelayx and adds cookie harvesting and auth scan. The goal of this tool is to automate NTLM-Relaying to targets other than ADCS or Exchange, by harvesting session cookies before or after successful authentication.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/308",
+      "pub_date": "2026-03-30T03:31:01+00:00"
+    },
     {
       "id": "307",
       "title": "DRSAT",

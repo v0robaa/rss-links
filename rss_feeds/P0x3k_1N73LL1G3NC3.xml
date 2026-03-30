@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 29 Mar 2026 12:26:47 +0000</lastBuildDate><item><title>DRSAT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/307</link><description>DRSAT
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 30 Mar 2026 03:31:01 +0000</lastBuildDate><item><title>WebRelayX</title><link>https://t.me/P0x3k_1N73LL1G3NC3/308</link><description>WebRelayX
+An NTLM relay tool focused on Web (http/s) targets. It builds on impacket's ntlmrelayx and adds cookie harvesting and auth scan. The goal of this tool is to automate NTLM-Relaying to targets other than ADCS or Exchange, by harvesting session cookies before or after successful authentication.
+
+[Media: Видео]</description><pubDate>Mon, 30 Mar 2026 03:31:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_308</guid></item><item><title>DRSAT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/307</link><description>DRSAT
 Disconnected RSAT - A method of running Group Policy Manager, Certificate Authority and Certificate Templates MMC snap-ins from non-domain joined machies
 The tool works by injecting a C# library into MMC that will hook the various API calls to trick MMC into believing that the logged on user is a domain user. Hooks are also placed on the NtCreateFile API to redirect file paths that would typically be resolved via DFS to a specific domain controller.
 
