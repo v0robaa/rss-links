@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-03-31T05:47:00.121983+00:00",
-  "messages_count": 65,
+  "last_update": "2026-03-31T10:10:22.724208+00:00",
+  "messages_count": 66,
   "messages": [
+    {
+      "id": "368",
+      "title": "Massive axios supply chain campaign 👩‍💻",
+      "text": "Massive axios supply chain campaign 👩‍💻\nВ популярной библиотеке axios (версии 1.14.1 и 0.30.4) был обнаружен опасный троян (RAT), внедренный через взломанный аккаунт одного из мейнтейнеров проекта. Вредонос маскируется под зависимость plain-crypto-js, которая при установке незаметно заражает Windows, macOS и Linux, после чего удаляет свои следы 🚨\nЕсли вы обновляли пакеты 30–31 марта, проверьте наличие вредоносных файлов (полный список ниже) на хостах. Для очистки проекта откатитесь на версии 1.14.0 или 0.30.3 и обязательно сбросьте все секреты (API-ключи, токены), так как они могли быть похищены 😃\n🛡  IOC for hunts:\nСетевые индикаторы\nsfrclak.com\n142.11.206.73\nhttp://sfrclak.com:8000/6202033\npackages.npm.org\nОставленные бэкдоры/закрепы\nMacOS /Library/Caches/com.apple.act.mond\nWindows %PROGRAMDATA%\\wt.exe\nLinux /tmp/ld.py\nSHA суммы вредоносных библиотек\naxios@1.14.1 - 2553649f232204966871cea80a5d0d6adc700ca\naxios@0.30.4 - [REDACTED_AWS_SECRET]\nplain-crypto-js@4.2.1 - [REDACTED_AWS_SECRET]\n🔗 Report: https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/368",
+      "pub_date": "2026-03-31T09:55:30+00:00"
+    },
     {
       "id": "365",
       "title": "\"Это не баг, а фича\" или же backdoor by design pt. 1 😃",

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 26 Mar 2026 06:54:51 +0000</lastBuildDate><item><title>"Это не баг, а фича" или же backdoor by design pt. 1 😃</title><link>https://t.me/s0ld13r_ch/365</link><description>"Это не баг, а фича" или же backdoor by design pt. 1 😃
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 31 Mar 2026 09:55:30 +0000</lastBuildDate><item><title>Massive axios supply chain campaign 👩‍💻</title><link>https://t.me/s0ld13r_ch/368</link><description>Massive axios supply chain campaign 👩‍💻
+В популярной библиотеке axios (версии 1.14.1 и 0.30.4) был обнаружен опасный троян (RAT), внедренный через взломанный аккаунт одного из мейнтейнеров проекта. Вредонос маскируется под зависимость plain-crypto-js, которая при установке незаметно заражает Windows, macOS и Linux, после чего удаляет свои следы 🚨
+Если вы обновляли пакеты 30–31 марта, проверьте наличие вредоносных файлов (полный список ниже) на хостах. Для очистки проекта откатитесь на версии 1.14.0 или 0.30.3 и обязательно сбросьте все секреты (API-ключи, токены), так как они могли быть похищены 😃
+🛡  IOC for hunts:
+Сетевые индикаторы
+sfrclak.com
+142.11.206.73
+http://sfrclak.com:8000/6202033
+packages.npm.org
+Оставленные бэкдоры/закрепы
+MacOS /Library/Caches/com.apple.act.mond
+Windows %PROGRAMDATA%\wt.exe
+Linux /tmp/ld.py
+SHA суммы вредоносных библиотек
+axios@1.14.1 - 2553649f232204966871cea80a5d0d6adc700ca
+axios@0.30.4 - [REDACTED_AWS_SECRET]
+plain-crypto-js@4.2.1 - [REDACTED_AWS_SECRET]
+🔗 Report: https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 31 Mar 2026 09:55:30 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_368</guid></item><item><title>"Это не баг, а фича" или же backdoor by design pt. 1 😃</title><link>https://t.me/s0ld13r_ch/365</link><description>"Это не баг, а фича" или же backdoor by design pt. 1 😃
 Когда мы ищем векторы RCE в инфре, мы привыкли охотиться за сложными CVE. Но иногда дверь оставлена открытой специально - по архитектурным соображениям. Сегодня поговорим про Java Debug Wire Protocol (JDWP) 👩‍💻
 🔍 Что это такое?
 Это протокол для отладки Java-приложений в реальном времени. Он позволяет смотреть состояние потоков, память и execution flow, не перезагружая приложение. Чтобы его включить, разработчику достаточно добавить одну строку:

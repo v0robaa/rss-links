@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-03-31T05:46:57.682981+00:00",
-  "messages_count": 134,
+  "last_update": "2026-03-31T10:10:20.242079+00:00",
+  "messages_count": 135,
   "messages": [
+    {
+      "id": "309",
+      "title": "Ligolo-IWA",
+      "text": "Ligolo-IWA\nA Ligolo-ng JavaScript agent working inside Chrome & Chromium-based browsers by leveraging Isolated Web Applications.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/309",
+      "pub_date": "2026-03-31T07:59:42+00:00"
+    },
     {
       "id": "308",
       "title": "WebRelayX",
