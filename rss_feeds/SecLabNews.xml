@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Thu, 02 Apr 2026 09:07:44 +0000</lastBuildDate><item><title>🛑Конец эпохи MTProxy?</title><link>https://t.me/SecLabNews/17582</link><description>🛑Конец эпохи MTProxy?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Thu, 02 Apr 2026 13:03:50 +0000</lastBuildDate><item><title>9 апреля 🚀 Ideco приглашают на вебинар, посвящённый новой версии межсетевого экрана Ideco NGFW Novum.</title><link>https://t.me/SecLabNews/17583</link><description>9 апреля 🚀 Ideco приглашают на вебинар, посвящённый новой версии межсетевого экрана Ideco NGFW Novum.
+Представители Ideco расскажут о ключевых нововведениях: от геораспределённого кластера системы управления до поддержки трёхфакторной аутентификации: пользователь, OTP, устройство.
+Тезисы вебинара:
+📌 Ideco Center: отказоустойчивость централизованного управления
+📌 DNS Security: защита на уровне DNS-резолвинга
+📌 ZTNA: углубленные сценарии Zero Trust
+📌 SD-WAN: SLA-маршрутизация
+📌 Кластер и улучшения платформы
+📌 Интеграция с ФинЦЕРТ
+🔗 Регистрация тут
+
+[Media: Фото]</description><pubDate>Thu, 02 Apr 2026 13:03:50 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17583</guid></item><item><title>🛑Конец эпохи MTProxy?</title><link>https://t.me/SecLabNews/17582</link><description>🛑Конец эпохи MTProxy?
 Роскомнадзор, похоже, перестал играть в догонялки и взялся за инфраструктуру всерьез. Эксперты говорят, что новые фильтры уже распознают фальшивые TLS-запросы. Старые способы маскировки трафика быстро теряют смысл. Массовые сбои MTProxy по стране выглядят уже не как случайность, а как следствие новых методов распознавания.
 Удар пришелся по самой технической возможности обхода ограничений. Даже смена портов помогает все реже, потому что системы фильтрации научились глубже разбирать трафик.
 Разговоры о полной блокировке Telegram с первого апреля так и остались слухами. Настоящая картина выглядит менее громко, но куда тревожнее. Мессенджер не отключают одним нажатием, а медленно сжимают штрафами, давлением и техническими ограничениями. По заявлениям властей, курс уже выбран, и рассчитывать на откат пока не приходится.

