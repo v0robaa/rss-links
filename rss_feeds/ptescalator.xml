@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 31 Mar 2026 13:27:32 +0000</lastBuildDate><item><title>Призрачный Gist 😏</title><link>https://t.me/ptescalator/676</link><description>Призрачный Gist 😏
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 02 Apr 2026 08:50:42 +0000</lastBuildDate><item><title>Где заканчивается одна группировка и начинается другая? 🧩</title><link>https://t.me/ptescalator/683</link><description>Где заканчивается одна группировка и начинается другая? 🧩
+В новом исследовании мы рассмотрели кейс, который хорошо показывает, как MaaS-модель усложняет атрибуцию атак.
+Исследование посвящено цепочке доставки вредоносного ПО с использованием SocGholish, связанного с группировкой Mustard Tempest. При этом инфраструктура, задействованная в этой схеме, также использовалась в атаках Cloud Atlas.
+🕵️ В статье разбираем:
+• полную цепочку атаки
+• распределение ролей между операторами MaaS-сервисов
+• механику FakeUpdate
+• возможные точки пересечения Cloud Atlas и Mustard Tempest
+Подробнее — в статье на Хабре.
+#APT #TI #Malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Thu, 02 Apr 2026 08:50:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_683</guid></item><item><title>Призрачный Gist 😏</title><link>https://t.me/ptescalator/676</link><description>Призрачный Gist 😏
 В марте специалисты киберразведки PT ESC зафиксировали активность группировки Rare Werewolf (Rezet, Librarian Ghouls). На этот раз был обнаружен архив data.zip, содержащий следующую структуру файлов:
 • Структура компании1111.docx
 • any_svc.exe
