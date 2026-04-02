@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-02T15:03:48.536517+00:00",
-  "messages_count": 135,
+  "last_update": "2026-04-02T19:05:26.047345+00:00",
+  "messages_count": 136,
   "messages": [
+    {
+      "id": "310",
+      "title": "KillChain",
+      "text": "KillChain\nKernel Process Termination Tool ( CVE-2026-0828 exploit). KillChain is a user-mode tool that leverages a vulnerable kernel driver (ProcessMonitorDriver.sys, CVE-2026-0828) to terminate protected processes from user space. It communicates with the kernel via a custom IOCTL interface, bypassing standard process protection mechanisms.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/310",
+      "pub_date": "2026-04-02T16:53:56+00:00"
+    },
     {
       "id": "309",
       "title": "Ligolo-IWA",
