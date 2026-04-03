@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 02 Apr 2026 11:21:01 +0000</lastBuildDate><item><title>jdwp-knife now is in BlackArch repository 👩‍💻</title><link>https://t.me/s0ld13r_ch/370</link><description>jdwp-knife now is in BlackArch repository 👩‍💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 09:00:39 +0000</lastBuildDate><item><title>Qilin EDR killer infection chain</title><link>https://t.me/s0ld13r_ch/373</link><description>Qilin EDR killer infection chain
+Ну что очередной EDR killer от Ransomware группы:
+This blog provides an in-depth analysis of the malicious “msimg32.dll” used in Qilin ransomware attacks, which is a multi-stage infection chain targeting EDR systems. It can terminate over 300 different EDR drivers from almost every vendor in the market.
+Indicators of compromise (IOCs)
+The IOCs for this threat are also available at our GitHub repository here.
+msimg32.dll
+MD5: 89ee7235906f7d12737679860264feaf
+SHA1: [REDACTED_AWS_SECRET]
+SHA256: 7787da25451f5538766240f4a8a2846d0a589c59391e15f188aa077e8b888497
+rwdrv.sys
+MD5: 6bc8e3505d9f51368ddf323acb6abc49
+SHA1: [REDACTED_AWS_SECRET]
+SHA256: 16f83f056177c4ec24c7e99d01ca9d9d6713bd0497eeedb777a3ffefa99c97f0
+hlpdrv.sys
+cf7cad39407d8cd93135be42b6bd258f
+[REDACTED_AWS_SECRET]
+bd1f381e5a3db22e88776b7873d4d2835e9a1ec620571d2b1da0c58f81c84a56
+EDRKiller.exe (non-fixed memory dump with overlay)
+MD5: 1305e8b0f9c459d5ed85e7e474fbebb1
+SHA1: [REDACTED_AWS_SECRET]
+SHA256: 12fcde06ddadf1b48a61b12596e6286316fd33e850687fe4153dfd9383f0a4a0
+Time stamp: 0x684d33f0 (14. June 2025, 08:33:52 UTC)
+ImpHash : 05aa031a007e2f51e3f48ae2ed1e1fcb
+TLSH: T1B4647C01B7E50CF9EE77C638C9614A06EA72BC425761DADF43A04A964F237D09E3DB12
+🔗 https://blog.talosintelligence.com/qilin-edr-killer/
+
+[Media: Фото]</description><pubDate>Fri, 03 Apr 2026 09:00:39 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_373</guid></item><item><title>jdwp-knife now is in BlackArch repository 👩‍💻</title><link>https://t.me/s0ld13r_ch/370</link><description>jdwp-knife now is in BlackArch repository 👩‍💻
 Мой инструмент для эксплуатации протокола JDWP теперь официально доступен в репозиториях дистрибутива BlackArch Linux 👩‍💻
 Installation:
 sudo pacman -S jdwp-knife

@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-03T05:44:53.526452+00:00",
-  "messages_count": 164,
+  "last_update": "2026-04-03T09:57:16.790291+00:00",
+  "messages_count": 166,
   "messages": [
+    {
+      "id": "1273",
+      "title": "Qilin EDR killer infection chain",
+      "text": "Qilin EDR killer infection chain\nНу что очередной EDR killer от Ransomware группы:\nThis blog provides an in-depth analysis of the malicious “msimg32.dll” used in Qilin ransomware attacks, which is a multi-stage infection chain targeting EDR systems. It can terminate over 300 different EDR drivers from almost every vendor in the market.\nIndicators of compromise (IOCs)\nThe IOCs for this threat are also available at our GitHub repository here.\nmsimg32.dll\nMD5: 89ee7235906f7d12737679860264feaf\nSHA1: [REDACTED_AWS_SECRET]\nSHA256: 7787da25451f5538766240f4a8a2846d0a589c59391e15f188aa077e8b888497\nrwdrv.sys\nMD5: 6bc8e3505d9f51368ddf323acb6abc49\nSHA1: [REDACTED_AWS_SECRET]\nSHA256: 16f83f056177c4ec24c7e99d01ca9d9d6713bd0497eeedb777a3ffefa99c97f0\nhlpdrv.sys\ncf7cad39407d8cd93135be42b6bd258f\n[REDACTED_AWS_SECRET]\nbd1f381e5a3db22e88776b7873d4d2835e9a1ec620571d2b1da0c58f81c84a56\nEDRKiller.exe (non-fixed memory dump with overlay)\nMD5: 1305e8b0f9c459d5ed85e7e474fbebb1\nSHA1: [REDACTED_AWS_SECRET]\nSHA256: 12fcde06ddadf1b48a61b12596e6286316fd33e850687fe4153dfd9383f0a4a0\nTime stamp: 0x684d33f0 (14. June 2025, 08:33:52 UTC)\nImpHash : 05aa031a007e2f51e3f48ae2ed1e1fcb\nTLSH: T1B4647C01B7E50CF9EE77C638C9614A06EA72BC425761DADF43A04A964F237D09E3DB12\n🔗 https://blog.talosintelligence.com/qilin-edr-killer/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1273",
+      "pub_date": "2026-04-03T08:59:48+00:00"
+    },
+    {
+      "id": "1271",
+      "title": "vSphere and BRICKSTORM Malware: A Defender's Guide",
+      "text": "vSphere and BRICKSTORM Malware: A Defender's Guide\nВсе пишут что APT атакуют виртуализацию 💀 и это слабое, слепое место без мониторинга и EDR…\nMandiant  выпустили тулзу для хардеринга vCenter,\nНаверное вы уже читали исследования о BRICKSTORM, где dwell time APT групп составил в среднем 393 дня 😱 вы себе представляете эту цифру, что в вашей сети 393 дня сидит APT группа и выкачивает данные?\nСама цепочка:\nUNC5221 / threat actor → exploit / access → compromised edge appliance → lateral move → valid credentials → SSH login → target: vCenter Server & ESXi Hypervisor → config change → enable SSH service → deploy BRICKSTEAM (Java Servlet Filter), SLAYSTYLE (JSP webshell) и BRICKSTORM backdoor (Go-based SOCKS proxy) → install persistence через init.d / rc.local / system startup → clone sensitive VMs (DCs / vaults) → mount & extract data (ntds.dit / secrets) → exfiltrate via SOCKS.\nПочитать и захардерить:\n🔗 https://cloud.google.com/blog/topics/threat-intelligence/vsphere-brickstorm-defender-guide\n🔨 https://github.com/mandiant/vcsa-hardening-tool\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1271",
+      "pub_date": "2026-04-03T07:00:16+00:00"
+    },
     {
       "id": "1262",
       "title": "Фишинг через современные возможности браузера: фейковый экран блокировки Windows",
