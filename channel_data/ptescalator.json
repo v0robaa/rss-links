@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-04-03T14:52:25.200552+00:00",
-  "messages_count": 102,
+  "last_update": "2026-04-03T18:57:28.756769+00:00",
+  "messages_count": 103,
   "messages": [
+    {
+      "id": "686",
+      "title": "Message 686",
+      "text": "",
+      "link": "https://t.me/ptescalator/686",
+      "pub_date": "2026-04-03T17:20:17+00:00"
+    },
     {
       "id": "684",
       "title": "Пятничная рассылка 🐽",
