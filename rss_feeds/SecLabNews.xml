@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 09:16:27 +0000</lastBuildDate><item><title>🥸Неофициальный клиент Telegram уличили в сборе телефонов</title><link>https://t.me/SecLabNews/17587</link><description>🥸Неофициальный клиент Telegram уличили в сборе телефонов
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 13:00:02 +0000</lastBuildDate><item><title>🎙Весенний эфир CodeScoring: безопасность без блокировок</title><link>https://t.me/SecLabNews/17588</link><description>🎙Весенний эфир CodeScoring: безопасность без блокировок
+Команда платформы приглашает обсудить свежие обновления инструментов для безопасной разработки. 9 апреля, в 11:00, онлайн!
+В программе вебинара:
+🔴Подходы к безопасности без блокировок с CodeScoring.OSA Proxy
+🔴Анализ достижимости уязвимостей для новых языков и визуализация графа вызовов
+🔴Новая модель оценки секретов для снижения числа ложных срабатываний
+🔴Улучшенный граф зависимостей, работа с SBOM и интеграция с Kaiten
+Спикеры вебинара: основатель платформы Алексей Смирнов и руководители разработки Антон Володченко и Дмитрий Ключников.
+Встречаемся онлайн 9 апреля в 11:00 (МСК).
+🔗Участие бесплатное, нужна регистрация
+
+[Media: Фото]</description><pubDate>Fri, 03 Apr 2026 13:00:02 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17588</guid></item><item><title>🥸Неофициальный клиент Telegram уличили в сборе телефонов</title><link>https://t.me/SecLabNews/17587</link><description>🥸Неофициальный клиент Telegram уличили в сборе телефонов
 В неофициальном клиенте Telegram Nekogram нашли обфусцированный код, который скрыто отправлял боту @nekonotificationbot номера телефонов пользователей вместе с идентификатором аккаунта. Проблему обнаружили исследователи, изучавшие готовые сборки приложения.
 Сбор данных присутствовал только в APK, распространявшихся через Google Play, GitHub и Telegram-канал проекта. В открытом исходном коде на GitHub и в пакете из F-Droid такого изменения не было, что делает ситуацию особенно тревожной.
 После публикации находки автор Nekogram признал отправку номеров своему боту, но причин не объяснил. При этом он заявил, что телефоны не сохранялись и никому не передавались, хотя исследователи считают, что данные могли собираться для базы, интересной создателям OSINT-ботов.
