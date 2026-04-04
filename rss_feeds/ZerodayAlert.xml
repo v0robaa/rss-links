@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 01 Apr 2026 16:07:59 +0000</lastBuildDate><item><title>0day в Chrome: WebGPU стал точкой входа</title><link>https://t.me/ZerodayAlert/646</link><description>0day в Chrome: WebGPU стал точкой входа
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Sat, 04 Apr 2026 17:23:31 +0000</lastBuildDate><item><title>❓Как часто ваши SIEM и WAF работают так, как обещано в презентациях? А как у коллег по рынку?</title><link>https://t.me/ZerodayAlert/647</link><description>❓Как часто ваши SIEM и WAF работают так, как обещано в презентациях? А как у коллег по рынку?
+Официальные отчёты не показывают реальную практику. Кибердом и Yandex Cloud запустили анонимный опрос, чтобы собрать честную картину — без маркетинга и без привязки к компаниям.
+Участники смогут сравнить свои подходы с рынком после публикации результатов, а ещё получат промокод на форум «ИИ: режим доверия» 13 апреля в Кибердоме.
+Все данные обрабатываются в обобщённом виде. Никаких утечек.
+➡️Пройти опрос
+
+[Media: Фото]</description><pubDate>Sat, 04 Apr 2026 17:23:31 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_647</guid></item><item><title>0day в Chrome: WebGPU стал точкой входа</title><link>https://t.me/ZerodayAlert/646</link><description>0day в Chrome: WebGPU стал точкой входа
 В Chrome обнаружили уязвимость нулевого дня CVE-2026-5281, которую уже используют в реальных атаках. Проблема затрагивает компонент Dawn, через который реализован WebGPU и работа с графикой в браузере. Google выпустила обновление и не рекомендует откладывать установку.
 Ошибка относится к классу use-after-free. В графическом стеке такие баги особенно неприятны из-за асинхронной работы с памятью и GPU. Если атакующий ловит момент между освобождением и повторным использованием объекта, браузер начинает обращаться к уже невалидной памяти. Дальше возможен выход из песочницы визуализатора и выполнение кода в системе, особенно в связке с другими уязвимостями.
 Показателен сам вектор атаки. WebGPU — новый и сложный слой, где ещё не устоялись практики защиты. Интерес атакующих к таким компонентам растёт, и подобные уязвимости, к сожалению, будут появляться всё чаще.
