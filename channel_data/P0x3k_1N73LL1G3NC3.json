@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-05T09:48:36.759061+00:00",
-  "messages_count": 137,
+  "last_update": "2026-04-05T14:41:25.199840+00:00",
+  "messages_count": 138,
   "messages": [
+    {
+      "id": "312",
+      "title": "UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.",
+      "text": "UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/312",
+      "pub_date": "2026-04-05T11:40:17+00:00"
+    },
     {
       "id": "311",
       "title": "KslKatzBOF",
