@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 08:59:48 +0000</lastBuildDate><item><title>Qilin EDR killer infection chain</title><link>https://t.me/ThreatHuntingFather/1273</link><description>Qilin EDR killer infection chain
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 06 Apr 2026 07:18:46 +0000</lastBuildDate><item><title>Чтобы сделать вредоносные файлы невидимыми для систем защиты, атакующие используют различные техники. Самые известные  — это руткиты и буткиты. Но иногда достаточно и более простых механизмов....</title><link>https://t.me/ThreatHuntingFather/1274</link><description>Чтобы сделать вредоносные файлы невидимыми для систем защиты, атакующие используют различные техники. Самые известные  — это руткиты и буткиты. Но иногда достаточно и более простых механизмов. Недавно мы наткнулись на технику маскировки процессов в Linux через bind mount поверх /proc.
+Когда утилита для монтирования файловых систем mount запускается с флагом bind, это позволяет "приклеить" одну директорию или файл в другую точку файловой системы. При этом исходные данные в целевой точке становятся невидимыми; фактически, они перекрываются содержимым примонтированного пути.
+Атакующий с root-доступом может использовать это для маскировки процессов.
+Например, процесс с PID 1234 можно спрятать через mount:
+mount --bind /tmp/empty /proc/1234
+После этого содержимое настоящего /proc/1234 перекрывается пустой директорией. Утилиты вроде ps, top или htop читают данные именно из /proc, поэтому для них процесс как будто исчезает. При этом сам процесс продолжает работать: слушает порты, выполняет код, держит соединения.
+Иногда делают еще аккуратнее: поверх /proc/&lt;pid&gt;/exe или /proc/&lt;pid&gt;/cmdline монтируют другой файл. Тогда процесс вроде бы виден, но его бинарь или аргументы подменены.
+Как ловить атаку?
+Проверка mount-таблицы помогает обнаружить сокрытие процесса. Утилиты mount или findmnt покажут bind mounts внутри /proc. В нормальной системе их там почти не бывает.
+С точки зрения правил обнаружения для SOC, отслеживаем запуски утилиты mount с соответствующими аргументами: "--bind", "-B", "-o bind" и "/proc")
+Также имеет смысл мониторить системный вызов mount на уровне ядра. Например, для auditd простейшее правило аудита может выглядеть так:
+auditctl -a always,exit -F arch=b64 -S mount -k mount_monitor
+В файле /var/log/audit/audit.log будут фиксироваться события монтирования, включая bind mounts. При анализе стоит обращать внимание на операции, где точкой монтирования выступают пути внутри /proc.
+
+[Media: Фото]</description><pubDate>Mon, 06 Apr 2026 07:18:46 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1274</guid></item><item><title>Qilin EDR killer infection chain</title><link>https://t.me/ThreatHuntingFather/1273</link><description>Qilin EDR killer infection chain
 Ну что очередной EDR killer от Ransomware группы:
 This blog provides an in-depth analysis of the malicious “msimg32.dll” used in Qilin ransomware attacks, which is a multi-stage infection chain targeting EDR systems. It can terminate over 300 different EDR drivers from almost every vendor in the market.
 Indicators of compromise (IOCs)
