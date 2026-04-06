@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-06T10:15:24.816856+00:00",
-  "messages_count": 138,
+  "last_update": "2026-04-06T14:56:20.544481+00:00",
+  "messages_count": 139,
   "messages": [
+    {
+      "id": "313",
+      "title": "PoisonKiller",
+      "text": "PoisonKiller\nAnother BYOVD process killer. works on CrowdStrike. fully signed.\nBlog: Reverse Engineering a 0day used Against CrowdStrike EDR\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/313",
+      "pub_date": "2026-04-06T10:58:55+00:00"
+    },
     {
       "id": "312",
       "title": "UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.",

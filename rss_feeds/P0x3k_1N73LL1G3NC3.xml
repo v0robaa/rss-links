@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 05 Apr 2026 11:40:17 +0000</lastBuildDate><item><title>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/312</link><description>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 06 Apr 2026 10:58:55 +0000</lastBuildDate><item><title>PoisonKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/313</link><description>PoisonKiller
+Another BYOVD process killer. works on CrowdStrike. fully signed.
+Blog: Reverse Engineering a 0day used Against CrowdStrike EDR
+
+[Media: Фото]</description><pubDate>Mon, 06 Apr 2026 10:58:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_313</guid></item><item><title>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/312</link><description>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.
 
 [Media: Фото]</description><pubDate>Sun, 05 Apr 2026 11:40:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_312</guid></item><item><title>KslKatzBOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/311</link><description>KslKatzBOF
 A Beacon Object File (BOF) in-line LSASS credential extraction using the KslD.sys BYOVD technique.
