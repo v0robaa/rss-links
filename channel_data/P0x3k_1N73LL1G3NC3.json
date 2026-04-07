@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-07T10:12:03.883824+00:00",
-  "messages_count": 139,
+  "last_update": "2026-04-07T15:17:21.435927+00:00",
+  "messages_count": 140,
   "messages": [
+    {
+      "id": "314",
+      "title": "ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent",
+      "text": "ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent\nFileless C2 agent written in pure x64 Assembly for Linux. Features stealth ICMP tunneling, memory-only execution via memfd_create, and terminal-independent daemonization.\nBlog: ICMP-Ghost v3.0: Advanced Stealth & DPI Evasion in Pure x64 Assembly\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/314",
+      "pub_date": "2026-04-07T11:03:24+00:00"
+    },
     {
       "id": "313",
       "title": "PoisonKiller",

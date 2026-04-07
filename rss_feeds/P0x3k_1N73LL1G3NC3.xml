@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 06 Apr 2026 10:58:55 +0000</lastBuildDate><item><title>PoisonKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/313</link><description>PoisonKiller
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 11:03:24 +0000</lastBuildDate><item><title>ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/314</link><description>ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent
+Fileless C2 agent written in pure x64 Assembly for Linux. Features stealth ICMP tunneling, memory-only execution via memfd_create, and terminal-independent daemonization.
+Blog: ICMP-Ghost v3.0: Advanced Stealth &amp; DPI Evasion in Pure x64 Assembly
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 11:03:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_314</guid></item><item><title>PoisonKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/313</link><description>PoisonKiller
 Another BYOVD process killer. works on CrowdStrike. fully signed.
 Blog: Reverse Engineering a 0day used Against CrowdStrike EDR
 

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 09:36:19 +0000</lastBuildDate><item><title>AI Security Framework by PaloAlto</title><link>https://t.me/ThreatHuntingFather/1279</link><description>AI Security Framework by PaloAlto
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 14:29:57 +0000</lastBuildDate><item><title>Анализ от Unit42: Cовременная картина угроз | Erdem Ocal</title><link>https://t.me/ThreatHuntingFather/1288</link><description>Анализ от Unit42: Cовременная картина угроз | Erdem Ocal
+Threat Landscape:
+TeamTNT
+Lazarus
+and
+APT 41 in Kazakhstan
+Something technical details:
+Berkut.exe
+VMware signed
+Malicious DLL
+C2 104.236.177.167
+😃😳
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 14:29:57 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1288</guid></item><item><title>Парни расходимся, AI будет хантить за нас, а мы будем пить кофе☕️</title><link>https://t.me/ThreatHuntingFather/1280</link><description>Парни расходимся, AI будет хантить за нас, а мы будем пить кофе☕️
+💃💃💃💃💃💃💃💃💃💃
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 10:43:01 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1280</guid></item><item><title>AI Security Framework by PaloAlto</title><link>https://t.me/ThreatHuntingFather/1279</link><description>AI Security Framework by PaloAlto
 
 [Media: Фото]</description><pubDate>Tue, 07 Apr 2026 09:36:19 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1279</guid></item><item><title>Generative AI as data exfiltration &amp; privesc vector ❗️</title><link>https://t.me/ThreatHuntingFather/1275</link><description>Generative AI as data exfiltration &amp; privesc vector ❗️
 Дико редкий, но очень интересный вектор получения доступа к конфиденциальным файлам организации через API ключики Google. Те, что годами считались «не секретами» (как в Google Maps), теперь дают атакующему доступ к файлам, если в проекте включен Generative Language API (Gemini) 😃

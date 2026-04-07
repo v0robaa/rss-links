@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Sun, 15 Mar 2026 15:22:20 +0000</lastBuildDate><item><title>Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36</title><link>https://t.me/detectioneasy/326</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 14:06:45 +0000</lastBuildDate><item><title>Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen</title><link>https://t.me/detectioneasy/327</link><description>Всем привет 💻✌️
+Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen
+👨‍💻  Как это работает?
+🔤Цепочка довольно простая: zip -&gt; vhdx -&gt; trust.exe + malicious.dll
+🔤 Пользователю доставляется архив, внутри которого находится образ диска VHDX
+🔤 После открытия и монтирования образа, жертва видит переименованный легитимный ApplicationFrameHost.exe и вредоносную библиотеку UMPDC.dll
+Автор использует исполняемый файл с доверенной репутацией, чтобы  обойти MotW
+🔭  Обнаружение:
+🔤 отслеживаем монтирование образов дисков VHD/VHDX/ISO/IMG
+🔤 отслеживаем запуск исполняемых файлов с примонтированных образов и съемных носителей
+🔤 отслеживаем загрузку неподписанных DLL рядом с системными файлами, расположенными в нетипичном пути
+🔤 отслеживаем запуск системных  файлов из пользовательских директорий, архивов, Temp и примонтированных образов
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 07 Apr 2026 14:06:45 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_327</guid></item><item><title>Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36</title><link>https://t.me/detectioneasy/326</link><description>Всем привет 💻✌️
 Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36
 .desktop — это launcher-файл, описанный в Desktop Entry Specification. Он используется desktop-environments для отображения приложений в меню и содержит параметр Exec, определяющий команду запуска.
 Пример файла из отчёта:

@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-07T10:12:11.430732+00:00",
-  "messages_count": 169,
+  "last_update": "2026-04-07T15:17:29.481047+00:00",
+  "messages_count": 171,
   "messages": [
+    {
+      "id": "1288",
+      "title": "Анализ от Unit42: Cовременная картина угроз | Erdem Ocal",
+      "text": "Анализ от Unit42: Cовременная картина угроз | Erdem Ocal\nThreat Landscape:\nTeamTNT\nLazarus\nand\nAPT 41 in Kazakhstan\nSomething technical details:\nBerkut.exe\nVMware signed\nMalicious DLL\nC2 104.236.177.167\n😃😳\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1288",
+      "pub_date": "2026-04-07T14:29:57+00:00"
+    },
+    {
+      "id": "1280",
+      "title": "Парни расходимся, AI будет хантить за нас, а мы будем пить кофе☕️",
+      "text": "Парни расходимся, AI будет хантить за нас, а мы будем пить кофе☕️\n💃💃💃💃💃💃💃💃💃💃\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1280",
+      "pub_date": "2026-04-07T10:43:01+00:00"
+    },
     {
       "id": "1279",
       "title": "AI Security Framework by PaloAlto",

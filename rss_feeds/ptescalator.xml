@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 17:20:17 +0000</lastBuildDate><item><title>Message 686</title><link>https://t.me/ptescalator/686</link><description/><pubDate>Fri, 03 Apr 2026 17:20:17 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_686</guid></item><item><title>Пятничная рассылка 🐽</title><link>https://t.me/ptescalator/684</link><description>Пятничная рассылка 🐽
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 13:41:24 +0000</lastBuildDate><item><title>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋</title><link>https://t.me/ptescalator/687</link><description>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋
+За последнее время произошло немало событий. Например, кто-то решил поиграть в меценатство и опубликовал 30 релизов с именами NPM-библиотек для логирования:
+• @logcore/pino-pretty-logger
+• console-loggers
+• jellyfi-pino-pretty-logger
+• jonas-prettier-logger
+• logger-beauty
+• pino-logger-utils
+• pino-pretty-log
+• pino-pretty-logger
+• pretty-pino-logger
+• pretty-ts-logger
+• ts-moduler
+• wrapped-logger-utils
+Это не просто спам-кампания: эти библиотеки несут в себе инфостилер и бэкдор.
+Нам даже удалось в этот раз кому-то уступить в борьбе за звание «самая быстрая рука на диком опенсорсе» — первыми зарепортили лишь 5 из 12 пакетов 🥺
+Кампания использует обфускацию. Изначально злоумышленник защищал только имена переменных, но затем стал XOR-ить строки (скриншоты 1, 2).
+Вредоносная логика активируется во время импорта библиотеки:
+1️⃣Определение ОС жертвы и сбор базовой информации о системе (IP-адрес сетевого устройства, имя пользователя).
+2️⃣Параллельное выполнение двух задач:
+🔗Быстрая кража: отправление на сервер злоумышленника файла .env, если он есть в текущей рабочей директории.
+🔗Обход домашней директории в поисках файлов с расширениями .env / .json. В коде есть небольшая оптимизация — при обходе будут пропущены следующие папки:
+'node_modules', 'Library', 'System', 'Windows', 'Program Files', 'ProgramData',
+'build', 'dist', 'out', 'output', 'release', 'bin', 'obj', 'Debug', 'Release',
+'target', 'target2', 'public', 'private', 'tmp', 'temp', 'var', 'cache', 'log',
+'logs', 'sample', 'samples',
+'assets', 'media', 'fonts', 'icons', 'images', 'img', 'static', 'resources', 'audio', 'videos', 'video', 'music',
+'svn', 'cvs', 'hg', 'mercurial', 'registry',
+'__MACOSX', 'vscode', 'eslint', 'prettier', 'yarn', 'pnpm', 'next',
+'pkg', 'move', 'rustup', 'toolchains',
+'migrations', 'snapshots', 'ssh', 'socket.io', 'svelte-kit', 'vite',
+'coverage', 'history', 'terraform'
+Пользователям Linux особенно не повезет: им в ~/.ssh/authorized_keys закинут новый публичный SSH-ключ. При работающем сервисе sshd и разрешении использовать ssh-ключ для текущего пользователя позволит злоумышленнику подключаться к устройству 😍
+Под Windows помимо обхода домашней директории стилер пройдется по всем подключенным дискам.
+3️⃣Отправка всех собранных данных на сервер злоумышленника.
+———
+В версиях пакета, где применяется более продвинутая обфускация, злоумышленник уточняет, какие конкретно файлы ему нужны:
+const ENV_LIKE_FILES = new Set([
+'.env', '.env.local', '.env.production', '.env.development',
+'.config', '.npmrc', '.pypirc', '.git-credentials', 'wallet.dat', 'id.json', 'key.json', 'keystore/*.json',
+]);
+const JSON_LIKE_FILES = new Set(['config.json', 'settings.json', 'secrets.json']);
+Вероятно, это связано с большим количеством мусора при сборе всех json-файлов.
+Также добавилась кража директории tdata, содержащей данные сессии Telegram 🤢
+———
+Дежурное напоминание: не ослабляйте бдительность при работе с опенсорс-проектами 😑
+#npm #ti #scs #pyanalysis
+@ptescalator (X, Max)
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 13:41:24 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_687</guid></item><item><title>Message 686</title><link>https://t.me/ptescalator/686</link><description/><pubDate>Fri, 03 Apr 2026 17:20:17 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_686</guid></item><item><title>Пятничная рассылка 🐽</title><link>https://t.me/ptescalator/684</link><description>Пятничная рассылка 🐽
 Представьте: вы — сотрудник одной российской организации, и вам в пятницу некая Надежда Артуровна 😌 присылает письмо (скриншот 1) с просьбой пройти опрос. Как всегда, сотрудник федерального предприятия просит все и в кратчайшие сроки. Ваши действия? 🤔
 Если вы поверите лжесотруднику и попробуете пройти опрос, то внутри архива вас будет ждать одноименный файл Опросный_лист_ЦРП_ВПК_Предзаполненны.xll (вы же тоже заметили ошибку?). Он является DLL-кой — специальным модулем Microsoft Excel. При открытии xll-файла происходит дроп и запуск вредоносной нагрузки %LOCALAPPDATA%\\Comms\\mspm.exe, в то время как вы, ничего не подозревая, будете видеть только таблицу-приманку %USERPROFILE%\\Documents\\Tablica1.xls (скриншот 2) 😶
 Но мы искренне надеемся, что, несмотря на пятницу, вы бдительны 👓. Ведь сама нагрузка является ИИ-сгенерированным бэкдором WarpPlugin, он же EchoGather — известный инструмент GOFFEE. В его основные возможности входит:
