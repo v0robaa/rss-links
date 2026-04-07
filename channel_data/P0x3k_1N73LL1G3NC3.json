@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-07T15:17:21.435927+00:00",
-  "messages_count": 140,
+  "last_update": "2026-04-07T19:14:43.500865+00:00",
+  "messages_count": 141,
   "messages": [
+    {
+      "id": "315",
+      "title": "Message 315",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/315",
+      "pub_date": "2026-04-07T16:30:05+00:00"
+    },
     {
       "id": "314",
       "title": "ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent",
