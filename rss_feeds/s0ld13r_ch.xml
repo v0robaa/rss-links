@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 03 Apr 2026 09:00:39 +0000</lastBuildDate><item><title>Qilin EDR killer infection chain</title><link>https://t.me/s0ld13r_ch/373</link><description>Qilin EDR killer infection chain
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 07:34:42 +0000</lastBuildDate><item><title>Generative AI as data exfiltration &amp; privesc vector ❗️</title><link>https://t.me/s0ld13r_ch/374</link><description>Generative AI as data exfiltration &amp; privesc vector ❗️
+Дико редкий, но очень интересный вектор получения доступа к конфиденциальным файлам организации через API ключики Google. Те, что годами считались «не секретами» (как в Google Maps), теперь дают атакующему доступ к файлам, если в проекте включен Generative Language API (Gemini) 😃
+В чем подвох? Раньше Google сам советовал вставлять ключи прямо в HTML. Но Gemini «подхватывает» те же самые ключи. В итоге старый ключ от карт, годами висящий на сайте, внезапно и без уведомлений получает права на чтение ваших документов, кэша и трату бюджета на LLM 🤩
+👩‍💻 PoC request:
+curl "https://generativelanguage.googleapis.com/v1beta/files?key=$API_KEY"
+Что делать? Проверить свои GCP проекты на наличие "Unrestricted" ключей и ограничить их использование только нужными API (API Restrictions) 🤩
+🔗 Blogpost: https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 07:34:42 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_374</guid></item><item><title>Qilin EDR killer infection chain</title><link>https://t.me/s0ld13r_ch/373</link><description>Qilin EDR killer infection chain
 Ну что очередной EDR killer от Ransomware группы:
 This blog provides an in-depth analysis of the malicious “msimg32.dll” used in Qilin ransomware attacks, which is a multi-stage infection chain targeting EDR systems. It can terminate over 300 different EDR drivers from almost every vendor in the market.
 Indicators of compromise (IOCs)

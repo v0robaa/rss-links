@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-04-07T05:49:49.112849+00:00",
-  "messages_count": 68,
+  "last_update": "2026-04-07T10:12:06.409776+00:00",
+  "messages_count": 69,
   "messages": [
+    {
+      "id": "374",
+      "title": "Generative AI as data exfiltration & privesc vector ❗️",
+      "text": "Generative AI as data exfiltration & privesc vector ❗️\nДико редкий, но очень интересный вектор получения доступа к конфиденциальным файлам организации через API ключики Google. Те, что годами считались «не секретами» (как в Google Maps), теперь дают атакующему доступ к файлам, если в проекте включен Generative Language API (Gemini) 😃\nВ чем подвох? Раньше Google сам советовал вставлять ключи прямо в HTML. Но Gemini «подхватывает» те же самые ключи. В итоге старый ключ от карт, годами висящий на сайте, внезапно и без уведомлений получает права на чтение ваших документов, кэша и трату бюджета на LLM 🤩\n👩‍💻 PoC request:\ncurl \"https://generativelanguage.googleapis.com/v1beta/files?key=$API_KEY\"\nЧто делать? Проверить свои GCP проекты на наличие \"Unrestricted\" ключей и ограничить их использование только нужными API (API Restrictions) 🤩\n🔗 Blogpost: https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/374",
+      "pub_date": "2026-04-07T07:34:42+00:00"
+    },
     {
       "id": "373",
       "title": "Qilin EDR killer infection chain",

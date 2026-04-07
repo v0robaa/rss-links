@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-07T05:49:53.898973+00:00",
-  "messages_count": 167,
+  "last_update": "2026-04-07T10:12:11.430732+00:00",
+  "messages_count": 169,
   "messages": [
+    {
+      "id": "1279",
+      "title": "AI Security Framework by PaloAlto",
+      "text": "AI Security Framework by PaloAlto\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1279",
+      "pub_date": "2026-04-07T09:36:19+00:00"
+    },
+    {
+      "id": "1275",
+      "title": "Generative AI as data exfiltration & privesc vector ❗️",
+      "text": "Generative AI as data exfiltration & privesc vector ❗️\nДико редкий, но очень интересный вектор получения доступа к конфиденциальным файлам организации через API ключики Google. Те, что годами считались «не секретами» (как в Google Maps), теперь дают атакующему доступ к файлам, если в проекте включен Generative Language API (Gemini) 😃\nВ чем подвох? Раньше Google сам советовал вставлять ключи прямо в HTML. Но Gemini «подхватывает» те же самые ключи. В итоге старый ключ от карт, годами висящий на сайте, внезапно и без уведомлений получает права на чтение ваших документов, кэша и трату бюджета на LLM 🤩\n👩‍💻 PoC request:\ncurl \"https://generativelanguage.googleapis.com/v1beta/files?key=$API_KEY\"\nЧто делать? Проверить свои GCP проекты на наличие \"Unrestricted\" ключей и ограничить их использование только нужными API (API Restrictions) 🤩\n🔗 Blogpost: https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1275",
+      "pub_date": "2026-04-07T09:14:29+00:00"
+    },
     {
       "id": "1274",
       "title": "Чтобы сделать вредоносные файлы невидимыми для систем защиты, атакующие используют различные техники. Самые известные  — это руткиты и буткиты. Но иногда достаточно и более простых механизмов....",
