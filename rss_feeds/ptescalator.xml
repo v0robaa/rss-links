@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 13:41:24 +0000</lastBuildDate><item><title>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋</title><link>https://t.me/ptescalator/687</link><description>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 08 Apr 2026 09:17:42 +0000</lastBuildDate><item><title>CHM-оснастка, будильники, ЦИБ МО РФ и биткоин-яйца 🤖</title><link>https://t.me/ptescalator/689</link><description>CHM-оснастка, будильники, ЦИБ МО РФ и биткоин-яйца 🤖
+В конце декабря прошлого года команда Threat Intelligence экспертного центра кибербезопасности Positive Technologies обнаружила атаки, которые мы атрибутировали ранее описанной исследователями группировке CapFix.
+Злоумышленники использовали PDF-документы, которые маскировались под «повреждtнные» и побуждали пользователей скачать RAR-архив, внутри которого находился скрипт. Этот скрипт скачивал файл a.gif и переименовывал его в dmitry_medvedev.msi 😶, который впоследствии приводил к заражению пользователя вредоносным ПО CapDoor.
+Инфраструктура группировки притворялась легитимными доменами, связанными с обновлениями Windows, и регистрировалась через onionmail. Но еще интереснее, что группировка использовала ряд легитимных IP-адресов и доменов, которые, по нашему мнению, злоумышленники взломали примерно за месяц до самих атак с помощью CVE-2025-49113 👨‍💻
+В марте группировка возобновила эти атаки с измененной версией CapDoor, что говорит о том, что злоумышленники продолжают развивать свой инструмент.
+Как именно злоумышленники развивают CapDoor, как группировка ранее использовала ClickFix и при чем тут биткоин-яйца — читайте в нашем исследовании ⬅️
+#TI #APT #Malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 08 Apr 2026 09:17:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_689</guid></item><item><title>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋</title><link>https://t.me/ptescalator/687</link><description>Библиотека-логгер и инфостилер в придачу? Спасибо, не надо 👋
 За последнее время произошло немало событий. Например, кто-то решил поиграть в меценатство и опубликовал 30 релизов с именами NPM-библиотек для логирования:
 • @logcore/pino-pretty-logger
 • console-loggers

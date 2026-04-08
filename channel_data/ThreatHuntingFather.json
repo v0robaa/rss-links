@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-07T19:14:50.915010+00:00",
-  "messages_count": 171,
+  "last_update": "2026-04-08T10:13:05.956234+00:00",
+  "messages_count": 173,
   "messages": [
+    {
+      "id": "1294",
+      "title": "https://gist.github.com/rj-chap/a17de9cb56650372202d3536fb12072a 😃",
+      "text": "https://gist.github.com/rj-chap/a17de9cb56650372202d3536fb12072a 😃",
+      "link": "https://t.me/ThreatHuntingFather/1294",
+      "pub_date": "2026-04-08T06:23:24+00:00"
+    },
+    {
+      "id": "1293",
+      "title": "Message 1293",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1293",
+      "pub_date": "2026-04-08T06:19:57+00:00"
+    },
     {
       "id": "1288",
       "title": "Анализ от Unit42: Cовременная картина угроз | Erdem Ocal",
