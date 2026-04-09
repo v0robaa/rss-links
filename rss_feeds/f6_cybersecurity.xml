@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 09 Apr 2026 05:52:18 +0000</lastBuildDate><item><title>Message 4160</title><link>https://t.me/f6_cybersecurity/4160</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 09 Apr 2026 10:17:24 +0000</lastBuildDate><item><title>Атаки азиатских группировок на российские компании участились 😧 F6 исследовала одну из последних — подробнее в техническом блоге.</title><link>https://t.me/f6_cybersecurity/4161</link><description>Атаки азиатских группировок на российские компании участились 😧 F6 исследовала одну из последних — подробнее в техническом блоге.
+В конце февраля аналитики Центра кибербезопасности F6 обнаружили атаку на одну из российских производственных компаний.
+⚙️ В качестве вектора первоначального доступа злоумышленники использовали сервисную учетную запись подрядной организации, применяемую для доступа во внутреннюю сеть организации через Check Point VPN.
+🔍 В ходе исследования установлен факт применения бэкдора ShadowPad, используемого китайскими APT-группировками.
+Анализ ВПО опубликован на F6 Malware Detonation Platform
+Данный случай  —  очередное подтверждение серьёзной опасности, исходящей от китайских APT‑групп. Организациям следует помнить о необходимости постоянного мониторинга, применения многоуровневой защиты и поддержания осведомлённости о киберугрозах.
+➡️ ЧИТАТЬ БЛОГ
 
-[Media: Видео]</description><pubDate>Thu, 09 Apr 2026 05:52:18 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4160</guid></item><item><title>👀 Скам, фишинг или ВПО? Как в F6 используют AI-анализ для точности классификации и ускорения выявления нарушений — рассказывает Станислав Гончаров.</title><link>https://t.me/f6_cybersecurity/4159</link><description>👀 Скам, фишинг или ВПО? Как в F6 используют AI-анализ для точности классификации и ускорения выявления нарушений — рассказывает Станислав Гончаров.
+[Media: Фото]</description><pubDate>Thu, 09 Apr 2026 08:30:01 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4161</guid></item><item><title>Message 4160</title><link>https://t.me/f6_cybersecurity/4160</link><description>
+
+[Media: Видео]</description><pubDate>Thu, 09 Apr 2026 10:17:24 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4160</guid></item><item><title>👀 Скам, фишинг или ВПО? Как в F6 используют AI-анализ для точности классификации и ускорения выявления нарушений — рассказывает Станислав Гончаров.</title><link>https://t.me/f6_cybersecurity/4159</link><description>👀 Скам, фишинг или ВПО? Как в F6 используют AI-анализ для точности классификации и ускорения выявления нарушений — рассказывает Станислав Гончаров.
 Цифровым угрозам для брендов и противодействию таким инцидентам посвящена большая статья в новом выпуске журнала Information Security.
 Станислав Гончаров, руководитель Digital Risk Protection в F6, рассказал, как компания усилила аналитику угроз для брендов и как оптимизировала работу всей команды.
 Инсайты по защите ритейла от кибератак — здесь.
