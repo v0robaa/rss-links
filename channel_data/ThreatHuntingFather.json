@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-09T10:17:22.565047+00:00",
-  "messages_count": 173,
+  "last_update": "2026-04-09T15:27:32.969634+00:00",
+  "messages_count": 174,
   "messages": [
+    {
+      "id": "1295",
+      "title": "THE PERIODIC TABLE OF DFIR",
+      "text": "THE PERIODIC TABLE OF DFIR\nThe Definitive Reference for Digital Forensics & Incident Response Tools\n118 Tools | 8 Categories | 69 Open Source\nhttps://ledlight33.github.io/periodic-table-of-dfir/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1295",
+      "pub_date": "2026-04-09T10:24:33+00:00"
+    },
     {
       "id": "1294",
       "title": "https://gist.github.com/rj-chap/a17de9cb56650372202d3536fb12072a 😃",
