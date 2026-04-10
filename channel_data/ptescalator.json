@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-04-10T14:55:56.820716+00:00",
-  "messages_count": 106,
+  "last_update": "2026-04-10T19:04:20.543895+00:00",
+  "messages_count": 107,
   "messages": [
+    {
+      "id": "691",
+      "title": "Message 691",
+      "text": "",
+      "link": "https://t.me/ptescalator/691",
+      "pub_date": "2026-04-10T16:40:59+00:00"
+    },
     {
       "id": "690",
       "title": "👨‍💻 Пользуетесь электронной почтой по работе? Имейте в виду, что…",
