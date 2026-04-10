@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 09 Apr 2026 10:24:33 +0000</lastBuildDate><item><title>THE PERIODIC TABLE OF DFIR</title><link>https://t.me/ThreatHuntingFather/1295</link><description>THE PERIODIC TABLE OF DFIR
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 10 Apr 2026 07:42:40 +0000</lastBuildDate><item><title>ChainShell</title><link>https://t.me/ThreatHuntingFather/1296</link><description>ChainShell
+blockchain C2 agent на борту 🙈
+The key artifact found was reset.ps1, a PowerShell deployer for a new JavaScript-based malware have named “ChainShell”. It was found on a C2 server containing Farsi code comments and Israeli IP range lists for targeting. Alongside this, two native PE payloads (“Build 120” and “Build 13”) were hidden inside steganographic JPEG images, and share hardcoded MaaS template identifiers. Both were compiled before the US and Israel attacked Iran on February 28th, consisnt with pre-staged capability ahead of anticipated escalation.
+This report documents a direct operational link between the exposed infrastructure of Iranian threat actor MuddyWater and TAG-150 CastleRAT malware – a modular malware-as-a-service (MaaS) platform developed by Russian-speaking cybercriminals.
+Through our analysis of a misconfigured C2 web server, 15 malware samples, and a novel PE payload, JUMPSEC assesses that MuddyWater operates at least two CastleRAT builds against Israeli targets with high confidence, and that they deploy additional TAG-150 JavaScript RAT variants from the same infrastructure with moderate confidence.
+🔗 https://www.jumpsec.com/guides/chainshell-muddywater-russian-criminal-infrastructure/
+🦔THF
+
+[Media: Фото]</description><pubDate>Fri, 10 Apr 2026 07:42:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1296</guid></item><item><title>THE PERIODIC TABLE OF DFIR</title><link>https://t.me/ThreatHuntingFather/1295</link><description>THE PERIODIC TABLE OF DFIR
 The Definitive Reference for Digital Forensics &amp; Incident Response Tools
 118 Tools | 8 Categories | 69 Open Source
 https://ledlight33.github.io/periodic-table-of-dfir/

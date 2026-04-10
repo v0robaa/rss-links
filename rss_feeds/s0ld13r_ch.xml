@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 07:34:42 +0000</lastBuildDate><item><title>Generative AI as data exfiltration &amp; privesc vector ❗️</title><link>https://t.me/s0ld13r_ch/374</link><description>Generative AI as data exfiltration &amp; privesc vector ❗️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 10 Apr 2026 06:55:23 +0000</lastBuildDate><item><title>🔍 AI Scanner - пентест для LLM-моделей</title><link>https://t.me/s0ld13r_ch/378</link><description>🔍 AI Scanner - пентест для LLM-моделей
+Mozilla 0din AI - это что-то похожее на Project Zero у Google. AI Scanner - open-source веб-платформа для security-оценки языковых моделей.
+Если тестируете AI-системы или внедряете LLM в продукт - стоит попробовать.
+📖 Что умеет:
+🎯 Сканирование API-based LLM и браузерных чат-интерфейсов
+📊 Метрика Attack Success Rate (ASR) + тренды по времени
+📄 Экспорт PDF-отчетов с детализацией по каждой атаке
+📡 Интеграция с SIEM (Splunk / Rsyslog)
+🏢 Multi-tenant с шифрованием данных
+🔓 Без ограничений - все фичи бесплатно
+📦Под капотом:
+Движок - NVIDIA garak, 179 проверок по 35 классам уязвимостей, покрывает OWASP LLM Top 10
+🛡Применение:
+Red team AI-продуктов, Bug bounty на LLM-системы, Compliance-аудит собственного AI-сервиса
+Быстрый старт:
+curl -sL https://raw.githubusercontent.com/0din-ai/ai-scanner/main/scripts/install.sh | bash
+🔗 https://github.com/0din-ai/ai-scanner
+#ai #redteam #llm #pentest #tools
+
+[Media: Фото]</description><pubDate>Fri, 10 Apr 2026 06:55:23 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_378</guid></item><item><title>Generative AI as data exfiltration &amp; privesc vector ❗️</title><link>https://t.me/s0ld13r_ch/374</link><description>Generative AI as data exfiltration &amp; privesc vector ❗️
 Дико редкий, но очень интересный вектор получения доступа к конфиденциальным файлам организации через API ключики Google. Те, что годами считались «не секретами» (как в Google Maps), теперь дают атакующему доступ к файлам, если в проекте включен Generative Language API (Gemini) 😃
 В чем подвох? Раньше Google сам советовал вставлять ключи прямо в HTML. Но Gemini «подхватывает» те же самые ключи. В итоге старый ключ от карт, годами висящий на сайте, внезапно и без уведомлений получает права на чтение ваших документов, кэша и трату бюджета на LLM 🤩
 👩‍💻 PoC request:

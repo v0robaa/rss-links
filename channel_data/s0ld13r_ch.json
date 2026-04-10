@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-04-10T06:02:34.224111+00:00",
-  "messages_count": 69,
+  "last_update": "2026-04-10T10:13:01.877833+00:00",
+  "messages_count": 70,
   "messages": [
+    {
+      "id": "378",
+      "title": "🔍 AI Scanner - пентест для LLM-моделей",
+      "text": "🔍 AI Scanner - пентест для LLM-моделей\nMozilla 0din AI - это что-то похожее на Project Zero у Google. AI Scanner - open-source веб-платформа для security-оценки языковых моделей.\nЕсли тестируете AI-системы или внедряете LLM в продукт - стоит попробовать.\n📖 Что умеет:\n🎯 Сканирование API-based LLM и браузерных чат-интерфейсов\n📊 Метрика Attack Success Rate (ASR) + тренды по времени\n📄 Экспорт PDF-отчетов с детализацией по каждой атаке\n📡 Интеграция с SIEM (Splunk / Rsyslog)\n🏢 Multi-tenant с шифрованием данных\n🔓 Без ограничений - все фичи бесплатно\n📦Под капотом:\nДвижок - NVIDIA garak, 179 проверок по 35 классам уязвимостей, покрывает OWASP LLM Top 10\n🛡Применение:\nRed team AI-продуктов, Bug bounty на LLM-системы, Compliance-аудит собственного AI-сервиса\nБыстрый старт:\ncurl -sL https://raw.githubusercontent.com/0din-ai/ai-scanner/main/scripts/install.sh | bash\n🔗 https://github.com/0din-ai/ai-scanner\n#ai #redteam #llm #pentest #tools\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/378",
+      "pub_date": "2026-04-10T06:55:23+00:00"
+    },
     {
       "id": "374",
       "title": "Generative AI as data exfiltration & privesc vector ❗️",

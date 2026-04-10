@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-10T06:02:39.020571+00:00",
-  "messages_count": 174,
+  "last_update": "2026-04-10T10:13:07.094651+00:00",
+  "messages_count": 175,
   "messages": [
+    {
+      "id": "1296",
+      "title": "ChainShell",
+      "text": "ChainShell\nblockchain C2 agent на борту 🙈\nThe key artifact found was reset.ps1, a PowerShell deployer for a new JavaScript-based malware have named “ChainShell”. It was found on a C2 server containing Farsi code comments and Israeli IP range lists for targeting. Alongside this, two native PE payloads (“Build 120” and “Build 13”) were hidden inside steganographic JPEG images, and share hardcoded MaaS template identifiers. Both were compiled before the US and Israel attacked Iran on February 28th, consisnt with pre-staged capability ahead of anticipated escalation.\nThis report documents a direct operational link between the exposed infrastructure of Iranian threat actor MuddyWater and TAG-150 CastleRAT malware – a modular malware-as-a-service (MaaS) platform developed by Russian-speaking cybercriminals.\nThrough our analysis of a misconfigured C2 web server, 15 malware samples, and a novel PE payload, JUMPSEC assesses that MuddyWater operates at least two CastleRAT builds against Israeli targets with high confidence, and that they deploy additional TAG-150 JavaScript RAT variants from the same infrastructure with moderate confidence.\n🔗 https://www.jumpsec.com/guides/chainshell-muddywater-russian-criminal-infrastructure/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1296",
+      "pub_date": "2026-04-10T07:42:40+00:00"
+    },
     {
       "id": "1295",
       "title": "THE PERIODIC TABLE OF DFIR",

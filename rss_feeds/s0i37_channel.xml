@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Wed, 01 Apr 2026 10:50:06 +0000</lastBuildDate><item><title>Разыгрываем хакеров в день 1 апреля.</title><link>https://t.me/s0i37_channel/267</link><description>Разыгрываем хакеров в день 1 апреля.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Fri, 10 Apr 2026 08:52:00 +0000</lastBuildDate><item><title>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой...</title><link>https://t.me/s0i37_channel/268</link><description>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой сетевой карты. На Linux просмотр беспроводных сетей можно производить с помощью встроенной утилиты iw, дающий очень много информации про каждую точку доступа, что не очень удобно для быстрого просмотра.
+Я написал небольшой скрипт обёртку над утилитой iw для сканирования Wi-Fi.
+https://github.com/s0i37/wifi/blob/main/scan.sh
+Скрипт можно запускать на любой сетевой карте, даже при активном подключении.
+Удобно использовать для простой разведки, особенно на устройствах без монитор режима (Android). Результаты выводятся в waterfall форме, подходящей для просмотра на небольших экранах, в отличие от непрерывно меняющихся airodump, bettercap, kismet.
+
+[Media: Фото]</description><pubDate>Fri, 10 Apr 2026 08:52:00 +0000</pubDate><guid isPermaLink="false">telegram_s0i37_channel_268</guid></item><item><title>Разыгрываем хакеров в день 1 апреля.</title><link>https://t.me/s0i37_channel/267</link><description>Разыгрываем хакеров в день 1 апреля.
 А вы знали что все хакерские утилиты airodump-ng, bettercap и прочие показывают частотный канал точки доступа не фактический, а лишь тот который указан в beacon-пакете:
 beacon = RadioTap()/Dot11(type=0, subtype=8, addr1='ff:ff:ff:ff:ff:ff', addr2=ap, addr3=ap)/\
 Dot11Beacon(cap='ESS+privacy')/\
