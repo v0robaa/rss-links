@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-11T05:27:00.729895+00:00",
-  "messages_count": 144,
+  "last_update": "2026-04-11T09:50:30.352854+00:00",
+  "messages_count": 145,
   "messages": [
+    {
+      "id": "319",
+      "title": "GodPotatoBOF",
+      "text": "GodPotatoBOF\nCobalt Strike BOF used to perform privilege escalation by exploiting the SeImpersonate privilege. OPSEC safe alternative to the .NET version. Based on the original GodPotato.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/319",
+      "pub_date": "2026-04-11T08:12:30+00:00"
+    },
     {
       "id": "318",
       "title": "Кто top, а кто топ-топ на хуй)",

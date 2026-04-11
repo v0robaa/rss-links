@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-11T05:27:07.815541+00:00",
-  "messages_count": 175,
+  "last_update": "2026-04-11T09:50:37.647482+00:00",
+  "messages_count": 176,
   "messages": [
+    {
+      "id": "1303",
+      "title": "Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂",
+      "text": "Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂\nhttps://github.com/ionsec/OpenClaw-Threat-Intel",
+      "link": "https://t.me/ThreatHuntingFather/1303",
+      "pub_date": "2026-04-11T07:20:56+00:00"
+    },
     {
       "id": "1296",
       "title": "ChainShell",
