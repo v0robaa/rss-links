@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 11 Apr 2026 07:20:56 +0000</lastBuildDate><item><title>Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂</title><link>https://t.me/ThreatHuntingFather/1303</link><description>Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 11 Apr 2026 10:59:13 +0000</lastBuildDate><item><title>[ATT&amp;CK MATRIX v19]</title><link>https://t.me/ThreatHuntingFather/1304</link><description>[ATT&amp;CK MATRIX v19]
+Конец "Defense Evasion" - переосмысление тактик атакующих
+❕ ATT&amp;CK переживает серьёзную структурную эволюцию, направленную на улучшение удобства для защитников и аналитической точности. Самое значимое касается тактики «Defense Evasion» и её замена более точными, целеориентированными тактиками. Изменения появятся в ATT&amp;CK v19 28 апреля.
+❕ Цели обновления:
+• Повысить аналитическую точность
+• Привести тактики в соответствие с реальными целями атакующих
+• Устранить неоднозначность в detection и threat modeling
+• Улучшить операционное удобство для защитников и CTI-команд
+📌 КЛЮЧЕВОЕ ИЗМЕНЕНИЕ: УДАЛЕНИЕ «DEFENSE EVASION»
+В чём проблема: Тактика стала перегруженной и размытой. Часто использовалась как «дополнительная тактика» для техник. Снижала ясность в detection engineering, анализе угроз и adversary emulation
+📍 ТАКТИКИ = ЦЕЛИ АТАКУЮЩЕГО
+MITRE подчёркивает основополагающий принцип:
+Тактики отвечают на вопрос ЗАЧЕМ
+Техники отвечают на вопрос КАК
+Примеры целей:
+• Initial Access → проникнуть в среду
+• Persistence → закрепиться
+• Privilege Escalation → получить повышенный доступ
+✷ Defense Evasion в эту модель не вписывается.
+📍 НОВЫЕ ТАКТИКИ
+■ Stealth
+• Цель: избежать обнаружения, скрывая артефакты и активность
+• Характеристики: обфускация, имперсонейт, сокрытие файлов/процессов, мимикрия под легитимное окружение
+• Пример: bind mounts, скрывающие вредоносные директории
+■ Impair Defenses
+• Цель: деградация или отключение защитных механизмов
+• Характеристики: манипуляция логами, обход средств защиты, изменение политик, вмешательство в работу EDR/AV
+• Примеры: отключение средств защиты, изменение телеметрии, разрыв monitoring-пайплайнов
+📍 РЕСТРУКТУРИЗАЦИЯ ТЕХНИК
+Техники, ранее помеченные тактикой Defense Evasion, будут переназначены в более подходящие тактики.
+Примеры переклассификации:
+• BITS Jobs → перенесён в Persistence
+• Process Injection → разбит на Injection и Redirection
+• DLL Hijacking → перенесён в Execution
+• Modify Registry → возможное удаление; вспомогательный механизм, а не самостоятельная цель
+📍 ОПЕРАЦИОННЫЕ ПОСЛЕДСТВИЯ
+Большинство T-кодов техник не меняется - только их привязка к тактике. Тем не менее ряд вещей потребует внимания:
+• Правила на TA0005 продолжат работать, но будут покрывать меньше поведений, чем раньше - Stealth наследует этот ID
+• Для Impair Defenses будет выпущен новый tactic ID, который нужно будет добавить в правила и плейбуки - иначе появится слепое пятно там, где его раньше не было
+• Правила, завязанные на T1562 как родительскую технику, потребуют переработки - она упраздняется и поднимается до уровня тактики
+• Стоит проверить: SIEM-правила, ATT&amp;CK Navigator layers, CTI-плейбуки и automation-пайплайны
+Почитать оригинал:🔗 https://d3security.com/blog/mitre-attack-v19/
+🦔THF</description><pubDate>Sat, 11 Apr 2026 10:59:13 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1304</guid></item><item><title>Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂</title><link>https://t.me/ThreatHuntingFather/1303</link><description>Если у вас есть Virustotal, то можете отдать аккаунт OpenClaw, он ваш индикатор обогатит 😂
 https://github.com/ionsec/OpenClaw-Threat-Intel</description><pubDate>Sat, 11 Apr 2026 07:20:56 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1303</guid></item><item><title>ChainShell</title><link>https://t.me/ThreatHuntingFather/1296</link><description>ChainShell
 blockchain C2 agent на борту 🙈
 The key artifact found was reset.ps1, a PowerShell deployer for a new JavaScript-based malware have named “ChainShell”. It was found on a C2 server containing Farsi code comments and Israeli IP range lists for targeting. Alongside this, two native PE payloads (“Build 120” and “Build 13”) were hidden inside steganographic JPEG images, and share hardcoded MaaS template identifiers. Both were compiled before the US and Israel attacked Iran on February 28th, consisnt with pre-staged capability ahead of anticipated escalation.
