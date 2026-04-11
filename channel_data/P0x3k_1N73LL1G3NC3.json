@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-11T14:41:44.889907+00:00",
-  "messages_count": 145,
+  "last_update": "2026-04-11T18:56:15.394254+00:00",
+  "messages_count": 146,
   "messages": [
+    {
+      "id": "320",
+      "title": "TailVNC",
+      "text": "TailVNC\nA Windows remote desktop persistence tool built on top of Tailscale's WireGuard-encrypted mesh network. TailVNC embeds a fully self-contained VNC server and Tailscale node into a single binary, enabling secure remote desktop access over Tailscale/Headscale without exposing any ports to the public internet. Designed for both legitimate infrastructure administration and red team persistence operations.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/320",
+      "pub_date": "2026-04-11T17:14:54+00:00"
+    },
     {
       "id": "319",
       "title": "GodPotatoBOF",
