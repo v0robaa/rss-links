@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-14T19:25:53.566232+00:00",
-  "messages_count": 179,
+  "last_update": "2026-04-15T06:04:35.385857+00:00",
+  "messages_count": 180,
   "messages": [
+    {
+      "id": "1307",
+      "title": "The Windows Forensic Analysis Playbook is a field-ready reference built to help DFIR practitioners understand six critical Windows artifacts, where they are stored, and their role in forensic...",
+      "text": "The Windows Forensic Analysis Playbook is a field-ready reference built to help DFIR practitioners understand six critical Windows artifacts, where they are stored, and their role in forensic investigations.\n• Jump Lists: Reconstruct application usage and file access patterns tied to user accounts.\n• LNK Files: Identify evidence of file and folder access, including activity tied to removable media and network shares.\n• RecentDocs & OpenSave MRU: Review recent user interactions and file access order stored in the Windows Registry.\n• Prefetch: Understand how Windows records program execution, run counts, and execution timestamps.\n• SRUM: Examine application usage and network activity history stored in the SRUM database.\n• Windows Event Logs: Analyze authentication, service creation, and system activity recorded in EVTX logs\n🔗 https://www.sans.org/posters/windows-forensic-analysis-playbook\n🦔THF - ну или спросите AI как форзить 😃",
+      "link": "https://t.me/ThreatHuntingFather/1307",
+      "pub_date": "2026-04-15T04:39:14+00:00"
+    },
     {
       "id": "1306",
       "title": "Kimsuky (APT43, DPRK) засветил C2 с открытым directory listing. Breakglass Intelligence забрал полный исходник всех трёх стадий kill chain до ротации.",
