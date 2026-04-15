@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-15T10:21:31.977612+00:00",
-  "messages_count": 147,
+  "last_update": "2026-04-15T15:11:29.049369+00:00",
+  "messages_count": 148,
   "messages": [
+    {
+      "id": "322",
+      "title": "BlueSAM BOF",
+      "text": "BlueSAM BOF\nA Cobalt Strike Beacon Object File adaptation of BlueSAM that attempts to obtain a copy of the SAM database through Windows Defender update/VSS behavior and process offline registry data from Beacon.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/322",
+      "pub_date": "2026-04-15T12:47:19+00:00"
+    },
     {
       "id": "321",
       "title": "Message 321",
