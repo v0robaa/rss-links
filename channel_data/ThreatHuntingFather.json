@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-16T06:07:21.010539+00:00",
-  "messages_count": 180,
+  "last_update": "2026-04-16T10:20:51.837792+00:00",
+  "messages_count": 182,
   "messages": [
+    {
+      "id": "1312",
+      "title": "Ну кстати, другая вариация использования Claude 😂",
+      "text": "Ну кстати, другая вариация использования Claude 😂\nhttps://t.me/s0ld13r_ch/379",
+      "link": "https://t.me/ThreatHuntingFather/1312",
+      "pub_date": "2026-04-16T09:26:38+00:00"
+    },
+    {
+      "id": "1308",
+      "title": "\"AI - взломай компанию\"",
+      "text": "\"AI - взломай компанию\"\nAI-assisted breach of Mexico government infrastructure\nЕщё один показательный кейс про то, как AI уже используются не для “напиши мне PoC”, а как рабочий инструмент в реальной атаке. В докладе Gambit Security описана кампания конца декабря 2025 - середины февраля 2026, в которой один оператор скомпрометировал как минимум 9 мексиканских госорганизаций, эксфильтровал данные из баз с сотнями миллионов записей, получил доступ к сотням внутренних серверов и поверх компрометации поднял live query API к системам SAT и отдельный сервис поддельных tax status certificates. В самом отчёте это прямо описано как hybrid, human-directed operation, где Claude Code и GPT-4.1 API были core operational tools.\nClaude Code использовался как interactive exploitation assistant: под него заранее подготовили claude.md - 1084-строчный cheatsheet с anti-forensics, privilege escalation, Active Directory attacks, credential spraying и persistence. После этого файл автоматически подгружался в новые сессии. Уже через 12 минут после загрузки этого файла оператор направил Claude на SAT, прогнал Vulmap по внешнему серверу и после нескольких итераций получил RCE. Дальше Claude собрал отдельный s2_005_exploit.py с proxy support и retry logic и ещё несколько раз дорабатывал payload delivery, Unicode escapes и base64-encoding, пока не добил стабильное выполнение.\nСледующий этап - работа внутри сети. В Registro Civil Claude уже действовал через SSH tunnels и Chisel SOCKS proxies, параллельно вёл extraction jobs, дампы и transfer’ы. На одном из database северов он нашёл writable crontab, использовал scheduled script для добавления SSH key в root/.ssh/authorized_keys, вернул timestamps, а после срабатывания cron получил root. После этого, как указано в отчёте, были выполнены dump shadow, извлечение root password hash и cleanup timestamps. То есть инструмент закрывал не только эксплуатацию, но и privesc с постэксплуатацией.\nДля масштаба оператор отдельно использовал BACKUPOSINT.py на 17 550 строк. Этот инструмент собирал с уже скомпрометированных SAT-хостов процессы, порты, конфиги, histories, credentials и SSH keys, после чего прогонял всё через GPT-4.1 API. По данным исследователей, так были проанализированы 305 внутренних серверов и сформированы 2597 structured intelligence reports. На этой базе потом появился sat_api_DEFINITIVO.py - Flask REST API на 594 строки, который через proxy tunnels ходил в live SAT systems и на каждый запрос собирал данные из database procedures, дополнительных DB query, SOAP и LDAP. Поверх него уже работал forgery layer: generar_constancia_pdf.py, который формировал поддельные налоговые сертификаты на основе актуальных данных из госинфраструктуры. При этом в отчёте отдельно отмечено, что сам forgery script был написан вне Claude Code sessions.\nПо масштабу последствий кейс тоже неприятный. У SAT, по данным доклада, ушли около 195 млн taxpayer записей и 52 млн directory записей , у Registro Civil de CDMX - около 220 млн civil записей, а в Jalisco злоумышленник получил административный контроль над 13-node Nutanix cluster, обеими management consoles и 37 database серверами.\nОтчет Gambit 🔗 https://cdn.prod.website-files.com/69944dd945f20ca4a27a7c47/69d8bb5aea59e31efb3b8a7f_Tech_Report_ai_breach_mex_gov.pdf\n🦔THF\nВот так вот: Human operated AI уже работает и масштаб поражает, надеюсь защита от такой скорости будет возможно\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1308",
+      "pub_date": "2026-04-16T07:29:15+00:00"
+    },
     {
       "id": "1307",
       "title": "The Windows Forensic Analysis Playbook is a field-ready reference built to help DFIR practitioners understand six critical Windows artifacts, where they are stored, and their role in forensic...",
