@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 15 Apr 2026 12:47:19 +0000</lastBuildDate><item><title>BlueSAM BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/322</link><description>BlueSAM BOF
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 16 Apr 2026 12:19:31 +0000</lastBuildDate><item><title>RedSun (Windows Defender LPE 0day)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/323</link><description>RedSun (Windows Defender LPE 0day)
+When Windows Defender realizes that a malicious file has a cloud tag, for whatever stupid and hilarious reason, the antivirus that's supposed to protect decides that it is a good idea to just rewrite the file it found again to it's original location. The PoC abuses this behaviour to overwrite system files and gain administrative privileges.
+
+[Media: Фото]</description><pubDate>Thu, 16 Apr 2026 12:19:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_323</guid></item><item><title>BlueSAM BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/322</link><description>BlueSAM BOF
 A Cobalt Strike Beacon Object File adaptation of BlueSAM that attempts to obtain a copy of the SAM database through Windows Defender update/VSS behavior and process offline registry data from Beacon.
 
 [Media: Фото]</description><pubDate>Wed, 15 Apr 2026 12:47:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_322</guid></item><item><title>Message 321</title><link>https://t.me/P0x3k_1N73LL1G3NC3/321</link><description>
