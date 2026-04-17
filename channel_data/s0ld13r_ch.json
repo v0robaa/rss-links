@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-04-17T10:18:24.880487+00:00",
-  "messages_count": 71,
+  "last_update": "2026-04-17T15:01:13.904131+00:00",
+  "messages_count": 72,
   "messages": [
+    {
+      "id": "384",
+      "title": "Кейс с Google Recaptcha и WebArchive",
+      "text": "Кейс с Google Recaptcha и WebArchive\nВ пентестах может случиться такое, что вы нашли старый сервис, где сломана регистрация из-за нерабочего Google Recaptcha. Либо стоит заглушка, нафаззили эндпоинт регистрации, но нет токена от каптчи.\nВ таких случаях можно пойти на WebArchive и в старых снимках сайта получить токен. Благо WebArchive не урезает JavaScript. Далее с этим ключем идем в консоль браузера и успешно получаем нужный токен для эндпоинта:\nconst script = document.createElement('script');\nscript.src = 'https://www.google.com/recaptcha/api.js?render=<API_KEY_FROM_WEBARCHIVE>';\ndocument.head.appendChild(script);\ngrecaptcha.execute('<API_KEY_FROM_WEBARCHIVE>', {action: 'register'});\n@onebrick",
+      "link": "https://t.me/s0ld13r_ch/384",
+      "pub_date": "2026-04-17T11:51:34+00:00"
+    },
     {
       "id": "379",
       "title": "Claude Code Hooks as Initial Access & Persistence 🈁",

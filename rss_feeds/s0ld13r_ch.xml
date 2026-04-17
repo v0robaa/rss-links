@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 16 Apr 2026 07:12:10 +0000</lastBuildDate><item><title>Claude Code Hooks as Initial Access &amp; Persistence 🈁</title><link>https://t.me/s0ld13r_ch/379</link><description>Claude Code Hooks as Initial Access &amp; Persistence 🈁
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 17 Apr 2026 11:51:34 +0000</lastBuildDate><item><title>Кейс с Google Recaptcha и WebArchive</title><link>https://t.me/s0ld13r_ch/384</link><description>Кейс с Google Recaptcha и WebArchive
+В пентестах может случиться такое, что вы нашли старый сервис, где сломана регистрация из-за нерабочего Google Recaptcha. Либо стоит заглушка, нафаззили эндпоинт регистрации, но нет токена от каптчи.
+В таких случаях можно пойти на WebArchive и в старых снимках сайта получить токен. Благо WebArchive не урезает JavaScript. Далее с этим ключем идем в консоль браузера и успешно получаем нужный токен для эндпоинта:
+const script = document.createElement('script');
+script.src = 'https://www.google.com/recaptcha/api.js?render=&lt;API_KEY_FROM_WEBARCHIVE&gt;';
+document.head.appendChild(script);
+grecaptcha.execute('&lt;API_KEY_FROM_WEBARCHIVE&gt;', {action: 'register'});
+@onebrick</description><pubDate>Fri, 17 Apr 2026 11:51:34 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_384</guid></item><item><title>Claude Code Hooks as Initial Access &amp; Persistence 🈁</title><link>https://t.me/s0ld13r_ch/379</link><description>Claude Code Hooks as Initial Access &amp; Persistence 🈁
 👩‍💻 А все еще помнят VSCode task backdoor?
 Основная философия абуза VSCode заключалась в том, что нельзя доверять проектам, которые в нем открываешь. Атакующий мог «вшить» сюрприз в .vscode/tasks.json, и как только ты доверился воркспейсу - loader запустился в фоне. Ты скомпрометирован🚬
 История циклична. Просматривая документацию к Claude Code (и его аналогам вроде Gemini CLI), я наткнулся на механизм Hooks 🤩
