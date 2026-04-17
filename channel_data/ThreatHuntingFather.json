@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-17T06:07:55.540236+00:00",
-  "messages_count": 183,
+  "last_update": "2026-04-17T10:18:29.599368+00:00",
+  "messages_count": 184,
   "messages": [
+    {
+      "id": "1314",
+      "title": "Hunt.io исследовали инфраструктуру хостинг-провайдеров  и облачных сервисов в РФ на предмет наличия вредоносных C2 в период (1 января 2026 - 1 апреля 2026) и вот какие результаты они представили:",
+      "text": "Hunt.io исследовали инфраструктуру хостинг-провайдеров  и облачных сервисов в РФ на предмет наличия вредоносных C2 в период (1 января 2026 - 1 апреля 2026) и вот какие результаты они представили:\n• TimeWeb leads hosting volume with 311 C2 detections, followed by REG.RU (138) and WebHost1 (140)\n• Keitaro dominates with 587 unique C2 IPs across Russian infrastructure\n• Post-exploitation frameworks (Cobalt Strike, Sliver, Ligolo-ng) are all present\n• Yandex.Cloud hosts the widest malware diversity: 11 distinct families across 39 C2 endpoints\n• Active campaigns tied to this infrastructure include Latrodectus via ClickFix, Lumma Stealer, Remcos RAT via SmartApeSG, and operations attributed to Head Mare\nВозможно, нам в КЗ тоже надо такой ресерч провести, глядишь TI получится 🤔\nПодробнее в отчете Hunt.io\n🔗 https://hunt.io/blog/russian-malicious-infrastructure-c2-servers-mapped\n🦔THF",
+      "link": "https://t.me/ThreatHuntingFather/1314",
+      "pub_date": "2026-04-17T08:43:45+00:00"
+    },
     {
       "id": "1313",
       "title": "🫥",
