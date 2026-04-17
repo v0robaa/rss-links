@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-04-17T15:01:30.708320+00:00",
-  "messages_count": 110,
+  "last_update": "2026-04-17T19:11:34.406679+00:00",
+  "messages_count": 111,
   "messages": [
+    {
+      "id": "706",
+      "title": "Message 706",
+      "text": "",
+      "link": "https://t.me/ptescalator/706",
+      "pub_date": "2026-04-17T17:53:58+00:00"
+    },
     {
       "id": "705",
       "title": "Путаница в уязвимостях WSUS: ставим все на свои места 🕷  Одной из самых актуальных уязвимостей в Windows Server Update Services (WSUS) стала критическая ошибка с идентификатором CVE-2025-59287 и...",
