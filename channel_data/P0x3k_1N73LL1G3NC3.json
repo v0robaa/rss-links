@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-17T19:11:15.768959+00:00",
-  "messages_count": 149,
+  "last_update": "2026-04-18T05:44:32.950197+00:00",
+  "messages_count": 150,
   "messages": [
+    {
+      "id": "324",
+      "title": "SilentHarvest BOF",
+      "text": "SilentHarvest BOF\nThis is a BOF implementation of SilentNimvest project, which is in turn based on the SilentHarvest research. It's effectively another registry-only credential dumper, replicating hashdump capabilities as well as retrieving secrets stored in the HKLM\\SECURITY\\Policy\\Secrets subkeys. Old capabilities with a \"new\" \"sneaky\" way of delivering. Only requires SeBackupPrivilege (e.g. Administrator, doesn't require SYSTEM as it would normally).\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/324",
+      "pub_date": "2026-04-18T04:43:46+00:00"
+    },
     {
       "id": "323",
       "title": "RedSun (Windows Defender LPE 0day)",
