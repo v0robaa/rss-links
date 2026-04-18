@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-18T05:44:32.950197+00:00",
-  "messages_count": 150,
+  "last_update": "2026-04-18T09:53:44.893102+00:00",
+  "messages_count": 151,
   "messages": [
+    {
+      "id": "325",
+      "title": "DSCourier",
+      "text": "DSCourier\nThe abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as a proxy for PowerShell execution through its configure subcommand.\nThis post takes that concept further. Instead of calling winget.exe, we invoke the WinGet Configuration engine directly through its COM API, completely removing the CLI process from the execution chain. The result is arbitrary code execution inside a Microsoft-signed process with no winget.exe, no powershell.exe, and no cmd.exe in the process tree.\nBlog: DSCourier: Weaponizing DSC via WinGet COM API for EDR Evasive Execution\nP.S. This technique has has bypassed CrowdStrike Falcon, Microsoft Defender for Endpoint (MDE) and Elastic Security EDR.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/325",
+      "pub_date": "2026-04-18T06:05:04+00:00"
+    },
     {
       "id": "324",
       "title": "SilentHarvest BOF",
