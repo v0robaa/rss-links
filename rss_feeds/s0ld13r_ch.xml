@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 17 Apr 2026 11:51:34 +0000</lastBuildDate><item><title>Кейс с Google Recaptcha и WebArchive</title><link>https://t.me/s0ld13r_ch/384</link><description>Кейс с Google Recaptcha и WebArchive
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 20 Apr 2026 09:04:14 +0000</lastBuildDate><item><title>Vibe Hackers be like 🈁</title><link>https://t.me/s0ld13r_ch/385</link><description>Vibe Hackers be like 🈁
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Mon, 20 Apr 2026 09:04:14 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_385</guid></item><item><title>Кейс с Google Recaptcha и WebArchive</title><link>https://t.me/s0ld13r_ch/384</link><description>Кейс с Google Recaptcha и WebArchive
 В пентестах может случиться такое, что вы нашли старый сервис, где сломана регистрация из-за нерабочего Google Recaptcha. Либо стоит заглушка, нафаззили эндпоинт регистрации, но нет токена от каптчи.
 В таких случаях можно пойти на WebArchive и в старых снимках сайта получить токен. Благо WebArchive не урезает JavaScript. Далее с этим ключем идем в консоль браузера и успешно получаем нужный токен для эндпоинта:
 const script = document.createElement('script');

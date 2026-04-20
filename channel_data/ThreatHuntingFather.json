@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-20T06:22:13.962551+00:00",
-  "messages_count": 184,
+  "last_update": "2026-04-20T10:54:01.523728+00:00",
+  "messages_count": 186,
   "messages": [
+    {
+      "id": "1316",
+      "title": "Мдаа, значит гражданин, вместо того чтобы использовать свою голову в благих целях, решил заниматься вымогательством… Фуу 🤢 ⛔️ !",
+      "text": "Мдаа, значит гражданин, вместо того чтобы использовать свою голову в благих целях, решил заниматься вымогательством… Фуу 🤢 ⛔️ !\nKazakh national arrested in Almaty for running a ransomware org that hit 6 Korean targets (hospitals, apartment mgmt offices) via credential stuffing. First direct arrest by Korean police in cooperation with Kazakhstan's NSC.\nSrc🔗 https://www.mk.co.kr/en/society/12017618",
+      "link": "https://t.me/ThreatHuntingFather/1316",
+      "pub_date": "2026-04-20T09:28:40+00:00"
+    },
+    {
+      "id": "1315",
+      "title": "Adapt or pay: an analysis of the AdaptixC2 framework",
+      "text": "Adapt or pay: an analysis of the AdaptixC2 framework\nФреймворк C2/постэксплуатации, написан на Go + C++. Архитектура классическая: сервер + агенты на скомпрометированных хостах (Windows / macOS / Linux). Упор - на гибкость сетевых каналов и уклонение от EDR/NDR.\nРасширяемость через BOF - новые модули подключаются без перекомпиляции агента.\nСетевое детектирование (NDR) остаётся одним из наиболее надёжных векторов обнаружения, однако ряд хостовых техник постэксплуатации оставляет минимальные артефакты - без EDR их не поймать. Стандартных средств защиты может не хватить.\nКак детектировать, рассказано в статье Касперских\n🔗 https://securelist.ru/tr/adaptixc2-network-and-host-detection/115197/\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/1315",
+      "pub_date": "2026-04-20T06:28:37+00:00"
+    },
     {
       "id": "1314",
       "title": "Hunt.io исследовали инфраструктуру хостинг-провайдеров  и облачных сервисов в РФ на предмет наличия вредоносных C2 в период (1 января 2026 - 1 апреля 2026) и вот какие результаты они представили:",
