@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-21T19:22:09.351416+00:00",
-  "messages_count": 186,
+  "last_update": "2026-04-22T06:04:52.397118+00:00",
+  "messages_count": 187,
   "messages": [
+    {
+      "id": "1317",
+      "title": "Cyber Triage показывают, что LLM в DFIR становится полезной только когда её кормят структурированными кейсами, заметками и playbooks аналитика (через retrieval и примеры), иначе она даёт...",
+      "text": "Cyber Triage показывают, что LLM в DFIR становится полезной только когда её кормят структурированными кейсами, заметками и playbooks аналитика (через retrieval и примеры), иначе она даёт поверхностные или вымышленные ответы.\n🔗https://www.cybertriage.com/blog/ai-dfir-how-to-share-your-skills-with-the-llm/\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1317",
+      "pub_date": "2026-04-22T03:44:20+00:00"
+    },
     {
       "id": "1316",
       "title": "Мдаа, значит гражданин, вместо того чтобы использовать свою голову в благих целях, решил заниматься вымогательством… Фуу 🤢 ⛔️ !",
