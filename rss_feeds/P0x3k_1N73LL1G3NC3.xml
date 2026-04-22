@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 19 Apr 2026 18:12:42 +0000</lastBuildDate><item><title>DLLHijackHunter</title><link>https://t.me/P0x3k_1N73LL1G3NC3/327</link><description>DLLHijackHunter
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 22 Apr 2026 18:22:31 +0000</lastBuildDate><item><title>Kerberos TGT Monitor BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/328</link><description>Kerberos TGT Monitor BOF
+Async Beacon Object File (BOF) that monitors for Kerberos logon events and wakes up the agent whenever a new Kerberos TGT is captured. Similar to Rubeus' monitor command, this BOF is running indefinitely and periodically checks the LSA ticket cache on the system. When a new TGT is detected, it prints the ticket metadata and outputs a base64-encoded kirbi blob that can be used for lateral movement via pass-the-ticket attacks.
+
+[Media: Фото]</description><pubDate>Wed, 22 Apr 2026 18:22:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_328</guid></item><item><title>DLLHijackHunter</title><link>https://t.me/P0x3k_1N73LL1G3NC3/327</link><description>DLLHijackHunter
 Automated DLL Hijacking Discovery, Validation, and Confirmation. Turning local misconfigurations into weaponized, confirmed attack paths.
 
 [Media: Фото]</description><pubDate>Sun, 19 Apr 2026 18:12:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_327</guid></item><item><title>All Cats Are Beautiful😼</title><link>https://t.me/P0x3k_1N73LL1G3NC3/326</link><description>All Cats Are Beautiful😼
