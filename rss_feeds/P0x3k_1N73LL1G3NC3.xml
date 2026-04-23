@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 12:00:33 +0000</lastBuildDate><item><title>KeeLog</title><link>https://t.me/P0x3k_1N73LL1G3NC3/330</link><description>KeeLog
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 16:08:18 +0000</lastBuildDate><item><title>Pack2TheRoot — CVE-2026-41651</title><link>https://t.me/P0x3k_1N73LL1G3NC3/331</link><description>Pack2TheRoot — CVE-2026-41651
+TOCTOU race in PackageKit's transaction handler. Any local unprivileged user can install arbitrary packages as root with no authentication.
+Blog: https://github.security.telekom.com/2026/04/pack2theroot-linux-local-privilege-escalation.html
+
+[Media: Фото]</description><pubDate>Thu, 23 Apr 2026 16:08:18 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_331</guid></item><item><title>KeeLog</title><link>https://t.me/P0x3k_1N73LL1G3NC3/330</link><description>KeeLog
 Async BOF that captures the KeePass master password by monitoring for the unlock prompt window. When a locked KeePass database is detected, a low-level keyboard hook is installed and keystrokes are captured until the prompt window disappears by being submitted, cancelled or closeed. The captured buffer is then returned to the operator and automatically reconstructed into the master password.
 
 [Media: Фото]</description><pubDate>Thu, 23 Apr 2026 12:00:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_330</guid></item><item><title>Kerberos TGT Monitor BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/328</link><description>Kerberos TGT Monitor BOF

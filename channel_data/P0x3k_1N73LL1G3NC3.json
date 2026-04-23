@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-23T15:59:04.927356+00:00",
-  "messages_count": 155,
+  "last_update": "2026-04-23T19:22:22.201814+00:00",
+  "messages_count": 156,
   "messages": [
+    {
+      "id": "331",
+      "title": "Pack2TheRoot — CVE-2026-41651",
+      "text": "Pack2TheRoot — CVE-2026-41651\nTOCTOU race in PackageKit's transaction handler. Any local unprivileged user can install arbitrary packages as root with no authentication.\nBlog: https://github.security.telekom.com/2026/04/pack2theroot-linux-local-privilege-escalation.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/331",
+      "pub_date": "2026-04-23T16:08:18+00:00"
+    },
     {
       "id": "330",
       "title": "KeeLog",
