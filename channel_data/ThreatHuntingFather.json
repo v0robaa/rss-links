@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-22T19:23:48.937116+00:00",
-  "messages_count": 188,
+  "last_update": "2026-04-23T06:11:02.650755+00:00",
+  "messages_count": 189,
   "messages": [
+    {
+      "id": "1319",
+      "title": "Summit Schedule – All Times Eastern U.S.",
+      "text": "Summit Schedule – All Times Eastern U.S.\n9:30 – Pre-Show Banter\n10:00 – Morning Keynote: David Bianco – The Hunter’s Paradox: Is It Time to Embrace Automated Threat Hunting?\n10:50 – BREAK AND BANTER\n11:00 – Faan Rossouw – How AI Agents Solve Threat Hunting’s Biggest Problem\n11:30 – Jamie Levy – Memory Forensics for Everyone\n12:00 – Sydney Marrone – Avoiding Hunt Amnesia: Building a Memory Your AI Can Use\n12:30 – LUNCH BREAK\n1:00 – Hermon Kidane – Threat Hunting with RITA: A Behavioral Analysis of C2 Traffic\n1:30 – Shane Hartman – Threat Hunting in the Dark: A Practical Approach\n2:00 – Panel: Legal Landmines, Insurance & Incident Response\n2:50 – BREAK AND BANTER\n3:00 – Lauren Proehl – Fast-track Reports into Ready-Made Hypotheses with AI\n3:30 – Afternoon Keynote: Jason Haddix – Defending AI: Organized Musings on Securing AI Agents for Cybersecurity\n4:20 – CLOSING REMARKS\nhttps://www.antisyphontraining.com/event/threat-hunting-summit/",
+      "link": "https://t.me/ThreatHuntingFather/1319",
+      "pub_date": "2026-04-23T05:35:33+00:00"
+    },
     {
       "id": "1318",
       "title": "Cyber Triage показывают, что LLM в DFIR становится полезной только когда её кормят структурированными кейсами, заметками и playbooks аналитика (через retrieval и примеры), иначе она даёт...",
