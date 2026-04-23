@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-23T10:25:31.157393+00:00",
-  "messages_count": 190,
+  "last_update": "2026-04-23T15:59:11.849188+00:00",
+  "messages_count": 191,
   "messages": [
+    {
+      "id": "1321",
+      "title": "🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation & Credential Harvesting",
+      "text": "🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation & Credential Harvesting\nТеперь точно можно сказать автоматизация рулит, но рулит она в руках атакующего🙈\nExposed сервер, проанализированный The DFIR Report, содержал инфраструктуру для multi-victim exploitation, staging, validation и сбора данных (13k+ файлов, 150+ директорий) и позволил восстановить автоматизированный pipeline.\n🌐 Сканирование миллионов целей → эксплуатация → hit scoring → alerting → secret harvesting.\nВ отчёте указано: “React2Shell (CVE-2025-55182) was central to the operation”, при этом подтверждено 900+ успешных эксплуатаций.\n🔐 Основной целью был сбор секретов из .env (30,000+ distinct filenames), которые батчились в ZIP и выгружались в S3-совместимый Filebase (bissapromax). Там найдено 65,000+ архивных записей, причём одни и те же файлы re-batched and re-uploaded.\n🎯 Артефакты показывают, что оператор выполнял triage и валидацию доступа, концентрируя активность на более ценных целях (финансы, крипто, ритейл). На хосте обнаружены не только креды, но и кластеры данных (financial, payroll, HR, CRM, communications), при этом для части жертв зафиксировано direct exploit evidence.\n📡 Управление и уведомления осуществлялись через Telegram (@bissapwned_bot), привязанный к приватному чату с “a single human operator … @BonJoviGoesHard” (“Dr. Tube”). Каждое сообщение представляло один confirmed CVE-2025-55182 hit с контекстом.\n🤖 В инфраструктуре также найдены Claude Code, OpenClaw, CoT-промпты, локальный AI-relay и WebSocket-доступ к claude-sonnet-4-6. В отчёте указано, что они использовались как operator-side harness supporting exploitation activity and workflow orchestration.\n📦 Экcфильтрация реализована через батчинг .env и загрузку в Filebase.\n🔗 https://thedfirreport.com/2026/04/22/bissa-scanner-exposed-ai-assisted-mass-exploitation-and-credential-harvesting/\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1321",
+      "pub_date": "2026-04-23T11:39:08+00:00"
+    },
     {
       "id": "1320",
       "title": "А вы реально думали что Saiga это APT группа атрибутируемая с Казахстаном? 🇰🇿 #localhumor лайкать безопасно",

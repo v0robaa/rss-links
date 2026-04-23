@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-23T10:25:24.088909+00:00",
-  "messages_count": 154,
+  "last_update": "2026-04-23T15:59:04.927356+00:00",
+  "messages_count": 155,
   "messages": [
+    {
+      "id": "330",
+      "title": "KeeLog",
+      "text": "KeeLog\nAsync BOF that captures the KeePass master password by monitoring for the unlock prompt window. When a locked KeePass database is detected, a low-level keyboard hook is installed and keystrokes are captured until the prompt window disappears by being submitted, cancelled or closeed. The captured buffer is then returned to the operator and automatically reconstructed into the master password.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/330",
+      "pub_date": "2026-04-23T12:00:33+00:00"
+    },
     {
       "id": "328",
       "title": "Kerberos TGT Monitor BOF",

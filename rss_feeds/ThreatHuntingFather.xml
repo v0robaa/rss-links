@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 08:07:51 +0000</lastBuildDate><item><title>А вы реально думали что Saiga это APT группа атрибутируемая с Казахстаном? 🇰🇿 #localhumor лайкать безопасно</title><link>https://t.me/ThreatHuntingFather/1320</link><description>А вы реально думали что Saiga это APT группа атрибутируемая с Казахстаном? 🇰🇿 #localhumor лайкать безопасно
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 11:39:08 +0000</lastBuildDate><item><title>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting</title><link>https://t.me/ThreatHuntingFather/1321</link><description>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting
+Теперь точно можно сказать автоматизация рулит, но рулит она в руках атакующего🙈
+Exposed сервер, проанализированный The DFIR Report, содержал инфраструктуру для multi-victim exploitation, staging, validation и сбора данных (13k+ файлов, 150+ директорий) и позволил восстановить автоматизированный pipeline.
+🌐 Сканирование миллионов целей → эксплуатация → hit scoring → alerting → secret harvesting.
+В отчёте указано: “React2Shell (CVE-2025-55182) was central to the operation”, при этом подтверждено 900+ успешных эксплуатаций.
+🔐 Основной целью был сбор секретов из .env (30,000+ distinct filenames), которые батчились в ZIP и выгружались в S3-совместимый Filebase (bissapromax). Там найдено 65,000+ архивных записей, причём одни и те же файлы re-batched and re-uploaded.
+🎯 Артефакты показывают, что оператор выполнял triage и валидацию доступа, концентрируя активность на более ценных целях (финансы, крипто, ритейл). На хосте обнаружены не только креды, но и кластеры данных (financial, payroll, HR, CRM, communications), при этом для части жертв зафиксировано direct exploit evidence.
+📡 Управление и уведомления осуществлялись через Telegram (@bissapwned_bot), привязанный к приватному чату с “a single human operator … @BonJoviGoesHard” (“Dr. Tube”). Каждое сообщение представляло один confirmed CVE-2025-55182 hit с контекстом.
+🤖 В инфраструктуре также найдены Claude Code, OpenClaw, CoT-промпты, локальный AI-relay и WebSocket-доступ к claude-sonnet-4-6. В отчёте указано, что они использовались как operator-side harness supporting exploitation activity and workflow orchestration.
+📦 Экcфильтрация реализована через батчинг .env и загрузку в Filebase.
+🔗 https://thedfirreport.com/2026/04/22/bissa-scanner-exposed-ai-assisted-mass-exploitation-and-credential-harvesting/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Thu, 23 Apr 2026 11:39:08 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1321</guid></item><item><title>А вы реально думали что Saiga это APT группа атрибутируемая с Казахстаном? 🇰🇿 #localhumor лайкать безопасно</title><link>https://t.me/ThreatHuntingFather/1320</link><description>А вы реально думали что Saiga это APT группа атрибутируемая с Казахстаном? 🇰🇿 #localhumor лайкать безопасно
 
 [Media: Фото]</description><pubDate>Thu, 23 Apr 2026 08:07:51 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1320</guid></item><item><title>Summit Schedule – All Times Eastern U.S.</title><link>https://t.me/ThreatHuntingFather/1319</link><description>Summit Schedule – All Times Eastern U.S.
 9:30 – Pre-Show Banter
