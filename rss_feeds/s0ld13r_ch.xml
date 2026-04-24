@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 20 Apr 2026 09:04:14 +0000</lastBuildDate><item><title>Vibe Hackers be like 🈁</title><link>https://t.me/s0ld13r_ch/385</link><description>Vibe Hackers be like 🈁
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 21:43:32 +0000</lastBuildDate><item><title>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨</title><link>https://t.me/s0ld13r_ch/386</link><description>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨
+В npm пакете @bitwarden/cli (версия 2026.4.0) обнаружен троянизированный билд, замаскированный под легитный CLI. Пакет сохраняет оригинальные метаданные, но execution path переписан - при установке запускается вредоносный loader подгружающий стилер Shai-Hulud 👀
+Payload разворачивается в несколько этапов: через preinstall запускается bw_setup.js, который подтягивает Bun runtime с GitHub и исполняет обфусцированный скрипт 😃
+Основной функционал:
+• кража dev-секретов: .npmrc, .git-credentials, .env, SSH ключи
+• сбор cloud-доступов: AWS / GCP / Azure
+• извлечение gh auth token и дальнейшая работа через GitHub API
+• fallback через commit search (LongLiveTheResistanceAgainstMachines / beautifulcastle)
+• создание репозиториев у жертвы и загрузка туда зашифрованных данных
+• попытки получения секретов из GitHub Actions
+Отдельно стоит отметить таргетинг .claude и MCP конфигов, у атакующего явный интерес к AI инструментам. Если пакет c версией 2026.4.0 устанавливался нужно считать хост скомпрометированным и ротировать все секреты 🏃‍♂️
+🛡 IOC for hunts:
+Сетевые индикаторы
+audit[.]checkmarx[.]cx
+94[.]154[.]172[.]43
+https://audit[.]checkmarx[.]cx/v1/telemetry
+Файлы / пакет
+@bitwarden/cli 2026.4.0
+bw_setup.js
+bw1.js
+SHA суммы
+18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb
+8605e365edf11160aad517c7d79a3b26b62290e5072ef97b102a01ddbb343f14
+167ce57ef59a32a6a0ef4137785828077879092d7f83ddbc1755d6e69116e0ad
+63e204438ef56b1e500433e85f8773da302718de70407d20bdddb174d3439e6e
+🔗 Report:
+https://www.ox.security/blog/shai-hulud-bitwarden-cli-supply-chain-attack/
+🔗 JFrog Research: https://research.jfrog.com/post/bitwarden-cli-hijack/
+🔗 OpenSourceMalware:
+https://opensourcemalware.com/npm/@bitwarden/cli
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Thu, 23 Apr 2026 21:43:32 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_386</guid></item><item><title>Vibe Hackers be like 🈁</title><link>https://t.me/s0ld13r_ch/385</link><description>Vibe Hackers be like 🈁
 🧢 s0ld13r
 
 [Media: Фото]</description><pubDate>Mon, 20 Apr 2026 09:04:14 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_385</guid></item><item><title>Кейс с Google Recaptcha и WebArchive</title><link>https://t.me/s0ld13r_ch/384</link><description>Кейс с Google Recaptcha и WebArchive

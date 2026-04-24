@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-04-23T19:22:24.537665+00:00",
-  "messages_count": 73,
+  "last_update": "2026-04-24T06:14:45.701324+00:00",
+  "messages_count": 74,
   "messages": [
+    {
+      "id": "386",
+      "title": "BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨",
+      "text": "BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨\nВ npm пакете @bitwarden/cli (версия 2026.4.0) обнаружен троянизированный билд, замаскированный под легитный CLI. Пакет сохраняет оригинальные метаданные, но execution path переписан - при установке запускается вредоносный loader подгружающий стилер Shai-Hulud 👀\nPayload разворачивается в несколько этапов: через preinstall запускается bw_setup.js, который подтягивает Bun runtime с GitHub и исполняет обфусцированный скрипт 😃\nОсновной функционал:\n• кража dev-секретов: .npmrc, .git-credentials, .env, SSH ключи\n• сбор cloud-доступов: AWS / GCP / Azure\n• извлечение gh auth token и дальнейшая работа через GitHub API\n• fallback через commit search (LongLiveTheResistanceAgainstMachines / beautifulcastle)\n• создание репозиториев у жертвы и загрузка туда зашифрованных данных\n• попытки получения секретов из GitHub Actions\nОтдельно стоит отметить таргетинг .claude и MCP конфигов, у атакующего явный интерес к AI инструментам. Если пакет c версией 2026.4.0 устанавливался нужно считать хост скомпрометированным и ротировать все секреты 🏃‍♂️\n🛡 IOC for hunts:\nСетевые индикаторы\naudit[.]checkmarx[.]cx\n94[.]154[.]172[.]43\nhttps://audit[.]checkmarx[.]cx/v1/telemetry\nФайлы / пакет\n@bitwarden/cli 2026.4.0\nbw_setup.js\nbw1.js\nSHA суммы\n18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb\n8605e365edf11160aad517c7d79a3b26b62290e5072ef97b102a01ddbb343f14\n167ce57ef59a32a6a0ef4137785828077879092d7f83ddbc1755d6e69116e0ad\n63e204438ef56b1e500433e85f8773da302718de70407d20bdddb174d3439e6e\n🔗 Report:\nhttps://www.ox.security/blog/shai-hulud-bitwarden-cli-supply-chain-attack/\n🔗 JFrog Research: https://research.jfrog.com/post/bitwarden-cli-hijack/\n🔗 OpenSourceMalware:\nhttps://opensourcemalware.com/npm/@bitwarden/cli\n🧢 s0ld13r\n\n[Media: Фото]",
+      "link": "https://t.me/s0ld13r_ch/386",
+      "pub_date": "2026-04-23T21:43:32+00:00"
+    },
     {
       "id": "385",
       "title": "Vibe Hackers be like 🈁",
