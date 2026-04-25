@@ -1,14 +1,21 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-25T09:57:13.244886+00:00",
-  "messages_count": 158,
+  "last_update": "2026-04-25T14:51:45.277998+00:00",
+  "messages_count": 159,
   "messages": [
     {
       "id": "333",
       "title": "PhantomRPC: A new privilege escalation technique in Windows RPC",
       "text": "PhantomRPC: A new privilege escalation technique in Windows RPC\nIf you have a service like RDP that exposes an RPC server, there many system services running as SYSTEM connect to it as RPC clients. If that service is turned off (RDP is off by default), it seems that any other process in Windows can expose the same RPC server using the same endpoint.\nNow all the RPC calls from that SYSTEM processes will come to this fake server and If the process that deployed the server has SeImpersonatePrivilege, it can escalate to SYSTEM by impersonate the RPC client.\nIn the white paper below, I describe five exploit paths you can abuse.\nPhantomRPC (LPE 0-day)\nA research repository where you can find all the resources for PhantomRPC research that allows local privilege escalation.\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/333",
-      "pub_date": "2026-04-25T09:57:13.237527+00:00"
+      "pub_date": "2026-04-25T14:51:45.270009+00:00"
+    },
+    {
+      "id": "334",
+      "title": "vss-fr2system",
+      "text": "vss-fr2system\nTwo small tools that turn an arbitrary file read bug on Windows into a SYSTEM shell.\nvss_freeze/ — creates a Volume Shadow Copy as a standard user, then holds it open so you have time to read the SAM/SECURITY/SYSTEM hives out of it\nfr2system/ — takes the hives you copied out, decrypts the local NTLM hashes offline, and pops a SYSTEM shell\nTogether with any arb-file-read primitive that runs as SYSTEM (or anything that can read out of \\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopyN\\...), this is a complete std-user → SYSTEM chain on a default Win10/Win11 box.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/334",
+      "pub_date": "2026-04-25T12:51:46+00:00"
     },
     {
       "id": "332",
