@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-25T05:52:14.988329+00:00",
-  "messages_count": 191,
+  "last_update": "2026-04-25T09:57:20.402851+00:00",
+  "messages_count": 192,
   "messages": [
+    {
+      "id": "1326",
+      "title": "PETriage",
+      "text": "PETriage\nA fast, cross-platform PE (Portable Executable) surface analysis tool for malware triage, written in Rust. Designed for analysts who need practical PE triage on Linux, macOS, and Windows without relying on a Windows-only workflow.\nFormerly readpe (renamed to avoid naming collisions with existing tools).\nKey Features\n• 25 anomaly rules -- Packing, code injection, timestamp manipulation, structural anomalies, OPSEC leaks, Rich Header tampering, Export Directory anomalies\n• OPSEC analysis -- PDB paths, credential patterns, endpoint detection, CI/CD path hints, source path username leaks\n• Build fingerprinting -- .NET / Go / Rust / MSVC / MinGW detection with packer identification (UPX, Themida, VMProtect, NSIS, etc.)\n• Overlay carve/strip -- Extract overlay data or save PE without overlay (CLI and GUI)\n• Export Directory analysis -- DLL name, timestamp, function counts with anomalous timestamp detection\n• Semantic header editing (GUI) -- Machine/Subsystem dropdowns, human-readable timestamps, DllCharacteristics flag checkboxes\n• Non-standard section highlighting -- Yellow highlight for unusual section names in CLI and GUI\n🔗https://github.com/uky007/PETriage\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1326",
+      "pub_date": "2026-04-25T09:20:41+00:00"
+    },
     {
       "id": "1321",
       "title": "🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation & Credential Harvesting",

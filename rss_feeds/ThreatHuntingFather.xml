@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 23 Apr 2026 11:39:08 +0000</lastBuildDate><item><title>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting</title><link>https://t.me/ThreatHuntingFather/1321</link><description>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 25 Apr 2026 09:20:41 +0000</lastBuildDate><item><title>PETriage</title><link>https://t.me/ThreatHuntingFather/1326</link><description>PETriage
+A fast, cross-platform PE (Portable Executable) surface analysis tool for malware triage, written in Rust. Designed for analysts who need practical PE triage on Linux, macOS, and Windows without relying on a Windows-only workflow.
+Formerly readpe (renamed to avoid naming collisions with existing tools).
+Key Features
+• 25 anomaly rules -- Packing, code injection, timestamp manipulation, structural anomalies, OPSEC leaks, Rich Header tampering, Export Directory anomalies
+• OPSEC analysis -- PDB paths, credential patterns, endpoint detection, CI/CD path hints, source path username leaks
+• Build fingerprinting -- .NET / Go / Rust / MSVC / MinGW detection with packer identification (UPX, Themida, VMProtect, NSIS, etc.)
+• Overlay carve/strip -- Extract overlay data or save PE without overlay (CLI and GUI)
+• Export Directory analysis -- DLL name, timestamp, function counts with anomalous timestamp detection
+• Semantic header editing (GUI) -- Machine/Subsystem dropdowns, human-readable timestamps, DllCharacteristics flag checkboxes
+• Non-standard section highlighting -- Yellow highlight for unusual section names in CLI and GUI
+🔗https://github.com/uky007/PETriage
+🦔THF
+
+[Media: Фото]</description><pubDate>Sat, 25 Apr 2026 09:20:41 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1326</guid></item><item><title>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting</title><link>https://t.me/ThreatHuntingFather/1321</link><description>🧠 Bissa Scanner Exposed: AI-Assisted Mass Exploitation &amp; Credential Harvesting
 Теперь точно можно сказать автоматизация рулит, но рулит она в руках атакующего🙈
 Exposed сервер, проанализированный The DFIR Report, содержал инфраструктуру для multi-victim exploitation, staging, validation и сбора данных (13k+ файлов, 150+ директорий) и позволил восстановить автоматизированный pipeline.
 🌐 Сканирование миллионов целей → эксплуатация → hit scoring → alerting → secret harvesting.
