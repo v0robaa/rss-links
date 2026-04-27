@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 25 Apr 2026 09:20:41 +0000</lastBuildDate><item><title>PETriage</title><link>https://t.me/ThreatHuntingFather/1326</link><description>PETriage
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 27 Apr 2026 15:51:09 +0000</lastBuildDate><item><title>🪷 Lotus Wiper: уничтожение данных в атаке на энергетику</title><link>https://t.me/ThreatHuntingFather/1330</link><description>🪷 Lotus Wiper: уничтожение данных в атаке на энергетику
+Исследователи Kaspersky GReAT описали новый вайпер, обнаруженный в цепочке атаки на энергетический сектор Венесуэлы.
+⚙️
+OhSyncNow.bat создаёт рабочую директорию в C:\lotus, отключает сервис UI0Detect и ожидает XML-триггер OHSync.xml в сетевой папке NETLOGON. Это сигнал одновременного запуска на всех машинах домена.
+Интересненькие команды:
+net user &lt;имя&gt; &lt;случайный_пароль&gt; /times:friday,01:00-02:00 /active:no
+reg add "HKLM\...\Winlogon" /v CachedLogonsCount /t REG_SZ /d 0 /f
+logoff &lt;session_id&gt;
+netsh interface set interface "&lt;имя&gt;" DISABLE
+(echo select volume=C &amp; echo clean all) | diskpart
+robocopy &lt;пустая_папка&gt; &lt;цель&gt; /MIR /B /r:0 /w:0
+fsutil file createnew &lt;путь&gt; &lt;размер_в_байтах&gt;
+Финальный payload маскируется под компоненты HCL Domino: nstats.exe, nevent.exe, ndesign.exe. Файл nevent.exe хранит XOR-зашифрованный вайпер, nstats.exe его расшифровывает, результат сохраняется в ndesign.exe - это и есть Lotus Wiper.
+Работа вайпера:
+- удаляет все точки восстановления через SRRemoveRestorePoint
+- перезаписывает нулями каждый сектор физических дисков через DeviceIoControl
+- очищает USN-журналы томов
+- затирает файлы через FSCTL_SET_ZERO_DATA, переименовывает в случайный hex и удаляет через DeleteFileW / MoveFileExW
+📌 Детекты: HEUR:Trojan.BAT.LotusWiper.gen, HEUR:Trojan.Win32.LotusWiper.gen
+🔗 securelist.com/tr/lotus-wiper/119472
+🦔THF
+
+[Media: Фото]</description><pubDate>Mon, 27 Apr 2026 15:51:09 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1330</guid></item><item><title>PETriage</title><link>https://t.me/ThreatHuntingFather/1326</link><description>PETriage
 A fast, cross-platform PE (Portable Executable) surface analysis tool for malware triage, written in Rust. Designed for analysts who need practical PE triage on Linux, macOS, and Windows without relying on a Windows-only workflow.
 Formerly readpe (renamed to avoid naming collisions with existing tools).
 Key Features

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-27T11:09:41.654756+00:00",
-  "messages_count": 192,
+  "last_update": "2026-04-27T15:52:09.927422+00:00",
+  "messages_count": 193,
   "messages": [
+    {
+      "id": "1330",
+      "title": "🪷 Lotus Wiper: уничтожение данных в атаке на энергетику",
+      "text": "🪷 Lotus Wiper: уничтожение данных в атаке на энергетику\nИсследователи Kaspersky GReAT описали новый вайпер, обнаруженный в цепочке атаки на энергетический сектор Венесуэлы.\n⚙️\nOhSyncNow.bat создаёт рабочую директорию в C:\\lotus, отключает сервис UI0Detect и ожидает XML-триггер OHSync.xml в сетевой папке NETLOGON. Это сигнал одновременного запуска на всех машинах домена.\nИнтересненькие команды:\nnet user <имя> <случайный_пароль> /times:friday,01:00-02:00 /active:no\nreg add \"HKLM\\...\\Winlogon\" /v CachedLogonsCount /t REG_SZ /d 0 /f\nlogoff <session_id>\nnetsh interface set interface \"<имя>\" DISABLE\n(echo select volume=C & echo clean all) | diskpart\nrobocopy <пустая_папка> <цель> /MIR /B /r:0 /w:0\nfsutil file createnew <путь> <размер_в_байтах>\nФинальный payload маскируется под компоненты HCL Domino: nstats.exe, nevent.exe, ndesign.exe. Файл nevent.exe хранит XOR-зашифрованный вайпер, nstats.exe его расшифровывает, результат сохраняется в ndesign.exe - это и есть Lotus Wiper.\nРабота вайпера:\n- удаляет все точки восстановления через SRRemoveRestorePoint\n- перезаписывает нулями каждый сектор физических дисков через DeviceIoControl\n- очищает USN-журналы томов\n- затирает файлы через FSCTL_SET_ZERO_DATA, переименовывает в случайный hex и удаляет через DeleteFileW / MoveFileExW\n📌 Детекты: HEUR:Trojan.BAT.LotusWiper.gen, HEUR:Trojan.Win32.LotusWiper.gen\n🔗 securelist.com/tr/lotus-wiper/119472\n🦔THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1330",
+      "pub_date": "2026-04-27T15:51:09+00:00"
+    },
     {
       "id": "1326",
       "title": "PETriage",
