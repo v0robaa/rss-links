@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-04-29T06:29:52.629594+00:00",
-  "messages_count": 193,
+  "last_update": "2026-04-29T11:00:57.620518+00:00",
+  "messages_count": 194,
   "messages": [
+    {
+      "id": "1332",
+      "title": "Message 1332",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1332",
+      "pub_date": "2026-04-29T06:55:29+00:00"
+    },
     {
       "id": "1330",
       "title": "🪷 Lotus Wiper: уничтожение данных в атаке на энергетику",

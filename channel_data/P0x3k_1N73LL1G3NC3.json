@@ -1,14 +1,28 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-29T06:29:45.350013+00:00",
-  "messages_count": 160,
+  "last_update": "2026-04-29T11:00:50.627640+00:00",
+  "messages_count": 162,
   "messages": [
     {
       "id": "333",
       "title": "PhantomRPC: A new privilege escalation technique in Windows RPC",
       "text": "PhantomRPC: A new privilege escalation technique in Windows RPC\nIf you have a service like RDP that exposes an RPC server, there many system services running as SYSTEM connect to it as RPC clients. If that service is turned off (RDP is off by default), it seems that any other process in Windows can expose the same RPC server using the same endpoint.\nNow all the RPC calls from that SYSTEM processes will come to this fake server and If the process that deployed the server has SeImpersonatePrivilege, it can escalate to SYSTEM by impersonate the RPC client.\nIn the white paper below, I describe five exploit paths you can abuse.\nPhantomRPC (LPE 0-day)\nA research repository where you can find all the resources for PhantomRPC research that allows local privilege escalation.\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/333",
-      "pub_date": "2026-04-29T06:29:45.341070+00:00"
+      "pub_date": "2026-04-29T11:00:50.618132+00:00"
+    },
+    {
+      "id": "338",
+      "title": "Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)",
+      "text": "Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)\nBy exploiting an injection flaw in GitHub's internal protocol, any authenticated user could execute arbitrary commands on GitHub's backend servers with a single git push command - using nothing but a standard git client.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/338",
+      "pub_date": "2026-04-29T06:52:37+00:00"
+    },
+    {
+      "id": "337",
+      "title": "Message 337",
+      "text": "\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/337",
+      "pub_date": "2026-04-29T06:49:58+00:00"
     },
     {
       "id": "336",

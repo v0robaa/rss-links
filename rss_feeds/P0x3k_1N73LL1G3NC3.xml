@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 29 Apr 2026 06:29:45 +0000</lastBuildDate><item><title>Message 336</title><link>https://t.me/P0x3k_1N73LL1G3NC3/336</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 29 Apr 2026 11:00:50 +0000</lastBuildDate><item><title>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/338</link><description>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)
+By exploiting an injection flaw in GitHub's internal protocol, any authenticated user could execute arbitrary commands on GitHub's backend servers with a single git push command - using nothing but a standard git client.
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:52:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_338</guid></item><item><title>Message 337</title><link>https://t.me/P0x3k_1N73LL1G3NC3/337</link><description>
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:49:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_337</guid></item><item><title>Message 336</title><link>https://t.me/P0x3k_1N73LL1G3NC3/336</link><description>
 
 [Media: Фото]</description><pubDate>Tue, 28 Apr 2026 15:51:36 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_336</guid></item><item><title>vss-fr2system</title><link>https://t.me/P0x3k_1N73LL1G3NC3/334</link><description>vss-fr2system
 Two small tools that turn an arbitrary file read bug on Windows into a SYSTEM shell.
@@ -14,7 +19,7 @@ In the white paper below, I describe five exploit paths you can abuse.
 PhantomRPC (LPE 0-day)
 A research repository where you can find all the resources for PhantomRPC research that allows local privilege escalation.
 
-[Media: Видео]</description><pubDate>Wed, 29 Apr 2026 06:29:45 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_333</guid></item><item><title>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/332</link><description>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as a proxy for PowerShell execution through its configure subcommand.…
+[Media: Видео]</description><pubDate>Wed, 29 Apr 2026 11:00:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_333</guid></item><item><title>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/332</link><description>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as a proxy for PowerShell execution through its configure subcommand.…
 
 [Media: Фото]</description><pubDate>Fri, 24 Apr 2026 07:17:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_332</guid></item><item><title>Pack2TheRoot — CVE-2026-41651</title><link>https://t.me/P0x3k_1N73LL1G3NC3/331</link><description>Pack2TheRoot — CVE-2026-41651
 TOCTOU race in PackageKit's transaction handler. Any local unprivileged user can install arbitrary packages as root with no authentication.
