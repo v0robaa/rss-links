@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 29 Apr 2026 19:45:31 +0000</lastBuildDate><item><title>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/338</link><description>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 06:04:14 +0000</lastBuildDate><item><title>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂</title><link>https://t.me/P0x3k_1N73LL1G3NC3/341</link><description>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂
+
+[Media: Фото]</description><pubDate>Thu, 30 Apr 2026 06:04:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_341</guid></item><item><title>CVE-2026-41940 cPanel/WHM Authentication Bypass</title><link>https://t.me/P0x3k_1N73LL1G3NC3/340</link><description>CVE-2026-41940 cPanel/WHM Authentication Bypass
+Exploit: https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py
+Affected Software:
+• cPanel &amp; WHM 11.110.0 versions prior to fixed version 11.110.0.97
+• cPanel &amp; WHM 11.118.0 versions prior to fixed version 11.118.0.63
+• cPanel &amp; WHM 11.126.0 versions prior to fixed version 11.126.0.54
+• cPanel &amp; WHM 11.132.0 versions prior to fixed version 11.132.0.29
+• cPanel &amp; WHM 11.134.0 versions prior to fixed version 11.134.0.20
+• cPanel &amp; WHM 11.136.0 versions prior to fixed version 11.136.0.5
+• WP Squared 11.136.1 versions prior to fixed version 11.136.1.7
+Query: https://www.shodan.io/search?query=http.favicon.hash%3A-696182543
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 20:56:43 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_340</guid></item><item><title>Copy Fail— Linux LPE (CVE-2026-31431)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/339</link><description>Copy Fail— Linux LPE (CVE-2026-31431)
+A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the page cache of any readable file on the system. A single 732-byte Python script can edit a setuid binary and obtain root on essentially all Linux distributions shipped since 2017.
+Exploit: https://github.com/theori-io/copy-fail-CVE-2026-31431
+A 732-byte PoC gets root on Ubuntu, Amazon Linux, RHEL, SUSE.
+
+[Media: Видео]</description><pubDate>Wed, 29 Apr 2026 19:58:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_339</guid></item><item><title>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/338</link><description>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)
 By exploiting an injection flaw in GitHub's internal protocol, any authenticated user could execute arbitrary commands on GitHub's backend servers with a single git push command - using nothing but a standard git client.
 
 [Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:52:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_338</guid></item><item><title>Message 337</title><link>https://t.me/P0x3k_1N73LL1G3NC3/337</link><description>

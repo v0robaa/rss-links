@@ -1,8 +1,29 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-29T19:45:31.593376+00:00",
-  "messages_count": 162,
+  "last_update": "2026-04-30T06:33:14.916414+00:00",
+  "messages_count": 165,
   "messages": [
+    {
+      "id": "341",
+      "title": "Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂",
+      "text": "Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/341",
+      "pub_date": "2026-04-30T06:04:14+00:00"
+    },
+    {
+      "id": "340",
+      "title": "CVE-2026-41940 cPanel/WHM Authentication Bypass",
+      "text": "CVE-2026-41940 cPanel/WHM Authentication Bypass\nExploit: https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py\nAffected Software:\n• cPanel & WHM 11.110.0 versions prior to fixed version 11.110.0.97\n• cPanel & WHM 11.118.0 versions prior to fixed version 11.118.0.63\n• cPanel & WHM 11.126.0 versions prior to fixed version 11.126.0.54\n• cPanel & WHM 11.132.0 versions prior to fixed version 11.132.0.29\n• cPanel & WHM 11.134.0 versions prior to fixed version 11.134.0.20\n• cPanel & WHM 11.136.0 versions prior to fixed version 11.136.0.5\n• WP Squared 11.136.1 versions prior to fixed version 11.136.1.7\nQuery: https://www.shodan.io/search?query=http.favicon.hash%3A-696182543\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/340",
+      "pub_date": "2026-04-29T20:56:43+00:00"
+    },
+    {
+      "id": "339",
+      "title": "Copy Fail— Linux LPE (CVE-2026-31431)",
+      "text": "Copy Fail— Linux LPE (CVE-2026-31431)\nA logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the page cache of any readable file on the system. A single 732-byte Python script can edit a setuid binary and obtain root on essentially all Linux distributions shipped since 2017.\nExploit: https://github.com/theori-io/copy-fail-CVE-2026-31431\nA 732-byte PoC gets root on Ubuntu, Amazon Linux, RHEL, SUSE.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/339",
+      "pub_date": "2026-04-29T19:58:04+00:00"
+    },
     {
       "id": "333",
       "title": "PhantomRPC: A new privilege escalation technique in Windows RPC",
