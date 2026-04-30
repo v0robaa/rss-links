@@ -2,7 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 06:04:14 +0000</lastBuildDate><item><title>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂</title><link>https://t.me/P0x3k_1N73LL1G3NC3/341</link><description>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂
 
 [Media: Фото]</description><pubDate>Thu, 30 Apr 2026 06:04:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_341</guid></item><item><title>CVE-2026-41940 cPanel/WHM Authentication Bypass</title><link>https://t.me/P0x3k_1N73LL1G3NC3/340</link><description>CVE-2026-41940 cPanel/WHM Authentication Bypass
-Exploit: https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py
+Exploit:
+• https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py
+• https://github.com/assetnote/cpanel2shell-scanner
 Affected Software:
 • cPanel &amp; WHM 11.110.0 versions prior to fixed version 11.110.0.97
 • cPanel &amp; WHM 11.118.0 versions prior to fixed version 11.118.0.63

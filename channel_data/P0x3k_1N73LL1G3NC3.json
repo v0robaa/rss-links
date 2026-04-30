@@ -1,6 +1,6 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-30T06:33:14.916414+00:00",
+  "last_update": "2026-04-30T10:59:14.276134+00:00",
   "messages_count": 165,
   "messages": [
     {
@@ -13,7 +13,7 @@
     {
       "id": "340",
       "title": "CVE-2026-41940 cPanel/WHM Authentication Bypass",
-      "text": "CVE-2026-41940 cPanel/WHM Authentication Bypass\nExploit: https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py\nAffected Software:\n• cPanel & WHM 11.110.0 versions prior to fixed version 11.110.0.97\n• cPanel & WHM 11.118.0 versions prior to fixed version 11.118.0.63\n• cPanel & WHM 11.126.0 versions prior to fixed version 11.126.0.54\n• cPanel & WHM 11.132.0 versions prior to fixed version 11.132.0.29\n• cPanel & WHM 11.134.0 versions prior to fixed version 11.134.0.20\n• cPanel & WHM 11.136.0 versions prior to fixed version 11.136.0.5\n• WP Squared 11.136.1 versions prior to fixed version 11.136.1.7\nQuery: https://www.shodan.io/search?query=http.favicon.hash%3A-696182543\n\n[Media: Фото]",
+      "text": "CVE-2026-41940 cPanel/WHM Authentication Bypass\nExploit:\n• https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py\n• https://github.com/assetnote/cpanel2shell-scanner\nAffected Software:\n• cPanel & WHM 11.110.0 versions prior to fixed version 11.110.0.97\n• cPanel & WHM 11.118.0 versions prior to fixed version 11.118.0.63\n• cPanel & WHM 11.126.0 versions prior to fixed version 11.126.0.54\n• cPanel & WHM 11.132.0 versions prior to fixed version 11.132.0.29\n• cPanel & WHM 11.134.0 versions prior to fixed version 11.134.0.20\n• cPanel & WHM 11.136.0 versions prior to fixed version 11.136.0.5\n• WP Squared 11.136.1 versions prior to fixed version 11.136.1.7\nQuery: https://www.shodan.io/search?query=http.favicon.hash%3A-696182543\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/340",
       "pub_date": "2026-04-29T20:56:43+00:00"
     },

