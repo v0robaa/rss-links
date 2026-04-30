@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-04-30T15:49:57.613762+00:00",
-  "messages_count": 165,
+  "last_update": "2026-04-30T19:42:05.181365+00:00",
+  "messages_count": 166,
   "messages": [
+    {
+      "id": "342",
+      "title": "Copy Fail— Linux LPE (CVE-2026-31431)  A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the...",
+      "text": "Copy Fail— Linux LPE (CVE-2026-31431)  A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the page cache of any readable file on the system. A single…\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/342",
+      "pub_date": "2026-04-30T18:38:22+00:00"
+    },
     {
       "id": "341",
       "title": "Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂",
