@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 24 Apr 2026 17:09:15 +0000</lastBuildDate><item><title>Message 713</title><link>https://t.me/ptescalator/713</link><description/><pubDate>Fri, 24 Apr 2026 17:09:15 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_713</guid></item><item><title>Почему IDA не сворачивает константы и как это исправить 👨‍💻  В последнее время в ВПО все чаще встречается обфускация, где константы заменяют на арифметические выражения. Подобный прием, например,...</title><link>https://t.me/ptescalator/712</link><description>Почему IDA не сворачивает константы и как это исправить 👨‍💻  В последнее время в ВПО все чаще встречается обфускация, где константы заменяют на арифметические выражения. Подобный прием, например, есть в OLLVM.  😑 В чем тут проблема: часть констант, из которых…</description><pubDate>Fri, 24 Apr 2026 14:51:02 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_712</guid></item><item><title>Почему IDA не сворачивает константы и как это исправить 👨‍💻</title><link>https://t.me/ptescalator/708</link><description>Почему IDA не сворачивает константы и как это исправить 👨‍💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 11:07:32 +0000</lastBuildDate><item><title>Copy.Fail 🐧</title><link>https://t.me/ptescalator/714</link><description>Copy.Fail 🐧
+Исследователи обнаружили баг в ядре Linux, который существовал в системах с 2017 года и затрагивает практически все дистрибутивы.
+Уязвимость CVE-2026-31431, которую мы считаем трендовой, состоит из четырех шагов:
+1️⃣ Пользователь открывает сокет AF_ALG и инициализирует AEAD-алгоритм без привилегий;
+2️⃣ Через splice() страницы кэша целевого файла попадают в буфер операции;
+3️⃣ Ошибка в authencesn дает запись 4 байт за границы буфера прямо в страницы кэша;
+4️⃣ Ядро исполняет модифицированный setuid-файл из кэша → выполнение кода с правами root.
+Данная цепочка уязвимости частично схожа с Dirty Pipe (CVE-2022-0847), которая также использует системные вызовы:
+• pipe — создает однонаправленный канал передачи данных;
+• splice — позволяет передавать данные между файловыми дескрипторами без промежуточного копирования.
+Так как данная уязвимость уже обнаруживалась в PT Sandbox при анализе ПО в образе Astra Linux, процесс эксплуатации новой уязвимости Copy Fail также обнаруживалась в PT Sandbox еще до выхода публичного эксплойта.
+Благодаря этому эксплойту можно перезаписывать не только suid-файлы, но и проводить другие модификации, делая системные изменения более скрытными.
+Как исправить 🔧
+Если вы администрируете Linux-системы — обновите ядро. Патч зафиксирован в коммите a664bf3d603d. Основные дистрибутивы начали выпускать исправленные пакеты с 29 апреля. После обновления потребуется перезагрузка.
+Если немедленное обновление невозможно — временная мера: отключить модуль algif_aead:
+echo "install algif_aead /bin/false" &gt; /etc/modprobe.d/disable-algif-aead.conf
+rmmod algif_aead 2&gt;/dev/null
+#cve #tip
+@ptescalator
+
+[Media: Фото]</description><pubDate>Thu, 30 Apr 2026 11:07:32 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_714</guid></item><item><title>Message 713</title><link>https://t.me/ptescalator/713</link><description/><pubDate>Fri, 24 Apr 2026 17:09:15 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_713</guid></item><item><title>Почему IDA не сворачивает константы и как это исправить 👨‍💻  В последнее время в ВПО все чаще встречается обфускация, где константы заменяют на арифметические выражения. Подобный прием, например,...</title><link>https://t.me/ptescalator/712</link><description>Почему IDA не сворачивает константы и как это исправить 👨‍💻  В последнее время в ВПО все чаще встречается обфускация, где константы заменяют на арифметические выражения. Подобный прием, например, есть в OLLVM.  😑 В чем тут проблема: часть констант, из которых…</description><pubDate>Fri, 24 Apr 2026 14:51:02 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_712</guid></item><item><title>Почему IDA не сворачивает константы и как это исправить 👨‍💻</title><link>https://t.me/ptescalator/708</link><description>Почему IDA не сворачивает константы и как это исправить 👨‍💻
 В последнее время в ВПО все чаще встречается обфускация, где константы заменяют на арифметические выражения. Подобный прием, например, есть в OLLVM.
 😑 В чем тут проблема: часть констант, из которых собирается итоговое выражение, хранится в памяти. Из-за этого IDA по умолчанию не может нормально применить constant propagation и автоматически «свернуть» такие конструкции в исходные значения (скриншот 1).
 Особенно неприятно, когда таким способом маскируют еще и адреса вызываемых функций. На практике это выливается в конструкции вида:

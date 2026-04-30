@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 27 Apr 2026 14:14:54 +0000</lastBuildDate><item><title>🔎Команда ScanFactory проанализировала 246 проектов по оценке защищенности 125 компаний из 18 отраслей за 2022–2025 годы.</title><link>https://t.me/ZerodayAlert/678</link><description>🔎Команда ScanFactory проанализировала 246 проектов по оценке защищенности 125 компаний из 18 отраслей за 2022–2025 годы.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 15:49:19 +0000</lastBuildDate><item><title>😞10 строк Python → root на любом Linux с 2017 года. Встречайте Copy Fail</title><link>https://t.me/ZerodayAlert/679</link><description>😞10 строк Python → root на любом Linux с 2017 года. Встречайте Copy Fail
+В Linux нашли уязвимость Copy Fail, которая позволяет обычному локальному пользователю добраться до root-доступа через кэш страниц. Ошибка получила номер CVE-2026-31431 и уже закрыта патчами в крупных дистрибутивах.
+Проблема затрагивает ядро Linux и особенно опасна для серверов, контейнерных сред, CI/CD-инфраструктуры и систем, где запускают недоверенный код. Исследователи показали демонстрационный эксплойт: Python-скрипт всего на 10 строк может изменить исполняемый файл с флагом setuid и повысить привилегии.
+Удалённо Copy Fail сама по себе не работает, но после RCE, компрометации SSH или взлома сервера сборки уязвимость может стать коротким путём к полному контролю над системой. Debian, Ubuntu, SUSE и Red Hat уже выпустили исправления.
+#Linux #уязвимость #кибербезопасность
+@SecLabNews
+
+[Media: Фото]</description><pubDate>Thu, 30 Apr 2026 15:49:19 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_679</guid></item><item><title>🔎Команда ScanFactory проанализировала 246 проектов по оценке защищенности 125 компаний из 18 отраслей за 2022–2025 годы.</title><link>https://t.me/ZerodayAlert/678</link><description>🔎Команда ScanFactory проанализировала 246 проектов по оценке защищенности 125 компаний из 18 отраслей за 2022–2025 годы.
 Что в отчёте:
 ▪️сформирован топ из 94 критических уязвимостей, характерных для атаки на российские организации
 ▪️53% уязвимостей — критического и высокого уровня риска, позволяющие осуществить недопустимое событие
