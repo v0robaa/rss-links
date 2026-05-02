@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-01T19:20:47.764555+00:00",
-  "messages_count": 166,
+  "last_update": "2026-05-02T06:13:34.264571+00:00",
+  "messages_count": 167,
   "messages": [
+    {
+      "id": "343",
+      "title": "BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART ②",
+      "text": "BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART ②\nA new arbitrary Kerberos coercion technique (CVE-2026-26128) that led to a complete bypass of the patch of CVE-2025-33073. This short-lived RCE was then transformed into a universal LPE attack.\nBYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART 1\nAbuse of a new feature of recent Windows versions, namely the ability to connect to SMB shares on arbitrary TCP ports, to achieve local privilege escalation (CVE-2026-24294) on up-to-date Windows Server 2025 machines.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/343",
+      "pub_date": "2026-05-02T06:04:07+00:00"
+    },
     {
       "id": "342",
       "title": "Copy Fail— Linux LPE (CVE-2026-31431)  A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the...",

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-05-01T19:20:55.052738+00:00",
-  "messages_count": 195,
+  "last_update": "2026-05-02T06:13:41.294279+00:00",
+  "messages_count": 196,
   "messages": [
+    {
+      "id": "1334",
+      "title": "PhantomCLR: AppDomain hijacking через подписанный Intel binary и in-memory .NET abuse",
+      "text": "PhantomCLR: AppDomain hijacking через подписанный Intel binary и in-memory .NET abuse\nCYFIRMA описала multi-stage post-exploitation framework, замеченный против организаций на Ближнем Востоке и в EMEA financial sector.\nZIP extract → LNK exec → IAStorHelp.exe (Intel, signed)\n→ CLR reads co-located IAStorHelp.exe.config\n→ AppDomainManager hijack (stylohyoideus)\n→ attacker-controlled IAStorHelpMosquitoproof.dll runs before main app logic\n→ decoy PDF open (distraction)\n→ 60s prime sieve (sandbox exhaust, no Sleep / Delay)\n→ 16x LoadLibrary storm (benign-looking DLL load noise)\n→ AES IV set + SHA-256-based key candidate derivation\n→ setting.yml read + size validation (3,845,228 bytes)\n→ constrained key derivation loop 0–892,007, correct key at 41,410\n→ AES-128-CBC decrypt + GZip-compressed payload handling\n→ JIT trampoline exec (DefineDynamicAssembly → JIT memory overwrite → delegate invoke)\n→ reflective DLL load with per-section protections\n→ C2 beacon: HTTPS → CloudFront → AWS ELB backend\n🔗 https://www.cyfirma.com/research/operation-phantomclr-stealth-execution-via-appdomain-hijacking-and-in-memory-net-abuse/\n🦔 THF\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1334",
+      "pub_date": "2026-05-02T05:48:50+00:00"
+    },
     {
       "id": "1333",
       "title": "Ну что товарищи, пишите свои вариации детектирования такого пивота🦔",

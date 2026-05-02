@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 07:58:53 +0000</lastBuildDate><item><title>Ну что товарищи, пишите свои вариации детектирования такого пивота🦔</title><link>https://t.me/ThreatHuntingFather/1333</link><description>Ну что товарищи, пишите свои вариации детектирования такого пивота🦔
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 02 May 2026 05:48:50 +0000</lastBuildDate><item><title>PhantomCLR: AppDomain hijacking через подписанный Intel binary и in-memory .NET abuse</title><link>https://t.me/ThreatHuntingFather/1334</link><description>PhantomCLR: AppDomain hijacking через подписанный Intel binary и in-memory .NET abuse
+CYFIRMA описала multi-stage post-exploitation framework, замеченный против организаций на Ближнем Востоке и в EMEA financial sector.
+ZIP extract → LNK exec → IAStorHelp.exe (Intel, signed)
+→ CLR reads co-located IAStorHelp.exe.config
+→ AppDomainManager hijack (stylohyoideus)
+→ attacker-controlled IAStorHelpMosquitoproof.dll runs before main app logic
+→ decoy PDF open (distraction)
+→ 60s prime sieve (sandbox exhaust, no Sleep / Delay)
+→ 16x LoadLibrary storm (benign-looking DLL load noise)
+→ AES IV set + SHA-256-based key candidate derivation
+→ setting.yml read + size validation (3,845,228 bytes)
+→ constrained key derivation loop 0–892,007, correct key at 41,410
+→ AES-128-CBC decrypt + GZip-compressed payload handling
+→ JIT trampoline exec (DefineDynamicAssembly → JIT memory overwrite → delegate invoke)
+→ reflective DLL load with per-section protections
+→ C2 beacon: HTTPS → CloudFront → AWS ELB backend
+🔗 https://www.cyfirma.com/research/operation-phantomclr-stealth-execution-via-appdomain-hijacking-and-in-memory-net-abuse/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Sat, 02 May 2026 05:48:50 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1334</guid></item><item><title>Ну что товарищи, пишите свои вариации детектирования такого пивота🦔</title><link>https://t.me/ThreatHuntingFather/1333</link><description>Ну что товарищи, пишите свои вариации детектирования такого пивота🦔
 https://t.me/s0i37_channel/269</description><pubDate>Thu, 30 Apr 2026 07:58:53 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1333</guid></item><item><title>Message 1332</title><link>https://t.me/ThreatHuntingFather/1332</link><description>
 
 [Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:55:29 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1332</guid></item><item><title>🪷 Lotus Wiper: уничтожение данных в атаке на энергетику</title><link>https://t.me/ThreatHuntingFather/1330</link><description>🪷 Lotus Wiper: уничтожение данных в атаке на энергетику
