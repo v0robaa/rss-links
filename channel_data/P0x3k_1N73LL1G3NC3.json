@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-05T10:50:58.811251+00:00",
-  "messages_count": 167,
+  "last_update": "2026-05-05T15:55:57.012257+00:00",
+  "messages_count": 168,
   "messages": [
+    {
+      "id": "345",
+      "title": "EdgeSavedPasswordsDumper",
+      "text": "EdgeSavedPasswordsDumper\nThis tool was created to show that whenever a user stores credentials in Edge (using the Microsoft Password Manager feature, e.g. Autofill), ALL credentials are stored in plaintext in the parent Edge process memory. This is obviously problematic in a shared environment (e.g. on a terminal servers) as an attacker can access all Edge processes for all logged on and disconnected users, and dump their saved credentials. Microsoft has said that this is \"by design\" and thus won't fix this.\nPowershell version: https://gist.github.com/gitgotgitgotit/e28e02a02a358aef189c9c1ee426adf8\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/345",
+      "pub_date": "2026-05-05T15:09:54+00:00"
+    },
     {
       "id": "343",
       "title": "BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART ②",

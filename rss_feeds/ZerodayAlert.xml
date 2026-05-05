@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 05 May 2026 04:45:02 +0000</lastBuildDate><item><title>Один импорт чуть не раскрыл ключи тысяч разработчиков</title><link>https://t.me/ZerodayAlert/685</link><description>Один импорт чуть не раскрыл ключи тысяч разработчиков
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 05 May 2026 13:16:50 +0000</lastBuildDate><item><title>В Apache нашли пять уязвимостей — вышел экстренный патч</title><link>https://t.me/ZerodayAlert/686</link><description>В Apache нашли пять уязвимостей — вышел экстренный патч
+Apache Software Foundation выпустил Apache HTTP Server 2.4.67, закрыв сразу пять уязвимостей. Всем, кто использует версию 2.4.66 и старше, рекомендуется установить обновление немедленно.
+Главная уязвимость CVE-2026-23918 получила оценку 8,8 по CVSS и связана с ошибкой двойного освобождения памяти в реализации HTTP/2. Она позволяет злоумышленнику повредить структуру памяти и выполнить произвольный код на сервере.
+Вторая уязвимость CVE-2026-24072 затрагивает модуль mod_rewrite и позволяет читать произвольные файлы на сервере через .htaccess. Три оставшиеся проблемы затрагивают модули mod_proxy_ajp, mod_md и mod_dav_lock — и способны вызвать сбой или перегрузку сервера.
+#apache #уязвимость #обновление #вебсервер
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 05 May 2026 13:16:50 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_686</guid></item><item><title>Один импорт чуть не раскрыл ключи тысяч разработчиков</title><link>https://t.me/ZerodayAlert/685</link><description>Один импорт чуть не раскрыл ключи тысяч разработчиков
 В PyTorch Lightning обнаружили вредоносную версию 2.6.3. Пакет активно используют в проектах с ИИ, поэтому даже короткое появление опасной сборки на PyPI создало риск для разработчиков, лабораторий и компаний с облачной инфраструктурой.
 Вредоносный код срабатывал при команде «import lightning», закреплялся фоновым процессом и запускал обфусцированный файл. Дальше начиналась охота за секретами: токены, ключи, .env, браузеры, доступы к облакам и возможность выполнять команды в системе.
 Здесь неприятна не только кража данных, а сам вектор атаки. Когда доверенный пакет становится входной точкой, привычная граница защиты исчезает. После таких случаев одного отката версии мало: нужны ротация секретов и тщательная проверка окружений.
