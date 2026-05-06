@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 05 May 2026 15:09:54 +0000</lastBuildDate><item><title>EdgeSavedPasswordsDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/345</link><description>EdgeSavedPasswordsDumper
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 06 May 2026 10:54:01 +0000</lastBuildDate><item><title>VeeamDumper-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/347</link><description>VeeamDumper-BOF
+A credential extraction BOF for Veeam Backup and Replication and Veeam One
+
+[Media: Фото]</description><pubDate>Wed, 06 May 2026 10:54:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_347</guid></item><item><title>MorphKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/346</link><description>MorphKatz
+Rewrites x86-64 machine code inside PE executables and raw shellcode into semantically identical but byte-different equivalents. Same arithmetic, same observable EFLAGS effects, same control-flow — different bytes. That breaks byte-pattern detection (YARA rules, Defender signatures, Elastic rules, Sigma detection content) without changing what the code actually does.
+
+[Media: Видео]</description><pubDate>Wed, 06 May 2026 10:24:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_346</guid></item><item><title>EdgeSavedPasswordsDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/345</link><description>EdgeSavedPasswordsDumper
 This tool was created to show that whenever a user stores credentials in Edge (using the Microsoft Password Manager feature, e.g. Autofill), ALL credentials are stored in plaintext in the parent Edge process memory. This is obviously problematic in a shared environment (e.g. on a terminal servers) as an attacker can access all Edge processes for all logged on and disconnected users, and dump their saved credentials. Microsoft has said that this is "by design" and thus won't fix this.
 Powershell version: https://gist.github.com/gitgotgitgotit/e28e02a02a358aef189c9c1ee426adf8
 Rust version: https://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Browser%20Creds%20Dumper/EdgeSavedPasswordsDumper

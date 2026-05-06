@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-06T06:36:17.003179+00:00",
-  "messages_count": 168,
+  "last_update": "2026-05-06T11:10:31.427457+00:00",
+  "messages_count": 170,
   "messages": [
+    {
+      "id": "347",
+      "title": "VeeamDumper-BOF",
+      "text": "VeeamDumper-BOF\nA credential extraction BOF for Veeam Backup and Replication and Veeam One\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/347",
+      "pub_date": "2026-05-06T10:54:01+00:00"
+    },
+    {
+      "id": "346",
+      "title": "MorphKatz",
+      "text": "MorphKatz\nRewrites x86-64 machine code inside PE executables and raw shellcode into semantically identical but byte-different equivalents. Same arithmetic, same observable EFLAGS effects, same control-flow — different bytes. That breaks byte-pattern detection (YARA rules, Defender signatures, Elastic rules, Sigma detection content) without changing what the code actually does.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/346",
+      "pub_date": "2026-05-06T10:24:05+00:00"
+    },
     {
       "id": "345",
       "title": "EdgeSavedPasswordsDumper",
