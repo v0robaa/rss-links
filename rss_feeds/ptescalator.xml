@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 17:05:23 +0000</lastBuildDate><item><title>Message 715</title><link>https://t.me/ptescalator/715</link><description/><pubDate>Thu, 30 Apr 2026 17:05:23 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_715</guid></item><item><title>Copy.Fail 🐧</title><link>https://t.me/ptescalator/714</link><description>Copy.Fail 🐧
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 07 May 2026 11:05:20 +0000</lastBuildDate><item><title>Группа киберразведки PT ESC представила обзор кибератак за I квартал 2026 года ✍️</title><link>https://t.me/ptescalator/716</link><description>Группа киберразведки PT ESC представила обзор кибератак за I квартал 2026 года ✍️
+В отчете проанализирована активность хакерских группировок, нацеленных на российские организации: от госсектора и ВПК до финансов, промышленности и телекоммуникаций.
+Описана активность шпионских группировок Rare Werewolf, PhaseShifters, PhantomCore, Goffee, IAmTheKing, Tolik, BO Team, а также финансово мотивированных Hive0117 и Fluffy Wolf.
+✉️ Основные векторы первоначального доступа:
+• Таргетированный фишинг с легендами деловой переписки
+• Запароленные архивы с LNK-ярлыками, NSIS-инсталляторами с двойным расширением .pdf.exe, HTA-, XLL-, RTF- и SFX-файлами
+• Эксплуатация уязвимостей в клиентском ПО
+• Рассылки со скомпрометированных почтовых ящиков для обхода репутационных фильтров
+Ознакомиться с отчетом можно в нашем блоге.
+#TI #APT #Malware #Phishing
+@ptescalator (X, Max)
+
+[Media: Фото]</description><pubDate>Thu, 07 May 2026 11:05:20 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_716</guid></item><item><title>Message 715</title><link>https://t.me/ptescalator/715</link><description/><pubDate>Thu, 30 Apr 2026 17:05:23 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_715</guid></item><item><title>Copy.Fail 🐧</title><link>https://t.me/ptescalator/714</link><description>Copy.Fail 🐧
 Исследователи обнаружили баг в ядре Linux, который существовал в системах с 2017 года и затрагивает практически все дистрибутивы.
 Уязвимость CVE-2026-31431, которую мы считаем трендовой, состоит из четырех шагов:
 1️⃣ Пользователь открывает сокет AF_ALG и инициализирует AEAD-алгоритм без привилегий;
