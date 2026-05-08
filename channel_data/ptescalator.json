@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-05-08T15:28:08.958387+00:00",
-  "messages_count": 120,
+  "last_update": "2026-05-08T19:38:48.422315+00:00",
+  "messages_count": 121,
   "messages": [
+    {
+      "id": "719",
+      "title": "Message 719",
+      "text": "",
+      "link": "https://t.me/ptescalator/719",
+      "pub_date": "2026-05-08T16:03:46+00:00"
+    },
     {
       "id": "718",
       "title": "Dirty Frag 🐧💥",
