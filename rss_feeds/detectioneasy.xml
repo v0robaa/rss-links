@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Tue, 07 Apr 2026 14:06:45 +0000</lastBuildDate><item><title>Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen</title><link>https://t.me/detectioneasy/327</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 08 May 2026 09:49:21 +0000</lastBuildDate><item><title>Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со...</title><link>https://t.me/detectioneasy/328</link><description>В Windows 11 версии 24H2 и Windows Server 2025 добавлены новая политика и события аудита NTLM. Расширенный аудит поддерживает улучшенный мониторинг безопасности и идентификацию устаревших зависимостей проверки подлинности NTLM.
+Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со старых версий ОС настройки будут оставаться прежние, и атаки будут работать.
+Поэтому обращаем внимание на новые события:
+— 4020 (Informational)
+— 4021 (Warning) "This machine attempted to authenticate to a remote resource via NTLM”
+— 4022 (Informational)
+— 4023 (Warning) “A remote client is using NTLM to authenticate to this workstation”
+Эти события можно использовать для детектирования coercing-атак либо для анализа  нетипичных  настроек NTLM-аутентификации.
+На скриншоте выше — как раз пример coercing-атаки: цепочка событий 4023 и 4021 с одного IP-адреса атакующего.
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 09:49:21 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_328</guid></item><item><title>Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen</title><link>https://t.me/detectioneasy/327</link><description>Всем привет 💻✌️
 Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen
 👨‍💻  Как это работает?
 🔤Цепочка довольно простая: zip -&gt; vhdx -&gt; trust.exe + malicious.dll
