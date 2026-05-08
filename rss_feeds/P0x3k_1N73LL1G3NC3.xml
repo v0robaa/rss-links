@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 08 May 2026 05:33:51 +0000</lastBuildDate><item><title>Dirty Frag: Universal Linux LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/348</link><description>Dirty Frag: Universal Linux LPE
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 08 May 2026 14:44:24 +0000</lastBuildDate><item><title>ReverseShell_2026_05.ps1</title><link>https://t.me/P0x3k_1N73LL1G3NC3/349</link><description>ReverseShell_2026_05.ps1
+ReverseShell with AI behaviour analysis bypass (prompt injection targeting sandbox analysis). As of May 4, 2026, undetected by all antivirus engines (0/61). These files typically remain usable for about 2–3 weeks before antivirus vendors begin flagging them.
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 14:44:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_349</guid></item><item><title>Dirty Frag: Universal Linux LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/348</link><description>Dirty Frag: Universal Linux LPE
 Obtain root privileges on major Linux distributions by chaining the xfrm-ESP Page-Cache Write vulnerability and the RxRPC Page-Cache Writevulnerability.
 Dirty Frag is a case that extends the bug class to which Dirty Pipe and Copy Fail belong. Because it is a deterministic logic bug that does not depend on a timing window, no race condition is required, the kernel does not panic when the exploit fails, and the success rate is very high.
 For detailed technical information and the timeline, see here.

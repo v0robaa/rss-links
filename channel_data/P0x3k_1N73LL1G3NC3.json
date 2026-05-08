@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-08T10:43:33.330464+00:00",
-  "messages_count": 171,
+  "last_update": "2026-05-08T15:27:49.358018+00:00",
+  "messages_count": 172,
   "messages": [
+    {
+      "id": "349",
+      "title": "ReverseShell_2026_05.ps1",
+      "text": "ReverseShell_2026_05.ps1\nReverseShell with AI behaviour analysis bypass (prompt injection targeting sandbox analysis). As of May 4, 2026, undetected by all antivirus engines (0/61). These files typically remain usable for about 2–3 weeks before antivirus vendors begin flagging them.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/349",
+      "pub_date": "2026-05-08T14:44:24+00:00"
+    },
     {
       "id": "348",
       "title": "Dirty Frag: Universal Linux LPE",
