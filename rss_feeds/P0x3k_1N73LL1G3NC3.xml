@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 06 May 2026 10:54:01 +0000</lastBuildDate><item><title>VeeamDumper-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/347</link><description>VeeamDumper-BOF
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 08 May 2026 05:33:51 +0000</lastBuildDate><item><title>Dirty Frag: Universal Linux LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/348</link><description>Dirty Frag: Universal Linux LPE
+Obtain root privileges on major Linux distributions by chaining the xfrm-ESP Page-Cache Write vulnerability and the RxRPC Page-Cache Writevulnerability.
+Dirty Frag is a case that extends the bug class to which Dirty Pipe and Copy Fail belong. Because it is a deterministic logic bug that does not depend on a timing window, no race condition is required, the kernel does not panic when the exploit fails, and the success rate is very high.
+For detailed technical information and the timeline, see here.
+Tested on the following distribution versions:
+• Ubuntu 24.04.4: 6.17.0-23-generic
+• RHEL 10.1: 6.12.0-124.49.1.el10_1.x86_64
+• openSUSE Tumbleweed: 7.0.2-1-default
+• CentOS Stream 10: 6.12.0-224.el10.x86_64
+• AlmaLinux 10: 6.12.0-124.52.3.el10_1.x86_64
+• Fedora 44: 6.19.14-300.fc44.x86_64
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 05:33:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_348</guid></item><item><title>VeeamDumper-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/347</link><description>VeeamDumper-BOF
 A credential extraction BOF for Veeam Backup and Replication and Veeam One
 
 [Media: Фото]</description><pubDate>Wed, 06 May 2026 10:54:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_347</guid></item><item><title>MorphKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/346</link><description>MorphKatz
