@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-05-11T07:50:26.956026+00:00",
-  "messages_count": 197,
+  "last_update": "2026-05-11T12:17:38.005939+00:00",
+  "messages_count": 198,
   "messages": [
+    {
+      "id": "1350",
+      "title": "Threat-Hunting tool for Linux и парсер 🤪",
+      "text": "Threat-Hunting tool for Linux и парсер 🤪\nKunai is a powerful tool designed to bring actionable insights for tasks such as security monitoring and threat hunting on Linuxsystems. Think of it as the Linux counterpart to Sysmon on Windows, tailored for comprehensive and precise event monitoring.\n🔗https://github.com/kunai-project/kunai\nДополнение от комьюнити, парсер🔥🔥🔥:\nKunai Plaso Parser adds Log2Timeline / Plaso support for Kunai JSON-lines event logs. It is designed for Linux evidence images and stand-alone Kunai log files.\n➡️➡️➡️ https://github.com/TazWake/Kunai_Parser_Plaso-l2t/",
+      "link": "https://t.me/ThreatHuntingFather/1350",
+      "pub_date": "2026-05-11T09:34:51+00:00"
+    },
     {
       "id": "1340",
       "title": "Quasar Linux (QLNX) – A Silent Foothold in the Supply Chain: Inside a Full-Featured Linux RAT With Rootkit, PAM Backdoor, Credential Harvesting Capabilities",
