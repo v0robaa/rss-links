@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 11 May 2026 11:39:57 +0000</lastBuildDate><item><title>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики</title><link>https://t.me/SecLabNews/17715</link><description>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 11 May 2026 14:59:57 +0000</lastBuildDate><item><title>🤖Без Google Play Services вы уже немного бот</title><link>https://t.me/SecLabNews/17716</link><description>🤖Без Google Play Services вы уже немного бот
+Пользователи Android-смартфонов без сервисов Google столкнулись с тем, что reCAPTCHA перестала их пропускать. При подозрительной активности система показывает QR-код для сканирования, и для прохождения проверки требуется Google Play Services версии 25.41.30 или новее. Без фирменных компонентов капча завершается ошибкой.
+Проблема затронула владельцев устройств с прошивками вроде GrapheneOS, где приложения Google удалены ради конфиденциальности. В сервисе MEGA напомнили, что в 2023 году Google уже пыталась продвигать похожую идею через инициативу Web Environment Integrity, но тогда от неё отказались после критики.
+Разработчики GrapheneOS связывают происходящее с распространением аппаратной аттестации устройств. Они опасаются, что банки, государственные сервисы и крупные платформы постепенно начнут требовать «одобренные» устройства, оставляя пользователей независимых систем без доступа. На iPhone с iOS 16.4 и новее такая проверка работает без дополнительных компонентов Google.
+#android #google #recaptcha
+@SecLabNews
+
+[Media: Фото]</description><pubDate>Mon, 11 May 2026 14:59:57 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17716</guid></item><item><title>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики</title><link>https://t.me/SecLabNews/17715</link><description>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики
 Команда HEX.TEAM приглашает на экспертный вебинар "Безопасность КИИ: категорирование и построение защиты" — с разбором актуальных изменений законодательства, практики категорирования и подходов к построению защиты значимых объектов КИИ.
 На вебинаре:
 🔹 Обзор нормативных изменений 2025-2026 гг. Что именно нужно поменять в ваших документах прямо сейчас
