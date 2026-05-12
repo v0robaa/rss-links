@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 11 May 2026 11:45:49 +0000</lastBuildDate><item><title>Мы тут больше про ML, но чтобы что-то делать в ИБ приходится разбираться как там всё устроено. SOC, аналитики, ночные смены, вот это всё.</title><link>https://t.me/ptescalator/720</link><description>Мы тут больше про ML, но чтобы что-то делать в ИБ приходится разбираться как там всё устроено. SOC, аналитики, ночные смены, вот это всё.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 12 May 2026 12:30:36 +0000</lastBuildDate><item><title>Злоумышленник публикует .bash_history смотреть без регистрации и смс 😱  Команда Supply Chain Security отправила отчет администрации реестра npm о занятной маленькой кампании против Apple, среди них: ...</title><link>https://t.me/ptescalator/724</link><description>Злоумышленник публикует .bash_history смотреть без регистрации и смс 😱  Команда Supply Chain Security отправила отчет администрации реестра npm о занятной маленькой кампании против Apple, среди них:  • apple-infra-network-v2 (170 скачиваний на момент репорта)…</description><pubDate>Tue, 12 May 2026 12:30:36 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_724</guid></item><item><title>Злоумышленник публикует .bash_history смотреть без регистрации и смс 😱</title><link>https://t.me/ptescalator/721</link><description>Злоумышленник публикует .bash_history смотреть без регистрации и смс 😱
+Команда Supply Chain Security отправила отчет администрации реестра npm о занятной маленькой кампании против Apple, среди них:
+• apple-infra-network-v2 (170 скачиваний на момент репорта)
+• apple-infra-final-escape (326 скачиваний)
+• apple-infra-gcp-leak (165 скачиваний)
+• apple-infra-ultimate-bypass (153 скачивания)
+• agents-a365-runtime — мимикрия под пакет @microsoft/agents-a365-runtime (447 скачиваний)
+• apple-security-internal-scanner-v3 (185 скачиваний)
+• apple-coredata-internal-service (367 скачиваний)
+Часть проектов первой волны лаконична и состоит из одного файла package.json весом менее 1 килобайта (скриншот 1).
+Bash-однострочник:
+🌟Получает содержимое /etc/resolv.conf — DNS-конфигурацию устройства.
+🌟Проверяет возможность разрезолвить домен internal.apple.com через nslookup / host.
+🌟Забирает записи ARP-кеша (таблицы сопоставлений ip-адресов на MAC-адреса).
+🌟Обращает внимание на следующие переменные окружения по маске: *PROXY*, *TENCENT*, *REGION*, *ZONE*.
+Смысл переменных окружения:
+PROXY* — забрать настройки корпоративных прокси (HTTP_PROXY, HTTPS_PROXY и другие). Там может попасться значение наподобие http://proxy[.]departmentname.companyname[.]local, позволяющее детальнее идентифицировать жертву;
+TENCENT* — вероятно признак инфраструктуры Tencent Cloud
+REGION и ZONE — переменные окружения, в которой может храниться местоположение облака, например eu-west-1
+Этот отчет обрамляется текстом --- NETWORK PIVOT AUDIT --- и --- AUDIT SELESAI --- (индонезийский «Отчет окончен») и отправляется автору пакета.
+———
+Легко можно поверить, что это пентест- либо багбаунти-активность против Apple: аккуратно собирается отпечаток жертвы, без информации, которая представляла бы коммерческую ценность.
+Однако часть дальнейших релизов имеют занятную логику (скриншот 2):
+1️⃣ Попытка украсть значение одной из переменных окружения в следующем порядке: NPM_TOKEN, NODE_AUTH_TOKEN, GITHUB_TOKEN, NPM_AUTH_TOKEN. Если их нет, то попробуем взять authToken из файла ~/.npmrc
+2️⃣ Надеясь, что у окружения есть доступ к внутреннему хранилищу npm-пакетов, попытка скачать пакет apple-app-store-server-library, пересобрать его с новой версией и опубликовать в глобальном npmjs.org
+Our honest reaction на второй пункт: 🤔 Ну и индонезийских комментариев стало больше.
+———
+По мере развития кампании злоумышленник перестал пускать в глаза пыль благих намерений и стал просто красть все интересные переменные окружения, а также забирать токены Azure IMDS.
+В какой-то момент автор, тестируя логику публикации пакета от имени жертвы, случайно упаковал в один из своих релизов все свои скрипты, node-логи и даже .bash-history 🤔 (скриншот 3).
+При изучении команд создается четкое ощущение, что мы столкнулись с работой агентской системы по автоматизации проведения пентестов. Лишь сильнейшие из людей могут писать команды наподобие:
+echo 'длинный валидный однострочный package.json c инфостилером в preinstall-логике'  &gt; package.json &amp;&amp; npm publish
+В bash history также попали комментарии. Их мог оставить сам злоумышленник, копируя команды из диалога с LLM, а мог и сам агент:
+// Masukin ini ke dalam script preinstall lu
+# Nyari di mana lokasi instalasi npm lo
+# Biasanya hasilnya di /usr/bin/npm. Sekarang kita liat isinya:
+В переводе на английский:
+// Enter this into your preinstall script
+# Find your npm installation location
+# Usually, it's in /usr/bin/npm. Now let's look at the contents:
+———
+На дворе 2026 год. Фреймворки для автопентеста уже существуют. Blue team тоже не отстает и предлагает свои решения по использованию LLM в тех же SIEM. Пройдет время, и нам, человекам, останется только с попкорном смотреть за этим противостоянием 🍿
+#npm #ti #scs
+@ptescalator
+
+[Media: Фото]</description><pubDate>Tue, 12 May 2026 11:29:36 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_721</guid></item><item><title>Мы тут больше про ML, но чтобы что-то делать в ИБ приходится разбираться как там всё устроено. SOC, аналитики, ночные смены, вот это всё.</title><link>https://t.me/ptescalator/720</link><description>Мы тут больше про ML, но чтобы что-то делать в ИБ приходится разбираться как там всё устроено. SOC, аналитики, ночные смены, вот это всё.
 И как-то поймали себя на мысли: читать про MITRE и смотреть отчёты про APT-кампании — это понятно. А вот попробовать на собственной шкуре, каково это — сидеть в три ночи и думать «это атака через запуск PowerShell из ворда у бухгалтера или просто кто-то макросы открыл» — ну такое, попробовать особо негде.
 Поэтому Тимур Смирнов сел и сделал маленькую браузерную игру — Dwell Time.
 Три ночные смены, 30 алертов, ты SOC-аналитик первой линии. Тыкаешь что делать: разрешить, заблокировать, эскалировать или копнуть дальше. В конце говорят, где налажал и дают ссылки почитать про каждую технику, чтобы реально что-то выучить.
