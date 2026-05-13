@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 13 May 2026 16:25:18 +0000</lastBuildDate><item><title>Коротко о проблемах вайб-кодинга и безопасности 🤣</title><link>https://t.me/s0ld13r_ch/387</link><description>Коротко о проблемах вайб-кодинга и безопасности 🤣
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 13 May 2026 20:03:44 +0000</lastBuildDate><item><title>Коротко о проблемах вайб-кодинга и безопасности 🤣</title><link>https://t.me/s0ld13r_ch/387</link><description>Коротко о проблемах вайб-кодинга и безопасности 🤣
 🧢 s0ld13r
 
-[Media: Видео]</description><pubDate>Wed, 13 May 2026 16:25:18 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_387</guid></item><item><title>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨</title><link>https://t.me/s0ld13r_ch/386</link><description>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨
+[Media: Видео]</description><pubDate>Wed, 13 May 2026 20:03:44 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_387</guid></item><item><title>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨</title><link>https://t.me/s0ld13r_ch/386</link><description>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨
 В npm пакете @bitwarden/cli (версия 2026.4.0) обнаружен троянизированный билд, замаскированный под легитный CLI. Пакет сохраняет оригинальные метаданные, но execution path переписан - при установке запускается вредоносный loader подгружающий стилер Shai-Hulud 👀
 Payload разворачивается в несколько этапов: через preinstall запускается bw_setup.js, который подтягивает Bun runtime с GitHub и исполняет обфусцированный скрипт 😃
 Основной функционал:
