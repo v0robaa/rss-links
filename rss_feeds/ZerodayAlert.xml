@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 11 May 2026 15:52:13 +0000</lastBuildDate><item><title>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики</title><link>https://t.me/ZerodayAlert/691</link><description>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 13 May 2026 08:45:35 +0000</lastBuildDate><item><title>Хакер нашёл способ обойти шифрование BitLocker в Windows 11</title><link>https://t.me/ZerodayAlert/692</link><description>Хакер нашёл способ обойти шифрование BitLocker в Windows 11
+Исследователь под псевдонимом Nightmare-Eclipse опубликовал сведения о двух уязвимостях нулевого дня в Windows, затрагивающих Windows 11 и серверные версии. Патчей от Microsoft на данный момент нет.
+Первая уязвимость GreenPlasma связана с компонентом CTFMON и позволяет создавать объекты в системных каталогах от имени SYSTEM. Ряд служб и драйверов доверяют этим путям, что открывает возможность влиять на данные в системе.
+Вторая уязвимость YellowKey позволяет обойти BitLocker через среду восстановления Windows и получить доступ к зашифрованному разделу. Автор обнаружил в образе WinRE загадочный компонент, которого нет в обычной установке, и предположил, что механизм мог появиться намеренно.
+#windows #уязвимость #нулевойдень #bitlocker
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 13 May 2026 08:45:35 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_692</guid></item><item><title>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики</title><link>https://t.me/ZerodayAlert/691</link><description>⚡️Безопасность КИИ: что изменилось и как выстроить защиту. Мануал и разбор практики
 Команда HEX.TEAM приглашает на экспертный вебинар "Безопасность КИИ: категорирование и построение защиты" — с разбором актуальных изменений законодательства, практики категорирования и подходов к построению защиты значимых объектов КИИ.
 На вебинаре:
 🔹 Обзор нормативных изменений 2025-2026 гг. Что именно нужно поменять в ваших документах прямо сейчас
