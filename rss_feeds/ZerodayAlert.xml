@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 13 May 2026 08:45:35 +0000</lastBuildDate><item><title>Хакер нашёл способ обойти шифрование BitLocker в Windows 11</title><link>https://t.me/ZerodayAlert/692</link><description>Хакер нашёл способ обойти шифрование BitLocker в Windows 11
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 06:36:45 +0000</lastBuildDate><item><title>Microsoft закрыла 120 уязвимостей, среди которых есть опасная ошибка в Paint</title><link>https://t.me/ZerodayAlert/694</link><description>Microsoft закрыла 120 уязвимостей, среди которых есть опасная ошибка в Paint
+Майский Patch Tuesday у Microsoft получился крупным. Компания закрыла 120 уязвимостей, 17 из которых признаны критическими. Угроз нулевого дня, уже используемых в атаках, на этот раз не зафиксировано.
+Среди заметных проблем — уязвимость в Windows GDI: открытие подготовленного файла в обычном Paint могло привести к выполнению произвольного кода. Похожая логика работает и с Office: часть ошибок срабатывала даже через панель предварительного просмотра.
+Отдельного внимания заслуживает ошибка в DNS-клиенте Windows. Вредоносный DNS-ответ мог повредить память и дать атакующему полный контроль над машиной — без единого клика со стороны пользователя.
+#PatchTuesday #Windows #уязвимости #кибербезопасность
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 14 May 2026 06:36:45 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_694</guid></item><item><title>В Exim нашли уязвимость, которая даёт полный доступ к серверу</title><link>https://t.me/ZerodayAlert/693</link><description>В Exim нашли уязвимость, которая даёт полный доступ к серверу
+В почтовом сервере Exim нашли ошибку: при установке зашифрованного соединения один байт уходит не туда. Память, куда он попадает, уже освобождена, но Exim отдаёт её под новые данные по предсказуемой схеме. Атакующий заранее кладёт туда нужное, ждёт байт и получает рычаг управления процессом. А дальше — сервер его.
+Исследователи проверили, можно ли довести баг до реального взлома, и заодно пустили в работу автономный ИИ. Тот неплохо читал код, но без знания архитектуры Exim изнутри быстро заходил в тупик. Люди справились лучше — архитектурная интуиция пока не автоматизируется.
+Один байт — это почти ничто. Но именно такие ошибки опаснее громких: они неочевидны, долго живут в коде и обнаруживаются уже после того, как кто-то ими воспользовался.
+#exim #tls #уязвимости #кибербезопасность
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 14 May 2026 05:54:35 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_693</guid></item><item><title>Хакер нашёл способ обойти шифрование BitLocker в Windows 11</title><link>https://t.me/ZerodayAlert/692</link><description>Хакер нашёл способ обойти шифрование BitLocker в Windows 11
 Исследователь под псевдонимом Nightmare-Eclipse опубликовал сведения о двух уязвимостях нулевого дня в Windows, затрагивающих Windows 11 и серверные версии. Патчей от Microsoft на данный момент нет.
 Первая уязвимость GreenPlasma связана с компонентом CTFMON и позволяет создавать объекты в системных каталогах от имени SYSTEM. Ряд служб и драйверов доверяют этим путям, что открывает возможность влиять на данные в системе.
 Вторая уязвимость YellowKey позволяет обойти BitLocker через среду восстановления Windows и получить доступ к зашифрованному разделу. Автор обнаружил в образе WinRE загадочный компонент, которого нет в обычной установке, и предположил, что механизм мог появиться намеренно.
