@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-14T06:49:52.062597+00:00",
-  "messages_count": 174,
+  "last_update": "2026-05-14T11:18:41.751466+00:00",
+  "messages_count": 176,
   "messages": [
+    {
+      "id": "353",
+      "title": "Nginx-Rift",
+      "text": "Nginx-Rift\nCVE-2026-42945, a critical heap buffer overflow in NGINX's ngx_http_rewrite_module introduced in 2008. The bug enables unauthenticated remote code execution against servers using rewrite and set directives.\nAffected Versions:\n• NGINX Open Source: 0.6.27 – 1.30.0\n• NGINX Plus: R32 – R36\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/353",
+      "pub_date": "2026-05-14T10:54:21+00:00"
+    },
+    {
+      "id": "352",
+      "title": "Fragnesia",
+      "text": "Fragnesia\nUniversal Linux local privilege escalation exploit. Fragnesia is a member of the Dirty Frag vulnerability class. This is a separate bug in the ESP/XFRM from dirtyfrag which has received its own patch. However, it is in the same surface and the mitigation is the same as for dirtyfrag.\nIt abuses a logic bug in the Linux XFRM ESP-in-TCP subsystem to achieve arbitrary byte writes into the kernel page cache of read-only files, without requiring any race condition.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/352",
+      "pub_date": "2026-05-14T10:30:26+00:00"
+    },
     {
       "id": "351",
       "title": "Boost channel, if you are a shower",

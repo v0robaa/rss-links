@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 06:47:01 +0000</lastBuildDate><item><title>Boost channel, if you are a shower</title><link>https://t.me/P0x3k_1N73LL1G3NC3/351</link><description>Boost channel, if you are a shower
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 10:54:21 +0000</lastBuildDate><item><title>Nginx-Rift</title><link>https://t.me/P0x3k_1N73LL1G3NC3/353</link><description>Nginx-Rift
+CVE-2026-42945, a critical heap buffer overflow in NGINX's ngx_http_rewrite_module introduced in 2008. The bug enables unauthenticated remote code execution against servers using rewrite and set directives.
+Affected Versions:
+• NGINX Open Source: 0.6.27 – 1.30.0
+• NGINX Plus: R32 – R36
+
+[Media: Фото]</description><pubDate>Thu, 14 May 2026 10:54:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_353</guid></item><item><title>Fragnesia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/352</link><description>Fragnesia
+Universal Linux local privilege escalation exploit. Fragnesia is a member of the Dirty Frag vulnerability class. This is a separate bug in the ESP/XFRM from dirtyfrag which has received its own patch. However, it is in the same surface and the mitigation is the same as for dirtyfrag.
+It abuses a logic bug in the Linux XFRM ESP-in-TCP subsystem to achieve arbitrary byte writes into the kernel page cache of read-only files, without requiring any race condition.
+
+[Media: Видео]</description><pubDate>Thu, 14 May 2026 10:30:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_352</guid></item><item><title>Boost channel, if you are a shower</title><link>https://t.me/P0x3k_1N73LL1G3NC3/351</link><description>Boost channel, if you are a shower
 
 [Media: Фото]</description><pubDate>Thu, 14 May 2026 06:47:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_351</guid></item><item><title>GreenPlasma</title><link>https://t.me/P0x3k_1N73LL1G3NC3/350</link><description>GreenPlasma
 Windows CTFMON Arbitrary Section Creation Elevation of Privileges Vulnerability
