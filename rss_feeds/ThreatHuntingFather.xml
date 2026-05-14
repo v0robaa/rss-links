@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 05:33:08 +0000</lastBuildDate><item><title>◽️ A popular software, DAEMON Tools, was compromised in a supply chain attack. The installers were signed with valid vendor certificates, infecting thousands of systems before deploying a...</title><link>https://t.me/ThreatHuntingFather/1352</link><description>◽️ A popular software, DAEMON Tools, was compromised in a supply chain attack. The installers were signed with valid vendor certificates, infecting thousands of systems before deploying a second-stage backdoor and a previously unknown QUIC RAT targeting roughly a dozen government, scientific, manufacturing, and retail organizations in Russia, Belarus, and Thailand.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 11:59:18 +0000</lastBuildDate><item><title>Для анализа малвари я часто использую эмулятор Speakeasy. Запускаю в докере, без выхода в интернет, сеть эмулируется внутри. Инструмент очень хороший, но проблема в том, что speakeasy "из коробки"...</title><link>https://t.me/ThreatHuntingFather/1353</link><description>Для анализа малвари я часто использую эмулятор Speakeasy. Запускаю в докере, без выхода в интернет, сеть эмулируется внутри. Инструмент очень хороший, но проблема в том, что speakeasy "из коробки" имеет очень лимитированный api handlers, из-за чего не может нормально эмулировать реальные образцы малвари.
+Для исправления этой проблемы я прогнал 6000 разнообразных (по размеру, по семейству, по типу) образцов через стоковый speakeasy. Во время этой задачи Claude Opus и OpenAI GPT-5.5 (все на max/xhigh effort) несколько ночей на ходу исправляли проблемы, которые мешали эмулировать тот или иной образец. Цикл исправлений был такой:
+1. Запускаем образец в Speakeasy.
+2. Эмуляция останавливается на missing/incomplete API handler или runtime edge.
+3. LLM-агент анализирует падение, пишет API hook с правдоподобной Windows-семантикой.
+4. Пересобираем Docker image и перезапускаем упавший образец
+Образцы для прогона я брал из самых свежих архивов InTheWild (апрель, май 2026) у VXUG.
+Из интересного:
+было прогнано 231 семейство малвари
+среднее время эмуляции образца 35 секунд
+API вызовов - в среднем 8765, медианная 210
+Суммарное время эмуляции всех 6000 образцов: 56.8 часа, 2.37 суток
+Суммарное время эмуляции всех 6000 орбазцов + работа ИИ над исправлениями: 93.7 часа = 3.9 суток
+В итоге обвязка над Speakeasy получилась около 40k строк кода, примерно 3.7k API хуков и 82 overlay-модуля.
+Все эти наработки я выложил на гитхабе:
+https://github.com/thatskriptkid/speakeasy-extensions
+P.S. Советую вам также скачать все стандартные windows DLL и подложить их speakeasy через параметр -l или как описано в моей репе:
+export SPEAKEASY_MODULE_DIR_X64=/path/to/windows/x64/modules
+export SPEAKEASY_MODULE_DIR_X86=/path/to/windows/x86/modules</description><pubDate>Thu, 14 May 2026 11:59:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1353</guid></item><item><title>◽️ A popular software, DAEMON Tools, was compromised in a supply chain attack. The installers were signed with valid vendor certificates, infecting thousands of systems before deploying a...</title><link>https://t.me/ThreatHuntingFather/1352</link><description>◽️ A popular software, DAEMON Tools, was compromised in a supply chain attack. The installers were signed with valid vendor certificates, infecting thousands of systems before deploying a second-stage backdoor and a previously unknown QUIC RAT targeting roughly a dozen government, scientific, manufacturing, and retail organizations in Russia, Belarus, and Thailand.
 🔗https://securelist.com/tr/daemon-tools-backdoor/119654/
 ◽️ Cisco Talos detailed UAT-8302, a previously undocumented cluster that has targeted South American government entities and southeastern European agencies. The toolkit pairs NetDraft and CloudSorcerer backdoors with a new Rust-based stager called SNOWRUST.
 🔗https://blog.talosintelligence.com/uat-8302/

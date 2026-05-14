@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-05-14T11:18:48.711869+00:00",
-  "messages_count": 200,
+  "last_update": "2026-05-14T16:11:43.037634+00:00",
+  "messages_count": 201,
   "messages": [
+    {
+      "id": "1353",
+      "title": "Для анализа малвари я часто использую эмулятор Speakeasy. Запускаю в докере, без выхода в интернет, сеть эмулируется внутри. Инструмент очень хороший, но проблема в том, что speakeasy \"из коробки\"...",
+      "text": "Для анализа малвари я часто использую эмулятор Speakeasy. Запускаю в докере, без выхода в интернет, сеть эмулируется внутри. Инструмент очень хороший, но проблема в том, что speakeasy \"из коробки\" имеет очень лимитированный api handlers, из-за чего не может нормально эмулировать реальные образцы малвари.\nДля исправления этой проблемы я прогнал 6000 разнообразных (по размеру, по семейству, по типу) образцов через стоковый speakeasy. Во время этой задачи Claude Opus и OpenAI GPT-5.5 (все на max/xhigh effort) несколько ночей на ходу исправляли проблемы, которые мешали эмулировать тот или иной образец. Цикл исправлений был такой:\n1. Запускаем образец в Speakeasy.\n2. Эмуляция останавливается на missing/incomplete API handler или runtime edge.\n3. LLM-агент анализирует падение, пишет API hook с правдоподобной Windows-семантикой.\n4. Пересобираем Docker image и перезапускаем упавший образец\nОбразцы для прогона я брал из самых свежих архивов InTheWild (апрель, май 2026) у VXUG.\nИз интересного:\nбыло прогнано 231 семейство малвари\nсреднее время эмуляции образца 35 секунд\nAPI вызовов - в среднем 8765, медианная 210\nСуммарное время эмуляции всех 6000 образцов: 56.8 часа, 2.37 суток\nСуммарное время эмуляции всех 6000 орбазцов + работа ИИ над исправлениями: 93.7 часа = 3.9 суток\nВ итоге обвязка над Speakeasy получилась около 40k строк кода, примерно 3.7k API хуков и 82 overlay-модуля.\nВсе эти наработки я выложил на гитхабе:\nhttps://github.com/thatskriptkid/speakeasy-extensions\nP.S. Советую вам также скачать все стандартные windows DLL и подложить их speakeasy через параметр -l или как описано в моей репе:\nexport SPEAKEASY_MODULE_DIR_X64=/path/to/windows/x64/modules\nexport SPEAKEASY_MODULE_DIR_X86=/path/to/windows/x86/modules",
+      "link": "https://t.me/ThreatHuntingFather/1353",
+      "pub_date": "2026-05-14T11:59:18+00:00"
+    },
     {
       "id": "1352",
       "title": "◽️ A popular software, DAEMON Tools, was compromised in a supply chain attack. The installers were signed with valid vendor certificates, infecting thousands of systems before deploying a...",
