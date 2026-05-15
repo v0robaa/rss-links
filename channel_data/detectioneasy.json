@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-05-14T19:55:06.740441+00:00",
-  "messages_count": 66,
+  "last_update": "2026-05-15T07:29:30.271350+00:00",
+  "messages_count": 67,
   "messages": [
+    {
+      "id": "329",
+      "title": "Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации",
+      "text": "Всем привет 💻✌️\nКоллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации\n👨‍💻 Как это работает?\n🔤Основный вектор получения доступа фишинг с PDF/HTML-приманками, которые побуждают скачать файл\n‍🔤В одной из цепочек внутри архива находился *.chm, который скачивал файл a.gif с скомпрометированного легитимного домена, переименовывал его в dmitry_medvedev.msi и открывал легитимный PDF-документ для отвлечения пользователя\n🔤*.msi был подписан QILING Tech и создавал директорию C:\\Users\\admin\\AppData\\Local\\Disk Master с множеством dll-файлов, и уязвимым к DLL sideloading MetadataConvert.exe\n🔭 Обнаружение:\n🔤 ищем переименованные файлы (с неисполняемого расширения в исполняемое) в $mft и $UsnJrnl:$J, кластеризируем по критичности\n🔤 хантим бинарь с подписью QILING Tech\n🔤 отслеживаем цепочку процессов (пример правила из eql - execution_via_compiled_html_file)\nprocess where host.os.type == \"windows\" and event.type == \"start\" and\nprocess.parent.name : \"hh.exe\" and\nprocess.name : (\"mshta.exe\", \"cmd.exe\", \"powershell.exe\", \"pwsh.exe\", \"powershell_ise.exe\", \"cscript.exe\", \"wscript.exe\")\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/329",
+      "pub_date": "2026-05-15T04:27:42+00:00"
+    },
     {
       "id": "328",
       "title": "Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со...",

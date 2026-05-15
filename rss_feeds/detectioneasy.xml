@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 08 May 2026 09:49:21 +0000</lastBuildDate><item><title>Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со...</title><link>https://t.me/detectioneasy/328</link><description>В Windows 11 версии 24H2 и Windows Server 2025 добавлены новая политика и события аудита NTLM. Расширенный аудит поддерживает улучшенный мониторинг безопасности и идентификацию устаревших зависимостей проверки подлинности NTLM.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 15 May 2026 04:27:42 +0000</lastBuildDate><item><title>Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации</title><link>https://t.me/detectioneasy/329</link><description>Всем привет 💻✌️
+Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации
+👨‍💻 Как это работает?
+🔤Основный вектор получения доступа фишинг с PDF/HTML-приманками, которые побуждают скачать файл
+‍🔤В одной из цепочек внутри архива находился *.chm, который скачивал файл a.gif с скомпрометированного легитимного домена, переименовывал его в dmitry_medvedev.msi и открывал легитимный PDF-документ для отвлечения пользователя
+🔤*.msi был подписан QILING Tech и создавал директорию C:\Users\admin\AppData\Local\Disk Master с множеством dll-файлов, и уязвимым к DLL sideloading MetadataConvert.exe
+🔭 Обнаружение:
+🔤 ищем переименованные файлы (с неисполняемого расширения в исполняемое) в $mft и $UsnJrnl:$J, кластеризируем по критичности
+🔤 хантим бинарь с подписью QILING Tech
+🔤 отслеживаем цепочку процессов (пример правила из eql - execution_via_compiled_html_file)
+process where host.os.type == "windows" and event.type == "start" and
+process.parent.name : "hh.exe" and
+process.name : ("mshta.exe", "cmd.exe", "powershell.exe", "pwsh.exe", "powershell_ise.exe", "cscript.exe", "wscript.exe")
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 15 May 2026 04:27:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_329</guid></item><item><title>Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со...</title><link>https://t.me/detectioneasy/328</link><description>В Windows 11 версии 24H2 и Windows Server 2025 добавлены новая политика и события аудита NTLM. Расширенный аудит поддерживает улучшенный мониторинг безопасности и идентификацию устаревших зависимостей проверки подлинности NTLM.
 Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со старых версий ОС настройки будут оставаться прежние, и атаки будут работать.
 Поэтому обращаем внимание на новые события:
 — 4020 (Informational)
