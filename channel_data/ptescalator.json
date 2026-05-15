@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-05-15T16:06:17.251916+00:00",
-  "messages_count": 124,
+  "last_update": "2026-05-15T19:47:20.027087+00:00",
+  "messages_count": 125,
   "messages": [
+    {
+      "id": "725",
+      "title": "Message 725",
+      "text": "",
+      "link": "https://t.me/ptescalator/725",
+      "pub_date": "2026-05-15T18:20:24+00:00"
+    },
     {
       "id": "724",
       "title": "Злоумышленник публикует .bash_history смотреть без регистрации и смс 😱  Команда Supply Chain Security отправила отчет администрации реестра npm о занятной маленькой кампании против Apple, среди них: ...",
