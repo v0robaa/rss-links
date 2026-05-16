@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-16T06:27:36.919858+00:00",
-  "messages_count": 176,
+  "last_update": "2026-05-16T10:21:25.112794+00:00",
+  "messages_count": 177,
   "messages": [
+    {
+      "id": "354",
+      "title": "MiniPlasma (Windows unpatched LPE)",
+      "text": "MiniPlasma (Windows unpatched LPE)\nCVE-2020-17103 was apparently not patched or the patch was reversed, regardless this the PoC for an LPE in cldflt.sys, weaponized to spawn a SYSTEM shell. Success rate may vary since it's a race condition.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/354",
+      "pub_date": "2026-05-16T09:05:26+00:00"
+    },
     {
       "id": "353",
       "title": "Nginx-Rift",

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 14 May 2026 10:54:21 +0000</lastBuildDate><item><title>Nginx-Rift</title><link>https://t.me/P0x3k_1N73LL1G3NC3/353</link><description>Nginx-Rift
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 16 May 2026 09:05:26 +0000</lastBuildDate><item><title>MiniPlasma (Windows unpatched LPE)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/354</link><description>MiniPlasma (Windows unpatched LPE)
+CVE-2020-17103 was apparently not patched or the patch was reversed, regardless this the PoC for an LPE in cldflt.sys, weaponized to spawn a SYSTEM shell. Success rate may vary since it's a race condition.
+
+[Media: Фото]</description><pubDate>Sat, 16 May 2026 09:05:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_354</guid></item><item><title>Nginx-Rift</title><link>https://t.me/P0x3k_1N73LL1G3NC3/353</link><description>Nginx-Rift
 CVE-2026-42945, a critical heap buffer overflow in NGINX's ngx_http_rewrite_module introduced in 2008. The bug enables unauthenticated remote code execution against servers using rewrite and set directives.
 Affected Versions:
 • NGINX Open Source: 0.6.27 – 1.30.0
