@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-17T06:48:50.824469+00:00",
-  "messages_count": 177,
+  "last_update": "2026-05-17T10:25:51.837483+00:00",
+  "messages_count": 178,
   "messages": [
+    {
+      "id": "355",
+      "title": "DirtyDecrypt / DirtyCBC",
+      "text": "DirtyDecrypt / DirtyCBC\nA variant of CopyFail / DirtyFrag / Fragnesia. Linux kernel page-cache poisoning via AF_RXRPC RxGK decrypt-before-MAC and MSG_SPLICE_PAGES. Local privilege escalation to root.\nBlog: https://delphoslabs.com/blog/36142374-e1fe-80a9-9456-d3c64df81bd5/%20linux-rxgk-decrypt-mac\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/355",
+      "pub_date": "2026-05-17T07:43:46+00:00"
+    },
     {
       "id": "354",
       "title": "MiniPlasma (Windows unpatched LPE)",
