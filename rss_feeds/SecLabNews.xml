@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 18 May 2026 09:12:10 +0000</lastBuildDate><item><title>💥 ФБР удаленно сбросило тысячи роутеров TP-Link</title><link>https://t.me/SecLabNews/17741</link><description>💥 ФБР удаленно сбросило тысячи роутеров TP-Link
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 18 May 2026 15:02:20 +0000</lastBuildDate><item><title>Платите или останетесь без связи: ультиматум Ирана техногигантам</title><link>https://t.me/SecLabNews/17747</link><description>Платите или останетесь без связи: ультиматум Ирана техногигантам
+Тегеран обсуждает план, по которому Google, Microsoft, Meta* и Amazon должны платить за использование подводных кабелей, проходящих через территориальные воды Ирана. Военный представитель Эбрахим Зольфагари прямо написал в X, что Иран будет взимать плату за кабели.
+Через Ормузский пролив идут два кабеля — Falcon и Gulf Bridge International. Операторы давно прокладывают линии ближе к Оману, но эти два проходят через иранские воды. Связанные с государством медиа намекают, что трафик может пострадать, если компании откажутся платить.
+Американские санкции запрещают техногигантам переводить деньги Ирану, так что схема выглядит скорее политическим сигналом. Но угроза реальная: повреждение кабелей затронет банки, облака для ИИ и связь между Европой и Азией.
+* Компания Meta и её продукты признаны экстремистскими, их деятельность запрещена на территории РФ.
+#Иран #Кибербезопасность #ПодводныеКабели
+@SecLabNews
+
+[Media: Фото]</description><pubDate>Mon, 18 May 2026 15:02:20 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17747</guid></item><item><title>🛡 Встречайте Security Vision Vulnerability Management нового поколения!</title><link>https://t.me/SecLabNews/17746</link><description>🛡 Встречайте Security Vision Vulnerability Management нового поколения!
+Security Vision NG VM объединяет три функции:
+1️⃣ Учитывает все активы (даже скрытые)
+2️⃣ Находит уязвимости
+3️⃣ Контролирует, чтобы их реально исправили
+💡Главная идея
+«Не просто найти дыры — понять, какие из них опасны именно для вас, и убедиться, что их действительно закрыли».
+✅Приоритет — по реальному риску, а не по абстрактным баллам
+✅Видит даже контейнеры, телефонию, принтеры — что обычно пропускают
+✅Сама перепроверяет исправления
+✅Показывает, через какие конкретные уязвимости и узлы хакер может добраться до критичных систем, и как разорвать эти маршруты
+➡️ Узнать больше
+
+[Media: Фото]</description><pubDate>Mon, 18 May 2026 13:41:32 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17746</guid></item><item><title>SecurityLab.ru pinned Deleted message</title><link>https://t.me/SecLabNews/17745</link><description>SecurityLab.ru pinned Deleted message</description><pubDate>Mon, 18 May 2026 13:30:52 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17745</guid></item><item><title>💥 ФБР удаленно сбросило тысячи роутеров TP-Link</title><link>https://t.me/SecLabNews/17741</link><description>💥 ФБР удаленно сбросило тысячи роутеров TP-Link
 ФБР дистанционно сбросило настройки тысяч домашних и офисных роутеров по всей стране. Так агенты выбили из систем российских правительственных хакеров, которые годами превращали старую технику в шпионскую сеть, воровали пароли и читали переписку военных и чиновников.
 Проблема в том, что люди годами не меняют исправные роутеры, а производители быстро перестают выпускать обновления. Старые модели TP-Link остались без защиты, и злоумышленники массово этим воспользовались.
 Операция «Маскарад» прошла с санкции суда. Агенты разослали на зараженные устройства специальный код, который стер вредоносные настройки и заблокировал хакерам доступ. В Минюсте США заверили, что личных данных граждан спецоперация не коснулась.
