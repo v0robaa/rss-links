@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 18 May 2026 04:48:36 +0000</lastBuildDate><item><title>Velociraptor MCP 😃</title><link>https://t.me/ThreatHuntingFather/1354</link><description>Velociraptor MCP 😃
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 19 May 2026 14:54:40 +0000</lastBuildDate><item><title>Плэйбуки плэйбуки🦔</title><link>https://t.me/ThreatHuntingFather/1355</link><description>Плэйбуки плэйбуки🦔
+
+[Media: Документ]</description><pubDate>Tue, 19 May 2026 14:54:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1355</guid></item><item><title>Velociraptor MCP 😃</title><link>https://t.me/ThreatHuntingFather/1354</link><description>Velociraptor MCP 😃
 Накидайте в комментариях атаки на MCP😄
 Velociraptor MCP is a POC Model Context Protocol bridge for exposing LLMs to MCP clients.
 Initial version has several Windows orientated triage tools deployed. Best use is querying usecase to target machine name.

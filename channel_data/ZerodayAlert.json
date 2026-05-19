@@ -1,8 +1,15 @@
 {
   "channel": "ZerodayAlert",
-  "last_update": "2026-05-19T12:15:59.941411+00:00",
-  "messages_count": 155,
+  "last_update": "2026-05-19T16:52:25.591884+00:00",
+  "messages_count": 156,
   "messages": [
+    {
+      "id": "704",
+      "title": "Новая уязвимость в Exchange Server эксплуатируется через Outlook Web Access",
+      "text": "Новая уязвимость в Exchange Server эксплуатируется через Outlook Web Access\nУязвимость CVE-2026-42897 затрагивает локальные версии Exchange Server 2016, 2019 и Subscription Edition вне зависимости от установленных обновлений. Для атаки злоумышленнику достаточно отправить специально подготовленное письмо, которое жертва откроет в Outlook Web Access.\nMicrosoft выпустила временную защиту через службу Exchange Emergency Mitigation Service, которая автоматически активируется на серверах с включённой функцией экстренных мер. Для изолированных инфраструктур без доступа в интернет подготовлен отдельный скрипт Exchange On-Premises Mitigation Tool.\nПолноценное исправление находится в разработке и выйдет для Exchange SE RTM, Exchange 2016 CU23 и Exchange 2019 CU14/CU15. При этом патчи для Exchange 2016 и 2019 получат только клиенты с подпиской на расширенную программу поддержки ESU второго этапа.\n#exchangeserver #уязвимость #microsoft #zeroday\n@ZerodayAlert\n\n[Media: Фото]",
+      "link": "https://t.me/ZerodayAlert/704",
+      "pub_date": "2026-05-19T15:34:45+00:00"
+    },
     {
       "id": "703",
       "title": "Уязвимость в ядре Linux открывает доступ к приватным ключам и хешам паролей",
