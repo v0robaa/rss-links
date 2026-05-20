@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-20T07:51:43.879258+00:00",
-  "messages_count": 178,
+  "last_update": "2026-05-20T11:52:26.731667+00:00",
+  "messages_count": 179,
   "messages": [
+    {
+      "id": "356",
+      "title": "PhantomKiller",
+      "text": "PhantomKiller\nAnother BYOVD process killer. works on all EDR's. fully signed.\nBlog: https://medium.com/@jehadbudagga/phantom-killer-reverse-engineering-and-weaponizing-a-lenovo-driver-to-terminate-edr-processes-9191cd06374f\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/356",
+      "pub_date": "2026-05-20T08:28:00+00:00"
+    },
     {
       "id": "355",
       "title": "DirtyDecrypt / DirtyCBC",
