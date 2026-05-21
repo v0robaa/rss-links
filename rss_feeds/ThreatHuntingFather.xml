@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 19 May 2026 14:54:40 +0000</lastBuildDate><item><title>Плэйбуки плэйбуки🦔</title><link>https://t.me/ThreatHuntingFather/1355</link><description>Плэйбуки плэйбуки🦔
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 21 May 2026 17:26:15 +0000</lastBuildDate><item><title>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers</title><link>https://t.me/ThreatHuntingFather/1356</link><description>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers
+Hunt io  research:
+Key Observations
+More than 1,350 C2 servers were identified across 98 Middle East infrastructure providers within the past 3 months.
+• C2 infrastructure dominates malicious activity (~96.8%), far exceeding phishing infrastructure (~0.5%) and publicly reported IOCs (~0.5%), while malicious open directories account for the remaining ~2.2% of observed artifacts.
+• Saudi Arabia's STC (Saudi Telecom Company) hosts 981 C2 servers, representing 72.4% of all detected C2 infrastructure in the region, the largest concentration observed across any single provider globally.
+• A small set of hosting providers accounts for a disproportionate share of malicious infrastructure, with STC, SERVERS TECH FZCO (UAE), OMC (Israel), Türk Telekom, and Regxa (Iraq) hosting the largest volumes of detected C2 servers.
+• IoT-focused botnets (Hajime, Mozi, and Mirai) combined with offensive frameworks (Tactical RMM, Cobalt Strike, Sliver) represent the dominant malware families operating across Middle Eastern infrastructure.
+• Middle Eastern hosting environments support diverse malicious operations, including state-sponsored espionage campaigns, MaaS (Malware-as-a-Service) platforms, cryptomining operations, and targeted intrusion activity.
+🔗 https://hunt.io/blog/middle-east-malicious-infrastructure-report</description><pubDate>Thu, 21 May 2026 17:26:15 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1356</guid></item><item><title>Плэйбуки плэйбуки🦔</title><link>https://t.me/ThreatHuntingFather/1355</link><description>Плэйбуки плэйбуки🦔
 
 [Media: Документ]</description><pubDate>Tue, 19 May 2026 14:54:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1355</guid></item><item><title>Velociraptor MCP 😃</title><link>https://t.me/ThreatHuntingFather/1354</link><description>Velociraptor MCP 😃
 Накидайте в комментариях атаки на MCP😄
