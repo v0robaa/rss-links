@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 22 May 2026 09:07:45 +0000</lastBuildDate><item><title>Сразу две 0day-уязвимости обнаружены в Microsoft Defender</title><link>https://t.me/SecLabNews/17763</link><description>Сразу две 0day-уязвимости обнаружены в Microsoft Defender
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Fri, 22 May 2026 15:03:13 +0000</lastBuildDate><item><title>🔴ФБР и европейские полицейские закрыли VPN для хакеров</title><link>https://t.me/SecLabNews/17765</link><description>🔴ФБР и европейские полицейские закрыли VPN для хакеров
+Американские и европейские силовики отключили First VPN Service — анонимный сервис, который с 2014 года прикрывал киберпреступников по всему миру. Через него работали минимум 25 вымогательских группировок, включая Avaddon. В ход шли взломы, разведка корпоративных сетей, перебор паролей, DDoS-атаки и сокрытие вредоносного трафика.
+Сервис предлагал 32 узла в 27 странах, принимал криптовалюту и поддерживал WireGuard, OpenVPN и OpenConnect. Трафик маскировался под обычный HTTPS, а связь вели через Jabber, Telegram и даже ICQ. Рекламировали его на теневых форумах Exploit.in и XSS.is — там же, где продают доступы к взломанным системам и краденые базы данных.
+В документе перечислены десятки IP-адресов и доменов сервиса, включая 1vpns[.]com, 1vpns[.]org и 1jabber[.]com. ФБР советует компаниям блокировать известную инфраструктуру First VPN Service, внимательнее отслеживать подключения через VPN и усилить защиту удаленного доступа с помощью многофакторной аутентификации.
+#киберпреступность #VPN #ФБР
+@SecLabNews
+
+[Media: Фото]</description><pubDate>Fri, 22 May 2026 15:03:13 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17765</guid></item><item><title>В темной-темной сети, в темной-темной инфраструктуре… Вам ничего не страшно с PT NAD 🔦</title><link>https://t.me/SecLabNews/17764</link><description>В темной-темной сети, в темной-темной инфраструктуре… Вам ничего не страшно с PT NAD 🔦
+Приглашаем вас 4 июня в 14:00 мск присоединиться к онлайн-запуску новой версии продукта Positive Technologies — PT NAD 13.0.
+Эксперты Positive Technologies проведут вас через весь цикл incident response* и расскажут о ключевых возможностях релиза 13.0:
+➔    гибкая интеграция с песочницами;
+➔    облачные детекты;
+➔    определение протоколов по побочным каналам;
+➔    автоматизированное реагирование;
+➔    архивное хранение метаданных.
+PT NAD (PT Network Attack Discovery) — cистема поведенческого анализа сетевого трафика, эталонный источник данных о сети для обнаружения скрытых кибератак и контроля инфраструктуры.
+Зарегистрироваться можно по ссылке →
+* Incident response — организованный процесс реагирования на инциденты
+
+[Media: Фото]</description><pubDate>Fri, 22 May 2026 13:02:51 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17764</guid></item><item><title>Сразу две 0day-уязвимости обнаружены в Microsoft Defender</title><link>https://t.me/SecLabNews/17763</link><description>Сразу две 0day-уязвимости обнаружены в Microsoft Defender
 Microsoft экстренно закрыла CVE-2026-41091 и CVE-2026-45498 в компонентах Defender. Атаки уже идут, поэтому CISA не стала ждать и внесла обе уязвимости в каталог эксплуатируемых проблем. Американские госведомства должны закрыть риск на рабочих станциях и серверах Windows до 3 июня.
 Главная проблема в том, что уязвим сам защитный механизм. Malware Protection Engine можно использовать для повышения прав до SYSTEM, а Antimalware Platform может привести устройство к отказу в обслуживании. Автообновления спасают только там, где админы не отключили их «для стабильности» и потом не забыли вернуть обратно.
 Так что не стоит полагаться на то, что Defender обновится сам. Проверьте, действительно ли платформа и сигнатуры обновлены до версий 1.1.26040.8 и 4.18.26040.7. Начните с тех машин, где Defender выступает в качестве основной линии обороны.
