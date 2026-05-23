@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sat, 23 May 2026 15:07:15 +0000</lastBuildDate><item><title>ТЗ от Заказчика на услуги по ИБ  🤣</title><link>https://t.me/s0ld13r_ch/394</link><description>ТЗ от Заказчика на услуги по ИБ  🤣
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sat, 23 May 2026 19:20:36 +0000</lastBuildDate><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense</title><link>https://t.me/s0ld13r_ch/395</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense
+Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.
+Этот POC - попытка показать, как такая модель выглядит на практике с реальным DFIR-инструментом.
+За основу взят mgreen27/mcp-velociraptor - MCP-обёртка над Velociraptor API: https://github.com/mgreen27/mcp-velociraptor
+Изначальная идея проекта - дать DFIR-аналитику возможность работать с Velociraptor через Claude. Я посмотрел на ту же связку с другой стороны: если LLM может помогать защитнику исследовать endpoint, те же вещи могут работать и в adversary emulation. На эту мысль также натолкнул пост:
+https://t.me/s0ld13r_ch/82
+Velociraptor здесь интересен как dual-use инструмент: легитимный агент, подписанный бинарь, TLS-трафик, централизованный сервер и мощный язык артефактов. В defensive-сценарии это ускоряет IR. В offensive-модели тот же подход может превратиться в управляемый канал для reconnaissance, command execution и controlled file collection.
+Я добавил кастомных оберток поверх оригинального MCP проекта:
+- run_shell, run_powershell, run_vql_raw - выполнение команд и client-side VQL через Velociraptor.
+- collect_arbitrary_file, recursive_collect - точечный сбор файлов и scoped recursive collection из заданных директорий.
+- download_file, upload_file - работа с собранными файлами и controlled transfer с SHA256-verification.
+Разница принципиальная: оригинальный bridge помогает LLM видеть endpoint через DFIR-артефакты. Добавленные обертки позволяют LLM инициировать действия через Velociraptor API.
+В моей лабе Defensive сторона та же: IR-аналитик подключает свой Velociraptor-сервер, деплоит агент на исследуемую машину и через Claude Desktop/Claude Code проводит triage. Процессы, сетевые соединения, сервисы, scheduled tasks, Sysmon Event ID 1/3, Event ID 7045, Amcache, Shimcache и файловые артефакты читаются через один MCP-интерфейс.
+Главный challenge - Prompt Injection в AI-assisted IR.
+Если атакующий оставляет payload в логах, файлах, command line или staged notes, DFIR-агент может прочитать attacker-controlled content через LLM. В этот момент артефакт просто руинит исследование для IR команды...
+То есть в AI-assisted IR нужно понимать как работает аналитический контур: как LLM читает артефакты, где отделяются данные от инструкций, какие действия требуют подтверждений и как логируются вызовы инструментов.
+Мои Custom MCP тулы:
+https://github.com/rarh1k/mcp-ai-velo-dfir
+References:
+Solar 4RAYS - https://rt-solar.ru/solar-4rays/blog/4559/
+Sophos - https://news.sophos.com/en-us/2025/08/26/velociraptor-incident-response-tool-abused-for-remote-access/
+Rapid7 - https://www.rapid7.com/blog/post/pt-identifying-and-mitigating-potential-velociraptor-abuse/
+Cisco Talos - https://blog.talosintelligence.com/velociraptor-leveraged-in-ransomware-attacks/
+🦔 THF
+#Velociraptor #DFIR #ThreatHunting #IncidentResponse #MCP #ClaudeCode #LLM #AIForCybersecurity #AIIR #PromptInjection #RedTeam #AdversaryEmulation #DualUse #CyberSecurity #DetectionEngineering #DigitalForensics #SOC #APT #IR #THF</description><pubDate>Sat, 23 May 2026 19:20:36 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_395</guid></item><item><title>ТЗ от Заказчика на услуги по ИБ  🤣</title><link>https://t.me/s0ld13r_ch/394</link><description>ТЗ от Заказчика на услуги по ИБ  🤣
 🧢 s0ld13r
 
 [Media: Фото]</description><pubDate>Fri, 22 May 2026 13:37:31 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_394</guid></item><item><title>🎖 Наша команда FR13NDS TEAM заняла 1 место на CTF KBTU 2026! 🚩</title><link>https://t.me/s0ld13r_ch/388</link><description>🎖 Наша команда FR13NDS TEAM заняла 1 место на CTF KBTU 2026! 🚩
@@ -15,7 +39,7 @@
 [Media: Фото]</description><pubDate>Thu, 14 May 2026 18:23:00 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_388</guid></item><item><title>Коротко о проблемах вайб-кодинга и безопасности 🤣</title><link>https://t.me/s0ld13r_ch/387</link><description>Коротко о проблемах вайб-кодинга и безопасности 🤣
 🧢 s0ld13r
 
-[Media: Видео]</description><pubDate>Sat, 23 May 2026 15:07:15 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_387</guid></item><item><title>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨</title><link>https://t.me/s0ld13r_ch/386</link><description>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨
+[Media: Видео]</description><pubDate>Sat, 23 May 2026 19:20:36 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_387</guid></item><item><title>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨</title><link>https://t.me/s0ld13r_ch/386</link><description>BitWarden CLI скомпрометирован: новая волна Shai-Hulud 🚨
 В npm пакете @bitwarden/cli (версия 2026.4.0) обнаружен троянизированный билд, замаскированный под легитный CLI. Пакет сохраняет оригинальные метаданные, но execution path переписан - при установке запускается вредоносный loader подгружающий стилер Shai-Hulud 👀
 Payload разворачивается в несколько этапов: через preinstall запускается bw_setup.js, который подтягивает Bun runtime с GitHub и исполняет обфусцированный скрипт 😃
 Основной функционал:
