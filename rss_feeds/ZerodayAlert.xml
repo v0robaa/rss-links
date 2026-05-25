@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Sat, 23 May 2026 18:56:42 +0000</lastBuildDate><item><title>Максимальный балл CVSS: Cisco исправила уязвимость в Secure Workload</title><link>https://t.me/ZerodayAlert/712</link><description>Максимальный балл CVSS: Cisco исправила уязвимость в Secure Workload
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 25 May 2026 11:03:57 +0000</lastBuildDate><item><title>Уязвимость нулевого дня обнаружена в свежем выпуске nginx</title><link>https://t.me/ZerodayAlert/714</link><description>Уязвимость нулевого дня обнаружена в свежем выпуске nginx
+Компания NebuSec сообщила об обнаружении уязвимости нулевого дня в nginx, получившей название nginx-poolslip. Проблему нашел защитный агент Vega вскоре после закрытия другой уязвимости nginx-rift.
+Новая уязвимость позволяет удаленно выполнить код и затрагивает последнюю версию nginx 1.31.0. Это подтверждает критичность проблемы для широкого круга администраторов серверов.
+Подробный технический разбор с описанием обхода ASLR NebuSec опубликует через 30 дней после выхода исправления. Компания намеренно задерживает раскрытие деталей, чтобы дать администраторам время установить патчи до того, как злоумышленники получат готовую инструкцию.
+#nginx #уязвимость #zeroday #rce
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Mon, 25 May 2026 11:03:57 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_714</guid></item><item><title>Срочные обновления для защитных решений Trend Micro</title><link>https://t.me/ZerodayAlert/713</link><description>Срочные обновления для защитных решений Trend Micro
+Компания Trend Micro выпустила исправления для восьми уязвимостей в Apex One и Vision One Endpoint Security. Проблемы получили оценку от 6,7 до 7,8 балла по шкале CVSS 3.1 и затрагивают как серверную часть, так и агенты защиты.
+Наиболее критичная уязвимость CVE-2026-34926 связана с обходом каталогов в серверной части Apex One. Специалисты зафиксировали как минимум одну попытку её эксплуатации в реальных условиях.
+Для устранения угроз необходимо обновить Apex One 2019 до SP1 Critical Patch Build 18012, а для облачных версий установить агент 14.0.20731. Компания рекомендует выполнить обновление как можно быстрее.
+#trendmicro #уязвимости #apexone #патч
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Mon, 25 May 2026 09:51:13 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_713</guid></item><item><title>Максимальный балл CVSS: Cisco исправила уязвимость в Secure Workload</title><link>https://t.me/ZerodayAlert/712</link><description>Максимальный балл CVSS: Cisco исправила уязвимость в Secure Workload
 Уязвимость CVE-2026-20223 с оценкой по шкале CVSS — 10/10 затрагивает внутренние REST API платформы Cisco Secure Workload и присутствует как в облачных, так и в локальных развёртываниях.
 Система недостаточно проверяла запросы к внутренним интерфейсам и слабо аутентифицировала входящие обращения. Это позволяло удалённому злоумышленнику без учётной записи отправить специально подготовленный запрос и получить права Site Admin, включая доступ к данным и настройкам за пределами границ отдельных клиентов.
 Исправления вышли в версиях 3.10.8.3 и 4.0.3.17; пользователям веток 3.9 и ниже необходимо перейти на актуальную версию. Облачная версия уже обновлена автоматически, обходных решений не существует, а данных об эксплуатации уязвимости в реальных атаках у Cisco нет.
