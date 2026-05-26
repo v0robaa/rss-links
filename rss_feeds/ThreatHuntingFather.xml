@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 26 May 2026 07:56:04 +0000</lastBuildDate><item><title>Fake Microsoft Teams download sites are being used to deliver ValleyRAT via DLL sideloading</title><link>https://t.me/ThreatHuntingFather/1359</link><description>Fake Microsoft Teams download sites are being used to deliver ValleyRAT via DLL sideloading
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 26 May 2026 17:29:40 +0000</lastBuildDate><item><title>Red Lamassu | JFMBackdoor</title><link>https://t.me/ThreatHuntingFather/1367</link><description>Red Lamassu | JFMBackdoor
+PwC Threat Intelligence + Lumen Black Lotus Labs
+China-nexus группа, отслеживается PwC с 2019 года. По оценке авторов: "likely operating out of Sichuan Province."
+Таргет -"telecommunications organisations based in Asia, predominantly Kazakhstan🇰🇿, Afghanistan, and India."
+Цель операций: "persistent foothold for long term intelligence collection."
+⛓Обнаружение
+В ходе охоты за инфраструктурой актора обнаружен open directory на 23.27.201[.]160, активный с июля по октябрь 2025 года. Атрибуция к Red Lamassu через TLS-сертификат: "a TLS certificate served by IP addresses we exclusively associate with Red Lamassu" - O=My Organization, serial number 1, самоподписанный.
+Цепочка
+1.bat - PowerShell-дроппер.Загружает файлы в %TEMP%, запускает легитимный fltMC.exe. Тот sideload'ит FLTLIB.dll, который расшифровывает scr.mui XOR-ключом Zs0@31=KDw.*7ev. Конфиг включает путь C:\Program Files (x86)\Windows Mail\wabmig.exe и C2 namefuture[.]site. Далее flt.bin shellcode stub декодирует и загружает финальный PE в память - на диск он не записывается.
+JFMBackdoor
+Win32 DLL, 1.1 MB. Имя дано по hardcoded пути внутри бинаря: "C:\Users\public\jfm." C2-транспорт на CppServer: "leverages command and sub-commands via CppServer library classes: TCPSession, WSSession and WSSSession." Конфиг в зашифрованных scr.mui/btasc.cfg.
+Функционал: два reverse shell - стандартный и вариант "launches suspended and detaches from the console to evade inspection by other processes." Полные файловые операции включая timestomping. TCP proxy. Скриншоты: "Takes screenshots using GDI+ functions, then Base64-encodes and XOR-encrypts them before saving to disk." Реестр CRUD. Self-uninstall: "uninstall itself from registry, services, terminate self and delete from disk."
+🧩Кластеризация
+Ключ Zs0@31=KDw.*7ev найден ещё в трёх образцах. CiWinCng32.dll - "Upload submitter country CC: KZ", то есть загружен на мультисканер пользователем из Казахстана 🇰🇿. Связанный scr.mui раскрывает дополнительные C2: en[.]cumm[.]info, xcent[.]online, cumm[.]info и новую цель sideloading - C:\Windows\SysWOW64\msdt.exe
+🌐 Инфраструктура
+IP 166.88.11[.]196 и 139.180.223[.]193 раздают Origin Certificate одновременно для namefuture[.]site (JFMBackdoor) и newsprojects[.]online - C2 kworker/Showboat по данным Lumen. Прямая инфраструктурная связка двух компонентов кампании. Активность прослеживается с октября 2023 года.
+🎯 Таргетинг
+1) Прямые артефакты отчёта - Афганистан: "FLTBIN.dll was uploaded to an online multi-antivirus scanner from a user in Afghanistan" и сертификат на 195.86.120[.]2, "appears to be associated with a domain controller belonging to an Afghan telecommunications provider."
+2) По закрытым TIB-отчётам PwC - также Казахстан, Индия, Таиланд: "In our private reporting, we have observed the threat actor targeting the telecommunications sectors of Kazakhstan, Thailand, and India."
+Hunting
+- fltMC.exe загружает DLL из %TEMP% - легитимный процесс так не делает
+- wabmig.exe как родитель любого дочернего процесса
+- PowerShell -WindowStyle Hidden + Invoke-WebRequest → Start-Process %TEMP% в одной сессии
+- scr.mui вне System32/SysWOW64, каталог C:\Users\public\jfm\, файл btasc.cfg
+- DNS/proxy: namefuture[.]site, xcent[.]online, cumm[.]info, newsprojects[.]online
+- IP: 166.88.11[.]196, 166.88.99[.]32, 139.180.223[.]193
+- YARA-якорь: Zs0@31=KDw.*7ev
+Windows Sample🔗https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/red-lamassu-open-season.html
+Linux Sample🔗https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms
+🔗IOC: github.com/PwCUK-CTO/TI-blog-2026-Red-Lamassu-JFMBackdoor
+🦔THF
+Ну что любители Virustotal и онлайн песочниц из Казахстана🇰🇿, загрузили сэмпл APT в анализаторы? Держите репорт😄
+
+[Media: Фото]</description><pubDate>Tue, 26 May 2026 12:50:16 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1367</guid></item><item><title>Message 1366</title><link>https://t.me/ThreatHuntingFather/1366</link><description>
+
+[Media: Документ]</description><pubDate>Tue, 26 May 2026 09:59:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1366</guid></item><item><title>Fake Microsoft Teams download sites are being used to deliver ValleyRAT via DLL sideloading</title><link>https://t.me/ThreatHuntingFather/1359</link><description>Fake Microsoft Teams download sites are being used to deliver ValleyRAT via DLL sideloading
 Жертва заходит на тайпосквот (teams-securecall[.]com и подобные), скачивает ZIP, внутри - NSIS-инсталлер. Он кладёт рядом легитимные файлы Teams и GameBox.exe с malicious utility.dll. GameBox сайдлоадит DLL, та прописывает исключения в Defender, прячет файлы в ProgramData и создаёт сервис _CCGDAT.
 Дальше - user.dat расшифровывается в памяти, шеллкод выполняется в текущем процессе, с C2 тянется третья стадия, тоже расшифровывается, и уже в память грузится ValleyRAT. На диск финальный PE не падает
 ValleyRAT занимается клипбордом, логированием и ждёт задач от C2.
@@ -13,7 +48,7 @@ user.dat - 8F9DE887E9AED9D580F386BA2D191319
 
 [Media: Фото]</description><pubDate>Mon, 25 May 2026 15:00:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1359</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг,...</title><link>https://t.me/ThreatHuntingFather/1358</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.…
 
-[Media: Видео]</description><pubDate>Tue, 26 May 2026 07:56:04 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1358</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense</title><link>https://t.me/ThreatHuntingFather/1357</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense
+[Media: Видео]</description><pubDate>Tue, 26 May 2026 17:29:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1358</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense</title><link>https://t.me/ThreatHuntingFather/1357</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense
 Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.
 Этот POC - попытка показать, как такая модель выглядит на практике с реальным DFIR-инструментом.
 За основу взят mgreen27/mcp-velociraptor - MCP-обёртка над Velociraptor API: https://github.com/mgreen27/mcp-velociraptor
@@ -31,7 +66,7 @@ Velociraptor здесь интересен как dual-use инструмент:
 То есть в AI-assisted IR нужно понимать как работает аналитический контур: как LLM читает артефакты, где отделяются данные от инструкций, какие действия требуют подтверждений и как логируются вызовы инструментов.
 Мои Custom MCP тулы:
 https://github.com/rarh1k/mcp-ai-velo-dfir
-🦔 THF</description><pubDate>Tue, 26 May 2026 07:56:04 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1357</guid></item><item><title>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers</title><link>https://t.me/ThreatHuntingFather/1356</link><description>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers
+🦔 THF</description><pubDate>Tue, 26 May 2026 17:29:40 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1357</guid></item><item><title>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers</title><link>https://t.me/ThreatHuntingFather/1356</link><description>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers
 Hunt io  research:
 Key Observations
 More than 1,350 C2 servers were identified across 98 Middle East infrastructure providers within the past 3 months.
