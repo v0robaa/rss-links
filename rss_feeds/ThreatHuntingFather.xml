@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 26 May 2026 20:20:59 +0000</lastBuildDate><item><title>Red Lamassu | JFMBackdoor</title><link>https://t.me/ThreatHuntingFather/1367</link><description>Red Lamassu | JFMBackdoor
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 27 May 2026 08:08:23 +0000</lastBuildDate><item><title>Red Lamassu | JFMBackdoor</title><link>https://t.me/ThreatHuntingFather/1367</link><description>Red Lamassu | JFMBackdoor
 PwC Threat Intelligence + Lumen Black Lotus Labs
 China-nexus группа, отслеживается PwC с 2019 года. По оценке авторов: "likely operating out of Sichuan Province."
 Таргет -"telecommunications organisations based in Asia, predominantly Kazakhstan🇰🇿, Afghanistan, and India."
@@ -48,7 +48,7 @@ user.dat - 8F9DE887E9AED9D580F386BA2D191319
 
 [Media: Фото]</description><pubDate>Mon, 25 May 2026 15:00:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1359</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг,...</title><link>https://t.me/ThreatHuntingFather/1358</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.…
 
-[Media: Видео]</description><pubDate>Tue, 26 May 2026 20:20:59 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1358</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense</title><link>https://t.me/ThreatHuntingFather/1357</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense
+[Media: Видео]</description><pubDate>Wed, 27 May 2026 08:08:23 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1358</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense</title><link>https://t.me/ThreatHuntingFather/1357</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense
 Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.
 Этот POC - попытка показать, как такая модель выглядит на практике с реальным DFIR-инструментом.
 За основу взят mgreen27/mcp-velociraptor - MCP-обёртка над Velociraptor API: https://github.com/mgreen27/mcp-velociraptor
@@ -66,7 +66,7 @@ Velociraptor здесь интересен как dual-use инструмент:
 То есть в AI-assisted IR нужно понимать как работает аналитический контур: как LLM читает артефакты, где отделяются данные от инструкций, какие действия требуют подтверждений и как логируются вызовы инструментов.
 Мои Custom MCP тулы:
 https://github.com/rarh1k/mcp-ai-velo-dfir
-🦔 THF</description><pubDate>Tue, 26 May 2026 20:20:59 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1357</guid></item><item><title>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers</title><link>https://t.me/ThreatHuntingFather/1356</link><description>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers
+🦔 THF</description><pubDate>Wed, 27 May 2026 08:08:23 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1357</guid></item><item><title>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers</title><link>https://t.me/ThreatHuntingFather/1356</link><description>Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers
 Hunt io  research:
 Key Observations
 More than 1,350 C2 servers were identified across 98 Middle East infrastructure providers within the past 3 months.
