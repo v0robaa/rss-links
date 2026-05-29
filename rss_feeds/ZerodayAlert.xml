@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 28 May 2026 11:42:01 +0000</lastBuildDate><item><title>Стандартные ключи шифрования ASP.NET оставили серверы обучения без защиты</title><link>https://t.me/ZerodayAlert/719</link><description>Стандартные ключи шифрования ASP.NET оставили серверы обучения без защиты
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 29 May 2026 05:05:04 +0000</lastBuildDate><item><title>Gogs оставили без патча после отчёта о RCE через git rebase</title><link>https://t.me/ZerodayAlert/721</link><description>Gogs оставили без патча после отчёта о RCE через git rebase
+Новый 0-day в Gogs бьёт по версиям 0.14.2 и 0.15.0+dev. Rapid7 говорит, что админка атакующему не нужна. Достаточно зарегистрироваться, создать репозиторий и подготовить pull request с хитрым именем ветки.
+Схема простая и неприятная. Gogs передаёт имя ветки в логику Merge(), где можно подсунуть аргумент --exec для git rebase. Когда сервер делает «Rebase before merging», Git выполняет команду атакующего уже на стороне сервера.
+Рекомендации следующие: закройте регистрацию, проверьте права на создание репозиториев и уберите Gogs из прямого доступа с интернета. Отключите «Rebase before merging», если функция не нужна. Логи и новые репозитории лучше проверить вручную, особенно на публичных инстансах.
+#gogs #git #rce #0day
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 29 May 2026 05:05:04 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_721</guid></item><item><title>Notepad++ закрыл три уязвимости, две позволяют выполнить чужой код</title><link>https://t.me/ZerodayAlert/720</link><description>Notepad++ закрыл три уязвимости, две позволяют выполнить чужой код
+Разработчики выпустили Notepad++ 8.9.6.1 и закрыли CVE-2026-48770, CVE-2026-48778 и CVE-2026-48800. Самые опасные бреши получили оценку 7,8 по CVSS и затрагивают сценарии с config.xml и shortcuts.xml. Для редактора, которым массово пользуются в Windows-средах, риск выглядит заметным.
+Главная проблема связана с тем, как Notepad++ обрабатывал параметр commandLineInterpreter. Программа брала значение из конфигурации без проверки, а затем запускала указанный файл через штатную функцию «Open Containing Folder in cmd». Злоумышленник мог подменить настройки через AppData, ярлык с -settingsDir, облачную папку или подготовленный архив.
+Пользователям лучше обновиться до Notepad++ 8.9.6.1. Администраторам стоит следить за изменениями config.xml и shortcuts.xml. В корпоративной среде права записи в чувствительные каталоги лучше ограничить заранее.
+#notepad #блокнот #редактор #rce
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 28 May 2026 23:04:26 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_720</guid></item><item><title>Стандартные ключи шифрования ASP.NET оставили серверы обучения без защиты</title><link>https://t.me/ZerodayAlert/719</link><description>Стандартные ключи шифрования ASP.NET оставили серверы обучения без защиты
 Платформа KnowledgeDeliver использовала стандартный файл конфигурации с одинаковыми ключами ASP.NET machineKey. Получив секретные параметры, злоумышленники создавали поддельный ViewState и выполняли команды на целевом сервере.
 Взломщики загружали инструмент BLUEBEAM напрямую в память системного процесса IIS. Скрытая программа принимала зашифрованные команды и запускала дополнительные модули без сохранения файлов на жестком диске.
 Атакующие меняли права доступа к системным папкам и добавляли вредоносный код в сценарии платформы. Посетители сайта видели ложное окно безопасности и скачивали Cobalt Strike BEACON.
