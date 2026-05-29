@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-05-29T12:21:33.417843+00:00",
-  "messages_count": 126,
+  "last_update": "2026-05-29T17:37:33.268921+00:00",
+  "messages_count": 127,
   "messages": [
+    {
+      "id": "728",
+      "title": "Message 728",
+      "text": "",
+      "link": "https://t.me/ptescalator/728",
+      "pub_date": "2026-05-29T16:56:03+00:00"
+    },
     {
       "id": "726",
       "title": "Бриллиант почти не виден 💎",
