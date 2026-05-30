@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 26 May 2026 10:00:28 +0000</lastBuildDate><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/357</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 30 May 2026 14:23:12 +0000</lastBuildDate><item><title>BYOVD and Looting LSASS in the Modern EDR Era</title><link>https://t.me/P0x3k_1N73LL1G3NC3/358</link><description>BYOVD and Looting LSASS in the Modern EDR Era
+In today’s post, we will be uncovering the internals of kernel driver vulnerabilities and how to leverage them via the BYOVD (Bring Your Own Vulnerable Driver) method of attack. We will use kernel access to disable PPL for the LSASS process and then proceed to dump the process to disk, XOR’ing it beforehand so it avoids detection by popular EDR solutions.
+https://github.com/g3tsyst3m/CodefromBlog/tree/main/2026-5-29-BYOVD%20and%20Looting%20LSASS%20in%20the%20Modern%20EDR%20Era
+
+[Media: Фото]</description><pubDate>Sat, 30 May 2026 14:23:12 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_358</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/357</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
 
 [Media: Фото]</description><pubDate>Tue, 26 May 2026 10:00:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_357</guid></item><item><title>PhantomKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/356</link><description>PhantomKiller
 Another BYOVD process killer. works on all EDR's. fully signed.

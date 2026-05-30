@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-30T10:49:37.739488+00:00",
-  "messages_count": 180,
+  "last_update": "2026-05-30T15:15:24.868462+00:00",
+  "messages_count": 181,
   "messages": [
+    {
+      "id": "358",
+      "title": "BYOVD and Looting LSASS in the Modern EDR Era",
+      "text": "BYOVD and Looting LSASS in the Modern EDR Era\nIn today’s post, we will be uncovering the internals of kernel driver vulnerabilities and how to leverage them via the BYOVD (Bring Your Own Vulnerable Driver) method of attack. We will use kernel access to disable PPL for the LSASS process and then proceed to dump the process to disk, XOR’ing it beforehand so it avoids detection by popular EDR solutions.\nhttps://github.com/g3tsyst3m/CodefromBlog/tree/main/2026-5-29-BYOVD%20and%20Looting%20LSASS%20in%20the%20Modern%20EDR%20Era\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/358",
+      "pub_date": "2026-05-30T14:23:12+00:00"
+    },
     {
       "id": "357",
       "title": "https://t.me/boost/P0x3k_1N73LL1G3NC3",
