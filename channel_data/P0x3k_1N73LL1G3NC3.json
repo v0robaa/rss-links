@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-05-31T15:20:48.699070+00:00",
-  "messages_count": 181,
+  "last_update": "2026-05-31T19:26:13.224884+00:00",
+  "messages_count": 182,
   "messages": [
+    {
+      "id": "360",
+      "title": "The Phishy GitHub Issue Case",
+      "text": "The Phishy GitHub Issue Case\nAs I’m interested in initial access, and more specifically in phishing, I started looking for ways to target developers. What platform every developers uses today? You guessed it right (or just correctly read the title of this blog post) : GitHub. It is advertised as “a platform to create, store, manage and share code”. Every developer has a GitHub account and getting access to it mean getting access to their code. However, I was looking for lesser-know phishing technique, that doesn’t employ the usual Attacker-in-The-Middle approach. I stumbled upon several articles mentioning Fake Security Alerts using GitHub issues. Naturally, I decide to take a look at what it was. So let’s see how to setup this scenario for your next phishing campaign!\nMalGitApp\nA simple OAuth App designed to capture OAuth tokens when users authenticate through GitHub OAuth flow.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/360",
+      "pub_date": "2026-05-31T17:01:15+00:00"
+    },
     {
       "id": "358",
       "title": "BYOVD and Looting LSASS in the Modern EDR Era",
