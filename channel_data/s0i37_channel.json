@@ -1,8 +1,15 @@
 {
   "channel": "s0i37_channel",
-  "last_update": "2026-06-01T09:31:09.226210+00:00",
-  "messages_count": 40,
+  "last_update": "2026-06-01T19:21:50.391143+00:00",
+  "messages_count": 41,
   "messages": [
+    {
+      "id": "270",
+      "title": "Первый день лета, начало велосезона, а значит время ежегодной рубрики \"находим применение termux в реальной жизни\".",
+      "text": "Первый день лета, начало велосезона, а значит время ежегодной рубрики \"находим применение termux в реальной жизни\".\nВ прошлом году я писал про велосипедную сигнализацию из старого Android-телефона (https://t.me/s0i37_channel/226). Суть заключалась в bash скрипте который непрерывно читает значение датчика ускорения и если оно больше 1G, то велосипед пришёл в движение и в качестве сигнала совершается телефонный звонок на указанный номер.\nTermux позволяет сделать ещё много чего, и теперь я добавил возможность трансляции геопозиции в режиме реального времени если срабатывает тревога:\n#!/bin/bash\nWAIT=30\nUPDATE=100\nTHRESOLD=1100\nNUMBER=89007654321\nRECALL=60\nLOCATION='http://vds'\nINTERVAL=5\nsleep $WAIT\nrm call.lock 2>/dev/null; rm geo.lock 2>/dev/null\ntermux-sensor -c\ntermux-sensor -s ACCELEROMETER -d $UPDATE | stdbuf -i0 -o0 jq '.ACCELEROMETER.values[]' | stdbuf -i0 -o0 paste - - - | python -c 'while True: a,b,c=input().split(); print(int((abs(float(a))**2+abs(float(b))**2+abs(float(c))**2)**0.5*100))' 2> /dev/null | while read accel\ndo echo $accel\nif [ $accel -gt $THRESOLD ]; then\n{ [ -f call.lock ] && exit; touch call.lock; termux-telephony-call $NUMBER; sleep $RECALL; rm call.lock; } &\n{ [ -f geo.lock ] && exit; touch geo.lock; while sleep $INTERVAL; do coords=(`termux-location -p gps -r last | jq -e '.latitude//empty,.longitude//empty' || termux-location -p network -r once | jq -e '.latitude//empty,.longitude//empty'`); bat=`termux-battery-status | jq '.percentage'`; curl -s \"$LOCATION/?dev=bike&bat=$bat&lat=${coords[0]}&lon=${coords[1]}\"; done; } &\nfi\ndone\nВзависимости от ситуации скрипт пытается получить координаты по GPS, в случае неудачи координаты берутся на основании наземных источников сигналов.\npkg install termux-api python jq\n\n[Media: Фото]",
+      "link": "https://t.me/s0i37_channel/270",
+      "pub_date": "2026-06-01T11:00:22+00:00"
+    },
     {
       "id": "269",
       "title": "Пробрасываем сетевой туннель сквозь браузер.",

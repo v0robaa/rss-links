@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-01T09:31:04.398952+00:00",
-  "messages_count": 182,
+  "last_update": "2026-06-01T19:21:45.665725+00:00",
+  "messages_count": 183,
   "messages": [
+    {
+      "id": "361",
+      "title": "ssh-keysign-pwn — CVE-2026-46333",
+      "text": "ssh-keysign-pwn — CVE-2026-46333\nA critical race condition flaw in pre-31e62c2ebbfd Linux kernels. Due to a window during process exit where the memory management structure is cleared before file descriptors are closed, an unprivileged user can use pidfd_getfd(2) to steal open file descriptors of privileged processes, enabling unauthorized reading of root-owned files.\n🔗 Exploit:\nhttps://github.com/0xdeadbeefnetwork/ssh-keysign-pwn\n🔗 Source:\nhttps://blog.qualys.com/vulnerabilities-threat-research/2026/05/20/cve-2026-46333-local-root-privilege-escalation-and-credential-disclosure-in-the-linux-kernel-ptrace-path\n#linux #kernel #privesc #racecondition #pidfd",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/361",
+      "pub_date": "2026-06-01T14:35:37+00:00"
+    },
     {
       "id": "360",
       "title": "The Phishy GitHub Issue Case",

