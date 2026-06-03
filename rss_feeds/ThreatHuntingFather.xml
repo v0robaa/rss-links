@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 02 Jun 2026 18:06:55 +0000</lastBuildDate><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг,...</title><link>https://t.me/ThreatHuntingFather/1369</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.…
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 03 Jun 2026 05:02:42 +0000</lastBuildDate><item><title>🔍 ::%16777216 — это не ngrok-артефакт. Это баг Windows.</title><link>https://t.me/ThreatHuntingFather/1372</link><description>🔍 ::%16777216 — это не ngrok-артефакт. Это баг Windows.
+Если ты занимаешься DFIR или threat hunting'ом - ты наверняка встречал в логах Windows Event ID 1149 (TerminalServices-RemoteConnectionManager) адрес источника вида ::% 16777216 и думал, что это след ngrok или другого туннелирующего инструмента. Так вот - это не так. Точнее, не совсем так.
+🐛 Что происходит на самом деле
+Это баг в Windows, существующий как минимум с Windows 8 / Server 2012 и не исправленный вплоть до Windows 11 24H2 build 26100.8457.
+Суть: при RDP-подключении через IPv6 termsrv.dll передаёт в GetNameInfoW (ws2_32.dll) указатель на структуру WTS_SOCKADDR - но читает её как sockaddr_in6. Проблема в несоответствии: WTS_SOCKADDR содержит 4 байта паддинга после sin_family, из-за чего IPv6-адрес клиента сдвигается на 4 байта вправо. В результате вместо реального адреса в лог пишется ::% 16777216, где 16777216 = 0x01000000 - это значение sin6_scope_id, которое интерпретируется как zone index от сдвинутого ::1 (localhost IPv6).
+⚙️ Структуры для понимания
+WTS_SOCKADDR:
+USHORT sin_family;   // 2 байта
+// padding            // 2 байта  ← вот виновник
+union { ... }        // от offset 4
+sockaddr_in6:
+short  sin6_family;  // 2 байта
+u_short sin6_port;   // 2 байта
+u_long sin6_flowinfo;// 4 байта
+struct in6_addr ...  // 16 байт
+u_long sin6_scope_id;// 4 байта
+rdpcorets.dll записывает IPv6-адрес клиента в WTS_SOCKADDR с одной структурой. termsrv.dll читает это как sockaddr_in6 с другой - смещение на 4 байта, адрес уезжает в sin6_scope_id, который и попадает в лог как % 16777216.
+🧪 Как воспроизвести
+Любой туннелинг через IPv6 на localhost (ssh -L, devtunnel, ngrok, localtunnel) → RDP-подключение → в Event ID 1149 будет ::% 16777216.
+Это происходит не только с ngrok. Любое RDP-подключение через IPv6 localhost даст этот артефакт.
+📋 Где проявляется
+Event IDs: 1149, 4778, 4779 Журналы: TerminalServices-RemoteConnectionManager\Operational, Windows Logs\Security
+🔧 Как восстановить реальный IPv6-адрес
+Если в логе: 0:0:fe80::6e1d:980d%2607874452
+Берём число после %: 2607874452
+Конвертируем в HEX: 9B 71 01 94
+Разворачиваем (little-endian): 94 01 71 9B
+Дописываем к адресу справа: fe80::6e1d:980d:9401:719b
+Реализуемо в любом SIEM через enrichment-правило.
+📌 Выводы для DFIR
+::% 16777216 - всегда признак RDP-подключения по IPv6 через туннель (localhost → порт 3389). Это остаётся валидным IoC для детекта reverse tunnel, независимо от того, ngrok это или ssh -L.
+Значение само по себе не несёт информации о реальном клиенте - адрес нужно восстанавливать по алгоритму выше.
+Microsoft квалифицировал как Moderate / Tampering, CVE не присвоен, патч не обещан (ответ от 08.11.2025). Исправлено тихо в Windows 11 24H2 build 26100.8457+ и 26H1.
+🔗 Слайды: ёPRSTCON 2026, автор - Константин Грищенко, Positive Technologies.
+🐦‍⬛ DFIR Father
+
+[Media: Документ]</description><pubDate>Wed, 03 Jun 2026 05:02:42 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1372</guid></item><item><title>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг,...</title><link>https://t.me/ThreatHuntingFather/1369</link><description>Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг, интерпретирует вывод инструментов и принимает тактические решения.…
 
 [Media: Фото]</description><pubDate>Thu, 28 May 2026 12:47:06 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1369</guid></item><item><title>Red Lamassu | JFMBackdoor</title><link>https://t.me/ThreatHuntingFather/1367</link><description>Red Lamassu | JFMBackdoor
 PwC Threat Intelligence + Lumen Black Lotus Labs

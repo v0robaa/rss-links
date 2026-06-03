@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-02T18:06:55.970319+00:00",
-  "messages_count": 210,
+  "last_update": "2026-06-03T08:59:22.752840+00:00",
+  "messages_count": 211,
   "messages": [
+    {
+      "id": "1372",
+      "title": "🔍 ::%16777216 — это не ngrok-артефакт. Это баг Windows.",
+      "text": "🔍 ::%16777216 — это не ngrok-артефакт. Это баг Windows.\nЕсли ты занимаешься DFIR или threat hunting'ом - ты наверняка встречал в логах Windows Event ID 1149 (TerminalServices-RemoteConnectionManager) адрес источника вида ::% 16777216 и думал, что это след ngrok или другого туннелирующего инструмента. Так вот - это не так. Точнее, не совсем так.\n🐛 Что происходит на самом деле\nЭто баг в Windows, существующий как минимум с Windows 8 / Server 2012 и не исправленный вплоть до Windows 11 24H2 build 26100.8457.\nСуть: при RDP-подключении через IPv6 termsrv.dll передаёт в GetNameInfoW (ws2_32.dll) указатель на структуру WTS_SOCKADDR - но читает её как sockaddr_in6. Проблема в несоответствии: WTS_SOCKADDR содержит 4 байта паддинга после sin_family, из-за чего IPv6-адрес клиента сдвигается на 4 байта вправо. В результате вместо реального адреса в лог пишется ::% 16777216, где 16777216 = 0x01000000 - это значение sin6_scope_id, которое интерпретируется как zone index от сдвинутого ::1 (localhost IPv6).\n⚙️ Структуры для понимания\nWTS_SOCKADDR:\nUSHORT sin_family;   // 2 байта\n// padding            // 2 байта  ← вот виновник\nunion { ... }        // от offset 4\nsockaddr_in6:\nshort  sin6_family;  // 2 байта\nu_short sin6_port;   // 2 байта\nu_long sin6_flowinfo;// 4 байта\nstruct in6_addr ...  // 16 байт\nu_long sin6_scope_id;// 4 байта\nrdpcorets.dll записывает IPv6-адрес клиента в WTS_SOCKADDR с одной структурой. termsrv.dll читает это как sockaddr_in6 с другой - смещение на 4 байта, адрес уезжает в sin6_scope_id, который и попадает в лог как % 16777216.\n🧪 Как воспроизвести\nЛюбой туннелинг через IPv6 на localhost (ssh -L, devtunnel, ngrok, localtunnel) → RDP-подключение → в Event ID 1149 будет ::% 16777216.\nЭто происходит не только с ngrok. Любое RDP-подключение через IPv6 localhost даст этот артефакт.\n📋 Где проявляется\nEvent IDs: 1149, 4778, 4779 Журналы: TerminalServices-RemoteConnectionManager\\Operational, Windows Logs\\Security\n🔧 Как восстановить реальный IPv6-адрес\nЕсли в логе: 0:0:fe80::6e1d:980d%2607874452\nБерём число после %: 2607874452\nКонвертируем в HEX: 9B 71 01 94\nРазворачиваем (little-endian): 94 01 71 9B\nДописываем к адресу справа: fe80::6e1d:980d:9401:719b\nРеализуемо в любом SIEM через enrichment-правило.\n📌 Выводы для DFIR\n::% 16777216 - всегда признак RDP-подключения по IPv6 через туннель (localhost → порт 3389). Это остаётся валидным IoC для детекта reverse tunnel, независимо от того, ngrok это или ssh -L.\nЗначение само по себе не несёт информации о реальном клиенте - адрес нужно восстанавливать по алгоритму выше.\nMicrosoft квалифицировал как Moderate / Tampering, CVE не присвоен, патч не обещан (ответ от 08.11.2025). Исправлено тихо в Windows 11 24H2 build 26100.8457+ и 26H1.\n🔗 Слайды: ёPRSTCON 2026, автор - Константин Грищенко, Positive Technologies.\n🐦‍⬛ DFIR Father\n\n[Media: Документ]",
+      "link": "https://t.me/ThreatHuntingFather/1372",
+      "pub_date": "2026-06-03T05:02:42+00:00"
+    },
     {
       "id": "1358",
       "title": "Same Tool, Two Hats: AI Velociraptor for Attack and Defense  Всё чаще появляются отчёты об LLM-operated атаках: человек задаёт цель, а LLM помогает вести операцию - выбирает следующий шаг,...",
