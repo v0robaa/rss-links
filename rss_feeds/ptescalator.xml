@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 04 Jun 2026 12:33:33 +0000</lastBuildDate><item><title>Редкие техники закрепления</title><link>https://t.me/ptescalator/734</link><description>Редкие техники закрепления
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 05 Jun 2026 11:25:03 +0000</lastBuildDate><item><title>Редкие техники закрепления. Часть 2</title><link>https://t.me/ptescalator/735</link><description>Редкие техники закрепления. Часть 2
+Читайте также про: Zabbix Agent, TimeProvider.
+3️⃣ COM Hijacking
+Для закрепления в инфраструктуре злоумышленники использовали редкую технику Component Object Model Hijacking (перехват COM-объектов).
+Суть метода — не в прямой подмене DLL системного сервиса (что легко обнаруживается), а в манипуляции структурой реестра Component Object Model. Атакующие создают собственный COM-объект, указывающий на вредоносную библиотеку, и перенаправляют на него вызовы доверенных системных компонентов через легитимный механизм совместимости.
+Ключевым элементом атаки выступает раздел реестра TreatAs, изначально предназначенный для прозрачного перенаправления запросов с одного COM-объекта на другой. Злоумышленники находят системный CLSID, обращение к которому происходит регулярно и незаметно, и подменяют его обработку на свой объект.
+Особый интерес представляет COM-объект Network List Manager с идентификатором {DCB00C01-570F-4A9B-8D69-199FDBA5723B}, отвечающий за управление сетевыми профилями (netprofm). Обращения к нему происходят при каждой смене сетевого подключения, запуске диагностики сети и старте операционной системы.
+Злоумышленники модифицируют ветку:
+HKLM\Software\Classes\CLSID{DCB00C01-570F-4A9B-8D69-199FDBA5723B}\TreatAs,
+прописывая в значении по умолчанию CLSID своего вредоносного COM-объекта. В результате при работе с сетевыми профилями система автоматически перенаправляет вызов и загружает вредоносную DLL, размещенную по пути %systemroot%\system32\netprofmaaa.dll (имя мимикрирует под оригинальную netprofm.dll).
+❗️ Требования к DLL: библиотека должна быть полноценным COM-сервером, реализующим все интерфейсы, ожидаемые от подменяемого объекта Network List Manager, и корректно экспортировать стандартные функции (скриншот 2): DllGetClassObject(), DllCanUnloadNow(), DllRegisterServer() и DllUnregisterServer().
+При вызове DllGetClassObject() она должна возвращать фабрику классов, способную создавать экземпляры объекта с ожидаемыми интерфейсами (включая INetworkListManager). Это необходимо для безаварийной работы вызывающих процессов и сохранения скрытности — в противном случае приложения, обращающиеся к сетевому менеджеру, будут аварийно завершаться и демаскировать присутствие вредоносного кода.
+Продолжение будет в следующих постах 🙂
+#ir #dfir #tips
+@ptescalator
+
+[Media: Фото]</description><pubDate>Fri, 05 Jun 2026 11:25:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_735</guid></item><item><title>Редкие техники закрепления</title><link>https://t.me/ptescalator/734</link><description>Редкие техники закрепления
 За первые шесть месяцев 2026 года команда PT ESC IR зафиксировала ряд редких техник закрепления на скомпрометированных хостах, которые мы и обсудим в ближайших постах.
 1️⃣ Zabbix Agent
 Zabbix Agent — это легковесная служба сбора метрик с хоста и их передачи на сервер, штатно используемая администраторами.
