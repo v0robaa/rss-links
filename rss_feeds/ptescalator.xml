@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 05 Jun 2026 11:25:03 +0000</lastBuildDate><item><title>Редкие техники закрепления. Часть 2</title><link>https://t.me/ptescalator/735</link><description>Редкие техники закрепления. Часть 2
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 05 Jun 2026 17:09:41 +0000</lastBuildDate><item><title>Message 736</title><link>https://t.me/ptescalator/736</link><description/><pubDate>Fri, 05 Jun 2026 17:09:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_736</guid></item><item><title>Редкие техники закрепления. Часть 2</title><link>https://t.me/ptescalator/735</link><description>Редкие техники закрепления. Часть 2
 Читайте также про: Zabbix Agent, TimeProvider.
 3️⃣ COM Hijacking
 Для закрепления в инфраструктуре злоумышленники использовали редкую технику Component Object Model Hijacking (перехват COM-объектов).

@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-06-05T16:32:33.586110+00:00",
-  "messages_count": 130,
+  "last_update": "2026-06-05T20:02:59.076648+00:00",
+  "messages_count": 131,
   "messages": [
+    {
+      "id": "736",
+      "title": "Message 736",
+      "text": "",
+      "link": "https://t.me/ptescalator/736",
+      "pub_date": "2026-06-05T17:09:41+00:00"
+    },
     {
       "id": "735",
       "title": "Редкие техники закрепления. Часть 2",
