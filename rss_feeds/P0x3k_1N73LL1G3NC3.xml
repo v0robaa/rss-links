@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 01 Jun 2026 14:35:37 +0000</lastBuildDate><item><title>ssh-keysign-pwn — CVE-2026-46333</title><link>https://t.me/P0x3k_1N73LL1G3NC3/361</link><description>ssh-keysign-pwn — CVE-2026-46333
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 05 Jun 2026 06:38:15 +0000</lastBuildDate><item><title>CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/362</link><description>CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)
+Vulnerable: VVX 150, VVX 250, VVX 350, and VVX 450), as well as Trio IP Conference series (Trio 8800, Trio 8500, and Trio 8300).
+Blog: https://www.rapid7.com/blog/post/ve-cve-2026-0826-critical-unauthenticated-stack-buffer-overflow-hp-poly-vvx-trio-voip-phones-fixed/
+
+[Media: Фото]</description><pubDate>Fri, 05 Jun 2026 06:38:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_362</guid></item><item><title>ssh-keysign-pwn — CVE-2026-46333</title><link>https://t.me/P0x3k_1N73LL1G3NC3/361</link><description>ssh-keysign-pwn — CVE-2026-46333
 A critical race condition flaw in pre-31e62c2ebbfd Linux kernels. Due to a window during process exit where the memory management structure is cleared before file descriptors are closed, an unprivileged user can use pidfd_getfd(2) to steal open file descriptors of privileged processes, enabling unauthorized reading of root-owned files.
 🔗 Exploit:
 https://github.com/0xdeadbeefnetwork/ssh-keysign-pwn

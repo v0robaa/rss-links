@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-04T20:12:19.775926+00:00",
-  "messages_count": 183,
+  "last_update": "2026-06-05T08:11:39.090785+00:00",
+  "messages_count": 184,
   "messages": [
+    {
+      "id": "362",
+      "title": "CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)",
+      "text": "CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)\nVulnerable: VVX 150, VVX 250, VVX 350, and VVX 450), as well as Trio IP Conference series (Trio 8800, Trio 8500, and Trio 8300).\nBlog: https://www.rapid7.com/blog/post/ve-cve-2026-0826-critical-unauthenticated-stack-buffer-overflow-hp-poly-vvx-trio-voip-phones-fixed/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/362",
+      "pub_date": "2026-06-05T06:38:15+00:00"
+    },
     {
       "id": "361",
       "title": "ssh-keysign-pwn — CVE-2026-46333",
