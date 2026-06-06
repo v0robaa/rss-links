@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-05T20:02:46.480382+00:00",
-  "messages_count": 214,
+  "last_update": "2026-06-06T06:57:10.628481+00:00",
+  "messages_count": 215,
   "messages": [
+    {
+      "id": "1378",
+      "title": "📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft",
+      "text": "📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft\nПохоже на Pandoc для эпохи LLM, только с фокусом на подготовку данных для нейросетей и поисковых пайплайнов. Утилита не пытается сохранить красивый внешний вид, а вытаскивает структуру документа в Markdown - заголовки, таблицы, списки, ссылки - именно в том виде, который LLM понимают нативно. Может стать стандартом де-факто для подготовки данных под RAG и AI-агентов.\nЧто умеет: PDF, DOCX, PPTX, XLSX в Markdown, HTML, CSV, JSON, XML в Markdown, Изображения - OCR и метаданные, Аудио - текстовая расшифровка, YouTube - транскрипт по ссылке, ZIP - рекурсивная обработка содержимого\nПрименение: 📝 Pentest reporting и форензика - привести артефакты к единому тексту, 🔍 RAG, Vector DB, MCP-серверы, AI-агенты,\n📂 Обработка документации, Knowledge Base, 🔄 Миграции в Notion / Obsidian, оцифровка старых отчетов в PDF\npip install 'markitdown[all]'\nmarkitdown file.pdf -o out.md\n🔗 https://github.com/microsoft/markitdown\n#tools #ai #llm #rag #python #dfir\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1378",
+      "pub_date": "2026-06-06T03:33:47+00:00"
+    },
     {
       "id": "1375",
       "title": "C2 в клеточку GRIDTIDE и искусство прятать шпионаж в Google Sheets. 😃",
