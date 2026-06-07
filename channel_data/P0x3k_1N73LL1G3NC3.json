@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-07T07:58:14.329842+00:00",
-  "messages_count": 184,
+  "last_update": "2026-06-07T11:12:15.918093+00:00",
+  "messages_count": 185,
   "messages": [
+    {
+      "id": "363",
+      "title": "EDRChoker",
+      "text": "EDRChoker\nClient–server EDRs have an inherent weakness: they must maintain server connectivity to be effective. When isolated from their server they lose much of their capability, and administrators can no longer collect or monitor logs from those agents. EDRChoker uses policy-based Quality of Service (QoS) to throttle EDR agents to the lowest bandwidth; when agents attempt to connect they will consistently time out due to the extremely low bandwidth.\nBlog: https://www.zerosalarium.com/2026/06/edrchoker-choking-telemetry-stream-block-edr.html\nIn this article I present a technique for interfering with the client–server connection of an EDR. It’s different from EDR connection-blocking methods that use the Windows Firewall or the Windows Filtering Platform (WFP).\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/363",
+      "pub_date": "2026-06-07T11:11:26+00:00"
+    },
     {
       "id": "362",
       "title": "CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)",
