@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 05 Jun 2026 17:09:41 +0000</lastBuildDate><item><title>Message 736</title><link>https://t.me/ptescalator/736</link><description/><pubDate>Fri, 05 Jun 2026 17:09:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_736</guid></item><item><title>Редкие техники закрепления. Часть 2</title><link>https://t.me/ptescalator/735</link><description>Редкие техники закрепления. Часть 2
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 12:25:04 +0000</lastBuildDate><item><title>Редкие техники закрепления. Часть 3</title><link>https://t.me/ptescalator/737</link><description>Редкие техники закрепления. Часть 3
+Читайте также про: Zabbix Agent, TimeProvider, COM Hijacking.
+4️⃣ WMICLNT
+Эта техника закрепления основана на перехвате DLL, загружаемой легитимной службой Windows Management Instrumentation (WMI), и в MITRE ATT&amp;CK классифицируется как T1546.008 (Event Triggered Execution: Accessibility Features) или как частный случай DLL Hijacking.
+Злоумышленники используют особенность запуска консоли WMIC (wmic.exe), которая является стандартным инструментом системного администрирования. При запуске WMIC пытается загрузить библиотеку wmiclnt.dll, но эта библиотека может отсутствовать в стандартной поставке Windows.
+Штатный wmic.exe работает и без нее — функциональность может быть ограничена, однако сам факт попытки загрузки позволяет атакующему разместить по пути поиска DLL свою вредоносную библиотеку.
+Атакующий размещает вредоносную wmiclnt.dll в C:\Windows\System32\wbem. Для активации может использоваться любой удобный злоумышленнику триггер — как конкретное задание в планировщике, так и перезапуск системной службы.
+В первом случае создается Scheduled Task, периодически дергающий легитимную утилиту (например, wmic os get name), что приводит к загрузке DLL и выполнению вредоносного кода в DllMain.
+Во втором — применяется циклический перезапуск службы WMI командами net stop winmgmt /y и net start winmgmt, что также провоцирует обращение к подставной библиотеке и обеспечивает закрепление.
+⬇️ Для успешной загрузки и скрытной работы вредоносная wmiclnt.dll должна удовлетворять следующим условиям:
+• Функции экспорта: вредоносная DLL обязана реализовать и экспортировать все те же функции, которые пытается импортировать wmic.exe (скриншот 3), чтобы процесс не упал с ошибкой.
+• Чаще всего вредоносная логика выполняется прямо в DllMain (функция DLL_PROCESS_ATTACH), так как это гарантирует выполнение кода сразу после загрузки библиотеки без необходимости вызова конкретных экспортируемых процедур.
+• Проксирование: для максимальной маскировки вредоносная DLL может выступать в роли «прокси», пробрасывая вызовы на реальный системный API, чтобы wmic.exe отрабатывал штатно и не вызывал подозрений.
+👀 Признаки компрометации:
+• Появление файла wmiclnt.dll в директории C:\Windows\System32\wbem\ (в чистой системе этот файл отсутствует, хотя на старых версиях мог существовать; в современных Windows 10/11 и Server 20xx его там нет).
+• Нестандартные дочерние процессы у wmic.exe (например, если из-под WMIC вдруг запускается powershell.exe или rundll32.exe с сетевым взаимодействием).
+• Еще одним признаком компрометации может служить событие Event ID 11 (Image Load), где поле "SignatureLevel": 1 указывает на unsigned/untrusted образ.
+{"Event"…"EventID":11,"Version":0,"Level":0,"Task":6,"Opcode":0,"Keywords":"0x8000000000000000","TimeCreated":{"#att
+ributes":{"SystemTime":"2026-02-27T10:26:15.414597Z"}},…,"Channel":"Microsoft-Windows-SecurityMitigations/KernelMode","Computer":“REDACTED","Security":{"#attributes":{"UserID":"S-1-5-
+18"}}},"EventData":{"ProcessPathLength":52,"ProcessPath":"\\Device\\HarddiskVolume4\\Windows\\System32\\svchost.exe
+","ProcessCommandLineLength":56,"ProcessCommandLine":"C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s
+Winmgmt","ProcessId":37383,"ProcessCreateTime":"2026-02-
+27T10:26:15.254827Z","ProcessStartKey":19140298416383003,"ProcessSignatureLevel":0,"ProcessSectionSignatureLevel":0,
+"ProcessProtection":0,"TargetThreadId":29700,"TargetThreadCreateTime":"2026-02-
+25T08:24:13.276875Z","RequiredSignatureLevel":8,"SignatureLevel":1,"ImageNameLength":34,"ImageName":"\\Windows\
+\System32\\wbem\\wmiclnt.dll"}}}
+Продолжение будет в следующем посте 🔽
+#ir #dfir #tips
+@ptescalator
+
+[Media: Фото]</description><pubDate>Mon, 08 Jun 2026 12:25:04 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_737</guid></item><item><title>Message 736</title><link>https://t.me/ptescalator/736</link><description/><pubDate>Fri, 05 Jun 2026 17:09:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_736</guid></item><item><title>Редкие техники закрепления. Часть 2</title><link>https://t.me/ptescalator/735</link><description>Редкие техники закрепления. Часть 2
 Читайте также про: Zabbix Agent, TimeProvider.
 3️⃣ COM Hijacking
 Для закрепления в инфраструктуре злоумышленники использовали редкую технику Component Object Model Hijacking (перехват COM-объектов).
