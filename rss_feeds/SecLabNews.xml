@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sun, 07 Jun 2026 19:41:50 +0000</lastBuildDate><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/17818</link><description>🆕 Еженедельный обзор киберновостей
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 08:59:00 +0000</lastBuildDate><item><title>Минцифры берет курс на "жесткие ограничения" — как в Европе</title><link>https://t.me/SecLabNews/17819</link><description>Минцифры берет курс на "жесткие ограничения" — как в Европе
+Минцифры рассматривает введение возрастной идентификации на онлайн-платформах. Об этом глава ведомства Максут Шадаев заявил на IT-завтраке в рамках ПМЭФ-2026.
+По словам министра, вопрос относится к ближайшей повестке. Шадаев сказал, что перед ведомством точно встанет задача встроить механизмы проверки возраста в платформы.
+Он отметил, что Европа и многие развитые страны уже идут по пути жестких ограничений. Российское Минцифры, в частности, изучает опыт Roblox, где возрастная идентификация уже применяется. Других деталей министр не уточнил.
+#Минцифры #Возраст #Платформы
+@SecLabNews | Мы в Мах
+
+[Media: Видео]</description><pubDate>Mon, 08 Jun 2026 08:59:00 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17819</guid></item><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/17818</link><description>🆕 Еженедельный обзор киберновостей
 Если на прошлой неделе ИИ ещё спорил, помощник он или угроза, то на этой спор закрылся: АНБ получило для киберопераций самую закрытую модель Anthropic, OpenAI побоялась выпустить нейросеть, способную собрать вирус, а Китай учит алгоритмы вычислять «врага государства» заранее. Добавьте к этому волну критических уязвимостей в SolarWinds и Citrix, выкуп в $20 млн от юрфирмы Weil и утечку 180 ГБ из IKEA — в общем, расслабиться не дали никому. Собрали самые интересные новости в одном месте, чтобы вы ничего не пропустили👇
 🌎В мире
 АНБ получило доступ к самой закрытой модели Anthropic — Claude Mythos — для планирования наступательных киберопераций.
@@ -48,7 +55,7 @@ OpenAI отказалась от публичного релиза систем�
 и тут 🗣 https://stream.itradio.su
 Задаём свои вопросы в чате подкаста с тегом #csl41
 
-[Media: Видео]</description><pubDate>Sun, 07 Jun 2026 19:41:50 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17817</guid></item><item><title>16–19 июня пройдет Standoff 17 — одна из крупнейших международных кибербитв!</title><link>https://t.me/SecLabNews/17816</link><description>16–19 июня пройдет Standoff 17 — одна из крупнейших международных кибербитв!
+[Media: Видео]</description><pubDate>Mon, 08 Jun 2026 08:59:00 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17817</guid></item><item><title>16–19 июня пройдет Standoff 17 — одна из крупнейших международных кибербитв!</title><link>https://t.me/SecLabNews/17816</link><description>16–19 июня пройдет Standoff 17 — одна из крупнейших международных кибербитв!
 Гостей ждет насыщенная программа: кибербитва Standoff 17, деловой трек, презентации новых продуктов, практические разборы от комьюнити, мастер-классы и множество поводов встретиться офлайн.
 В этом году мы разделили мероприятие на две части:
 1️⃣ 16–17 июня — деловая программа для бизнеса
@@ -61,7 +68,7 @@ OpenAI отказалась от публичного релиза систем�
 ➡Регистрация на деловой трек
 ➡Регистрация на Standoff Talks
 
-[Media: Видео]</description><pubDate>Sun, 07 Jun 2026 19:41:50 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17816</guid></item><item><title>Apple назвала причину удаления «Макса» из App Store</title><link>https://t.me/SecLabNews/17815</link><description>Apple назвала причину удаления «Макса» из App Store
+[Media: Видео]</description><pubDate>Mon, 08 Jun 2026 08:59:00 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17816</guid></item><item><title>Apple назвала причину удаления «Макса» из App Store</title><link>https://t.me/SecLabNews/17815</link><description>Apple назвала причину удаления «Макса» из App Store
 Apple объяснила удаление мессенджера «Макс» из App Store санкциями. В компании заявили, что соблюдают законы стран, где работает, но не уточнили, какие именно ограничения стали причиной.
 Приложение исчезло из магазина 3 июня. Уже установленный «Макс» продолжит работать, сообщения будут доставляться, а основные функции останутся доступны. Проблема затронет уведомления: владельцы iPhone могут их не получать.
 В «Максе» советуют периодически открывать приложение вручную, чтобы не пропустить сообщения. В других магазинах приложений мессенджер доступен. Минцифры пообещало заняться вопросом, а Максут Шадаев заявил, что с сервисом «все будет хорошо».

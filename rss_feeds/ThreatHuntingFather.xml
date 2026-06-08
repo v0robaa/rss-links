@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 06 Jun 2026 03:33:47 +0000</lastBuildDate><item><title>📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft</title><link>https://t.me/ThreatHuntingFather/1378</link><description>📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 02:00:14 +0000</lastBuildDate><item><title>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️</title><link>https://t.me/ThreatHuntingFather/1379</link><description>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️
+На публичной песочнице ANY.RUN нашёл свежий семпл, связанный с группировкой APT-Q-27 (также известной как DragonBreath или Golden Eye Dog 🔍). Примечательно, что семпл был первоначально загружен на VirusTotal из Малайзии (MY), что в очередной раз подтверждает фокус группировки на Юго-Восточной Азии.
+Джугурмеки 🥸 продолжают активно прокачивать техники обхода защиты, комбинируя облачную инфраструктуру и классические трюки. Вот как выглядит актуальная цепочка заражения:
+🥇 Stage 1: Первичный лоадер
+Атака начинается с обфусцированного .NET-загрузчика. Он подписан *отозванным* сертификатом на физическое лицо «Shi Hu» (вряд ли член этой APT группы). Чтобы усложнить статический анализ, лоадер не содержит в себе полезной нагрузки. Вместо этого он обращается к Google Storage, скачивает текстовый файл с листингом (le.txt) и выполняет пейлоады в зависимости от их расширения.
+🥈 Stage 2: Классический DLL Side-Loading
+Данные, которые подтягиваются из облака, реализуют старую добрую схему DLL Side-loading: легитимный EXE-файл тянет за собой вредоносную библиотеку и зашифрованный бинарник. Прямо как PlugX.
+🥉 Stage 3: Распаковка финального пейлоада
+Подгруженная библиотека DataPlugin.dll (подписанная еще одним отозванным сертификатом - «Lenovo United States») содержит простую процедуру дешифровки для файла lecco.dat. После расшифровки lecco.dat превращается в полноценный RAT (Remote Access Trojan), готовый к закреплению и работе с C2-сервером.
+💡 Takeaway: Использование легитимных облачных сервисов в связке с отозванными сертификатами - рабочий метод злоумышленников для обхода Mark-of-the-Web (MotW) и корпоративных EDR-решений.
+📌 Индикаторы компрометации (IoCs):
+🔗 URL: hxxps[://]storage[.]googleapis[.]com/lecoos/le[.]txt
+🔹 Loader (MD5): 6c3dabe4770a64b8adbd0f7cecf7e204
+🔹 Malicious DLL - DataPlugin.dll (MD5): 42fe3b56300da1f15f2a442394a902ee
+🔹 Encrypted payload - lecco.dat (MD5): 7047f9ae33243fa3ae227464cf227a6e
+🔹 Decrypted RAT (MD5): 8c926955b11c6fc0db2647a790026257
+P.S. У меня есть аккаунт в Twitter'е, там я в последнее время пишут как независимый исследователь - буду рад видеть вас среди своих читателей!
+➡️ https://x.com/askardyuss 🛃
+#угрозы@qcakz
+
+[Media: Фото]</description><pubDate>Mon, 08 Jun 2026 02:00:14 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1379</guid></item><item><title>📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft</title><link>https://t.me/ThreatHuntingFather/1378</link><description>📖 MarkItDown - конвертер любых файлов в Markdown от Microsoft
 Похоже на Pandoc для эпохи LLM, только с фокусом на подготовку данных для нейросетей и поисковых пайплайнов. Утилита не пытается сохранить красивый внешний вид, а вытаскивает структуру документа в Markdown - заголовки, таблицы, списки, ссылки - именно в том виде, который LLM понимают нативно. Может стать стандартом де-факто для подготовки данных под RAG и AI-агентов.
 Что умеет: PDF, DOCX, PPTX, XLSX в Markdown, HTML, CSV, JSON, XML в Markdown, Изображения - OCR и метаданные, Аудио - текстовая расшифровка, YouTube - транскрипт по ссылке, ZIP - рекурсивная обработка содержимого
 Применение: 📝 Pentest reporting и форензика - привести артефакты к единому тексту, 🔍 RAG, Vector DB, MCP-серверы, AI-агенты,
