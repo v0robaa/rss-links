@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 07:41:29 +0000</lastBuildDate><item><title>Cisco раскрыла детали активно эксплуатируемой уязвимости в SD-WAN Manager</title><link>https://t.me/ZerodayAlert/730</link><description>Cisco раскрыла детали активно эксплуатируемой уязвимости в SD-WAN Manager
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 09 Jun 2026 18:35:19 +0000</lastBuildDate><item><title>Три уязвимости в Ubiquiti UniFi OS Server открывают root-доступ ко всей инфраструктуре</title><link>https://t.me/ZerodayAlert/732</link><description>Три уязвимости в Ubiquiti UniFi OS Server открывают root-доступ ко всей инфраструктуре
+Специалисты показали, что три уязвимости в Ubiquiti UniFi OS Server можно объединить в одну цепочку атаки. Все три получили максимальную оценку по CVSS 10,0 и затрагивают версии UniFi OS Server 5.0.6 и ниже.
+Цепочка работает из-за того, что компонент проверки доступа и Nginx по-разному обрабатывают один и тот же запрос: специально составленный запрос выглядит легитимным, но попадает во внутреннюю защищённую часть системы. Это позволяет без каких-либо учётных данных добраться до функции обновления пакетов и внедрить команды, которые выполняются на сервере.
+Повышение привилегий до root достигается через права sudo без пароля у служебной учётной записи. Опасность усиливается тем, что UniFi OS Server нередко управляет не только сетью, но и камерами, дверными системами и связанными учётными записями.
+#ubiquiti #unifi #уязвимость #rce
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 09 Jun 2026 18:35:19 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_732</guid></item><item><title>Check Point сообщила об эксплуатации уязвимости в протоколе IKEv1</title><link>https://t.me/ZerodayAlert/731</link><description>Check Point сообщила об эксплуатации уязвимости в протоколе IKEv1
+Уязвимость затрагивает решения Check Point Remote Access VPN и Mobile Access при включённом устаревшем протоколе IKEv1. Ошибка кроется в механизме проверки сертификатов и позволяет злоумышленнику создать сеанс удалённого доступа в обход стандартной аутентификации.
+Первые признаки эксплуатации датируются 7 мая 2026 года, а в начале июня число атак резко возросло. На сегодня зафиксированы десятки атакованных организаций по всему миру, в одном из случаев подтверждена активность партнёра вымогательской группировки Qilin.
+В ходе расследования была обнаружена вторая уязвимость, также связанная с IKEv1 и допускающая атаку «человек посередине». Check Point выпустила исправления для обеих уязвимостей и рекомендует немедленно обновить затронутые шлюзы.
+#zeroday #уязвимость #вымогатели #ikev1
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 09 Jun 2026 17:22:20 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_731</guid></item><item><title>Cisco раскрыла детали активно эксплуатируемой уязвимости в SD-WAN Manager</title><link>https://t.me/ZerodayAlert/730</link><description>Cisco раскрыла детали активно эксплуатируемой уязвимости в SD-WAN Manager
 Cisco обнаружила уязвимость CVE-2026-20245 (с оценкой по CVSS 7.8, High) в интерфейсе командной строки Catalyst SD-WAN Manager. Проблема затрагивает локальные установки, облачные версии SD-WAN и специализированное решение для государственных заказчиков.
 Пользователь с правами netadmin способен загрузить специально подготовленный файл и выполнить произвольные команды с привилегиями root.
 Недостаточная проверка пользовательских данных позволяет внедрять команды через вредоносный файл и повышать уровень доступа до максимального.
