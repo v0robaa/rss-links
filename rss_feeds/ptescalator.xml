@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 12:25:04 +0000</lastBuildDate><item><title>Редкие техники закрепления. Часть 3</title><link>https://t.me/ptescalator/737</link><description>Редкие техники закрепления. Часть 3
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 09 Jun 2026 13:48:42 +0000</lastBuildDate><item><title>Редкие техники закрепления. Часть 4</title><link>https://t.me/ptescalator/738</link><description>Редкие техники закрепления. Часть 4
+Читайте также про: Zabbix Agent, TimeProvider, COM Hijacking, WMICLNT.
+5️⃣ Systemd Generator
+Systemd Generator — это исполняемый файл, который systemd запускает на этапе загрузки системы (или при выполнении daemon-reload) для динамического создания unit-файлов служб, целей и точек монтирования. Злоумышленники используют этот механизм для скрытого закрепления, поскольку генераторы выполняются с привилегиями root до запуска основных служб и редко проверяются администраторами.
+Ключевые директории:
+• /etc/systemd/system-generators/*
+• /usr/local/lib/systemd/system-generators/*
+• /lib/systemd/system-generators/* (или /usr/lib/systemd/system-generators/)
+😐 Механизм закрепления:
+1. Злоумышленник помещает исполняемый файл в одну из ключевых директорий — скрипт или бинарный файл (обычно с маскирующим именем, например systemd-cp-generator).
+2. При каждой загрузке системы или выполнении systemctl daemon-reload — systemd запускает все найденные генераторы.
+3. Генератор может: создать свой сервис в /run/systemd/system/ и включить его, перезаписать юниты существующих служб (особенно через /run/systemd/generator.early/, где приоритет выше, чем у /etc/systemd/system/), отключить критически важные средства защиты, выполнить полезную нагрузку напрямую.
+😮 Рекомендации:
+Поскольку генераторы запускаются до систем мониторинга, основной метод — мониторинг файловой системы на предмет создания и изменения файлов в директориях генераторов.
+1. Мониторинг файловой системы — в первую очередь отслеживайте создание и изменение файлов в перечисленных директориях. Используйте auditd, так как он работает на уровне ядра и может сработать даже при ранней загрузке.
+2. Контроль целостности — периодически сверяйте хеш-суммы файлов в директориях генераторов с эталонными.
+3. Ограничение прав — запретите обычным пользователям и непривилегированным процессам запись в эти директории.
+4. Анализ генераторов — проверяйте нестандартные или недавно появившиеся генераторы, особенно если они не от легитимных пакетов (openvpn, systemd-rc-local-generator и т.п.).
+На этом с этой серией постов — пока что все 😉
+#ir #dfir #tips
+@ptescalator</description><pubDate>Tue, 09 Jun 2026 13:48:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_738</guid></item><item><title>Редкие техники закрепления. Часть 3</title><link>https://t.me/ptescalator/737</link><description>Редкие техники закрепления. Часть 3
 Читайте также про: Zabbix Agent, TimeProvider, COM Hijacking.
 4️⃣ WMICLNT
 Эта техника закрепления основана на перехвате DLL, загружаемой легитимной службой Windows Management Instrumentation (WMI), и в MITRE ATT&amp;CK классифицируется как T1546.008 (Event Triggered Execution: Accessibility Features) или как частный случай DLL Hijacking.
