@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-09T07:56:21.119860+00:00",
-  "messages_count": 216,
+  "last_update": "2026-06-09T12:09:55.881973+00:00",
+  "messages_count": 217,
   "messages": [
+    {
+      "id": "1382",
+      "title": "🔬 QuasarNix - детект LOTL reverse shell’ов через ML",
+      "text": "🔬 QuasarNix - детект LOTL reverse shell’ов через ML\nLinux living-off-the-land (LOTL) reverse shells abuse legitimate binaries (bash, python, nc, …) to establish covert outbound connections, making signature-based detection unreliable against novel variants and evasion attempts. QuasarNix addresses two open gaps in the field:\nNo public ML-based SIEM detectors - we release the first production-ready, openly licensed ML models for LOTL reverse-shell detection.\nAdversarial fragility - we evaluate models under evasion and poisoning attacks, and provide adversarially-trained checkpoints that survive all tested attacks.\nThe framework synthesises a 1M-command training corpus from 34 reverse-shell templates and evaluates 14 model architectures at an operating point of FPR = 10⁻⁶ - reflecting real SIEM alert fatigue constraints.\n📄 https://arxiv.org/abs/2402.18329\n💻 https://github.com/dtrizna/QuasarNix\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1382",
+      "pub_date": "2026-06-09T08:02:13+00:00"
+    },
     {
       "id": "1379",
       "title": "☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️",

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 08 Jun 2026 02:00:14 +0000</lastBuildDate><item><title>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️</title><link>https://t.me/ThreatHuntingFather/1379</link><description>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 09 Jun 2026 08:02:13 +0000</lastBuildDate><item><title>🔬 QuasarNix - детект LOTL reverse shell’ов через ML</title><link>https://t.me/ThreatHuntingFather/1382</link><description>🔬 QuasarNix - детект LOTL reverse shell’ов через ML
+Linux living-off-the-land (LOTL) reverse shells abuse legitimate binaries (bash, python, nc, …) to establish covert outbound connections, making signature-based detection unreliable against novel variants and evasion attempts. QuasarNix addresses two open gaps in the field:
+No public ML-based SIEM detectors - we release the first production-ready, openly licensed ML models for LOTL reverse-shell detection.
+Adversarial fragility - we evaluate models under evasion and poisoning attacks, and provide adversarially-trained checkpoints that survive all tested attacks.
+The framework synthesises a 1M-command training corpus from 34 reverse-shell templates and evaluates 14 model architectures at an operating point of FPR = 10⁻⁶ - reflecting real SIEM alert fatigue constraints.
+📄 https://arxiv.org/abs/2402.18329
+💻 https://github.com/dtrizna/QuasarNix
+
+[Media: Фото]</description><pubDate>Tue, 09 Jun 2026 08:02:13 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1382</guid></item><item><title>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️</title><link>https://t.me/ThreatHuntingFather/1379</link><description>☄️ Новый вектор атаки APT-Q-27 (DragonBreath): Google Storage и угнанные сертификаты безопасности ‼️
 На публичной песочнице ANY.RUN нашёл свежий семпл, связанный с группировкой APT-Q-27 (также известной как DragonBreath или Golden Eye Dog 🔍). Примечательно, что семпл был первоначально загружен на VirusTotal из Малайзии (MY), что в очередной раз подтверждает фокус группировки на Юго-Восточной Азии.
 Джугурмеки 🥸 продолжают активно прокачивать техники обхода защиты, комбинируя облачную инфраструктуру и классические трюки. Вот как выглядит актуальная цепочка заражения:
 🥇 Stage 1: Первичный лоадер
