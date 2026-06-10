@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 06:15:52 +0000</lastBuildDate><item><title>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥</title><link>https://t.me/ThreatHuntingFather/1383</link><description>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 09:46:26 +0000</lastBuildDate><item><title>🆕 RoguePlanet - свежий 0-day в Microsoft Defender. Разбор с точки зрения DFIR.</title><link>https://t.me/ThreatHuntingFather/1384</link><description>🆕 RoguePlanet - свежий 0-day в Microsoft Defender. Разбор с точки зрения DFIR.
+🔥 Буквально вчера исследователь под ником Nightmare Eclipse выкатил PoC нового 0-day для Microsoft Defender - RoguePlanet. Он бьет по полностью пропатченным Windows 10 и 11, включая системы с июньскими апдейтами (KB5094126). На выходе - cmd.exe с правами SYSTEM. Как я понял, релиз - часть затяжного конфликта автора с Microsoft по поводу их практик disclosure и bug bounty.
+Нам как форзерам это интересно не тем, КАК эксплуатировать, а тем, КАКОЙ след оно оставляет и как это детектить. 🔍
+⚙️ Что под капотом?
+• Это Time-of-Check to Time-of-Use в движке Defender (mpengine). Автор сам пишет, что на одних машинах 100% успех, на других не заводится вообще.
+• Изначально это была RCE: жертву надо было заманить открыть .vhd(x) с удаленной SMB-шары, дальше Defender перезаписывал собственные файлы - и привет, выполнение кода 👀
+• Второй сценарий RCE - открытие SMB-шары при включенной обработке симлинков.
+• В середине мая MS тихо захарденил Defender, пропатчив mpengine!SysIO* и прикрыв junction-атаки. После этого RoguePlanet, по словам автора, возможно скатился до LPE.
+• ThreatLocker подтвердили, что воспроизвели эксплойт на полностью пропатченной Win11. Application allowlisting его блокирует.
+• Ключевой момент для нас: MsMpEng.exe (движок Defender) крутится под SYSTEM. Гонка в том, как он обрабатывает файлы / симлинки / reparse-поинты во время сканирования, позволяет заставить его действовать по контролируемому атакующим пути с правами SYSTEM. Отсюда перезапись файлов и эскалация.
+🔍 Теперь, самое интересное, где это палится?
+1️⃣ Аномальные дочерние процессы MsMpEng.exe. Движок Defender в норме НЕ порождает cmd.exe / powershell.exe / conhost. Если в Sysmon EID 1 видишь ParentImage, заканчивающийся на MsMpEng.exe, а в детях интерактивный шелл - это практически нулевой false positive. Первое, что надо завести в детект.
+2️⃣ Монтирование VHD/VHDX из недоверенных мест.
+• Microsoft-Windows-VHDMP/Operational - события attach/surface образа.
+• Открытие .vhd(x) с UNC-пути, WebDAV или SMB-шары - смотри командные строки и Explorer-активность.
+• Коррелируй с Microsoft-Windows-SMBClient/Connectivity и логами доступа к шаре. VHD(x) с удаленной шары + следом активность Defender = красный флаг под этот сценарий.
+3️⃣ Целостность каталога Defender. Перезапись собственных файлов Defender - часть механики. Ставь file integrity monitoring на: C:\ProgramData\Microsoft\Windows Defender\Platform\. Неожиданные модификации/перезаписи бинарей платформы не-Defender-процессом - повод копать.
+4️⃣ Reparse points / junctions как индикатор. Создание junction/symlink в путях, которые сканирует Defender, с последующими быстрыми файловыми операциями - поведенческий признак TOCTOU. Sysmon FileCreate + аномальная плотность операций по таймстампам.
+5️⃣ Краши и рестарты mpengine
+• WER-отчеты по MsMpEng.exe.
+• Рестарты сервиса Defender, ошибки в Microsoft-Windows-Windows Defender/Operational. Гонка штука нестабильная - неудачные попытки часто роняют или дергают движок, и это само по себе сигнал.
+🧰 Триаж-чеклист на хосте
+• Дерево процессов вокруг MsMpEng.exe (родитель/дети) за окно инцидента.
+• VHDMP/Operational + SMBClient логи на предмет remote VHD(x).
+• Таймлайн модификаций в ...\Windows Defender\Platform\.
+• Шелл из-под SYSTEM с подозрительным parent.
+• Новые админ-аккаунты, сервисы, задачи планировщика сразу после получения SYSTEM (стандартный post-exp, ну и дальше по цепочке).
+📌 Самый дешевый и надежный детект - дочерний шелл от MsMpEng.exe, думаю можно заводить прямо сейчас. А остальное (remote VHD, целостность Platform, краши движка) идет вторым контуром под корреляцию.
+🔗 https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-rogueplanet-zero-day-grants-system-privileges/
+🔗 https://github.com/MSNightmare/RoguePlanet
+🐦‍⬛ DFIR Father</description><pubDate>Wed, 10 Jun 2026 09:46:26 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1384</guid></item><item><title>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥</title><link>https://t.me/ThreatHuntingFather/1383</link><description>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥
 Иногда самые полезные артефакты лежат не в хитром бинарнике, который надо парсить три часа, а просто в текстовике, который никто не догадался открыть. Вот один из таких. Андреа Фортуна недавно напомнил про него, и для кейсов на 11 винде это очень актуально.
 📂 Что это и где лежит
 Начиная с Windows 11 22H2 Microsoft прикрутила к сервису Program Compatibility Assistant (тот самый PcaSvc, который живет еще со времен Vista) персистентную запись запусков в обычный текст:
