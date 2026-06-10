@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 12:29:23 +0000</lastBuildDate><item><title>Вышел новый номер Positive Research 📖</title><link>https://t.me/ptescalator/739</link><description>Вышел новый номер Positive Research 📖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 17:26:06 +0000</lastBuildDate><item><title>Вышел новый номер Positive Research 📖</title><link>https://t.me/ptescalator/739</link><description>Вышел новый номер Positive Research 📖
 И да — в этот раз он про PT ESC.
 Под одной обложкой собраны материалы наших специалистов про TI, DFIR, Detect, lakehouse-подход, практические tips &amp; tricks и другие темы, которыми мы живем каждый день. И отдельно материал Алексея Лукацкого — «язык и зопа» (чисто для интриги).
 Если коротко — это как ESCalator, только в формате журнала. Скачать PDF уже можно на сайте: доступны полная и облегченная версии.
@@ -7,7 +7,7 @@
 Сделайте репост этого поста в свой активный канал и напишите нам об этом в комментариях или в личку. Первым 10-ти отправим журнал курьером по России.
 @ptescalator
 
-[Media: Видео]</description><pubDate>Wed, 10 Jun 2026 12:29:23 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_739</guid></item><item><title>Редкие техники закрепления. Часть 4</title><link>https://t.me/ptescalator/738</link><description>Редкие техники закрепления. Часть 4
+[Media: Видео]</description><pubDate>Wed, 10 Jun 2026 17:26:06 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_739</guid></item><item><title>Редкие техники закрепления. Часть 4</title><link>https://t.me/ptescalator/738</link><description>Редкие техники закрепления. Часть 4
 Читайте также про: Zabbix Agent, TimeProvider, COM Hijacking, WMICLNT.
 5️⃣ Systemd Generator
 Systemd Generator — это исполняемый файл, который systemd запускает на этапе загрузки системы (или при выполнении daemon-reload) для динамического создания unit-файлов служб, целей и точек монтирования. Злоумышленники используют этот механизм для скрытого закрепления, поскольку генераторы выполняются с привилегиями root до запуска основных служб и редко проверяются администраторами.
