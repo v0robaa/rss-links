@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 09 Jun 2026 08:02:13 +0000</lastBuildDate><item><title>🔬 QuasarNix - детект LOTL reverse shell’ов через ML</title><link>https://t.me/ThreatHuntingFather/1382</link><description>🔬 QuasarNix - детект LOTL reverse shell’ов через ML
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 06:15:52 +0000</lastBuildDate><item><title>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥</title><link>https://t.me/ThreatHuntingFather/1383</link><description>Текстовик в Windows 11, который палит запуск даже удаленных файлов 🔥
+Иногда самые полезные артефакты лежат не в хитром бинарнике, который надо парсить три часа, а просто в текстовике, который никто не догадался открыть. Вот один из таких. Андреа Фортуна недавно напомнил про него, и для кейсов на 11 винде это очень актуально.
+📂 Что это и где лежит
+Начиная с Windows 11 22H2 Microsoft прикрутила к сервису Program Compatibility Assistant (тот самый PcaSvc, который живет еще со времен Vista) персистентную запись запусков в обычный текст:
+C:\Windows\appcompat\pca\PcaAppLaunchDic.txt
+Внутри - строки вида "полный путь к exe | UTC-таймстамп". Никакого проприетарного формата, никакого декодинга. Все читается глазами:
+C:\Users\Alice\Downloads\Quarterly_Review.pdf.exe|2026-03-15 09:42:11.000
+C:\Temp\tool.exe|2026-03-15 09:43:05.000
+D:\AUTORUN\payload.exe|2026-03-15 09:44:22.000
+Делалось это как обычно под compatibility-задачи, а не под форензику. Но как обычно бывает - фича для одного, а ценное доказательство для другого. 😙
+🔍 Чем это интересно для форзы
+Файл ловит запуски программ через Explorer - то есть когда юзер двойным кликом открыл файл. А это огромный пласт реальной малвари: распаковал ZIP, открыл "счет" из директории "Загрузки", оператор кинул тулзу в C:\Temp руками и запустил, техник прогнал утилиту с флешки.
+Три жирных плюса:
+• Отвечает на простой, но важный вопрос - этот exe реально запускали на хосте, или только скачали?
+• Связывает алерт с активностью юзера.
+• И главное - запись остается даже после удаления самого файла.
+Третья строка в примере выше ⬆️:
+D:\ - это съемный диск. То есть доставка через USB видна по одному только префиксу пути, без всякого пивотинга.
+☠️ Anti-forensic значимость
+Вот тут самое вкусное. Вся типовая чистка следов заточена под известные артефакты: чистят Prefetch, сносят LNK, вайпят recent items, гоняют коммерческие анти-форензик тулзы. А малоизвестные артефакты остаются нетронутыми просто потому, что атакующий о них не знает.
+Представь кейс: подозрение на фишинг. Вложение удалено, скачанный файл удален, юзер божится что "только посмотрел документ и ничего не запускал". EDR дал слабый сигнал, Prefetch неинформативен из-за шума и ретеншена. Открываешь PCA - а там:
+C:\Users\Alice\Downloads\Quarterly_Review.pdf.exe|2026-03-15 09:42:11.000
+Одна строчка доказывает запуск (а не просто скачивание), путь с палевным двойным расширением .pdf.exe, и UTC-таймстамп, который коррелируется с почтой, браузером, DNS и process creation.
+🛠 Как снимать и читать (Сам файл в UTF-16 LE, если что)
+Быстрый триаж через PowerShell:
+Get-Content -Path "C:\Windows\appcompat\pca\PcaAppLaunchDic.txt" -Encoding Unicode |
+Select-String -Pattern "Temp|Downloads|AppData|\\Users\\"
+В KAPE путь уже есть в таргете !SANS_Triage. Заодно тащи соседей - они дополняют картину ошибками совместимости и завершениями процессов:
+C:\Windows\appcompat\pca\PcaAppLaunchDic.txt
+C:\Windows\appcompat\pca\PcaGeneralDb0.txt
+C:\Windows\appcompat\pca\PcaGeneralDb1.txt
+Для парсинга в пайплайне Харлан Карви запилил PCAParse.
+⚠️ Важные оговорки
+• Scope. Ловятся запуски ТОЛЬКО через Explorer. Стартанули из cmd, PowerShell, WMI, PsExec, шедулера или сервиса - в этом файле ничего не будет.
+• Наличие записи сильно намекает на запуск через Explorer. Отсутствие записи не доказывает что не запускали. Это один источник в общей доказательной базе, а не истина в последней инстанции.
+🎯 Плейбучим?
+Лучшее время выучить новый артефакт - до того, как он понадобится в живом кейсе. Сейчас большинство анти-форензик тулз его не трогают. Советую потыкать на Win11 самому, прогнать запуск через Explorer, cmd, PowerShell, USB и сетевую шару, посмотри что и сколько хранится. Ну и если было полезно, то закинуть C:\Windows\appcompat\pca\ в свой таргет-коллект.
+🔗 https://andreafortuna.org/2026/03/19/windows11-pca-artifact/
+🔗 https://www.sygnia.co/blog/new-windows-11-pca-artifact/
+🔗 https://windowsir.blogspot.com/2024/02/pcaparse.html
+🐦‍⬛ DFIR Father</description><pubDate>Wed, 10 Jun 2026 06:15:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1383</guid></item><item><title>🔬 QuasarNix - детект LOTL reverse shell’ов через ML</title><link>https://t.me/ThreatHuntingFather/1382</link><description>🔬 QuasarNix - детект LOTL reverse shell’ов через ML
 Linux living-off-the-land (LOTL) reverse shells abuse legitimate binaries (bash, python, nc, …) to establish covert outbound connections, making signature-based detection unreliable against novel variants and evasion attempts. QuasarNix addresses two open gaps in the field:
 No public ML-based SIEM detectors - we release the first production-ready, openly licensed ML models for LOTL reverse-shell detection.
 Adversarial fragility - we evaluate models under evasion and poisoning attacks, and provide adversarially-trained checkpoints that survive all tested attacks.

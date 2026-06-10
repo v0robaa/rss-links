@@ -1,8 +1,15 @@
 {
   "channel": "ZerodayAlert",
-  "last_update": "2026-06-09T20:14:16.306886+00:00",
-  "messages_count": 184,
+  "last_update": "2026-06-10T08:12:20.989698+00:00",
+  "messages_count": 185,
   "messages": [
+    {
+      "id": "733",
+      "title": "RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows",
+      "text": "RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows\nИсследователь Nightmare Eclipse опубликовал эксплойт RoguePlanet для Microsoft Defender. ThreatLocker подтвердила работу кода на полностью обновлённых Windows 11 с KB5094126. Под ударом остаются Windows 10 и Windows 11, официального исправления от Microsoft пока нет.\nПроблема связана с состоянием гонки, при котором атакующий успевает вмешаться в работу процессов Defender и поднять права до SYSTEM. Изначально вектор связывали с обработкой файлов на удалённых SMB-серверах, но Microsoft уже изменила часть механизма, поэтому удалённое выполнение кода остаётся неясным.\nДо выхода исправления стоит ограничить запуск неизвестных файлов и усилить контроль приложений. Организациям поможет белый список разрешённого ПО. Когда уязвимость закроют, с обновлением лучше не тянуть.\n#Defender #Windows #RoguePlanet #LPE\n@ZerodayAlert\n\n[Media: Фото]",
+      "link": "https://t.me/ZerodayAlert/733",
+      "pub_date": "2026-06-10T05:03:55+00:00"
+    },
     {
       "id": "732",
       "title": "Три уязвимости в Ubiquiti UniFi OS Server открывают root-доступ ко всей инфраструктуре",

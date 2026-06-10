@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-09T20:14:03.635506+00:00",
-  "messages_count": 186,
+  "last_update": "2026-06-10T08:12:08.030708+00:00",
+  "messages_count": 187,
   "messages": [
+    {
+      "id": "365",
+      "title": "RoguePlanet",
+      "text": "RoguePlanet\nWindows Defender LPE. The exploit is a race condition, so it's a hit or miss. I have managed to get a 100% success rate on some machines while it struggled to work on others. The exploit has been tested in Windows 11 (Official channel + Canary) and Windows 10 with june 2026 patch installed. The PoC however does not work in Windows Server since standard users cannot mount an ISO image, I'm confident that all Windows Server versions are vulnerable as well, you just need to redesign the exploit.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/365",
+      "pub_date": "2026-06-10T04:23:50+00:00"
+    },
     {
       "id": "364",
       "title": "Почти все каналы с полезным контентом, которые было интересно читать, перестали поддерживаться. Вот и прошла эпоха… С другой стороны, прекрасно понимаю, что их создатели стали серьезными людьми со...",
