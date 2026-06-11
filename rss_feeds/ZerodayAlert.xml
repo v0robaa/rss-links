@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 10 Jun 2026 05:03:55 +0000</lastBuildDate><item><title>RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows</title><link>https://t.me/ZerodayAlert/733</link><description>RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 11 Jun 2026 10:55:03 +0000</lastBuildDate><item><title>Google выпустила экстренное обновление Chrome для всех платформ</title><link>https://t.me/ZerodayAlert/734</link><description>Google выпустила экстренное обновление Chrome для всех платформ
+В движке V8 обнаружена уязвимость, позволяющая выйти за пределы допустимой области памяти. Google подтвердила, что рабочий эксплойт уже существует и активно применяется злоумышленниками.
+Также в обновлении закрыты 17 критических уязвимостей типа use-after-free. Уязвимые компоненты охватывают Ozone, Aura, Bluetooth, Autofill, Gamepad, Printing и ряд других модулей браузера.
+Новая версия Chrome получила номера 149.0.7827.102/103 для Windows и macOS и 149.0.7827.102 для Linux. Обновление можно запустить вручную через раздел «О браузере Chrome», после чего потребуется перезапуск.
+#chrome #zeroday #google #обновление
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 11 Jun 2026 10:55:03 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_734</guid></item><item><title>RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows</title><link>https://t.me/ZerodayAlert/733</link><description>RoguePlanet бьёт по Microsoft Defender и даёт права SYSTEM в Windows
 Исследователь Nightmare Eclipse опубликовал эксплойт RoguePlanet для Microsoft Defender. ThreatLocker подтвердила работу кода на полностью обновлённых Windows 11 с KB5094126. Под ударом остаются Windows 10 и Windows 11, официального исправления от Microsoft пока нет.
 Проблема связана с состоянием гонки, при котором атакующий успевает вмешаться в работу процессов Defender и поднять права до SYSTEM. Изначально вектор связывали с обработкой файлов на удалённых SMB-серверах, но Microsoft уже изменила часть механизма, поэтому удалённое выполнение кода остаётся неясным.
 До выхода исправления стоит ограничить запуск неизвестных файлов и усилить контроль приложений. Организациям поможет белый список разрешённого ПО. Когда уязвимость закроют, с обновлением лучше не тянуть.
