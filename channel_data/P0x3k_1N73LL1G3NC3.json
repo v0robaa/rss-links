@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-12T12:24:10.028347+00:00",
-  "messages_count": 188,
+  "last_update": "2026-06-12T16:49:06.097172+00:00",
+  "messages_count": 189,
   "messages": [
+    {
+      "id": "370",
+      "title": "DPAPISnoop",
+      "text": "DPAPISnoop\nA C# tool that extracts crackable DPAPI hashes from user MasterKeys and CREDHIST files from local paths and remote SMB shares.\nBlog: Old Passwords Die Hard: Abusing CREDHIST for offline credential recovery\nDuring Red Team engagements, Data Protection API (DPAPI) often arises when recovering browser material, extracting saved credentials, or acquiring and decrypting user Master Keys. While revisiting DPAPI internals, another artefact caught our attention: CREDHIST.\nWhen a user changes their password, old DPAPI blobs still need to be decrypted, so Windows maintains a password history chain that allows previous DPAPI password material to be recovered.\nAfter some investigation into CREDHIST, we have updated DPAPISnoop to support extracting CREDHIST entries into offline-crackable hash lines, alongside its existing Master Key hash extraction functionality. That change opened an interesting path where previously recovered passwords could now be used to identify a user’s password patterns over time.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/370",
+      "pub_date": "2026-06-12T16:02:40+00:00"
+    },
     {
       "id": "366",
       "title": "Ivanti Sentry Pre-Auth RCE",

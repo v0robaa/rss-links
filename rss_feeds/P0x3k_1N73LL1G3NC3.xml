@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 11 Jun 2026 04:08:04 +0000</lastBuildDate><item><title>Ivanti Sentry Pre-Auth RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/366</link><description>Ivanti Sentry Pre-Auth RCE
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 12 Jun 2026 16:02:40 +0000</lastBuildDate><item><title>DPAPISnoop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/370</link><description>DPAPISnoop
+A C# tool that extracts crackable DPAPI hashes from user MasterKeys and CREDHIST files from local paths and remote SMB shares.
+Blog: Old Passwords Die Hard: Abusing CREDHIST for offline credential recovery
+During Red Team engagements, Data Protection API (DPAPI) often arises when recovering browser material, extracting saved credentials, or acquiring and decrypting user Master Keys. While revisiting DPAPI internals, another artefact caught our attention: CREDHIST.
+When a user changes their password, old DPAPI blobs still need to be decrypted, so Windows maintains a password history chain that allows previous DPAPI password material to be recovered.
+After some investigation into CREDHIST, we have updated DPAPISnoop to support extracting CREDHIST entries into offline-crackable hash lines, alongside its existing Master Key hash extraction functionality. That change opened an interesting path where previously recovered passwords could now be used to identify a user’s password patterns over time.
+
+[Media: Фото]</description><pubDate>Fri, 12 Jun 2026 16:02:40 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_370</guid></item><item><title>Ivanti Sentry Pre-Auth RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/366</link><description>Ivanti Sentry Pre-Auth RCE
 Ivanti Sentry authentication bypass and remote code execution vulnerabilities CVE-2026-10520, CVE-2026-10523.
 Blog: https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/
 
