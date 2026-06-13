@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-12T20:19:42.578566+00:00",
-  "messages_count": 221,
+  "last_update": "2026-06-13T07:52:25.045270+00:00",
+  "messages_count": 222,
   "messages": [
+    {
+      "id": "1387",
+      "title": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered",
+      "text": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered\nThe discovery of the App.MenuItem artifact in MacOS Tahoe 26 adds a powerful new layer to forensic investigations. By capturing the specific menu choices a user makes, examiners can reconstruct digital intent with greater precision than before. Whether you are investigating data exfiltration or trying to understand a sequence of events, this Biome stream provides a narrative view of user behavior.\nThe artifact is located at ~/Library/Biome/streams/restricted/App.MenuItem/local.\nConsider the following sequence of events observed in our sample analysis:\n18:32:37: The user navigates using Go > Go to Folder… in Finder.\n18:36:59: In TextEdit, the user selects File > Save…, followed by typing \"u42validation\".\n18:37:54: The user highlights a folder named \"stolendata\" and selects Compress “stolendata”.\n18:38:19: The user selects Move to Trash.\n18:38:41: The user interacts with the Dock to select Empty Trash.\n🔗https://unit42.paloaltonetworks.com/new-macos-artifact-discovered/\n🦔THF#Forensic",
+      "link": "https://t.me/ThreatHuntingFather/1387",
+      "pub_date": "2026-06-13T06:01:31+00:00"
+    },
     {
       "id": "1386",
       "title": "Mapping AI-enabled cyber threats: Insights from the LLM ATT&CK Navigator",

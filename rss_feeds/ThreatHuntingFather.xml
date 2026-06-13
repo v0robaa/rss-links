@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 12 Jun 2026 14:49:39 +0000</lastBuildDate><item><title>Mapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator</title><link>https://t.me/ThreatHuntingFather/1386</link><description>Mapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 13 Jun 2026 06:01:31 +0000</lastBuildDate><item><title>Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered</title><link>https://t.me/ThreatHuntingFather/1387</link><description>Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered
+The discovery of the App.MenuItem artifact in MacOS Tahoe 26 adds a powerful new layer to forensic investigations. By capturing the specific menu choices a user makes, examiners can reconstruct digital intent with greater precision than before. Whether you are investigating data exfiltration or trying to understand a sequence of events, this Biome stream provides a narrative view of user behavior.
+The artifact is located at ~/Library/Biome/streams/restricted/App.MenuItem/local.
+Consider the following sequence of events observed in our sample analysis:
+18:32:37: The user navigates using Go &gt; Go to Folder… in Finder.
+18:36:59: In TextEdit, the user selects File &gt; Save…, followed by typing "u42validation".
+18:37:54: The user highlights a folder named "stolendata" and selects Compress “stolendata”.
+18:38:19: The user selects Move to Trash.
+18:38:41: The user interacts with the Dock to select Empty Trash.
+🔗https://unit42.paloaltonetworks.com/new-macos-artifact-discovered/
+🦔THF#Forensic</description><pubDate>Sat, 13 Jun 2026 06:01:31 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1387</guid></item><item><title>Mapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator</title><link>https://t.me/ThreatHuntingFather/1386</link><description>Mapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator
 LLM ATT&amp;CK Navigator
 Companion to Mapping AI-Enabled Cyber Threats: 13 873 technique observations from 832 banned accounts (March 2025 - March 2026), mapped to MITRE ATT&amp;CK v18 and scored on the AI Risk Enablement Score (ARiES). Cells are colored by the selected metric; bold borders mark techniques observed in this dataset.
 🦔https://red.anthropic.com/2026/attack-navigator/
