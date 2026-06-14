@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 12 Jun 2026 16:02:40 +0000</lastBuildDate><item><title>DPAPISnoop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/370</link><description>DPAPISnoop
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 14 Jun 2026 18:42:51 +0000</lastBuildDate><item><title>DCOMIllusionist</title><link>https://t.me/P0x3k_1N73LL1G3NC3/373</link><description>DCOMIllusionist
+This tool enables remote code execution on a Windows machine, if you have administrative privileges. It leverages DCOM and the behavior of .NET DCOM servers, which automatically deserialize incoming objects. This makes it possible to execute arbitrary commands or load DLLs without writing to disk.
+
+[Media: Фото]</description><pubDate>Sun, 14 Jun 2026 18:42:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_373</guid></item><item><title>DPAPISnoop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/370</link><description>DPAPISnoop
 A C# tool that extracts crackable DPAPI hashes from user MasterKeys and CREDHIST files from local paths and remote SMB shares.
 Blog: Old Passwords Die Hard: Abusing CREDHIST for offline credential recovery
 During Red Team engagements, Data Protection API (DPAPI) often arises when recovering browser material, extracting saved credentials, or acquiring and decrypting user Master Keys. While revisiting DPAPI internals, another artefact caught our attention: CREDHIST.
