@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-13T19:45:26.158980+00:00",
-  "messages_count": 222,
+  "last_update": "2026-06-14T08:18:26.815610+00:00",
+  "messages_count": 223,
   "messages": [
+    {
+      "id": "1389",
+      "title": "Sekoia published APT28, an evolution of tradecraft",
+      "text": "Sekoia published APT28, an evolution of tradecraft\nДавно не видел ретроспективы о группах, с отсылками на исследования разделенными по годам 🦔\nТретхантерам полезно почитать историю/эволюцию используемых инструментов, это как стиль действий ну или любимый тулкит 😃\nSekoia’s Threat Detection & Research (TDR) team has been tracking APT28 for several years. The intrusion set, also known as Fancy Bear, Forest Blizzard, Sofacy, Pawn Storm or Sednit and publicly attributed to the GRU’s Unit 26165, is one of the most prolific and persistent state-sponsored actors we monitor. Its operations span in two decades and consistently target government, defence, diplomatic and critical infrastructure entities, with a focus on NATO members and Ukraine.\nGiven its relentless activity, this intrusion-set has been extensively documented by government agencies, private cybersecurity vendors, and independent researchers. The scale of this collective coverage is reflected in the list of aliases we have compiled: That’s 33 names for one adversary.\n🔗 https://blog.sekoia.io/apt28-an-evolution-of-tradecraft/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1389",
+      "pub_date": "2026-06-14T04:46:40+00:00"
+    },
     {
       "id": "1387",
       "title": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered",
