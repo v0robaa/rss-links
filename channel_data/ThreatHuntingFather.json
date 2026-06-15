@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-14T19:46:07.512223+00:00",
-  "messages_count": 223,
+  "last_update": "2026-06-15T10:28:20.983896+00:00",
+  "messages_count": 225,
   "messages": [
+    {
+      "id": "1395",
+      "title": "Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое...",
+      "text": "Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое раздаётся внутри троянизированных «adult»-игр  Цепочка работает…\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1395",
+      "pub_date": "2026-06-15T04:17:20+00:00"
+    },
+    {
+      "id": "1390",
+      "title": "Argamal: Malware hidden in hentai games",
+      "text": "Argamal: Malware hidden in hentai games\nХентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое раздаётся внутри троянизированных «adult»-игр\nЦепочка работает так. Пользователь запускает скачанную игру, и вместе с легитимными файлами загружается подменённая ffmpeg.dll - игре она нужна для нормальной работы, поэтому подгружается сразу при старте. Эта DLL импортирует функцию DllGetClassObject из файла natives2_blob.bin, который и запускает вредоносную часть (Execution).\nnatives2_blob.bin исполняет PowerShell-скрипт (Stage1), который закрепляется в системе. Закрепление построено на COM hijacking: вредонос подменяет запись InprocServer32 для COM-объекта, который использует штатная запланированная задача Calibration Loader (Windows Color System). Задача срабатывает при каждом входе пользователя в систему, поэтому полезная нагрузка поднимается в начале каждой сессии.\nПосле закрепления RAT связывается с C2-сервером.\n🔗https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1390",
+      "pub_date": "2026-06-15T04:14:24+00:00"
+    },
     {
       "id": "1389",
       "title": "Sekoia published APT28, an evolution of tradecraft",
