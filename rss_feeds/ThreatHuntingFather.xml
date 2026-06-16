@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 15 Jun 2026 04:17:20 +0000</lastBuildDate><item><title>Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое...</title><link>https://t.me/ThreatHuntingFather/1395</link><description>Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое раздаётся внутри троянизированных «adult»-игр  Цепочка работает…
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 16 Jun 2026 17:43:07 +0000</lastBuildDate><item><title>OceanLotus: From external espionage to domestic targeting  EXECUTION CHAIN 1. FireAnt MetaKit checks for software updates. 2. The legitimate update server delivers a malicious setup.exe. 3. MetaKit...</title><link>https://t.me/ThreatHuntingFather/1400</link><description>OceanLotus: From external espionage to domestic targeting  EXECUTION CHAIN 1. FireAnt MetaKit checks for software updates. 2. The legitimate update server delivers a malicious setup.exe. 3. MetaKit executes the malicious downloader because the update process…</description><pubDate>Tue, 16 Jun 2026 17:43:07 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1400</guid></item><item><title>OceanLotus: From external espionage to domestic targeting</title><link>https://t.me/ThreatHuntingFather/1396</link><description>OceanLotus: From external espionage to domestic targeting
+EXECUTION CHAIN
+1. FireAnt MetaKit checks for software updates.
+2. The legitimate update server delivers a malicious setup.exe.
+3. MetaKit executes the malicious downloader because the update process lacks proper signature validation.
+4. The downloader collects basic host information.
+5. The host information is sent to a staging server via HTTP POST.
+6. The server selectively decides whether to deliver the next payload.
+7. The next stage deploys a DLL side-loading chain.
+8. IntelAudioService.exe loads DtlCrashCatch.dll.
+9. DtlCrashCatch.dll runs SPECTRALVIPER in loader mode.
+10. SPECTRALVIPER injects itself into OneDrive.Sync.Service.exe.
+11. The backdoor connects to attacker-controlled C2 infrastructure.
+🔗 https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/
+
+[Media: Фото]</description><pubDate>Tue, 16 Jun 2026 11:51:35 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1396</guid></item><item><title>Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое...</title><link>https://t.me/ThreatHuntingFather/1395</link><description>Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое раздаётся внутри троянизированных «adult»-игр  Цепочка работает…
 
 [Media: Фото]</description><pubDate>Mon, 15 Jun 2026 04:17:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1395</guid></item><item><title>Argamal: Malware hidden in hentai games</title><link>https://t.me/ThreatHuntingFather/1390</link><description>Argamal: Malware hidden in hentai games
 Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое раздаётся внутри троянизированных «adult»-игр

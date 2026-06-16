@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-16T09:31:02.855502+00:00",
-  "messages_count": 225,
+  "last_update": "2026-06-16T18:36:22.942402+00:00",
+  "messages_count": 227,
   "messages": [
+    {
+      "id": "1400",
+      "title": "OceanLotus: From external espionage to domestic targeting  EXECUTION CHAIN 1. FireAnt MetaKit checks for software updates. 2. The legitimate update server delivers a malicious setup.exe. 3. MetaKit...",
+      "text": "OceanLotus: From external espionage to domestic targeting  EXECUTION CHAIN 1. FireAnt MetaKit checks for software updates. 2. The legitimate update server delivers a malicious setup.exe. 3. MetaKit executes the malicious downloader because the update process…",
+      "link": "https://t.me/ThreatHuntingFather/1400",
+      "pub_date": "2026-06-16T17:43:07+00:00"
+    },
+    {
+      "id": "1396",
+      "title": "OceanLotus: From external espionage to domestic targeting",
+      "text": "OceanLotus: From external espionage to domestic targeting\nEXECUTION CHAIN\n1. FireAnt MetaKit checks for software updates.\n2. The legitimate update server delivers a malicious setup.exe.\n3. MetaKit executes the malicious downloader because the update process lacks proper signature validation.\n4. The downloader collects basic host information.\n5. The host information is sent to a staging server via HTTP POST.\n6. The server selectively decides whether to deliver the next payload.\n7. The next stage deploys a DLL side-loading chain.\n8. IntelAudioService.exe loads DtlCrashCatch.dll.\n9. DtlCrashCatch.dll runs SPECTRALVIPER in loader mode.\n10. SPECTRALVIPER injects itself into OneDrive.Sync.Service.exe.\n11. The backdoor connects to attacker-controlled C2 infrastructure.\n🔗 https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1396",
+      "pub_date": "2026-06-16T11:51:35+00:00"
+    },
     {
       "id": "1395",
       "title": "Argamal: Malware hidden in hentai games  Хентай-игры под прицелом(руки на стол). А точнее - те, кто их качает с торрентов и файлопомоек. Kaspersky (GReAT) нашли новое RAT-семейство Argamal, которое...",
