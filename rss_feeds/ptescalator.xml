@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 17 Jun 2026 20:23:15 +0000</lastBuildDate><item><title>Мы впервые проведем митап TLP: POSITIVE RED</title><link>https://t.me/ptescalator/740</link><description>Мы впервые проведем митап TLP: POSITIVE RED
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 18 Jun 2026 08:50:42 +0000</lastBuildDate><item><title>Мы впервые проведем митап TLP: POSITIVE RED</title><link>https://t.me/ptescalator/740</link><description>Мы впервые проведем митап TLP: POSITIVE RED
 Эксперты PT ESC вместе с приглашенными спикерами будут рассказывать о своих находках, исследованиях и практических кейсах. И это будет серия митапов.
 Первый пройдет 23 июня в московском офисе Positive Technologies (с 18:00 до 22:00).
 Что вас ждет:
@@ -24,7 +24,7 @@
 Сделайте репост этого поста в свой активный канал и напишите нам об этом в комментариях или в личку. Первым 10-ти отправим журнал курьером по России.
 @ptescalator
 
-[Media: Видео]</description><pubDate>Wed, 17 Jun 2026 20:23:15 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_739</guid></item><item><title>Редкие техники закрепления. Часть 4</title><link>https://t.me/ptescalator/738</link><description>Редкие техники закрепления. Часть 4
+[Media: Видео]</description><pubDate>Thu, 18 Jun 2026 08:50:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_739</guid></item><item><title>Редкие техники закрепления. Часть 4</title><link>https://t.me/ptescalator/738</link><description>Редкие техники закрепления. Часть 4
 Читайте также про: Zabbix Agent, TimeProvider, COM Hijacking, WMICLNT.
 5️⃣ Systemd Generator
 Systemd Generator — это исполняемый файл, который systemd запускает на этапе загрузки системы (или при выполнении daemon-reload) для динамического создания unit-файлов служб, целей и точек монтирования. Злоумышленники используют этот механизм для скрытого закрепления, поскольку генераторы выполняются с привилегиями root до запуска основных служб и редко проверяются администраторами.
