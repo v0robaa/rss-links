@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-19T09:07:50.666467+00:00",
-  "messages_count": 190,
+  "last_update": "2026-06-19T16:34:41.182720+00:00",
+  "messages_count": 191,
   "messages": [
+    {
+      "id": "374",
+      "title": "Wasmforge",
+      "text": "Wasmforge\nWasmForge compiles Go and C# programs to WebAssembly, then packages them as single native binaries. The resulting executables sandbox guest code inside a WASM runtime. From inside that sandbox, guests get transparent access to networking, raw sockets, Win32 APIs, and macOS framework APIs.\nYou can write normal Go using net.Dial, net.Listen, or net/http. You can also migrate an existing .NET Framework C# project. Either way, the output is a single binary that runs on Windows or macOS, without requiring the user to make modifications to the guest source.\nBlog: https://www.praetorian.com/blog/wasmforge-csharp-ghostpack-edr-evasion/\nGo and C# build pipelines, the Wazero fork, the host shims, ghost profile builder, and everything necessary to support these capabilities.\nP.S. Compile an existing tool through a virtualizing recompiler to defeat static signatures.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/374",
+      "pub_date": "2026-06-19T15:53:35+00:00"
+    },
     {
       "id": "373",
       "title": "DCOMIllusionist",

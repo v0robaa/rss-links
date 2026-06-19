@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 14 Jun 2026 18:42:51 +0000</lastBuildDate><item><title>DCOMIllusionist</title><link>https://t.me/P0x3k_1N73LL1G3NC3/373</link><description>DCOMIllusionist
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Jun 2026 15:53:35 +0000</lastBuildDate><item><title>Wasmforge</title><link>https://t.me/P0x3k_1N73LL1G3NC3/374</link><description>Wasmforge
+WasmForge compiles Go and C# programs to WebAssembly, then packages them as single native binaries. The resulting executables sandbox guest code inside a WASM runtime. From inside that sandbox, guests get transparent access to networking, raw sockets, Win32 APIs, and macOS framework APIs.
+You can write normal Go using net.Dial, net.Listen, or net/http. You can also migrate an existing .NET Framework C# project. Either way, the output is a single binary that runs on Windows or macOS, without requiring the user to make modifications to the guest source.
+Blog: https://www.praetorian.com/blog/wasmforge-csharp-ghostpack-edr-evasion/
+Go and C# build pipelines, the Wazero fork, the host shims, ghost profile builder, and everything necessary to support these capabilities.
+P.S. Compile an existing tool through a virtualizing recompiler to defeat static signatures.
+
+[Media: Фото]</description><pubDate>Fri, 19 Jun 2026 15:53:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_374</guid></item><item><title>DCOMIllusionist</title><link>https://t.me/P0x3k_1N73LL1G3NC3/373</link><description>DCOMIllusionist
 This tool enables remote code execution on a Windows machine, if you have administrative privileges. It leverages DCOM and the behavior of .NET DCOM servers, which automatically deserialize incoming objects. This makes it possible to execute arbitrary commands or load DLLs without writing to disk.
 
 [Media: Фото]</description><pubDate>Sun, 14 Jun 2026 18:42:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_373</guid></item><item><title>DPAPISnoop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/370</link><description>DPAPISnoop
