@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-20T07:54:13.292126+00:00",
-  "messages_count": 191,
+  "last_update": "2026-06-20T11:22:07.083520+00:00",
+  "messages_count": 192,
   "messages": [
+    {
+      "id": "375",
+      "title": "https://t.me/boost/P0x3k_1N73LL1G3NC3",
+      "text": "https://t.me/boost/P0x3k_1N73LL1G3NC3\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/375",
+      "pub_date": "2026-06-20T11:21:30+00:00"
+    },
     {
       "id": "374",
       "title": "Wasmforge",

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 19 Jun 2026 15:53:35 +0000</lastBuildDate><item><title>Wasmforge</title><link>https://t.me/P0x3k_1N73LL1G3NC3/374</link><description>Wasmforge
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 20 Jun 2026 11:21:30 +0000</lastBuildDate><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/375</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+
+[Media: Фото]</description><pubDate>Sat, 20 Jun 2026 11:21:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_375</guid></item><item><title>Wasmforge</title><link>https://t.me/P0x3k_1N73LL1G3NC3/374</link><description>Wasmforge
 WasmForge compiles Go and C# programs to WebAssembly, then packages them as single native binaries. The resulting executables sandbox guest code inside a WASM runtime. From inside that sandbox, guests get transparent access to networking, raw sockets, Win32 APIs, and macOS framework APIs.
 You can write normal Go using net.Dial, net.Listen, or net/http. You can also migrate an existing .NET Framework C# project. Either way, the output is a single binary that runs on Windows or macOS, without requiring the user to make modifications to the guest source.
 Blog: https://www.praetorian.com/blog/wasmforge-csharp-ghostpack-edr-evasion/
