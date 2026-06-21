@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-21T08:38:05.716064+00:00",
-  "messages_count": 229,
+  "last_update": "2026-06-21T11:48:28.178771+00:00",
+  "messages_count": 230,
   "messages": [
+    {
+      "id": "1405",
+      "title": "A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb,...",
+      "text": "A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb, VirusTotal, etc.) as evidence; a local server stores them, runs windowed AI vision analysis into an accumulating per-case investigation state, and serves a live dashboard plus exportable reports.\nEverything runs on your machine - the companion binds to 127.0.0.1 only, evidence stays on disk, and the AI provider is yours to choose.\nhttps://github.com/hasamba/DFIR-Companion\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1405",
+      "pub_date": "2026-06-21T09:29:28+00:00"
+    },
     {
       "id": "1404",
       "title": "Gentlemen: операторский набор EDR-киллеров ESET выпустил итог многомесячного расследования по RaaS-группе Gentlemen - она появилась в конце 2025 и уже к Q1 2026 вошла в число самых активных. Помимо...",
