@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 22 Jun 2026 05:01:07 +0000</lastBuildDate><item><title>+ 1 abused rmm tool</title><link>https://t.me/ThreatHuntingFather/1416</link><description>+ 1 abused rmm tool
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 22 Jun 2026 11:35:51 +0000</lastBuildDate><item><title>Спросил я значит ИИ…</title><link>https://t.me/ThreatHuntingFather/1418</link><description>Спросил я значит ИИ…
+А вот сколько будет стоить разовая ТН в Казахстане?
+Получилась вот табличка 😃
+Что определяет цену:
+• Объём: сколько хостов/эндпоинтов, какие источники телеметрии уже есть (EDR, Sysmon, сетёвка, облако)
+• Глубина ретенции логов и временное окно охоты
+• Привозишь ли ты тулинг (раскатка сенсоров/EDR на время) или работаешь по тому, что у них есть
+• Длительность (фокусный хант - обычно 1–2 недели)
+• Глубина отчёта: гипотезы, ATT&amp;CK-маппинг, Sigma, IOC, рекомендации по детекту
+Как по вашему? Много/мало необоснованно? Или нужна большая детализация работ? Кто КП составляет, я вам не дам готовый документ🦔
+
+[Media: Фото]</description><pubDate>Mon, 22 Jun 2026 11:35:51 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1418</guid></item><item><title>+ 1 abused rmm tool</title><link>https://t.me/ThreatHuntingFather/1416</link><description>+ 1 abused rmm tool
 bomgar-scc.exe (Bomgar remote monitoring and management (RMM))
 Ханты - Bomgar
 • bomgar-scc.exe как parent для cmd / powershell / net / msiexec - пивот №1.
