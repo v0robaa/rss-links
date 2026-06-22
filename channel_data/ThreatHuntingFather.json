@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-21T19:52:58.702432+00:00",
-  "messages_count": 230,
+  "last_update": "2026-06-22T09:51:27.317222+00:00",
+  "messages_count": 231,
   "messages": [
+    {
+      "id": "1416",
+      "title": "+ 1 abused rmm tool",
+      "text": "+ 1 abused rmm tool\nbomgar-scc.exe (Bomgar remote monitoring and management (RMM))\nХанты - Bomgar\n• bomgar-scc.exe как parent для cmd / powershell / net / msiexec - пивот №1.\n• Exec из C:\\PerfLogs\\ (.exe / .msi), напр. msiexec /i C:\\PerfLogs\\setup.msi.\n• Новые local/domain admin от Bomgar-сессии: net localgroup administrators … /add, net group \"domain admins\" … /add.\n• WDAGUtilityAccount в Administrators/RDP Users или с интерактивным логоном.\n• Install вторичных RMM: anydesk --install, task AteraAgentServiceWatchdog, ScreenConnect/SimpleHelp артефакты.\n• NetScan, nltest.exe в окружении.\n• BYOVD/EDR-kill: PoisonX.sys, hrwfpdrv.sys, HRSword.exe.\n• Версия Bomgar < 25.3.2 RS / 25.1 PRA в инвентаре.\n🔗https://www.huntress.com/blog/uptick-bomgar-exploitation\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1416",
+      "pub_date": "2026-06-22T05:01:07+00:00"
+    },
     {
       "id": "1405",
       "title": "A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb,...",

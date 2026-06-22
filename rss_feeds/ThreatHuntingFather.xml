@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 21 Jun 2026 09:29:28 +0000</lastBuildDate><item><title>A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb,...</title><link>https://t.me/ThreatHuntingFather/1405</link><description>A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb, VirusTotal, etc.) as evidence; a local server stores them, runs windowed AI vision analysis into an accumulating per-case investigation state, and serves a live dashboard plus exportable reports.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 22 Jun 2026 05:01:07 +0000</lastBuildDate><item><title>+ 1 abused rmm tool</title><link>https://t.me/ThreatHuntingFather/1416</link><description>+ 1 abused rmm tool
+bomgar-scc.exe (Bomgar remote monitoring and management (RMM))
+Ханты - Bomgar
+• bomgar-scc.exe как parent для cmd / powershell / net / msiexec - пивот №1.
+• Exec из C:\PerfLogs\ (.exe / .msi), напр. msiexec /i C:\PerfLogs\setup.msi.
+• Новые local/domain admin от Bomgar-сессии: net localgroup administrators … /add, net group "domain admins" … /add.
+• WDAGUtilityAccount в Administrators/RDP Users или с интерактивным логоном.
+• Install вторичных RMM: anydesk --install, task AteraAgentServiceWatchdog, ScreenConnect/SimpleHelp артефакты.
+• NetScan, nltest.exe в окружении.
+• BYOVD/EDR-kill: PoisonX.sys, hrwfpdrv.sys, HRSword.exe.
+• Версия Bomgar &lt; 25.3.2 RS / 25.1 PRA в инвентаре.
+🔗https://www.huntress.com/blog/uptick-bomgar-exploitation
+
+[Media: Фото]</description><pubDate>Mon, 22 Jun 2026 05:01:07 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1416</guid></item><item><title>A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb,...</title><link>https://t.me/ThreatHuntingFather/1405</link><description>A localhost digital-forensics / incident-response companion. A browser extension captures screenshots of your investigation (Velociraptor, EDR/SIEM dashboards, Security Onion, Splunk4DFIR, VolWeb, VirusTotal, etc.) as evidence; a local server stores them, runs windowed AI vision analysis into an accumulating per-case investigation state, and serves a live dashboard plus exportable reports.
 Everything runs on your machine - the companion binds to 127.0.0.1 only, evidence stays on disk, and the AI provider is yours to choose.
 https://github.com/hasamba/DFIR-Companion
 
