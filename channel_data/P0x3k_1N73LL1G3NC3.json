@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-23T16:29:26.659619+00:00",
-  "messages_count": 193,
+  "last_update": "2026-06-23T20:14:09.212980+00:00",
+  "messages_count": 194,
   "messages": [
+    {
+      "id": "378",
+      "title": "🔑 Onelogon: Taking over Active Directory Accounts via Netlogon",
+      "text": "🔑 Onelogon: Taking over Active Directory Accounts via Netlogon\nWe analyzed Netlogon, bypassed the Zerologon patch, resulting in a full auth bypass. An attacker can leverage this to compromise computer accounts, or even the entire AD. Non-standard config must be present tho\nExploit: https://github.com/rub-softsec/onelogon\nhttps://github.com/Pennyw0rth/NetExec/pull/1291\nFrom: https://x.com/al3x_n3ff/status/2069482623672435049?s=46\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/378",
+      "pub_date": "2026-06-23T18:34:34+00:00"
+    },
     {
       "id": "376",
       "title": "PhantomCtx",

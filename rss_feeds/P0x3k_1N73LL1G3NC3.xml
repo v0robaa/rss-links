@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 21 Jun 2026 08:17:39 +0000</lastBuildDate><item><title>PhantomCtx</title><link>https://t.me/P0x3k_1N73LL1G3NC3/376</link><description>PhantomCtx
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 23 Jun 2026 18:34:34 +0000</lastBuildDate><item><title>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon</title><link>https://t.me/P0x3k_1N73LL1G3NC3/378</link><description>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon
+We analyzed Netlogon, bypassed the Zerologon patch, resulting in a full auth bypass. An attacker can leverage this to compromise computer accounts, or even the entire AD. Non-standard config must be present tho
+Exploit: https://github.com/rub-softsec/onelogon
+https://github.com/Pennyw0rth/NetExec/pull/1291
+From: https://x.com/al3x_n3ff/status/2069482623672435049?s=46
+
+[Media: Фото]</description><pubDate>Tue, 23 Jun 2026 18:34:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_378</guid></item><item><title>PhantomCtx</title><link>https://t.me/P0x3k_1N73LL1G3NC3/376</link><description>PhantomCtx
 A tool that automates Activation Context hijacking with the objective of loading an arbitrary DLL into the vast majority of signed executables (e.g. Microsoft, Adobe, Mozilla).
 The loader is presented as a modern alternative to traditional DLL Hijacking &amp; Sideloading: unlike conventional approaches, it does not require a vulnerable binary. The technique can be performed as long as the target executable resolves a DLL through its Import Address Table (IAT) or, in the worst case, via LoadLibrary without an absolute path.
 For a deeper dive into how it works internally and how it evades aggressive EDR solutions, check out the post on my technical blog.
