@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 22 Jun 2026 16:36:07 +0000</lastBuildDate><item><title>[Открытый вебинар] Интервью с багхантером ⚡️</title><link>https://t.me/ZerodayAlert/741</link><description>[Открытый вебинар] Интервью с багхантером ⚡️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 23 Jun 2026 05:03:32 +0000</lastBuildDate><item><title>Gravity SMTP раскрыл ключи почтовых сервисов на 100 тысячах WordPress-сайтов</title><link>https://t.me/ZerodayAlert/742</link><description>Gravity SMTP раскрыл ключи почтовых сервисов на 100 тысячах WordPress-сайтов
+Уязвимость CVE-2026-4020 в Gravity SMTP позволяет без авторизации получить чувствительные данные из настроек почтовых интеграций. Плагин используют примерно 100 тысяч сайтов, включая проекты с Amazon SES, Google, Mailjet, Resend и Zoho. Wordfence уже заблокировала более 17 млн попыток эксплуатации.
+Проблема сидит в REST API-адресе /wp-json/gravitysmtp/v1/tests/mock-data. При запросе с параметром ?page=gravitysmtp-settings сервер возвращает JSON-отчёт с данными о WordPress, PHP, плагинах, базе и, в худшем случае, ключами почтовых сервисов. Прямой захват сайта такой баг не даёт, но даёт злоумышленникам удобную базу для фишинга и следующей атаки.
+Рекомендации следующие: обновите Gravity SMTP до версии 2.1.5; смените API-ключи и токены, если сайт работал с уязвимой версией; проверьте логи на запросы к указанному REST API и обращения с IP-адресов из отчёта Wordfence.
+#GravitySMTP #WordPress #RESTAPI
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 23 Jun 2026 05:03:32 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_742</guid></item><item><title>[Открытый вебинар] Интервью с багхантером ⚡️</title><link>https://t.me/ZerodayAlert/741</link><description>[Открытый вебинар] Интервью с багхантером ⚡️
 Почему один багхантер находит валидные уязвимости, а другой годами получает только дубликаты?
 Разница в подходе: от выбора программы до коммуникации с triage-командой.
 Во вторник 23 июня, в 19:00 мск на открытом вебинаре поговорим с опытным багхантером, чтобы понять, какие стратегии работают.
