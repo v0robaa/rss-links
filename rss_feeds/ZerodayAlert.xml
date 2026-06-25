@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 24 Jun 2026 07:14:58 +0000</lastBuildDate><item><title>Карьерный ускоритель: от CTF к профессии белого хакера</title><link>https://t.me/ZerodayAlert/744</link><description>Карьерный ускоритель: от CTF к профессии белого хакера
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 25 Jun 2026 07:05:03 +0000</lastBuildDate><item><title>Chrome доверился V8, а атакующие получили рабочий вход через HTML</title><link>https://t.me/ZerodayAlert/745</link><description>Chrome доверился V8, а атакующие получили рабочий вход через HTML
+Google признала реальную эксплуатацию CVE-2026-11645 и выпустила обновление Chrome. Дыра затрагивала V8 — один из самых «горячих» компонентов браузера, через который проходит JavaScript почти каждой современной страницы.
+Корень проблемы простой и неприятный. Браузер слишком долго принимал опасную работу с памятью за нормальную, а специально собранная страница могла превратить обычный визит на сайт в запуск кода внутри песочницы.
+Пользователям нужно не просто дождаться автообновления, а самим проверить актуальную версию и перезагрузить Chrome. Админам лучше проверить парк браузеров централизованно, ведь самый слабый хост в домене зачастую остаётся тем самым удобным входом для злоумышленников.
+#Chrome #V8 #HTML #0day
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 25 Jun 2026 07:05:03 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_745</guid></item><item><title>Карьерный ускоритель: от CTF к профессии белого хакера</title><link>https://t.me/ZerodayAlert/744</link><description>Карьерный ускоритель: от CTF к профессии белого хакера
 Многие заходят в CTF ради интереса, но не всегда понимают, как эти задачи связаны с реальной работой в offensive security. Как превратить регулярное решение тасок в карьерный буст?
 Разберём на открытом вебинаре 24 июня в 19:00 мск.
 *ONE TASK — это регулярная практика для студентов бесплатного курса «Профессия Белый Хакер»: участники получают доступ к CTF-таскам, пробуют решить их самостоятельно, а после трёх накопившихся задач приходят на большой разбор.

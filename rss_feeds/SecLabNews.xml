@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Wed, 24 Jun 2026 15:20:50 +0000</lastBuildDate><item><title>Взлом Klue добрался до LastPass</title><link>https://t.me/SecLabNews/17875</link><description>Взлом Klue добрался до LastPass
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Thu, 25 Jun 2026 03:59:58 +0000</lastBuildDate><item><title>🏴‍☠️WhatsApp используют для установки удалённого доступа на Windows</title><link>https://t.me/SecLabNews/17876</link><description>🏴‍☠️WhatsApp используют для установки удалённого доступа на Windows
+Касперский зафиксировал рассылку вредоносных VBS-скриптов с захваченных аккаунтов WhatsApp. Файл приходит от знакомого контакта и может называться счётом, отчётом или уведомлением по аккаунту. Атаки затронули Россию, Бразилию, Индию, Мексику, Сингапур, Великобританию, Испанию, Тайвань, Австралию, Вьетнам и Малайзию.
+После запуска скрипт скачивает команды атакующих, отключает часть защиты Windows и устанавливает ManageEngine Endpoint Central. Легитимный инструмент администрирования превращается в канал для удалённого доступа к компьютеру.
+VBS не бывает обычным документом. Такие файлы лучше не запускать, даже если сообщение пришло от знакомого.
+#кибербезопасность #WhatsApp #Windows
+@SecLabNews
+
+[Media: Фото]</description><pubDate>Thu, 25 Jun 2026 03:59:58 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_17876</guid></item><item><title>Взлом Klue добрался до LastPass</title><link>https://t.me/SecLabNews/17875</link><description>Взлом Klue добрался до LastPass
 После взлома Klue список пострадавших компаний продолжает расти. LastPass подтвердил утечку персональных данных клиентов. Ранее о последствиях атаки сообщали Huntress, ReliaQuest, Recorded Future, Jamf и Tanium.
 Атакующие почти сутки запускали автоматические скрипты для выгрузки CRM. В одной из клиентских сред программа отправила около тысячи запросов к Salesforce за 15 минут. Salesforce временно отключила интеграцию Klue Battlecards и заявила, что доступ к данным возник через подключение Klue, а не из-за уязвимости самой платформы.
 Для LastPass история особенно болезненна после взлома 2022 года, когда преступники похитили архивы парольных хранилищ. На этот раз хранилища не затронуты, однако похищенные контакты и переписка могут стать основой для новой волны фишинга.
