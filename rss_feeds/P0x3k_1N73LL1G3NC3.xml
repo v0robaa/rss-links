@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 23 Jun 2026 18:34:34 +0000</lastBuildDate><item><title>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon</title><link>https://t.me/P0x3k_1N73LL1G3NC3/378</link><description>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 09:02:24 +0000</lastBuildDate><item><title>Entropia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/380</link><description>Entropia
+A compiled language for Windows position-independent x86-64 shellcode and Beacon Object Files.
+
+[Media: Фото]</description><pubDate>Fri, 26 Jun 2026 09:02:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_380</guid></item><item><title>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon</title><link>https://t.me/P0x3k_1N73LL1G3NC3/378</link><description>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon
 We analyzed Netlogon, bypassed the Zerologon patch, resulting in a full auth bypass. An attacker can leverage this to compromise computer accounts, or even the entire AD. Non-standard config must be present tho
 Exploit: https://github.com/rub-softsec/onelogon
 https://github.com/Pennyw0rth/NetExec/pull/1291

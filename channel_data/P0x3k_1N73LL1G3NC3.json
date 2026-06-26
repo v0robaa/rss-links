@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-26T07:58:12.283413+00:00",
-  "messages_count": 194,
+  "last_update": "2026-06-26T11:47:41.373417+00:00",
+  "messages_count": 195,
   "messages": [
+    {
+      "id": "380",
+      "title": "Entropia",
+      "text": "Entropia\nA compiled language for Windows position-independent x86-64 shellcode and Beacon Object Files.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/380",
+      "pub_date": "2026-06-26T09:02:24+00:00"
+    },
     {
       "id": "378",
       "title": "🔑 Onelogon: Taking over Active Directory Accounts via Netlogon",
