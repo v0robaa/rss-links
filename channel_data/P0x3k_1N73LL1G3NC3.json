@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-26T16:22:01.401630+00:00",
-  "messages_count": 195,
+  "last_update": "2026-06-26T19:59:20.923197+00:00",
+  "messages_count": 196,
   "messages": [
+    {
+      "id": "381",
+      "title": "DirtyClone — CVE-2026-43503",
+      "text": "DirtyClone — CVE-2026-43503\nA Linux kernel local privilege escalation and page-cache write. DirtyClone is the fourth public member of the DirtyPipe / DirtyFrag family: it forces the kernel to run an in-place ESP (IPsec) decrypt over a file-backed page-cache page the attacker only has read access to, mutating that page in RAM. With the AES-CBC key/IV chosen so the decrypt writes attacker-controlled bytes, /usr/bin/su is rewritten with a tiny setuid(0)+execve(\"/bin/sh\") ELF and invoking it yields root.\n🔗 Research:\nhttps://research.jfrog.com/post/dissecting-and-exploiting-linux-lpe-variant-dirtyclone-cve-2026-43503/\n🔗 Exploit:\nhttps://github.com/rafaeldtinoco/security/tree/main/exploits/dirtyclone\n#linux #lpe #kernel #dirty\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/381",
+      "pub_date": "2026-06-26T17:38:20+00:00"
+    },
     {
       "id": "380",
       "title": "Entropia",

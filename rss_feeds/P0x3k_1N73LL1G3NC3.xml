@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 09:02:24 +0000</lastBuildDate><item><title>Entropia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/380</link><description>Entropia
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 17:38:20 +0000</lastBuildDate><item><title>DirtyClone — CVE-2026-43503</title><link>https://t.me/P0x3k_1N73LL1G3NC3/381</link><description>DirtyClone — CVE-2026-43503
+A Linux kernel local privilege escalation and page-cache write. DirtyClone is the fourth public member of the DirtyPipe / DirtyFrag family: it forces the kernel to run an in-place ESP (IPsec) decrypt over a file-backed page-cache page the attacker only has read access to, mutating that page in RAM. With the AES-CBC key/IV chosen so the decrypt writes attacker-controlled bytes, /usr/bin/su is rewritten with a tiny setuid(0)+execve("/bin/sh") ELF and invoking it yields root.
+🔗 Research:
+https://research.jfrog.com/post/dissecting-and-exploiting-linux-lpe-variant-dirtyclone-cve-2026-43503/
+🔗 Exploit:
+https://github.com/rafaeldtinoco/security/tree/main/exploits/dirtyclone
+#linux #lpe #kernel #dirty
+
+[Media: Видео]</description><pubDate>Fri, 26 Jun 2026 17:38:20 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_381</guid></item><item><title>Entropia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/380</link><description>Entropia
 A compiled language for Windows position-independent x86-64 shellcode and Beacon Object Files.
 
 [Media: Фото]</description><pubDate>Fri, 26 Jun 2026 09:02:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_380</guid></item><item><title>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon</title><link>https://t.me/P0x3k_1N73LL1G3NC3/378</link><description>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon

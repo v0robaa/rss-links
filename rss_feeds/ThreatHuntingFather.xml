@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 22 Jun 2026 11:35:51 +0000</lastBuildDate><item><title>Спросил я значит ИИ…</title><link>https://t.me/ThreatHuntingFather/1418</link><description>Спросил я значит ИИ…
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 18:22:26 +0000</lastBuildDate><item><title>StrikeShark:</title><link>https://t.me/ThreatHuntingFather/1419</link><description>StrikeShark:
+GReAT выкатили разбор новой кампании - StrikeShark. Зацепили через инцидент в дипведомстве Индонезии, а копнув глубже, обнаружили тот же кластер активности в Тайване, Гонконге, Ливане, Сирии, Колумбии, Северной Македонии, Непале и Сербии.
+Жертвы: госорганы (министерство на Тайване, дипведомство в Индонезии) и софтверные компании (Тайвань, Ливан, Сирия), плюс точечные случаи в остальных перечисленных странах. География широкая, так что похоже на точечный интерес.
+Эксплуатация публичных уязвимостей: Exchange (ProxyLogon, CVE-2021-26855), Openfire (CVE-2023-32315), GeoServer (CVE-2024-36401), плюс набор более старых уязвимостей в SharePoint, Zimbra, F5 BIG-IP, FortiOS, Cisco IOS XE. Каспер оценивает со средней степенью уверенности, что в ходу публичные PoC, а не разработанные актором эксплойты; - дропперы под видом установщиков Google Update и Cisco AnyConnect, часть - с PDF-приманкой в комплекте.
+Цепочка загрузки Легитимный SystemSettings.exe методом DLL sideloading подгружает SystemSettings.dll. Дальше Blowfish расшифровывает DscCoreR.mui, внутри него AES-128 расшифровывает SyncRes.dat, дальше PPID spoofing - новые процессы создаются с указанием существующего svchost.exe в качестве родительского процесса., прямые системные вызовы вместо части WinAPI, подавление телеметрии ETW. Отдельно MinHook перехватывает VirtualAlloc и Sleep - на время сна память Beacon’а переключается с RWX на RW и обратно, видимо для обхода сканеров памяти или нет. В конце - выполнение шелл-кода Cobalt Strike Beacon.(готовьте тапки реверсеры, я начинаю писать дичь)
+Забавная деталь по маскировке: в одном из случаев артефакты раскладывали в директорию с именем вендора безопасности - в том числе KasperskyLab.
+После компрометации Разведка в Active Directory, дамп LSASS через Procdump, дамп NTDS через ntdsutil, из инструментария - FScan, Searchall, Pillager (открытый код, авторы китаеязычные) и SharpGPOAbuse.
+IOC: C559CC68986933200FD5D9E4388E2F58                    Installer
+B3352B42432DEDC4A519F011DC8B5D5A                  Dropper
+24FCEBDEECBA65004FDB0923763D74FD                  Dropper
+9C872A0D5D5A38950E8B9AC9B488BE3F                  SharkLoader DLL
+AA3086BE652C8B20B0B29B2730D57119                   SharkLoader DLL
+A514D1BB62D7916475946FE7C07AC0AA                  Encrypted file
+9CBD560F820C95D7C38342CD558CB5C6                  Encrypted file
+connect-microsoft[.]com
+ms-record[.]com
+ms-record[.]top
+ms-tray[.]top
+Проверить правду ли я здесь пишу, можно по ссылке:😃
+🔗 https://securelist.com/strikeshark-campaign/120326/
+🦔 THF
+
+[Media: Фото]</description><pubDate>Fri, 26 Jun 2026 18:22:26 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1419</guid></item><item><title>Спросил я значит ИИ…</title><link>https://t.me/ThreatHuntingFather/1418</link><description>Спросил я значит ИИ…
 А вот сколько будет стоить разовая ТН в Казахстане?
 Получилась вот табличка 😃
 Что определяет цену:
