@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-28T11:12:03.767964+00:00",
-  "messages_count": 196,
+  "last_update": "2026-06-28T15:21:42.205257+00:00",
+  "messages_count": 197,
   "messages": [
+    {
+      "id": "382",
+      "title": "GitRunner-C2",
+      "text": "GitRunner-C2\nC2 framework abusing GitLab self-hosted runners as implants — Vue 3 operator UI, NGINX proxy, full file transfer and detection coverage.\nBlog: https://vrls.ws/posts/abusing-gitlab-ci-runners-as-c2/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/382",
+      "pub_date": "2026-06-28T13:27:59+00:00"
+    },
     {
       "id": "381",
       "title": "DirtyClone — CVE-2026-43503",

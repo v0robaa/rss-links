@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 17:38:20 +0000</lastBuildDate><item><title>DirtyClone — CVE-2026-43503</title><link>https://t.me/P0x3k_1N73LL1G3NC3/381</link><description>DirtyClone — CVE-2026-43503
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 28 Jun 2026 13:27:59 +0000</lastBuildDate><item><title>GitRunner-C2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/382</link><description>GitRunner-C2
+C2 framework abusing GitLab self-hosted runners as implants — Vue 3 operator UI, NGINX proxy, full file transfer and detection coverage.
+Blog: https://vrls.ws/posts/abusing-gitlab-ci-runners-as-c2/
+
+[Media: Фото]</description><pubDate>Sun, 28 Jun 2026 13:27:59 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_382</guid></item><item><title>DirtyClone — CVE-2026-43503</title><link>https://t.me/P0x3k_1N73LL1G3NC3/381</link><description>DirtyClone — CVE-2026-43503
 A Linux kernel local privilege escalation and page-cache write. DirtyClone is the fourth public member of the DirtyPipe / DirtyFrag family: it forces the kernel to run an in-place ESP (IPsec) decrypt over a file-backed page-cache page the attacker only has read access to, mutating that page in RAM. With the AES-CBC key/IV chosen so the decrypt writes attacker-controlled bytes, /usr/bin/su is rewritten with a tiny setuid(0)+execve("/bin/sh") ELF and invoking it yields root.
 🔗 Research:
 https://research.jfrog.com/post/dissecting-and-exploiting-linux-lpe-variant-dirtyclone-cve-2026-43503/
