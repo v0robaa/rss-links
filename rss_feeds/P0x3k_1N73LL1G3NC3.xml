@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 28 Jun 2026 13:27:59 +0000</lastBuildDate><item><title>GitRunner-C2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/382</link><description>GitRunner-C2
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 29 Jun 2026 09:32:41 +0000</lastBuildDate><item><title>IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/384</link><description>IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC
+The flaw sits in __ip6_append_data() and corrupts a packet’s own skb_shared_info. Affects CentOS 10 and RedHat
+Blog: https://www.linkedin.com/pulse/ipv6fragescape-unprivileged-container-jail-escape-poc-oldani-xbewf
+
+[Media: Фото]</description><pubDate>Mon, 29 Jun 2026 09:32:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_384</guid></item><item><title>GitRunner-C2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/382</link><description>GitRunner-C2
 C2 framework abusing GitLab self-hosted runners as implants — Vue 3 operator UI, NGINX proxy, full file transfer and detection coverage.
 Blog: https://vrls.ws/posts/abusing-gitlab-ci-runners-as-c2/
 
