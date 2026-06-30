@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 16:33:03 +0000</lastBuildDate><item><title>Message 749</title><link>https://t.me/ptescalator/749</link><description/><pubDate>Fri, 26 Jun 2026 16:33:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_749</guid></item><item><title>NetMedved: летняя кампания против российских организаций 🐻👍</title><link>https://t.me/ptescalator/748</link><description>NetMedved: летняя кампания против российских организаций 🐻👍
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 30 Jun 2026 08:20:01 +0000</lastBuildDate><item><title>Кто-то сказал sandbox? 👀</title><link>https://t.me/ptescalator/750</link><description>Кто-то сказал sandbox? 👀
+В очередной раз наблюдаем, как злоумышленники проводят неэтичные ресерчи.
+Дано:
+Исследователь по безопасности Nicholas Curran
+Он опубликовал пакеты с интересными названиями:
+🌟2 пакета npm-sandbox-ping-[4 символа]
+🌟8 пакетов npm-sandbox-research-[4 символа]
+🌟postinstall-logger-7x9z
+🌟pkg-telemetry-r4f9
+🌟runtime-metrics-w7k2
+🌟event-metrics-q3x7
+🌟build-tracker-n5p1
+Согласно описанию (скриншот 1), эти пакеты созданы в рамках багбаунти-программы.
+Автор заявляет, что:
+🔗Пакеты безопасны.
+🔗Все чувствительные данные перед отправкой хэшируются — не происходит никакого разглашения секретов.
+🔗Пакеты не выполняют закрепления в системе, перемещения в сети и деструктивных действий.
+🔗Цель исследования: изучить, изолирует ли npm-песочница небезопасные установочные скрипты.
+Ресерч безопасности песочниц? Такое мы любим. Давайте посмотрим, как это реализовано.
+Нагрузка стартует дважды: до и после установки пакета (скриншот 2). За Windows-логику отвечает beaconXX.js, все остальные платформы обрабатываются beacon_linux.js. Даже macOS.
+Логика под Windows
+beaconXX.js (скриншот 3):
+1️⃣ Эксплуатирует известный обход UAC через fodhelper.exe. Для этого, помимо запуска файла, необходимо внести изменения в реестр Windows.
+2️⃣ Дропает PowerShell-скрипт в %TEMP% и запускает его с повышенными привилегиями.
+PowerShell-скрипт:
+1️⃣ Удаляет внесенные в реестр изменения.
+2️⃣ Собирает:
+🐟 артефакты, специфичные для изучаемой песочницы, с диска D, в том числе файл findings.xml;
+🐟 список секретов из Credential Manager;
+🐟 npm config list — сюда попадают в том числе токены аутентификации для учетной записи npm;
+🐟 все переменные окружения.
+3️⃣ Заметает следы, перезаписывая findings.xml следующим текстом:
+&lt;ArrayOfTaskFinding&gt;&lt;/ArrayOfTaskFinding&gt;
+4️⃣ Собранные данные кодирует в base64 и просто отправляет на управляющий сервер... без хэширования, о котором заявлено в README.md 🤪
+5️⃣ В вечном цикле каждые 5 секунд обращается к управляющему серверу за командами на исполнение.
+Учитывая, как код пытается вмешаться в работу песочницы, можно предположить, что это кастомная песочница с агентом наподобие Cuckoo Sandbox.
+Логика под non-Windows
+beacon_linux.js (скриншот 4):
+1️⃣ Собирает:
+🐟 список имён всех переменных окружения;
+🐟 значения интересных переменных окружения, связанных с GitHub, NPM, раннерами, пользователем;
+🐟 список сетевых интерфейсов.
+2️⃣ Проверяет возможности для побега из контейнера, собирая:
+🐟 содержимое /proc/1/cgroup (информация об ограничениях контейнера);
+🐟 команду запуска процесса с PID 1;
+🐟 список примонтированных томов.
+🐟 набор capabilities своего процесса;
+🐟 наличие /var/run/docker.sock (позволяет управлять Docker с потенциалом полностью захватить устройство);
+🐟 доступ к /proc/sched_debug (позволяет разведать процессы, запущенные на хосте).
+3️⃣ Собирает артефакты, связанные с CI/CD: список файлов текущего проекта и /home/runner/work, логи GitHub.
+4️⃣ Отправляет отчет на управляющий сервер.
+Заключение
+Пакеты не соответствуют благим целям, о которых нам заявляли в README.md, — поэтому мы зарепортили админам NPM об этом недоразумении.
+Странно видеть такое поведение от багхантера, имеющего учетную запись на HackerOne с 2017 🤔
+Хотите проверить свои проекты на наличие вредоносных внешних зависимостей? Попробуйте фиды для безопасной разработки из PT Fusion.
+#ti #scs #npm
+@ptescalator
+
+[Media: Фото]</description><pubDate>Tue, 30 Jun 2026 08:20:01 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_750</guid></item><item><title>Message 749</title><link>https://t.me/ptescalator/749</link><description/><pubDate>Fri, 26 Jun 2026 16:33:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_749</guid></item><item><title>NetMedved: летняя кампания против российских организаций 🐻👍</title><link>https://t.me/ptescalator/748</link><description>NetMedved: летняя кампания против российских организаций 🐻👍
 Группа киберразведки PT ESC зафиксировала новую волну активности хакерской группировки NetMedved, нацеленную на российские организации. Схема социальной инженерии прежняя: ZIP-архивы с документами-приманками под деловую переписку и конечной полезной нагрузкой NetSupportRAT.
 По сравнению с прошлой кампанией в арсенале появилось:
 • Собственный redirect-домен: позволяет менять серверы доставки, не пересобирая уже разосланные вредоносные файлы.
