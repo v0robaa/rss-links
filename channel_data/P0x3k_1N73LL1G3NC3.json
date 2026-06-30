@@ -1,12 +1,12 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-06-30T11:47:28.791542+00:00",
+  "last_update": "2026-06-30T16:25:14.155933+00:00",
   "messages_count": 198,
   "messages": [
     {
       "id": "384",
-      "title": "IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC",
-      "text": "IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC\nThe flaw sits in __ip6_append_data() and corrupts a packet’s own skb_shared_info. Affects CentOS 10 and RedHat\nBlog: https://www.linkedin.com/pulse/ipv6fragescape-unprivileged-container-jail-escape-poc-oldani-xbewf\n\n[Media: Фото]",
+      "title": "Linux LPE IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC",
+      "text": "Linux LPE IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC\nThe flaw sits in __ip6_append_data() and corrupts a packet’s own skb_shared_info. Affects CentOS 10 and RedHat\nBlog: https://www.linkedin.com/pulse/ipv6fragescape-unprivileged-container-jail-escape-poc-oldani-xbewf\n\n[Media: Фото]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/384",
       "pub_date": "2026-06-29T09:32:41+00:00"
     },
