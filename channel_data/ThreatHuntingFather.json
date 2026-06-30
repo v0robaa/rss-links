@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-06-29T20:07:41.910387+00:00",
-  "messages_count": 233,
+  "last_update": "2026-06-30T07:57:37.141081+00:00",
+  "messages_count": 234,
   "messages": [
+    {
+      "id": "1420",
+      "title": "O-oh llama Exposed",
+      "text": "O-oh llama Exposed\n152 000 инстансов Ollama торчат в Shodan без аутентификации. Любой может стянуть ваши модели, гонять промпты на чужом GPU и эксплуатировать известные CVE.\nTL;DR\n• Shodan indexes over 152,000 exposed Ollama instances, including many running on expensive cloud GPUs.\n• The API has no authentication, which means attackers can run prompts, steal models, and exploit vulnerable versions.\n• Internally exposed instances on corporate networks are an even bigger blind spot.\n• Honeypots can mimic Ollama to catch scanners, so version and model-list validation matters.\n• Defenders should bind Ollama to localhost, deploy authenticated reverse proxies, and scan internal networks.\nПосмотрите статью, для того чтобы увидеть рекомендации по настройке и тому как детектировать\nhttps://azurehacking.com/post.html?slug=o-oh-llama-exposed-local-models-leaked\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1420",
+      "pub_date": "2026-06-30T07:44:28+00:00"
+    },
     {
       "id": "1419",
       "title": "StrikeShark:",

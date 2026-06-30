@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 26 Jun 2026 18:22:26 +0000</lastBuildDate><item><title>StrikeShark:</title><link>https://t.me/ThreatHuntingFather/1419</link><description>StrikeShark:
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 30 Jun 2026 07:44:28 +0000</lastBuildDate><item><title>O-oh llama Exposed</title><link>https://t.me/ThreatHuntingFather/1420</link><description>O-oh llama Exposed
+152 000 инстансов Ollama торчат в Shodan без аутентификации. Любой может стянуть ваши модели, гонять промпты на чужом GPU и эксплуатировать известные CVE.
+TL;DR
+• Shodan indexes over 152,000 exposed Ollama instances, including many running on expensive cloud GPUs.
+• The API has no authentication, which means attackers can run prompts, steal models, and exploit vulnerable versions.
+• Internally exposed instances on corporate networks are an even bigger blind spot.
+• Honeypots can mimic Ollama to catch scanners, so version and model-list validation matters.
+• Defenders should bind Ollama to localhost, deploy authenticated reverse proxies, and scan internal networks.
+Посмотрите статью, для того чтобы увидеть рекомендации по настройке и тому как детектировать
+https://azurehacking.com/post.html?slug=o-oh-llama-exposed-local-models-leaked
+
+[Media: Фото]</description><pubDate>Tue, 30 Jun 2026 07:44:28 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1420</guid></item><item><title>StrikeShark:</title><link>https://t.me/ThreatHuntingFather/1419</link><description>StrikeShark:
 GReAT выкатили разбор новой кампании - StrikeShark. Зацепили через инцидент в дипведомстве Индонезии, а копнув глубже, обнаружили тот же кластер активности в Тайване, Гонконге, Ливане, Сирии, Колумбии, Северной Македонии, Непале и Сербии.
 Жертвы: госорганы (министерство на Тайване, дипведомство в Индонезии) и софтверные компании (Тайвань, Ливан, Сирия), плюс точечные случаи в остальных перечисленных странах. География широкая, так что похоже на точечный интерес.
 Эксплуатация публичных уязвимостей: Exchange (ProxyLogon, CVE-2021-26855), Openfire (CVE-2023-32315), GeoServer (CVE-2024-36401), плюс набор более старых уязвимостей в SharePoint, Zimbra, F5 BIG-IP, FortiOS, Cisco IOS XE. Каспер оценивает со средней степенью уверенности, что в ходу публичные PoC, а не разработанные актором эксплойты; - дропперы под видом установщиков Google Update и Cisco AnyConnect, часть - с PDF-приманкой в комплекте.
