@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-07-01T08:17:35.863837+00:00",
-  "messages_count": 141,
+  "last_update": "2026-07-01T12:12:41.173179+00:00",
+  "messages_count": 142,
   "messages": [
+    {
+      "id": "754",
+      "title": "Message 754",
+      "text": "",
+      "link": "https://t.me/ptescalator/754",
+      "pub_date": "2026-07-01T11:58:43+00:00"
+    },
     {
       "id": "750",
       "title": "Кто-то сказал sandbox? 👀",

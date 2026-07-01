@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 30 Jun 2026 07:44:28 +0000</lastBuildDate><item><title>O-oh llama Exposed</title><link>https://t.me/ThreatHuntingFather/1420</link><description>O-oh llama Exposed
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 01 Jul 2026 10:49:48 +0000</lastBuildDate><item><title>QIHOO 360'S HYPERVISOR DRIVER SHIPS A BYOVD KILL SWITCH: NOW IN LOLDRIVERS</title><link>https://t.me/ThreatHuntingFather/1421</link><description>QIHOO 360'S HYPERVISOR DRIVER SHIPS A BYOVD KILL SWITCH: NOW IN LOLDRIVERS
+Qihoo 360's 360hvm64.sys driver has a single IOCTL that disables VT-x and AMD-V across every logical processor on the machine. The authentication gate fails open in a BYOVD scenario. Joint analysis by CyberDagger LLC and Titan Code Solutions, now in the LOLDrivers catalog.
+THE PRIMITIVE
+Driver: 360hvm64.sysv2.0.0.1207 Signer: Qihoo 360 Software Co., Ltd. (valid Authenticode) SHA256:
+f89d5d95b8a59e6d5e50a49217f83d080e4eaf4bb77b80d8f38cd915640ba124
+🔗 https://cyberdagger.com/blog/qihoo-360-byovd-killswitch-loldrivers/</description><pubDate>Wed, 01 Jul 2026 10:49:48 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1421</guid></item><item><title>O-oh llama Exposed</title><link>https://t.me/ThreatHuntingFather/1420</link><description>O-oh llama Exposed
 152 000 инстансов Ollama торчат в Shodan без аутентификации. Любой может стянуть ваши модели, гонять промпты на чужом GPU и эксплуатировать известные CVE.
 TL;DR
 • Shodan indexes over 152,000 exposed Ollama instances, including many running on expensive cloud GPUs.

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-01T08:17:23.980389+00:00",
-  "messages_count": 234,
+  "last_update": "2026-07-01T12:12:29.284934+00:00",
+  "messages_count": 235,
   "messages": [
+    {
+      "id": "1421",
+      "title": "QIHOO 360'S HYPERVISOR DRIVER SHIPS A BYOVD KILL SWITCH: NOW IN LOLDRIVERS",
+      "text": "QIHOO 360'S HYPERVISOR DRIVER SHIPS A BYOVD KILL SWITCH: NOW IN LOLDRIVERS\nQihoo 360's 360hvm64.sys driver has a single IOCTL that disables VT-x and AMD-V across every logical processor on the machine. The authentication gate fails open in a BYOVD scenario. Joint analysis by CyberDagger LLC and Titan Code Solutions, now in the LOLDrivers catalog.\nTHE PRIMITIVE\nDriver: 360hvm64.sysv2.0.0.1207 Signer: Qihoo 360 Software Co., Ltd. (valid Authenticode) SHA256:\nf89d5d95b8a59e6d5e50a49217f83d080e4eaf4bb77b80d8f38cd915640ba124\n🔗 https://cyberdagger.com/blog/qihoo-360-byovd-killswitch-loldrivers/",
+      "link": "https://t.me/ThreatHuntingFather/1421",
+      "pub_date": "2026-07-01T10:49:48+00:00"
+    },
     {
       "id": "1420",
       "title": "O-oh llama Exposed",
