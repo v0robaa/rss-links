@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-01T16:31:10.568759+00:00",
-  "messages_count": 235,
+  "last_update": "2026-07-01T20:04:02.376460+00:00",
+  "messages_count": 236,
   "messages": [
+    {
+      "id": "1422",
+      "title": "Been keeping an eye on what the Hunt.io team has been building for a while. They just shipped v3 - full platform rebuild - and a few things in this release are directly relevant for...",
+      "text": "Been keeping an eye on what the Hunt.io team has been building for a while. They just shipped v3 - full platform rebuild - and a few things in this release are directly relevant for infrastructure-based hunting work.\n• MCP server - Hunt data now accessible via remote MCP at mcp.hunt.io. 68 API endpoints. If you're building AI-assisted hunting workflows or enrichment pipelines, this connects directly into your tooling. OAuth support, dedicated MCP API keys with fixed scopes.\n• Passive DNS History - full DNS change timeline per domain. A, AAAA, MX, NS, TXT with timestamps. When you're tracking rotating C2 infrastructure, seeing when records changed and where they pointed fills the gaps that point-in-time lookups miss.\n• JARM Lookup Pages - search a JARM hash and land on a dedicated page with 30-day hit count, top ports breakdown, and recent sightings table. Fingerprinting a TLS stack to find reused C2 infrastructure or pivot across a cluster without writing a query first.\n• Cloudflare Buster - pivots a single domain into a broader infrastructure cluster using Cloudflare nameserver pairs. Useful when direct IP pivoting runs dry.\n• Threat Activity Enablers - maps abused legitimate services into a structured view of attacker infrastructure patterns. Dynamic DNS, PaaS, CDN. Useful for building hunt hypotheses around actors blending into normal platform traffic.\n• HuntSQL joins - flattened data architecture means cross-table queries are finally possible. No more workarounds.\n• Flagged Attacks - structured campaign reports tied to specific IPs, IOCs, and CVEs. Built from direct observation of attacker infrastructure.\n14-day free trial: portal.hunt.io/sign-up Full release notes: hunt.io/blog/introducing-hunt-v3\n🦔 THF",
+      "link": "https://t.me/ThreatHuntingFather/1422",
+      "pub_date": "2026-07-01T18:07:40+00:00"
+    },
     {
       "id": "1421",
       "title": "QIHOO 360'S HYPERVISOR DRIVER SHIPS A BYOVD KILL SWITCH: NOW IN LOLDRIVERS",
