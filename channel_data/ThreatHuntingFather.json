@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-02T16:07:53.904505+00:00",
-  "messages_count": 236,
+  "last_update": "2026-07-02T19:41:26.342748+00:00",
+  "messages_count": 237,
   "messages": [
+    {
+      "id": "1423",
+      "title": "Message 1423",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1423",
+      "pub_date": "2026-07-02T18:18:46+00:00"
+    },
     {
       "id": "1422",
       "title": "Been keeping an eye on what the Hunt.io team has been building for a while. They just shipped v3 - full platform rebuild - and a few things in this release are directly relevant for...",
