@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 02 Jul 2026 12:43:34 +0000</lastBuildDate><item><title>Message 755</title><link>https://t.me/ptescalator/755</link><description/><pubDate>Thu, 02 Jul 2026 12:43:34 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_755</guid></item><item><title>Message 754</title><link>https://t.me/ptescalator/754</link><description/><pubDate>Wed, 01 Jul 2026 11:58:43 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_754</guid></item><item><title>Кто-то сказал sandbox? 👀</title><link>https://t.me/ptescalator/750</link><description>Кто-то сказал sandbox? 👀
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 03 Jul 2026 12:38:53 +0000</lastBuildDate><item><title>Гражданин, обновитесь 🫵</title><link>https://t.me/ptescalator/756</link><description>Гражданин, обновитесь 🫵
+Недавно к нам в песочницу залетел семпл mir-pay.apk. На первый взгляд — ничего необычного: очередная вариация хорошо известного вредоноса Mamont, подумали мы. Тем более что название платежной системы уже не раз встречалось в этом семействе ВПО.
+В песочнице сработала метка «Формат подделан» с вердиктом apk.tampered, образец сохранял подозрительные файлы с расширением .png (файловые дропы) и загружал код напрямую в память (DEX-дампы).
+Мы решили копнуть глубже — и не зря. В ходе исследования нам удалось:
+• Выяснить, что к Mamont этот семпл отношения не имеет — поиск по найденным IoCs вывел нас на вредоносную кампанию Falcon, первые образцы которой были описаны еще в 2022 году.
+• Восстановить всю цепочку атаки — от загрузчика фейкового «обновления приложения» до полноценного Android-бэкдора — и разобраться, как злоумышленники используют легитимные сервисы, включая Trello, для доставки вредоносного ПО.
+• Сравнить образцы четырехлетней давности с актуальными версиями и узнать, как за это время эволюционировал Falcon: появились новые техники обфускации, расширился функционал, изменились методы доставки вредоносной нагрузки.
+О том, как устроена вредоносная кампания Falcon — читайте в подробном анализе в нашем блоге на Хабре.
+#avlab #sandbox #ti #android
+@ptescalator
+
+[Media: Фото]</description><pubDate>Fri, 03 Jul 2026 12:38:53 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_756</guid></item><item><title>Message 755</title><link>https://t.me/ptescalator/755</link><description/><pubDate>Thu, 02 Jul 2026 12:43:34 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_755</guid></item><item><title>Message 754</title><link>https://t.me/ptescalator/754</link><description/><pubDate>Wed, 01 Jul 2026 11:58:43 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_754</guid></item><item><title>Кто-то сказал sandbox? 👀</title><link>https://t.me/ptescalator/750</link><description>Кто-то сказал sandbox? 👀
 В очередной раз наблюдаем, как злоумышленники проводят неэтичные ресерчи.
 Дано:
 Исследователь по безопасности Nicholas Curran
