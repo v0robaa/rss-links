@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 06 Jul 2026 20:06:40 +0000</lastBuildDate><item><title>Сделал скромный вклад в IPAHound 🐕</title><link>https://t.me/s0ld13r_ch/396</link><description>Сделал скромный вклад в IPAHound 🐕
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 07 Jul 2026 07:48:05 +0000</lastBuildDate><item><title>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬</title><link>https://t.me/s0ld13r_ch/399</link><description>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬
+Домены
+- auth.home[.]kg 🇰🇬
+- vscode.auth.home[.]kg 🇰🇬
+Оба домена присутствуют в Maltrail (apt_kimsuky.txt) и связаны с инфраструктурой, которую OSINT-источники относят к Kimsuky / APT43 / Emerald Sleet.
+Текущие резолвы
+auth.home[.]kg 🇰🇬
+• IP-адрес: 80.68.237.36
+• Локация / Провайдер: Польша 🇵🇱
+vscode.auth.home[.]kg 🇰🇬
+• IP-адрес: 153.75.247.209
+• Локация / Провайдер: США 🇺🇸, Interserver (VPS)
+Цель атаки
+Это атака на разработчиков.
+Домен vscode.auth.home[.]kg создан для имитации легитимного OAuth redirect URI Visual Studio Code. Такие домены используются для кражи токенов аутентификации у разработчиков, DevOps-инженеров и исследователей.
+Важное замечание
+home[.]kg 🇰🇬 — это публичная FreeDNS-зона на afraid.org. Любой может создавать поддомены. Наличие .kg не означает, что целью является Кыргызстан.
+О группе Kimsuky
+Kimsuky (APT43 / Emerald Sleet) — северокорейская кибершпионская группа, активная с 2012 года. Для неё характерны социальная инженерия, поддельные страницы входа и кража учётных данных у технических специалистов.</description><pubDate>Tue, 07 Jul 2026 06:20:26 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_399</guid></item><item><title>Сделал скромный вклад в IPAHound 🐕</title><link>https://t.me/s0ld13r_ch/396</link><description>Сделал скромный вклад в IPAHound 🐕
 Столкнулся с тем, что оригинальный pyproject.toml конфликтовал с новыми версиями Python 👩‍💻, из-за чего установка могла ломаться. Подготовил фикс и отправил Merge Request (уже принят), теперь установка должна проходить заметно проще 💃
 👩‍💻 Установка:
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -33,7 +51,7 @@ Sophos - https://news.sophos.com/en-us/2025/08/26/velociraptor-incident-response
 Rapid7 - https://www.rapid7.com/blog/post/pt-identifying-and-mitigating-potential-velociraptor-abuse/
 Cisco Talos - https://blog.talosintelligence.com/velociraptor-leveraged-in-ransomware-attacks/
 🦔 THF
-#Velociraptor #DFIR #ThreatHunting #IncidentResponse #MCP #ClaudeCode #LLM #AIForCybersecurity #AIIR #PromptInjection #RedTeam #AdversaryEmulation #DualUse #CyberSecurity #DetectionEngineering #DigitalForensics #SOC #APT #IR #THF</description><pubDate>Mon, 06 Jul 2026 20:06:40 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_395</guid></item><item><title>ТЗ от Заказчика на услуги по ИБ  🤣</title><link>https://t.me/s0ld13r_ch/394</link><description>ТЗ от Заказчика на услуги по ИБ  🤣
+#Velociraptor #DFIR #ThreatHunting #IncidentResponse #MCP #ClaudeCode #LLM #AIForCybersecurity #AIIR #PromptInjection #RedTeam #AdversaryEmulation #DualUse #CyberSecurity #DetectionEngineering #DigitalForensics #SOC #APT #IR #THF</description><pubDate>Tue, 07 Jul 2026 07:48:05 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_395</guid></item><item><title>ТЗ от Заказчика на услуги по ИБ  🤣</title><link>https://t.me/s0ld13r_ch/394</link><description>ТЗ от Заказчика на услуги по ИБ  🤣
 🧢 s0ld13r
 
 [Media: Фото]</description><pubDate>Fri, 22 May 2026 13:37:31 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_394</guid></item><item><title>🎖 Наша команда FR13NDS TEAM заняла 1 место на CTF KBTU 2026! 🚩</title><link>https://t.me/s0ld13r_ch/388</link><description>🎖 Наша команда FR13NDS TEAM заняла 1 место на CTF KBTU 2026! 🚩

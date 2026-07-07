@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-06T20:06:38.567047+00:00",
-  "messages_count": 198,
+  "last_update": "2026-07-07T07:48:03.404504+00:00",
+  "messages_count": 199,
   "messages": [
+    {
+      "id": "385",
+      "title": "Linux LPE Toolkit",
+      "text": "Linux LPE Toolkit\nMulti-architecture privilege escalation toolkit with 24 exploits (amd64 pre-built; other architectures compiled via gcc at runtime). Supports amd64, arm64, 386, mips, mipsle, mips64, and mips64le. Detects kernel version, filters patched exploits, and tries each in order until root is obtained.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/385",
+      "pub_date": "2026-07-07T03:58:19+00:00"
+    },
     {
       "id": "384",
       "title": "Linux LPE IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC",

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-06T20:06:45.618717+00:00",
-  "messages_count": 238,
+  "last_update": "2026-07-07T07:48:10.488138+00:00",
+  "messages_count": 239,
   "messages": [
+    {
+      "id": "1429",
+      "title": "Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬",
+      "text": "Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬\nДомены\n- auth.home[.]kg 🇰🇬\n- vscode.auth.home[.]kg 🇰🇬\nОба домена присутствуют в Maltrail (apt_kimsuky.txt) и связаны с инфраструктурой, которую OSINT-источники относят к Kimsuky / APT43 / Emerald Sleet.\nТекущие резолвы\nauth.home[.]kg 🇰🇬\n• IP-адрес: 80.68.237.36\n• Локация / Провайдер: Польша 🇵🇱\nvscode.auth.home[.]kg 🇰🇬\n• IP-адрес: 153.75.247.209\n• Локация / Провайдер: США 🇺🇸, Interserver (VPS)\nЦель атаки\nЭто атака на разработчиков.\nДомен vscode.auth.home[.]kg создан для имитации легитимного OAuth redirect URI Visual Studio Code. Такие домены используются для кражи токенов аутентификации у разработчиков, DevOps-инженеров и исследователей.\nВажное замечание\nhome[.]kg 🇰🇬 — это публичная FreeDNS-зона на afraid.org. Любой может создавать поддомены. Наличие .kg не означает, что целью является Кыргызстан.\nО группе Kimsuky\nKimsuky (APT43 / Emerald Sleet) — северокорейская кибершпионская группа, активная с 2012 года. Для неё характерны социальная инженерия, поддельные страницы входа и кража учётных данных у технических специалистов.",
+      "link": "https://t.me/ThreatHuntingFather/1429",
+      "pub_date": "2026-07-07T05:21:33+00:00"
+    },
     {
       "id": "1424",
       "title": "ToddyCat: Shadow Token via Remote Debug - как OAuth-токен становится ключом к корпоративному Google Workspace",

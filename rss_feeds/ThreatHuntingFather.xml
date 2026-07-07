@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 06 Jul 2026 05:11:07 +0000</lastBuildDate><item><title>ToddyCat: Shadow Token via Remote Debug - как OAuth-токен становится ключом к корпоративному Google Workspace</title><link>https://t.me/ThreatHuntingFather/1424</link><description>ToddyCat: Shadow Token via Remote Debug - как OAuth-токен становится ключом к корпоративному Google Workspace
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 07 Jul 2026 05:21:33 +0000</lastBuildDate><item><title>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬</title><link>https://t.me/ThreatHuntingFather/1429</link><description>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬
+Домены
+- auth.home[.]kg 🇰🇬
+- vscode.auth.home[.]kg 🇰🇬
+Оба домена присутствуют в Maltrail (apt_kimsuky.txt) и связаны с инфраструктурой, которую OSINT-источники относят к Kimsuky / APT43 / Emerald Sleet.
+Текущие резолвы
+auth.home[.]kg 🇰🇬
+• IP-адрес: 80.68.237.36
+• Локация / Провайдер: Польша 🇵🇱
+vscode.auth.home[.]kg 🇰🇬
+• IP-адрес: 153.75.247.209
+• Локация / Провайдер: США 🇺🇸, Interserver (VPS)
+Цель атаки
+Это атака на разработчиков.
+Домен vscode.auth.home[.]kg создан для имитации легитимного OAuth redirect URI Visual Studio Code. Такие домены используются для кражи токенов аутентификации у разработчиков, DevOps-инженеров и исследователей.
+Важное замечание
+home[.]kg 🇰🇬 — это публичная FreeDNS-зона на afraid.org. Любой может создавать поддомены. Наличие .kg не означает, что целью является Кыргызстан.
+О группе Kimsuky
+Kimsuky (APT43 / Emerald Sleet) — северокорейская кибершпионская группа, активная с 2012 года. Для неё характерны социальная инженерия, поддельные страницы входа и кража учётных данных у технических специалистов.</description><pubDate>Tue, 07 Jul 2026 05:21:33 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1429</guid></item><item><title>ToddyCat: Shadow Token via Remote Debug - как OAuth-токен становится ключом к корпоративному Google Workspace</title><link>https://t.me/ThreatHuntingFather/1424</link><description>ToddyCat: Shadow Token via Remote Debug - как OAuth-токен становится ключом к корпоративному Google Workspace
 Kaspersky выпустил Part 2 исследования по группе ToddyCat. Группа переключилась на новый инструмент - Umbrij - и новую технику, которую Kaspersky назвал Shadow Token via Remote Debug (STRD). Инструмент нашли в ходе proactive threat hunting.
 Идея
 Атака работает на Chromium-браузерах, где пользователь оставил активную сессию Gmail. Umbrij копирует профиль аутентифицированного Chrome или Edge в отдельную директорию (BackupFiles), запускает браузер в headless-режиме с --remote-debugging-port и подключается к нему по Chrome DevTools Protocol через Puppeteer Sharp. Внутри уже аутентифицированной сессии инициирует OAuth-flow от имени легитимного Google-миграционного клиента: по умолчанию - GWMMO (Google Workspace Migration for Microsoft Outlook, client_id=279448736670); с ключом -sync - GWSMO (Google Workspace Sync for Microsoft Outlook, client_id=1095133494869).
