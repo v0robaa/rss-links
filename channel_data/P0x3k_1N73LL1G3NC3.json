@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-08T06:33:39.287946+00:00",
-  "messages_count": 199,
+  "last_update": "2026-07-08T11:09:14.734455+00:00",
+  "messages_count": 200,
   "messages": [
+    {
+      "id": "386",
+      "title": "Klist2ccache",
+      "text": "Klist2ccache\nDump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm — via WinRM.\nBlog: https://jakeotte.com/posts/klist-revisited.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/386",
+      "pub_date": "2026-07-08T08:44:28+00:00"
+    },
     {
       "id": "385",
       "title": "Linux LPE Toolkit",
