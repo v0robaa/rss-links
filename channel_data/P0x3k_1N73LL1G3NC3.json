@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-08T16:04:28.571506+00:00",
-  "messages_count": 200,
+  "last_update": "2026-07-08T19:43:39.349638+00:00",
+  "messages_count": 201,
   "messages": [
+    {
+      "id": "387",
+      "title": "GhostLock — CVE-2026-43499",
+      "text": "GhostLock — CVE-2026-43499\nThis is a Linux kernel vulnerability found by VEGA that exists in every major distribution since 2011. Triggering the bug does not require any special kernel config or privilege. By turning it into a 97% stable privilege escalation and container escape, Google has rewarded us $92,337 in kernelCTF. This writeup covers the technical details of the exploit.\n🔗 Research:\nhttps://nebusec.ai/research/ionstack-part-2/\n🔗 Exploit:\nhttps://github.com/NebuSec/CyberMeowfia/tree/main/IonStack/CVE-2026-43499\n#linux #kernel #lpe #container #escape\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/387",
+      "pub_date": "2026-07-08T16:18:24+00:00"
+    },
     {
       "id": "386",
       "title": "Klist2ccache",

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 08 Jul 2026 08:44:28 +0000</lastBuildDate><item><title>Klist2ccache</title><link>https://t.me/P0x3k_1N73LL1G3NC3/386</link><description>Klist2ccache
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 08 Jul 2026 16:18:24 +0000</lastBuildDate><item><title>GhostLock — CVE-2026-43499</title><link>https://t.me/P0x3k_1N73LL1G3NC3/387</link><description>GhostLock — CVE-2026-43499
+This is a Linux kernel vulnerability found by VEGA that exists in every major distribution since 2011. Triggering the bug does not require any special kernel config or privilege. By turning it into a 97% stable privilege escalation and container escape, Google has rewarded us $92,337 in kernelCTF. This writeup covers the technical details of the exploit.
+🔗 Research:
+https://nebusec.ai/research/ionstack-part-2/
+🔗 Exploit:
+https://github.com/NebuSec/CyberMeowfia/tree/main/IonStack/CVE-2026-43499
+#linux #kernel #lpe #container #escape
+
+[Media: Видео]</description><pubDate>Wed, 08 Jul 2026 16:18:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_387</guid></item><item><title>Klist2ccache</title><link>https://t.me/P0x3k_1N73LL1G3NC3/386</link><description>Klist2ccache
 Dump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm — via WinRM.
 Blog: https://jakeotte.com/posts/klist-revisited.html
 
