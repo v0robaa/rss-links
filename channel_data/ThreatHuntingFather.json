@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-09T12:11:17.124741+00:00",
-  "messages_count": 239,
+  "last_update": "2026-07-09T16:30:36.351716+00:00",
+  "messages_count": 240,
   "messages": [
+    {
+      "id": "1430",
+      "title": "Code injection attacks using publicly disclosed ASP.NET machine keys",
+      "text": "Code injection attacks using publicly disclosed ASP.NET machine keys\nhttps://www.microsoft.com/en-us/security/blog/2025/02/06/code-injection-attacks-using-publicly-disclosed-asp-net-machine-keys/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1430",
+      "pub_date": "2026-07-09T13:00:27+00:00"
+    },
     {
       "id": "1429",
       "title": "Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬",

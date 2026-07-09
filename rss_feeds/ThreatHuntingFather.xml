@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 07 Jul 2026 05:21:33 +0000</lastBuildDate><item><title>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬</title><link>https://t.me/ThreatHuntingFather/1429</link><description>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 09 Jul 2026 13:00:27 +0000</lastBuildDate><item><title>Code injection attacks using publicly disclosed ASP.NET machine keys</title><link>https://t.me/ThreatHuntingFather/1430</link><description>Code injection attacks using publicly disclosed ASP.NET machine keys
+https://www.microsoft.com/en-us/security/blog/2025/02/06/code-injection-attacks-using-publicly-disclosed-asp-net-machine-keys/
+
+[Media: Фото]</description><pubDate>Thu, 09 Jul 2026 13:00:27 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1430</guid></item><item><title>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬</title><link>https://t.me/ThreatHuntingFather/1429</link><description>Обнаружены подозрительные домены в зоне home[.]kg 🇰🇬
 Домены
 - auth.home[.]kg 🇰🇬
 - vscode.auth.home[.]kg 🇰🇬
