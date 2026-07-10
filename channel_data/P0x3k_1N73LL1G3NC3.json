@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-09T19:55:36.243824+00:00",
-  "messages_count": 201,
+  "last_update": "2026-07-10T07:42:11.576575+00:00",
+  "messages_count": 202,
   "messages": [
+    {
+      "id": "388",
+      "title": "💉 P³ — Shellcode Loader: Process Parameter Poisoning",
+      "text": "💉 P³ — Shellcode Loader: Process Parameter Poisoning\nThis loader implements a code injection technique that leverages the Windows Process Parameters structure (PEB) as a staging and execution location for remote shellcode injection.\nBy passing payload data implicitly through standard parameters like CommandLine, Environment, or ShellInfo, it bypasses EDR detection because it doesn't touch heavily monitored APIs like VirtualAllocEx, WriteProcessMemory, or CreateRemoteThread. Since it runs without spawning suspended processes or relying on process hollowing, it leaves virtually no obvious footprint in the system.\n🔗 Research:\nhttps://sensepost.com/blog/2026/process-parameter-poisoning/\n🔗 Source:\nhttps://github.com/Orange-Cyberdefense/p3-loader/\n#maldev #injection #edr #bypass #windows #peb\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/388",
+      "pub_date": "2026-07-09T20:14:17+00:00"
+    },
     {
       "id": "387",
       "title": "GhostLock — CVE-2026-43499",
