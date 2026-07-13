@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-12T19:14:10.870147+00:00",
-  "messages_count": 241,
+  "last_update": "2026-07-13T07:28:46.497730+00:00",
+  "messages_count": 242,
   "messages": [
+    {
+      "id": "1432",
+      "title": "The ‘Ghost’ in the Database: Recovering Active ADFS Signing Keys via Machine DPAPI",
+      "text": "The ‘Ghost’ in the Database: Recovering Active ADFS Signing Keys via Machine DPAPI\nDetection and Hunting\nDefenders should prioritize visibility into operating system-level cryptographic operations and identity issuance behavior, rather than relying solely on application-layer configuration stores.\n• SACL-Based Object Access Monitoring: Configure object access auditing via SACLs onC:\\ProgramData\\Microsoft\\Crypto\\RSA\\MachineKeys\\andC:\\Windows\\System32\\Microsoft\\Protect\\S-1-5-18\\. When configured correctly, this generates Security Event ID 4663 for file access attempts. Coverage depends on SACL configuration and access paths; treat this as supporting evidence in correlation-based detection rather than a stand-alone signal.\n• ADFS Token Issuance Consistency:Monitor for inconsistencies between primary authentication events and token issuance events in ADFS audit logs. Relevant events include token issuance and claims processing records (Event IDs 299, 1200-series, depending on ADFS version and audit configuration). The objective is to identify token issuance that cannot be clearly correlated to a preceding authentication context. This is most effective when normal authentication patterns per relying party trust are baselined.\n• Federated Identity Monitoring in Entra ID: Entra ID sign-in logs will record an accepted forged assertion as a standard federated sign-in event. Detection requires cross-correlating Entra ID sign-in records against ADFS-side issuance logs—neither source in isolation is sufficient. For privileged accounts, focus on unexpected Internet Protocol (IP) ranges, claim set deviations,and user-agent inconsistencies.\nhttps://cloud.google.com/blog/topics/threat-intelligence/recovering-active-adfs-signing-keys-machine-dpapi/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1432",
+      "pub_date": "2026-07-13T05:54:37+00:00"
+    },
     {
       "id": "1431",
       "title": "https://t.me/s0ld13r_ch/400",
