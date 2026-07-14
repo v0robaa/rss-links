@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-13T19:38:01.404535+00:00",
-  "messages_count": 242,
+  "last_update": "2026-07-14T15:26:54.497365+00:00",
+  "messages_count": 243,
   "messages": [
+    {
+      "id": "1434",
+      "title": "Образец LazyStealer появился в VirusTotal",
+      "text": "Образец LazyStealer появился в VirusTotal\nВ VirusTotal загрузили один из образцов, связанных с кампанией Lazy Koala:\nSHA-1:   [REDACTED_AWS_SECRET]\nSHA-256: 216f4e858f84269bee999fdc29dafbd79ec2270575e19a8626e25d5fe72a8f25\nЭто не новый образец: PT ESC опубликовал его хеш ещё в апреле 2024. В отчёте файл указан как test.pyc — компонент стилера LazyStealer. Сейчас он доступен в VirusTotal для независимого изучения и создания детектов.\nLazy Koala атаковала государственные, финансовые, медицинские и образовательные организации:\n🇷🇺 Россия · 🇧🇾 Беларусь · 🇰🇿 Казахстан · 🇺🇿 Узбекистан · 🇰🇬 Кыргызстан · 🇹🇯 Таджикистан · 🇦🇲 Армения\nПредполагаемый вектор — фишинг с исполняемыми файлами, замаскированными под документы. LazyStealer похищал логины и пароли из Google Chrome и отправлял их через Telegram-ботов.\nНа момент исследования PT ESC насчитал 867 скомпрометированных учётных записей, из них 321 уникальную. Прямую связь Lazy Koala с известными группировками установить не удалось; исследователи лишь отметили возможное сходство с YoroTrooper.\n📎 Отчёт PT ESC: LazyStealer: сложно не значит лучше\nпост @Now_on_VT",
+      "link": "https://t.me/ThreatHuntingFather/1434",
+      "pub_date": "2026-07-14T15:16:28+00:00"
+    },
     {
       "id": "1432",
       "title": "The ‘Ghost’ in the Database: Recovering Active ADFS Signing Keys via Machine DPAPI",
