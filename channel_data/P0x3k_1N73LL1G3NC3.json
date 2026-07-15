@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-15T10:56:10.187346+00:00",
-  "messages_count": 204,
+  "last_update": "2026-07-15T15:38:27.552373+00:00",
+  "messages_count": 205,
   "messages": [
+    {
+      "id": "391",
+      "title": "LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability",
+      "text": "LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability\nThe PoC requires another standard user credentials and a third username (which can be an administrator account), if the PoC is successful, it will end up mounting the target user hive in current user classes root.\nThe PoC was stripped down as an attempt to prevent public exploitation, the original PoC did not require additional user credential and was not limited to usrclass.dat hive, any hive could be loaded using this vulnerability but you would need some brain cells to make the PoC do it.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/391",
+      "pub_date": "2026-07-15T15:26:59+00:00"
+    },
     {
       "id": "390",
       "title": "COMLoaderAstharot",

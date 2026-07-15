@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 15 Jul 2026 04:35:11 +0000</lastBuildDate><item><title>COMLoaderAstharot</title><link>https://t.me/P0x3k_1N73LL1G3NC3/390</link><description>COMLoaderAstharot
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 15 Jul 2026 15:26:59 +0000</lastBuildDate><item><title>LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability</title><link>https://t.me/P0x3k_1N73LL1G3NC3/391</link><description>LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability
+The PoC requires another standard user credentials and a third username (which can be an administrator account), if the PoC is successful, it will end up mounting the target user hive in current user classes root.
+The PoC was stripped down as an attempt to prevent public exploitation, the original PoC did not require additional user credential and was not limited to usrclass.dat hive, any hive could be loaded using this vulnerability but you would need some brain cells to make the PoC do it.
+
+[Media: Фото]</description><pubDate>Wed, 15 Jul 2026 15:26:59 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_391</guid></item><item><title>COMLoaderAstharot</title><link>https://t.me/P0x3k_1N73LL1G3NC3/390</link><description>COMLoaderAstharot
 COM Hijack for CLSID {9FC8E510-A27C-4B3B-B9A3-BF65F00256A8} (chrome and msedge)
 
 [Media: Фото]</description><pubDate>Wed, 15 Jul 2026 04:35:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_390</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/389</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
