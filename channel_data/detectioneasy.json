@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-07-16T15:41:48.245590+00:00",
-  "messages_count": 67,
+  "last_update": "2026-07-16T19:21:59.263290+00:00",
+  "messages_count": 68,
   "messages": [
+    {
+      "id": "330",
+      "title": "Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator",
+      "text": "Всем привет 💻✌️\nКоллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator\nПоделились yara-правилами для поиска известных модулей\nupd: https://ptsecurity.com/research/pt-esc-threat-intelligence/attack-via-the-vipnet-mftp-service-signs-of-compromise-and-recommendations/\nupd: https://kas.pr/5c9t\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/330",
+      "pub_date": "2026-07-16T16:25:17+00:00"
+    },
     {
       "id": "329",
       "title": "Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации",

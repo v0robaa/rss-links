@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-07-16T15:41:50.930511+00:00",
-  "messages_count": 145,
+  "last_update": "2026-07-16T19:22:01.849470+00:00",
+  "messages_count": 146,
   "messages": [
+    {
+      "id": "758",
+      "title": "Message 758",
+      "text": "",
+      "link": "https://t.me/ptescalator/758",
+      "pub_date": "2026-07-16T16:48:19+00:00"
+    },
     {
       "id": "757",
       "title": "CloudAtlas: новая волна кибератак на организации в России и Ираке с использованием цепочек легитимных веб-ресурсов",

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Fri, 15 May 2026 04:27:42 +0000</lastBuildDate><item><title>Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации</title><link>https://t.me/detectioneasy/329</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 16 Jul 2026 16:25:17 +0000</lastBuildDate><item><title>Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator</title><link>https://t.me/detectioneasy/330</link><description>Всем привет 💻✌️
+Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator
+Поделились yara-правилами для поиска известных модулей
+upd: https://ptsecurity.com/research/pt-esc-threat-intelligence/attack-via-the-vipnet-mftp-service-signs-of-compromise-and-recommendations/
+upd: https://kas.pr/5c9t
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 16 Jul 2026 16:25:17 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_330</guid></item><item><title>Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации</title><link>https://t.me/detectioneasy/329</link><description>Всем привет 💻✌️
 Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации
 👨‍💻 Как это работает?
 🔤Основный вектор получения доступа фишинг с PDF/HTML-приманками, которые побуждают скачать файл
