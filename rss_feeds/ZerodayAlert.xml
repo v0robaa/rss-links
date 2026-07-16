@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 15 Jul 2026 16:48:54 +0000</lastBuildDate><item><title>Три уязвимости SharePoint уже используют в реальных атаках</title><link>https://t.me/ZerodayAlert/766</link><description>Три уязвимости SharePoint уже используют в реальных атаках
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 16 Jul 2026 08:05:06 +0000</lastBuildDate><item><title>SonicWall закрыла две 0-day в SMA1000, которые уже используют в реальных атаках</title><link>https://t.me/ZerodayAlert/768</link><description>SonicWall закрыла две 0-day в SMA1000, которые уже используют в реальных атаках
+SonicWall подтвердила эксплуатацию CVE-2026-15409 и CVE-2026-15410 в шлюзах SMA1000 6210, 7210 и 8200v. Первая уязвимость получила 10 баллов из 10 по CVSS, вторая 7,2 балла. CISA внесло обе ошибки в каталог известных эксплуатируемых уязвимостей.
+CVE-2026-15409 позволяет без авторизации отправлять запросы от имени устройства к внутренним ресурсам. CVE-2026-15410 даёт администратору возможность внедрить команды ОС через консоль управления. SonicWall не уточнила, объединяли ли злоумышленники обе ошибки в одну цепочку.
+Чтобы защитить свою сеть, необходимо установить версии 12.4.3-03453, 12.5.0-02835 или более новые, а также проверить журналы. При компрометации физический шлюз придётся переустановить, а виртуальный развернуть заново. Пароли и токены TOTP так же нужно будет сменить.
+#SonicWall #SMA1000 #SSRF #CISA
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 16 Jul 2026 08:05:06 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_768</guid></item><item><title>Claude for Chrome сохранил уязвимые обработчики после восьми обновлений</title><link>https://t.me/ZerodayAlert/767</link><description>Claude for Chrome сохранил уязвимые обработчики после восьми обновлений
+Специалисты Manifold повторно проверили Claude for Chrome 1.0.80 и нашли две проблемы, о которых сообщили Anthropic ещё 21 мая. Стороннее расширение может имитировать клик пользователя и передать ИИ-агенту заранее разрешённую команду, включая чтение Gmail.
+Claude принимает искусственно созданное событие за реальное действие человека. Боковая панель также поддерживает режим без проверки разрешений, который при появлении дополнительной ошибки может открыть путь к скрытому выполнению команд. Anthropic признала отчёты, но не исправила обработчики за восемь выпусков.
+В целях безапосности запускайте боковую панель только с запросом разрешений. Разрешайте смену режима только после реального клика внутри интерфейса. Для привилегированных задач проверяйте отправителя каждого внутреннего сообщения.
+#Claude #Anthropic #Gmail #Уязвимость
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 16 Jul 2026 07:10:05 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_767</guid></item><item><title>Три уязвимости SharePoint уже используют в реальных атаках</title><link>https://t.me/ZerodayAlert/766</link><description>Три уязвимости SharePoint уже используют в реальных атаках
 Агентство CISA предупредило об атаках на локальные серверы SharePoint, доступные из интернета. Злоумышленники уже используют три уязвимости —
 CVE-2026-32201 (6.5 Medium),
 CVE-2026-45659 (8.8 High),

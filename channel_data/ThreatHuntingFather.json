@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-16T06:24:43.966076+00:00",
-  "messages_count": 243,
+  "last_update": "2026-07-16T11:04:50.332424+00:00",
+  "messages_count": 244,
   "messages": [
+    {
+      "id": "1435",
+      "title": "TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development",
+      "text": "TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development\nhttps://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1435",
+      "pub_date": "2026-07-16T06:52:12+00:00"
+    },
     {
       "id": "1434",
       "title": "Образец LazyStealer появился в VirusTotal",
