@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 16 Jul 2026 13:04:50 +0000</lastBuildDate><item><title>Коллеги, привет!</title><link>https://t.me/ZerodayAlert/769</link><description>Коллеги, привет!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 17 Jul 2026 08:43:24 +0000</lastBuildDate><item><title>Новые уязвимости обнаружены в NGINX Plus и Open Source</title><link>https://t.me/ZerodayAlert/770</link><description>Новые уязвимости обнаружены в NGINX Plus и Open Source
+Компания F5 обнаружила три уязвимости в NGINX Plus и NGINX Open Source, самая опасная из них получила оценку 9.2 из 10. Она связана с обработкой определённых запросов и в худшем случае может позволить злоумышленнику выполнить произвольный код на сервере.
+Две другие уязвимости с оценками 8.8 и 8.3 позволяют злоумышленникам получать фрагменты данных из памяти сервера или вызывать аварийную остановку рабочих процессов. Для проведения атак злоумышленнику не требуется учётная запись или предварительный доступ к серверу.
+Проблемы затрагивают не только основные сборки NGINX, но и связанные продукты — Ingress Controller, Gateway Fabric, App Protect WAF и Instance Manager. Разработчики уже выпустили исправленные версии и рекомендуют администраторам обновиться как можно скорее.
+#nginx #уязвимости #кибербезопасность #f5
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 17 Jul 2026 08:43:24 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_770</guid></item><item><title>Коллеги, привет!</title><link>https://t.me/ZerodayAlert/769</link><description>Коллеги, привет!
 Мы изучаем, как сегодня DevSecOps-, AppSec- и ИБ-специалисты выстраивают процессы безопасности приложений: какие инструменты используют, как принимают решения, что действительно помогает в ежедневной работе, а что, наоборот, создает лишнюю нагрузку.
 Если вы работаете с AppSec-инструментами - SAST, DAST, SCA и другими - нам очень важно узнать ваш реальный опыт и как процессы безопасной разработки устроены на практике: что удобно, какие задачи возникают чаще всего, какие сценарии автоматизации востребованы и как сегодня развивается AppSec в компаниях.
 🕒 Опрос займет 3-5 минут.
