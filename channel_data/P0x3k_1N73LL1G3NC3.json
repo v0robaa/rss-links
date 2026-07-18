@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-18T06:10:02.284446+00:00",
-  "messages_count": 205,
+  "last_update": "2026-07-18T10:22:57.572735+00:00",
+  "messages_count": 206,
   "messages": [
+    {
+      "id": "392",
+      "title": "There and Back Again: An Operators Guide on NTLM Relaying Egress",
+      "text": "There and Back Again: An Operators Guide on NTLM Relaying Egress\nThis technique is especially impactful when escalation isn’t possible to bind to port 445/TCP for SMB relays or firewall rules are preventing a WebDAV relay when operating from C2. It involves coercing either SMB or WebDAV authentication outbound, catching the authentication using a cloud host on the internet, and relaying the traffic back through red team infrastructure into the target environment.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/392",
+      "pub_date": "2026-07-18T08:59:55+00:00"
+    },
     {
       "id": "391",
       "title": "LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability",
