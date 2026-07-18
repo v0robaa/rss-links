@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-18T15:00:28.825482+00:00",
-  "messages_count": 206,
+  "last_update": "2026-07-18T19:12:45.673161+00:00",
+  "messages_count": 207,
   "messages": [
+    {
+      "id": "393",
+      "title": "WordPress Core \"wp2shell\" RCE",
+      "text": "WordPress Core \"wp2shell\" RCE\nThe attack consists of two flaws, tracked as CVE-2026-63030 and CVE-2026-60137, that can be chained together to achieve pre-authentication remote code execution against WordPress installs running versions 6.9.x and 7.0.x.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/393",
+      "pub_date": "2026-07-18T17:48:45+00:00"
+    },
     {
       "id": "392",
       "title": "There and Back Again: An Operators Guide on NTLM Relaying Egress",
