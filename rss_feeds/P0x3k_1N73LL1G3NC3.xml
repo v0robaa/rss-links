@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 18 Jul 2026 17:48:45 +0000</lastBuildDate><item><title>WordPress Core "wp2shell" RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/393</link><description>WordPress Core "wp2shell" RCE
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 20 Jul 2026 20:49:26 +0000</lastBuildDate><item><title>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/394</link><description>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)
+CVE-2026-36425 OPSWAT AppRemover (ardrv.sys) improper access control advisory
+Analysis
+
+[Media: Фото]</description><pubDate>Mon, 20 Jul 2026 20:49:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_394</guid></item><item><title>WordPress Core "wp2shell" RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/393</link><description>WordPress Core "wp2shell" RCE
 The attack consists of two flaws, tracked as CVE-2026-63030 and CVE-2026-60137, that can be chained together to achieve pre-authentication remote code execution against WordPress installs running versions 6.9.x and 7.0.x.
 
 [Media: Видео]</description><pubDate>Sat, 18 Jul 2026 17:48:45 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_393</guid></item><item><title>There and Back Again: An Operators Guide on NTLM Relaying Egress</title><link>https://t.me/P0x3k_1N73LL1G3NC3/392</link><description>There and Back Again: An Operators Guide on NTLM Relaying Egress
