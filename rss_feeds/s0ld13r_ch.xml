@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 21 Jul 2026 06:34:53 +0000</lastBuildDate><item><title>🚨 WP2Shell - критический RCE в WordPress Core</title><link>https://t.me/s0ld13r_ch/404</link><description>🚨 WP2Shell - критический RCE в WordPress Core
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 21 Jul 2026 11:12:30 +0000</lastBuildDate><item><title>🚨 WP2Shell - критический RCE в WordPress Core</title><link>https://t.me/s0ld13r_ch/404</link><description>🚨 WP2Shell - критический RCE в WordPress Core
 Исследователи опубликовали детали уязвимости WP2Shell, которая позволяет неаутентифицированному атакующему добиться Remote Code Execution (RCE) на уязвимых версиях WordPress 👩‍💻
 📌 Затронутые версии:
 • WordPress ниже 6.8.5 - не уязвимы
@@ -49,7 +49,7 @@ The PoC requires another standard user credentials and a third username (which c
 P.S А я напомнию что у меня есть аккаунт в X - буду рад видеть вас там в качестве подписчиков 😉 https://x.com/s0ld133rr?s=11
 🧢 s0ld13r
 
-[Media: Видео]</description><pubDate>Tue, 21 Jul 2026 06:34:53 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_401</guid></item><item><title>И таааааак сойдет😅</title><link>https://t.me/s0ld13r_ch/400</link><description>И таааааак сойдет😅
+[Media: Видео]</description><pubDate>Tue, 21 Jul 2026 11:12:30 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_401</guid></item><item><title>И таааааак сойдет😅</title><link>https://t.me/s0ld13r_ch/400</link><description>И таааааак сойдет😅
 Давно ничего не постил. За это время успел увидеть как все резко стали экспертами по мультиагентным системам, MCP, A2A и еще двадцати новым аббревиатурам которые появляются быстрее чем новые модели у OpenAI ⭕️
 Но как бы то ни было, жизнь ироничная штука. В какой-то момент я тоже решил посмотреть, что вообще происходит в мире AI для Offensive Security. Перетестил разные инструменты, поковырял open-source проекты и понял, что почти везде мне чего-то не хватает: где-то архитектуры, где-то удобного workflow, где-то агент просто забывает, что было пять сообщений назад 🥱
 Так появился PentestCode - форк OpenCode, заточенный под пентест. Вместо того чтобы тратить недели на TUI, авторизацию и поддержку десятков LLM-провайдеров, я решил сосредоточиться на архитектуре и воркфлоу агента 😎
