@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-22T06:35:34.545576+00:00",
-  "messages_count": 244,
+  "last_update": "2026-07-22T11:13:15.528484+00:00",
+  "messages_count": 246,
   "messages": [
+    {
+      "id": "1437",
+      "title": "Message 1437",
+      "text": "\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1437",
+      "pub_date": "2026-07-22T11:13:15.510822+00:00"
+    },
+    {
+      "id": "1436",
+      "title": "Message 1436",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1436",
+      "pub_date": "2026-07-22T09:29:33+00:00"
+    },
     {
       "id": "1435",
       "title": "TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development",
