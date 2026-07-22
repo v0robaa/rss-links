@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 22 Jul 2026 11:13:10 +0000</lastBuildDate><item><title>🚨 WP2Shell - критический RCE в WordPress Core</title><link>https://t.me/s0ld13r_ch/404</link><description>🚨 WP2Shell - критический RCE в WordPress Core
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Wed, 22 Jul 2026 15:45:10 +0000</lastBuildDate><item><title>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺</title><link>https://t.me/s0ld13r_ch/405</link><description>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺
+Пока просматривал форки своего проекта PentestCode, наткнулся на довольно странные коммиты в одном из них.
+⚠️ Сразу отмечу: оригинальный репозиторий PentestCode не был скомпрометирован. Вредоносный код находился исключительно в стороннем форке
+Решил разобраться, что именно туда добавили. В итоге обычная проверка форка превратилась в полноценный malware research с обширной кампанией. После нескольких этапов деобфускации выяснилось, что это не простой downloader и не очередной стилер, а многоступенчатый JavaScript-бэкдор с удалённым исполнением кода (RCE), использующий технику EtherHiding 😃
+🔍 Что удалось установить:
+• 4 уровня обфускации и самораспаковки;
+• получение C2 через блокчейн Ethereum без единого захардкоженного IP;
+• поиск C2 по транзакциям атакующего через публичные Ethereum RPC;
+• декодирование IP:Port прямо из поля to;
+• загрузка stage-2 → stage-3;
+• несколько способов исполнения payload (spawn, eval и резервный запуск);
+• скрытый запуск процессов (windowsHide, stdio: ignore);
+• переход из WSL2 на Windows-хост через node.exe
+Самое интересное - C2 вообще не зашит в код. Вместо этого используется Ethereum как dead-drop: новая транзакция публикует новый адрес C2, и заражённые машины автоматически начинают обращаться уже к нему. Такой подход серьёзно усложняет блокировку инфраструктур 🦍
+Но дальше стало ещё интереснее - вредоносный форк принадлежит GitHub-аккаунту KumaloWilson. На аккаунте почти 200 публичных репозиториев, большинство последних - форки инструментов для специалистов по ИБ и AI-разработчиков  🙀
+Среди них:
+• PentestCode
+• KaliGPT
+• Kittysploit
+• Meterless
+• Nebula
+• cybersentinel-ai
+• AhMyth+
+• и другие.
+Сложилось впечатление, что злоумышленники целенаправленно троянизируют проекты, которые с высокой вероятностью будут запускать пентестеры, ресерчеры и разработчики - именно там обычно находятся SSH-ключи, GitHub Token, .env, облачные креды и криптокошельки 😎
+При этом нет доказательств, что владелец аккаунта KumaloWilson является автором кампании. Не исключено, что сам аккаунт был скомпрометирован и использовался для распространения вредоносных форков 💻
+Полный список IoC в комментариях, проверяйте не только то, что запускаете, но и откуда вы это клонируете 😉
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Wed, 22 Jul 2026 13:02:05 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_405</guid></item><item><title>🚨 WP2Shell - критический RCE в WordPress Core</title><link>https://t.me/s0ld13r_ch/404</link><description>🚨 WP2Shell - критический RCE в WordPress Core
 Исследователи опубликовали детали уязвимости WP2Shell, которая позволяет неаутентифицированному атакующему добиться Remote Code Execution (RCE) на уязвимых версиях WordPress 👩‍💻
 📌 Затронутые версии:
 • WordPress ниже 6.8.5 - не уязвимы
@@ -49,7 +78,7 @@ The PoC requires another standard user credentials and a third username (which c
 P.S А я напомнию что у меня есть аккаунт в X - буду рад видеть вас там в качестве подписчиков 😉 https://x.com/s0ld133rr?s=11
 🧢 s0ld13r
 
-[Media: Видео]</description><pubDate>Wed, 22 Jul 2026 11:13:10 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_401</guid></item><item><title>И таааааак сойдет😅</title><link>https://t.me/s0ld13r_ch/400</link><description>И таааааак сойдет😅
+[Media: Видео]</description><pubDate>Wed, 22 Jul 2026 15:45:10 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_401</guid></item><item><title>И таааааак сойдет😅</title><link>https://t.me/s0ld13r_ch/400</link><description>И таааааак сойдет😅
 Давно ничего не постил. За это время успел увидеть как все резко стали экспертами по мультиагентным системам, MCP, A2A и еще двадцати новым аббревиатурам которые появляются быстрее чем новые модели у OpenAI ⭕️
 Но как бы то ни было, жизнь ироничная штука. В какой-то момент я тоже решил посмотреть, что вообще происходит в мире AI для Offensive Security. Перетестил разные инструменты, поковырял open-source проекты и понял, что почти везде мне чего-то не хватает: где-то архитектуры, где-то удобного workflow, где-то агент просто забывает, что было пять сообщений назад 🥱
 Так появился PentestCode - форк OpenCode, заточенный под пентест. Вместо того чтобы тратить недели на TUI, авторизацию и поддержку десятков LLM-провайдеров, я решил сосредоточиться на архитектуре и воркфлоу агента 😎
