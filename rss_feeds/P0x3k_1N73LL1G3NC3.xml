@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 20 Jul 2026 20:49:26 +0000</lastBuildDate><item><title>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/394</link><description>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 23 Jul 2026 04:05:14 +0000</lastBuildDate><item><title>HiveOracle</title><link>https://t.me/P0x3k_1N73LL1G3NC3/395</link><description>HiveOracle
+Pull locked hives (SAM/SYSTEM/etc) off disk without touching LSASS, then offline hash dump.
+
+[Media: Фото]</description><pubDate>Thu, 23 Jul 2026 04:05:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_395</guid></item><item><title>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/394</link><description>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)
 CVE-2026-36425 OPSWAT AppRemover (ardrv.sys) improper access control advisory
 Analysis
 

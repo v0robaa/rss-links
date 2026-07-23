@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-22T19:35:35.015297+00:00",
-  "messages_count": 208,
+  "last_update": "2026-07-23T06:34:55.267614+00:00",
+  "messages_count": 209,
   "messages": [
+    {
+      "id": "395",
+      "title": "HiveOracle",
+      "text": "HiveOracle\nPull locked hives (SAM/SYSTEM/etc) off disk without touching LSASS, then offline hash dump.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/395",
+      "pub_date": "2026-07-23T04:05:14+00:00"
+    },
     {
       "id": "394",
       "title": "CVE-2026-36425 aka Arbitrary Process termination (BYOVD)",
