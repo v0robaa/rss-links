@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-07-24T15:34:44.298155+00:00",
-  "messages_count": 148,
+  "last_update": "2026-07-24T19:39:14.236166+00:00",
+  "messages_count": 149,
   "messages": [
+    {
+      "id": "761",
+      "title": "Message 761",
+      "text": "",
+      "link": "https://t.me/ptescalator/761",
+      "pub_date": "2026-07-24T17:35:15+00:00"
+    },
     {
       "id": "760",
       "title": "Группа киберразведки PT ESC представила обзор кибератак за II квартал 2026 года ✍️",
