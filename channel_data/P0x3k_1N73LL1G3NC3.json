@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-07-24T06:32:11.692017+00:00",
-  "messages_count": 209,
+  "last_update": "2026-07-24T11:06:11.876451+00:00",
+  "messages_count": 210,
   "messages": [
+    {
+      "id": "396",
+      "title": "🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation",
+      "text": "🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation\nLow-privileged domain user can impersonate a Domain Controller via an AD CS enrollment chase fallback. By supplying cdc (Client DC) and rmd (Remote Domain) request attributes, an attacker forces the Enterprise CA to query an attacker-controlled host over SMB and LDAP.\nThe CA then blindly trusts the returned directory objects (objectSid + dNSHostName of a real DC) and issues a certificate containing strong identity mapping for the Domain Controller. This allows successful PKINIT authentication as the DC.\n🔗 Research:\nhttps://gist.github.com/H0j3n/a5ef2609b5f2944ac2390a191a534c26\n🔗 Source:\nhttps://github.com/aniqfakhrul/CVE-2026-54121\n#ad #adcs #pkinit #machineaccountquota\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/396",
+      "pub_date": "2026-07-24T08:56:54+00:00"
+    },
     {
       "id": "395",
       "title": "HiveOracle",

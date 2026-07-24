@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 23 Jul 2026 04:05:14 +0000</lastBuildDate><item><title>HiveOracle</title><link>https://t.me/P0x3k_1N73LL1G3NC3/395</link><description>HiveOracle
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 24 Jul 2026 08:56:54 +0000</lastBuildDate><item><title>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/396</link><description>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation
+Low-privileged domain user can impersonate a Domain Controller via an AD CS enrollment chase fallback. By supplying cdc (Client DC) and rmd (Remote Domain) request attributes, an attacker forces the Enterprise CA to query an attacker-controlled host over SMB and LDAP.
+The CA then blindly trusts the returned directory objects (objectSid + dNSHostName of a real DC) and issues a certificate containing strong identity mapping for the Domain Controller. This allows successful PKINIT authentication as the DC.
+🔗 Research:
+https://gist.github.com/H0j3n/a5ef2609b5f2944ac2390a191a534c26
+🔗 Source:
+https://github.com/aniqfakhrul/CVE-2026-54121
+#ad #adcs #pkinit #machineaccountquota
+
+[Media: Фото]</description><pubDate>Fri, 24 Jul 2026 08:56:54 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_396</guid></item><item><title>HiveOracle</title><link>https://t.me/P0x3k_1N73LL1G3NC3/395</link><description>HiveOracle
 Pull locked hives (SAM/SYSTEM/etc) off disk without touching LSASS, then offline hash dump.
 
 [Media: Фото]</description><pubDate>Thu, 23 Jul 2026 04:05:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_395</guid></item><item><title>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/394</link><description>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)
