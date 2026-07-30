@@ -1,8 +1,15 @@
 {
   "channel": "detectioneasy",
-  "last_update": "2026-07-29T19:26:43.037590+00:00",
-  "messages_count": 68,
+  "last_update": "2026-07-30T06:33:48.323165+00:00",
+  "messages_count": 69,
   "messages": [
+    {
+      "id": "331",
+      "title": "При проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь...",
+      "text": "Всем привет 💻✌️\nПри проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь службы вел к %SystemDrive%\\Programm Data\\\nОказалось, что это был DLP-агент, собранный через PyInstaller, а для запуска бинарника разработчики использовали NSSM 🤣\nПрава на директорию, файлы и службу были настроены некорректно. В результате конфигурация создавала возможность для подмены исполняемого файла и повышения привилегий на хосте.\np.s. вайбкодер бы такого не сделал 🔎\n#detection@detectioneasy\n#ttp@detectioneasy",
+      "link": "https://t.me/detectioneasy/331",
+      "pub_date": "2026-07-29T19:46:56+00:00"
+    },
     {
       "id": "330",
       "title": "Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator",

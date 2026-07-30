@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Thu, 16 Jul 2026 16:25:17 +0000</lastBuildDate><item><title>Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator</title><link>https://t.me/detectioneasy/330</link><description>Всем привет 💻✌️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 29 Jul 2026 19:46:56 +0000</lastBuildDate><item><title>При проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь...</title><link>https://t.me/detectioneasy/331</link><description>Всем привет 💻✌️
+При проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь службы вел к %SystemDrive%\Programm Data\
+Оказалось, что это был DLP-агент, собранный через PyInstaller, а для запуска бинарника разработчики использовали NSSM 🤣
+Права на директорию, файлы и службу были настроены некорректно. В результате конфигурация создавала возможность для подмены исполняемого файла и повышения привилегий на хосте.
+p.s. вайбкодер бы такого не сделал 🔎
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 29 Jul 2026 19:46:56 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_331</guid></item><item><title>Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator</title><link>https://t.me/detectioneasy/330</link><description>Всем привет 💻✌️
 Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator
 Поделились yara-правилами для поиска известных модулей
 upd: https://ptsecurity.com/research/pt-esc-threat-intelligence/attack-via-the-vipnet-mftp-service-signs-of-compromise-and-recommendations/
