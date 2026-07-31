@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 29 Jul 2026 04:26:41 +0000</lastBuildDate><item><title>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/397</link><description>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 31 Jul 2026 18:25:25 +0000</lastBuildDate><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
+Exploit which lets you obtain NT AUTHORITY\SYSTEM rights via the Foxit PDF Reader updater service.
+Blog: Escalating All The Privileges With Foxit PDF Reader (CVE-2026–57239)
+
+[Media: Фото]</description><pubDate>Fri, 31 Jul 2026 18:25:25 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_399</guid></item><item><title>Ruby on Rails Active Storage Vips RCE (CVE-2026-66066)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/398</link><description>Ruby on Rails Active Storage Vips RCE (CVE-2026-66066)
+Target Software/Hardware:
+Ruby on Rails 6.0.6.1, 6.1.7.10, 8.0.5, and 8.0.5.1, Active Storage with Vips variant processor, Ruby 3.2, image_processing 1.14.0, ruby-vips ~&gt; 2.2, libvips 8.16.1 built with -Dmatio=enabled
+
+[Media: Видео]</description><pubDate>Fri, 31 Jul 2026 18:08:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_398</guid></item><item><title>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/397</link><description>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)
 Authentication bypass via the SmartConsole login process using an application token. This affects Check Point Security Management Server and Multi-Domain Security Management Server (MDS).
+Metasploit module: https://github.com/rapid7/metasploit-framework/pull/21731
 Blog: https://www.rapid7.com/blog/post/ra-check-point-smartconsole-authentication-bypass-technical-analysis-cve-2026-16232/
 
 [Media: Фото]</description><pubDate>Wed, 29 Jul 2026 04:26:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_397</guid></item><item><title>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/396</link><description>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation
