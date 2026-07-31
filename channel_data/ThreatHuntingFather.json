@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-07-31T11:32:10.199035+00:00",
-  "messages_count": 247,
+  "last_update": "2026-07-31T16:03:33.244677+00:00",
+  "messages_count": 248,
   "messages": [
     {
       "id": "1437",
       "title": "Message 1437",
       "text": "\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1437",
-      "pub_date": "2026-07-31T11:32:10.180740+00:00"
+      "pub_date": "2026-07-31T16:03:33.225396+00:00"
+    },
+    {
+      "id": "1439",
+      "title": "🇨🇳 Кибершпионаж в государственных органах Центральной Азии. Новые бэкдоры OctLurk и SilkLurk (Securelist).",
+      "text": "🇨🇳 Кибершпионаж в государственных органах Центральной Азии. Новые бэкдоры OctLurk и SilkLurk (Securelist).\nС января 2025 APT ведёт кибершпионаж против госорганов в Афганистане, Киргизии, Таджикистане, Узбекистане, Казахстане, Сирии.\nЖертвы: МИД, здравоохранение, НИИ, логистика, правоохрантельные органы, образование.\nOctLurk - модульный бэкдор с плагинами в память (command shell, file manager, keyboard/mouse synthesis)\nSilkLurk - бэкдор через DLL side-loading легитимных бинарников NVIDIA (nvgwls.exe/nvml.dll) и Realtek (RtkSmbus.exe), ключ расшифровки - хеш имени компьютера. Конфиг хранит 4 C2 с портами и прокси-учётками, после заражения может загрузить PlugX как вторую стадию.\nLurkProxy - не бэкдор, а прокси-утилита с архитектурой OctLurk: слушает на порту 64980 и поднимает TLS-туннель к C2 (154[.]196[.]162[.]76). Работает в режимах SOCKS5 или transparent proxy с захардкоженным таргетом\nПост-эксплуатация:\nImpacket secretsdump (Adobe.exe), кейлоггер (AnyDesk.exe в Public\\Pictures), Browser Password Decryptor (Chrome/Firefox), FSCAN, Pandora RC, сбор почты через curl IMAP, эксфильтрация WinRAR/7zip. Вторая стадия - PlugX.\nИнфраструктура:\n- VPS Vultr (FR/NL/DE - 5 IP), бюджетные провайдеры (RO, MD, US, RU)\n- DDNS: kozow[.]com, gleeze[.]com, casacam[.]net, accesscam[.]org\n- Часть C2 sinkholed (127.0.0.1), часть не резолвится\n- Пересечение с TrustFall/MystRodX/SilentRaid - 3 общих C2 (отчёт ГТС 🇰🇿, окт 2025)",
+      "link": "https://t.me/ThreatHuntingFather/1439",
+      "pub_date": "2026-07-31T12:24:44+00:00"
     },
     {
       "id": "1438",
