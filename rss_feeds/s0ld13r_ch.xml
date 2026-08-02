@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 02 Aug 2026 10:44:29 +0000</lastBuildDate><item><title>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺</title><link>https://t.me/s0ld13r_ch/405</link><description>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 02 Aug 2026 11:38:17 +0000</lastBuildDate><item><title>PentestCode v0.2.4 is out 🤩</title><link>https://t.me/s0ld13r_ch/412</link><description>PentestCode v0.2.4 is out 🤩
+Выкатил новую версию PentestCode с несколькими улучшениями, в основном правил мультиагентную архитектуру и жесткость границ между их работой 😺
+😱 Что изменилось:
+• Добавил полноценный Artifact Store. Теперь PoC, сгенерированные одним саб-агентом, регистрируются в state и переиспользуются другими вместо повторной генерации
+• Полностью переделал работу с engagement state. Саб-агенты получают только релевантный контекст, что заметно сократило расход токенов
+• Координатор теперь реально координирует, а не пытается сам делать всю работу. Добавил рейлы, watchdog’и, лимиты и защиту от бесконечных циклов
+• Усилил самокритику. Недостаточно сказать «есть root» - любой успешный результат должен подтверждаться артефактом, иначе это только suspected
+• Подточил reconnaissance skills и порядок их загрузки
+👩‍💻 Обновление:
+pentestcode upgrade
+P.S Еще есть куда расти дальше поэтому обратная связь, баги, кейсы успешных/провальных прогонов приветствуются 😉
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Sun, 02 Aug 2026 11:38:17 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_412</guid></item><item><title>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺</title><link>https://t.me/s0ld13r_ch/405</link><description>Supply-chain атака: EtherHiding C2 во вредоносном форке PentestCode 🕺
 Пока просматривал форки своего проекта PentestCode, наткнулся на довольно странные коммиты в одном из них.
 ⚠️ Сразу отмечу: оригинальный репозиторий PentestCode не был скомпрометирован. Вредоносный код находился исключительно в стороннем форке
 Решил разобраться, что именно туда добавили. В итоге обычная проверка форка превратилась в полноценный malware research с обширной кампанией. После нескольких этапов деобфускации выяснилось, что это не простой downloader и не очередной стилер, а многоступенчатый JavaScript-бэкдор с удалённым исполнением кода (RCE), использующий технику EtherHiding 😃
