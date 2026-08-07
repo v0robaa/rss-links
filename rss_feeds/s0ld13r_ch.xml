@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Sun, 02 Aug 2026 11:38:17 +0000</lastBuildDate><item><title>PentestCode v0.2.4 is out 🤩</title><link>https://t.me/s0ld13r_ch/412</link><description>PentestCode v0.2.4 is out 🤩
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Thu, 06 Aug 2026 17:31:07 +0000</lastBuildDate><item><title>Дампим SAM/SYSTEM через 7-Zip</title><link>https://t.me/s0ld13r_ch/414</link><description>Дампим SAM/SYSTEM через 7-Zip
+Знакомая ситуация: вы на машине юзера, нужно достать хеши, но  reg save  или  copy  блокируются EDR, файлы заблокированы самой Windows, а антивирус палит известные утилиты.
+Но на рабочих станциях часто установлен 7-Zip! И у него есть крутая недокументированная фича - прямое чтение диска (raw disk access).
+А можно использовать и для DFIR извлекать MFT и т.д.
+Чем проще и банальнее тем лучше : )
+
+[Media: Фото]</description><pubDate>Thu, 06 Aug 2026 17:31:07 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_414</guid></item><item><title>PentestCode v0.2.4 is out 🤩</title><link>https://t.me/s0ld13r_ch/412</link><description>PentestCode v0.2.4 is out 🤩
 Выкатил новую версию PentestCode с несколькими улучшениями, в основном правил мультиагентную архитектуру и жесткость границ между их работой 😺
 😱 Что изменилось:
 • Добавил полноценный Artifact Store. Теперь PoC, сгенерированные одним саб-агентом, регистрируются в state и переиспользуются другими вместо повторной генерации
