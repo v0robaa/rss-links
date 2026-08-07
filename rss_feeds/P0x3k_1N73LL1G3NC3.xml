@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 07 Aug 2026 05:44:57 +0000</lastBuildDate><item><title>Five games. One signed driver. SYSTEM compromise.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/400</link><description>Five games. One signed driver. SYSTEM compromise.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 07 Aug 2026 10:04:59 +0000</lastBuildDate><item><title>Vipere</title><link>https://t.me/P0x3k_1N73LL1G3NC3/402</link><description>Vipere
+BOF exploiting the Visual Studio Installer Elevation Service for SYSTEM LPE and persistence via AppDomainManager hijacking, with native ETW evasion. For Cobalt Strike &amp; Adaptix.
+Tasted On:
+• Windows 11 25H2 Build 26200 (July 2026: fully patched)
+• Visual Studio 2022 Build Tools 17.x
+• Windows Defender (current definitions)
+
+[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 09:15:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_402</guid></item><item><title>Forget PSEXEC: DCOM Upload &amp; Execute Backdoor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/401</link><description>Forget PSEXEC: DCOM Upload &amp; Execute Backdoor
+This blog post presents a powerful new DCOM lateral movement attack that allows the writing of custom DLLs to a target machine, loading them to a service, and executing their functionality with arbitrary parameters. This backdoor-like attack abuses the IMsiServer COM interface by reversing its internals. This process is described step-by-step in this blog.
+PoC: DCOMUploadExec
+
+[Media: Фото]</description><pubDate>Fri, 07 Aug 2026 06:45:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_401</guid></item><item><title>Five games. One signed driver. SYSTEM compromise.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/400</link><description>Five games. One signed driver. SYSTEM compromise.
 Black Desert, Lineage II, AION, MapleStory, and Blade &amp; Soul install Wellbia's driver - letting any process dump LSASS, kill Defender, or pop a SYSTEM shell
 Exploit: https://github.com/BlackSnufkin/AxHunter
 • dump — LDR-walks lsass.exe, recovers BCrypt 3DES key + IV, decrypts LogonSessionList, extracts NT/SHA1 hashes and (where present) WDigest plaintext.
@@ -10,7 +21,7 @@ Blog:
 • Hunting the Hunter II: Reversing xhunter2.sys and Its Three-Layer Authentication
 Windows 11 24H2 build 26200. HVCI, VBS, Microsoft Vulnerable Driver Blocklist all enabled.
 
-[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 05:44:57 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_400</guid></item><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
+[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 10:04:59 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_400</guid></item><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
 Exploit which lets you obtain NT AUTHORITY\SYSTEM rights via the Foxit PDF Reader updater service.
 Blog: Escalating All The Privileges With Foxit PDF Reader (CVE-2026–57239)
 

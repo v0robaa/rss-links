@@ -1,14 +1,28 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-07T05:44:57.919584+00:00",
-  "messages_count": 214,
+  "last_update": "2026-08-07T10:04:59.490053+00:00",
+  "messages_count": 216,
   "messages": [
     {
       "id": "400",
       "title": "Five games. One signed driver. SYSTEM compromise.",
       "text": "Five games. One signed driver. SYSTEM compromise.\nBlack Desert, Lineage II, AION, MapleStory, and Blade & Soul install Wellbia's driver - letting any process dump LSASS, kill Defender, or pop a SYSTEM shell\nExploit: https://github.com/BlackSnufkin/AxHunter\n• dump — LDR-walks lsass.exe, recovers BCrypt 3DES key + IV, decrypts LogonSessionList, extracts NT/SHA1 hashes and (where present) WDigest plaintext.\n• kill — cmd 785 handle on the target, enumerates target's handle table via NtQuerySystemInformation(SystemExtendedHandleInformation), then cmd 800 (ObSetHandleAttributes(KernelMode) + ZwClose under KeStackAttachProcess) on each handle.\n• lpe — WinExec(\"cmd.exe\", SW_SHOW). Child inherits winlogon's NT AUTHORITY\\SYSTEM token + Session 1.\nBlog:\n• Hunting the Hunter: A Live Kernel LPE 0day in Anti-Cheat on a Billion Machines\n• Hunting the Hunter II: Reversing xhunter2.sys and Its Three-Layer Authentication\nWindows 11 24H2 build 26200. HVCI, VBS, Microsoft Vulnerable Driver Blocklist all enabled.\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/400",
-      "pub_date": "2026-08-07T05:44:57.910717+00:00"
+      "pub_date": "2026-08-07T10:04:59.479852+00:00"
+    },
+    {
+      "id": "402",
+      "title": "Vipere",
+      "text": "Vipere\nBOF exploiting the Visual Studio Installer Elevation Service for SYSTEM LPE and persistence via AppDomainManager hijacking, with native ETW evasion. For Cobalt Strike & Adaptix.\nTasted On:\n• Windows 11 25H2 Build 26200 (July 2026: fully patched)\n• Visual Studio 2022 Build Tools 17.x\n• Windows Defender (current definitions)\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/402",
+      "pub_date": "2026-08-07T09:15:10+00:00"
+    },
+    {
+      "id": "401",
+      "title": "Forget PSEXEC: DCOM Upload & Execute Backdoor",
+      "text": "Forget PSEXEC: DCOM Upload & Execute Backdoor\nThis blog post presents a powerful new DCOM lateral movement attack that allows the writing of custom DLLs to a target machine, loading them to a service, and executing their functionality with arbitrary parameters. This backdoor-like attack abuses the IMsiServer COM interface by reversing its internals. This process is described step-by-step in this blog.\nPoC: DCOMUploadExec\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/401",
+      "pub_date": "2026-08-07T06:45:01+00:00"
     },
     {
       "id": "399",
