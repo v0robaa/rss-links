@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 07 Aug 2026 14:59:01 +0000</lastBuildDate><item><title>ResetNightmare</title><link>https://t.me/P0x3k_1N73LL1G3NC3/403</link><description>ResetNightmare
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 07 Aug 2026 19:05:17 +0000</lastBuildDate><item><title>ResetNightmare</title><link>https://t.me/P0x3k_1N73LL1G3NC3/403</link><description>ResetNightmare
 ResetNightmare (CVE-2026-27912) is a validation flaw in the Kerberos Change Password protocol that allows for resetting the password of any target user/computer account, without knowing the current one. The attack requires an unpatched domain controller, and the ability to write a userPrincipalName (UPN) on any account you control. Alternatively, the vulnerability can also be abused by an attacker having the ability to create new users/computers in any OU, as creating a user/computer allows you to get GenericWrite permissions over it.
 Blog: Identity Crisis: Novel Vulnerabilities Leading to Kerberos Downgrade, DoS, and Full Domain Takeover
 
@@ -25,7 +25,7 @@ Blog:
 • Hunting the Hunter II: Reversing xhunter2.sys and Its Three-Layer Authentication
 Windows 11 24H2 build 26200. HVCI, VBS, Microsoft Vulnerable Driver Blocklist all enabled.
 
-[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 14:59:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_400</guid></item><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
+[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 19:05:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_400</guid></item><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
 Exploit which lets you obtain NT AUTHORITY\SYSTEM rights via the Foxit PDF Reader updater service.
 Blog: Escalating All The Privileges With Foxit PDF Reader (CVE-2026–57239)
 
