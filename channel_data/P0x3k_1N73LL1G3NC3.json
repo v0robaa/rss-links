@@ -1,14 +1,21 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-08T05:03:55.712811+00:00",
-  "messages_count": 217,
+  "last_update": "2026-08-08T09:43:50.645115+00:00",
+  "messages_count": 218,
   "messages": [
     {
       "id": "400",
       "title": "Five games. One signed driver. SYSTEM compromise.",
       "text": "Five games. One signed driver. SYSTEM compromise.\nBlack Desert, Lineage II, AION, MapleStory, and Blade & Soul install Wellbia's driver - letting any process dump LSASS, kill Defender, or pop a SYSTEM shell\nExploit: https://github.com/BlackSnufkin/AxHunter\n• dump — LDR-walks lsass.exe, recovers BCrypt 3DES key + IV, decrypts LogonSessionList, extracts NT/SHA1 hashes and (where present) WDigest plaintext.\n• kill — cmd 785 handle on the target, enumerates target's handle table via NtQuerySystemInformation(SystemExtendedHandleInformation), then cmd 800 (ObSetHandleAttributes(KernelMode) + ZwClose under KeStackAttachProcess) on each handle.\n• lpe — WinExec(\"cmd.exe\", SW_SHOW). Child inherits winlogon's NT AUTHORITY\\SYSTEM token + Session 1.\nBlog:\n• Hunting the Hunter: A Live Kernel LPE 0day in Anti-Cheat on a Billion Machines\n• Hunting the Hunter II: Reversing xhunter2.sys and Its Three-Layer Authentication\nWindows 11 24H2 build 26200. HVCI, VBS, Microsoft Vulnerable Driver Blocklist all enabled.\n\n[Media: Видео]",
       "link": "https://t.me/P0x3k_1N73LL1G3NC3/400",
-      "pub_date": "2026-08-08T05:03:55.701638+00:00"
+      "pub_date": "2026-08-08T09:43:50.633515+00:00"
+    },
+    {
+      "id": "404",
+      "title": "Nocturne",
+      "text": "Nocturne\nA CET-compatible Windows x64 loader that produces fully backed call stacks through runtime function table manipulation, code cave injection, and inverted function table collapse.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/404",
+      "pub_date": "2026-08-08T08:04:51+00:00"
     },
     {
       "id": "403",
