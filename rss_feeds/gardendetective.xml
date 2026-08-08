@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Fri, 07 Aug 2026 19:05:12 +0000</lastBuildDate><item><title>17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.</title><link>https://t.me/gardendetective/49</link><description>#cybercamp2026 #leto
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sat, 08 Aug 2026 05:03:51 +0000</lastBuildDate><item><title>17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.</title><link>https://t.me/gardendetective/49</link><description>#cybercamp2026 #leto
 17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.
 🔵 На сцене докладов: «Чтобы найти атакующего, иногда приходится провести двадцать лет вместе © кибербарон Мюнхгаузен»
 Рассмотрим хронологию затяжной APT-атаки. Вы узнаете, как хакеры годами оставались незамеченными, какие техники закрепления использовали и как скрывали сетевые следы. Имя этой группировки пока держим в секрете, но масштаб вас впечатлит.
@@ -20,7 +20,7 @@
 ➖ использование Obsidian CLI;
 ➖ PoC описанного в докладе сценария (хорошее закрепление для любителей оставлять свои "заметки").
 *️⃣код PoC (когда-нибудь я буду нормально оформлять репозитории, но это не точно 🥳);
-*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Fri, 07 Aug 2026 19:05:12 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
+*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sat, 08 Aug 2026 05:03:51 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
 🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем — контр-криминалистические методы. 🚪
 *️⃣Ссылка на презентацию.
 🔵 Отдельно хочу отметить организацию конференции и выступления других спикеров — всё было на высшем уровне. 🏖
@@ -54,7 +54,7 @@ wsl -u root -d &lt;distro_name&gt; --exec bash -c "echo -e '[boot]\ncommand=echo
 nohup python3 -m http.server 8000 &amp;
 *️⃣для того, чтобы принудительно завершить работу определённого дистрибутива или всех сразу, можно использовать эти команды:
 wsl -t &lt;distro_name&gt;
-wsl --shutdown</description><pubDate>Fri, 07 Aug 2026 19:05:12 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
+wsl --shutdown</description><pubDate>Sat, 08 Aug 2026 05:03:51 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
 🔵 Последние 2 доклада в этом году (🍩):
 1️⃣ Доклад «После Red Team можно не бояться атак... Не бояться атак, да?» [SOC Forum 2025].
 ➖ Совместно с Олегом Скулкиным (ссылка на TG-канал).
