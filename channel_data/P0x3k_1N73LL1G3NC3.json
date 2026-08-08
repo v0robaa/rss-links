@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-08T09:43:50.645115+00:00",
-  "messages_count": 218,
+  "last_update": "2026-08-08T14:37:45.751373+00:00",
+  "messages_count": 219,
   "messages": [
+    {
+      "id": "405",
+      "title": "Unauthenticated Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)",
+      "text": "Unauthenticated Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)\nBlog: https://www.rapid7.com/blog/post/ra-unauthenticated-rce-in-jetbrains-teamcity-cve-2026-63077/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/405",
+      "pub_date": "2026-08-08T09:50:32+00:00"
+    },
     {
       "id": "400",
       "title": "Five games. One signed driver. SYSTEM compromise.",
