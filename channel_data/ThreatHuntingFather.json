@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-11T10:04:19.091446+00:00",
-  "messages_count": 249,
+  "last_update": "2026-08-11T15:04:19.079004+00:00",
+  "messages_count": 250,
   "messages": [
     {
       "id": "1437",
       "title": "Message 1437",
       "text": "\n\n[Media: Видео]",
       "link": "https://t.me/ThreatHuntingFather/1437",
-      "pub_date": "2026-08-11T10:04:19.069937+00:00"
+      "pub_date": "2026-08-11T15:04:19.056274+00:00"
+    },
+    {
+      "id": "1444",
+      "title": "Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти...",
+      "text": "Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти сняли через WinPmem.\n🚬\n• vol.exe -f .\\mem.raw windows.hashdump.Hashdump\n• vol.exe -f .\\mem.raw windows.cachedump.Cachedump\n• winpmem_mini_x64_rc2.exe mem.raw\n🔗https://www.sophos.com/en-us/blog/2608-volatility-interlock",
+      "link": "https://t.me/ThreatHuntingFather/1444",
+      "pub_date": "2026-08-11T12:23:46+00:00"
     },
     {
       "id": "1440",
