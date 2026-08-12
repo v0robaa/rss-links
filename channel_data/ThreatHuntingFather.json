@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-12T10:12:58.119146+00:00",
-  "messages_count": 250,
+  "last_update": "2026-08-12T15:03:18.959686+00:00",
+  "messages_count": 251,
   "messages": [
+    {
+      "id": "1445",
+      "title": "🔑 Pass-the-Passkey - атаки на passkey в Windows и Entra ID",
+      "text": "🔑 Pass-the-Passkey - атаки на passkey в Windows и Entra ID\nMichael Grafnetter (SpecterOps, автор Shadow Credentials и DSInternals) на Black Hat USA 2026 разобрал passkey-стек Microsoft: три 0-day и 20+ техник. Суть в том, что взламывать сам ключ не нужно - его крадут уже в готовом подписанном виде и подсовывают серверу как свой.\n📋 CVE-2026-34348:\nWindows 11 записывала полный ответ авторизации по passkey прямо в журнал событий (лог WebAuthN/Operational, EventID 2106). Прочитать его может любой пользователь на машине, а удаленно - member группы Event Log Readers. Entra ID не проверял, что этот ответ уже использовали, поэтому его можно просто повторить и войти под чужой учеткой.\n💥 Impact:\nЛокальный админ на машине, где вошел Global Administrator, берет его ответ из лога и заходит в облако под ним. Требование phishing-resistant MFA обходится, XDR и Defender for Identity на E5 при этом молчат.\n🛠 Техники без CVE:\nПоддельное окно passkey рисуется поверх браузера, чтобы жертва подтвердила чужой вход. Имя приложения в окне подделывается через настройки сборки (выглядит как Microsoft Edge). Плюс спам-запросы на подтверждение по аналогии с MFA fatigue. Экспорт passkey из KeePassXC и Bitwarden по умолчанию сохраняет приватный ключ в открытом виде.\n🩹 Патч:\nОбновление Windows от 14.07.2026 обрезает подпись в логе до 6 байт. Entra ID с мая считает counter для FIDO2-ключей, но Windows Hello всегда отдает 0, поэтому для него повтор все еще работает.\n🔗 https://specterops.io/passkeys\n#redteam #passkeys #webauthn #entraid #cve\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1445",
+      "pub_date": "2026-08-12T13:10:18+00:00"
+    },
     {
       "id": "1437",
       "title": "Message 1437",

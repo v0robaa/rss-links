@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 12 Aug 2026 10:12:58 +0000</lastBuildDate><item><title>Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти...</title><link>https://t.me/ThreatHuntingFather/1444</link><description>Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти сняли через WinPmem.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 12 Aug 2026 13:10:18 +0000</lastBuildDate><item><title>🔑 Pass-the-Passkey - атаки на passkey в Windows и Entra ID</title><link>https://t.me/ThreatHuntingFather/1445</link><description>🔑 Pass-the-Passkey - атаки на passkey в Windows и Entra ID
+Michael Grafnetter (SpecterOps, автор Shadow Credentials и DSInternals) на Black Hat USA 2026 разобрал passkey-стек Microsoft: три 0-day и 20+ техник. Суть в том, что взламывать сам ключ не нужно - его крадут уже в готовом подписанном виде и подсовывают серверу как свой.
+📋 CVE-2026-34348:
+Windows 11 записывала полный ответ авторизации по passkey прямо в журнал событий (лог WebAuthN/Operational, EventID 2106). Прочитать его может любой пользователь на машине, а удаленно - member группы Event Log Readers. Entra ID не проверял, что этот ответ уже использовали, поэтому его можно просто повторить и войти под чужой учеткой.
+💥 Impact:
+Локальный админ на машине, где вошел Global Administrator, берет его ответ из лога и заходит в облако под ним. Требование phishing-resistant MFA обходится, XDR и Defender for Identity на E5 при этом молчат.
+🛠 Техники без CVE:
+Поддельное окно passkey рисуется поверх браузера, чтобы жертва подтвердила чужой вход. Имя приложения в окне подделывается через настройки сборки (выглядит как Microsoft Edge). Плюс спам-запросы на подтверждение по аналогии с MFA fatigue. Экспорт passkey из KeePassXC и Bitwarden по умолчанию сохраняет приватный ключ в открытом виде.
+🩹 Патч:
+Обновление Windows от 14.07.2026 обрезает подпись в логе до 6 байт. Entra ID с мая считает counter для FIDO2-ключей, но Windows Hello всегда отдает 0, поэтому для него повтор все еще работает.
+🔗 https://specterops.io/passkeys
+#redteam #passkeys #webauthn #entraid #cve
+
+[Media: Видео]</description><pubDate>Wed, 12 Aug 2026 13:10:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1445</guid></item><item><title>Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти...</title><link>https://t.me/ThreatHuntingFather/1444</link><description>Interlock (Sophos трекает как GOLD EMBRACE) в марте 2026 снимали креды с помощью Volatility3 - легитимного фреймворка для анализа памяти. Плагины windows.hashdump и windows.cachedump, дамп памяти сняли через WinPmem.
 🚬
 • vol.exe -f .\mem.raw windows.hashdump.Hashdump
 • vol.exe -f .\mem.raw windows.cachedump.Cachedump
