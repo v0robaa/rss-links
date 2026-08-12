@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 11 Aug 2026 19:14:07 +0000</lastBuildDate><item><title>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/408</link><description>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 12 Aug 2026 07:42:46 +0000</lastBuildDate><item><title>Он опять это сделал)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/409</link><description>Он опять это сделал)
+https://github.com/MSNightmare/ShieldBreak
+Windows Defender LPE 0day
+#lpe #ad #exploit #git
+
+[Media: Фото]</description><pubDate>Wed, 12 Aug 2026 07:42:46 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_409</guid></item><item><title>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/408</link><description>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)
 A remote unauthenticated attacker can leverage CVE-2026-55040 to bypass authentication on a vulnerable SharePoint server, and perform operations as a SharePoint site user or administrator. The vulnerability is due to several issues in the JWT token validation pipeline.
 Blog: https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/
 
