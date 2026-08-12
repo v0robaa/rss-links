@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-11T19:10:30.341424+00:00",
-  "messages_count": 221,
+  "last_update": "2026-08-12T05:41:26.164963+00:00",
+  "messages_count": 222,
   "messages": [
+    {
+      "id": "408",
+      "title": "Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)",
+      "text": "Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)\nA remote unauthenticated attacker can leverage CVE-2026-55040 to bypass authentication on a vulnerable SharePoint server, and perform operations as a SharePoint site user or administrator. The vulnerability is due to several issues in the JWT token validation pipeline.\nBlog: https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/408",
+      "pub_date": "2026-08-11T19:14:07+00:00"
+    },
     {
       "id": "407",
       "title": "https://t.me/boost/P0x3k_1N73LL1G3NC3",
