@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-13T10:14:21.387938+00:00",
-  "messages_count": 251,
+  "last_update": "2026-08-13T15:03:14.138231+00:00",
+  "messages_count": 252,
   "messages": [
+    {
+      "id": "1446",
+      "title": "Thorium is a highly scalable, distributed file analysis and result aggregation platform that enables workflow automation using commercial, open source, and custom tools.",
+      "text": "Thorium is a highly scalable, distributed file analysis and result aggregation platform that enables workflow automation using commercial, open source, and custom tools.\nExample Use Cases\nMalware Analysis: Triage files using static and dynamic analysis tools. Aggregate results from multiple tools to trigger further analysis and outputs.\nHost Forensics: Automatically process forensic artifact files (emails, memory images, disk images, etc.) and generate intermediate analysis results.\nScaled Tool Testing: Assess tool performance on your benchmark datasets to speed up development and troubleshooting.\nhttps://github.com/cisagov/thorium",
+      "link": "https://t.me/ThreatHuntingFather/1446",
+      "pub_date": "2026-08-13T13:35:34+00:00"
+    },
     {
       "id": "1445",
       "title": "🔑 Pass-the-Passkey - атаки на passkey в Windows и Entra ID",
