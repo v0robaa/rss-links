@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-13T05:43:46.442361+00:00",
-  "messages_count": 223,
+  "last_update": "2026-08-13T10:14:12.925117+00:00",
+  "messages_count": 224,
   "messages": [
+    {
+      "id": "410",
+      "title": "VHDVomit",
+      "text": "VHDVomit\nA tool to search SMB shares for VHD/VMDK/VHDX backup files, mount them and dump sensitive data including NTDS.dit, SYSTEM, and SAM hives.\nvbkVomit\nExtract hashes from Veeam .vbk backup. Reads the VBK directly, finds the NTFS volume inside, walks the MFT, reassembles ntds.dit + SAM/SECURITY/SYSTEM, and runs impacket secretsdump.\nVeeamThief\nRogue vSphere server for capturing Veeam Backup & Replication credentials.\nBlog: https://adversaryco.com/blog/breaking-bad-backups\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/410",
+      "pub_date": "2026-08-13T08:41:10+00:00"
+    },
     {
       "id": "409",
       "title": "Он опять это сделал)",

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 12 Aug 2026 07:42:46 +0000</lastBuildDate><item><title>Он опять это сделал)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/409</link><description>Он опять это сделал)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 13 Aug 2026 08:41:10 +0000</lastBuildDate><item><title>VHDVomit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/410</link><description>VHDVomit
+A tool to search SMB shares for VHD/VMDK/VHDX backup files, mount them and dump sensitive data including NTDS.dit, SYSTEM, and SAM hives.
+vbkVomit
+Extract hashes from Veeam .vbk backup. Reads the VBK directly, finds the NTFS volume inside, walks the MFT, reassembles ntds.dit + SAM/SECURITY/SYSTEM, and runs impacket secretsdump.
+VeeamThief
+Rogue vSphere server for capturing Veeam Backup &amp; Replication credentials.
+Blog: https://adversaryco.com/blog/breaking-bad-backups
+
+[Media: Фото]</description><pubDate>Thu, 13 Aug 2026 08:41:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_410</guid></item><item><title>Он опять это сделал)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/409</link><description>Он опять это сделал)
 https://github.com/MSNightmare/ShieldBreak
 Windows Defender LPE 0day
 #lpe #ad #exploit #git
