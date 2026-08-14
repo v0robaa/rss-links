@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 14 Aug 2026 09:55:30 +0000</lastBuildDate><item><title>Dark Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/413</link><description>Dark Agent
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 14 Aug 2026 13:17:01 +0000</lastBuildDate><item><title>VsockDrop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/414</link><description>VsockDrop
+Linux kernel LPE via an io_uring zerocopy page-refcount underflow over AF_VSOCK. (CVE-2026-53365) Bug affects Linux 6.7 -&gt; 7.0.10, fixed in 7.0.11.
+Tested on unpatched Ubuntu 22.04 HWE/24.04/26.04, Debian 13, Arch, and openSUSE Leap/Tumbleweed.
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 13:17:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_414</guid></item><item><title>Dark Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/413</link><description>Dark Agent
 Fully-featured Mythic C2 Agent for Linux and macOS environments. Built in Crystal with statically-linked OpenSSL, it provides comprehensive post-exploitation capabilities through COFF/BOF loading, extensive system commands, SOCKS proxy support, and flexible communication profiles.
 Blog: https://minorimpact.dev/posts/dark-agent-coff-loader/
 

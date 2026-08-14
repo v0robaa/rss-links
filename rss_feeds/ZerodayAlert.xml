@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 12 Aug 2026 18:03:11 +0000</lastBuildDate><item><title>Microsoft закрыла 400 уязвимостей в рамках Patch Tuesday за август</title><link>https://t.me/ZerodayAlert/794</link><description>Microsoft закрыла 400 уязвимостей в рамках Patch Tuesday за август
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 14 Aug 2026 12:01:57 +0000</lastBuildDate><item><title>⚙️F6 Fraud Protection — не один продукт, а линейка из трёх: Preventive Proxy защищает периметр от ботов, Session Fraud Protection — сессию пользователя, Transaction Fraud Protection — саму операцию.</title><link>https://t.me/ZerodayAlert/795</link><description>⚙️F6 Fraud Protection — не один продукт, а линейка из трёх: Preventive Proxy защищает периметр от ботов, Session Fraud Protection — сессию пользователя, Transaction Fraud Protection — саму операцию.
+Гибкая продуктовая линейка уже показала свою эффективность: один продукт закрывает свою задачу, все три — весь путь платежа.
+В этом видео эксперты департамента защиты от мошенничества  — Дмитрий Ермаков, Александра Радченко и Константин Гребенюк — отвечают на эти и другие вопросы:
+▪️ Какую проблему клиента решает Fraud Protection? В чем его уникальность?
+▪️ Почему теперь это продуктовая линейка, а не единое решение? Можно ли выбрать только один продукт?
+▪️  Какие важные обновления произошли в продукте за последнее время?
+▪️ Какую проблему клиента решает Preventive Proxy? В каких сферах бизнеса он уже используется?
+▪️ Какую роль играет Fraud Matrix и насколько она сейчас обширна?
+➡️Смотреть видео → VK  или Rutube.
+➡️Подробнее о продукте на нашем сайте.
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 12:01:57 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_795</guid></item><item><title>Microsoft закрыла 400 уязвимостей в рамках Patch Tuesday за август</title><link>https://t.me/ZerodayAlert/794</link><description>Microsoft закрыла 400 уязвимостей в рамках Patch Tuesday за август
 Microsoft выпустила августовские обновления безопасности, закрывающие 400 уязвимостей в Windows и других продуктах компании. Три ошибки получили статус уязвимостей нулевого дня, причём одну из них — CVE-2026-68820 (7.0 High) в драйвере AFD.sys — злоумышленники уже применяли в реальных атаках группировки Lazarus.
 Уязвимость позволяет локальному пользователю получить права SYSTEM через ошибку типа «использование памяти после освобождения», после чего запускается руткит FudModule, скрывающий дальнейшую активность от средств защиты. Всего Microsoft оценила 42 проблемы как критические, из которых 37 связаны с удалённым выполнением кода.
 Две другие уязвимости нулевого дня — CVE-2026-62832 (7.8 High) в службе профилей пользователей и CVE-2026-72971 (5.5 Medium) в драйвере unionfs.sys — были раскрыты публично до выхода официальных исправлений. Пользователям  рекомендуется установить августовские обновления как можно скорее.

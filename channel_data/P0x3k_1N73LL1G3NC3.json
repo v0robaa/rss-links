@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-14T10:10:13.885655+00:00",
-  "messages_count": 226,
+  "last_update": "2026-08-14T14:57:24.983320+00:00",
+  "messages_count": 227,
   "messages": [
+    {
+      "id": "414",
+      "title": "VsockDrop",
+      "text": "VsockDrop\nLinux kernel LPE via an io_uring zerocopy page-refcount underflow over AF_VSOCK. (CVE-2026-53365) Bug affects Linux 6.7 -> 7.0.10, fixed in 7.0.11.\nTested on unpatched Ubuntu 22.04 HWE/24.04/26.04, Debian 13, Arch, and openSUSE Leap/Tumbleweed.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/414",
+      "pub_date": "2026-08-14T13:17:01+00:00"
+    },
     {
       "id": "413",
       "title": "Dark Agent",
