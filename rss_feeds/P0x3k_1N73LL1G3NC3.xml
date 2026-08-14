@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 13 Aug 2026 08:41:10 +0000</lastBuildDate><item><title>VHDVomit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/410</link><description>VHDVomit
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 14 Aug 2026 09:55:30 +0000</lastBuildDate><item><title>Dark Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/413</link><description>Dark Agent
+Fully-featured Mythic C2 Agent for Linux and macOS environments. Built in Crystal with statically-linked OpenSSL, it provides comprehensive post-exploitation capabilities through COFF/BOF loading, extensive system commands, SOCKS proxy support, and flexible communication profiles.
+Blog: https://minorimpact.dev/posts/dark-agent-coff-loader/
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 09:55:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_413</guid></item><item><title>CDP-Enable-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/412</link><description>CDP-Enable-BOF
+After enabling CDP, you can use CDP-Toolkit to connect to the endpoint directly or through a SOCKS proxy. Its commands support enumerating open tabs, searching browser history, extracting cookies and saved passwords, capturing screenshots, listing bookmarks, managing extensions, and navigating the browser to specified websites via the Chrome DevTools Protocol APIs.
+CDP-Toolkit
+Commands:
+discover
+tabs list
+tabs screenshot
+cookies dump
+bookmarks list
+history search
+saved-passwords list
+saved-passwords dump
+extensions list
+extensions load
+page new
+page snapshot
+page close
+contexts list
+contexts dispose
+browser-takeover screencast
+browser-takeover proxy
+Blog: Return of the Cookie Monster
+This post explores enabling the Chrome DevTools Protocol (CDP) inside a running Chromium browser to perform post-ex activities such as browser enumeration, cookie theft, and browser takeover
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 09:02:13 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_412</guid></item><item><title>VHDVomit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/410</link><description>VHDVomit
 A tool to search SMB shares for VHD/VMDK/VHDX backup files, mount them and dump sensitive data including NTDS.dit, SYSTEM, and SAM hives.
 vbkVomit
 Extract hashes from Veeam .vbk backup. Reads the VBK directly, finds the NTFS volume inside, walks the MFT, reassembles ntds.dit + SAM/SECURITY/SYSTEM, and runs impacket secretsdump.

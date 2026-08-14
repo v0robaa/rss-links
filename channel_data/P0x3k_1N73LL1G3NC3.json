@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-14T05:41:22.109539+00:00",
-  "messages_count": 224,
+  "last_update": "2026-08-14T10:10:13.885655+00:00",
+  "messages_count": 226,
   "messages": [
+    {
+      "id": "413",
+      "title": "Dark Agent",
+      "text": "Dark Agent\nFully-featured Mythic C2 Agent for Linux and macOS environments. Built in Crystal with statically-linked OpenSSL, it provides comprehensive post-exploitation capabilities through COFF/BOF loading, extensive system commands, SOCKS proxy support, and flexible communication profiles.\nBlog: https://minorimpact.dev/posts/dark-agent-coff-loader/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/413",
+      "pub_date": "2026-08-14T09:55:30+00:00"
+    },
+    {
+      "id": "412",
+      "title": "CDP-Enable-BOF",
+      "text": "CDP-Enable-BOF\nAfter enabling CDP, you can use CDP-Toolkit to connect to the endpoint directly or through a SOCKS proxy. Its commands support enumerating open tabs, searching browser history, extracting cookies and saved passwords, capturing screenshots, listing bookmarks, managing extensions, and navigating the browser to specified websites via the Chrome DevTools Protocol APIs.\nCDP-Toolkit\nCommands:\ndiscover\ntabs list\ntabs screenshot\ncookies dump\nbookmarks list\nhistory search\nsaved-passwords list\nsaved-passwords dump\nextensions list\nextensions load\npage new\npage snapshot\npage close\ncontexts list\ncontexts dispose\nbrowser-takeover screencast\nbrowser-takeover proxy\nBlog: Return of the Cookie Monster\nThis post explores enabling the Chrome DevTools Protocol (CDP) inside a running Chromium browser to perform post-ex activities such as browser enumeration, cookie theft, and browser takeover\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/412",
+      "pub_date": "2026-08-14T09:02:13+00:00"
+    },
     {
       "id": "410",
       "title": "VHDVomit",
