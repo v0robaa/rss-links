@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-15T14:29:04.010463+00:00",
-  "messages_count": 252,
+  "last_update": "2026-08-15T18:37:20.077246+00:00",
+  "messages_count": 253,
   "messages": [
+    {
+      "id": "1447",
+      "title": "Демонстрация маленьких моделей Qwen 3.6 для целей анализа вредоносного ПО. В ролике используется собственная разработка под эту задачу.",
+      "text": "Демонстрация маленьких моделей Qwen 3.6 для целей анализа вредоносного ПО. В ролике используется собственная разработка под эту задачу.\nhttps://youtu.be/lTklrM6rwlw\nСнял первый и надеюсь не единственный видосик. Смотреть строго в x1.5 скорости и Качество 2К.\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1447",
+      "pub_date": "2026-08-15T14:37:21+00:00"
+    },
     {
       "id": "1446",
       "title": "Thorium is a highly scalable, distributed file analysis and result aggregation platform that enables workflow automation using commercial, open source, and custom tools.",
