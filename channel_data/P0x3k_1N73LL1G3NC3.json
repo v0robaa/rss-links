@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-15T04:37:20.010530+00:00",
-  "messages_count": 227,
+  "last_update": "2026-08-15T09:31:19.024012+00:00",
+  "messages_count": 228,
   "messages": [
+    {
+      "id": "415",
+      "title": "ChromeAlone_Transforming_a_Browser_into_a_C2_Slides_DEFCON_33_Slides.pdf",
+      "text": "ChromeAlone_Transforming_a_Browser_into_a_C2_Slides_DEFCON_33_Slides.pdf\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/415",
+      "pub_date": "2026-08-15T07:31:01+00:00"
+    },
     {
       "id": "414",
       "title": "VsockDrop",
