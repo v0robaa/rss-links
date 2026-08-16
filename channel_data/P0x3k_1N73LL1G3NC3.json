@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-16T09:32:43.316261+00:00",
-  "messages_count": 228,
+  "last_update": "2026-08-16T14:28:55.594077+00:00",
+  "messages_count": 229,
   "messages": [
+    {
+      "id": "416",
+      "title": "SCCM-CVE-2026-47301-Remote-Code-Execution",
+      "text": "SCCM-CVE-2026-47301-Remote-Code-Execution\nExploit chain (CVE-2026-47301) for Microsoft Configuration Manager (SCCM), combining a broken access, CAB arbitrary-write path traversal, certificate verification bypass, and DLL hijacking to achieve SYSTEM-level code execution.\nBlog: Microsoft Configuration Manager RCE 0-Day Exploit Chain (SCCM 𝗖𝗩𝗘-𝟮𝟬𝟮𝟲-𝟰𝟳𝟯𝟬𝟭)\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/416",
+      "pub_date": "2026-08-16T10:35:35+00:00"
+    },
     {
       "id": "415",
       "title": "ChromeAlone_Transforming_a_Browser_into_a_C2_Slides_DEFCON_33_Slides.pdf",
