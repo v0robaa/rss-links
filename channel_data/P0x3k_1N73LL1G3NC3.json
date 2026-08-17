@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-17T04:50:23.995030+00:00",
-  "messages_count": 229,
+  "last_update": "2026-08-17T09:49:29.086341+00:00",
+  "messages_count": 230,
   "messages": [
+    {
+      "id": "417",
+      "title": "🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)",
+      "text": "🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)\nUnauthenticated heap overflow in SAML signature canonicalization. An oversized PrefixList inside the <ds:SignedInfo> InclusiveNamespaces element overflows a fixed-size buffer, corrupting adjacent nsb chunk metadata. This yields a write-what-where primitive (controlled memcpy src/dst), allowing overwrite of tx_pkt_complete_fptr and jump to attacker shellcode on the executable heap. Results in root RCE when NetScaler is configured as SAML SP or IdP.\nAffected: NetScaler ADC/Gateway 14.1 < 14.1-72.61 and 13.1 < 13.1-63.18\n🔗 Research:\nhttps://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/\n🔗 Source:\nhttps://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452\n#citrix #netscaler #rce #preauth #saml #heapoverflow\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/417",
+      "pub_date": "2026-08-17T07:32:14+00:00"
+    },
     {
       "id": "416",
       "title": "SCCM-CVE-2026-47301-Remote-Code-Execution",

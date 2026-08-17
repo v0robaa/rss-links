@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 16 Aug 2026 10:35:35 +0000</lastBuildDate><item><title>SCCM-CVE-2026-47301-Remote-Code-Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/416</link><description>SCCM-CVE-2026-47301-Remote-Code-Execution
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 17 Aug 2026 07:32:14 +0000</lastBuildDate><item><title>🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/417</link><description>🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)
+Unauthenticated heap overflow in SAML signature canonicalization. An oversized PrefixList inside the &lt;ds:SignedInfo&gt; InclusiveNamespaces element overflows a fixed-size buffer, corrupting adjacent nsb chunk metadata. This yields a write-what-where primitive (controlled memcpy src/dst), allowing overwrite of tx_pkt_complete_fptr and jump to attacker shellcode on the executable heap. Results in root RCE when NetScaler is configured as SAML SP or IdP.
+Affected: NetScaler ADC/Gateway 14.1 &lt; 14.1-72.61 and 13.1 &lt; 13.1-63.18
+🔗 Research:
+https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/
+🔗 Source:
+https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452
+#citrix #netscaler #rce #preauth #saml #heapoverflow
+
+[Media: Фото]</description><pubDate>Mon, 17 Aug 2026 07:32:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_417</guid></item><item><title>SCCM-CVE-2026-47301-Remote-Code-Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/416</link><description>SCCM-CVE-2026-47301-Remote-Code-Execution
 Exploit chain (CVE-2026-47301) for Microsoft Configuration Manager (SCCM), combining a broken access, CAB arbitrary-write path traversal, certificate verification bypass, and DLL hijacking to achieve SYSTEM-level code execution.
 Blog: Microsoft Configuration Manager RCE 0-Day Exploit Chain (SCCM 𝗖𝗩𝗘-𝟮𝟬𝟮𝟲-𝟰𝟳𝟯𝟬𝟭)
 
