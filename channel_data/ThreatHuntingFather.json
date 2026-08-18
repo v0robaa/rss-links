@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-18T14:39:04.355662+00:00",
-  "messages_count": 253,
+  "last_update": "2026-08-18T18:47:21.521119+00:00",
+  "messages_count": 254,
   "messages": [
+    {
+      "id": "1448",
+      "title": "https://youtu.be/U2UBJRcEO-Y",
+      "text": "https://youtu.be/U2UBJRcEO-Y",
+      "link": "https://t.me/ThreatHuntingFather/1448",
+      "pub_date": "2026-08-18T15:19:45+00:00"
+    },
     {
       "id": "1447",
       "title": "Демонстрация маленьких моделей Qwen 3.6 для целей анализа вредоносного ПО. В ролике используется собственная разработка под эту задачу.",
