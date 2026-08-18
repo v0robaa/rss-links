@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Tue, 18 Aug 2026 04:41:00 +0000</lastBuildDate><item><title>17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.</title><link>https://t.me/gardendetective/49</link><description>#cybercamp2026 #leto
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Tue, 18 Aug 2026 09:39:07 +0000</lastBuildDate><item><title>Немного новостей:</title><link>https://t.me/gardendetective/50</link><description>#events #blog
+Немного новостей:
+🔵 21 августа, 15:00–15:30: буду выступать на конференции OFFZONE 2026 с докладом «Jump Lists: Your Trace, My Trap».
+Jump Lists — артефакт, хорошо знакомый каждому DFIR‑специалисту. По нему восстанавливают хронологию действий пользователя, находят следы открытия файлов/каталогов и выявляют подозрительную активность. Но что, если посмотреть на него с другой стороны — глазами offensive‑специалиста?
+Уже на этой неделе, приходите 🚪
+🔵 4 сентября, 12:15–12:35: другое мероприятие — Moscow Forensics Day 2026, где я представлю доклад «DFIR vs WSL: цифровая криминалистика на стыке миров».
+🔵 Также подал доклад на ZeroNights 2026 и теперь в ожидании результатов от CFP комитета (если примут, то снова поговорим про обход «песочниц»).
+🔴 Ну и конечно, советую прочитать новую статью от Лаборатории F6, вышедшую сегодня. Там мы разбираем TTPs группировки GOFFEE (Paper Werewolf), которые встретили в рамках IR.
+Про данную APT-группировку мы с Иваном Груздом ещё рассказывали на летнем фестивале CyberCamp (ссылка 💻).
+
+[Media: Фото]</description><pubDate>Tue, 18 Aug 2026 07:12:23 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_50</guid></item><item><title>17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.</title><link>https://t.me/gardendetective/49</link><description>#cybercamp2026 #leto
 17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.
 🔵 На сцене докладов: «Чтобы найти атакующего, иногда приходится провести двадцать лет вместе © кибербарон Мюнхгаузен»
 Рассмотрим хронологию затяжной APT-атаки. Вы узнаете, как хакеры годами оставались незамеченными, какие техники закрепления использовали и как скрывали сетевые следы. Имя этой группировки пока держим в секрете, но масштаб вас впечатлит.
@@ -20,7 +30,7 @@
 ➖ использование Obsidian CLI;
 ➖ PoC описанного в докладе сценария (хорошее закрепление для любителей оставлять свои "заметки").
 *️⃣код PoC (когда-нибудь я буду нормально оформлять репозитории, но это не точно 🥳);
-*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Tue, 18 Aug 2026 04:41:00 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
+*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Tue, 18 Aug 2026 09:39:07 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
 🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем — контр-криминалистические методы. 🚪
 *️⃣Ссылка на презентацию.
 🔵 Отдельно хочу отметить организацию конференции и выступления других спикеров — всё было на высшем уровне. 🏖
