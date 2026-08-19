@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-19T14:39:27.741110+00:00",
-  "messages_count": 231,
+  "last_update": "2026-08-19T18:42:49.542087+00:00",
+  "messages_count": 233,
   "messages": [
+    {
+      "id": "420",
+      "title": "Synology-Inventory-Decryptor",
+      "text": "Synology-Inventory-Decryptor\nA post-exploitation tool that instantly decrypts all credentials stored in Synology Active Backup for Business (ABB) config.db, yielding plaintext passwords for ESXi, vCenter, Hyper-V, Windows/Linux servers, MSSQL, and Oracle databases. Tested only on a Synology DS920+ NAS.\nBlog: https://blog.offseclabs.tech/posts/synology-active-backup-decrypting-inventory-credentials/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/420",
+      "pub_date": "2026-08-19T17:51:22+00:00"
+    },
+    {
+      "id": "419",
+      "title": "BOFScale",
+      "text": "BOFScale\nA collection of BOF-PE's that allow running tailscale from memory. A CDN-fronted tailnet from a BOF-PE. The entire Tailscale daemon runs inside the implant process with no driver, no service, no disk state, and no child processes. Traffic relays over standard RFC 6455 WebSockets, so both DERP relay servers and the control plane can sit behind CloudFront or Fastly without any special handling.\nBlog: https://www.netspi.com/blog/technical-blog/red-teaming/bofscale-a-cdn-fronted-tailnet-from-a-bof-pe/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/419",
+      "pub_date": "2026-08-19T17:40:01+00:00"
+    },
     {
       "id": "418",
       "title": "NachoMDM - Weaponising Windows MDM for UAC Bypass and SYSTEM Execution via Malicious Enrollment",
