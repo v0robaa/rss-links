@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-19T09:39:27.558090+00:00",
-  "messages_count": 230,
+  "last_update": "2026-08-19T14:39:27.741110+00:00",
+  "messages_count": 231,
   "messages": [
+    {
+      "id": "418",
+      "title": "NachoMDM - Weaponising Windows MDM for UAC Bypass and SYSTEM Execution via Malicious Enrollment",
+      "text": "NachoMDM - Weaponising Windows MDM for UAC Bypass and SYSTEM Execution via Malicious Enrollment\nIn this post, we detail our research into the Windows MDM enrolment protocol and demonstrate how a malicious MDM server can be weaponized to achieve a User Account Control (UAC) bypass and silent NT AUTHORITY\\SYSTEM code execution with two clicks. By coaxing a user who is a member of the local administrators group into enrolling their device, an attacker can fully compromise the endpoint without triggering any UAC prompts.\nPOC: https://github.com/AmberWolfCyber/NachoMDM\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/418",
+      "pub_date": "2026-08-19T11:08:05+00:00"
+    },
     {
       "id": "417",
       "title": "🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)",
