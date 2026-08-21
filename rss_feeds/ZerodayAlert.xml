@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 19 Aug 2026 10:16:21 +0000</lastBuildDate><item><title>[20 августа] Как защищать ИИ-агентов с доступом к коду и проду? 💻</title><link>https://t.me/ZerodayAlert/800</link><description>[20 августа] Как защищать ИИ-агентов с доступом к коду и проду? 💻
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 05:46:20 +0000</lastBuildDate><item><title>Подтверждена эксплуатация новой уязвимости в Windows</title><link>https://t.me/ZerodayAlert/801</link><description>Подтверждена эксплуатация новой уязвимости в Windows
+Уязвимость CVE-2026-33824 (10.0 Critical) находится в расширениях службы IKE, которую Windows использует при установлении защищённых сетевых соединений. Для атаки не требуются учётные данные — достаточно отправить пакеты по UDP-портам 500 и 4500.
+Microsoft закрыла уязвимость ещё в апреле 2026 года, но не обновлённые системы остаются под угрозой. 18 августа подтвердилось, что проблему уже используют атакующие.
+Федеральным ведомствам США дали три дня на устранение, остальным организациям рекомендуют установить обновление как можно скорее. Если это невозможно, стоит заблокировать порты 500 и 4500 или ограничить доступ известными узлами.
+#windows #уязвимость #кибербезопасность #IKE
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 21 Aug 2026 05:46:20 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_801</guid></item><item><title>[20 августа] Как защищать ИИ-агентов с доступом к коду и проду? 💻</title><link>https://t.me/ZerodayAlert/800</link><description>[20 августа] Как защищать ИИ-агентов с доступом к коду и проду? 💻
 Что произойдёт, если агент примет текст из pull request за команду? Получит избыточные права через MCP? Обойдёт guardrails или передаст наружу чувствительные данные?
 20 августа в 19:00 МСК на бесплатном онлайн-эфире разберём, что ломается, когда ИИ получает доступ к корпоративной инфраструктуре, и как выстроить защиту.
 Это будет не обычный доклад по слайдам, а разговор двух практиков с разбором реальных кейсов и ответами на вопросы участников.

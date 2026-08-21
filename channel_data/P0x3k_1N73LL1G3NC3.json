@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-21T04:45:32.488598+00:00",
-  "messages_count": 233,
+  "last_update": "2026-08-21T09:42:55.166097+00:00",
+  "messages_count": 234,
   "messages": [
+    {
+      "id": "421",
+      "title": "SSHDESK",
+      "text": "SSHDESK\nA full interactive remote desktop delivered entirely through SSH and displayed directly in your terminal. OpenSSH authenticates the user and launches SSHDESK as a forced command. The active graphical desktop then appears inside that same terminal. Keyboard, mouse, resize events, changed pixels, and session cleanup all travel through the one SSH PTY. There is no browser, custom SSH client, VNC/RDP listener, second password database, web server, or additional network port.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/421",
+      "pub_date": "2026-08-21T08:41:41+00:00"
+    },
     {
       "id": "420",
       "title": "Synology-Inventory-Decryptor",
