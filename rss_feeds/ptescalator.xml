@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 09:43:15 +0000</lastBuildDate><item><title>DragonDoll: матрешка в мире Android-шпионов 🪆</title><link>https://t.me/ptescalator/769</link><description>DragonDoll: матрешка в мире Android-шпионов 🪆
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 13:46:21 +0000</lastBuildDate><item><title>Минус один пернатый вор — плюс сто очков рейтинга! 😵</title><link>https://t.me/ptescalator/770</link><description>Минус один пернатый вор — плюс сто очков рейтинга! 😵
+Команда Threat Intelligence экспертного центра безопасности Positive Technologies обнаружила кампанию восточноазиатской группировки FamousSparrow. Группировка использовала новый бэкдор, который мы назвали SquawkDoor, а также новую версию известного бэкдора SparrowDoor 🏴‍☠️
+Группировка встраивала вредоносные JS-скрипты на сайты из разных стран. Они показывали пользователю якобы ошибку сертификата на определенном языке и предлагали скачать новый сертификат, который являлся MSI-файлом и приводил к заражению вредоносным бэкдором.
+😳 Мы проанализировали бэкдоры: подробно показали новый SquawkDoor и провели детальный анализ отличий нового SparrowDoor от старой версии, а также связанных с ними HemiGate, TernDoor и CrowDoor.
+Помимо этого, мы нашли различные пересечения с другими злоумышленниками из Восточной Азии. Также в процессе анализа мы обнаружили связанного с группой пентестера, который готовил атаки.
+О том, какие приложения ранее взламывал злоумышленник и какие у него фетиши — читайте в нашем блоге 😏
+#TI #APT #Malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Fri, 21 Aug 2026 13:46:21 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_770</guid></item><item><title>DragonDoll: матрешка в мире Android-шпионов 🪆</title><link>https://t.me/ptescalator/769</link><description>DragonDoll: матрешка в мире Android-шпионов 🪆
 В начале этой весны специалисты PT ESC обнаружили неизвестный ранее APK-файл, загруженный из Саудовской Аравии. Сам образец содержал много приемов Defense Evasion.
 Для усложнения анализа было использовано:
 • 1 техника BadPack

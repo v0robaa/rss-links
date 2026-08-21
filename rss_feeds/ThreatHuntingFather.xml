@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 06:06:42 +0000</lastBuildDate><item><title>🔴 SilkParasite: новая China-nexus APT-кампания в Центральной Азии</title><link>https://t.me/ThreatHuntingFather/1452</link><description>🔴 SilkParasite: новая China-nexus APT-кампания в Центральной Азии
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 10:04:53 +0000</lastBuildDate><item><title>Форензики есть?</title><link>https://t.me/ThreatHuntingFather/1453</link><description>Форензики есть?
+Вышла таблица сравнения инструментов форензики за 2026 - тринадцать продуктов, от нуля до миллиона с лишним.
+Autopsy, Velociraptor и KAPE закрывают почти всё, за что просят деньги остальные. Разница - в скорости и отчётах.
+Чем пользуетесь? И где бесплатный стек у вас упёрся так, что пришлось брать лицензию.
+1️⃣Сравнение CyberTriage 🔗 https://www.cybertriage.com/blog/computer-forensic-tools-comparison-chart-2026/
+2️⃣ Каталог SANS https://www.sans.org/tools?refinementList%5Bfacets.focusArea%5D%5B0%5D=Digital%20Forensics%20and%20Incident%20Response
+3️⃣ Awesome list https://github.com/meirwah/awesome-incident-response#windows-evidence-collection</description><pubDate>Fri, 21 Aug 2026 10:04:53 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1453</guid></item><item><title>🔴 SilkParasite: новая China-nexus APT-кампания в Центральной Азии</title><link>https://t.me/ThreatHuntingFather/1452</link><description>🔴 SilkParasite: новая China-nexus APT-кампания в Центральной Азии
 Bitdefender Labs опубликовали исследование SilkParasite — кибершпионской операции, нацеленной на государственные организации Центральной Азии. Исследователи с средней степенью уверенности связывают активность с китайской APT-экосистемой.
 Самое интересное — не просто количество найденного malware, а качество и архитектура инструментария:
 • обнаружено 7 семейств RAT, из которых 5 ранее не документировались: DriveSilkRAT, CookiETagRAT, NomadRAT, GoginRAT и NodeEdgeRAT;

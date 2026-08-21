@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-21T09:43:02.854937+00:00",
-  "messages_count": 258,
+  "last_update": "2026-08-21T14:40:55.515363+00:00",
+  "messages_count": 259,
   "messages": [
+    {
+      "id": "1453",
+      "title": "Форензики есть?",
+      "text": "Форензики есть?\nВышла таблица сравнения инструментов форензики за 2026 - тринадцать продуктов, от нуля до миллиона с лишним.\nAutopsy, Velociraptor и KAPE закрывают почти всё, за что просят деньги остальные. Разница - в скорости и отчётах.\nЧем пользуетесь? И где бесплатный стек у вас упёрся так, что пришлось брать лицензию.\n1️⃣Сравнение CyberTriage 🔗 https://www.cybertriage.com/blog/computer-forensic-tools-comparison-chart-2026/\n2️⃣ Каталог SANS https://www.sans.org/tools?refinementList%5Bfacets.focusArea%5D%5B0%5D=Digital%20Forensics%20and%20Incident%20Response\n3️⃣ Awesome list https://github.com/meirwah/awesome-incident-response#windows-evidence-collection",
+      "link": "https://t.me/ThreatHuntingFather/1453",
+      "pub_date": "2026-08-21T10:04:53+00:00"
+    },
     {
       "id": "1452",
       "title": "🔴 SilkParasite: новая China-nexus APT-кампания в Центральной Азии",
