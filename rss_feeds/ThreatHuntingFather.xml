@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 10:04:53 +0000</lastBuildDate><item><title>Форензики есть?</title><link>https://t.me/ThreatHuntingFather/1453</link><description>Форензики есть?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 22 Aug 2026 14:13:32 +0000</lastBuildDate><item><title>Большой тест локальный моделей на задачах реверса! Новое видео! 🎉</title><link>https://t.me/ThreatHuntingFather/1454</link><description>Большой тест локальный моделей на задачах реверса! Новое видео! 🎉
+https://youtu.be/Kx1ijm7g0-8
+Друзья! Я записал очередное (второе) видео для YouTube, как и обещал, в котором показал работу локальных моделей при анализе сложного образца вредоносного ПО. Прогнал 11 моделей через один и тот же образец (полнофункциональный Rust RAT с C2, stealer, persist, inject и десятком модулей). Оценка по чеклисту на 32 технических критерия и честная оценка того, что модель нашла в отчёте, а что выдумала или пропустила.  Образец намеренно тяжёлый: большой диспетчер команд, WinHTTP beacon, DPAPI/BCrypt для браузеров, реестр, SCM, SOCKS5, clipper, ransomware-модуль и много Rust-runtime шума, который легко спутать с вредоносной логикой.
+Бонусом в видео показана моя HomeLab, описаны проекты, которые на ней крутятся и железо. Также описана работа с LLVM IR, лифтингу функций и как мой custom malware analysis harness работает с тяжелыми функциями!
+Так ли хорош Qwen3.8-27B? 😱
+Список моделей, которые тестировались:
+Anthropic: Claude Sonnet 5 — API (OpenRouter)
+GLM-4.7-Flash-NVFP4 — NVFP4 (vLLM)
+Ornith-1.5-35B-A3B-NVFP4 — NVFP4 (vLLM)
+Qwen3.6-35B-A3B-NVFP4 — NVFP4 (vLLM)
+Qwen3.6-35B-A3B-Claude-Opus-Distilled-NVFP4 — NVFP4 (vLLM)
+Qwen3.8-27B-NVFP4 — NVFP4 (vLLM)
+Qwen3.8-27B-Uncensored-Cyber — GGUF Q4_K_M (llama.cpp)
+Muse-Glimmer-30B-NVFP4 — NVFP4 (vLLM)
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 — NVFP4 (vLLM)
+Qwen3.6-27B-MTP-GGUF — GGUF Q4_K_XL (llama.cpp)
+Ternary-Bonsai-27B-Q2_0 — GGUF Q2_0 (llama.cpp)
+Чеклисты и отчеты каждой модели (https://www.orderofsixangles.com/hard-sample/index.html)
+Malware Analysis harness (https://github.com/thatskriptkid/re-harness)
+Таймкоды имеются! ❤️
+
+[Media: Фото]</description><pubDate>Sat, 22 Aug 2026 14:13:32 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1454</guid></item><item><title>Форензики есть?</title><link>https://t.me/ThreatHuntingFather/1453</link><description>Форензики есть?
 Вышла таблица сравнения инструментов форензики за 2026 - тринадцать продуктов, от нуля до миллиона с лишним.
 Autopsy, Velociraptor и KAPE закрывают почти всё, за что просят деньги остальные. Разница - в скорости и отчётах.
 Чем пользуетесь? И где бесплатный стек у вас упёрся так, что пришлось брать лицензию.

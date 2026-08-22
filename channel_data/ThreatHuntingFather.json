@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-22T09:32:48.096157+00:00",
-  "messages_count": 259,
+  "last_update": "2026-08-22T14:27:46.679895+00:00",
+  "messages_count": 260,
   "messages": [
+    {
+      "id": "1454",
+      "title": "Большой тест локальный моделей на задачах реверса! Новое видео! 🎉",
+      "text": "Большой тест локальный моделей на задачах реверса! Новое видео! 🎉\nhttps://youtu.be/Kx1ijm7g0-8\nДрузья! Я записал очередное (второе) видео для YouTube, как и обещал, в котором показал работу локальных моделей при анализе сложного образца вредоносного ПО. Прогнал 11 моделей через один и тот же образец (полнофункциональный Rust RAT с C2, stealer, persist, inject и десятком модулей). Оценка по чеклисту на 32 технических критерия и честная оценка того, что модель нашла в отчёте, а что выдумала или пропустила.  Образец намеренно тяжёлый: большой диспетчер команд, WinHTTP beacon, DPAPI/BCrypt для браузеров, реестр, SCM, SOCKS5, clipper, ransomware-модуль и много Rust-runtime шума, который легко спутать с вредоносной логикой.\nБонусом в видео показана моя HomeLab, описаны проекты, которые на ней крутятся и железо. Также описана работа с LLVM IR, лифтингу функций и как мой custom malware analysis harness работает с тяжелыми функциями!\nТак ли хорош Qwen3.8-27B? 😱\nСписок моделей, которые тестировались:\nAnthropic: Claude Sonnet 5 — API (OpenRouter)\nGLM-4.7-Flash-NVFP4 — NVFP4 (vLLM)\nOrnith-1.5-35B-A3B-NVFP4 — NVFP4 (vLLM)\nQwen3.6-35B-A3B-NVFP4 — NVFP4 (vLLM)\nQwen3.6-35B-A3B-Claude-Opus-Distilled-NVFP4 — NVFP4 (vLLM)\nQwen3.8-27B-NVFP4 — NVFP4 (vLLM)\nQwen3.8-27B-Uncensored-Cyber — GGUF Q4_K_M (llama.cpp)\nMuse-Glimmer-30B-NVFP4 — NVFP4 (vLLM)\nNVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 — NVFP4 (vLLM)\nQwen3.6-27B-MTP-GGUF — GGUF Q4_K_XL (llama.cpp)\nTernary-Bonsai-27B-Q2_0 — GGUF Q2_0 (llama.cpp)\nЧеклисты и отчеты каждой модели (https://www.orderofsixangles.com/hard-sample/index.html)\nMalware Analysis harness (https://github.com/thatskriptkid/re-harness)\nТаймкоды имеются! ❤️\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1454",
+      "pub_date": "2026-08-22T14:13:32+00:00"
+    },
     {
       "id": "1453",
       "title": "Форензики есть?",
