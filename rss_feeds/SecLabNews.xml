@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sun, 23 Aug 2026 14:29:11 +0000</lastBuildDate><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/18078</link><description>🆕 Еженедельный обзор киберновостей
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sun, 23 Aug 2026 18:37:53 +0000</lastBuildDate><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/18078</link><description>🆕 Еженедельный обзор киберновостей
 Неделя прошла под знаком двух больших обвалов: в России рухнул крупный кусок Рунета из-за аварии с электричеством у М9, а в мире Вашингтон разрешил частным компаниям атаковать зарубежные сети — всё, что формально не считается актом войны, теперь легально. Мы — собрали самые интересные новости недели в одном месте, чтобы вы ничего не пропустили.
 🔥 В мире
 Белый дом подписал указ, фактически легализовавший наступательные кибероперации частных подрядчиков против зарубежных сетей.
@@ -53,14 +53,14 @@ Visa получила отчет об ошибке больше года наз�
 #Кибербез #Visa #NFC
 @SecLabNews
 
-[Media: Видео]</description><pubDate>Sun, 23 Aug 2026 14:29:11 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18075</guid></item><item><title>Comcast превратила Wi-Fi в бесплатный датчик движения без единой камеры</title><link>https://t.me/SecLabNews/18074</link><description>Comcast превратила Wi-Fi в бесплатный датчик движения без единой камеры
+[Media: Видео]</description><pubDate>Sun, 23 Aug 2026 18:37:53 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18075</guid></item><item><title>Comcast превратила Wi-Fi в бесплатный датчик движения без единой камеры</title><link>https://t.me/SecLabNews/18074</link><description>Comcast превратила Wi-Fi в бесплатный датчик движения без единой камеры
 Провайдер Comcast решил превратить обычный Wi-Fi в невидимый радар. Компания встроила функцию WiFi Motion внутрь платформы Xfinity Shield. Суть проста до безобразия. Сигнал между роутером и неподвижной умной колонкой работает как «растяжка». Проходишь сквозь радиоволны, радиочастоты искажаются, а приложение сразу предупреждает о движении в комнате. Больше никаких камер в каждом углу.
 Звучит как крутой киберпанк, где можно настроить чувствительность и отфильтровать питомцев весом до 18 килограммов. Только алгоритм заодно перестает замечать маленьких детей, поэтому радионяню технология пока не заменит. Зато корпоративные юристы заботливо разрешили передавать полиции историю перемещений по первому официальному запросу. Система лиц не распознает, но четко фиксирует, как люди ходят по квартире.
 Индустрия безопасности уже почувствовала перспективы и начала активно внедрять стандарт IEEE 802.11bf-2025. Совсем недавно корпорация ADT заплатила 170 миллионов долларов за профильный стартап Origin Wireless, чтобы развивать похожие технологии. Очень скоро маршрутизатор перестанет быть просто коробкой с антеннами и станет главным сенсором умного дома.
 #WiFiMotion #IoT #Приватность
 @SecLabNews
 
-[Media: Видео]</description><pubDate>Sun, 23 Aug 2026 14:29:11 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18074</guid></item><item><title>Message 18073</title><link>https://t.me/SecLabNews/18073</link><description>
+[Media: Видео]</description><pubDate>Sun, 23 Aug 2026 18:37:53 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18074</guid></item><item><title>Message 18073</title><link>https://t.me/SecLabNews/18073</link><description>
 
 [Media: Видео]</description><pubDate>Sun, 23 Aug 2026 09:33:53 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18073</guid></item><item><title>Топовый CISO с кусачками против китайских хакеров. Как спасали T-Mobile</title><link>https://t.me/SecLabNews/18072</link><description>Топовый CISO с кусачками против китайских хакеров. Как спасали T-Mobile
 Представьте картину. Индустрия заливает миллиарды в модный Zero Trust и искусственный интеллект, а директор по безопасности T-Mobile Джефф Саймон берет трех инженеров и мчит в дата-центр в Белвью с кусачками наперевес. Задача предельно конкретная: физически перекусить сетевой кабель. Только так удалось вышвырнуть из сети группировку Salt Typhoon, которая проникла внутрь через скомпрометированного стороннего провайдера.
