@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-24T09:54:28.647022+00:00",
-  "messages_count": 234,
+  "last_update": "2026-08-24T14:48:40.178614+00:00",
+  "messages_count": 235,
   "messages": [
+    {
+      "id": "422",
+      "title": "CrystalPotato",
+      "text": "CrystalPotato\nA Crystal port of GodPotato, a local privilege escalation tool that abuses the DCOM OXID Resolver and named pipe impersonation to escalate from service accounts with SeImpersonatePrivilege to NT AUTHORITY\\SYSTEM.\nThe main contribution of this port beyond the language change is a set of OPSEC improvements designed to reduce the binary’s signature surface.\nBlog: https://ricardojoserf.github.io/crystalpotato/\n• GodPotato - Original C#\n• RustPotato - Rust implementation\n• SigmaPotato - C# implementation\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/422",
+      "pub_date": "2026-08-24T13:08:23+00:00"
+    },
     {
       "id": "421",
       "title": "SSHDESK",

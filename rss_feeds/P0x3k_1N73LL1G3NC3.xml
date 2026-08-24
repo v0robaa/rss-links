@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 21 Aug 2026 08:41:41 +0000</lastBuildDate><item><title>SSHDESK</title><link>https://t.me/P0x3k_1N73LL1G3NC3/421</link><description>SSHDESK
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 24 Aug 2026 13:08:23 +0000</lastBuildDate><item><title>CrystalPotato</title><link>https://t.me/P0x3k_1N73LL1G3NC3/422</link><description>CrystalPotato
+A Crystal port of GodPotato, a local privilege escalation tool that abuses the DCOM OXID Resolver and named pipe impersonation to escalate from service accounts with SeImpersonatePrivilege to NT AUTHORITY\SYSTEM.
+The main contribution of this port beyond the language change is a set of OPSEC improvements designed to reduce the binary’s signature surface.
+Blog: https://ricardojoserf.github.io/crystalpotato/
+• GodPotato - Original C#
+• RustPotato - Rust implementation
+• SigmaPotato - C# implementation
+
+[Media: Фото]</description><pubDate>Mon, 24 Aug 2026 13:08:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_422</guid></item><item><title>SSHDESK</title><link>https://t.me/P0x3k_1N73LL1G3NC3/421</link><description>SSHDESK
 A full interactive remote desktop delivered entirely through SSH and displayed directly in your terminal. OpenSSH authenticates the user and launches SSHDESK as a forced command. The active graphical desktop then appears inside that same terminal. Keyboard, mouse, resize events, changed pixels, and session cleanup all travel through the one SSH PTY. There is no browser, custom SSH client, VNC/RDP listener, second password database, web server, or additional network port.
 
 [Media: Видео]</description><pubDate>Fri, 21 Aug 2026 08:41:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_421</guid></item><item><title>Synology-Inventory-Decryptor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/420</link><description>Synology-Inventory-Decryptor
