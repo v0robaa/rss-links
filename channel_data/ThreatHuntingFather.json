@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-24T18:49:23.236711+00:00",
-  "messages_count": 260,
+  "last_update": "2026-08-25T04:45:04.022304+00:00",
+  "messages_count": 261,
   "messages": [
+    {
+      "id": "1455",
+      "title": "https://malext.io/",
+      "text": "https://malext.io/",
+      "link": "https://t.me/ThreatHuntingFather/1455",
+      "pub_date": "2026-08-25T03:26:09+00:00"
+    },
     {
       "id": "1454",
       "title": "Большой тест локальный моделей на задачах реверса! Новое видео! 🎉",
