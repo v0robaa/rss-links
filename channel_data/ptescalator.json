@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-08-26T04:46:46.653084+00:00",
-  "messages_count": 157,
+  "last_update": "2026-08-26T09:49:33.906479+00:00",
+  "messages_count": 158,
   "messages": [
+    {
+      "id": "771",
+      "title": "Message 771",
+      "text": "",
+      "link": "https://t.me/ptescalator/771",
+      "pub_date": "2026-08-26T09:33:34+00:00"
+    },
     {
       "id": "770",
       "title": "Минус один пернатый вор — плюс сто очков рейтинга! 😵",
