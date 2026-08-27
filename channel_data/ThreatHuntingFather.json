@@ -1,8 +1,29 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-08-26T19:54:45.949274+00:00",
-  "messages_count": 261,
+  "last_update": "2026-08-27T15:06:04.701471+00:00",
+  "messages_count": 264,
   "messages": [
+    {
+      "id": "1458",
+      "title": "Message 1458",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1458",
+      "pub_date": "2026-08-27T14:36:27+00:00"
+    },
+    {
+      "id": "1457",
+      "title": "🤖🤖🤖🤖🤖🤖🤖🤖",
+      "text": "🤖🤖🤖🤖🤖🤖🤖🤖\nhttps://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "link": "https://t.me/ThreatHuntingFather/1457",
+      "pub_date": "2026-08-27T11:53:45+00:00"
+    },
+    {
+      "id": "1456",
+      "title": "Philippine Nuclear Agency and Naval Contractor Targeted ☢️",
+      "text": "Philippine Nuclear Agency and Naval Contractor Targeted ☢️\nHunt.io platform flagged an open directory in August staging active intrusion tooling and exfiltrated data from two Philippine organizations - a nuclear research body and a marine engineering company contracted to the Philippine Navy.\n📌ownCloud compromised via CVE-2023-49105 - the pre-signed URL mechanism accepted an empty signing secret, which is the default state on new installs, allowing unauthenticated WebDAV file retrieval\n📌176 files totaling ~372 MB staged across five folders: reactor core component databases, fuel inventories, radiation safety docs, employee PII, BitLocker keys, and KeePass databases. A CSV on the server references ~9 GB marked as exfiltrated - most not visible in the directory\n📌Naval contractor hit via CVE-2024-28000 (LiteSpeed Cache privilege escalation) and XML-RPC brute force using rockyou.txt - both paths produced unauthorized access independently\n📌192 MB ZKTeco BioTime SQL dump with references to multiple affiliated Philippine science and research organizations\n📌Simplified Chinese in script docstrings, log markers, and staging folder names throughout\n📌A separate, possibly unrelated EtherHiding compromise was also active on the same WordPress site - a NoChain loader pulling from an Ethereum smart contract. A HuntSQL query on the contract address returned 174 unique IPs hosting likely compromised pages with the same loader strings\nFull research and IOCs: https://hunt.io/blog/chinese-speaking-operator-philippine-nuclear-naval-contractor",
+      "link": "https://t.me/ThreatHuntingFather/1456",
+      "pub_date": "2026-08-27T02:44:47+00:00"
+    },
     {
       "id": "1455",
       "title": "https://malext.io/",
