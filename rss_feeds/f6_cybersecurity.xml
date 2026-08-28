@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 27 Aug 2026 07:11:19 +0000</lastBuildDate><item><title>Теневой сервис nulltrace заблокирован по обращению CERT F6.</title><link>https://t.me/f6_cybersecurity/4355</link><description>Теневой сервис nulltrace заблокирован по обращению CERT F6.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Fri, 28 Aug 2026 12:00:47 +0000</lastBuildDate><item><title>❗️ Киберразведка для ритейла: как применять данные Threat Intelligence.</title><link>https://t.me/f6_cybersecurity/4357</link><description>❗️ Киберразведка для ритейла: как применять данные Threat Intelligence.
+Понимание ландшафта киберугроз помогает компании отделять общий информационный фон от действительно релевантных угроз и грамотно распределять ресурсы ИБ-команды.
+В новой статье на примере ритейла и e-commerce разбираем ⬇️
+▪️ какие признаки подготовки атаки можно обнаружить во внешних источниках;
+▪️ к чему могут привести фишинг, компрометация подрядчика и утечка данных — с привязкой к MITRE ATT&amp;CK;
+▪️ как использовать данные TI вместе с SIEM и другими средствами защиты;
+▪️ как перевести найденный сигнал в конкретное действие команды ИБ.
+➡️ Что можно увидеть до инцидента и как использовать эти данные на практике — разбираем в статье.
+
+[Media: Фото]</description><pubDate>Fri, 28 Aug 2026 12:00:47 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4357</guid></item><item><title>👀 Как подготовить телефон ребенка к 1 сентября?</title><link>https://t.me/f6_cybersecurity/4356</link><description>👀 Как подготовить телефон ребенка к 1 сентября?
+Форма и канцтовары куплены, рюкзак собран. Но есть еще один неочевидный пункт подготовки ребенка к школе — его смартфон. Гаджеты помогают детям учиться, оставаться на связи с родителями и друзьями, но одновременно открывают доступ ко множеству цифровых рисков.
+➡️ Как настроить телефон так, чтобы защитить ребенка от основных угроз — рассказывает эксперт F6 и отец двоих детей Сергей Золотухин.</description><pubDate>Fri, 28 Aug 2026 07:15:01 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4356</guid></item><item><title>Теневой сервис nulltrace заблокирован по обращению CERT F6.</title><link>https://t.me/f6_cybersecurity/4355</link><description>Теневой сервис nulltrace заблокирован по обращению CERT F6.
 🔍 Что такое nulltrace?
 Этот сервис предлагал услуги регистрации доменов в российских зонах без верификации — фактически обслуживал интересы киберпреступников, которые могли анонимно регистрировать сайты для скама, фишинга и др.
 ⛔️ Как удалось его заблокировать?
