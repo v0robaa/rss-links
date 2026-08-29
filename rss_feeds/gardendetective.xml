@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sat, 29 Aug 2026 17:37:38 +0000</lastBuildDate><item><title>🔵 Время уже выложить презентацию доклада «Jump Lists: Your Trace, My Trap», который был на треке Threat.Zone 🥴</title><link>https://t.me/gardendetective/51</link><description>#offzone2026
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sat, 29 Aug 2026 20:47:36 +0000</lastBuildDate><item><title>🔵 Время уже выложить презентацию доклада «Jump Lists: Your Trace, My Trap», который был на треке Threat.Zone 🥴</title><link>https://t.me/gardendetective/51</link><description>#offzone2026
 🔵 Время уже выложить презентацию доклада «Jump Lists: Your Trace, My Trap», который был на треке Threat.Zone 🥴
 *что-то там про криминалистический артефакт Jump Lists и то, как он может быть использован атакующими, пентестерами или Red Team*
 💻 Ссылка на презентацию
@@ -35,7 +35,7 @@ Jump Lists — артефакт, хорошо знакомый каждому DF
 ➖ использование Obsidian CLI;
 ➖ PoC описанного в докладе сценария (хорошее закрепление для любителей оставлять свои "заметки").
 *️⃣код PoC (когда-нибудь я буду нормально оформлять репозитории, но это не точно 🥳);
-*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sat, 29 Aug 2026 17:37:38 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
+*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sat, 29 Aug 2026 20:47:36 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
 🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем — контр-криминалистические методы. 🚪
 *️⃣Ссылка на презентацию.
 🔵 Отдельно хочу отметить организацию конференции и выступления других спикеров — всё было на высшем уровне. 🏖
