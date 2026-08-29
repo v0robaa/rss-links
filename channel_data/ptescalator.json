@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-08-28T16:29:54.684358+00:00",
-  "messages_count": 158,
+  "last_update": "2026-08-29T01:39:04.988604+00:00",
+  "messages_count": 159,
   "messages": [
+    {
+      "id": "772",
+      "title": "Message 772",
+      "text": "",
+      "link": "https://t.me/ptescalator/772",
+      "pub_date": "2026-08-28T17:47:03+00:00"
+    },
     {
       "id": "771",
       "title": "Message 771",
