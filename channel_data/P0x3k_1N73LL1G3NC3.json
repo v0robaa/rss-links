@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-29T01:38:46.128110+00:00",
-  "messages_count": 236,
+  "last_update": "2026-08-29T10:57:45.398471+00:00",
+  "messages_count": 237,
   "messages": [
+    {
+      "id": "425",
+      "title": "HardBreacher",
+      "text": "HardBreacher\nKaspersky Antivirus For Endpoint ZeroDay Elevation of Privileges Vulnerability\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/425",
+      "pub_date": "2026-08-29T08:56:58+00:00"
+    },
     {
       "id": "424",
       "title": "PRTremote",
