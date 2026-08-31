@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 29 Aug 2026 08:56:58 +0000</lastBuildDate><item><title>HardBreacher</title><link>https://t.me/P0x3k_1N73LL1G3NC3/425</link><description>HardBreacher
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 31 Aug 2026 04:07:32 +0000</lastBuildDate><item><title>PrettyPrague</title><link>https://t.me/P0x3k_1N73LL1G3NC3/426</link><description>PrettyPrague
+GenDigital Avast Antivirus ZeroDay Elevation of Privileges Vulnerability
+Another zeroday in an antimalware provider, I'm not sure but I believe this vulnerability affect other GenDigital products as well (such as AVG, Norton...)
+For now the PoC is compatible with any version of Avast Antivirus.
+The PoC will dump the SAM database by abusing a vulnerability in Avast Sandbox and spawn a full SYSTEM shell, at the time of writing this the PoC works with fully patched Avast Antivirus + Patched Windows 11 25H2
+
+[Media: Фото]</description><pubDate>Mon, 31 Aug 2026 04:07:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_426</guid></item><item><title>HardBreacher</title><link>https://t.me/P0x3k_1N73LL1G3NC3/425</link><description>HardBreacher
 Kaspersky Antivirus For Endpoint ZeroDay Elevation of Privileges Vulnerability
 
 [Media: Фото]</description><pubDate>Sat, 29 Aug 2026 08:56:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_425</guid></item><item><title>PRTremote</title><link>https://t.me/P0x3k_1N73LL1G3NC3/424</link><description>PRTremote

@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-08-30T20:52:28.752758+00:00",
-  "messages_count": 237,
+  "last_update": "2026-08-31T10:43:52.656937+00:00",
+  "messages_count": 238,
   "messages": [
+    {
+      "id": "426",
+      "title": "PrettyPrague",
+      "text": "PrettyPrague\nGenDigital Avast Antivirus ZeroDay Elevation of Privileges Vulnerability\nAnother zeroday in an antimalware provider, I'm not sure but I believe this vulnerability affect other GenDigital products as well (such as AVG, Norton...)\nFor now the PoC is compatible with any version of Avast Antivirus.\nThe PoC will dump the SAM database by abusing a vulnerability in Avast Sandbox and spawn a full SYSTEM shell, at the time of writing this the PoC works with fully patched Avast Antivirus + Patched Windows 11 25H2\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/426",
+      "pub_date": "2026-08-31T04:07:32+00:00"
+    },
     {
       "id": "425",
       "title": "HardBreacher",
