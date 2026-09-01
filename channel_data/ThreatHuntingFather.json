@@ -1,8 +1,29 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-01T09:19:03.485997+00:00",
-  "messages_count": 265,
+  "last_update": "2026-09-01T17:46:02.414533+00:00",
+  "messages_count": 268,
   "messages": [
+    {
+      "id": "1462",
+      "title": "🟡 VirusTotal | Google Threat Intelligence: обновления",
+      "text": "🟡 VirusTotal | Google Threat Intelligence: обновления\nПомечтаем\nЗа последние несколько недель в Google Threat Intelligence и VirusTotal выкатили набор новых возможностей на базе нового движка URL Scanning 2.0, который использует headless browser.\nНедавно прошли два вебинара - на английском и испанском: - English: https://www.brighttalk.com/webcast/18282/672932 - Español: https://www.brighttalk.com/webcast/18282/672934\nТакже вышли два блог-поста с подробным описанием новых возможностей - в зависимости от того, чем вы пользуетесь: - VirusTotal blog: https://blog.virustotal.com/2026/08/enriched-url-reports-url-scanning-20.html - Google Threat Intelligence blog с Agentic-интеграцией: https://security.googlecloudcommunity.com/google-threat-intelligence-3/agentic-url-scanning-2-0-integration-8011\nДополнительно функциональность интегрировали с Agentic Google Threat Intelligence.\nНаконец, добавили новые поля для threat hunting в правилах YARA Livehunt через модуль “vt”. Новые примеры шаблонов: https://yara-editor.virustotal.com/livehunt/new",
+      "link": "https://t.me/ThreatHuntingFather/1462",
+      "pub_date": "2026-09-01T14:38:55+00:00"
+    },
+    {
+      "id": "1461",
+      "title": "(?i)(\\\\users\\\\public\\\\|\\\\users\\\\[^\\\\]+\\\\(appdata|downloads|desktop|documents|onedrive)\\\\|\\\\programdata\\\\|\\\\windows\\\\temp\\\\|\\\\perflogs\\\\|\\\\intel\\\\|\\\\$recycle\\.bin\\\\)",
+      "text": "(?i)(\\\\users\\\\public\\\\|\\\\users\\\\[^\\\\]+\\\\(appdata|downloads|desktop|documents|onedrive)\\\\|\\\\programdata\\\\|\\\\windows\\\\temp\\\\|\\\\perflogs\\\\|\\\\intel\\\\|\\\\$recycle\\.bin\\\\)\n😤",
+      "link": "https://t.me/ThreatHuntingFather/1461",
+      "pub_date": "2026-09-01T13:09:43+00:00"
+    },
+    {
+      "id": "1460",
+      "title": "Message 1460",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1460",
+      "pub_date": "2026-09-01T09:30:06+00:00"
+    },
     {
       "id": "1459",
       "title": "TailCat Red Team use case 😎",
