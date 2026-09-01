@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 31 Aug 2026 07:15:18 +0000</lastBuildDate><item><title>HardBreacher: новый эксплойт обходит Kaspersky Endpoint Security и добирается до System32</title><link>https://t.me/ZerodayAlert/811</link><description>HardBreacher: новый эксплойт обходит Kaspersky Endpoint Security и добирается до System32
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 01 Sep 2026 07:11:30 +0000</lastBuildDate><item><title>KindaRails2Shell: новая уязвимость затронула механизм загрузки файлов Ruby on Rails</title><link>https://t.me/ZerodayAlert/813</link><description>KindaRails2Shell: новая уязвимость затронула механизм загрузки файлов Ruby on Rails
+Уязвимость получила 9,5 балла из 10 по шкале CVSS и позволяет атаковать сервер без учётной записи. Проблема затрагивает Active Storage — встроенный в Ruby on Rails механизм работы с загружаемыми файлами, использующий библиотеку libvips для обработки изображений.
+Механика KindaRails2Shell построена на том, что разные части системы по-разному определяют тип одного и того же файла. Специально подготовленный объект проходит через несколько обработчиков форматов, пока библиотека HDF5 не обращается к внешнему файлу на сервере.
+Разработчики Rails выпустили исправления 29 июля в Active Storage 7.2.3.2, 8.0.5.1 и 8.1.3.1. Для безопасной работы также требуется libvips версии 8.13 или новее, поскольку более старые сборки не умеют блокировать операции, небезопасные для недоверенных файлов.
+#rubyonrails #zeroday #activestorage #libvips
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 01 Sep 2026 07:11:30 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_813</guid></item><item><title>NightmareEclipse опубликовал сразу три PoC</title><link>https://t.me/ZerodayAlert/812</link><description>NightmareEclipse опубликовал сразу три PoC
+Помимо вышеописанного эксплойта к Kaspersky Endpoint Security, хакер NightmareEclipse раскрыл демонстрационный PoC-код также для Avast Antivirus и компонентов NVIDIA. Заявленный риск варьируется от повышения привилегий до повреждения памяти. Ни одна находка пока не получила CVE, независимого подтверждения или бюллетеня производителя.
+PrettyPrague якобы позволяет получить SYSTEM через песочницу Avast и скопировать базу SAM, а GreenSection вызывает выход за границы памяти в компонентах NVIDIA. Возможные более серьёзные сценарии для GreenSection пока не подтверждены готовым эксплойтом.
+Снизить риск помогут три меры. Ограничьте запуск неизвестных программ и права локальных пользователей. Следите за бюллетенями всех трёх производителей, а доступные исправления устанавливайте без задержек.
+#Avast #Kaspersky #NVIDIA #PoC
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 01 Sep 2026 05:44:17 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_812</guid></item><item><title>HardBreacher: новый эксплойт обходит Kaspersky Endpoint Security и добирается до System32</title><link>https://t.me/ZerodayAlert/811</link><description>HardBreacher: новый эксплойт обходит Kaspersky Endpoint Security и добирается до System32
 Исследователь Nightmare Eclipse опубликовал эксплойт HardBreacher, позволяющий применять корпоративный антивирус для обхода защиты ОС. Тесты на Windows 11 25H2 с KES 14.0.0.504 показали, что обычный пользователь способен записать файл прямо в защищенную директорию System32 и получить полный контроль над созданным объектом. Разработчик продукта пока отмалчивается, вендор официально не подтвердил проблему.
 Антивирусы глубоко интегрируются в систему, поэтому ошибки внутри EDR-решений обходятся крайне дорого. Автор эксплойта нашел брешь в том, как KES взаимодействует с собственным графическим интерфейсом. Если перехватить управление оболочкой, защитный механизм сбоит и пропускает несанкционированные операции с файлами. Код пока нестабилен и часто завершается ошибкой, однако расслабляться рано. Ранее исследователь уже выкладывал инструменты против Microsoft Defender, а реальные хакеры быстро брали готовые скрипты на вооружение.
 Тщательно проверяйте, какие новые объекты появляются в критических системных каталогах, даже если полностью доверяете установленному EDR.
 UPD. Касперский устранил уязвимость от утилиты HardBreacher. Разработчики включили патч в антивирусные базы от 30 августа 2026 года и новее.
-#Kaspersky #0day #Уязвимость
+#Kaspersky #0day #уязвимость
 @ZerodayAlert
 
 [Media: Фото]</description><pubDate>Mon, 31 Aug 2026 07:15:18 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_811</guid></item><item><title>Серверы Gitea с открытой регистрацией стали удобной целью для хакеров</title><link>https://t.me/ZerodayAlert/810</link><description>Серверы Gitea с открытой регистрацией стали удобной целью для хакеров
