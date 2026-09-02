@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 28 Aug 2026 17:47:03 +0000</lastBuildDate><item><title>Message 772</title><link>https://t.me/ptescalator/772</link><description/><pubDate>Fri, 28 Aug 2026 17:47:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_772</guid></item><item><title>Message 771</title><link>https://t.me/ptescalator/771</link><description/><pubDate>Wed, 26 Aug 2026 09:33:34 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_771</guid></item><item><title>Минус один пернатый вор — плюс сто очков рейтинга! 😵</title><link>https://t.me/ptescalator/770</link><description>Минус один пернатый вор — плюс сто очков рейтинга! 😵
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 02 Sep 2026 15:56:38 +0000</lastBuildDate><item><title>We will croc you 👻</title><link>https://t.me/ptescalator/773</link><description>We will croc you 👻
+PhantomCore продолжает активно использовать ошибки в конфигурации 1С для атак на российские организации.
+Об атаках на 1С с помощью 1cshell мы писали ранее (1, 2, 3).
+В рамках расследования инцидента команда PT ESC IR обнаружила компрометацию сервера 1С, работающего на операционной системе семейства Linux 🐧
+Среди характерных признаков — наличие вредоносных исполняемых файлов в подкаталогах домашней директории служебного пользователя usr1cv8 и команд в .bash_history того же пользователя — в частности просмотр и удаление файла res.txt, в который записывается результат выполнения кода посредством 1cshell.
+/home/usr1cv8/.bash_history: cat res.txt
+/home/usr1cv8/.bash_history: rm res.txt
+После получения доступа в систему PhantomCore установили ReverseSSH-туннель, что является типичным поведением для данной группировки.
+🕵️‍♂️ Помимо часто используемого инструментария, мы встретили и более диковинную утилиту croc, предназначенную для удаленной загрузки и эксфильтрации файлов.
+На исследуемом узле были обнаружены команды формата: CROC_SECRET=[REDACTED] ./croc
+С помощью нее злоумышленники могли загрузить на скомпрометированный узел файл, который был предварительно отправлен через веб-интерфейс https://getcroc.com/ (на скриншоте) или с другого компьютера, на котором установлен croc.
+💡 Для поиска следов использования croc можно поискать исполняемый файл с соответствующим именем, а также использование переменной окружения CROC_SECRET.
+В качестве сетевого индикатора может служить домен getcroc.com.
+#ir #tip #apt #detect #dfir
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 02 Sep 2026 15:56:38 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_773</guid></item><item><title>Message 772</title><link>https://t.me/ptescalator/772</link><description/><pubDate>Fri, 28 Aug 2026 17:47:03 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_772</guid></item><item><title>Message 771</title><link>https://t.me/ptescalator/771</link><description/><pubDate>Wed, 26 Aug 2026 09:33:34 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_771</guid></item><item><title>Минус один пернатый вор — плюс сто очков рейтинга! 😵</title><link>https://t.me/ptescalator/770</link><description>Минус один пернатый вор — плюс сто очков рейтинга! 😵
 Команда Threat Intelligence экспертного центра безопасности Positive Technologies обнаружила кампанию восточноазиатской группировки FamousSparrow. Группировка использовала новый бэкдор, который мы назвали SquawkDoor, а также новую версию известного бэкдора SparrowDoor 🏴‍☠️
 Группировка встраивала вредоносные JS-скрипты на сайты из разных стран. Они показывали пользователю якобы ошибку сертификата на определенном языке и предлагали скачать новый сертификат, который являлся MSI-файлом и приводил к заражению вредоносным бэкдором.
 😳 Мы проанализировали бэкдоры: подробно показали новый SquawkDoor и провели детальный анализ отличий нового SparrowDoor от старой версии, а также связанных с ними HemiGate, TernDoor и CrowDoor.
