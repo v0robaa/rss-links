@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-02T20:53:20.197713+00:00",
-  "messages_count": 239,
+  "last_update": "2026-09-03T08:49:37.023769+00:00",
+  "messages_count": 240,
   "messages": [
+    {
+      "id": "428",
+      "title": "Идем дальше",
+      "text": "Идем дальше\nhttps://github.com/MSNightmare/FalconFlank\nCrowdstrike Falcon 0day LPE\n#lpe #ad #exploit #git\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/428",
+      "pub_date": "2026-09-03T06:52:16+00:00"
+    },
     {
       "id": "427",
       "title": "Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)",

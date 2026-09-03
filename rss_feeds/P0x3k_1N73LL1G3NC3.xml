@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 01 Sep 2026 06:47:22 +0000</lastBuildDate><item><title>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/427</link><description>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 03 Sep 2026 06:52:16 +0000</lastBuildDate><item><title>Идем дальше</title><link>https://t.me/P0x3k_1N73LL1G3NC3/428</link><description>Идем дальше
+https://github.com/MSNightmare/FalconFlank
+Crowdstrike Falcon 0day LPE
+#lpe #ad #exploit #git
+
+[Media: Фото]</description><pubDate>Thu, 03 Sep 2026 06:52:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_428</guid></item><item><title>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/427</link><description>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)
 Module supports both MF and NG editions, and all supported product versions 26.x, 25.x, 24.x. Bypasses vendor emergency patch v1. Emergency patch v2 successfully remediates the chain. Module also has platform agnostic Java payload support (and that will be in-memory on 26.x targets), along with OS command based payloads.
 Blog: https://www.rapid7.com/blog/post/etr-papercut-ng-mf-critical-zero-day-exploited-in-the-wild/
 
