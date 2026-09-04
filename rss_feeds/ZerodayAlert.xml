@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 03 Sep 2026 18:53:54 +0000</lastBuildDate><item><title>Один XML-запрос открывает доступ к серверу Switchvox</title><link>https://t.me/ZerodayAlert/818</link><description>Один XML-запрос открывает доступ к серверу Switchvox
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 04 Sep 2026 16:55:26 +0000</lastBuildDate><item><title>Уязвимость нашли в формах Elementor Pro на 6 млн сайтов WordPress</title><link>https://t.me/ZerodayAlert/820</link><description>Уязвимость нашли в формах Elementor Pro на 6 млн сайтов WordPress
+CVE-2026-32475 затрагивает Elementor Pro версии 4.2.1 и все более ранние, а Wordfence присвоила ей 9,8 балла из 10 по шкале CVSS. Дополнение работает более чем на 6 млн сайтов, поэтому потенциальный масштаб проблемы измеряется миллионами установок.
+Уязвимы только те сайты, где опубликована форма Elementor Pro хотя бы с одним необязательным полем File Upload. Плагин обрабатывает содержимое такого поля как массив и при пустом первом элементе досрочно прекращает проверку, из-за чего остальные элементы остаются непроверенными.
+Исправление вышло 19 августа в версии 4.2.2, и в тот же день начались первые атаки с пиком активности с 19 по 23 августа. Администраторам советуют обновиться и проверить каталог /wp-content/uploads/elementor/forms/, а также журналы обращений к /wp-admin/admin-ajax.php с параметром elementor_pro_forms_send_form.
+#уязвимость #wordpress #плагин #обновление
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 04 Sep 2026 16:55:26 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_820</guid></item><item><title>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры</title><link>https://t.me/ZerodayAlert/819</link><description>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры
+Исправления вошли в RouterOS 7.24.2, 7.23.4, 6.49.21 и 7.25 beta 3. Уязвимость затрагивает версии за несколько лет, а CERT.LV одновременно фиксирует усиление атак на устройства MikroTik.
+Способ эксплуатации пока не раскрыт. На части роутеров администраторы обнаружили неизвестного пользователя «ops» с полными правами, но MikroTik ещё не признала учётную запись индикатором взлома.
+Для снижения риска одной новой версии недостаточно. После обновления проверьте статус Flagged, журнал, пользователей, сценарии и настройки. Административные интерфейсы следует закрыть от интернета, а управление перенести в отдельный VLAN с доступом через VPN.
+#MikroTik #RouterOS #взлом #роутеры
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 04 Sep 2026 15:19:59 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_819</guid></item><item><title>Один XML-запрос открывает доступ к серверу Switchvox</title><link>https://t.me/ZerodayAlert/818</link><description>Один XML-запрос открывает доступ к серверу Switchvox
 Уязвимость CVE-2026-9586 в Sangoma Switchvox получила оценку 9,3 из 10 по CVSS 4.0. Для атаки не требуется ни пароль, ни учётная запись, ни какие-либо действия сотрудника.
 Проблема связана с открытым HTTP-адресом /pa, куда система принимает XML-уведомления для телефонов. Из-за отсутствия проверки поля PhoneIP злоумышленник может провести SQL-инъекцию и через функцию COPY TO PROGRAM запустить команды на сервере.
 30 августа ловушки Horizon3 и Defused Cyber зафиксировали реальные попытки эксплуатации с адреса 176.65.148.184. По данным Shodan, в Сети доступны около 4000 таких систем, и Sangoma уже закрыла уязвимость в версии Switchvox 8.4.0.2.
