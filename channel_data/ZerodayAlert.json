@@ -1,8 +1,15 @@
 {
   "channel": "ZerodayAlert",
-  "last_update": "2026-09-04T17:31:37.748448+00:00",
-  "messages_count": 270,
+  "last_update": "2026-09-04T20:38:29.002656+00:00",
+  "messages_count": 271,
   "messages": [
+    {
+      "id": "821",
+      "title": "Claude Code, Qwen Code и Grok Build получили общую метку GitSpawn",
+      "text": "Claude Code, Qwen Code и Grok Build получили общую метку GitSpawn\nАгенты для программирования периодически запускают git status и git diff, чтобы понять состояние проекта. Если .git/config не очищен от посторонних настроек, параметр core.fsmonitor может незаметно указывать на стороннюю программу, которая выполнится при следующей операции с индексом.\nПросто ссылка на репозиторий тут не поможет — Git при клонировании не копирует чужой .git/config. Опасность возникает, когда весь каталог .git приходит вместе с проектом целиком, скажем, в архиве или через общую сетевую папку.\nИз восьми найденных Manifold Security проблем в семи инструментах часть уже закрыта — в Claude Code, Goose, OpenAI Codex и Cursor. Четыре сценария на 1 сентября всё ещё требовали исправления — в Qwen Code, Grok Build, Hermes и отдельном режиме Claude Code.\n#уязвимость #GitSpawn #ИИ #разработка\n@ZerodayAlert\n\n[Media: Фото]",
+      "link": "https://t.me/ZerodayAlert/821",
+      "pub_date": "2026-09-04T18:09:01+00:00"
+    },
     {
       "id": "820",
       "title": "Уязвимость нашли в формах Elementor Pro на 6 млн сайтов WordPress",
