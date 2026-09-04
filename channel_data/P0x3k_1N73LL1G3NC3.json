@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-04T08:44:51.635568+00:00",
-  "messages_count": 240,
+  "last_update": "2026-09-04T13:22:58.773677+00:00",
+  "messages_count": 241,
   "messages": [
+    {
+      "id": "429",
+      "title": "VMware threat emulation techniques",
+      "text": "VMware threat emulation techniques\nA reproducible catalogue of 86 atomic actions against vCenter, ESXi, SDDC Manager, and the wider VCF ecosystem — sourced from threat intelligence reporting, mapped to MITRE ATT&CK, and paired with the log sources where evidence is expected.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/429",
+      "pub_date": "2026-09-04T09:43:36+00:00"
+    },
     {
       "id": "428",
       "title": "Идем дальше",

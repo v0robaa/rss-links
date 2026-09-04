@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-09-04T08:45:10.566686+00:00",
-  "messages_count": 160,
+  "last_update": "2026-09-04T13:23:18.127449+00:00",
+  "messages_count": 161,
   "messages": [
+    {
+      "id": "774",
+      "title": "Message 774",
+      "text": "",
+      "link": "https://t.me/ptescalator/774",
+      "pub_date": "2026-09-04T11:44:48+00:00"
+    },
     {
       "id": "773",
       "title": "We will croc you 👻",
