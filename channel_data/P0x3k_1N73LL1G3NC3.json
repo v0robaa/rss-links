@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-05T08:15:21.771778+00:00",
-  "messages_count": 241,
+  "last_update": "2026-09-05T12:31:30.920504+00:00",
+  "messages_count": 242,
   "messages": [
+    {
+      "id": "430",
+      "title": "M0nCrush",
+      "text": "M0nCrush\nKernel-mode process terminator using a signed BYOVD driver (MonProcessEX.sys). Works on all Windows 10/11. No offsets, no PDB. Rust.\n\n[Media: Видео]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/430",
+      "pub_date": "2026-09-05T10:26:19+00:00"
+    },
     {
       "id": "429",
       "title": "VMware threat emulation techniques",
