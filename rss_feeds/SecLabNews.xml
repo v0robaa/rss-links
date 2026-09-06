@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sun, 06 Sep 2026 16:49:41 +0000</lastBuildDate><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/18129</link><description>🆕 Еженедельный обзор киберновостей
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sun, 06 Sep 2026 20:16:25 +0000</lastBuildDate><item><title>🆕 Еженедельный обзор киберновостей</title><link>https://t.me/SecLabNews/18129</link><description>🆕 Еженедельный обзор киберновостей
 G7 объявила криптографическую тревогу: всё, что зашифровано сегодня, квантовые компьютеры прочитают уже через несколько лет, поэтому менять алгоритмы придётся прямо сейчас. Пока мир примеряется к постквантовому переходу, ФБР снесло инфраструктуру китайской киберразведки, Nvidia забрала Hugging Face почти за $13 млрд, а Минцифры обсуждает реформу связи, которая, по оценке отраслевых ассоциаций, может оставить 27 регионов без местных провайдеров.
 Собрали самые интересные новости недели в одном месте 👇
 🌎В мире
@@ -52,7 +52,7 @@ https://itradio.su/donations
 -----------------------------------------
 @ITRadiosu #csl
 
-[Media: Видео]</description><pubDate>Sun, 06 Sep 2026 16:49:41 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18128</guid></item><item><title>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры</title><link>https://t.me/SecLabNews/18127</link><description>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры
+[Media: Видео]</description><pubDate>Sun, 06 Sep 2026 20:16:25 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18128</guid></item><item><title>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры</title><link>https://t.me/SecLabNews/18127</link><description>MikroTik закрыла опасную уязвимость RouterOS на фоне атак на роутеры
 Исправления вошли в RouterOS 7.24.2, 7.23.4, 6.49.21 и 7.25 beta 3. Уязвимость затрагивает версии за несколько лет, а CERT.LV одновременно фиксирует усиление атак на устройства MikroTik.
 Способ эксплуатации пока не раскрыт. На части роутеров администраторы обнаружили неизвестного пользователя «ops» с полными правами, но MikroTik ещё не признала учётную запись индикатором взлома.
 Для снижения риска одной новой версии недостаточно. После обновления проверьте статус Flagged, журнал, пользователей, сценарии и настройки. Административные интерфейсы следует закрыть от интернета, а управление перенести в отдельный VLAN с доступом через VPN.
@@ -66,7 +66,7 @@ https://itradio.su/donations
 #РеформаСвязи #Телеком #Провайдеры
 @SecLabNews
 
-[Media: Видео]</description><pubDate>Sun, 06 Sep 2026 16:49:41 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18126</guid></item><item><title>Пароли уже не главная проблема. Как хакеры атакуют компании в 2026 году</title><link>https://t.me/SecLabNews/18125</link><description>Пароли уже не главная проблема. Как хакеры атакуют компании в 2026 году
+[Media: Видео]</description><pubDate>Sun, 06 Sep 2026 20:16:25 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18126</guid></item><item><title>Пароли уже не главная проблема. Как хакеры атакуют компании в 2026 году</title><link>https://t.me/SecLabNews/18125</link><description>Пароли уже не главная проблема. Как хакеры атакуют компании в 2026 году
 Кибератаки в 2026 году всё меньше похожи на перебор паролей. Злоумышленники переключаются на уязвимости в публичных приложениях и действуют настолько быстро, что специалисты по ИБ не успевают вручную разбирать весь поток угроз. В российских облачных инфраструктурах уже фиксировали попытки эксплуатации React2Shell, Copy Fail и Dirty Frag, говорится в исследовании.
 Поэтому компании всё чаще подключают ИИ-агентов: они берут на себя триаж алертов, приоритизацию уязвимостей и первичные расследования, а критические решения остаются за человеком. Спрос на такой подход уже заметен: более 15 тысяч российских компаний используют в публичных облаках сервисы безопасности с ИИ.
 Меняются и цели атак. Если в первой половине 2025 года 35% атак приходилось на IT-компании, то к середине 2026 года лидером стал ритейл — 39%. Производство оказалось на втором месте с 29%, а IT-сектор опустился на третье — до 20%.
