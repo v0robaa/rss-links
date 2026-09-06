@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-06T08:34:08.027589+00:00",
-  "messages_count": 273,
+  "last_update": "2026-09-06T12:47:30.933072+00:00",
+  "messages_count": 274,
   "messages": [
+    {
+      "id": "1469",
+      "title": "Part 1:",
+      "text": "Part 1:\nhttps://aws.amazon.com/ru/blogs/security/incident-response-guide-for-aws-cloudtrail-investigations-part-1/\nPart 2:\nhttps://aws.amazon.com/ru/blogs/security/incident-response-guide-for-aws-cloudtrail-investigations-part-2/",
+      "link": "https://t.me/ThreatHuntingFather/1469",
+      "pub_date": "2026-09-06T09:01:22+00:00"
+    },
     {
       "id": "1468",
       "title": "Message 1468",
