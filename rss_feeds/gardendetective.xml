@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sun, 06 Sep 2026 12:47:19 +0000</lastBuildDate><item><title>🔵 Выкладываю презентацию доклада «DFIR vs WSL: цифровая криминалистика на стыке миров» с конференции Moscow Forensics Day 2026.</title><link>https://t.me/gardendetective/52</link><description>#mfd2026
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Garden Detective</title><link>https://t.me/gardendetective</link><description>DFIR... but why stop there</description><language>ru</language><lastBuildDate>Sun, 06 Sep 2026 16:49:22 +0000</lastBuildDate><item><title>🔵 Выкладываю презентацию доклада «DFIR vs WSL: цифровая криминалистика на стыке миров» с конференции Moscow Forensics Day 2026.</title><link>https://t.me/gardendetective/52</link><description>#mfd2026
 🔵 Выкладываю презентацию доклада «DFIR vs WSL: цифровая криминалистика на стыке миров» с конференции Moscow Forensics Day 2026.
 Цифровая криминалистика + WSL? Второе — точно, а чтобы узнать про первое — придётся открыть презентацию.
 💻 Ссылка на презентацию
@@ -40,7 +40,7 @@ Jump Lists — артефакт, хорошо знакомый каждому DF
 ➖ использование Obsidian CLI;
 ➖ PoC описанного в докладе сценария (хорошее закрепление для любителей оставлять свои "заметки").
 *️⃣код PoC (когда-нибудь я буду нормально оформлять репозитории, но это не точно 🥳);
-*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sun, 06 Sep 2026 12:47:19 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
+*️⃣ну и конечно, куда же без видео 🚪.</description><pubDate>Sun, 06 Sep 2026 16:49:22 +0000</pubDate><guid isPermaLink="false">telegram_gardendetective_48</guid></item><item><title>🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем —...</title><link>https://t.me/gardendetective/47</link><description>#anti_forensics #DFIR #cirf2026
 🔵 Вчера (23.04.2026) проходила конференция CIRF 2026, на которой я выступил с докладом "Генеральная уборка в Windows: искусство заметать цифровые следы". Да, и это снова одна из моих любимых тем — контр-криминалистические методы. 🚪
 *️⃣Ссылка на презентацию.
 🔵 Отдельно хочу отметить организацию конференции и выступления других спикеров — всё было на высшем уровне. 🏖
