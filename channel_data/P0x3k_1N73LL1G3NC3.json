@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-06T20:16:11.419159+00:00",
-  "messages_count": 242,
+  "last_update": "2026-09-07T09:12:09.294871+00:00",
+  "messages_count": 243,
   "messages": [
+    {
+      "id": "431",
+      "title": "CVE-2026-67276",
+      "text": "CVE-2026-67276\nMikroTik lab PoC — RouterOS SSH public-key auth bypass\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/431",
+      "pub_date": "2026-09-07T06:23:58+00:00"
+    },
     {
       "id": "430",
       "title": "M0nCrush",
