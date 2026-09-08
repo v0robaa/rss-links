@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 07 Sep 2026 06:23:58 +0000</lastBuildDate><item><title>CVE-2026-67276</title><link>https://t.me/P0x3k_1N73LL1G3NC3/431</link><description>CVE-2026-67276
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 08 Sep 2026 08:45:16 +0000</lastBuildDate><item><title>CVE-2026-62735</title><link>https://t.me/P0x3k_1N73LL1G3NC3/433</link><description>CVE-2026-62735
+Windows HTTP.sys Elevation of Privilege.
+Blog: https://hackmd.io/@nhh/Hy6Oem7_Me
+
+[Media: Фото]</description><pubDate>Tue, 08 Sep 2026 08:45:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_433</guid></item><item><title>SonicWall SMA1000 unauthenticated RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/432</link><description>SonicWall SMA1000 unauthenticated RCE
+Exploit for last weeks SonicWall SMA1000 zero-day chain that has been exploited in-the-wild (CVE-2026-83548 + SMA1000-9427 + CVE-2026-83549). It a 3 bug chain; an SSRF to CouchDB read/write for low priv RCE, to root RCE via command injection in cmsSnmpTrap.
+
+[Media: Фото]</description><pubDate>Tue, 08 Sep 2026 06:27:17 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_432</guid></item><item><title>CVE-2026-67276</title><link>https://t.me/P0x3k_1N73LL1G3NC3/431</link><description>CVE-2026-67276
 MikroTik lab PoC — RouterOS SSH public-key auth bypass
 
 [Media: Фото]</description><pubDate>Mon, 07 Sep 2026 06:23:58 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_431</guid></item><item><title>M0nCrush</title><link>https://t.me/P0x3k_1N73LL1G3NC3/430</link><description>M0nCrush

@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-07T18:40:14.319757+00:00",
-  "messages_count": 243,
+  "last_update": "2026-09-08T08:46:34.763570+00:00",
+  "messages_count": 245,
   "messages": [
+    {
+      "id": "433",
+      "title": "CVE-2026-62735",
+      "text": "CVE-2026-62735\nWindows HTTP.sys Elevation of Privilege.\nBlog: https://hackmd.io/@nhh/Hy6Oem7_Me\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/433",
+      "pub_date": "2026-09-08T08:45:16+00:00"
+    },
+    {
+      "id": "432",
+      "title": "SonicWall SMA1000 unauthenticated RCE",
+      "text": "SonicWall SMA1000 unauthenticated RCE\nExploit for last weeks SonicWall SMA1000 zero-day chain that has been exploited in-the-wild (CVE-2026-83548 + SMA1000-9427 + CVE-2026-83549). It a 3 bug chain; an SSRF to CouchDB read/write for low priv RCE, to root RCE via command injection in cmsSnmpTrap.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/432",
+      "pub_date": "2026-09-08T06:27:17+00:00"
+    },
     {
       "id": "431",
       "title": "CVE-2026-67276",
