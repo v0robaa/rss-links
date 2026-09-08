@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 07 Sep 2026 11:44:01 +0000</lastBuildDate><item><title>Мок-собеседование пентестера в прямом эфире</title><link>https://t.me/ZerodayAlert/824</link><description>Мок-собеседование пентестера в прямом эфире
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 08 Sep 2026 09:50:08 +0000</lastBuildDate><item><title>Уязвимость в PostgreSQL жила незамеченной больше десяти лет</title><link>https://t.me/ZerodayAlert/825</link><description>Уязвимость в PostgreSQL жила незамеченной больше десяти лет
+Уязвимость CVE-2026-6471 существовала в PostgreSQL с версии 9.4, выпущенной в 2014 году. Она получила оценку 7,2 балла по шкале CVSS и затрагивала механизм логического декодирования.
+Клиент с правом REPLICATION мог указать произвольный плагин при создании слота репликации, и сервер загружал его без проверки пути. После загрузки библиотека выполнялась с правами системного пользователя СУБД, что позволяло изменить каталог pg_authid и получить права суперпользователя.
+Разработчики закрыли уязвимость 13 августа в версиях 18.6, 17.11, 16.15, 15.19 и 14.24. В обновлении появился параметр output_plugin_libraries, ограничивающий логическое декодирование только доверенными плагинами.
+#postgresql #уязвимость #репликация #cve
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 08 Sep 2026 09:50:08 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_825</guid></item><item><title>Мок-собеседование пентестера в прямом эфире</title><link>https://t.me/ZerodayAlert/824</link><description>Мок-собеседование пентестера в прямом эфире
 Знать пентест — мало. Нужно уметь показать свои знания.
 8 сентября в 19:30 мск в прямом эфире разберут, какие ответы помогают получить оффер, а какие выдают слабые места кандидата. Два специалиста пройдут технические собеседования на уровни junior и middle, а эксперт оценит и прокомментирует ответы.
 👉 Зарегистрироваться на эфир
