@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 01 Sep 2026 09:00:40 +0000</lastBuildDate><item><title>Message 420</title><link>https://t.me/s0ld13r_ch/420</link><description/><pubDate>Tue, 01 Sep 2026 09:00:40 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_420</guid></item><item><title>TailCat Red Team use case 😎</title><link>https://t.me/s0ld13r_ch/419</link><description>TailCat Red Team use case 😎
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>s0ld13r ch.</title><link>https://t.me/s0ld13r_ch</link><description>Blog about Pentest, TI/TH, OPSEC &amp; other security stuff</description><language>ru</language><lastBuildDate>Tue, 08 Sep 2026 18:39:03 +0000</lastBuildDate><item><title>Недавно попалась на глаза интересная публикация от Elastic, и я поймал себя на мысли, что тема Observability vs Security до сих пор остаётся одной из самых недооценённых слепых зон в архитектуре...</title><link>https://t.me/s0ld13r_ch/421</link><description>Недавно попалась на глаза интересная публикация от Elastic, и я поймал себя на мысли, что тема Observability vs Security до сих пор остаётся одной из самых недооценённых слепых зон в архитектуре многих SOC и ИТ-блоков.
+Захотелось поделиться своим мнением на этот счёт.
+Если очистить термины от маркетинга, обе системы смотрят на одну и ту же инфраструктуру, но из разных сторон:
+Observability (ИТ-наблюдаемость) - это врач скорой помощи. Ей важен пульс и давление системы: чтобы ничего не «падало», CPU не грелся, а сервисы откликались быстро.
+Задаётся вопросом: «Почему всё тормозит?» - и стремится решить проблему как можно быстрее.
+Security Monitoring (Мониторинг ИБ) - это детектив. Ему не так важна производительность, ему важен умысел.
+Задаётся вопросом: «Кто это сделал и куда утекают данные?», то есть разбирает ситуацию с точки зрения причинно-следственной связи.
+В чём главный конфликт и где кроются риски?
+На практике эти два направления почти всегда разведены по разным платформам и командам. В итоге мы получаем две классические проблемы:
+1.     Экономическая: компании дважды платят за обработку и хранение одних и тех же данных (Syslog, NetFlow, DNS) в двух разных «корзинах».
+2.     Операционная (самая опасная): атаки сегодня идеально маскируются под обычный инфраструктурный шум.
+Классический кейс из статьи Elastic: ночью у сервера взлетает CPU до 97%. Дежурный инженер IT/DevOps заходит в консоль мониторинга, видит аномальную нагрузку, перезагружает хост и со спокойной душой закрывает тикет со статусом «Resolved».
+А что на самом деле? За 6 часов до этого туда задеплоили майнер, замаскированный под системный поток ядра. В итоге ИТ отчиталось об устранении сбоя, Security вообще ничего не узнало, а хакеры спокойно продолжают крутить свои процессы.
+Резюмируя, можно сказать следующее:
+Observability отвечает на вопрос «Система жива?», а Security - «Систему не взломали?». Пока они живут в разных системах, мы видим только половину картины. Общий контекст - это не просто экономия на хранении логов, это единственная возможность оперативно выявить и заблокировать атаку до того, как она превратится в инцидент.
+Ссылка на ту самую статью Elastic: elastic.co/blog</description><pubDate>Tue, 08 Sep 2026 18:39:03 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_421</guid></item><item><title>Message 420</title><link>https://t.me/s0ld13r_ch/420</link><description/><pubDate>Tue, 01 Sep 2026 09:00:40 +0000</pubDate><guid isPermaLink="false">telegram_s0ld13r_ch_420</guid></item><item><title>TailCat Red Team use case 😎</title><link>https://t.me/s0ld13r_ch/419</link><description>TailCat Red Team use case 😎
 Несколько дней назад ребята из TailScale выпустили свой инструмент tailcat, как можно понять из названия, это аналог netcat но работающий из коробки через сеть TailScale 🤩
 Первой моей мыслью стало что инструментом начнут активно пользоваться атакующие и решил расписать разные примеры применения нового "условно легитимного" софта 😃
 🔢  SOCKS5 Reverse Proxy
