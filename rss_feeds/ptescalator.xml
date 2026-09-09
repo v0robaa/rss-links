@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 08 Sep 2026 11:44:27 +0000</lastBuildDate><item><title>Он вам не gsocket 😑</title><link>https://t.me/ptescalator/775</link><description>Он вам не gsocket 😑
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 09 Sep 2026 09:17:40 +0000</lastBuildDate><item><title>Din, din — кто там? 🔔</title><link>https://t.me/ptescalator/776</link><description>Din, din — кто там? 🔔
+Группа киберразведки экспертного центра безопасности Positive Technologies обнаружила новую группировку, которую мы назвали DENOmination Group.
+В 2026 году мы зафиксировали ее активность против российских организаций оборонно-промышленного, военного, финансового и консалтингового секторов.
+Ключевая особенность атак — использование легитимной среды выполнения Deno для запуска вредоносного JavaScript/TypeScript-кода. В исследованных цепочках мы наблюдали загрузчик DinDoor, агент удаленного доступа DenoRAT, вредоносные MSI- и LNK-файлы, ротацию C2-инфраструктуры и несколько связанных способов первоначальной доставки.
+Пересечения в кодовой базе, конфигурационных параметрах, логике построения цепочек и сетевой инфраструктуре позволили связать наблюдаемые эпизоды с активностью одной группировки.
+В исследовании разобрали архитектуру DinDoor и DenoRAT, механизмы закрепления и взаимодействия с C2, инфраструктурные пересечения, TTP и возможную модель использования общей платформы несколькими операторами.
+Подробности — в нашем блоге 🦖
+#TI #APT #Malware
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 09 Sep 2026 09:17:40 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_776</guid></item><item><title>Он вам не gsocket 😑</title><link>https://t.me/ptescalator/775</link><description>Он вам не gsocket 😑
 В ходе расследования одного из инцидентов специалисты PT ESC IR наткнулись на весьма диковинный инструмент hsocket (не путать с gsocket).
 После получения первоначального доступа и установки веб-шелла злоумышленники доставили на скомпрометированный веб-сервер три bash-скрипта.
 1️⃣ hsocket — бэкдор, имеющий следующий функционал:
