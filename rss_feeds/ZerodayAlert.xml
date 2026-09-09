@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 08 Sep 2026 18:35:07 +0000</lastBuildDate><item><title>Adobe закрыла в Photoshop семь RCE и ещё одну критическую уязвимость</title><link>https://t.me/ZerodayAlert/828</link><description>Adobe закрыла в Photoshop семь RCE и ещё одну критическую уязвимость
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 09 Sep 2026 06:08:31 +0000</lastBuildDate><item><title>😎 Каждому бизнесу нужен F6 MXDR. Команда департамента детектирования и предотвращения угроз рассказывает о своей продуктовой линейке.</title><link>https://t.me/ZerodayAlert/830</link><description>😎 Каждому бизнесу нужен F6 MXDR. Команда департамента детектирования и предотвращения угроз рассказывает о своей продуктовой линейке.
+F6 Managed XDR — это проактивная защита от киберугроз. Продукт приоритизирует инциденты, изолирует зараженные хосты, блокирует спам, фишинг, вредоносные письма, противостоит целевым атакам и освобождает ИБ-команду от рутины.
+🎥 В этом видео бизнес-руководитель департамента Дмитрий Черников и технический руководитель Алексей Мокеев отвечают на вопросы:
+▪️ В чем уникальность F6 MXDR?
+▪️ Какие проблемы бизнеса решает продукт и в каких отраслях уже используется?
+▪️ Какие важные обновления в F6 MXDR произошли за последнее время?
+Смотрите видео на любой удобной платформе ⬇️
+📺 VK Видео
+📺 YouTube
+📺 RuTube
+
+[Media: Фото]</description><pubDate>Wed, 09 Sep 2026 06:08:31 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_830</guid></item><item><title>Adobe закрыла в Photoshop семь RCE и ещё одну критическую уязвимость</title><link>https://t.me/ZerodayAlert/828</link><description>Adobe закрыла в Photoshop семь RCE и ещё одну критическую уязвимость
 Adobe выпустила APSB26-130 для Photoshop 2025 и 2026 на Windows и macOS. Патч закрывает восемь критических уязвимостей, семь из которых позволяют выполнить произвольный код.
 Четыре RCE связаны с переполнением целых чисел, ещё три с повреждением памяти. Все семь требуют действий пользователя и имеют локальный вектор атаки, поэтому речь не идёт о бесконтактном удалённом взломе. Форматы файлов, способные запустить эксплуатацию, Adobe не раскрыла.
 Риск можно снизить, если не открывать непроверенные файлы в старых сборках Photoshop. Исправления доступны в версиях 27.7 и 26.11.7. Adobe пока не видит признаков эксплуатации закрытых уязвимостей в реальных атаках.
