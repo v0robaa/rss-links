@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-09-10T08:51:58.845962+00:00",
-  "messages_count": 163,
+  "last_update": "2026-09-10T13:29:15.999515+00:00",
+  "messages_count": 164,
   "messages": [
+    {
+      "id": "777",
+      "title": "Message 777",
+      "text": "",
+      "link": "https://t.me/ptescalator/777",
+      "pub_date": "2026-09-10T13:23:41+00:00"
+    },
     {
       "id": "776",
       "title": "Din, din — кто там? 🔔",
