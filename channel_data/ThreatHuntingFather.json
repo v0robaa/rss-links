@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-11T08:49:08.964160+00:00",
-  "messages_count": 279,
+  "last_update": "2026-09-11T13:27:20.362830+00:00",
+  "messages_count": 281,
   "messages": [
+    {
+      "id": "1476",
+      "title": "https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries",
+      "text": "https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries",
+      "link": "https://t.me/ThreatHuntingFather/1476",
+      "pub_date": "2026-09-11T13:20:20+00:00"
+    },
+    {
+      "id": "1475",
+      "title": "🙂 Лучше вкусного напитка в пятницу может быть только вкусный напиток + доклады с OFFZONE 2026",
+      "text": "🙂 Лучше вкусного напитка в пятницу может быть только вкусный напиток + доклады с OFFZONE 2026\nЛовите все записи докладов во ВКонтакте:\n1️⃣ Main track\n2️⃣ Fast track\n3️⃣ AppSec.Zone\n4️⃣ Threat.Zone\n5️⃣ AI.Zone\n6️⃣ Community track\n7️⃣ AntiFraud.Zone\nПрезентации тоже загрузили, они доступны на сайте программы. Чтобы скачать презентацию, нажмите на интересующий доклад.\nДоклады на YouTube выложили, но пока частично. Оставшиеся догрузим в среду и напишем об этом.",
+      "link": "https://t.me/ThreatHuntingFather/1475",
+      "pub_date": "2026-09-11T10:15:26+00:00"
+    },
     {
       "id": "1474",
       "title": "Real-time IOC from DFIR Report🐶",

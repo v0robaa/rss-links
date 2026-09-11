@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 11 Sep 2026 04:37:43 +0000</lastBuildDate><item><title>Real-time IOC from DFIR Report🐶</title><link>https://t.me/ThreatHuntingFather/1474</link><description>Real-time IOC from DFIR Report🐶
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 11 Sep 2026 13:20:20 +0000</lastBuildDate><item><title>https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries</title><link>https://t.me/ThreatHuntingFather/1476</link><description>https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries</description><pubDate>Fri, 11 Sep 2026 13:20:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1476</guid></item><item><title>🙂 Лучше вкусного напитка в пятницу может быть только вкусный напиток + доклады с OFFZONE 2026</title><link>https://t.me/ThreatHuntingFather/1475</link><description>🙂 Лучше вкусного напитка в пятницу может быть только вкусный напиток + доклады с OFFZONE 2026
+Ловите все записи докладов во ВКонтакте:
+1️⃣ Main track
+2️⃣ Fast track
+3️⃣ AppSec.Zone
+4️⃣ Threat.Zone
+5️⃣ AI.Zone
+6️⃣ Community track
+7️⃣ AntiFraud.Zone
+Презентации тоже загрузили, они доступны на сайте программы. Чтобы скачать презентацию, нажмите на интересующий доклад.
+Доклады на YouTube выложили, но пока частично. Оставшиеся догрузим в среду и напишем об этом.</description><pubDate>Fri, 11 Sep 2026 10:15:26 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1475</guid></item><item><title>Real-time IOC from DFIR Report🐶</title><link>https://t.me/ThreatHuntingFather/1474</link><description>Real-time IOC from DFIR Report🐶
 🔎 Indicators from a case DFIR Report are actively investigating:
 C2: 45[.]153[.]219[.]166:1010
 pythonw.exe running from:
