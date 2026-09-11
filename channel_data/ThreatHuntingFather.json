@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-10T20:43:13.752006+00:00",
-  "messages_count": 278,
+  "last_update": "2026-09-11T08:49:08.964160+00:00",
+  "messages_count": 279,
   "messages": [
+    {
+      "id": "1474",
+      "title": "Real-time IOC from DFIR Report🐶",
+      "text": "Real-time IOC from DFIR Report🐶\n🔎 Indicators from a case DFIR Report are actively investigating:\nC2: 45[.]153[.]219[.]166:1010\npythonw.exe running from:\nC:\\ProgramData\\BgBlqnzAJMkSuYCq\\pythonw.exe\nIf you defend a network, hunt your logs for these now.",
+      "link": "https://t.me/ThreatHuntingFather/1474",
+      "pub_date": "2026-09-11T04:37:43+00:00"
+    },
     {
       "id": "1473",
       "title": "Message 1473",
