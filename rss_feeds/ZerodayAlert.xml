@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 10 Sep 2026 08:11:01 +0000</lastBuildDate><item><title>Microsoft выпустила крупнейший в истории Patch Tuesday</title><link>https://t.me/ZerodayAlert/834</link><description>Microsoft выпустила крупнейший в истории Patch Tuesday
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 15 Sep 2026 14:17:01 +0000</lastBuildDate><item><title>CISA подтвердила активную эксплуатацию бреши в GitLab</title><link>https://t.me/ZerodayAlert/837</link><description>CISA подтвердила активную эксплуатацию бреши в GitLab
+Уязвимость CVE-2026-85706 находится в repository commits API GitLab и сочетает отсутствие обязательной аутентификации с ошибкой ограничения файловых путей. При определённых условиях обход пути позволяет читать произвольные файлы на сервере, включая конфигурацию, учётные данные и токены.
+Уязвимы GitLab CE и EE версий с 18.7 до 19.1.7, с 19.2 до 19.2.5 и с 19.3 до 19.3.1 включительно. Проблему закрыли в версиях 19.1.8, 19.2.6 и 19.3.2.
+CISA внесло уязвимость в каталог Known Exploited Vulnerabilities 11 сентября и классифицировало эксплуатацию как активную. Специалисты watchTowr зафиксировали реальные попытки поиска уязвимых серверов в интернете практически сразу после публикации исправлений.
+#gitlab #cve #уязвимость #zeroday
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 15 Sep 2026 14:17:01 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_837</guid></item><item><title>Критическая уязвимость в Cisco Secure Email Gateway</title><link>https://t.me/ZerodayAlert/836</link><description>Критическая уязвимость в Cisco Secure Email Gateway
+Уязвимость CVE-2026-76461 находится в механизме разбора электронной почты в Cisco AsyncOS для Secure Email Gateway. Из-за недостаточной проверки входящих данных злоумышленник может внедрить SQL-команды прямо в письмо, которое проходит через шлюз.
+Проблема получила оценку 9,8 балла из 10 по шкале CVSS и не требует ни учётной записи, ни действий пользователя. Уязвимости подвержены как физические, так и виртуальные устройства Secure Email Gateway независимо от их конфигурации.
+Исправления вошли в версии AsyncOS 15.5.5-014, 16.0.4-302 и 16.5.0-780, при этом Cisco рекомендует переходить именно на последнюю. Временного способа устранить проблему без обновления системы не существует.
+#cisco #asyncos #уязвимость #кибербезопасность
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 15 Sep 2026 13:05:42 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_836</guid></item><item><title>AI-пентест за один вечер: как эксперт собирает агента и взламывает полигон 🤖</title><link>https://t.me/ZerodayAlert/835</link><description>AI-пентест за один вечер: как эксперт собирает агента и взламывает полигон 🤖
+Участники AI-челленджа неделю гоняли агентов по полигону Standoff Hackbase, заходили в тупики и перенастраивали их. Теперь эксперт покажет, что сработало, а что нет.
+17 сентября в 19:30 мск багхантер Kekis пройдёт тот же полигон со своим агентом, разберёт удачные и провальные стратегии и объявит итоги челленджа.
+Эфир пригодится и тем, кто не участвовал в челлендже. За один вечер ты получишь выводы, на которые участники потратили семь дней.
+👉 Зарегистрироваться на разбор
+На встрече увидишь:
+🔻 как специалист и агент вместе решают живые задания;
+🔻 какие шаги пентеста уже можно доверить агенту;
+🔻 где без ручного контроля не обойтись;
+🔻 какие ошибки в управлении агентом стоит обойти заранее;
+🔻 с какой стратегией запускать агента в CTF, bug bounty и пентесте.
+Kekis — опытный исследователь безопасности приложений, у него есть сертификаты WAPT, CPTS и CRTP.
+Участие бесплатное, по регистрации. Сразу после неё откроется запись первого вебинара, где агента собирают с нуля.
+👉 Зарегистрироваться
+👉 Узнать подробности эфира
+
+[Media: Фото]</description><pubDate>Tue, 15 Sep 2026 11:31:31 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_835</guid></item><item><title>Microsoft выпустила крупнейший в истории Patch Tuesday</title><link>https://t.me/ZerodayAlert/834</link><description>Microsoft выпустила крупнейший в истории Patch Tuesday
 Сентябрьский Patch Tuesday закрыл 966 уязвимостей, из которых 105 получили статус критических. Две уязвимости злоумышленники уже использовали в реальных атаках до выхода исправления.
 Первый эксплуатируемый zero-day, CVE-2026-81963, находится в Windows Update Stack и позволяет локально повысить привилегии до SYSTEM. Второй, CVE-2026-85880, связан с переполнением буфера в механизме Windows ALPC.
 Помимо Patch Tuesday, Microsoft закрыла ещё 204 уязвимости в Azure, Copilot Studio, Entra ID и других продуктах в начале сентября. В результате общее число исправлений за первые дни месяца превысило 1100.
