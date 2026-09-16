@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 16 Sep 2026 15:34:07 +0000</lastBuildDate><item><title>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках</title><link>https://t.me/ZerodayAlert/838</link><description>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 16 Sep 2026 19:43:31 +0000</lastBuildDate><item><title>Google закрыла Zero-Click в модеме Pixel, который уже использовали в реальных атаках</title><link>https://t.me/ZerodayAlert/840</link><description>Google закрыла Zero-Click в модеме Pixel, который уже использовали в реальных атаках
+Google сообщила об ограниченной целевой эксплуатации CVE-2026-58704 в сотовом модеме Pixel. Уязвимость получила 8,0 балла по CVSS 3.1 и вошла в обновление безопасности от 5 сентября 2026 года.
+Ошибка в проверке прав позволяет атакующему из соседней сети обойти защиту и повысить привилегии. Владельцу смартфона не нужно открывать ссылку, запускать файл или устанавливать приложение, хотя для эксплуатации злоумышленнику требуются начальные низкие привилегии.
+Риск снизит только актуальная прошивка. В настройках Pixel стоит проверить уровень обновления безопасности. Дата должна быть 5 сентября 2026 года или новее.
+#Pixel #Google #ZeroClick #уязвимость
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 16 Sep 2026 19:43:31 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_840</guid></item><item><title>Parallels Desktop позволяет обычному пользователю Mac получить root через свежую уязвимость</title><link>https://t.me/ZerodayAlert/839</link><description>Parallels Desktop позволяет обычному пользователю Mac получить root через свежую уязвимость
+JFrog раскрыла уязвимость CVE-2026-90894 с оценкой 7,8 по CVSS 3.1. На Mac с Parallels Desktop локальный пользователь без административных прав может выполнить код от имени root. Для атаки не нужны запущенная виртуальная машина и подтверждение владельца.
+Проблема связана со службой prl_disp_service, которая работает с правами root и неправильно формирует команду для tar. Подготовленное имя каталога позволяет подставить дополнительные аргументы и запустить указанную атакующим программу с uid 0. Исправленный механизм появился в Parallels Desktop 27, тогда как ветка 26.x по-прежнему использует старую схему.
+Снизить риск проще всего переходом на Parallels Desktop 27.0.0 или новее. Владельцам Intel Mac такой путь пока недоступен, поскольку версия 27 больше не поддерживает процессоры Intel. На таких системах имеет смысл ограничить локальный доступ и отдельно контролировать компьютеры с установленной веткой 26.x.
+#Parallels #macOS #CVE #root
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 16 Sep 2026 19:41:27 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_839</guid></item><item><title>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках</title><link>https://t.me/ZerodayAlert/838</link><description>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках
 Уязвимость CVE-2026-59310 находится в Syslog-сервере vCenter и относится к классу обхода каталогов. Для эксплуатации злоумышленнику достаточно сетевого доступа, учётная запись и действия пользователя не требуются.
 Broadcom выпустила исправление 29 июля, обновив ветки vCenter 9.1, 9.0 и 8.0. Обходного решения не существует, поэтому производитель изначально рекомендовал рассматривать обновление как экстренное.
 Первые скомпрометированные системы QUIRSO зафиксировала уже 3 августа, спустя пять дней после публикации патча. К 7 августа было обнаружено 361 IP-адрес жертв в 47 странах, а закрепление в системе происходило через reverse_ssh.
