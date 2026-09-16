@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 15 Sep 2026 14:17:01 +0000</lastBuildDate><item><title>CISA подтвердила активную эксплуатацию бреши в GitLab</title><link>https://t.me/ZerodayAlert/837</link><description>CISA подтвердила активную эксплуатацию бреши в GitLab
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 16 Sep 2026 15:34:07 +0000</lastBuildDate><item><title>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках</title><link>https://t.me/ZerodayAlert/838</link><description>Критическая уязвимость в VMware vCenter начала эксплуатироваться в реальных атаках
+Уязвимость CVE-2026-59310 находится в Syslog-сервере vCenter и относится к классу обхода каталогов. Для эксплуатации злоумышленнику достаточно сетевого доступа, учётная запись и действия пользователя не требуются.
+Broadcom выпустила исправление 29 июля, обновив ветки vCenter 9.1, 9.0 и 8.0. Обходного решения не существует, поэтому производитель изначально рекомендовал рассматривать обновление как экстренное.
+Первые скомпрометированные системы QUIRSO зафиксировала уже 3 августа, спустя пять дней после публикации патча. К 7 августа было обнаружено 361 IP-адрес жертв в 47 странах, а закрепление в системе происходило через reverse_ssh.
+#vcenter #vmware #уязвимость #вымогатели
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 16 Sep 2026 15:34:07 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_838</guid></item><item><title>CISA подтвердила активную эксплуатацию бреши в GitLab</title><link>https://t.me/ZerodayAlert/837</link><description>CISA подтвердила активную эксплуатацию бреши в GitLab
 Уязвимость CVE-2026-85706 находится в repository commits API GitLab и сочетает отсутствие обязательной аутентификации с ошибкой ограничения файловых путей. При определённых условиях обход пути позволяет читать произвольные файлы на сервере, включая конфигурацию, учётные данные и токены.
 Уязвимы GitLab CE и EE версий с 18.7 до 19.1.7, с 19.2 до 19.2.5 и с 19.3 до 19.3.1 включительно. Проблему закрыли в версиях 19.1.8, 19.2.6 и 19.3.2.
 CISA внесло уязвимость в каталог Known Exploited Vulnerabilities 11 сентября и классифицировало эксплуатацию как активную. Специалисты watchTowr зафиксировали реальные попытки поиска уязвимых серверов в интернете практически сразу после публикации исправлений.

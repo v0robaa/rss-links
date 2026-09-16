@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Tue, 15 Sep 2026 08:43:48 +0000</lastBuildDate><item><title>Message 778</title><link>https://t.me/ptescalator/778</link><description/><pubDate>Tue, 15 Sep 2026 08:43:48 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_778</guid></item><item><title>Message 777</title><link>https://t.me/ptescalator/777</link><description/><pubDate>Thu, 10 Sep 2026 13:23:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_777</guid></item><item><title>Din, din — кто там? 🔔</title><link>https://t.me/ptescalator/776</link><description>Din, din — кто там? 🔔
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 16 Sep 2026 12:06:10 +0000</lastBuildDate><item><title>TLP: POSITIVE RED №2</title><link>https://t.me/ptescalator/779</link><description>TLP: POSITIVE RED №2
+25 сентября проведем наш второй митап, на этот раз — в Музее криптографии (55.830677, 37.597678). Будут честные доклады без записи, живое общение и никакой воды (только пенное, снова).
+Если вы аналитик SOC, специалист по реагированию и расследованию инцидентов или эксперт по исследованию и детектированию угроз, то вам точно зайдет.
+Программа на вечер (встречаемся в 18:30):
+🕖 19:00 — «От инфоповода до атаки: как группировки адаптируют глобальную и российскую повестку под свои операции».
+Денис Казаков, специалист группы киберразведки PT ESC.
+🕢 19:30 — «VantaCore: как вымогатели собирают собственный арсенал».
+Александр Гантимуров, руководитель направления обратной разработки Angara MTDR.
+🕣 20:30 — «История про шифровальщик, который не смог».
+Дмитрий Логинов, реверс-инженер, CICADA8.
+🕘 21:00 — «Follow the __report, knock knock, Remedy».
+Иван Трофименко, аналитик центра мониторинга и реагирования JET CSIRT.
+🕤 21:30 — обсудим томатный гозе и другие важные вопросы.
+Количество мест ограничено, регистрируйтесь заранее на нашем сайте.
+@ptescalator
+
+[Media: Фото]</description><pubDate>Wed, 16 Sep 2026 12:06:10 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_779</guid></item><item><title>Message 778</title><link>https://t.me/ptescalator/778</link><description/><pubDate>Tue, 15 Sep 2026 08:43:48 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_778</guid></item><item><title>Message 777</title><link>https://t.me/ptescalator/777</link><description/><pubDate>Thu, 10 Sep 2026 13:23:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_777</guid></item><item><title>Din, din — кто там? 🔔</title><link>https://t.me/ptescalator/776</link><description>Din, din — кто там? 🔔
 Группа киберразведки экспертного центра безопасности Positive Technologies обнаружила новую группировку, которую мы назвали DENOmination Group.
 В 2026 году мы зафиксировали ее активность против российских организаций оборонно-промышленного, военного, финансового и консалтингового секторов.
 Ключевая особенность атак — использование легитимной среды выполнения Deno для запуска вредоносного JavaScript/TypeScript-кода. В исследованных цепочках мы наблюдали загрузчик DinDoor, агент удаленного доступа DenoRAT, вредоносные MSI- и LNK-файлы, ротацию C2-инфраструктуры и несколько связанных способов первоначальной доставки.

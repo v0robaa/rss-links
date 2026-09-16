@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-16T09:12:26.640617+00:00",
-  "messages_count": 248,
+  "last_update": "2026-09-16T18:04:19.567583+00:00",
+  "messages_count": 249,
   "messages": [
+    {
+      "id": "437",
+      "title": "Exploit module for N-able N-central unauthenticated RCE (CVE-2026-86218)",
+      "text": "Exploit module for N-able N-central unauthenticated RCE (CVE-2026-86218)\nBlog: https://www.rapid7.com/blog/post/ve-cve-2026-86206-cve-2026-86207-n-able-n-central-authentication-bypass-fixed/\nFOFA Query: app=\"N-Able-N-Central-Monitor-MGMT\"\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/437",
+      "pub_date": "2026-09-16T16:42:28+00:00"
+    },
     {
       "id": "436",
       "title": "Хак тайм епта…",
