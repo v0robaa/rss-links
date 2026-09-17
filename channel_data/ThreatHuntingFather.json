@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-16T21:13:46.033797+00:00",
-  "messages_count": 283,
+  "last_update": "2026-09-17T09:20:47.146962+00:00",
+  "messages_count": 284,
   "messages": [
+    {
+      "id": "1479",
+      "title": "Актуалочка",
+      "text": "Актуалочка\nhttps://www.esentire.com/blog/ghostcode-dissecting-a-novel-device-code-phishing-kit",
+      "link": "https://t.me/ThreatHuntingFather/1479",
+      "pub_date": "2026-09-17T08:14:05+00:00"
+    },
     {
       "id": "1478",
       "title": "🇨🇳360 научила мультимодальную ИИ-модель анализировать миллионные EDR-журналы как «видео»",
