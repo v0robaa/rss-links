@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-09-18T13:32:06.364469+00:00",
-  "messages_count": 167,
+  "last_update": "2026-09-18T17:37:21.349242+00:00",
+  "messages_count": 168,
   "messages": [
+    {
+      "id": "781",
+      "title": "Message 781",
+      "text": "",
+      "link": "https://t.me/ptescalator/781",
+      "pub_date": "2026-09-18T15:37:58+00:00"
+    },
     {
       "id": "780",
       "title": ".exe .docm .xlsm",

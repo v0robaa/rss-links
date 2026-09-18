@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-18T13:31:47.176040+00:00",
-  "messages_count": 249,
+  "last_update": "2026-09-18T17:37:02.117944+00:00",
+  "messages_count": 250,
   "messages": [
+    {
+      "id": "438",
+      "title": "cups2root Linux LPE",
+      "text": "cups2root Linux LPE\nInteractive root shell from a local account in the lpadmin group.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/438",
+      "pub_date": "2026-09-18T15:18:57+00:00"
+    },
     {
       "id": "437",
       "title": "Exploit module for N-able N-central unauthenticated RCE (CVE-2026-86218)",
