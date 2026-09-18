@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-18T08:55:58.276461+00:00",
-  "messages_count": 286,
+  "last_update": "2026-09-18T13:31:54.437975+00:00",
+  "messages_count": 287,
   "messages": [
+    {
+      "id": "1482",
+      "title": "Message 1482",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1482",
+      "pub_date": "2026-09-18T11:35:40+00:00"
+    },
     {
       "id": "1481",
       "title": "Облако vs on-prem EDR: тема, которая не утихает в отрасли - и в Казахстане особенно",
