@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-18T20:44:33.211503+00:00",
-  "messages_count": 287,
+  "last_update": "2026-09-19T08:42:56.372270+00:00",
+  "messages_count": 288,
   "messages": [
+    {
+      "id": "1483",
+      "title": "https://core-jmp.org/2026/09/domain-credential-dumping-file-handle-redirection/",
+      "text": "https://core-jmp.org/2026/09/domain-credential-dumping-file-handle-redirection/",
+      "link": "https://t.me/ThreatHuntingFather/1483",
+      "pub_date": "2026-09-19T04:51:15+00:00"
+    },
     {
       "id": "1482",
       "title": "Message 1482",
