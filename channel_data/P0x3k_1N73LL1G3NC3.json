@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-19T20:24:49.828948+00:00",
-  "messages_count": 250,
+  "last_update": "2026-09-20T09:11:51.939488+00:00",
+  "messages_count": 251,
   "messages": [
+    {
+      "id": "439",
+      "title": "BigDiskBuster",
+      "text": "BigDiskBuster\nWindows Defender Update Denial of Service Vulnerability.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/439",
+      "pub_date": "2026-09-20T06:46:31+00:00"
+    },
     {
       "id": "438",
       "title": "cups2root Linux LPE",
