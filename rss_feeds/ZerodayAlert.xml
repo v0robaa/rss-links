@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 23 Sep 2026 12:45:10 +0000</lastBuildDate><item><title>Как AI изменил пентест и что теперь делать 🤖</title><link>https://t.me/ZerodayAlert/848</link><description>Как AI изменил пентест и что теперь делать 🤖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 24 Sep 2026 08:21:55 +0000</lastBuildDate><item><title>Серверам управления Check Point нужен срочный патч</title><link>https://t.me/ZerodayAlert/849</link><description>Серверам управления Check Point нужен срочный патч
+Уязвимость CVE-2026-93616 с оценкой 9,8 по CVSS позволяет без учётной записи и пароля запускать произвольные скрипты на сервере управления Check Point. Причина кроется в веб-службе Check Point Management, где обход ограничений каталогов сочетается с загрузкой файлов.
+Под удар попали Security Management Server, Multi-Domain Server, Log Server и SmartEvent в версиях от R81.10 до R82.20. Для каждой ветки уже вышли исправления, а до их установки доступ к TCP-порту 19009 рекомендуют оставить только доверенным адресам.
+Первые попытки эксплуатации компания зафиксировала 23 июля, поэтому журналы на признаки компрометации стоит проверять начиная с этой даты. 22 сентября CISA внесло уязвимость в каталог KEV и обязало федеральные ведомства США устранить её до 25 сентября.
+#Checkpoint #уязвимость #обновление #kev
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 24 Sep 2026 08:21:55 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_849</guid></item><item><title>Как AI изменил пентест и что теперь делать 🤖</title><link>https://t.me/ZerodayAlert/848</link><description>Как AI изменил пентест и что теперь делать 🤖
 Агент-хакер — уже не демо на конференции. Его выводят на bug bounty, турниры и в коммерческие проекты.
 24 сентября в 19:00 мск директор по продуктам Standoff 365 Иван Булавин и CEO CyberED Егор Богомолов разберут, что AI поменял в наступательной безопасности и куда расти пентестеру.
 👉 Зарегистрироваться на эфир
