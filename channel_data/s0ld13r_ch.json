@@ -1,8 +1,15 @@
 {
   "channel": "s0ld13r_ch",
-  "last_update": "2026-09-24T18:21:21.963205+00:00",
-  "messages_count": 95,
+  "last_update": "2026-09-25T09:30:51.065266+00:00",
+  "messages_count": 96,
   "messages": [
+    {
+      "id": "423",
+      "title": "Screamer - Fast Network Discovery",
+      "text": "Screamer - Fast Network Discovery\nЧастенько во время пентестов внутрянки приходится сталкиваться с ситуациями когда надо сделать пробу \"живых\" подсетей при этом не нагружая канал тяжелыми сканами 😎\nМой хороший друг Ifrit сделал классную утилиту чтобы решить эту бытовую проблему 😺\nУстановка\nsudo pipx install --global git+https://github.com/ifritnoises/screamer\nAUR (Arch)\nyay -S screamer\nBlackArch\nsudo pacman -S screamer\n💻 github: https://github.com/ifritnoises/screamer\n🔗 https://ifritnoises.org/articles/pattern-screamer/\n🧢 s0ld13r\n\n[Media: Видео]",
+      "link": "https://t.me/s0ld13r_ch/423",
+      "pub_date": "2026-09-25T09:24:48+00:00"
+    },
     {
       "id": "422",
       "title": "Message 422",
