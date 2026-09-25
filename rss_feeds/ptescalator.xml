@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 23 Sep 2026 11:49:54 +0000</lastBuildDate><item><title>Восстановление EVTX-записей: методы карвинга 🧩</title><link>https://t.me/ptescalator/782</link><description>Восстановление EVTX-записей: методы карвинга 🧩
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 25 Sep 2026 18:25:25 +0000</lastBuildDate><item><title>Мы помогли Apple устранить уязвимость в ядре ее операционных систем</title><link>https://t.me/ptescalator/783</link><description>Мы помогли Apple устранить уязвимость в ядре ее операционных систем
+Эксперт PT ESC Михаил Ложников обнаружил недостаток, который мог вызвать внезапное завершение работы системы (сбой ядра) или повреждение памяти ядра (kernel memory corruption) в продукции компании Apple.
+⚠️ Уязвимость PT-2026-76847 (CVE-2026-65330) получила средний уровень критичности — 6.5 по шкале CVSS 3.x.
+Делимся подробностями
+• Ошибка была обнаружена в BSD-подсистеме сетевого стека XNU (ядра macOS, iOS) в компоненте NECP (Network Extension Control Policy), который управляет правами доступа программ и приложений к сетевым интерфейсам.
+• Для взаимодействия с NECP требуется процесс с привилегированными правами, подписанный цифровой подписью (platform-signed).
+• При закрытии NECP-сессии ядро корректно освобождает domain-фильтры, но domain-trie (префиксное дерево доменов) остается в глобальном списке с указателем на уже освобожденную память сессии.
+• При удалении trie по идентификатору (ID) ядро не проверяет владельца.
+• Любая другая сессия может удалить чужое префиксное дерево, вследствие чего может произойти ошибка и ядро вызовет панику.
+🍏 Скорее обновляйте ваши устройства
+Apple уже выпустила исправление безопасности в iOS/iPadOS 26.6.1, macOS 26.6.2, tvOS 27, watchOS 27 и visionOS 27.
+Подробная информация об исправлениях опубликована на официальных страницах Apple: macOS, iOS и iPadOS, tvOS, watchOS и visionOS.
+#cve #ir #ios #macos
+@ptescalator
+
+[Media: Видео]</description><pubDate>Fri, 25 Sep 2026 18:25:25 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_783</guid></item><item><title>Восстановление EVTX-записей: методы карвинга 🧩</title><link>https://t.me/ptescalator/782</link><description>Восстановление EVTX-записей: методы карвинга 🧩
 При расследовании инцидентов, когда злоумышленники шифруют образы виртуальных машин, нередко возникает ситуация, при которой файловая система повреждается настолько, что штатное монтирование становится невозможным.
 Восстановить ее вручную теоретически можно, но это отнимает много времени и сопровождается потерями данных. В таких случаях применяется карвинг — побайтовый поиск сигнатур непосредственно в сыром образе, в обход файловой системы.
 ❗️ Команда PT ESC IR уделяет приоритетное внимание автоматизации разбора артефактов для последующего обнаружения вредоносной активности — это ускоряет восстановление картины инцидента.
