@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-09-25T18:25:13.723499+00:00",
-  "messages_count": 290,
+  "last_update": "2026-09-26T09:16:00.334818+00:00",
+  "messages_count": 291,
   "messages": [
+    {
+      "id": "1486",
+      "title": "Message 1486",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1486",
+      "pub_date": "2026-09-26T05:17:47+00:00"
+    },
     {
       "id": "1485",
       "title": "Message 1485",
