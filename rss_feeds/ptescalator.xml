@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Sat, 26 Sep 2026 09:16:12 +0000</lastBuildDate><item><title>Мы помогли Apple устранить уязвимость в ядре ее операционных систем</title><link>https://t.me/ptescalator/783</link><description>Мы помогли Apple устранить уязвимость в ядре ее операционных систем
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Sat, 26 Sep 2026 17:41:54 +0000</lastBuildDate><item><title>Мы помогли Apple устранить уязвимость в ядре ее операционных систем</title><link>https://t.me/ptescalator/783</link><description>Мы помогли Apple устранить уязвимость в ядре ее операционных систем
 Эксперт PT ESC Михаил Ложников обнаружил недостаток, который мог вызвать внезапное завершение работы системы (сбой ядра) или повреждение памяти ядра (kernel memory corruption) в продукции компании Apple.
 ⚠️ Уязвимость PT-2026-76847 (CVE-2026-65330) получила средний уровень критичности — 6.5 по шкале CVSS 3.x.
 Делимся подробностями
@@ -14,7 +14,7 @@ Apple уже выпустила исправление безопасности 
 #cve #ir #ios #macos
 @ptescalator
 
-[Media: Видео]</description><pubDate>Sat, 26 Sep 2026 09:16:12 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_783</guid></item><item><title>Восстановление EVTX-записей: методы карвинга 🧩</title><link>https://t.me/ptescalator/782</link><description>Восстановление EVTX-записей: методы карвинга 🧩
+[Media: Видео]</description><pubDate>Sat, 26 Sep 2026 17:41:54 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_783</guid></item><item><title>Восстановление EVTX-записей: методы карвинга 🧩</title><link>https://t.me/ptescalator/782</link><description>Восстановление EVTX-записей: методы карвинга 🧩
 При расследовании инцидентов, когда злоумышленники шифруют образы виртуальных машин, нередко возникает ситуация, при которой файловая система повреждается настолько, что штатное монтирование становится невозможным.
 Восстановить ее вручную теоретически можно, но это отнимает много времени и сопровождается потерями данных. В таких случаях применяется карвинг — побайтовый поиск сигнатур непосредственно в сыром образе, в обход файловой системы.
 ❗️ Команда PT ESC IR уделяет приоритетное внимание автоматизации разбора артефактов для последующего обнаружения вредоносной активности — это ускоряет восстановление картины инцидента.
