@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-09-28T20:27:48.647428+00:00",
-  "messages_count": 251,
+  "last_update": "2026-09-29T10:33:14.761262+00:00",
+  "messages_count": 252,
   "messages": [
+    {
+      "id": "440",
+      "title": "Citrix NetScaler PreAuth Command Injection",
+      "text": "Citrix NetScaler PreAuth Command Injection\nCVE-2026-88771 Improper input validation leading to RCE in a default NetScaler configuration, with no additional product features required.\nBlog:\n• https://labs.watchtowr.com/oh-look-the-foot-gun-went-off-again-citrix-netscaler-preauth-command-injection-cve-2026-88771/\n• https://www.rapid7.com/blog/post/etr-zero-day-exploitation-of-citrix-netscaler-adc-and-gateway-cve-2026-88771-and-cve-2026-88772/\nSearch Query:\nZoomEye: app=\"Citrix NetScaler\"\nFOFA: app=\"NetScaler-AAA\"\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/440",
+      "pub_date": "2026-09-29T07:10:48+00:00"
+    },
     {
       "id": "439",
       "title": "BigDiskBuster",

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sun, 20 Sep 2026 06:46:31 +0000</lastBuildDate><item><title>BigDiskBuster</title><link>https://t.me/P0x3k_1N73LL1G3NC3/439</link><description>BigDiskBuster
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 29 Sep 2026 07:10:48 +0000</lastBuildDate><item><title>Citrix NetScaler PreAuth Command Injection</title><link>https://t.me/P0x3k_1N73LL1G3NC3/440</link><description>Citrix NetScaler PreAuth Command Injection
+CVE-2026-88771 Improper input validation leading to RCE in a default NetScaler configuration, with no additional product features required.
+Blog:
+• https://labs.watchtowr.com/oh-look-the-foot-gun-went-off-again-citrix-netscaler-preauth-command-injection-cve-2026-88771/
+• https://www.rapid7.com/blog/post/etr-zero-day-exploitation-of-citrix-netscaler-adc-and-gateway-cve-2026-88771-and-cve-2026-88772/
+Search Query:
+ZoomEye: app="Citrix NetScaler"
+FOFA: app="NetScaler-AAA"
+
+[Media: Фото]</description><pubDate>Tue, 29 Sep 2026 07:10:48 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_440</guid></item><item><title>BigDiskBuster</title><link>https://t.me/P0x3k_1N73LL1G3NC3/439</link><description>BigDiskBuster
 Windows Defender Update Denial of Service Vulnerability.
 
 [Media: Фото]</description><pubDate>Sun, 20 Sep 2026 06:46:31 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_439</guid></item><item><title>cups2root Linux LPE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/438</link><description>cups2root Linux LPE
