@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 30 Sep 2026 12:27:14 +0000</lastBuildDate><item><title>Одна забытая учётка — и вся сеть под угрозой ⚠️</title><link>https://t.me/ZerodayAlert/856</link><description>Одна забытая учётка — и вся сеть под угрозой ⚠️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 01 Oct 2026 16:40:08 +0000</lastBuildDate><item><title>Spectre обходит штатные защиты Linux через устаревшие записи процессора</title><link>https://t.me/ZerodayAlert/857</link><description>Spectre обходит штатные защиты Linux через устаревшие записи процессора
+Новая атака Branch Target Reuse использует устаревшие записи в предсказателе переходов после удаления JIT-кода. На современных процессорах Intel два рабочих эксплойта для Linux cBPF читали произвольную память ядра со скоростью около 8 байт в секунду. За несколько минут атака позволила извлечь хеш пароля root.
+BTR возникает из-за рассинхронизации между JIT-кодом и Branch Target Buffer. Код уже удалён или заменён, но процессор всё ещё помнит старую цель перехода и может спекулятивно выполнить инструкции по устаревшему адресу. Подобное поведение обнаружили на Intel, AMD и Arm, хотя полноценную кражу данных подтвердили пока на Intel.
+Риск снижают исправления, которые очищают состояние предсказателя при повторном использовании памяти. Для Linux проблему закрывают CVE-2026-64507 и CVE-2026-64508, а ядро применяет IBPB для BPF JIT. Актуальные версии ядра, браузеров и JIT-сред стоит устанавливать сразу после выхода исправлений.
+#Spectre #BTR #Linux #JIT
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 01 Oct 2026 16:40:08 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_857</guid></item><item><title>Одна забытая учётка — и вся сеть под угрозой ⚠️</title><link>https://t.me/ZerodayAlert/856</link><description>Одна забытая учётка — и вся сеть под угрозой ⚠️
 У каждого админа свой пароль к устройствам, половина учёток осталась от уволившихся, а после сбоя никто не может сказать, кто и что правил. Знакомо?
 Для атакующего это подарок: можно взломать инфраструктуру без сложных техник.
 Завтра в 19:00 мск наведём порядок. На открытом практикуме эксперт соберёт единый вход в сетевое оборудование: одни логины на всех устройствах, у каждого свои права, а каждое действие в журнале.
