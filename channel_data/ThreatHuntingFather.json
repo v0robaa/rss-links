@@ -1,14 +1,21 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-01T19:23:03.215510+00:00",
-  "messages_count": 309,
+  "last_update": "2026-10-02T10:25:53.612237+00:00",
+  "messages_count": 310,
   "messages": [
     {
       "id": "1519",
       "title": "KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐",
       "text": "KazHackStan 2026-ның екінші күні де ерекше әсерге толы болды! 🔐\nМықты спикерлер, мазмұнды панельдік сессиялар және киберқауіпсіздікке қатысты өзекті талқылаулар — бүгінгі бағдарлама қызықты әрі пайдалы өтті. Сондай-ақ CyberKumbez сайысының қорытындысын шығарып, Италияда өтетін ICO 2027 жарысына Қазақстан атынан қатысатын ұлттық құраманы таныстырдық 🇰🇿🇮🇹\nОсы екі күнді бізбен бірге өткізген баршаңызға рақмет! Керемет әсер мен ұмытылмас сәттерге толы кездесу болды ❤️\n📅 29–30 қыркүйек\n📍 Астана, Тәуелсіздік сарайы\n🔗 kazhackstan.com\nВторой день KazHackStan 2026 прошёл ярко и насыщенно! 🔐\nСуперспикеры, интересные панельные сессии и важные разговоры о кибербезопасности — программа получилась по-настоящему крутой. А ещё подвели итоги CyberKumbez и представили национальную команду Казахстана, которая отправится на ICO 2027 в Италию 🇰🇿🇮🇹\nСпасибо всем, кто был с нами эти два дня! Это было невероятно ❤️\n📅 29–30 сентября\n📍 Астана, Дворец Независимости\n🔗 kazhackstan.com\nDay 2 of KazHackStan 2026 was packed with great moments! 🔐\nIncredible speakers, engaging panel sessions, and important conversations about cybersecurity made the program truly memorable. We also wrapped up CyberKumbez and introduced Kazakhstan’s national team heading to ICO 2027 in Italy 🇰🇿🇮🇹\nThank you to everyone who joined us over these two days. It was amazing! ❤️\n📅 September 29–30\n📍 Astana, Palace of Independence\n🔗 kazhackstan.com",
       "link": "https://t.me/ThreatHuntingFather/1519",
-      "pub_date": "2026-10-01T19:23:03.188315+00:00"
+      "pub_date": "2026-10-02T10:25:53.583576+00:00"
+    },
+    {
+      "id": "1523",
+      "title": "Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.",
+      "text": "Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.\nО чём говорили:\n🔷 как вырасти из SOC-аналитика в CTI и с чего начать региональной команде\n🔷 почему ClickFix — любимая техника Олега, хотя злоумышленники уже перебрали все варианты команд\n🔷 зачем атакующим форензик-инструменты и почему Mimikatz, скачанный с GitHub, всё ещё работает\n🔷 можно ли доверять ИИ-агентам разбор CTI-отчётов (спойлер: перепроверять надо)\n🔗 Читай интервью по ссылке: https://telegra.ph/Dyavol-kroetsya-v-detalyah-Oleg-Skulkin-o-landshafte-ugroz-ClickFix-i-karere-v-CTI-10-02\n📹 А кто больше по видео, тот не уйдёт обиженным: запись лежит в комментариях ⬇️",
+      "link": "https://t.me/ThreatHuntingFather/1523",
+      "pub_date": "2026-10-02T05:51:54+00:00"
     },
     {
       "id": "1522",
