@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 02 Oct 2026 19:06:11 +0000</lastBuildDate><item><title>Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.</title><link>https://t.me/ThreatHuntingFather/1523</link><description>Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 03 Oct 2026 07:04:16 +0000</lastBuildDate><item><title>Продолжаем публиковать интервью со спикерами с KazHackStan!</title><link>https://t.me/ThreatHuntingFather/1524</link><description>Продолжаем публиковать интервью со спикерами с KazHackStan!
+Тут мы поймали Daniel Bohannon и разобрали с ним, как на самом деле искать угрозы в облаке.
+О чём говорили:
+🔷 почему в облаке нет настоящих «отпечатков пальцев» и как собрать их из API-вызовов
+🔷 как профилировать учётки и ловить автоматизацию по скорости действий
+🔷 чем GCP отличается от AWS и почему сервисные аккаунты нельзя просто списывать на шум
+🔷 где ИИ-агентам место в threat hunting (спойлер: ответственность всё равно на человеке)
+Бонус: Дэниэл играет на домбре и говорит по-казахски 🇰🇿
+🔗 Читай интервью по ссылке: https://telegra.ph/Logi-pishut-lyudi-poehtomu-v-nih-byvayut-oshibki-Daniel-Bohannon-o-threat-hunting-v-oblake-10-02
+📹 А кто больше по видео, тот не уйдёт обиженным: запись лежит в комментариях ⬇️</description><pubDate>Sat, 03 Oct 2026 07:04:16 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1524</guid></item><item><title>Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.</title><link>https://t.me/ThreatHuntingFather/1523</link><description>Как и обещали, мы в Астане перехватили Олега Скулкина (Head of Threat Intelligence в BI.ZONE) за кулисами конференции, прямо перед его выступлением, и вытащили из него всё самое интересное.
 О чём говорили:
 🔷 как вырасти из SOC-аналитика в CTI и с чего начать региональной команде
 🔷 почему ClickFix — любимая техника Олега, хотя злоумышленники уже перебрали все варианты команд
