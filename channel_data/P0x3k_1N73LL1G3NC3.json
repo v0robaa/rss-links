@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-03T09:46:22.558631+00:00",
-  "messages_count": 252,
+  "last_update": "2026-10-03T17:52:02.047673+00:00",
+  "messages_count": 253,
   "messages": [
+    {
+      "id": "441",
+      "title": "Even more privileged ADCS ESC_CES",
+      "text": "Even more privileged ADCS ESC_CES\nWeb Enrollment and CES both perform certificate enrollment, but they are completely different HTTP protocols.\nADCS Tools\nA tool that could intercept an authentication request and relay it to the CES endpoint to obtain a certificate.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/441",
+      "pub_date": "2026-10-03T17:05:35+00:00"
+    },
     {
       "id": "440",
       "title": "Citrix NetScaler PreAuth Command Injection",
