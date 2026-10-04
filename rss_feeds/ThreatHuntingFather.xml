@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 03 Oct 2026 07:04:16 +0000</lastBuildDate><item><title>Продолжаем публиковать интервью со спикерами с KazHackStan!</title><link>https://t.me/ThreatHuntingFather/1524</link><description>Продолжаем публиковать интервью со спикерами с KazHackStan!
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 04 Oct 2026 07:02:18 +0000</lastBuildDate><item><title>И заключительный пост с KHS.</title><link>https://t.me/ThreatHuntingFather/1525</link><description>И заключительный пост с KHS.
+О том, как мы поговорили Игорем Овером в кулуарах сразу после презентации его платформы и расспросили, как вообще до такого дошли.
+О чём говорили:
+🔷 как всё началось с Mario в пять лет и поиска уязвимостей в боссах 🎮
+🔷 как Lineage 2, пакеты и hex превратились в YouTube-канал, который за неделю набрал 100 000 подписчиков
+🔷 как юрист по образованию проверил безопасность своего университета (с хорошими намерениями)
+🔷 что умеет предиктивная система анализа технологий на базе ИИ и почему «мы не парсим»
+🔷 на кого она рассчитана: спойлер, не на простых пользователей
+🔗 Игорь говорит, что 27 лет упаковывал знания в одну «кнопку». Какую именно, читай в интервью: https://telegra.ph/YA-upakoval-vse-znaniya-v-odnu-knopku-Igor-Over-o-puti-ot-Mario-i-Lineage-2-do-sobstvennoj-platformy-10-02
+📹 А кто больше по видео, тот не уйдёт обиженным: запись лежит в комментариях ⬇️</description><pubDate>Sun, 04 Oct 2026 07:02:18 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1525</guid></item><item><title>Продолжаем публиковать интервью со спикерами с KazHackStan!</title><link>https://t.me/ThreatHuntingFather/1524</link><description>Продолжаем публиковать интервью со спикерами с KazHackStan!
 Тут мы поймали Daniel Bohannon и разобрали с ним, как на самом деле искать угрозы в облаке.
 О чём говорили:
 🔷 почему в облаке нет настоящих «отпечатков пальцев» и как собрать их из API-вызовов
