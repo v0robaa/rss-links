@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-04T21:15:51.278215+00:00",
-  "messages_count": 312,
+  "last_update": "2026-10-05T11:19:57.980752+00:00",
+  "messages_count": 313,
   "messages": [
+    {
+      "id": "1526",
+      "title": "🗺 Google SAIF Map - карта безопасности AI",
+      "text": "🗺 Google SAIF Map - карта безопасности AI\nУ Google есть интересный интерактивный портал по Secure AI Framework (SAIF)\nПо сути это карта угроз и защитных мер для AI-систем. Можно выбрать конкретный риск - Prompt Injection, Data Poisoning, Model Exfiltration, Sensitive Data Disclosure, Rogue Actions и другие - и посмотреть:\n- где в архитектуре возникает проблема\n- где она может быть обнаружена или эксплуатироваться\n- какими security controls ее закрывать\nВсе разложено по слоям Data → Infrastructure → Model → Application, включая современные агентские системы, RAG, tools и внешние интеграции.\nПолезно для AI Security, AppSec и пентеста: вместо абстрактного списка угроз получаем наглядную карту - где искать проблему и какие защитные механизмы должны присутствовать.\nЕсли совсем упрощенно:\nOWASP - что может сломаться\nSAIF - где это происходит и как защищать\nMITRE ATLAS - как это атакуют\n🔗 https://saif.google/secure-ai-framework/saif-map\nОднозначно в закладки.\n#AI #AISecurity #Pentest #AppSec #SAIF #Grib\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1526",
+      "pub_date": "2026-10-05T10:03:54+00:00"
+    },
     {
       "id": "1525",
       "title": "И заключительный пост с KHS.",

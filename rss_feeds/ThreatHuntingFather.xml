@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 04 Oct 2026 07:02:18 +0000</lastBuildDate><item><title>И заключительный пост с KHS.</title><link>https://t.me/ThreatHuntingFather/1525</link><description>И заключительный пост с KHS.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 05 Oct 2026 10:03:54 +0000</lastBuildDate><item><title>🗺 Google SAIF Map - карта безопасности AI</title><link>https://t.me/ThreatHuntingFather/1526</link><description>🗺 Google SAIF Map - карта безопасности AI
+У Google есть интересный интерактивный портал по Secure AI Framework (SAIF)
+По сути это карта угроз и защитных мер для AI-систем. Можно выбрать конкретный риск - Prompt Injection, Data Poisoning, Model Exfiltration, Sensitive Data Disclosure, Rogue Actions и другие - и посмотреть:
+- где в архитектуре возникает проблема
+- где она может быть обнаружена или эксплуатироваться
+- какими security controls ее закрывать
+Все разложено по слоям Data → Infrastructure → Model → Application, включая современные агентские системы, RAG, tools и внешние интеграции.
+Полезно для AI Security, AppSec и пентеста: вместо абстрактного списка угроз получаем наглядную карту - где искать проблему и какие защитные механизмы должны присутствовать.
+Если совсем упрощенно:
+OWASP - что может сломаться
+SAIF - где это происходит и как защищать
+MITRE ATLAS - как это атакуют
+🔗 https://saif.google/secure-ai-framework/saif-map
+Однозначно в закладки.
+#AI #AISecurity #Pentest #AppSec #SAIF #Grib
+
+[Media: Фото]</description><pubDate>Mon, 05 Oct 2026 10:03:54 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1526</guid></item><item><title>И заключительный пост с KHS.</title><link>https://t.me/ThreatHuntingFather/1525</link><description>И заключительный пост с KHS.
 О том, как мы поговорили Игорем Овером в кулуарах сразу после презентации его платформы и расспросили, как вообще до такого дошли.
 О чём говорили:
 🔷 как всё началось с Mario в пять лет и поиска уязвимостей в боссах 🎮
