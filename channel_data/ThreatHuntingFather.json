@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-06T11:09:10.685109+00:00",
-  "messages_count": 313,
+  "last_update": "2026-10-06T19:23:25.886884+00:00",
+  "messages_count": 314,
   "messages": [
+    {
+      "id": "1527",
+      "title": "Шумиха на фоне инцидента с Shinhan Bank",
+      "text": "Шумиха на фоне инцидента с Shinhan Bank\nhttps://fsc.go.kr/no010101/87869\nА предыстория инцидента и саммари тут: 👉\nShinhan Bank disclosed a data breach affecting about 25,000 customers.\nhttps://www.koreatimes.co.kr/amp/business/banking-finance/20261002/shinhan-kookmin-hana-data-breaches-fuel-concerns-over-ai-powered-cyberattacks-in-financial-sector\nХайп вокруг инструмента  ARTEX AI (выходит первой ссылкой в гугле 😏)\nThe server’s HTML title reportedly contained a Chinese phrase meaning “AI autonomous penetration testing console,” suggesting a possible link to ARTEX AI, an open-source autonomous penetration-testing system built on a large language model. The server is suspected of having been used in a credential stuffing attack.",
+      "link": "https://t.me/ThreatHuntingFather/1527",
+      "pub_date": "2026-10-06T13:48:44+00:00"
+    },
     {
       "id": "1526",
       "title": "🗺 Google SAIF Map - карта безопасности AI",

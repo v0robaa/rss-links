@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 05 Oct 2026 10:03:54 +0000</lastBuildDate><item><title>🗺 Google SAIF Map - карта безопасности AI</title><link>https://t.me/ThreatHuntingFather/1526</link><description>🗺 Google SAIF Map - карта безопасности AI
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 06 Oct 2026 13:48:44 +0000</lastBuildDate><item><title>Шумиха на фоне инцидента с Shinhan Bank</title><link>https://t.me/ThreatHuntingFather/1527</link><description>Шумиха на фоне инцидента с Shinhan Bank
+https://fsc.go.kr/no010101/87869
+А предыстория инцидента и саммари тут: 👉
+Shinhan Bank disclosed a data breach affecting about 25,000 customers.
+https://www.koreatimes.co.kr/amp/business/banking-finance/20261002/shinhan-kookmin-hana-data-breaches-fuel-concerns-over-ai-powered-cyberattacks-in-financial-sector
+Хайп вокруг инструмента  ARTEX AI (выходит первой ссылкой в гугле 😏)
+The server’s HTML title reportedly contained a Chinese phrase meaning “AI autonomous penetration testing console,” suggesting a possible link to ARTEX AI, an open-source autonomous penetration-testing system built on a large language model. The server is suspected of having been used in a credential stuffing attack.</description><pubDate>Tue, 06 Oct 2026 13:48:44 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1527</guid></item><item><title>🗺 Google SAIF Map - карта безопасности AI</title><link>https://t.me/ThreatHuntingFather/1526</link><description>🗺 Google SAIF Map - карта безопасности AI
 У Google есть интересный интерактивный портал по Secure AI Framework (SAIF)
 По сути это карта угроз и защитных мер для AI-систем. Можно выбрать конкретный риск - Prompt Injection, Data Poisoning, Model Exfiltration, Sensitive Data Disclosure, Rogue Actions и другие - и посмотреть:
 - где в архитектуре возникает проблема
