@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 02 Oct 2026 15:21:23 +0000</lastBuildDate><item><title>Затронут ли ваш бизнес новые правила защиты информации?</title><link>https://t.me/ZerodayAlert/863</link><description>Затронут ли ваш бизнес новые правила защиты информации?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 06 Oct 2026 05:05:07 +0000</lastBuildDate><item><title>ИИ от Anthropic нашёл в Rejetto HFS цепочку от Math.random() до удалённого выполнения кода</title><link>https://t.me/ZerodayAlert/864</link><description>ИИ от Anthropic нашёл в Rejetto HFS цепочку от Math.random() до удалённого выполнения кода
+Команда Horizon3 показала уязвимость CVE-2026-61500 в Rejetto HFS 3.0.0–3.2.0 с оценкой 9,3 по CVSS 4.0. Модель Mythos от Anthropic помогла собрать цепочку атаки, которая позволяет получить административную сессию без пароля и выполнить код на сервере.
+HFS создавал ключ подписи cookie через некриптографический Math.random(). Сервер раскрывал значения из того же потока случайных чисел, а Mythos предложил восстановить состояние xorshift128+ через Z3, вычислить секретный ключ и подписать поддельную cookie администратора.
+Попытки эксплуатации уже фиксируют в интернете. Владельцам HFS стоит проверить установленную версию и доступность сервера извне. Версии до 3.2.1 включительно в уязвимый диапазон не входят только начиная с исправленного релиза 3.2.1.
+#Rejetto #HFS #Mythos #RCE
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 06 Oct 2026 05:05:07 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_864</guid></item><item><title>Затронут ли ваш бизнес новые правила защиты информации?</title><link>https://t.me/ZerodayAlert/863</link><description>Затронут ли ваш бизнес новые правила защиты информации?
 Если вы работаете с госсектором – да. Обновленные требования распространяются на компании, которые выполняют госконтракты или имеют доступ к защищаемым данным. Без аттестованной инфраструктуры нельзя подключаться к СМЭВ, ЕГИСЗ или ЕСИА.
 На практическом вебинаре эксперт Selectel расскажет, какие процессы нужно скорректировать под изменения. Вы составите пошаговый план действий и получите готовое решение, чтобы привести инфраструктуру в соответствие с приказом ФСТЭК №117.
 Будет полезно директорам и специалистам по ИБ, а также техническим руководителям компаний, которые работают с госсектором.
