@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Sat, 03 Oct 2026 17:05:35 +0000</lastBuildDate><item><title>Even more privileged ADCS ESC_CES</title><link>https://t.me/P0x3k_1N73LL1G3NC3/441</link><description>Even more privileged ADCS ESC_CES
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 07 Oct 2026 15:06:26 +0000</lastBuildDate><item><title>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/442</link><description>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution
+The exploit chains a WebSocket information disclosure flaw into authenticated session takeover and arbitrary command execution as the zammad OS user.
+Blog: https://horizon3.ai/attack-research/disclosures/cve-2026-102489-zammad-session-leak-rce/
+
+[Media: Фото]</description><pubDate>Wed, 07 Oct 2026 15:06:26 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_442</guid></item><item><title>Even more privileged ADCS ESC_CES</title><link>https://t.me/P0x3k_1N73LL1G3NC3/441</link><description>Even more privileged ADCS ESC_CES
 Web Enrollment and CES both perform certificate enrollment, but they are completely different HTTP protocols.
 ADCS Tools
 A tool that could intercept an authentication request and relay it to the CES endpoint to obtain a certificate.

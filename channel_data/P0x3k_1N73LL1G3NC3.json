@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-07T10:57:48.166429+00:00",
-  "messages_count": 253,
+  "last_update": "2026-10-07T19:50:30.412426+00:00",
+  "messages_count": 254,
   "messages": [
+    {
+      "id": "442",
+      "title": "CVE-2026-102489: Zammad Unauthenticated Remote Code Execution",
+      "text": "CVE-2026-102489: Zammad Unauthenticated Remote Code Execution\nThe exploit chains a WebSocket information disclosure flaw into authenticated session takeover and arbitrary command execution as the zammad OS user.\nBlog: https://horizon3.ai/attack-research/disclosures/cve-2026-102489-zammad-session-leak-rce/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/442",
+      "pub_date": "2026-10-07T15:06:26+00:00"
+    },
     {
       "id": "441",
       "title": "Even more privileged ADCS ESC_CES",
