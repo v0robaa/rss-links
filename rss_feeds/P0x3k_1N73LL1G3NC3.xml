@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 07 Oct 2026 15:06:26 +0000</lastBuildDate><item><title>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/442</link><description>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 16:31:20 +0000</lastBuildDate><item><title>OpenTunnel</title><link>https://t.me/P0x3k_1N73LL1G3NC3/443</link><description>OpenTunnel
+A blind TLS tunnel hosted on Cloudflare. Each client receives a unique &lt;id&gt;.opentunnel.xyz hostname and terminates TLS locally, so neither Cloudflare Workers nor the relay stores the certificate private key or sees HTTP plaintext.
+https://opentunnel.xyz/
+Create end-to-end encrypted public urls for apps running on your machine reachable from anywhere in the world
+$ curl -fsSL https://opentunnel.xyz/install | sh
+$ opentunnel route add 47365
+creating tunnel... tunnel is ready.
+added route 3e9b1c07a4d25f86 → 127.0.0.1:47365
+https://3e9b1c07a4d25f86.f7a2mx4kq9vn.opentunnel.xyz
+$ curl https://3e9b1c07a4d25f86.f7a2mx4kq9vn.opentunnel.xyz
+hello from localhost:47365
+
+[Media: Фото]</description><pubDate>Thu, 08 Oct 2026 16:31:20 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_443</guid></item><item><title>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution</title><link>https://t.me/P0x3k_1N73LL1G3NC3/442</link><description>CVE-2026-102489: Zammad Unauthenticated Remote Code Execution
 The exploit chains a WebSocket information disclosure flaw into authenticated session takeover and arbitrary command execution as the zammad OS user.
 Blog: https://horizon3.ai/attack-research/disclosures/cve-2026-102489-zammad-session-leak-rce/
 

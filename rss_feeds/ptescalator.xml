@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 11:15:16 +0000</lastBuildDate><item><title>Message 787</title><link>https://t.me/ptescalator/787</link><description/><pubDate>Tue, 29 Sep 2026 15:38:28 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_787</guid></item><item><title>Как исследовать угрозы с PT Fusion</title><link>https://t.me/ptescalator/786</link><description>Как исследовать угрозы с PT Fusion
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 15:49:47 +0000</lastBuildDate><item><title>Главная новость этой недели</title><link>https://t.me/ptescalator/788</link><description>Главная новость этой недели
+У нас появился сайт:
+https://ptesc.tech/
+Мы за удобство — поэтому теперь все наши материалы, помимо соцсетей, будут выходить еще и там: на русском и английском.
+В планах — публиковать большие исследования, которые не уместить в стандартный пост. Кстати, все публикации из ESCalator мы уже перенесли в блог.
+👋 А теперь новость внутри новости: к запуску сайта мы подготовили серию постов про уязвимости в NTFS, начинающуюся с разбора CVE-2026-20840 — out-of-bounds write in ntfs!PageUpdateAnalysis.
+Злоумышленник может воспользоваться уязвимостью, заставив систему Windows смонтировать том с вредоносными записями $LogFile. Это может привести к повреждению памяти ядра и, как следствие, к отказу в обслуживании, повышению привилегий или выполнению произвольного кода в ядре.
+Детали и PoC — уже на новом сайте.
+@ptescalator
+
+[Media: Фото]</description><pubDate>Thu, 08 Oct 2026 15:49:47 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_788</guid></item><item><title>Message 787</title><link>https://t.me/ptescalator/787</link><description/><pubDate>Tue, 29 Sep 2026 15:38:28 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_787</guid></item><item><title>Как исследовать угрозы с PT Fusion</title><link>https://t.me/ptescalator/786</link><description>Как исследовать угрозы с PT Fusion
 Сегодня в 14:00 (мск) проведем вебинар, на котором разберем ландшафт угроз в России за первое полугодие 2026 года и на реальных примерах покажем, как отслеживать активность хакерских группировок.
 Подключайтесь на сайте 🕑
 Денис Кувшинов, руководитель направления TI в PT ESC, и Денис Казаков, специалист группы киберразведки, расскажут, как:
