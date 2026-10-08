@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Wed, 07 Oct 2026 12:52:09 +0000</lastBuildDate><item><title>Каждому ходу мошенника — свой уровень защиты.</title><link>https://t.me/f6_cybersecurity/4415</link><description>Каждому ходу мошенника — свой уровень защиты.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Борьба с киберпреступностью | F6</title><link>https://t.me/f6_cybersecurity</link><description>F6 channel</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 08:02:06 +0000</lastBuildDate><item><title>Type-driven development в Rust, часть 3/5: цепочка проверок и порядок событий в типах — от эксперта F6.</title><link>https://t.me/f6_cybersecurity/4416</link><description>Type-driven development в Rust, часть 3/5: цепочка проверок и порядок событий в типах — от эксперта F6.
+Продолжаем серию о type-driven development в Rust. Во второй части типы описывали контракты между компонентами. В третьей разработчик MXDR F6 Никита Тимофеенко разбирает прием заявки на стороне биржи: перед стаканом ее ждет цепочка проверок, и состав этой цепочки записывается в тип, чтобы шлюз без обязательной проверки не компилировался, а непроверенная заявка не доходила до стакана.
+В третьем материале — три механизма:
+▪️ type-level lists (HList);
+▪️ compile-time validators;
+▪️ event sourcing.
+Эксперт разобрал каждый по схеме:
+проблема ➡️ решение ➡️ хорошие практики ➡️ как это используют известные крейты.
+Отдельно — что типы здесь не проверяют: реплей журнала, который пришел извне, всё равно сверяется в рантайме, и где именно проходит эта граница.
+Примеры во всей серии — из биржевой торговли, но сами приемы работают в любом домене со сложными состояниями и правилами их изменения.
+ЧИТАТЬ НА HABR
+
+[Media: Фото]</description><pubDate>Thu, 08 Oct 2026 08:02:06 +0000</pubDate><guid isPermaLink="false">telegram_f6_cybersecurity_4416</guid></item><item><title>Каждому ходу мошенника — свой уровень защиты.</title><link>https://t.me/f6_cybersecurity/4415</link><description>Каждому ходу мошенника — свой уровень защиты.
 Остановить автоматизированную атаку до бизнес-логики. Выявить захват аккаунта во время сессии. Оценить риск платежа, заказа или списания бонусов до исполнения операции.
 В новом White Paper F6 «Три уровня защиты бизнеса» руководители Fraud Protection разбирают Preventive Proxy, Session Fraud Protection и Transaction Fraud Protection на реальных сценариях. Объясняют, за какой участок отвечает каждый продукт и когда нужна комплексная защита.
 ЧИТАТЬ WHITE PAPER

@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Tue, 06 Oct 2026 13:48:44 +0000</lastBuildDate><item><title>Шумиха на фоне инцидента с Shinhan Bank</title><link>https://t.me/ThreatHuntingFather/1527</link><description>Шумиха на фоне инцидента с Shinhan Bank
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 03:59:20 +0000</lastBuildDate><item><title>🌴 TaHiTI 2.0: что изменилось за восемь лет</title><link>https://t.me/ThreatHuntingFather/1528</link><description>🌴 TaHiTI 2.0: что изменилось за восемь лет
+FI-ISAC NL выпустил вторую версию TaHiTI, методологии threat hunting от голландского финсектора (v1.0 вышла в декабре 2018). Объём вырос с 38 до 54 страниц. Состав авторов обновился: из первой версии остался только Armand Piers (ABN AMRO), к ING и Rabobank присоединились Robeco и NVB.
+🎯 Основа
+• Определение: «IT infrastructure» → «digital realm». Среди причин обхода защит «нехватку detection technology» заменили на «нехватку телеметрии и detection capabilities».
+• Статистику SANS 2017 заменили данными SANS 2024/2025. Появилась позиция по AI: это инструмент, который поддерживает hunting.
+• Новые разделы: взаимодействие hunting с CTI, SOC/IR, Detection Engineering и Security Architecture, а также пять ролей в команде - Log Specialist, Data Scientist, Business Intelligence, Offensive Security, Reverse Engineering.
+🔍 CTI
+• Определение и уровни переписаны. Operational теперь описывает потенциальные надвигающиеся угрозы организации (обсуждения, утёкшие данные), tactical - TTP и IoC, strategic - тренды рисков для руководства.
+• Элементов связи CTI и hunting было три, стало пять. Добавились обогащение hunt через TTP, IoC и IoA и приоритизация backlog. Факторы приоритизации: сектор, география, стек, признаки таргетинга, бизнес-импакт и другие.
+⚙️ Процесс
+• Фазы те же: Initiate → Hunt → Finalize. Шаг «Define / refine» переименован в «Refine».
+• Новые триггеры: coverage gaps и forensic investigations. В описание red teaming добавили отсылку к TIBER и TLPT (DORA).
+• При обогащении абстракта появились MITRE ATLAS, прошлые инциденты и существующие контроли, которые можно сопоставить с D3FEND.
+• В Execute добавили Simulate attack. Технику сначала воспроизводят: так проверяют, обходит ли она защиту, и получают образцы логов для отладки запросов. Сложные сценарии отрабатывают через purple teaming, простые - в своей лаборатории. BAS используют для периодической проверки детектов, созданных по итогам hunt.
+• Убрали тезис v1.0 о том, что хантеры не должны входить в IR-команду.
+• Новый формат Micro hunts: одна гипотеза, узкий scope. Ориентировочно 1 ч на Initiate, 1–4 ч на Hunt и 1 ч на Finalize. Есть критерии эскалации в полноценный hunt.
+📈 Метрики
+Добавили операционные метрики: среднее время hunt, число hunt за квартал, соответствие hunt приоритетам. Для IR теперь считают true positive инциденты.
+☑ Best practices: было 12, стало 18
+• Ownership and Governance.
+• Минимальный и расширенный набор телеметрии.
+• Ориентиры по log retention: endpoint 6–12 мес., аутентификация от 12 мес., cloud audit 12–24 мес. Уровни хранения: hot 30–90 дней, warm 6–12 мес., cold 1–3 года.
+• Повторное использование прошлых hunt.
+• Business intelligence для повышения качества hunt.
+• Оценку hunt по числу найденных инцидентов назвали распространённой ошибкой.
+• Автоматизация должна усиливать хантера, а не заменять его. Генерацию гипотез и рассуждения аналитика не стоит автоматизировать чрезмерно.🙃
+📄 Без изменений
+Шаблон расследования в Annex A перенесён один в один, без новых полей под D3FEND, ATLAS и прошлые инциденты.
+🔗 v2.0: [https://www.nvb.nl/media/vw3iwzhb/tahiti-threat-hunting-methodology_v20.pdf]
+🦔 THF</description><pubDate>Thu, 08 Oct 2026 03:59:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1528</guid></item><item><title>Шумиха на фоне инцидента с Shinhan Bank</title><link>https://t.me/ThreatHuntingFather/1527</link><description>Шумиха на фоне инцидента с Shinhan Bank
 https://fsc.go.kr/no010101/87869
 А предыстория инцидента и саммари тут: 👉
 Shinhan Bank disclosed a data breach affecting about 25,000 customers.
