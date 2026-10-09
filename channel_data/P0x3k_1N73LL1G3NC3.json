@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-08T19:46:04.830247+00:00",
-  "messages_count": 255,
+  "last_update": "2026-10-09T11:13:53.108783+00:00",
+  "messages_count": 256,
   "messages": [
+    {
+      "id": "444",
+      "title": "SrHollow",
+      "text": "SrHollow\nLSA secrets extraction, reuse a preexisting VSS shadow copy + inline regf parser + AES-256 LSA decrypt via bcrypt.dll.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/444",
+      "pub_date": "2026-10-09T05:54:10+00:00"
+    },
     {
       "id": "443",
       "title": "OpenTunnel",
