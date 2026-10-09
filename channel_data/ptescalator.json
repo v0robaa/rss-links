@@ -1,8 +1,15 @@
 {
   "channel": "ptescalator",
-  "last_update": "2026-10-09T11:14:12.400871+00:00",
-  "messages_count": 175,
+  "last_update": "2026-10-09T19:23:21.191996+00:00",
+  "messages_count": 176,
   "messages": [
+    {
+      "id": "789",
+      "title": "Message 789",
+      "text": "",
+      "link": "https://t.me/ptescalator/789",
+      "pub_date": "2026-10-09T18:09:29+00:00"
+    },
     {
       "id": "788",
       "title": "Главная новость этой недели",
