@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 09 Oct 2026 16:18:30 +0000</lastBuildDate><item><title>Что ожидают CISO от облачного провайдера?</title><link>https://t.me/ZerodayAlert/867</link><description>Что ожидают CISO от облачного провайдера?
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 12 Oct 2026 10:35:04 +0000</lastBuildDate><item><title>AnyPwn ломает защиту AnyDesk и выдаёт атакующему root ещё до подключения</title><link>https://t.me/ZerodayAlert/868</link><description>AnyPwn ломает защиту AnyDesk и выдаёт атакующему root ещё до подключения
+Исследователи команды V12 выложили рабочий эксплойт для AnyDesk Linux 8.0.2. Никаких паролей, диалогов подтверждения и социальной инженерии. Достаточно достучаться до TCP 7070, чтобы попытаться выполнить команду с максимальными привилегиями.
+Виновата классическая ошибка при подсчёте размера буфера. Число 0xFFFFFFF0 после прибавления 16 превращается в ноль, память выделяется неправильно, а запись продолжается за границами буфера. Дальше в дело вступает ROP-цепочка. Самое неприятное, что служба обычно запущена от root, поэтому повышать привилегии отдельно не приходится.
+Чтобы удалённый доступ не превратился в полный захват сервера, стоит проверить сборки AnyDesk и доступность TCP 7070. Версия 8.0.3 уже содержит исправление, но разумнее перейти на 8.1.0. При невозможности обновления сетевой доступ лучше закрыть для посторонних.
+#AnyDesk #AnyPwn #Linux #Root
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Mon, 12 Oct 2026 10:35:04 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_868</guid></item><item><title>Что ожидают CISO от облачного провайдера?</title><link>https://t.me/ZerodayAlert/867</link><description>Что ожидают CISO от облачного провайдера?
 Бизнес всё активнее использует облачную инфраструктуру, в том числе для ИИ-проектов. Но вопросы безопасности по-прежнему влияют на решение о переносе систем и данных в облако.
 Кибердом и Selectel проводят исследование среди руководителей ИБ, чтобы выяснить, что влияет на выбор облачного провайдера, какие данные компании готовы доверить облаку и какой поддержки в вопросах безопасности ожидают.
 Ваш опыт поможет определить, чего бизнесу не хватает для более широкого использования облаков.
