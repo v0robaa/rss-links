@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 08 Oct 2026 03:59:20 +0000</lastBuildDate><item><title>🌴 TaHiTI 2.0: что изменилось за восемь лет</title><link>https://t.me/ThreatHuntingFather/1528</link><description>🌴 TaHiTI 2.0: что изменилось за восемь лет
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Oct 2026 12:07:49 +0000</lastBuildDate><item><title>Collect-LinuxMemoryDump</title><link>https://t.me/ThreatHuntingFather/1529</link><description>Collect-LinuxMemoryDump
+Linux Memory Acquisition for Digital Forensics and Incident Response (DFIR)
+Collect-LinuxMemoryDump.sh is a Shell script utilized to collect a Memory Snapshot from a live Linux system (including kernel image and mapping layout) in a forensically sound manner.
+Features
+• Linux Memory Acquisition w/ AVML (uncompressed LiME image) - no on-target compilation required
+• Linux Memory Acquisition w/ LiME (uncompressed LiME image) - on-target compilation of the Loadable Kernel Module (LKM)
+• Linux Memory Acquisition w/ MAGNET DumpIt for Linux (Linux ELF Core image via /proc/kcore) - no kernel module required
+• Support for x86_64 and ARM64 (AVML also supports 32-bit ARM Big-Endian)
+• Custom Output Directory (--output-path) incl. existence and write-permission check
+• Kernel Lockdown Check (acquisition is aborted if Kernel Lockdown is active)
+• /proc/kcore Availability Check (DumpIt)
+• Safety Guardrail (memory dumps restricted to 256 GB or less)
+• Disk Space Check before acquisition (Physical Memory + 12.5% Safety Margin)
+• File Integrity Check of the AVML and DumpIt binaries (SHA256)
+• MD5 Hash Calculation of the memory snapshot (LiME: in-kernel during acquisition, AVML/DumpIt: md5sum)
+• Password-protected 7-Zip archive of the memory snapshot incl. MD5 hash (AES-256, encrypted file names)
+• Archive Verification before cleaning up (no data loss if archiving fails)
+• Basic System Information Collection (Hostname, OS Release, Uptime, Timezone, Kernel Release)
+• Mapping Layout Collection (System.map, Runtime Symbol Table incl. KASLR addresses, Kernel Banner, Kernel Config)
+• Kernel Image Collection (vmlinuz, BTF Type Information and Debug Kernel w/ DWARF, if available)
+• Secure Archive Container for data exchange w/ forensic analyst (password-protected 7-Zip archive)
+• tar Fallback for architectures without 7-Zip (e.g. 32-bit ARM)
+• Screen Log (cleaned log file of the entire acquisition incl. duration)
+• No data written to the target's local disk (all output is written to the external drive, or to the path given w/ --output-path)
+https://github.com/LETHAL-FORENSICS/Collect-LinuxMemoryDump</description><pubDate>Mon, 12 Oct 2026 12:07:49 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1529</guid></item><item><title>🌴 TaHiTI 2.0: что изменилось за восемь лет</title><link>https://t.me/ThreatHuntingFather/1528</link><description>🌴 TaHiTI 2.0: что изменилось за восемь лет
 FI-ISAC NL выпустил вторую версию TaHiTI, методологии threat hunting от голландского финсектора (v1.0 вышла в декабре 2018). Объём вырос с 38 до 54 страниц. Состав авторов обновился: из первой версии остался только Armand Piers (ABN AMRO), к ING и Rabobank присоединились Robeco и NVB.
 🎯 Основа
 • Определение: «IT infrastructure» → «digital realm». Среди причин обхода защит «нехватку detection technology» заменили на «нехватку телеметрии и detection capabilities».

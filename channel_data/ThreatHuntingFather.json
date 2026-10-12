@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-12T11:48:44.345737+00:00",
-  "messages_count": 315,
+  "last_update": "2026-10-12T22:02:05.404299+00:00",
+  "messages_count": 316,
   "messages": [
+    {
+      "id": "1529",
+      "title": "Collect-LinuxMemoryDump",
+      "text": "Collect-LinuxMemoryDump\nLinux Memory Acquisition for Digital Forensics and Incident Response (DFIR)\nCollect-LinuxMemoryDump.sh is a Shell script utilized to collect a Memory Snapshot from a live Linux system (including kernel image and mapping layout) in a forensically sound manner.\nFeatures\n• Linux Memory Acquisition w/ AVML (uncompressed LiME image) - no on-target compilation required\n• Linux Memory Acquisition w/ LiME (uncompressed LiME image) - on-target compilation of the Loadable Kernel Module (LKM)\n• Linux Memory Acquisition w/ MAGNET DumpIt for Linux (Linux ELF Core image via /proc/kcore) - no kernel module required\n• Support for x86_64 and ARM64 (AVML also supports 32-bit ARM Big-Endian)\n• Custom Output Directory (--output-path) incl. existence and write-permission check\n• Kernel Lockdown Check (acquisition is aborted if Kernel Lockdown is active)\n• /proc/kcore Availability Check (DumpIt)\n• Safety Guardrail (memory dumps restricted to 256 GB or less)\n• Disk Space Check before acquisition (Physical Memory + 12.5% Safety Margin)\n• File Integrity Check of the AVML and DumpIt binaries (SHA256)\n• MD5 Hash Calculation of the memory snapshot (LiME: in-kernel during acquisition, AVML/DumpIt: md5sum)\n• Password-protected 7-Zip archive of the memory snapshot incl. MD5 hash (AES-256, encrypted file names)\n• Archive Verification before cleaning up (no data loss if archiving fails)\n• Basic System Information Collection (Hostname, OS Release, Uptime, Timezone, Kernel Release)\n• Mapping Layout Collection (System.map, Runtime Symbol Table incl. KASLR addresses, Kernel Banner, Kernel Config)\n• Kernel Image Collection (vmlinuz, BTF Type Information and Debug Kernel w/ DWARF, if available)\n• Secure Archive Container for data exchange w/ forensic analyst (password-protected 7-Zip archive)\n• tar Fallback for architectures without 7-Zip (e.g. 32-bit ARM)\n• Screen Log (cleaned log file of the entire acquisition incl. duration)\n• No data written to the target's local disk (all output is written to the external drive, or to the path given w/ --output-path)\nhttps://github.com/LETHAL-FORENSICS/Collect-LinuxMemoryDump",
+      "link": "https://t.me/ThreatHuntingFather/1529",
+      "pub_date": "2026-10-12T12:07:49+00:00"
+    },
     {
       "id": "1528",
       "title": "🌴 TaHiTI 2.0: что изменилось за восемь лет",
