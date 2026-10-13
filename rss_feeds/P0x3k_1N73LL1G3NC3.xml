@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 09 Oct 2026 05:54:10 +0000</lastBuildDate><item><title>SrHollow</title><link>https://t.me/P0x3k_1N73LL1G3NC3/444</link><description>SrHollow
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 13 Oct 2026 15:15:13 +0000</lastBuildDate><item><title>LogonStealer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/445</link><description>LogonStealer
+Abuses the Credential Provider COM interface to steal plaintext passwords from logonui.exe via CredProvDataModel.dll hooks
+A Windows credential stealer implemented as a rogue Credential Provider DLL. It loads automatically into logonui.exe via COM registration (bypassing PPL) and hooks CredProvDataModel.dll to capture plaintext passwords at the Windows logon and lock screen
+#cred #post
+
+[Media: Фото]</description><pubDate>Tue, 13 Oct 2026 15:15:13 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_445</guid></item><item><title>SrHollow</title><link>https://t.me/P0x3k_1N73LL1G3NC3/444</link><description>SrHollow
 LSA secrets extraction, reuse a preexisting VSS shadow copy + inline regf parser + AES-256 LSA decrypt via bcrypt.dll.
 
 [Media: Фото]</description><pubDate>Fri, 09 Oct 2026 05:54:10 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_444</guid></item><item><title>OpenTunnel</title><link>https://t.me/P0x3k_1N73LL1G3NC3/443</link><description>OpenTunnel

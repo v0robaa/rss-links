@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 13 Oct 2026 10:29:39 +0000</lastBuildDate><item><title>Время перестать разбирать каждую CVE руками</title><link>https://t.me/ZerodayAlert/871</link><description>Время перестать разбирать каждую CVE руками
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 13 Oct 2026 17:44:41 +0000</lastBuildDate><item><title>Три уязвимости нулевого дня в Ivanti Connect Secure открыли хакерам доступ с правами root</title><link>https://t.me/ZerodayAlert/873</link><description>Три уязвимости нулевого дня в Ivanti Connect Secure открыли хакерам доступ с правами root
+Компания Volexity обнаружила атаки на VPN-шлюзы Ivanti Connect Secure с использованием цепочки из трёх уязвимостей. Группировка UTA0576 эксплуатирует их как минимум с 3 октября, получая максимальные привилегии без аутентификации. Под угрозой оказались даже полностью обновлённые устройства.
+Атакующие обходят проверку доступа, запускают произвольный код и повышают привилегии до root. Затем похищают учётные данные Active Directory, пароли LAPS и ключи восстановления BitLocker. Ivanti выпустила исправления для двух уязвимостей, объединённых под CVE-2026-104935. Третья пока остаётся без патча.
+Для защиты корпоративной сети недостаточно проверить версию прошивки. Администраторам необходимо установить доступные обновления и проанализировать сетевую активность. При подозрении на взлом потребуется исследовать память устройства, поскольку штатный Integrity Checker может пропустить следы атаки.
+#Ivanti #ConnectSecure #ZeroDay #RCE
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 13 Oct 2026 17:44:41 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_873</guid></item><item><title>Зафиксированы первые атаки на плагин Bricksforge для WordPress</title><link>https://t.me/ZerodayAlert/872</link><description>Зафиксированы первые атаки на плагин Bricksforge для WordPress
+Уязвимость CVE-2026-85097 (9.8) затрагивает плагин Bricksforge версии 3.1.8.9 и более ранние. Разработчики устранили проблему в выпуске 3.1.8.10, поэтому администраторам рекомендуют обновиться немедленно.
+Причина кроется в параметре temporaryFileUploads: при первичной загрузке плагин проверяет MIME-тип файла, но затем доверяет адресу, который прислал браузер. Из-за этого атакующий без учётной записи может отправить гибридный GIF со встроенным PHP-кодом и подменить URL в метаданных на адрес с расширением PHP.
+Первые попытки эксплуатации зафиксированы 7 октября 2026 года, запросы пришли с 63 уникальных IP-адресов. В большинстве перехваченных запросов исходный файл имел расширение .gif или .png, а конечный адрес часто указывал на PHP-скрипт (.php5 и .phtml).
+#wordpress #уязвимость #bricksforge #patchstack
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 13 Oct 2026 12:02:58 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_872</guid></item><item><title>Время перестать разбирать каждую CVE руками</title><link>https://t.me/ZerodayAlert/871</link><description>Время перестать разбирать каждую CVE руками
 В 2025 году опубликовали 48 185 CVE, около 132 в день. Разбирать каждую руками значит раз за разом проходить один и тот же маршрут.
 В среду, в 19:00 мск Владислав Бурцев покажет, как отдать эту рутину AI-агенту и закрепить её в скилле.
 🔹 На воркшопе:

@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-13T11:36:38.661333+00:00",
-  "messages_count": 256,
+  "last_update": "2026-10-13T20:09:10.497295+00:00",
+  "messages_count": 257,
   "messages": [
+    {
+      "id": "445",
+      "title": "LogonStealer",
+      "text": "LogonStealer\nAbuses the Credential Provider COM interface to steal plaintext passwords from logonui.exe via CredProvDataModel.dll hooks\nA Windows credential stealer implemented as a rogue Credential Provider DLL. It loads automatically into logonui.exe via COM registration (bypassing PPL) and hooks CredProvDataModel.dll to capture plaintext passwords at the Windows logon and lock screen\n#cred #post\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/445",
+      "pub_date": "2026-10-13T15:15:13+00:00"
+    },
     {
       "id": "444",
       "title": "SrHollow",
