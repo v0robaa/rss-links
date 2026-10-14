@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Mon, 12 Oct 2026 12:07:49 +0000</lastBuildDate><item><title>Collect-LinuxMemoryDump</title><link>https://t.me/ThreatHuntingFather/1529</link><description>Collect-LinuxMemoryDump
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 14 Oct 2026 18:04:17 +0000</lastBuildDate><item><title>🇰🇿 UAT-6275 / Silent Lynx: кибершпионаж против госорганов Центральной Азии</title><link>https://t.me/ThreatHuntingFather/1530</link><description>🇰🇿 UAT-6275 / Silent Lynx: кибершпионаж против госорганов Центральной Азии
+Cisco Talos вместе с Recorded Future (у них группа идёт как TAG-193) опубликовали разбор группировки UAT-6275. Её интерес сосредоточен на ЦА и СНГ, и, по оценке исследователей, группа сама, скорее всего, связана с Казахстаном (уверенность средняя). На это указывают русскоязычные артефакты, тестовые загрузки малвари из KZ сразу после компиляции и коммиты на GitHub, которые ложатся в рабочие часы по UTC+5.
+🎯 Кого атакуют. В выборке 9 стран: Казахстан, Кыргызстан, Таджикистан, Туркменистан, Узбекистан, Армения, Азербайджан, Россия и Беларусь. Цели — МИДы, министерства экономики, сельского хозяйства и экологии, а также водные ресурсы и энергетика.
+• Активность в госорганизации Таджикистана зафиксировали сразу после переговоров по договору с Казахстаном в марте 2026 года.
+• Атакован проект Smart Forestry в Узбекистане.
+• В качестве приманки использовали письмо о сотрудничестве «Туркменнебит» с Орским НПЗ. Этот завод поставляет нефтепродукты в Казахстан.
+• Среди приманок есть темы саммита «Китай — Центральная Азия».
+🛠 Как заходят (июнь 2025 — 2026):
+• A: Word-документы с макросами.
+• B: загрузчики, собранные через PS2EXE, с закреплением через планировщик задач.
+• C: ярлык LNK запускает PowerShell-скрипт, который лежит на GitHub.
+• D: архив RAR с эксплойтом WinRAR CVE-2025-8088, который кладёт PickleShell в автозагрузку.
+В качестве нагрузки идут лёгкие реверс-шеллы Chvost, Laplas и PickleShell. На инфраструктуре группы нашли инструменты под Linux и PoC для FortiWeb CVE-2025-25257, так что следующими целями могут стать периметровые устройства.
+😅 Где прокололись. Три открытые staging-директории и репозиторий на GitHub с историей коммитов позволили увидеть, как группа разрабатывает малварь и меняет C2.
+🧩 Группа пересекается с Silent Lynx, YoroTrooper, Tomiris, ShadowSilk и Cavalry Werewolf, то есть это один большой региональный кластер.
+🛡 Что делать защитникам в ЦА:
+• Обновить WinRAR.
+• Отслеживать PowerShell, который скачивает что-то с GitHub и других публичных сервисов.
+• Следить за новыми scheduled tasks и изменениями в папке Startup.
+• Проверить и пропатчить FortiWeb.
+• Подтянуть IOC из репозитория Talos.
+🔗 https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/
+#APT #CentralAsia #Kazakhstan #SilentLynx #ThreatIntel</description><pubDate>Wed, 14 Oct 2026 18:04:17 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1530</guid></item><item><title>Collect-LinuxMemoryDump</title><link>https://t.me/ThreatHuntingFather/1529</link><description>Collect-LinuxMemoryDump
 Linux Memory Acquisition for Digital Forensics and Incident Response (DFIR)
 Collect-LinuxMemoryDump.sh is a Shell script utilized to collect a Memory Snapshot from a live Linux system (including kernel image and mapping layout) in a forensically sound manner.
 Features
