@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Tue, 13 Oct 2026 15:15:13 +0000</lastBuildDate><item><title>LogonStealer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/445</link><description>LogonStealer
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 14 Oct 2026 18:41:08 +0000</lastBuildDate><item><title>AhsayCBS-Auth-Bypass-RCE</title><link>https://t.me/P0x3k_1N73LL1G3NC3/446</link><description>AhsayCBS-Auth-Bypass-RCE
+AhsayCBS versions 10.3.4 and earlier are vulnerable to unauthenticated remote code execution via two chained authentication bypass and path traversal flaws in the JSON API and replication receiver modules (CVE-2026-105133 and CVE-2026-105134). An attacker can achieve full administrative control or direct RCE without credentials.
+Blog: https://horizon3.ai/attack-research/attack-blogs/ahsaycbs-cve-2026-105133-cve-2026-105134-technical-analysis/
+
+[Media: Фото]</description><pubDate>Wed, 14 Oct 2026 18:41:08 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_446</guid></item><item><title>LogonStealer</title><link>https://t.me/P0x3k_1N73LL1G3NC3/445</link><description>LogonStealer
 Abuses the Credential Provider COM interface to steal plaintext passwords from logonui.exe via CredProvDataModel.dll hooks
 A Windows credential stealer implemented as a rogue Credential Provider DLL. It loads automatically into logonui.exe via COM registration (bypassing PPL) and hooks CredProvDataModel.dll to capture plaintext passwords at the Windows logon and lock screen
 #cred #post

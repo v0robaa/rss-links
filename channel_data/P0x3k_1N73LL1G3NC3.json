@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-14T18:26:34.905217+00:00",
-  "messages_count": 257,
+  "last_update": "2026-10-15T09:02:39.643066+00:00",
+  "messages_count": 258,
   "messages": [
+    {
+      "id": "446",
+      "title": "AhsayCBS-Auth-Bypass-RCE",
+      "text": "AhsayCBS-Auth-Bypass-RCE\nAhsayCBS versions 10.3.4 and earlier are vulnerable to unauthenticated remote code execution via two chained authentication bypass and path traversal flaws in the JSON API and replication receiver modules (CVE-2026-105133 and CVE-2026-105134). An attacker can achieve full administrative control or direct RCE without credentials.\nBlog: https://horizon3.ai/attack-research/attack-blogs/ahsaycbs-cve-2026-105133-cve-2026-105134-technical-analysis/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/446",
+      "pub_date": "2026-10-14T18:41:08+00:00"
+    },
     {
       "id": "445",
       "title": "LogonStealer",
