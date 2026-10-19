@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-18T20:25:15.312990+00:00",
-  "messages_count": 317,
+  "last_update": "2026-10-19T09:45:53.367448+00:00",
+  "messages_count": 318,
   "messages": [
+    {
+      "id": "1531",
+      "title": "LOLCHAIN (\"Living off the blockchain\"), a defensive threat-intelligence reference that catalogs blockchain abuse such as malware delivery, command-and-control, hosting, exfiltration, and network...",
+      "text": "LOLCHAIN (\"Living off the blockchain\"), a defensive threat-intelligence reference that catalogs blockchain abuse such as malware delivery, command-and-control, hosting, exfiltration, and network endpoints, aimed at defenders. The name and format follow the \"LOL\" projects like LOLBAS and GTFOBins, which document legitimate tools that attackers misuse.\nIts core idea is that attackers store payloads or C2 instructions on public ledgers or in contract state, then retrieve them through RPC nodes and gateways. Those network endpoints are the part defenders can actually observe and block. The site covers Bitcoin, Ethereum, BNB Chain, Polygon, Solana, IPFS, and TON, and it was last updated 16 October 2026 and describes itself as curated rather than exhaustive.\n👉https://lolchain.github.io/",
+      "link": "https://t.me/ThreatHuntingFather/1531",
+      "pub_date": "2026-10-19T05:26:03+00:00"
+    },
     {
       "id": "1530",
       "title": "🇰🇿 UAT-6275 / Silent Lynx: кибершпионаж против госорганов Центральной Азии",
