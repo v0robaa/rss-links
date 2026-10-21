@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-20T18:25:15.589621+00:00",
-  "messages_count": 318,
+  "last_update": "2026-10-21T09:15:31.759071+00:00",
+  "messages_count": 319,
   "messages": [
+    {
+      "id": "1532",
+      "title": "What exploitation will probably look like",
+      "text": "What exploitation will probably look like\nFlorian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well: exploitation of these bugs will most likely show up as suspicious child processes spawned by PHP.\nIn practice, that means a PHP worker process like php-fpm, php-cgi, php-cgi.exe, httpd, or apache2 would launch something abnormal:\n• Shells like sh, bash, cmd.exe, or powershell.exe\n• Interpreters like python or perl\n• Download or networking tools like curl, wget, nc, or certutil.exe\nIt's worth taking a closer look at command lines that include reverse shell patterns:\n• /dev/tcp/\n• fsockopen\n• mkfifo\nIt's also worth looking at quick reconnaissance commands like whoami, id, uname -a, or ipconfig run straight from the web server.\nhttps://www.huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities",
+      "link": "https://t.me/ThreatHuntingFather/1532",
+      "pub_date": "2026-10-21T06:52:43+00:00"
+    },
     {
       "id": "1531",
       "title": "LOLCHAIN (\"Living off the blockchain\"), a defensive threat-intelligence reference that catalogs blockchain abuse such as malware delivery, command-and-control, hosting, exfiltration, and network...",
