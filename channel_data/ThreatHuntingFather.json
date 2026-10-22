@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-21T18:30:52.756750+00:00",
-  "messages_count": 319,
+  "last_update": "2026-10-22T09:18:25.561410+00:00",
+  "messages_count": 320,
   "messages": [
+    {
+      "id": "1533",
+      "title": "What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well:...",
+      "text": "What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well: exploitation of these bugs will most likely show up as suspicious…",
+      "link": "https://t.me/ThreatHuntingFather/1533",
+      "pub_date": "2026-10-22T06:59:32+00:00"
+    },
     {
       "id": "1532",
       "title": "What exploitation will probably look like",
