@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 22 Oct 2026 06:59:32 +0000</lastBuildDate><item><title>What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well:...</title><link>https://t.me/ThreatHuntingFather/1533</link><description>What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well: exploitation of these bugs will most likely show up as suspicious…</description><pubDate>Thu, 22 Oct 2026 06:59:32 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1533</guid></item><item><title>What exploitation will probably look like</title><link>https://t.me/ThreatHuntingFather/1532</link><description>What exploitation will probably look like
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 23 Oct 2026 06:57:16 +0000</lastBuildDate><item><title>🧪 PHP2Shell - от громких заголовков к практической эксплуатации</title><link>https://t.me/ThreatHuntingFather/1534</link><description>🧪 PHP2Shell - от громких заголовков к практической эксплуатации
+После раскрытия PHP2Shell в СМИ заговорили о массовых взломах серверов с PHP. Однако наличие критической уязвимости еще не означает, что для нее существует универсальный и стабильный RCE-эксплойт.
+Мы проанализировали публичные PoC и развернули 11 лабораторных стендов с PHP 7.2-8.5, включая полноценный WordPress с MySQL, чтобы оценить воспроизводимость атак на разных версиях и конфигурациях.
+🔬 Результаты испытаний:
+1. PHP 8.4.26 и 8.5.11 - подтверждено удаленное выполнение команд (RCE)
+2. WordPress - успешная эксплуатация в 2 из 3 попыток на свежем PHP worker
+3. PHP 8.3.35 - получена утечка адресов памяти, но RCE не достигнуто
+4. PHP 8.2 и 7.x - используемая цепочка не сработала, это не исключает других способов эксплуатации
+5. PHP 8.4.27 - контрольная сборка с исправлением, эксплуатация не воспроизвелась
+🛠 Разработали собственный инструмент:
+1. Сканер для обнаружения признаков уязвимости по реакции PHP на исчерпание памяти
+2. На 11 стендах сканер выявил признаки во всех 10 неисправленных конфигурациях и корректно определил исправленную сборку
+3. Экспериментальный RCE-модуль с адаптацией к конкретной сборке PHP
+⁉️ Что ограничивает эксплуатацию:
+1. Проверенная цепочка ориентирована на Apache с mod_php и определенные настройки PHP
+2. Нужно учитывать расположение функций в памяти и различия между сборками и библиотеками
+3. Даже при выполнении этих условий эксплуатация остается нестабильной
+4. Добиться аварийного завершения PHP-процесса значительно проще, чем удаленного выполнения команд
+5. Отсутствие RCE в наших тестах не означает, что другие версии или конфигурации с PHP-FPM защищены
+PHP2Shell представляет серьезную угрозу, но массовая автоматизированная эксплуатация значительно сложнее, чем может показаться из публикаций. Результаты лабораторных испытаний не отменяют необходимости своевременно ставить исправления.
+⚠️ Важно: Сканер намеренно вызывает исчерпание памяти PHP-процесса, что может привести к DoS. Использовать только в контролируемой среде, не запускать на продуктивных серверах без оценки рисков
+🔗 https://github.com/cleverg0d/php2shell
+🔗 и интересный разбор https://calif.io/php2shell/
+#PHP2Shell #PHP #RCE #Pentest #RedTeam
+
+[Media: Фото]</description><pubDate>Fri, 23 Oct 2026 06:57:16 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1534</guid></item><item><title>What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well:...</title><link>https://t.me/ThreatHuntingFather/1533</link><description>What exploitation will probably look like  Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well: exploitation of these bugs will most likely show up as suspicious…</description><pubDate>Thu, 22 Oct 2026 06:59:32 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1533</guid></item><item><title>What exploitation will probably look like</title><link>https://t.me/ThreatHuntingFather/1532</link><description>What exploitation will probably look like
 Florian Roth, who released a free tool called process-watcher (a Linux-based process monitoring tool aimed at detecting exploitation) put it well: exploitation of these bugs will most likely show up as suspicious child processes spawned by PHP.
 In practice, that means a PHP worker process like php-fpm, php-cgi, php-cgi.exe, httpd, or apache2 would launch something abnormal:
 • Shells like sh, bash, cmd.exe, or powershell.exe

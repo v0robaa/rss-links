@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 21 Oct 2026 16:31:06 +0000</lastBuildDate><item><title>Старт в ИБ в 2026: какая роль подходит именно тебе</title><link>https://t.me/ZerodayAlert/882</link><description>Старт в ИБ в 2026: какая роль подходит именно тебе
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 23 Oct 2026 06:35:06 +0000</lastBuildDate><item><title>OpenBSD 8.0 получила четыре исправления в день релиза. Одно закрывает опасную дыру в ядре</title><link>https://t.me/ZerodayAlert/883</link><description>OpenBSD 8.0 получила четыре исправления в день релиза. Одно закрывает опасную дыру в ядре
+20 октября разработчики выпустили OpenBSD 8.0 и сразу опубликовали четыре исправления, три из которых связаны с безопасностью. Самая серьёзная ошибка затронула IPsec и могла привести к переполнению памяти ядра при удалённой атаке.
+Проблема возникала при работе AES-GMAC на системах amd64 с AES-NI и octeon с криптографическим сопроцессором. Дополнительно разработчики устранили ошибки в DNS-сервере NSD, драйвере video и подсистеме PPP. Реализация AES-GCM не пострадала.
+Для безопасной работы OpenBSD 8.0 достаточно установить опубликованные исправления. На поддерживаемых архитектурах патчи доступны через syspatch. Особого внимания требуют серверы с IPsec и аппаратным ускорением криптографии.
+#OpenBSD #IPsec #AESGMAC #syspatch
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 23 Oct 2026 06:35:06 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_883</guid></item><item><title>Старт в ИБ в 2026: какая роль подходит именно тебе</title><link>https://t.me/ZerodayAlert/882</link><description>Старт в ИБ в 2026: какая роль подходит именно тебе
 Конкуренция на рынке ИБ постоянно растёт, и выигрывают не те, у кого больше сертификатов, а те, кто справляется с практическими задачами.
 Чтобы оказаться среди них, не стоит распыляться. Выбери своё направление и закрой пробелы именно под него. Но как понять, что тебе ближе и чего не хватает?
 Уже завтра в 19:00 МСК CyberED проведёт открытый иммерсивный разбор. Одну рабочую ситуацию в компании пройдём глазами разных специалистов по ИБ.
