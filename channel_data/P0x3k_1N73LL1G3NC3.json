@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-25T17:31:58.272550+00:00",
-  "messages_count": 261,
+  "last_update": "2026-10-25T20:40:13.051934+00:00",
+  "messages_count": 262,
   "messages": [
+    {
+      "id": "451",
+      "title": "CVE-2026-106173",
+      "text": "CVE-2026-106173\nPoC exploit for a path traversal file write leading to RCE in Fortinet FortiSIEM. The FortiSIEM gRPC QueryResultReqhandler processes untrusted metadata without proper path validation. By crafting metadata containing both path traversal sequences (../) and NUL-byte injection within gRPC's HTTP/2 and HPACK encoding layers, an attacker can write arbitrary files to the filesystem.\nBlog: https://horizon3.ai/attack-research/cve-2026-106173-deep-dive-fortisiem-grpc-path-traversal-file-write-rce/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/451",
+      "pub_date": "2026-10-25T17:59:59+00:00"
+    },
     {
       "id": "450",
       "title": "В сентябре Майкрософт по-тихому прикрыли недоработку в протоколе SMB, что позволяло релеить SMB в SMB (reflection тоже) даже при активном signing. Подробно в блоге:",
