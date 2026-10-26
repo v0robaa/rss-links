@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 23 Oct 2026 17:19:48 +0000</lastBuildDate><item><title>Message 791</title><link>https://t.me/ptescalator/791</link><description/><pubDate>Fri, 23 Oct 2026 17:19:48 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_791</guid></item><item><title>Message 790</title><link>https://t.me/ptescalator/790</link><description/><pubDate>Fri, 23 Oct 2026 15:41:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_790</guid></item><item><title>Message 789</title><link>https://t.me/ptescalator/789</link><description/><pubDate>Fri, 09 Oct 2026 18:09:29 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_789</guid></item><item><title>Главная новость этой недели</title><link>https://t.me/ptescalator/788</link><description>Главная новость этой недели
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Mon, 26 Oct 2026 14:10:14 +0000</lastBuildDate><item><title>PT ESC на SOC Forum 2026</title><link>https://t.me/ptescalator/792</link><description>PT ESC на SOC Forum 2026
+Завтра наши эксперты выступят с двумя докладами — о том, как инфоповоды становятся отправной точкой для атак и что показали расследования киберинцидентов за год.
+➡️ От инфоповода до атаки
+10:00 | Зал «Кинетика» | Офлайн
+Новость о громкой уязвимости, разбор чужой атаки или событие в отрасли — все это может стать основой для следующей кампании злоумышленников. Вопрос в том, можно ли заметить такие связи раньше, чем атака начнется.
+Денис Казаков, специалист киберразведки PT ESC, разберет реальные примеры и расскажет, как использовать информационную повестку для проактивного поиска угроз, где в этом помогают автоматизация и LLM и чем такой подход может быть опасен для самих исследователей.
+➡️ Результаты расследований инцидентов ИБ за последний год
+12:15 | Зал «Кинетика» | Офлайн и онлайн
+Что происходило в инфраструктурах жертв, как действовали атакующие и какие техники встречались в расследованиях чаще всего?
+Денис Гойденко, руководитель департамента комплексного реагирования на инциденты ИБ, PT ESC, представит результаты расследований за последний год: статистику, наблюдения и реальные кейсы, которые показывают, как меняются подходы злоумышленников.
+До встречи 🧃
+#TI #IR #DFIR
+@ptescalator
+
+[Media: Фото]</description><pubDate>Mon, 26 Oct 2026 14:10:14 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_792</guid></item><item><title>Message 791</title><link>https://t.me/ptescalator/791</link><description/><pubDate>Fri, 23 Oct 2026 17:19:48 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_791</guid></item><item><title>Message 790</title><link>https://t.me/ptescalator/790</link><description/><pubDate>Fri, 23 Oct 2026 15:41:42 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_790</guid></item><item><title>Message 789</title><link>https://t.me/ptescalator/789</link><description/><pubDate>Fri, 09 Oct 2026 18:09:29 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_789</guid></item><item><title>Главная новость этой недели</title><link>https://t.me/ptescalator/788</link><description>Главная новость этой недели
 У нас появился сайт:
 https://ptesc.tech/
 Мы за удобство — поэтому теперь все наши материалы, помимо соцсетей, будут выходить еще и там: на русском и английском.
