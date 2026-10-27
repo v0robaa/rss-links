@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-27T09:42:49.359106+00:00",
-  "messages_count": 321,
+  "last_update": "2026-10-27T19:18:45.011417+00:00",
+  "messages_count": 322,
   "messages": [
+    {
+      "id": "1535",
+      "title": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "text": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "link": "https://t.me/ThreatHuntingFather/1535",
+      "pub_date": "2026-10-27T12:01:31+00:00"
+    },
     {
       "id": "1534",
       "title": "🧪 PHP2Shell - от громких заголовков к практической эксплуатации",
