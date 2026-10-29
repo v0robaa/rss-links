@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-28T19:25:03.095406+00:00",
-  "messages_count": 263,
+  "last_update": "2026-10-29T10:47:42.263201+00:00",
+  "messages_count": 265,
   "messages": [
+    {
+      "id": "454",
+      "title": "📜 From RCE to camera credentials in Axis Camera Station",
+      "text": "📜 From RCE to camera credentials in Axis Camera Station\nDuring a penetration test, I exploited CVE-2025-30023 (insecure deserialization) chained with CVE-2025-30026 (authentication bypass) to get SYSTEM-level RCE on two Windows machines running Axis Camera Station on a factory. After that, I discovered CVE-2026-63286, a weak credential encryption scheme, which allowed me to decrypt all the camera credentials stored in the application’s database and connect to the cameras.\nFull attack chain summary:\n• Identify Axis Camera Station on port 55752 during the network scan.\n• Exploit CVE-2025-30026 + CVE-2025-30023 to get unauthenticated RCE as SYSTEM on both Windows servers, getting access to the factory network.\n• Copy the .FDB database files.\n• Exploit CVE-2026-63286 to decrypt all stored credentials.\n• Connect to the factory cameras using the decrypted credentials.\n🔗Axis-RCE\nUnauth RCE on Axis Camera Station (ACS)\n🔗CVE-2026-63286\nOffline decryptor for AXIS Camera Station (ACS) credentials\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/454",
+      "pub_date": "2026-10-29T10:10:21+00:00"
+    },
+    {
+      "id": "453",
+      "title": "CredGuardRuntimeShutdown",
+      "text": "CredGuardRuntimeShutdown\nRuntime Credential Guard deactivation via \\\\LSA_ISO_DISABLE_CREDENTIAL_GUARD + LSASS NT hash extraction (Win11 24H2)\nBlog: https://medium.com/@s12deff/runtime-credential-guard-deactivation-d01cb9eb0062\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/453",
+      "pub_date": "2026-10-29T09:31:16+00:00"
+    },
     {
       "id": "452",
       "title": "https://t.me/boost/P0x3k_1N73LL1G3NC3",

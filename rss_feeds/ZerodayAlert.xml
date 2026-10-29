@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 28 Oct 2026 07:15:01 +0000</lastBuildDate><item><title>Как остаться нужным в ИБ в эпоху ИИ 🤖</title><link>https://t.me/ZerodayAlert/892</link><description>Как остаться нужным в ИБ в эпоху ИИ 🤖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 29 Oct 2026 09:33:32 +0000</lastBuildDate><item><title>MFA включена, аккаунт взломан 🔓</title><link>https://t.me/ZerodayAlert/895</link><description>MFA включена, аккаунт взломан 🔓
+MFA — не серебряная пуля. Чаще ломают не сам TOTP или WebAuthn, а логику вокруг него: обработку OTP, альтернативные входы, настройки второго фактора.
+Сегодня в 19:00 МСК лид команды пентестеров Кирилл Николаев на открытом практикуме «Узнай, как обходят MFA» покажет, какие ошибки позволяют обойти второй фактор и как от этого защищаться.
+На практикуме разберём:
+🔻 манипуляцию ответом и статус-кодом;
+🔻 ошибки работы с OTP: brute force, пустые и тестовые коды, переиспользование;
+🔻 race condition при включении и отключении MFA;
+🔻 обход через password reset, OAuth и SSO;
+🔻 слабую защиту настроек MFA: IDOR и CSRF;
+🔻 общую методологию проверки MFA.
+Внутри — примеры реальных уязвимостей из публичных bug bounty-отчётов и принципы защиты.
+👉 Зарегистрироваться
+👉 Подробнее о практикуме
+
+[Media: Фото]</description><pubDate>Thu, 29 Oct 2026 09:33:32 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_895</guid></item><item><title>Apple закрыла уязвимость в CoreGraphics на iPhone XS и XR</title><link>https://t.me/ZerodayAlert/894</link><description>Apple закрыла уязвимость в CoreGraphics на iPhone XS и XR
+Проблема CVE-2026-86950 связана с записью за пределы выделенной памяти в CoreGraphics, системном компоненте для двухмерной графики. Её обнаружили исследователи Meta Product Security.
+Apple допускает, что уязвимость использовали в «чрезвычайно сложных операциях» против конкретных людей. Признаков массовых атак при этом нет, а детали эксплуатации компания не раскрыла.
+26 октября вышли iOS 18.7.11 и iPadOS 18.7.11 для iPhone XS, XS Max, XR и iPad седьмого поколения. Для более новых устройств исправление выпустили ещё 28 сентября, поэтому владельцам старых моделей стоит установить обновление через «Настройки» → «Основные» → «Обновление ПО».
+#apple #ios #уязвимость #обновление
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 29 Oct 2026 07:58:02 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_894</guid></item><item><title>Критическую уязвимость Oracle E-Business Suite начали прощупывать через 7 дней после патча</title><link>https://t.me/ZerodayAlert/893</link><description>Критическую уязвимость Oracle E-Business Suite начали прощупывать через 7 дней после патча
+27 октября Defused зафиксировала попытки разведки CVE-2026-101767 на серверах-приманках Oracle EBS. Уязвимость получила 9,8 балла по CVSS и затрагивает версии 12.2.3–12.2.15. Подтверждённых взломов реальных организаций пока нет.
+Проблема связана с SQL-инъекцией в компоненте Application Object Library. Злоумышленник может отправить специальный HTTP-запрос без авторизации, получить права пользователя базы данных APPS и потенциально запустить команды ОС от имени приложения EBS.
+Для защиты корпоративных данных недостаточно полагаться на отсутствие подтверждённых атак. Администраторам стоит установить исправление Oracle от 20 октября и проверить доступность /OA_HTML/AppsTCFServer из внешних сетей. Дополнительно полезно отслеживать подозрительные POST-запросы и активность базы данных.
+#Oracle #EBS #SQLi #CVE
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 28 Oct 2026 23:19:32 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_893</guid></item><item><title>Как остаться нужным в ИБ в эпоху ИИ 🤖</title><link>https://t.me/ZerodayAlert/892</link><description>Как остаться нужным в ИБ в эпоху ИИ 🤖
 ИИ уже меняет требования к специалистам, а рынок становится всё сложнее читать. Непонятно, в какую компанию идти, чего там ждут и какие навыки окажутся нужны завтра.
 28 октября в 19:00 мск CEO CyberED Егор Богомолов и ex-CTO Innostage Антон Кузьмин разберут рынок ИБ и расскажут, какие навыки выходят на первый план с приходом ИИ.
 На эфире узнаешь:

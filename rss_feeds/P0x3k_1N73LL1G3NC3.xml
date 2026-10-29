@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Mon, 26 Oct 2026 05:21:07 +0000</lastBuildDate><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/452</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 29 Oct 2026 10:10:21 +0000</lastBuildDate><item><title>📜 From RCE to camera credentials in Axis Camera Station</title><link>https://t.me/P0x3k_1N73LL1G3NC3/454</link><description>📜 From RCE to camera credentials in Axis Camera Station
+During a penetration test, I exploited CVE-2025-30023 (insecure deserialization) chained with CVE-2025-30026 (authentication bypass) to get SYSTEM-level RCE on two Windows machines running Axis Camera Station on a factory. After that, I discovered CVE-2026-63286, a weak credential encryption scheme, which allowed me to decrypt all the camera credentials stored in the application’s database and connect to the cameras.
+Full attack chain summary:
+• Identify Axis Camera Station on port 55752 during the network scan.
+• Exploit CVE-2025-30026 + CVE-2025-30023 to get unauthenticated RCE as SYSTEM on both Windows servers, getting access to the factory network.
+• Copy the .FDB database files.
+• Exploit CVE-2026-63286 to decrypt all stored credentials.
+• Connect to the factory cameras using the decrypted credentials.
+🔗Axis-RCE
+Unauth RCE on Axis Camera Station (ACS)
+🔗CVE-2026-63286
+Offline decryptor for AXIS Camera Station (ACS) credentials
+
+[Media: Фото]</description><pubDate>Thu, 29 Oct 2026 10:10:21 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_454</guid></item><item><title>CredGuardRuntimeShutdown</title><link>https://t.me/P0x3k_1N73LL1G3NC3/453</link><description>CredGuardRuntimeShutdown
+Runtime Credential Guard deactivation via \\LSA_ISO_DISABLE_CREDENTIAL_GUARD + LSASS NT hash extraction (Win11 24H2)
+Blog: https://medium.com/@s12deff/runtime-credential-guard-deactivation-d01cb9eb0062
+
+[Media: Фото]</description><pubDate>Thu, 29 Oct 2026 09:31:16 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_453</guid></item><item><title>https://t.me/boost/P0x3k_1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3/452</link><description>https://t.me/boost/P0x3k_1N73LL1G3NC3
 
 [Media: Фото]</description><pubDate>Mon, 26 Oct 2026 05:21:07 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_452</guid></item><item><title>CVE-2026-106173</title><link>https://t.me/P0x3k_1N73LL1G3NC3/451</link><description>CVE-2026-106173
 PoC exploit for a path traversal file write leading to RCE in Fortinet FortiSIEM. The FortiSIEM gRPC QueryResultReqhandler processes untrusted metadata without proper path validation. By crafting metadata containing both path traversal sequences (../) and NUL-byte injection within gRPC's HTTP/2 and HPACK encoding layers, an attacker can write arbitrary files to the filesystem.
