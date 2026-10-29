@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-10-29T10:47:42.263201+00:00",
-  "messages_count": 265,
+  "last_update": "2026-10-29T19:29:13.528597+00:00",
+  "messages_count": 266,
   "messages": [
+    {
+      "id": "457",
+      "title": "ReverseShell_2026_10.ps1",
+      "text": "ReverseShell_2026_10.ps1\nA new  PowerShell reverse shell in the PSSW100AVB repository. 100% AV bypass (October 2026)\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/457",
+      "pub_date": "2026-10-29T16:41:03+00:00"
+    },
     {
       "id": "454",
       "title": "📜 From RCE to camera credentials in Axis Camera Station",

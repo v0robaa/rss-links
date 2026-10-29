@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Wed, 28 Oct 2026 17:56:27 +0000</lastBuildDate><item><title>140+ дел за год 🗂</title><link>https://t.me/ptescalator/793</link><description>140+ дел за год 🗂
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Thu, 29 Oct 2026 19:29:33 +0000</lastBuildDate><item><title>1398 дней — василиска вызывали? 🔮</title><link>https://t.me/ptescalator/803</link><description>1398 дней — василиска вызывали? 🔮
+Команда PT ESC IR обнаружила новую APT-группировку StingyBasilisk.
+При расследовании инцидента мы выявили следы ее активности как минимум с апреля 2022 года. Свое название группировка получила из-за активного использования именованных каналов (named pipes) Windows для управления ВПО и трудностей с обнаружением полезной нагрузки.
+StingyBasilisk оставалась незамеченной 1398 дней и занималась шпионажем в сети госучреждения. В арсенале группировки — ВПО SilentCOM, TediousLoader и CunningDoor: все это DLL-библиотеки, которые предназначены для ожидания и исполнения полезной нагрузки в памяти процесса Windows.
+Для закрепления на скомпрометированных хостах применялись довольно редкие техники — COM Hijacking и Time Providers (о них мы уже рассказывали).
+Больше подробностей — в нашем блоге.
+#apt #ir #dfir #malware
+@ptescalator
+
+[Media: Видео]</description><pubDate>Thu, 29 Oct 2026 19:29:33 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_803</guid></item><item><title>140+ дел за год 🗂</title><link>https://t.me/ptescalator/793</link><description>140+ дел за год 🗂
 Команда PT ESC IR выпустила ежегодное исследование о результатах 140+ проектов по расследованию инцидентов и ретроспективному анализу с IV квартала 2025-го по III квартал 2026 года. Проектов стало на 40% больше, чем годом ранее.
 Главные итоги
 • Больше чем в половине проектов злоумышленникам удалось нарушить работу компаний. В 21,2% случаев мы выявили разведывательную деятельность и кибершпионаж, а в 20% — выгрузку конфиденциальной информации.

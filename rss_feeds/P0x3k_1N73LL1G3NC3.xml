@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 29 Oct 2026 10:10:21 +0000</lastBuildDate><item><title>📜 From RCE to camera credentials in Axis Camera Station</title><link>https://t.me/P0x3k_1N73LL1G3NC3/454</link><description>📜 From RCE to camera credentials in Axis Camera Station
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Thu, 29 Oct 2026 16:41:03 +0000</lastBuildDate><item><title>ReverseShell_2026_10.ps1</title><link>https://t.me/P0x3k_1N73LL1G3NC3/457</link><description>ReverseShell_2026_10.ps1
+A new  PowerShell reverse shell in the PSSW100AVB repository. 100% AV bypass (October 2026)
+
+[Media: Фото]</description><pubDate>Thu, 29 Oct 2026 16:41:03 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_457</guid></item><item><title>📜 From RCE to camera credentials in Axis Camera Station</title><link>https://t.me/P0x3k_1N73LL1G3NC3/454</link><description>📜 From RCE to camera credentials in Axis Camera Station
 During a penetration test, I exploited CVE-2025-30023 (insecure deserialization) chained with CVE-2025-30026 (authentication bypass) to get SYSTEM-level RCE on two Windows machines running Axis Camera Station on a factory. After that, I discovered CVE-2026-63286, a weak credential encryption scheme, which allowed me to decrypt all the camera credentials stored in the application’s database and connect to the cameras.
 Full attack chain summary:
 • Identify Axis Camera Station on port 55752 during the network scan.
