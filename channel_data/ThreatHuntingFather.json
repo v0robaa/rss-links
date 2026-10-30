@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-30T10:47:03.628177+00:00",
-  "messages_count": 324,
+  "last_update": "2026-10-30T19:05:37.551356+00:00",
+  "messages_count": 325,
   "messages": [
+    {
+      "id": "1538",
+      "title": "В Claude Code для VS Code нашли бэкдор",
+      "text": "В Claude Code для VS Code нашли бэкдор\nВерсия 2.1.313 работает как обычно, но параллельно:\n— собирает и отправляет данные о системе\n— закрепляется через authorized_keys, LaunchAgent на macOs, и scheduled task на Windows\n— поднимает reverse SSH-туннель к 134.209.82.225.\nВероятно, хакеры взломали сотрудника компании, после чего под ним опубликовали зараженное расширение.\nЕсли ставили эту версию — компьютер и все данные на нем можно считать скомпрометированными.\nUPD.: в статье уточнили, что малварь залили в Cursor Marketplace, Cursor зарегистрировал инцидент\nWhat is malicious:\n— Claude-code extension from Cursor marketplace version 2.1.313\nWhat is not malicious:\n— The @anthropic-ai/claude-code NPM package is NOT malicious\n— The OpenVSX extension is NOT malicious\n— The Microsoft VSCode extension for Claude is NOT malicious\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1538",
+      "pub_date": "2026-10-30T12:12:18+00:00"
+    },
     {
       "id": "1537",
       "title": "Message 1537",
