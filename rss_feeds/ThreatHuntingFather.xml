@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 30 Oct 2026 19:19:19 +0000</lastBuildDate><item><title>Message 1539</title><link>https://t.me/ThreatHuntingFather/1539</link><description/><pubDate>Fri, 30 Oct 2026 19:19:19 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1539</guid></item><item><title>В Claude Code для VS Code нашли бэкдор</title><link>https://t.me/ThreatHuntingFather/1538</link><description>В Claude Code для VS Code нашли бэкдор
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sat, 31 Oct 2026 14:12:28 +0000</lastBuildDate><item><title>ARTEX + Claude Code + DeepSeek/GLM/Grok: глобальная кампания с ИИ-оркестрацией</title><link>https://t.me/ThreatHuntingFather/1540</link><description>ARTEX + Claude Code + DeepSeek/GLM/Grok: глобальная кампания с ИИ-оркестрацией
+❕ ThreatLabz восстановили рабочее окружение оператора, который использовал модифицированный pentest-фреймворк ARTEX вместе с Claude Code и Codex. В качестве моделей были настроены DeepSeek, GLM и Grok. Найденная история промптов охватывает период с 4 августа по 4 октября 2026 года. Первым связанную инфраструктуру и атаки на финансовый сектор Южной Кореи описал CrowdStrike 7 октября.
+❕ По промптам видно, что целей было больше, чем корейские банки: 19 стран и регионов, SMS-сервисы, ритейл, дейтинг, образование, криптовалюта. Оператор запрашивал массовые выгрузки ПДн и транзакций и спрашивал, как продать украденные данные. Мотив финансовый.
+📍 ИНФРАСТРУКТУРА
+🔳 Серверы
+• Work server: ARTEX с PostgreSQL, Skills и данными, плюс AI workspace (Claude Code, Codex, Grok). Запросы ARTEX к модели идут через xcai[.]pro
+• Jump server 38[.]244[.]50[.]120: доступ к целям и relay запросов к моделям, отдельные ИИ-аккаунты со своими инструкциями, агентами и memory
+• Помимо jump server, к целям вёл отдельный proxy route из AI workspace
+• Образ artex-local:perf2-20261003: интерфейс на порту 8890, PostgreSQL 16 на 127.0.0.1:5435. В него добавлены nmap, sqlmap, nuclei, httpx, jadx, apktool, frida-tools
+🔳 ИИ-оркестрация
+• ARTEX: deepseek-v4.1-flash через xcai[.]pro/v1
+• Codex: deepseek-v4-pro через api[.]deepseek[.]com/v1
+• Локальные аккаунты gemini и glm с Claude Code. Названия аккаунтов не всегда совпадают с моделью внутри
+• Grok подключён к Claude Code через мост grok2api на jump server
+• Схема работы: DeepSeek ведёт первичное исследование, затем GLM проверяет его выводы и работу субагентов на пробелы
+• Модели указаны так, как они запрошены в конфигах. Какая модель отвечала на самом деле, не подтверждено
+🔳Синхронизация и «память»
+• tools/sync-all.sh, sync-memory.sh, tools/sync-cc-users.sh копируют по SSH/rsync инструкции, memory-файлы и тулинг между аккаунтами. Ссылки на модели в инструкциях агентов при этом подменяются под целевой аккаунт
+• scope.md, surface.md, notes.md, findings/, evidence/ хранят контекст, чтобы новая сессия могла продолжить работу с того же места
+Облако
+• Backblaze B2: бэкап проектных записей CLI. На схеме ThreatLabz этот канал подписан и как exfiltration
+📌 Источник: Zscaler ThreatLabz
+🔗 https://threatlabz.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign
+
+[Media: Фото]</description><pubDate>Sat, 31 Oct 2026 14:12:28 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1540</guid></item><item><title>Message 1539</title><link>https://t.me/ThreatHuntingFather/1539</link><description/><pubDate>Fri, 30 Oct 2026 19:19:19 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1539</guid></item><item><title>В Claude Code для VS Code нашли бэкдор</title><link>https://t.me/ThreatHuntingFather/1538</link><description>В Claude Code для VS Code нашли бэкдор
 Версия 2.1.313 работает как обычно, но параллельно:
 — собирает и отправляет данные о системе
 — закрепляется через authorized_keys, LaunchAgent на macOs, и scheduled task на Windows

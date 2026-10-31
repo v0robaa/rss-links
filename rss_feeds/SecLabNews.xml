@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sat, 31 Oct 2026 08:51:01 +0000</lastBuildDate><item><title>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить</title><link>https://t.me/SecLabNews/18340</link><description>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SecurityLab.ru</title><link>https://t.me/SecLabNews</link><description>SecurityLab.ru channel</description><language>ru</language><lastBuildDate>Sat, 31 Oct 2026 13:50:12 +0000</lastBuildDate><item><title>До 5000 пользователей Cursor оказались под угрозой из-за подменённого Claude Code</title><link>https://t.me/SecLabNews/18341</link><description>До 5000 пользователей Cursor оказались под угрозой из-за подменённого Claude Code
+29 октября в магазине расширений Cursor распространялась вредоносная версия Anthropic.claude-code 2.1.313. Заражённый пакет собирал сведения о компьютерах разработчиков и устанавливал скрытый SSH-доступ. Cursor подтвердила, что под угрозой находились не более 5000 пользователей.
+Вредоносный загрузчик запускался автоматически при старте расширения. Программа собирала системные данные, добавляла чужой SSH-ключ и пыталась создать обратный туннель для удалённого подключения. На большинстве компьютеров атака не достигала полной цели, но оставляла фоновые задания и посторонний ключ доступа. Сервер злоумышленника отключён, опасная версия удалена из магазина.
+Для исключения последствий заражения недостаточно удалить расширение. Пользователям затронутой версии следует проверить authorized_keys на наличие ключа svc-telemetry и запустить опубликованные Cursor скрипты очистки. При обнаружении следов атаки потребуется изолировать компьютер и сменить доступные с него учётные данные.
+#Cursor #ClaudeCode #SSH #бэкдор
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Sat, 31 Oct 2026 13:50:12 +0000</pubDate><guid isPermaLink="false">telegram_SecLabNews_18341</guid></item><item><title>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить</title><link>https://t.me/SecLabNews/18340</link><description>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить
 5 ноября | 12:00 мск
 Dephaze Live Hack Show возвращается. За полгода PT Dephaze существенно изменился — хотим показать его вам.
 Запустим PT Dephaze в прямом эфире и продемонстрируем, какие новые векторы компрометации он может найти в реальной инфраструктуре, как будет выстраивать цепочки атак и получать максимальные привилегии в ключевых инфраструктурных системах Active Directory и FreeIPA.
