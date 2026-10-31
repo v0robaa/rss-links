@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-10-30T19:05:37.551356+00:00",
-  "messages_count": 325,
+  "last_update": "2026-10-31T10:16:30.032561+00:00",
+  "messages_count": 326,
   "messages": [
+    {
+      "id": "1539",
+      "title": "Message 1539",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1539",
+      "pub_date": "2026-10-30T19:19:19+00:00"
+    },
     {
       "id": "1538",
       "title": "В Claude Code для VS Code нашли бэкдор",

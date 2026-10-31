@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Fri, 30 Oct 2026 19:05:49 +0000</lastBuildDate><item><title>Message 805</title><link>https://t.me/ptescalator/805</link><description/><pubDate>Fri, 30 Oct 2026 16:25:27 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_805</guid></item><item><title>NTFS снова переполняет буфер 🫠</title><link>https://t.me/ptescalator/804</link><description>NTFS снова переполняет буфер 🫠
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ESCalator</title><link>https://t.me/ptescalator</link><description>Tips and tricks Positive Technologies (PT ESC)</description><language>ru</language><lastBuildDate>Sat, 31 Oct 2026 10:16:41 +0000</lastBuildDate><item><title>Message 805</title><link>https://t.me/ptescalator/805</link><description/><pubDate>Fri, 30 Oct 2026 16:25:27 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_805</guid></item><item><title>NTFS снова переполняет буфер 🫠</title><link>https://t.me/ptescalator/804</link><description>NTFS снова переполняет буфер 🫠
 Продолжаем разбирать уязвимости в драйвере NTFS для Windows. На этот раз CVE-2026-50494 — heap-based buffer overflow in ntfs!AnalysisPass.
 В чем проблема? При восстановлении журнала $LogFile драйвер копирует данные в запись таблицы OAT, не проверяя, помещаются ли они в выделенную область памяти. В итоге можно записать гораздо больше, чем выделено, и повредить память ядра Windows. Срабатывает уязвимость при монтировании тома со специально сформированным $LogFile.
 Мы разобрали механизм уязвимости, показали ключевые участки кода и воспроизвели с помощью PoC. Microsoft выпустила исправление 14 июля 2026 года.
@@ -16,7 +16,7 @@ StingyBasilisk оставалась незамеченной 1398 дней и з
 #apt #ir #dfir #malware
 @ptescalator
 
-[Media: Видео]</description><pubDate>Fri, 30 Oct 2026 19:05:49 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_803</guid></item><item><title>140+ дел за год 🗂</title><link>https://t.me/ptescalator/793</link><description>140+ дел за год 🗂
+[Media: Видео]</description><pubDate>Sat, 31 Oct 2026 10:16:41 +0000</pubDate><guid isPermaLink="false">telegram_ptescalator_803</guid></item><item><title>140+ дел за год 🗂</title><link>https://t.me/ptescalator/793</link><description>140+ дел за год 🗂
 Команда PT ESC IR выпустила ежегодное исследование о результатах 140+ проектов по расследованию инцидентов и ретроспективному анализу с IV квартала 2025-го по III квартал 2026 года. Проектов стало на 40% больше, чем годом ранее.
 Главные итоги
 • Больше чем в половине проектов злоумышленникам удалось нарушить работу компаний. В 21,2% случаев мы выявили разведывательную деятельность и кибершпионаж, а в 20% — выгрузку конфиденциальной информации.
