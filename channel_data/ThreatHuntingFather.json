@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-01T11:09:54.914821+00:00",
-  "messages_count": 327,
+  "last_update": "2026-11-01T18:49:08.626533+00:00",
+  "messages_count": 328,
   "messages": [
+    {
+      "id": "1541",
+      "title": "Message 1541",
+      "text": "",
+      "link": "https://t.me/ThreatHuntingFather/1541",
+      "pub_date": "2026-11-01T16:23:44+00:00"
+    },
     {
       "id": "1540",
       "title": "ARTEX + Claude Code + DeepSeek/GLM/Grok: глобальная кампания с ИИ-оркестрацией",
