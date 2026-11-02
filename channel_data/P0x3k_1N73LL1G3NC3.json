@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-01T18:49:01.621256+00:00",
-  "messages_count": 268,
+  "last_update": "2026-11-02T12:11:10.188397+00:00",
+  "messages_count": 269,
   "messages": [
+    {
+      "id": "460",
+      "title": "BeyondTrust Remote Support File Upload to RCE metasploit module (CVE-2026-102764)",
+      "text": "BeyondTrust Remote Support File Upload to RCE metasploit module (CVE-2026-102764)\nAn anonymous attacker can forge the MRS local router alias and invoke the appliance-side thin worker's native file-transfer service. This module uploads a PHP payload into the site's public directory and requests its extensionless URL. PHP and Unix command payloads execute as the site user. Tested on Remote Support 24.1.2;\nBlog: Rapid7 Analysis: Unauthenticated File Upload to RCE in BeyondTrust Remote Support (CVE-2026-102764)\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/460",
+      "pub_date": "2026-11-02T04:10:51+00:00"
+    },
     {
       "id": "459",
       "title": "⚡️Цифровой рубль не пострадал",

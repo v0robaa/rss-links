@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 30 Oct 2026 19:19:01 +0000</lastBuildDate><item><title>Через уязвимость Gotenberg распространяют бэкдоры для Linux и Windows</title><link>https://t.me/ZerodayAlert/908</link><description>Через уязвимость Gotenberg распространяют бэкдоры для Linux и Windows
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Mon, 02 Nov 2026 08:55:04 +0000</lastBuildDate><item><title>Canonical закрыла критическую уязвимость в LXD и MicroCloud с оценкой 10 из 10</title><link>https://t.me/ZerodayAlert/910</link><description>Canonical закрыла критическую уязвимость в LXD и MicroCloud с оценкой 10 из 10
+В платформах для управления контейнерами и виртуальными машинами обнаружили CVE-2026-112816. Ошибка позволяет выдавать себя за доверенного клиента без закрытого ключа и получать доступ к облачной инфраструктуре.
+Причина в неправильной проверке цепочки TLS-сертификатов. Сервер может принять публичный сертификат доверенного клиента, добавленный в чужую цепочку. В зависимости от привилегий подменённой учётной записи атакующий способен получить полный контроль над хостом.
+Canonical уже выпустила исправления для затронутых версий. Для снижения риска необходимо проверить версии LXD и MicroCloud, установить обновления и ограничить доступ к HTTPS API. Подтверждённых случаев эксплуатации пока нет.
+#LXD #MicroCloud #Canonical #TLS
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Mon, 02 Nov 2026 08:55:04 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_910</guid></item><item><title>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить</title><link>https://t.me/ZerodayAlert/909</link><description>🟥 Dephaze Live Hack Show 2: взломать, чтобы защитить
+5 ноября | 12:00 мск
+Dephaze Live Hack Show возвращается. За полгода PT Dephaze существенно изменился — хотим показать его вам.
+Запустим PT Dephaze в прямом эфире и продемонстрируем, какие новые векторы компрометации он может найти в реальной инфраструктуре, как будет выстраивать цепочки атак и получать максимальные привилегии в ключевых инфраструктурных системах Active Directory и FreeIPA.
+На трансляции вы:
+🔴увидите демонстрацию атак с помощью PT Dephaze;
+🔴узнаете, как система ищет и выстраивает цепочки атак в Active Directory и FreeIPA;
+🔴познакомитесь возможностями PT Dephaze, в том числе функциями на базе ИИ;
+🔴поймете, как интерпретировать результаты автопентеста и превращать найденные векторы атак в конкретные рекомендации по усилению защиты.
+Для участия нужно зарегистрироваться.
+
+[Media: Фото]</description><pubDate>Mon, 02 Nov 2026 06:55:36 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_909</guid></item><item><title>Через уязвимость Gotenberg распространяют бэкдоры для Linux и Windows</title><link>https://t.me/ZerodayAlert/908</link><description>Через уязвимость Gotenberg распространяют бэкдоры для Linux и Windows
 Аналитики VulnCheck зафиксировали 38 запросов к своей ловушке Gotenberg с одного IP-адреса. Расследование вывело на репозиторий с бэкдорами, загрузчиками и инструментами повышения привилегий. За 30 дней исследователи насчитали 1358 попыток эксплуатации CVE-2026-42589 со 128 IP-адресов.
 Критическая ошибка с оценкой 9,8 балла по CVSS позволяет внедрять команды через API изменения метаданных PDF. Злоумышленники используют уязвимость для запуска команд без авторизации и пытаются загрузить вредоносные компоненты. Среди найденных инструментов оказались обратные оболочки для разных архитектур, PHP-веб-шеллы и программы для атак на Windows. VulnCheck выделила не менее семи групп активности.
 Для защиты серверов Gotenberg требуется закрыть доступ к уязвимому API и перейти на исправленную версию 8.31.0 или новее. Администраторам также следует проверить журналы запросов к обработчику метаданных PDF и признаки запуска посторонних процессов. Уязвимость уже эксплуатируют, хотя подтверждений успешного закрепления участников описанной кампании пока нет.
