@@ -1,8 +1,22 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-04T11:58:17.881254+00:00",
-  "messages_count": 269,
+  "last_update": "2026-11-04T20:43:01.040392+00:00",
+  "messages_count": 271,
   "messages": [
+    {
+      "id": "462",
+      "title": "CVE-2026-97798",
+      "text": "CVE-2026-97798\nLPE in the Windows Error Reporting (WER) Time Travel Debugging path. An unprivileged caller can preserve attacker-controlled command-line syntax across the WER privilege boundary. The elevated collector later concatenates that input into a TTTracer.exe command line without preserving argument boundaries. Injected -out and -launch switches are therefore interpreted by the TTD recorder as recorder options, allowing an attacker-selected executable to be launched with the collector's elevated token.\nThe included single-file PoC turns that primitive into an interactive NT AUTHORITY\\SYSTEM shell. It has been validated from both a standard user and a medium-integrity, UAC-filtered administrator account.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/462",
+      "pub_date": "2026-11-04T16:06:16+00:00"
+    },
+    {
+      "id": "461",
+      "title": "CVE-2026-42980",
+      "text": "CVE-2026-42980\nA Windows kernel WMI integer-underflow vulnerability that can be exploited for local privilege escalation to NT AUTHORITY\\SYSTEM\nBlog: https://blog.grunt.ar/bin-exploitation/binary-gecko-academy/cve-2026-42980-wmi-underflow-en/\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/461",
+      "pub_date": "2026-11-04T16:06:09+00:00"
+    },
     {
       "id": "460",
       "title": "BeyondTrust Remote Support File Upload to RCE metasploit module (CVE-2026-102764)",
