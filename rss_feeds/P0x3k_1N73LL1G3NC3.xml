@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Wed, 04 Nov 2026 16:06:16 +0000</lastBuildDate><item><title>CVE-2026-97798</title><link>https://t.me/P0x3k_1N73LL1G3NC3/462</link><description>CVE-2026-97798
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1N73LL1G3NC3</title><link>https://t.me/P0x3k_1N73LL1G3NC3</link><description>Reborn…</description><language>ru</language><lastBuildDate>Fri, 06 Nov 2026 04:19:34 +0000</lastBuildDate><item><title>sshhole</title><link>https://t.me/P0x3k_1N73LL1G3NC3/463</link><description>sshhole
+https://nebusec.ai/research/musl-openssh-star-hash/
+A 257-character wrong password can get attackers into accounts that aren't supposed to accept passwords. No password cracking needed.
+Fix: Update OpenSSH and restart sshd, or set PasswordAuthentication no.
+
+[Media: Фото]</description><pubDate>Fri, 06 Nov 2026 04:19:34 +0000</pubDate><guid isPermaLink="false">telegram_P0x3k_1N73LL1G3NC3_463</guid></item><item><title>CVE-2026-97798</title><link>https://t.me/P0x3k_1N73LL1G3NC3/462</link><description>CVE-2026-97798
 LPE in the Windows Error Reporting (WER) Time Travel Debugging path. An unprivileged caller can preserve attacker-controlled command-line syntax across the WER privilege boundary. The elevated collector later concatenates that input into a TTTracer.exe command line without preserving argument boundaries. Injected -out and -launch switches are therefore interpreted by the TTD recorder as recorder options, allowing an attacker-selected executable to be launched with the collector's elevated token.
 The included single-file PoC turns that primitive into an interactive NT AUTHORITY\SYSTEM shell. It has been validated from both a standard user and a medium-integrity, UAC-filtered administrator account.
 

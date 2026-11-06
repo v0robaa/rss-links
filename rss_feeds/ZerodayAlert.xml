@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 05 Nov 2026 11:43:01 +0000</lastBuildDate><item><title>Кто нужен рынку, когда AI меняет правила 🤖</title><link>https://t.me/ZerodayAlert/924</link><description>Кто нужен рынку, когда AI меняет правила 🤖
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 06 Nov 2026 08:15:20 +0000</lastBuildDate><item><title>Тысяча найденных уязвимостей — это отчёт для аудита или реальная защита? И нужен ли вообще AppSec, если код всё чаще пишет ИИ?</title><link>https://t.me/ZerodayAlert/925</link><description>Тысяча найденных уязвимостей — это отчёт для аудита или реальная защита? И нужен ли вообще AppSec, если код всё чаще пишет ИИ?
+Эти и другие вопросы честно и по делу обсудим 18 ноября на Positive AppSec Conf — первой конференции Positive Technologies по безопасной разработке. Площадка — Кибердом в Москве, для удалённых участников будет онлайн-трансляция.
+О чём говорим:
+🤖 ИИ-генерация кода: где заканчивается ускорение разработки и начинаются уязвимости в проде
+🔍 SAST/DAST/IaC-сканеры: что реально снижает риски, а что осталось формальностью для аудита
+⛓️ атаки через цепочку поставок и open-source-библиотеки
+😎 переход от подсчёта находок к оценке эксплуатируемости и бизнес-риска
+💸 обоснование бюджета на AppSec через риски и окупаемость
+Для кого: AppSec- и DevSecOps-специалисты, архитекторы ИБ, CISO и технические директора — для каждой роли в программе есть свои темы.
+Формат: офлайн + онлайн, участие бесплатное, регистрация проходит через подтверждение.
+Зарегистрироваться
+
+[Media: Фото]</description><pubDate>Fri, 06 Nov 2026 08:15:20 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_925</guid></item><item><title>Кто нужен рынку, когда AI меняет правила 🤖</title><link>https://t.me/ZerodayAlert/924</link><description>Кто нужен рынку, когда AI меняет правила 🤖
 Софт дешевеет, атаки ускоряются, AI-агенты переписывают процессы защиты. Кибербез перестраивается прямо сейчас, и сейчас решается, какой инженер останется нужным.
 Сегодня в 19:00 МСК Егор Богомолов, CEO CyberED, поговорит с Владимиром Дрюковым, директором по услугам и технологиям Innostage. Владимир строил Solar JSOC, крупнейший коммерческий SOC в России, а теперь развивает сервисы одного из крупнейших интеграторов.
 Обсудим:

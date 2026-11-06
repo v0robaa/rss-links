@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-05T20:58:31.832942+00:00",
-  "messages_count": 271,
+  "last_update": "2026-11-06T11:57:52.569476+00:00",
+  "messages_count": 272,
   "messages": [
+    {
+      "id": "463",
+      "title": "sshhole",
+      "text": "sshhole\nhttps://nebusec.ai/research/musl-openssh-star-hash/\nA 257-character wrong password can get attackers into accounts that aren't supposed to accept passwords. No password cracking needed.\nFix: Update OpenSSH and restart sshd, or set PasswordAuthentication no.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/463",
+      "pub_date": "2026-11-06T04:19:34+00:00"
+    },
     {
       "id": "462",
       "title": "CVE-2026-97798",
