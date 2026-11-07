@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-11-07T10:57:53.049821+00:00",
-  "messages_count": 1250,
+  "last_update": "2026-11-07T18:36:48.140338+00:00",
+  "messages_count": 1251,
   "messages": [
+    {
+      "id": "18368",
+      "title": "Message 18368",
+      "text": "",
+      "link": "https://t.me/SecLabNews/18368",
+      "pub_date": "2026-11-07T18:36:48.064486+00:00"
+    },
     {
       "id": "18367",
       "title": "😱 Сменили номер? Max сможет узнать об этом через госсистему",
