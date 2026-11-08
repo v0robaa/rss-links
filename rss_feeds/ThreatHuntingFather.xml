@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 06 Nov 2026 07:02:29 +0000</lastBuildDate><item><title>AI Agent Artifact Catalog (Raymond DePalma )- это открытый detection pack и каталог форензик-артефактов, которые оставляют на хосте AI-агенты, локальные LLM-рантаймы и MCP.</title><link>https://t.me/ThreatHuntingFather/1542</link><description>AI Agent Artifact Catalog (Raymond DePalma )- это открытый detection pack и каталог форензик-артефактов, которые оставляют на хосте AI-агенты, локальные LLM-рантаймы и MCP.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 08 Nov 2026 11:01:27 +0000</lastBuildDate><item><title>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy</title><link>https://t.me/ThreatHuntingFather/1543</link><description>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy
+Источник: Push Security, 5.11.2026
+Активность: май — ноябрь 2026
+Цели: маркетологи, учетки Microsoft 365 и Google Workspace
+Жертвы: число и успешные компрометации не раскрыты
+Доставка
+Письма зовут на вебинар OpenAI Academy для маркетологов с 3 месяцами ChatGPT Pro, «Starship Product Briefing» с Grok Heavy и «Anthropic at AWS re:Invent». Нужен рабочий аккаунт. Ссылки идут через c.gle, zpr.io и open redirect x.com/logout?redirect_after_logout=, лендинги прикрыты Cloudflare challenge от сканеров.
+TTP
+• «Continue with Microsoft» → device code phishing через PhaaS Kali365. Жертва вводит код на настоящем login.microsoftonline.com/common/oauth2/deviceauth, токены получает оператор (T1528). Затем прокси VoidProxy забирает пароль и cookie.
+• «Continue with Google» → AiTM-прокси VoidProxy: пароль, ответ MFA, cookie (T1557, T1539).
+Две ветки страхуют друг друга: passkey ломает AiTM-прокси, но в device code flow жертва проходит MFA на домене Microsoft, и passkey срабатывает штатно.
+Атрибуция
+Киты оператора ZoomMock (май — октябрь) и MSDRoot (с 22 октября) Push связывает со средне-высокой уверенностью: общий домен, одна кастомная страница Cloudflare, похожие имена прокси. Выдает копипаста: на OpenAI-странице остались URL с Claude. Kali365 и VoidProxy арендованы, их хосты обслуживают и чужие кампании.
+IOC (выборка)
+eventrsvp[.]app
+rsvpconnect-events[.]com
+claudewebinnar[.]com
+62zr4vcasl.shifts[.]icu
+217.60.102[.]48
+Домены живут несколько недель — это для ретро-ханта, полный список в отчете.
+Hunting
+• Entra sign-in logs: Authentication Protocol = Device code у тех, кому он не нужен.
+• Conditional Access → Authentication flows: блок device code flow, кроме устройств без браузера.
+🌚 @poxek | 🌚 @poxek_ai | 📲MAX | ❤️merch.shop
+
+[Media: Видео]</description><pubDate>Sun, 08 Nov 2026 11:01:27 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1543</guid></item><item><title>AI Agent Artifact Catalog (Raymond DePalma )- это открытый detection pack и каталог форензик-артефактов, которые оставляют на хосте AI-агенты, локальные LLM-рантаймы и MCP.</title><link>https://t.me/ThreatHuntingFather/1542</link><description>AI Agent Artifact Catalog (Raymond DePalma )- это открытый detection pack и каталог форензик-артефактов, которые оставляют на хосте AI-агенты, локальные LLM-рантаймы и MCP.
 https://depalmar.github.io/ai-dfir-toolkit/</description><pubDate>Fri, 06 Nov 2026 07:02:29 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1542</guid></item><item><title>Message 1541</title><link>https://t.me/ThreatHuntingFather/1541</link><description/><pubDate>Sun, 01 Nov 2026 16:23:44 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1541</guid></item><item><title>ARTEX + Claude Code + DeepSeek/GLM/Grok: глобальная кампания с ИИ-оркестрацией</title><link>https://t.me/ThreatHuntingFather/1540</link><description>ARTEX + Claude Code + DeepSeek/GLM/Grok: глобальная кампания с ИИ-оркестрацией
 ❕ ThreatLabz восстановили рабочее окружение оператора, который использовал модифицированный pentest-фреймворк ARTEX вместе с Claude Code и Codex. В качестве моделей были настроены DeepSeek, GLM и Grok. Найденная история промптов охватывает период с 4 августа по 4 октября 2026 года. Первым связанную инфраструктуру и атаки на финансовый сектор Южной Кореи описал CrowdStrike 7 октября.
 ❕ По промптам видно, что целей было больше, чем корейские банки: 19 стран и регионов, SMS-сервисы, ритейл, дейтинг, образование, криптовалюта. Оператор запрашивал массовые выгрузки ПДн и транзакций и спрашивал, как продать украденные данные. Мотив финансовый.

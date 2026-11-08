@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-07T18:36:41.037816+00:00",
-  "messages_count": 329,
+  "last_update": "2026-11-08T11:10:52.632558+00:00",
+  "messages_count": 330,
   "messages": [
+    {
+      "id": "1543",
+      "title": "TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy",
+      "text": "TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy\nИсточник: Push Security, 5.11.2026\nАктивность: май — ноябрь 2026\nЦели: маркетологи, учетки Microsoft 365 и Google Workspace\nЖертвы: число и успешные компрометации не раскрыты\nДоставка\nПисьма зовут на вебинар OpenAI Academy для маркетологов с 3 месяцами ChatGPT Pro, «Starship Product Briefing» с Grok Heavy и «Anthropic at AWS re:Invent». Нужен рабочий аккаунт. Ссылки идут через c.gle, zpr.io и open redirect x.com/logout?redirect_after_logout=, лендинги прикрыты Cloudflare challenge от сканеров.\nTTP\n• «Continue with Microsoft» → device code phishing через PhaaS Kali365. Жертва вводит код на настоящем login.microsoftonline.com/common/oauth2/deviceauth, токены получает оператор (T1528). Затем прокси VoidProxy забирает пароль и cookie.\n• «Continue with Google» → AiTM-прокси VoidProxy: пароль, ответ MFA, cookie (T1557, T1539).\nДве ветки страхуют друг друга: passkey ломает AiTM-прокси, но в device code flow жертва проходит MFA на домене Microsoft, и passkey срабатывает штатно.\nАтрибуция\nКиты оператора ZoomMock (май — октябрь) и MSDRoot (с 22 октября) Push связывает со средне-высокой уверенностью: общий домен, одна кастомная страница Cloudflare, похожие имена прокси. Выдает копипаста: на OpenAI-странице остались URL с Claude. Kali365 и VoidProxy арендованы, их хосты обслуживают и чужие кампании.\nIOC (выборка)\neventrsvp[.]app\nrsvpconnect-events[.]com\nclaudewebinnar[.]com\n62zr4vcasl.shifts[.]icu\n217.60.102[.]48\nДомены живут несколько недель — это для ретро-ханта, полный список в отчете.\nHunting\n• Entra sign-in logs: Authentication Protocol = Device code у тех, кому он не нужен.\n• Conditional Access → Authentication flows: блок device code flow, кроме устройств без браузера.\n🌚 @poxek | 🌚 @poxek_ai | 📲MAX | ❤️merch.shop\n\n[Media: Видео]",
+      "link": "https://t.me/ThreatHuntingFather/1543",
+      "pub_date": "2026-11-08T11:01:27+00:00"
+    },
     {
       "id": "1542",
       "title": "AI Agent Artifact Catalog (Raymond DePalma )- это открытый detection pack и каталог форензик-артефактов, которые оставляют на хосте AI-агенты, локальные LLM-рантаймы и MCP.",
