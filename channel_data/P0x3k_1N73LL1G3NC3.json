@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-10T20:44:52.474837+00:00",
-  "messages_count": 272,
+  "last_update": "2026-11-11T11:46:18.303436+00:00",
+  "messages_count": 273,
   "messages": [
+    {
+      "id": "464",
+      "title": "SignDrop",
+      "text": "SignDrop\nWindows Common Log FileSystem Authentication 0day Local Privilege Escalation Vulnerability\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/464",
+      "pub_date": "2026-11-11T10:00:07+00:00"
+    },
     {
       "id": "463",
       "title": "sshhole",

@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-10T20:44:59.521666+00:00",
-  "messages_count": 330,
+  "last_update": "2026-11-11T11:46:25.379768+00:00",
+  "messages_count": 331,
   "messages": [
+    {
+      "id": "1544",
+      "title": "🦅 Hayabusa v4.4.0 - CODE BLUE Release",
+      "text": "🦅 Hayabusa v4.4.0 - CODE BLUE Release\nYamato Security выпустили новую версию Hayabusa, инструмента для форензики и threat hunting по журналам событий Windows.\nГлавное: теперь можно сканировать event logs прямо из образов дисков VHDX и E01/Ex01:\n✅ без монтирования\n✅ без извлечения логов\n✅ без прав администратора\n✅ на Windows, Linux и macOS\nЧто ещё:\n• Новые опции —vhdx и —e01 работают во всех командах сканирования логов\n• Логи читаются со всех NTFS-томов внутри образа, поддерживаются и разбитые на сегменты E01\n• Если образ повреждён или неполный, прочитанное сохраняется, а отчёт помечается как неполный\n• Починили pivot-keywords-list: теперь он выдаёт 4 файла (Users, IP Addresses, Processes, Command Lines)\n⚠️ Антивирусы и EDR могут ругаться на файлы релиза. Для live response разработчики советуют брать отдельную сборку live-response.\n🔗 github.com/Yamato-Security/hayabusa/releases/tag/v4.4.0",
+      "link": "https://t.me/ThreatHuntingFather/1544",
+      "pub_date": "2026-11-11T08:58:36+00:00"
+    },
     {
       "id": "1543",
       "title": "TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy",

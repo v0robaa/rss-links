@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Sun, 08 Nov 2026 11:01:27 +0000</lastBuildDate><item><title>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy</title><link>https://t.me/ThreatHuntingFather/1543</link><description>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 11 Nov 2026 08:58:36 +0000</lastBuildDate><item><title>🦅 Hayabusa v4.4.0 - CODE BLUE Release</title><link>https://t.me/ThreatHuntingFather/1544</link><description>🦅 Hayabusa v4.4.0 - CODE BLUE Release
+Yamato Security выпустили новую версию Hayabusa, инструмента для форензики и threat hunting по журналам событий Windows.
+Главное: теперь можно сканировать event logs прямо из образов дисков VHDX и E01/Ex01:
+✅ без монтирования
+✅ без извлечения логов
+✅ без прав администратора
+✅ на Windows, Linux и macOS
+Что ещё:
+• Новые опции —vhdx и —e01 работают во всех командах сканирования логов
+• Логи читаются со всех NTFS-томов внутри образа, поддерживаются и разбитые на сегменты E01
+• Если образ повреждён или неполный, прочитанное сохраняется, а отчёт помечается как неполный
+• Починили pivot-keywords-list: теперь он выдаёт 4 файла (Users, IP Addresses, Processes, Command Lines)
+⚠️ Антивирусы и EDR могут ругаться на файлы релиза. Для live response разработчики советуют брать отдельную сборку live-response.
+🔗 github.com/Yamato-Security/hayabusa/releases/tag/v4.4.0</description><pubDate>Wed, 11 Nov 2026 08:58:36 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1544</guid></item><item><title>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy</title><link>https://t.me/ThreatHuntingFather/1543</link><description>TI-аналитика: фейковые ивенты OpenAI, SpaceX и Anthropic уводят сессии Microsoft и Google через Kali365 и VoidProxy
 Источник: Push Security, 5.11.2026
 Активность: май — ноябрь 2026
 Цели: маркетологи, учетки Microsoft 365 и Google Workspace
