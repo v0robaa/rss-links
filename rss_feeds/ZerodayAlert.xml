@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 11 Nov 2026 09:59:06 +0000</lastBuildDate><item><title>ИИ настроил облако. Как его проверять? ☁️</title><link>https://t.me/ZerodayAlert/939</link><description>ИИ настроил облако. Как его проверять? ☁️
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 11 Nov 2026 14:07:01 +0000</lastBuildDate><item><title>Одна cookie поставила под вопрос безопасность Xen Orchestra</title><link>https://t.me/ZerodayAlert/940</link><description>Одна cookie поставила под вопрос безопасность Xen Orchestra
+В Xen Orchestra обнаружили критическую уязвимость, которую хакеры уже используют в реальных атаках. Ошибка в обработке cookie позволяет обойти авторизацию и попасть в панель управления без пароля.
+Специальное значение токена заставляет сервер выбрать первую запись из базы действующих токенов. Если найденный токен активен, злоумышленник получает права его владельца и потенциально может захватить целые серверные кластеры.
+Vates выпустила исправления в Xen Orchestra 6.9.1 и 6.10.0 и раскрыла признаки уже совершённых атак. Администраторам рекомендуют срочно обновить систему, закрыть управляющую панель от интернета и проверить инфраструктуру на следы взлома.
+#Xenorchestra #Vates #виртуализация #cookie
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 11 Nov 2026 14:07:01 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_940</guid></item><item><title>ИИ настроил облако. Как его проверять? ☁️</title><link>https://t.me/ZerodayAlert/939</link><description>ИИ настроил облако. Как его проверять? ☁️
 Если приложение запустилось, это ещё не значит, что оно в безопасности. В конфигурации от ИИ легко пропустить открытый служебный порт, лишние права сервисной учётки или секрет в репозитории.
 Завтра в 19:00 МСК ведущий инженер по ИБ в «Пересвете» Юрий Лисовол на открытом воркшопе проверит облачную инфраструктуру, созданную ИИ: от Terraform до работающего приложения в Selectel.
 На воркшопе разберём:
