@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-11T21:11:15.778242+00:00",
-  "messages_count": 331,
+  "last_update": "2026-11-12T12:26:02.191468+00:00",
+  "messages_count": 332,
   "messages": [
+    {
+      "id": "1545",
+      "title": "https://detection.wiki/",
+      "text": "https://detection.wiki/",
+      "link": "https://t.me/ThreatHuntingFather/1545",
+      "pub_date": "2026-11-12T09:18:53+00:00"
+    },
     {
       "id": "1544",
       "title": "🦅 Hayabusa v4.4.0 - CODE BLUE Release",
