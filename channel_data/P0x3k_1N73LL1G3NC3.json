@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-12T12:25:55.283039+00:00",
-  "messages_count": 274,
+  "last_update": "2026-11-12T21:23:12.279955+00:00",
+  "messages_count": 275,
   "messages": [
+    {
+      "id": "466",
+      "title": "Klist2ccache  Dump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm —...",
+      "text": "Klist2ccache  Dump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm — via WinRM.  Blog: https://jakeotte.com/posts/klist-revisited.html\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/466",
+      "pub_date": "2026-11-12T15:12:15+00:00"
+    },
     {
       "id": "465",
       "title": "They say I sometimes go too far in my pentest engagements…",
