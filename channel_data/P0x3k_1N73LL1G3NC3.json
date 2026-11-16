@@ -1,8 +1,15 @@
 {
   "channel": "P0x3k_1N73LL1G3NC3",
-  "last_update": "2026-11-15T19:39:38.536579+00:00",
-  "messages_count": 275,
+  "last_update": "2026-11-16T12:33:43.700001+00:00",
+  "messages_count": 276,
   "messages": [
+    {
+      "id": "467",
+      "title": "TrustFall - CVE-2026-88235: Windows TrustedInstaller Privilege Escalation",
+      "text": "TrustFall - CVE-2026-88235: Windows TrustedInstaller Privilege Escalation\nAny local user can tamper with the file system and the registry as SYSTEM and achieve local privilege escalation.\n\n[Media: Фото]",
+      "link": "https://t.me/P0x3k_1N73LL1G3NC3/467",
+      "pub_date": "2026-11-16T04:16:12+00:00"
+    },
     {
       "id": "466",
       "title": "Klist2ccache  Dump TGTs remotely and convert Windows' klist binary output to ccache format for use with impacket and other Linux Kerberos tooling. klistremote — via Task Scheduler + SMB. klistwinrm —...",
