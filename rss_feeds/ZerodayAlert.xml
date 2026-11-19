@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 18 Nov 2026 13:25:08 +0000</lastBuildDate><item><title>ЦОД отказал. Управление потеряно. Как восстановиться?  💾</title><link>https://t.me/ZerodayAlert/947</link><description>ЦОД отказал. Управление потеряно. Как восстановиться?  💾
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 19 Nov 2026 22:02:52 +0000</lastBuildDate><item><title>⚡️ F6 запускает «Хронику» — журнал с реальными кейсами по кибербезопасности из практики наших специалистов.</title><link>https://t.me/ZerodayAlert/948</link><description>⚡️ F6 запускает «Хронику» — журнал с реальными кейсами по кибербезопасности из практики наших специалистов.
+Первый выпуск посвящен краже 8 биткоинов. Пользователь авторизовался на поддельном сайте криптобиржи, после чего мошенники вывели всю криптовалюту с его аккаунта.
+В ходе расследования мы раскрыли инфраструктуру злоумышленников и обнаружили связь с другой атакой. Как удалось установить участников схемы и чем завершилось расследование — читайте в пилотном выпуске «Хроники».
+➡️ ЧИТАТЬ ВЫПУСК №1
+Видео об этой истории — смотрите в посте 🎥
+P.S. Новые выпуски «Хроники» будут выходить раз в месяц. Подпишитесь, чтобы не пропустить.</description><pubDate>Thu, 19 Nov 2026 22:02:52 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_948</guid></item><item><title>ЦОД отказал. Управление потеряно. Как восстановиться?  💾</title><link>https://t.me/ZerodayAlert/947</link><description>ЦОД отказал. Управление потеряно. Как восстановиться?  💾
 Отказал ЦОД, шифровальщик добрался до инфраструктуры или команда потеряла доступ к управлению. Инцидент уже произошёл — теперь нужно понять, какие сервисы поднимать первыми и можно ли доверять резервным копиям.
 Завтра в 19:00 МСК пройдёт открытый эфир о восстановлении инфраструктуры после серьёзного сбоя или кибератаки.
 Разберём:
