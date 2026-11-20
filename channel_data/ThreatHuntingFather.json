@@ -1,8 +1,22 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-19T22:02:47.769361+00:00",
-  "messages_count": 334,
+  "last_update": "2026-11-20T12:40:42.908235+00:00",
+  "messages_count": 336,
   "messages": [
+    {
+      "id": "1549",
+      "title": "ThreatDefence выпустили сводный разбор ARTEX с упором на detection и hunting. Отчёты Microsoft, Google, CrowdStrike, Datadog, Wiz, Cisco Talos, ReversingLabs, BadByte, Censys, Fortinet и FLASH от FBI...",
+      "text": "ThreatDefence выпустили сводный разбор ARTEX с упором на detection и hunting. Отчёты Microsoft, Google, CrowdStrike, Datadog, Wiz, Cisco Talos, ReversingLabs, BadByte, Censys, Fortinet и FLASH от FBI от 13 ноября собраны в одном месте и переведены в готовые ханты.\nПользуйтесь, ускоряйтесь, очень актуально😏\n🔗https://threatdefence.com/article/artex-agentic-attack-framework-detection-hunting\n🔗 https://github.com/ThreatDefence/artex-detections",
+      "link": "https://t.me/ThreatHuntingFather/1549",
+      "pub_date": "2026-11-20T11:43:56+00:00"
+    },
+    {
+      "id": "1548",
+      "title": "🔎 Turla Cereal: что ReversingLabs добавила к отчёту ESET",
+      "text": "🔎 Turla Cereal: что ReversingLabs добавила к отчёту ESET\n10 ноября ESET описала Cereal, шпионский набор Turla для Microsoft Exchange. Его нашли в госорганизациях Казахстана (обнаружение 28.11.2025) и Румынии. ReversingLabs прошлась по файлам из своей базы, и вот что нового у неё по сравнению с оригиналом.\n1. 12 связанных загрузчиков вместо списка ESET\nШесть из 11 CerealLoader, которые перечислила ESET, плюс два новых кандидата WTSAPI32.dll, которых в индикаторах ESET нет, и четыре побайтово отличающиеся копии уже известных сборок. RL отдельно оговаривает, что новых жертв или новых векторов проникновения это не означает.\n2. Новая ветка через imphash\nУ двух загрузчиков version.dll общий imphash 6585e33ab016ca2c68ba7eec691fbeb5, и поиск по нему дал 8 файлов. Пять из них вредоносные, в том числе два неизвестных ранее WTSAPI32.dll. Первый (35e4a9ec…) связан с семейством уверенно. Второй (2751ae95…) связан умеренно и попал в базу RL 18.11.2025, за 10 дней до первого обнаружения у ESET.\n3. Казахстанский образец подтвердился\nESET писала, что самый ранний CerealLoader загрузили на VirusTotal из Казахстана 11 мая 2022 года. В базе RL файл появился в тот же день, так что это почти наверняка тот же артефакт. RL предупреждает, что дата первого появления файла не равна дате атаки: задокументированные взломы относятся к концу 2025 года.\n4. Ранние сигналы до публикации\nОдин из WTSAPI32.dll уже 4 марта 2026 года был помечен как BlankPage, больше чем за 8 месяцев до отчёта ESET. Атрибуции Turla тогда не было, но детект на уровне файла уже существовал.\n5. Путаница в названиях\nESET называет загрузчик CerealLoader, а её собственные продукты детектят его как MSIL/Agent.YCA и YCC. Defender называет его BlankPage (.C, .E, .F), Bitdefender CerealMood, Malwarebytes Trojan.Turla. Если искать только по «CerealLoader», часть образцов теряется.\n6. Детали side-loading\nСборки Microsoft.Ceres.dll и Microsoft.Search.Platform.dll внутри экспортируют имена SensApi.dll и dbghelp.dll, а все их экспорты переадресуются на настоящие DLL из System32. Это классический proxy-DLL.\n7. Связь со старым инструментарием Turla\nRL проверила 152 опубликованных хэша из 11 наборов вредоносов, живущих в Exchange и IIS, и нашла у себя 81 файл. Среди них две новые копии NetInjector 2019 года в дополнение к индикаторам Unit 42. Встроенные в них bootstrapper-DLL по отдельности получают вердикт goodware, а вредоносными оказываются только в контексте.\n8. Две YARA-правила с честной статистикой\nПервое ищет по imphash. Оно широкое и цепляет легитимные файлы. Второе ищет неподписанную .NET DLL с native entry point и «заимствованным» именем. Его первая версия дала 66 срабатываний, из них 60 на легитимные сборки Exchange. После добавления проверки подписи остались 6 вредоносных. Третья версия на тестовом наборе поймала все 10 CerealLoader и ни одного из 4 файлов NetInjector и bootstrapper.\n🔗 Разбор ReversingLabs\n🔗 Оригинальный отчёт ESET",
+      "link": "https://t.me/ThreatHuntingFather/1548",
+      "pub_date": "2026-11-20T09:16:20+00:00"
+    },
     {
       "id": "1547",
       "title": "Много кто уже видел репорты про ARTEX AI и другие фреймворки.",
