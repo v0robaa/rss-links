@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 20 Nov 2026 21:44:16 +0000</lastBuildDate><item><title>11 лет никто не замечал. В nginx обнаружили опасную ошибку HTTP/2</title><link>https://t.me/ZerodayAlert/951</link><description>11 лет никто не замечал. В nginx обнаружили опасную ошибку HTTP/2
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Sat, 21 Nov 2026 08:59:58 +0000</lastBuildDate><item><title>Четыре популярные базы данных подвели собственные механизмы защиты</title><link>https://t.me/ZerodayAlert/953</link><description>Четыре популярные базы данных подвели собственные механизмы защиты
+Команда depthfirst обнаружила уязвимости в Oracle, PostgreSQL и MySQL, а также воспроизвели атаку на ClickHouse. Проверка показала, что даже учётная запись с минимальными правами может обращаться к опасным компонентам СУБД.
+В Oracle нашли цепочку из двух уязвимостей, одна из которых получила оценку 9,9 балла по CVSS. В PostgreSQL обнаружили ошибку оптимизатора запросов, позволяющую обойти защиту памяти даже с обычной учётной записью.
+В MySQL причиной проблемы стал всего один лишний байт, который записывался за пределами выделенного буфера. Исследователи превратили ошибку в удалённое выполнение команд, а затем продемонстрировали похожую атаку на ClickHouse.
+#уязвимости #Oracle #mysql #depthfirst
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Sat, 21 Nov 2026 08:59:58 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_953</guid></item><item><title>204 уязвимости за раз. Разработчики Chrome выпустили масштабное обновление браузера</title><link>https://t.me/ZerodayAlert/952</link><description>204 уязвимости за раз. Разработчики Chrome выпустили масштабное обновление браузера
+Google выпустила Chrome 158 для Windows, macOS, Linux и Android. Обновление закрывает сразу 204 уязвимости, включая шесть критических и 62 опасные ошибки.
+Четыре из шести критических уязвимостей обнаружил исследователь Синьян Гэ, сотрудничающий с Anthropic. При поиске двух ошибок ему помогала нейросеть Claude, причём обе проблемы связаны с нарушением границ памяти.
+Помимо исправлений, Chrome 158 получил новый HTML-элемент для установки веб-приложений прямо с сайтов без дополнительного JavaScript. Разработчики также добавили поддержку WebHID на Android 17 и новее, благодаря чему веб-приложения смогут взаимодействовать с подключёнными устройствами после разрешения пользователя.
+#chrome #уязвимости #обновление #кибербезопасность
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Sat, 21 Nov 2026 03:59:58 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_952</guid></item><item><title>11 лет никто не замечал. В nginx обнаружили опасную ошибку HTTP/2</title><link>https://t.me/ZerodayAlert/951</link><description>11 лет никто не замечал. В nginx обнаружили опасную ошибку HTTP/2
 Специалисты Xint обнаружили пять уязвимостей nginx, позволяющих удалённо выполнять команды без авторизации. Самая серьёзная ошибка скрывалась в обработке HTTP/2 с 2015 года и затрагивает версии веб-сервера с 1.9.5 по 1.31.8.
 Специалисты объединили уязвимость nginx с новой ошибкой SCTP в ядре Linux, получив цепочку nginx2root. Во время испытаний атака позволила получить права root даже за пределами Docker-контейнера, хотя успех зависит от конфигурации системы.
 18 ноября разработчики выпустили nginx 1.30.7 и 1.31.9, устранившие все пять уязвимостей веб-сервера. Однако ошибка ядра Linux осталась без исправления, а подтверждённых случаев эксплуатации полной цепочки в реальных атаках пока нет.
