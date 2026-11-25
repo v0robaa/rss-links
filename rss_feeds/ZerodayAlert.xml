@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 24 Nov 2026 14:01:17 +0000</lastBuildDate><item><title>FreeBSD получила масштабный пакет исправлений безопасности</title><link>https://t.me/ZerodayAlert/957</link><description>FreeBSD получила масштабный пакет исправлений безопасности
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Tue, 24 Nov 2026 15:26:01 +0000</lastBuildDate><item><title>Тормоза по Bluetooth оказались уязвимым звеном автомобиля</title><link>https://t.me/ZerodayAlert/958</link><description>Тормоза по Bluetooth оказались уязвимым звеном автомобиля
+Специалисты Element Digital обнаружили три уязвимости в тормозных контроллерах Elecbrakes, наиболее серьёзные из которых получили 9,6 балла по CVSS. Ошибки связаны с недостаточной аутентификацией, повторным воспроизведением команд и защитой обновлений прошивки.
+Злоумышленник может дистанционно активировать тормоза чужого прицепа прямо во время движения, находясь в радиусе действия Bluetooth. Такое вмешательство способно привести к потере управления транспортным средством и спровоцировать аварию.
+Производитель выпустил исправления для контроллеров EB2 и VM1 спустя семь недель после уведомления. Устаревшая модель ELBC2000 осталась без обновлений безопасности.
+#уязвимости #Elecbrakes #Bluetooth #автомобили
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Tue, 24 Nov 2026 15:26:01 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_958</guid></item><item><title>FreeBSD получила масштабный пакет исправлений безопасности</title><link>https://t.me/ZerodayAlert/957</link><description>FreeBSD получила масштабный пакет исправлений безопасности
 Разработчики FreeBSD за один день закрыли 21 уязвимость, причём 17 исправлений вошли в FreeBSD 15.2-BETA3. Часть ошибок исследователи обнаружили с помощью искусственного интеллекта.
 Среди наиболее серьёзных проблем оказались удалённое исполнение кода через NFSv4 и ошибочная выдача прав root механизмом аутентификации Kerberos. Отдельная уязвимость гипервизора bhyve позволяла обрушить физический сервер из виртуальной машины.
 Уязвимости затрагивают поддерживаемые выпуски веток FreeBSD 14 и 15. Администраторам рабочих серверов рекомендуется установить исправления согласно бюллетеням безопасности для своих версий системы.
