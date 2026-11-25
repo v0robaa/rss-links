@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 25 Nov 2026 13:16:53 +0000</lastBuildDate><item><title>О чём почти не говорят открыто: как найти закладку, которая кажется частью системы</title><link>https://t.me/ZerodayAlert/960</link><description>О чём почти не говорят открыто: как найти закладку, которая кажется частью системы
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Wed, 25 Nov 2026 17:48:47 +0000</lastBuildDate><item><title>ИИ-агентов заподозрили в эксплуатации уязвимости Check Point</title><link>https://t.me/ZerodayAlert/961</link><description>ИИ-агентов заподозрили в эксплуатации уязвимости Check Point
+Специалисты GreyNoise обнаружили масштабную хакерскую кампанию под идентификатором GT13. Злоумышленники скомпрометировали 24 сервера управления безопасностью Check Point, принадлежащих организациям в 17 странах.
+В ходе кампании хакеры эксплуатировали критическую уязвимость CVE-2026-16232 с оценкой 9,1 балла по шкале CVSS. Ошибка в механизме аутентификации SmartConsole позволяет получить административные привилегии без действительных учётных данных.
+Характер операций указывает на возможное применение нескольких автономных ИИ-агентов. Исследователи предполагают, что агенты могли отвечать за подготовку эксплойтов, поиск уязвимых систем и автоматизацию атак, однако прямых доказательств пока нет.
+#SmartConsole #GreyNoise #хакеры #Checkpoint
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Wed, 25 Nov 2026 17:48:47 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_961</guid></item><item><title>О чём почти не говорят открыто: как найти закладку, которая кажется частью системы</title><link>https://t.me/ZerodayAlert/960</link><description>О чём почти не говорят открыто: как найти закладку, которая кажется частью системы
 Разборов очевидно вредоносных файлов много. Гораздо реже показывают другую ситуацию: перед тобой тысячи привычных компонентов, и только один из них подменён так, чтобы не вызывать подозрений.
 Сегодня в 19:00 МСК на открытом эфире такую задачу решит Ярослав Шмелев, чемпион Кибербитвы 2024 и многократный призёр Standoff. Ты увидишь, с чего начинается поиск без очевидных зацепок, как сужается круг версий и как каждая догадка проверяется на стенде.
 После эфира ты сможешь:
