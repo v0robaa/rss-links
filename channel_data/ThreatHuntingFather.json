@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-25T23:01:27.531811+00:00",
-  "messages_count": 337,
+  "last_update": "2026-11-26T13:42:21.377544+00:00",
+  "messages_count": 338,
   "messages": [
+    {
+      "id": "1551",
+      "title": "😪 0 из 10 APT-группировок рекомендуют PentestCode",
+      "text": "😪 0 из 10 APT-группировок рекомендуют PentestCode\nSekoia собрала таблицу: какие хакерские группировки упоминаются рядом с какими ИИ-фреймворками для атак. Storm-0940 засветился рядом с 11 из 13, а PentestCode не упоминается ни с одной.\nВидимо, это всё-таки для честных пентестеров 🤷‍♂️\nНо они сказали что мы следим за вами!🔍\n🔗 https://ai-threat.watch/aof/\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1551",
+      "pub_date": "2026-11-26T06:16:20+00:00"
+    },
     {
       "id": "1550",
       "title": "Бэкдоры, которые живут в GitHub и SharePoint",

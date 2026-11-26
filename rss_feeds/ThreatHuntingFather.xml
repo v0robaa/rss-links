@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Wed, 25 Nov 2026 09:55:01 +0000</lastBuildDate><item><title>Бэкдоры, которые живут в GitHub и SharePoint</title><link>https://t.me/ThreatHuntingFather/1550</link><description>Бэкдоры, которые живут в GitHub и SharePoint
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 26 Nov 2026 06:16:20 +0000</lastBuildDate><item><title>😪 0 из 10 APT-группировок рекомендуют PentestCode</title><link>https://t.me/ThreatHuntingFather/1551</link><description>😪 0 из 10 APT-группировок рекомендуют PentestCode
+Sekoia собрала таблицу: какие хакерские группировки упоминаются рядом с какими ИИ-фреймворками для атак. Storm-0940 засветился рядом с 11 из 13, а PentestCode не упоминается ни с одной.
+Видимо, это всё-таки для честных пентестеров 🤷‍♂️
+Но они сказали что мы следим за вами!🔍
+🔗 https://ai-threat.watch/aof/
+
+[Media: Фото]</description><pubDate>Thu, 26 Nov 2026 06:16:20 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1551</guid></item><item><title>Бэкдоры, которые живут в GitHub и SharePoint</title><link>https://t.me/ThreatHuntingFather/1550</link><description>Бэкдоры, которые живут в GitHub и SharePoint
 «Лаборатория Касперского» (GReAT) описала Operation ShadowCloud - кампанию против госструктур Азии и Африки. Её фишка: командные серверы спрятаны в сервисах, которые в корпоративной сети обычно не блокируют.
 🔹 Вход. Отправная точка - MeshCentral Agent, программа удалённого управления, в которой прописан сервер атакующих. Как он оказался в сети, неизвестно: судя по следам, через более раннее заражение. Через агента на машину попадают три файла: доверенная программа (ZoomIt, Sandboxie, javaw.exe), вредоносная DLL и зашифрованный config.ini. Программа запускается и сама подгружает лежащую рядом DLL.
 🔹 GitDoor берёт команды из публичного репозитория GitHub, а результаты складывает в приватный; сведения о жертве дублирует в облако Ably. Умеет выполнять команды, писать нажатия клавиш, снимать скриншоты, а через модули - красть пароли и куки.
