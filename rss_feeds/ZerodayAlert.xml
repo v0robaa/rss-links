@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 26 Nov 2026 13:30:29 +0000</lastBuildDate><item><title>Проверка файлов в расширении Joomla оказалась ненадёжной</title><link>https://t.me/ZerodayAlert/966</link><description>Проверка файлов в расширении Joomla оказалась ненадёжной
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 26 Nov 2026 14:28:58 +0000</lastBuildDate><item><title>В ядре Linux обнаружена критическая уязвимость с 12-летней историей</title><link>https://t.me/ZerodayAlert/967</link><description>В ядре Linux обнаружена критическая уязвимость с 12-летней историей
+В ядре Linux обнаружена критическая уязвимость NFS2ROOT (CVE-2026-99362) с оценкой 9,8 балла по шкале CVSS. Ошибка появилась ещё в марте 2014 года и затрагивает серверные реализации протоколов NFSv4.1 и NFSv4.2.
+ИИ-платформа Antara независимо обнаружила уязвимость и, по утверждению OpenSec, самостоятельно разработала работоспособный эксплойт. Во время испытаний искусственный интеллект преодолел защитные механизмы ядра и получил полный административный контроль над тестовым сервером.
+Разработчики Linux уже выпустили исправления для уязвимых версий ядра. До установки обновлений администраторам рекомендуется ограничить сетевой доступ к порту TCP 2049.
+#Linux #OpenSec #Linux #ИИ
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Thu, 26 Nov 2026 14:28:58 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_967</guid></item><item><title>Проверка файлов в расширении Joomla оказалась ненадёжной</title><link>https://t.me/ZerodayAlert/966</link><description>Проверка файлов в расширении Joomla оказалась ненадёжной
 Исследователи VulnCheck обнаружили критическую уязвимость CVE-2026-107904 в расширении Easy File Uploader для Joomla с оценкой 9,8 балла по шкале CVSS. Проблема затрагивает все версии модуля с 1.0.0 по 2.9.6 включительно.
 Причиной уязвимости стали недостатки сразу трёх механизмов проверки загружаемых файлов. При определённой конфигурации веб-сервера злоумышленники могут выполнять произвольный код без авторизации.
 Разработчики устранили уязвимость в версии Easy File Uploader 3.0.0, выпущенной 14 ноября. Подтверждённых сведений об эксплуатации бреши в реальных атаках пока нет.
