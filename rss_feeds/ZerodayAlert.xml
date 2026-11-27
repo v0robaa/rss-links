@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Thu, 26 Nov 2026 14:28:58 +0000</lastBuildDate><item><title>В ядре Linux обнаружена критическая уязвимость с 12-летней историей</title><link>https://t.me/ZerodayAlert/967</link><description>В ядре Linux обнаружена критическая уязвимость с 12-летней историей
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0day Alert</title><link>https://t.me/ZerodayAlert</link><description>Zero-day vulnerabilities</description><language>ru</language><lastBuildDate>Fri, 27 Nov 2026 05:45:18 +0000</lastBuildDate><item><title>Критические уязвимости Mitel оказались в арсенале хакеров</title><link>https://t.me/ZerodayAlert/968</link><description>Критические уязвимости Mitel оказались в арсенале хакеров
+В платформе корпоративных коммуникаций Mitel MiCollab обнаружили пять уязвимостей, для эксплуатации которых не требуется авторизация. Наиболее опасная из них, CVE-2026-133323, получила максимальную оценку CVSS в 10 баллов.
+Злоумышленники начали эксплуатировать бреши ещё до выпуска исправлений 16 ноября. В одном из расследованных инцидентов хакерам потребовалось всего 32 минуты для доступа к контроллеру домена Active Directory.
+Специалисты Accenture подозревают, что преступники автоматизировали часть атаки с помощью искусственного интеллекта. На такую возможность указывают обращения к API двух коммерческих ИИ-сервисов непосредственно в момент обхода аутентификации.
+#Mitel #ИИ #Accenture #zeroday
+@ZerodayAlert
+
+[Media: Фото]</description><pubDate>Fri, 27 Nov 2026 05:45:18 +0000</pubDate><guid isPermaLink="false">telegram_ZerodayAlert_968</guid></item><item><title>В ядре Linux обнаружена критическая уязвимость с 12-летней историей</title><link>https://t.me/ZerodayAlert/967</link><description>В ядре Linux обнаружена критическая уязвимость с 12-летней историей
 В ядре Linux обнаружена критическая уязвимость NFS2ROOT (CVE-2026-99362) с оценкой 9,8 балла по шкале CVSS. Ошибка появилась ещё в марте 2014 года и затрагивает серверные реализации протоколов NFSv4.1 и NFSv4.2.
 ИИ-платформа Antara независимо обнаружила уязвимость и, по утверждению OpenSec, самостоятельно разработала работоспособный эксплойт. Во время испытаний искусственный интеллект преодолел защитные механизмы ядра и получил полный административный контроль над тестовым сервером.
 Разработчики Linux уже выпустили исправления для уязвимых версий ядра. До установки обновлений администраторам рекомендуется ограничить сетевой доступ к порту TCP 2049.

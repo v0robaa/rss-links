@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Thu, 26 Nov 2026 06:16:20 +0000</lastBuildDate><item><title>😪 0 из 10 APT-группировок рекомендуют PentestCode</title><link>https://t.me/ThreatHuntingFather/1551</link><description>😪 0 из 10 APT-группировок рекомендуют PentestCode
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting Father 🦔</title><link>https://t.me/ThreatHuntingFather</link><description>All about Threat Hunting, detecting malicious activity</description><language>ru</language><lastBuildDate>Fri, 27 Nov 2026 04:31:36 +0000</lastBuildDate><item><title>🔍 CybeDefend - self-hosted ASPM вместо Snyk</title><link>https://t.me/ThreatHuntingFather/1553</link><description>🔍 CybeDefend - self-hosted ASPM вместо Snyk
+Нашел толковый сервис. Уже развернул у себя и прям кайфую, насколько меньше ручной работы.
+Раньше был свой SAST-пайплайн на скриптах: Semgrep, Bearer и самописный чекер секретов и другие костыли, сведение результатов и разбор ложных срабатываний. Теперь запускаю проверки и разбираю находки по репозиторию в одном дашборде.
+🛠 Что внутри:
+Open-source платформа, поднимается через Docker Compose. Opengrep по коду, Gitleaks по секретам, Trivy по зависимостям, контейнерам и инфраструктурным конфигам, плюс проверки CI/CD. Результаты своих сканеров можно загрузить через SARIF.
+Отдельно зашел MCP. Можно попросить агента открыть детали конкретной находки, сверить ее с кодом и записать вердикт обратно в дашборд. Когда после прогона открывается список на несколько десятков срабатываний - очень экономит время.
+🔗 https://github.com/CybeDefend/cybedefend
+🔗 https://github.com/CybeDefend/cybedefend-scanners
+#appsec #sast #devsecops #opensource #tools
+
+[Media: Фото]</description><pubDate>Fri, 27 Nov 2026 04:31:36 +0000</pubDate><guid isPermaLink="false">telegram_ThreatHuntingFather_1553</guid></item><item><title>😪 0 из 10 APT-группировок рекомендуют PentestCode</title><link>https://t.me/ThreatHuntingFather/1551</link><description>😪 0 из 10 APT-группировок рекомендуют PentestCode
 Sekoia собрала таблицу: какие хакерские группировки упоминаются рядом с какими ИИ-фреймворками для атак. Storm-0940 засветился рядом с 11 из 13, а PentestCode не упоминается ни с одной.
 Видимо, это всё-таки для честных пентестеров 🤷‍♂️
 Но они сказали что мы следим за вами!🔍

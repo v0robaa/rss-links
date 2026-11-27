@@ -1,8 +1,15 @@
 {
   "channel": "ThreatHuntingFather",
-  "last_update": "2026-11-26T22:53:53.772760+00:00",
-  "messages_count": 338,
+  "last_update": "2026-11-27T13:39:41.060537+00:00",
+  "messages_count": 339,
   "messages": [
+    {
+      "id": "1553",
+      "title": "🔍 CybeDefend - self-hosted ASPM вместо Snyk",
+      "text": "🔍 CybeDefend - self-hosted ASPM вместо Snyk\nНашел толковый сервис. Уже развернул у себя и прям кайфую, насколько меньше ручной работы.\nРаньше был свой SAST-пайплайн на скриптах: Semgrep, Bearer и самописный чекер секретов и другие костыли, сведение результатов и разбор ложных срабатываний. Теперь запускаю проверки и разбираю находки по репозиторию в одном дашборде.\n🛠 Что внутри:\nOpen-source платформа, поднимается через Docker Compose. Opengrep по коду, Gitleaks по секретам, Trivy по зависимостям, контейнерам и инфраструктурным конфигам, плюс проверки CI/CD. Результаты своих сканеров можно загрузить через SARIF.\nОтдельно зашел MCP. Можно попросить агента открыть детали конкретной находки, сверить ее с кодом и записать вердикт обратно в дашборд. Когда после прогона открывается список на несколько десятков срабатываний - очень экономит время.\n🔗 https://github.com/CybeDefend/cybedefend\n🔗 https://github.com/CybeDefend/cybedefend-scanners\n#appsec #sast #devsecops #opensource #tools\n\n[Media: Фото]",
+      "link": "https://t.me/ThreatHuntingFather/1553",
+      "pub_date": "2026-11-27T04:31:36+00:00"
+    },
     {
       "id": "1551",
       "title": "😪 0 из 10 APT-группировок рекомендуют PentestCode",
