@@ -1,8 +1,15 @@
 {
   "channel": "SecLabNews",
-  "last_update": "2026-11-27T22:35:57.816413+00:00",
-  "messages_count": 1329,
+  "last_update": "2026-11-28T12:50:06.591729+00:00",
+  "messages_count": 1330,
   "messages": [
+    {
+      "id": "18449",
+      "title": "Message 18449",
+      "text": "",
+      "link": "https://t.me/SecLabNews/18449",
+      "pub_date": "2026-11-28T11:05:32+00:00"
+    },
     {
       "id": "18448",
       "title": "📤Telegram призывает владельцев iPhone срочно обновить iOS",
